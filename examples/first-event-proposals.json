@@ -1,0 +1,13 @@
+{
+  "candidates": [
+    {
+      "name": "pong-first-event-evidence-v2",
+      "guidance": "Judge the first point within the finite horizon, not eventual victory, current paddle quality, or whether this action sounds good. Level 1 is a real outcome: the rally or serve continues without a point through the full horizon. It is NOT a placeholder for uncertainty between winning and losing. Training experience contains many completed no-point windows and losses, with fewer gains; do not assign roughly half the probability to gaining a point without evidence of an opponent miss. Read `observation.objects` and `observation.history`: positive ball vx approaches the RIGHT player, negative vx approaches the LEFT opponent. Wall or paddle bounces can invalidate linear projection; recent direction reversal matters. The candidate lasts only the requested four frames; then the specified controller resumes tracking the ball. Do not extrapolate the candidate motion for the whole horizon. A distant ball often allows the controller to recover; near contact, a small displacement can change the rebound and later outcome. Successful contact is not itself a point. The opponent can return the ball, leaving the window scoreless. Missing ball or opponent does not guarantee a scoreless window: a serve and point may occur before it ends. Use uncertainty when the observations cannot establish the later bounce sequence.",
+      "outcome_guidance": [
+        "Evidence supports the ball passing the RIGHT paddle before any left-side miss. Consider imminent unreachable contact or later failure under the actual continuation. Current misalignment alone is insufficient if there is time to recover.",
+        "A complete horizon can contain motion, wall reflections and successful paddle contacts without any point. Treat this as a common distinct event, not a middle rating for an average action. An absent ball alone is not proof that the whole window stays scoreless.",
+        "Requires the LEFT opponent actually missing before the player loses, within the horizon. Moving toward or hitting the ball is not scoring. A favorable rebound may produce a gain, but do not infer a guaranteed gain from a locally sensible action."
+      ]
+    }
+  ]
+}

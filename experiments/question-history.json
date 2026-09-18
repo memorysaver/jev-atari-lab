@@ -1,0 +1,165 @@
+{
+  "kind": "historical-question-journal-v1",
+  "rounds": [
+    {
+      "id": "value-question-pilot",
+      "model": "jev-1.13.0",
+      "teacher_source": "interactive coding assistant; imported proposal, not an external teacher API run",
+      "feedback_in_archive": "artifacts/pilot-v2/round/teacher-packet.json",
+      "before": {
+        "name": "pong-baseline-v1",
+        "horizon_frames": 240,
+        "guidance": "Consider ball direction and speed, paddle position, and the requested action. Use the recent history to distinguish approaching and departing motion. Account for uncertainty and sticky actions.",
+        "outcome_guidance": [
+          "",
+          "",
+          ""
+        ],
+        "schema_version": "question-program-v1"
+      },
+      "before_hash": "dbaddfa2d5a2a0ea457572b6d5fe4d2d6d8d679a9070121df625a6999dc7c035",
+      "after": {
+        "name": "pong-first-event-evidence-v2",
+        "horizon_frames": 240,
+        "guidance": "Judge the first point within the finite horizon, not eventual victory, current paddle quality, or whether this action sounds good. Level 1 is a real outcome: the rally or serve continues without a point through the full horizon. It is NOT a placeholder for uncertainty between winning and losing. Training experience contains many completed no-point windows and losses, with fewer gains; do not assign roughly half the probability to gaining a point without evidence of an opponent miss. Read `observation.objects` and `observation.history`: positive ball vx approaches the RIGHT player, negative vx approaches the LEFT opponent. Wall or paddle bounces can invalidate linear projection; recent direction reversal matters. The candidate lasts only the requested four frames; then the specified controller resumes tracking the ball. Do not extrapolate the candidate motion for the whole horizon. A distant ball often allows the controller to recover; near contact, a small displacement can change the rebound and later outcome. Successful contact is not itself a point. The opponent can return the ball, leaving the window scoreless. Missing ball or opponent does not guarantee a scoreless window: a serve and point may occur before it ends. Use uncertainty when the observations cannot establish the later bounce sequence.",
+        "outcome_guidance": [
+          "Evidence supports the ball passing the RIGHT paddle before any left-side miss. Consider imminent unreachable contact or later failure under the actual continuation. Current misalignment alone is insufficient if there is time to recover.",
+          "A complete horizon can contain motion, wall reflections and successful paddle contacts without any point. Treat this as a common distinct event, not a middle rating for an average action. An absent ball alone is not proof that the whole window stays scoreless.",
+          "Requires the LEFT opponent actually missing before the player loses, within the horizon. Moving toward or hitting the ball is not scoring. A favorable rebound may produce a gain, but do not infer a guaranteed gain from a locally sensible action."
+        ],
+        "schema_version": "question-program-v1"
+      },
+      "after_hash": "e9a2abfaeea964b6d9846ee407a93f296232bed37c7c9df2af1827385293ab08",
+      "changes": {
+        "name": {
+          "before": "pong-baseline-v1",
+          "after": "pong-first-event-evidence-v2"
+        },
+        "guidance": {
+          "before": "Consider ball direction and speed, paddle position, and the requested action. Use the recent history to distinguish approaching and departing motion. Account for uncertainty and sticky actions.",
+          "after": "Judge the first point within the finite horizon, not eventual victory, current paddle quality, or whether this action sounds good. Level 1 is a real outcome: the rally or serve continues without a point through the full horizon. It is NOT a placeholder for uncertainty between winning and losing. Training experience contains many completed no-point windows and losses, with fewer gains; do not assign roughly half the probability to gaining a point without evidence of an opponent miss. Read `observation.objects` and `observation.history`: positive ball vx approaches the RIGHT player, negative vx approaches the LEFT opponent. Wall or paddle bounces can invalidate linear projection; recent direction reversal matters. The candidate lasts only the requested four frames; then the specified controller resumes tracking the ball. Do not extrapolate the candidate motion for the whole horizon. A distant ball often allows the controller to recover; near contact, a small displacement can change the rebound and later outcome. Successful contact is not itself a point. The opponent can return the ball, leaving the window scoreless. Missing ball or opponent does not guarantee a scoreless window: a serve and point may occur before it ends. Use uncertainty when the observations cannot establish the later bounce sequence."
+        },
+        "outcome_guidance": {
+          "before": [
+            "",
+            "",
+            ""
+          ],
+          "after": [
+            "Evidence supports the ball passing the RIGHT paddle before any left-side miss. Consider imminent unreachable contact or later failure under the actual continuation. Current misalignment alone is insufficient if there is time to recover.",
+            "A complete horizon can contain motion, wall reflections and successful paddle contacts without any point. Treat this as a common distinct event, not a middle rating for an average action. An absent ball alone is not proof that the whole window stays scoreless.",
+            "Requires the LEFT opponent actually missing before the player loses, within the horizon. Moving toward or hitting the ball is not scoring. A favorable rebound may produce a gain, but do not infer a guaranteed gain from a locally sensible action."
+          ]
+        }
+      },
+      "selection": {
+        "accepted": false,
+        "winner_program_hash": "dbaddfa2d5a2a0ea457572b6d5fe4d2d6d8d679a9070121df625a6999dc7c035",
+        "program": {
+          "name": "pong-baseline-v1",
+          "horizon_frames": 240,
+          "guidance": "Consider ball direction and speed, paddle position, and the requested action. Use the recent history to distinguish approaching and departing motion. Account for uncertainty and sticky actions.",
+          "outcome_guidance": [
+            "",
+            "",
+            ""
+          ],
+          "schema_version": "question-program-v1"
+        },
+        "min_brier_improvement": 0.01,
+        "candidates": [
+          {
+            "program_hash": "e9a2abfaeea964b6d9846ee407a93f296232bed37c7c9df2af1827385293ab08",
+            "brier_gain": 0.3059171290627941,
+            "eligible": false,
+            "rejection_reasons": [
+              "mae_regression"
+            ]
+          }
+        ],
+        "backend": "jev",
+        "claim": "offline development selection only; confirm online and on final test"
+      },
+      "metrics": {
+        "before": {
+          "roots": 24,
+          "brier": 0.8641833333333334,
+          "mae": 0.4488888888888889,
+          "sampled_regret": 0.2916666666666667,
+          "informative_roots": 7,
+          "informative_sampled_regret": 1.0,
+          "heuristic_sampled_regret": 0.20833333333333334
+        },
+        "after": {
+          "roots": 24,
+          "brier": 0.5582662042705393,
+          "mae": 0.45486882716049387,
+          "sampled_regret": 0.2916666666666667,
+          "informative_roots": 7,
+          "informative_sampled_regret": 1.0,
+          "heuristic_sampled_regret": 0.20833333333333334
+        }
+      },
+      "original_teacher_api_transcript": "unavailable; no external teacher API was used",
+      "provenance": "Retrospective index of preserved artifacts, not a newly executed learning round"
+    },
+    {
+      "id": "direct-policy-pilot",
+      "model": "jev-1.13.0",
+      "teacher_source": "interactive coding assistant; imported proposal, not an external teacher API run",
+      "feedback_in_archive": "artifacts/policy-online-v1/train-feedback.json",
+      "before": {
+        "name": "pong-action-choice-v1",
+        "guidance": "Which available action should the RIGHT paddle take now to return the ball? Choose for the next requested action duration using current positions and recent motion.",
+        "schema_version": "action-choice-program-v1"
+      },
+      "before_hash": "e3c2d203ffcab06c3e5b355ceb3350044a3f13a9ef5f4c53cb1bd2adb307defa",
+      "after": {
+        "name": "pong-vertical-control-v2",
+        "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+        "schema_version": "action-choice-program-v1"
+      },
+      "after_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "changes": {
+        "name": {
+          "before": "pong-action-choice-v1",
+          "after": "pong-vertical-control-v2"
+        },
+        "guidance": {
+          "before": "Which available action should the RIGHT paddle take now to return the ball? Choose for the next requested action duration using current positions and recent motion.",
+          "after": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation."
+        }
+      },
+      "selection": {
+        "kind": "online-policy-selection-v1",
+        "accepted": false,
+        "rejection_reasons": [
+          "incomplete_point_windows"
+        ],
+        "pairs": [
+          {
+            "seed": 26,
+            "baseline_reward": -5.0,
+            "candidate_reward": 0.0,
+            "gain": 5.0
+          },
+          {
+            "seed": 27,
+            "baseline_reward": -5.0,
+            "candidate_reward": 1.0,
+            "gain": 6.0
+          }
+        ],
+        "selected_program": {
+          "name": "pong-action-choice-v1",
+          "guidance": "Which available action should the RIGHT paddle take now to return the ball? Choose for the next requested action duration using current positions and recent motion.",
+          "schema_version": "action-choice-program-v1"
+        },
+        "interpretation": "predeclared short-window pilot gate; not statistical significance"
+      },
+      "metrics": null,
+      "original_teacher_api_transcript": "unavailable; no external teacher API was used",
+      "provenance": "Retrospective index of preserved artifacts, not a newly executed learning round"
+    }
+  ]
+}

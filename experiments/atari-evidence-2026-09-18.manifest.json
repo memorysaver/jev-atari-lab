@@ -1,0 +1,924 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "atari-evidence-2026-09-18.tar.gz",
+  "sha256": "451c5c66ff6a0b746542678d5c46b69efa4223706df71402e5318883cacb3e72",
+  "file_count": 183,
+  "uncompressed_bytes": 69546911,
+  "files": [
+    {
+      "path": "artifacts/arcade-inventory-20260918.json",
+      "bytes": 54905,
+      "sha256": "1dd57cb03ac38eab3976afac3464ce2b43e9305837345f5e83c39f631bb3901b"
+    },
+    {
+      "path": "artifacts/choice-v1/comparison.json",
+      "bytes": 2741,
+      "sha256": "a45a266c50d6459b954683b0a36eafa36bc042502d8c5dc248cd51493f9d8873"
+    },
+    {
+      "path": "artifacts/choice-v1/diagnostic-ledger.json",
+      "bytes": 241,
+      "sha256": "363cfef4654d50c4b7658a1deb46ea6e4efdff9f312f907dc642f3cac9c09002"
+    },
+    {
+      "path": "artifacts/choice-v1/diagnostic-response.json",
+      "bytes": 1320,
+      "sha256": "e561c805896ec43a3b3bd2476c622ccd0d84d11d9a160828ca044cc13a8d08c9"
+    },
+    {
+      "path": "artifacts/choice-v1/direct-action/api-ledger.json",
+      "bytes": 5703,
+      "sha256": "4664b978f2d6a305549774c7a3716fe16f4d8791ed36e5b56118bf1fb462b52d"
+    },
+    {
+      "path": "artifacts/choice-v1/direct-action/evaluation.json",
+      "bytes": 35116,
+      "sha256": "f0e7aebce062f2fc9e6becdd8fadccf966c6d2b018c6a342c4e356934256fc4b"
+    },
+    {
+      "path": "artifacts/choice-v1/outcome-choice/api-ledger.json",
+      "bytes": 4053,
+      "sha256": "a69aa10e0cb1fe236cbc7c9cdffc120ad7aac6fe5c0d6fd5840deaa460cdc4bb"
+    },
+    {
+      "path": "artifacts/choice-v1/outcome-choice-v2/api-ledger.json",
+      "bytes": 5723,
+      "sha256": "b94aa2da37c72d51e348c0f393b148e6b95290c53b296b520d1cd5502cfdf718"
+    },
+    {
+      "path": "artifacts/choice-v1/outcome-choice-v2/evaluation.json",
+      "bytes": 106481,
+      "sha256": "5020a29ac0da05e288a32e3b303af713c1ed6b9b8e3c4c878d2e5d463a4395f5"
+    },
+    {
+      "path": "artifacts/choice-v1/outcome-choice-v2/predictions.jsonl",
+      "bytes": 54342,
+      "sha256": "02428c4383457c012963b50ea96faa4ce2e39f4a348088f118260a860d59f94d"
+    },
+    {
+      "path": "artifacts/choice-v1/plan.json",
+      "bytes": 1880,
+      "sha256": "15257d96723b00b938aa2181d71ab2c7d93e5f930f613de2de408a4557b62cfc"
+    },
+    {
+      "path": "artifacts/development/dataset.json",
+      "bytes": 272697,
+      "sha256": "5a05227df92b094fd492d5ff5ff962a689a9cfa6e6cfbba93a77920b1ef3963b"
+    },
+    {
+      "path": "artifacts/development/manifest.json",
+      "bytes": 1060,
+      "sha256": "b5f2d802fc4df396fa6b4fcbbc170e0dee5c030bc9aeb225c1b6a10ecf88fd4d"
+    },
+    {
+      "path": "artifacts/heuristic-demo/last-frame.png",
+      "bytes": 724,
+      "sha256": "8131bce946af4fed49d3a9849dfd2f6e9690bedc19ee2d3b4910b17b0b8abf40"
+    },
+    {
+      "path": "artifacts/heuristic-demo/manifest.json",
+      "bytes": 720,
+      "sha256": "586916c7f36e05478691584eeb1f225290ece3ffcbe64e79596060410de7a6a5"
+    },
+    {
+      "path": "artifacts/heuristic-demo/replay.mp4",
+      "bytes": 528450,
+      "sha256": "95e8fb6a01899024d40809e7c81a2772004e4f182babfe585385a34935dfedab"
+    },
+    {
+      "path": "artifacts/heuristic-demo/summary.json",
+      "bytes": 288,
+      "sha256": "3fc0caf7193ad6a6bfe220ea8073b692371f882bb6acd11769f75892e54d9af2"
+    },
+    {
+      "path": "artifacts/heuristic-demo/transitions.jsonl",
+      "bytes": 13053776,
+      "sha256": "f54ad999db3431d591bbd03b1e14dcb30827463397f3a7f9e3fe3d4fc669fd52"
+    },
+    {
+      "path": "artifacts/mock-evaluation/api-ledger.json",
+      "bytes": 471,
+      "sha256": "593b0e91ba65aabe7b422eb5135ac8cfcdba2b4d6114d0868ba6148df8cfdd48"
+    },
+    {
+      "path": "artifacts/mock-evaluation/evaluation.json",
+      "bytes": 12268,
+      "sha256": "49742895ce4d5bfcd00f54d7c7ff408031eba3b6cd866c9c73d951df33259c1e"
+    },
+    {
+      "path": "artifacts/mock-round/development-baseline.json",
+      "bytes": 12268,
+      "sha256": "49742895ce4d5bfcd00f54d7c7ff408031eba3b6cd866c9c73d951df33259c1e"
+    },
+    {
+      "path": "artifacts/mock-round/development-candidate-0.json",
+      "bytes": 12777,
+      "sha256": "9a4990b96fcb296f0adf103ea07b48bc60f423099c5dc4c907fb650ced2f9a34"
+    },
+    {
+      "path": "artifacts/mock-round/jev-ledger.json",
+      "bytes": 1875,
+      "sha256": "43a3e4361c00080111249698c177816c9e39a754d3f20faf2df93365eb519360"
+    },
+    {
+      "path": "artifacts/mock-round/proposals.json",
+      "bytes": 867,
+      "sha256": "1fe47166547e0052d5371abb59a046e46c9eabd718119b05e87752914e6b2a9e"
+    },
+    {
+      "path": "artifacts/mock-round/selected-program.json",
+      "bytes": 364,
+      "sha256": "40811ade71f535e9d1e29f4c6f8cbc88bc50eb844bbc3eda03f39309f24f1f8c"
+    },
+    {
+      "path": "artifacts/mock-round/selection.json",
+      "bytes": 826,
+      "sha256": "0ccab144663cb3da2e07bb326a297d860cba64b0d51acbfa74e8a954d2b6256c"
+    },
+    {
+      "path": "artifacts/mock-round/status.json",
+      "bytes": 351,
+      "sha256": "ebf08ad0e19f493cebe3ce63c1b71413c0c0f6a9cbe572a5dac6ad06ece91592"
+    },
+    {
+      "path": "artifacts/mock-round/teacher-packet.json",
+      "bytes": 476187,
+      "sha256": "d267fed26aef687e9e0dbc52f419f5d9ff68a7b96e7c921565a6bca5794b7a94"
+    },
+    {
+      "path": "artifacts/mock-round/train-evaluation.json",
+      "bytes": 23513,
+      "sha256": "1cbe60447c5a7eafd0a322728fe714d1929f5a477c57dda9c230551d186f2823"
+    },
+    {
+      "path": "artifacts/pilot-v2/development/coverage.json",
+      "bytes": 310,
+      "sha256": "53985e2218a29a6f8dc95c231355f0cc506788c35f32f34be490949251bdc41e"
+    },
+    {
+      "path": "artifacts/pilot-v2/development/dataset.json",
+      "bytes": 1228631,
+      "sha256": "53de9d71e9d2dfa0c5596e72c9a8b7fe207878b5eea230f1d966f88544673586"
+    },
+    {
+      "path": "artifacts/pilot-v2/development/manifest.json",
+      "bytes": 1039,
+      "sha256": "4b675f37a453fca7ec0199edd48a5b6bfa07f9744b471fc3d7de1715ca12220c"
+    },
+    {
+      "path": "artifacts/pilot-v2/diagnostic-ledger.json",
+      "bytes": 240,
+      "sha256": "86117006ababe4c5a96cec928f1658f30bbeafa36309ed0c11c3671bea55f4bb"
+    },
+    {
+      "path": "artifacts/pilot-v2/diagnostic-response.json",
+      "bytes": 4186,
+      "sha256": "f4fd7f483fafc3dbe7748dfbbf5606f242b5c31e1267485cad9cdfff1bb5704d"
+    },
+    {
+      "path": "artifacts/pilot-v2/plan.json",
+      "bytes": 781,
+      "sha256": "459d8d751cf4e10a36c3d8c7034678e762de054a59d5c08b265476fe5d539cef"
+    },
+    {
+      "path": "artifacts/pilot-v2/proposal-provenance.json",
+      "bytes": 493,
+      "sha256": "1f83e62f0d12f7f2b65ad22d22a5d396c4f3dfa9dad479998107a347e555827f"
+    },
+    {
+      "path": "artifacts/pilot-v2/proposals.json",
+      "bytes": 2239,
+      "sha256": "d230d8a2660a472951b44b347f82c6907848f0f20565a6e28d0e4d7811068d37"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/development-baseline.json",
+      "bytes": 72524,
+      "sha256": "7b201a49d133930b75c3d0a55a871b147a0fd080afeacb5c9517c3dc4de35175"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/development-candidate-0.json",
+      "bytes": 74404,
+      "sha256": "349f38db68f0007d52cc763f9f6ed5bb87b3e8b8dfe2da6ea5bd589a94f7d09b"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/jev-ledger.json",
+      "bytes": 11405,
+      "sha256": "569620d4112f146231fc1dca81bdd8267244e6b43a588fd612bee839215cea07"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/proposals.json",
+      "bytes": 2239,
+      "sha256": "d230d8a2660a472951b44b347f82c6907848f0f20565a6e28d0e4d7811068d37"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/selected-program.json",
+      "bytes": 364,
+      "sha256": "40811ade71f535e9d1e29f4c6f8cbc88bc50eb844bbc3eda03f39309f24f1f8c"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/selection.json",
+      "bytes": 903,
+      "sha256": "aeac146d79dc2f19057e79fce44e5c79bbcb8037a382eac5963e93c10cd45090"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/status.json",
+      "bytes": 385,
+      "sha256": "9a97daad175ad6489e675ad095aba38ddd3adbad7314e6f88b1d407b2cd087d7"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/teacher-packet.json",
+      "bytes": 485882,
+      "sha256": "fa3528330b8e7297bf28422f73bb7d583b717ee4cf14cf34f9e94b2624545ab0"
+    },
+    {
+      "path": "artifacts/pilot-v2/round/train-evaluation.json",
+      "bytes": 96753,
+      "sha256": "33032bded8170ffebd8b8987ad31d95d5cbd7776d0c8c97601718da546ca7a3b"
+    },
+    {
+      "path": "artifacts/pilot-v2/summary.json",
+      "bytes": 2619,
+      "sha256": "50937b23fec5785fc53f892fc08516a2ea3e142d8f660efb48f9c7df3d636afd"
+    },
+    {
+      "path": "artifacts/pilot-v2/teacher-packet-v2.json",
+      "bytes": 485882,
+      "sha256": "fa3528330b8e7297bf28422f73bb7d583b717ee4cf14cf34f9e94b2624545ab0"
+    },
+    {
+      "path": "artifacts/pilot-v2/teacher-packet.json",
+      "bytes": 485284,
+      "sha256": "0608769159a9f2bf0ac844aa6081b897983296b2409f97e8f35333ee671bd559"
+    },
+    {
+      "path": "artifacts/pilot-v2/train/coverage.json",
+      "bytes": 305,
+      "sha256": "35319246decc142d7073b9c9f441df018f1f8392634af40ac5295c72bc701c1c"
+    },
+    {
+      "path": "artifacts/pilot-v2/train/dataset.json",
+      "bytes": 1638435,
+      "sha256": "3ee6b499b28db40917d5b919259efcb758591c6a918715e2070c8168407d2369"
+    },
+    {
+      "path": "artifacts/pilot-v2/train/manifest.json",
+      "bytes": 1033,
+      "sha256": "5046e99238eb42ad7167989d1b09c6b25ca08b5e220ed426a52217fd123190ee"
+    },
+    {
+      "path": "artifacts/pilot-v2/train-eval/api-ledger.json",
+      "bytes": 240,
+      "sha256": "53daac6ede55c842c14824e3ff40161e2472c20818f9e3613b5a0a3a42da54d4"
+    },
+    {
+      "path": "artifacts/pilot-v2/train-eval-v2/api-ledger.json",
+      "bytes": 7601,
+      "sha256": "4b090aa8c66bb6ff86a6cf7d15e2562a705ba1c14c3dc05d70339e9c0c01e853"
+    },
+    {
+      "path": "artifacts/pilot-v2/train-eval-v2/evaluation.json",
+      "bytes": 96753,
+      "sha256": "33032bded8170ffebd8b8987ad31d95d5cbd7776d0c8c97601718da546ca7a3b"
+    },
+    {
+      "path": "artifacts/policy-online-v1/candidate-program.json",
+      "bytes": 1112,
+      "sha256": "b4128e51f2599a48f5d99a52d236321ad624ea62659e9959485b5e4b02397727"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/api-ledger.json",
+      "bytes": 95474,
+      "sha256": "4733c8d11b2ac0014080c11ef84aa4a4be8a4a1873fa78e3b559b72dd80480de"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/audited-suite.json",
+      "bytes": 2532,
+      "sha256": "119e2280e182c536f4fe2e30d8716f9a633f792d2b5240978081cc72372ca2c2"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-26/api-ledger.json",
+      "bytes": 47025,
+      "sha256": "52cb4f517c37dc5efc31c43a7b4f07bf91c0fec913fdfa7fa28c77597d0cc966"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-26/last-frame.png",
+      "bytes": 702,
+      "sha256": "705d4c21439ef422a77f9e79ae3fd5e6597e5ac8cce6020cc31e06e05cc91033"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-26/manifest.json",
+      "bytes": 1050,
+      "sha256": "6258f3a0688e5520d351d3810791bd0f38bc1c129ec61e21bb4e7a90787ff153"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-26/replay.mp4",
+      "bytes": 32614,
+      "sha256": "ac6882ccbc78af19e9060f756cf83ddfd5224fcc8d3bb22766bf13cde1da2e26"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-26/summary.json",
+      "bytes": 349,
+      "sha256": "b5135bd6bebd89d551f19aaebce62ca9d049b14e95f41188c546fab1ebf1f39c"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-26/transitions.jsonl",
+      "bytes": 986182,
+      "sha256": "24fd0f7d95c742f4e3c963e1b22959080a85308aa014567e30b3ec0946554c63"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-27/api-ledger.json",
+      "bytes": 48452,
+      "sha256": "46d3cf81ccd6dead9b58059e120df823fe1ef18c6b80c1308cfeabfa65bdcb0c"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-27/last-frame.png",
+      "bytes": 702,
+      "sha256": "705d4c21439ef422a77f9e79ae3fd5e6597e5ac8cce6020cc31e06e05cc91033"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-27/manifest.json",
+      "bytes": 1050,
+      "sha256": "08b1c89f5e3f7a48fa8de64cf9fa5b296a036e1fe8411bb7f2143a550a2e3757"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-27/replay.mp4",
+      "bytes": 33410,
+      "sha256": "c73f5b711b66909cef803a4e25b1ecab94a3ce22608d50f286bbc4f798a91b84"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-27/summary.json",
+      "bytes": 332,
+      "sha256": "a50bb87f1fd7a59ca45f6c02dff7351584d006b2ccf6bb6bdbf2483a41e564eb"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/seed-27/transitions.jsonl",
+      "bytes": 1014963,
+      "sha256": "a8efa52961f6f6d7b7dcbe4d2fdd382dd90663b414a9321aa3ce7ca0f39ef1eb"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-baseline/suite.json",
+      "bytes": 2334,
+      "sha256": "a200f802e733a8be5c4c8ebeb6c2cd3aa41b9d2f761e3f0d3e0fe801df3947df"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate/api-ledger.json",
+      "bytes": 44971,
+      "sha256": "c67d8368a69afc66e52ac0cab92114a5d92276a597ffb38d3aa5a2967f0dc7e8"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate/seed-26/api-ledger.json",
+      "bytes": 44971,
+      "sha256": "c67d8368a69afc66e52ac0cab92114a5d92276a597ffb38d3aa5a2967f0dc7e8"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate/seed-26/manifest.json",
+      "bytes": 1897,
+      "sha256": "4a1e662bbfd6931bc2df96d248a190c6ede1a9d731a970fc22cc815847239090"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate/seed-26/replay.mp4",
+      "bytes": 33268,
+      "sha256": "9e0f11cf4645bca94a6d5bf80c52b6d7e5f5603d186c29d0477421de2f6f0051"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate/seed-26/summary.json",
+      "bytes": 374,
+      "sha256": "c5b29a732732894c7e9685b869b44a5293d01478922d1ee3d1f2534bb08675ca"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate/seed-26/transitions.jsonl",
+      "bytes": 937855,
+      "sha256": "14caf7be0f6239e4af73fa59bdbb6b6bc5e59d5f3134ad6f48df8de1d78225d8"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate/suite.json",
+      "bytes": 2174,
+      "sha256": "2202b2ac0be5874eeca25611645f951d26bbca8e761398d5d84a15a02a273aca"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/api-ledger.json",
+      "bytes": 193116,
+      "sha256": "41fd20583b68399b9468ecdd6c45851339c9393fcaedd04ff53183ec57aebb82"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-26/api-ledger.json",
+      "bytes": 74357,
+      "sha256": "075bd4bebbdaecdb8f51fb501f53e138df33924d916021c2a5fadfdd9d45d2f5"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-26/last-frame.png",
+      "bytes": 714,
+      "sha256": "e67fe456fadb718429e8d85df4a197a5954f293ee3cdf01c7a5f9dbd44ead3cb"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-26/manifest.json",
+      "bytes": 1897,
+      "sha256": "4a1e662bbfd6931bc2df96d248a190c6ede1a9d731a970fc22cc815847239090"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-26/replay.mp4",
+      "bytes": 86892,
+      "sha256": "06ee3939f71486948a13622d7ef72bd782ac181250a2e57757e8ef15fed14f14"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-26/summary.json",
+      "bytes": 351,
+      "sha256": "f138ddd69beb7e817b4f447f75c5ff39bc9b62ccb0b5f525f49c0c0b13a66365"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-26/transitions.jsonl",
+      "bytes": 2556929,
+      "sha256": "7a06f6e3186689331233ce7d8d3a30f214fe9e4d81cd0eba9c2a1ef836037fbb"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-27/api-ledger.json",
+      "bytes": 118762,
+      "sha256": "f4608b071df3691ce758c24c37aae0a771865fbfebb46897ddb7743e1502c599"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-27/last-frame.png",
+      "bytes": 694,
+      "sha256": "7c75926b9b41c54173c8b280d960b238b5431987fa057a45666ebe5ae39063a5"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-27/manifest.json",
+      "bytes": 1897,
+      "sha256": "0ce2c732e1e11ef975802ae7009c179c9d99005232f92003ce30ae568f3653c3"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-27/replay.mp4",
+      "bytes": 89142,
+      "sha256": "8b7332e0e586688572a79cec9c7fd51b7ffd3e07c0f5469c07536c48783c7502"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-27/summary.json",
+      "bytes": 351,
+      "sha256": "635d24dc613e6c638e6e0b28188065e187afec219e86895d9752f6c02ec08e7f"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/seed-27/transitions.jsonl",
+      "bytes": 2570879,
+      "sha256": "b0b172d86e8acef09bb8e58e4ef3850a6f45f891a88b18eaf14e3a1e11bdba22"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-candidate-resumed/suite.json",
+      "bytes": 3261,
+      "sha256": "52d5799a453edd7a84782d6e96745b542b11c56a384a8da9b2ab99810e7c5f45"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-combined-ledger.json",
+      "bytes": 140442,
+      "sha256": "e9644e027cb2ed3c1a743c94c7b330e09ac31afab659c68a171bf10f35513405"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/api-ledger.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-26/last-frame.png",
+      "bytes": 703,
+      "sha256": "12b6c76c029cce8f62a14786475d99a33ea60d68b54ea35f3186200b10c2b129"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-26/manifest.json",
+      "bytes": 746,
+      "sha256": "26766dafd95fc7caf328d4fb1ecb744ada57575722c49c2f24677763b9f677ae"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-26/summary.json",
+      "bytes": 333,
+      "sha256": "63f36165f1c7beca0e768c849f7ade6c3b9bcacf67c15b588cef89dce08c63e6"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-26/transitions.jsonl",
+      "bytes": 2180247,
+      "sha256": "64158b0ee1ef3d6bd9d92a37390978f02ef502c01f4e88a6bc3da8d913b219e0"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-27/last-frame.png",
+      "bytes": 705,
+      "sha256": "8ab15b4c5b782260a273b19310e7a4c1696d454ba8704eec6265c80a1361d8dd"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-27/manifest.json",
+      "bytes": 746,
+      "sha256": "636691438960c499e64e771f164d04c477d4b69aae6f69e3e4cfd9fcbb7d5b2e"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-27/summary.json",
+      "bytes": 315,
+      "sha256": "08f8784ecc1af9d8a216cef7fea7bfd334c18dd01795c39f2bc5e2be556c5e9f"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/seed-27/transitions.jsonl",
+      "bytes": 1405264,
+      "sha256": "132d7a3bcc9c431ea63b245a35e824c3026cd8d3580797cca3d96ba2f8404452"
+    },
+    {
+      "path": "artifacts/policy-online-v1/development-heuristic/suite.json",
+      "bytes": 1917,
+      "sha256": "67f7b946593a5f44435702aee3bc080c88ac4e71a19aa65232353bf58e218d9b"
+    },
+    {
+      "path": "artifacts/policy-online-v1/diagnostic-ledger.json",
+      "bytes": 715,
+      "sha256": "fc269a6359f1f779afce440d745f903cc8d68333d3b01c6e8d8353f0e3782824"
+    },
+    {
+      "path": "artifacts/policy-online-v1/diagnostic-samples.json",
+      "bytes": 1652,
+      "sha256": "9a52a49ce0ff6d4ff180f4ffbc716bf0b6a06e4234f9ec82a1e771e3bf8d1da6"
+    },
+    {
+      "path": "artifacts/policy-online-v1/plan.json",
+      "bytes": 1557,
+      "sha256": "aa3be59b48a9d62590be95d88cdac9ad19c51532cd676bddb0718b4cdacd4d98"
+    },
+    {
+      "path": "artifacts/policy-online-v1/proposal-provenance.json",
+      "bytes": 487,
+      "sha256": "44ca3ffa38fd82457a021d1632c58fa863a3a0086024ea09a86c90751bef6f2d"
+    },
+    {
+      "path": "artifacts/policy-online-v1/selection/selected-program.json",
+      "bytes": 268,
+      "sha256": "fb702dd90621cd92c9a3eeb5da882a842e2e6d511545ad6245c9ada05dcba5f9"
+    },
+    {
+      "path": "artifacts/policy-online-v1/selection/selection.json",
+      "bytes": 752,
+      "sha256": "a40c94895f399127cf8da5b5956fb44d96311d2f2eb3f57eeb9902d23e8bad44"
+    },
+    {
+      "path": "artifacts/policy-online-v1/summary.json",
+      "bytes": 8493,
+      "sha256": "2eaf5ace8871f27b60f61fd24ded381a3a0248bfd471afe35714f6cc01a4dafc"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-baseline/api-ledger.json",
+      "bytes": 20439,
+      "sha256": "83b41c3e6b9411efa9f510f1e8377715ca1562a8efc4d51fee5a4eeee27799f8"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-baseline/seed-20/api-ledger.json",
+      "bytes": 20439,
+      "sha256": "83b41c3e6b9411efa9f510f1e8377715ca1562a8efc4d51fee5a4eeee27799f8"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-baseline/seed-20/manifest.json",
+      "bytes": 1044,
+      "sha256": "5d135119057b01b512160ed3ed9f3905d7b361e13cf72bddfaf7bf8ba0892854"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-baseline/seed-20/replay.mp4",
+      "bytes": 15506,
+      "sha256": "eac1b1b5c26adea51d7ec06c8f4cd3081c42ee7c4b734cc93a10ec7a7f38e4d2"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-baseline/seed-20/summary.json",
+      "bytes": 372,
+      "sha256": "9d9a0a6107245d289778e07bc56f5e4428434f2a3f81894f45d5b97dcf47ac70"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-baseline/seed-20/transitions.jsonl",
+      "bytes": 422847,
+      "sha256": "991db5181b31683d647e5aa930f2802d340cf4d36828d99ae1abe94060f5a09a"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-baseline/suite.json",
+      "bytes": 1290,
+      "sha256": "a3a1fe2d6f9d9ab7242a3ad73797a262671589c6679365ddc3cedf2faa764d02"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-feedback.json",
+      "bytes": 206810,
+      "sha256": "e927c6d039d310ff287b425cda0ef52329ea21e0b3a77a1697c0fbbdf38a77a5"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/api-ledger.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-20/last-frame.png",
+      "bytes": 736,
+      "sha256": "35936f6d38ee391ec831e85297562946d456921110ae4fa3821f04cf766f7835"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-20/manifest.json",
+      "bytes": 740,
+      "sha256": "a2133c3dae483fedda43f8f532a10abaf98dd89b4d90d0e77d720471b99ef701"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-20/summary.json",
+      "bytes": 317,
+      "sha256": "a970065af12f89ec6e5ec246dfb9dc00d58d246088bac989f04d00d3700e85b7"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-20/transitions.jsonl",
+      "bytes": 1905972,
+      "sha256": "a1868948ca8ca9509e53134b16601cd77803490f00d7732e158e1dacb2cc7079"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-21/last-frame.png",
+      "bytes": 716,
+      "sha256": "668e0d8fccddf044b141e3588d3bf7d016fc7611492c86a381fc117920f3b0cf"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-21/manifest.json",
+      "bytes": 740,
+      "sha256": "d1efe0f0a4ff18666866b9a3566a2ee4481e7c79e019373033b850045fb85a39"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-21/summary.json",
+      "bytes": 331,
+      "sha256": "2b3be0c6551fd9b1917c4fe08079c905fafd98734caca2206dd91de1c496f119"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/seed-21/transitions.jsonl",
+      "bytes": 2170070,
+      "sha256": "a168e8c6815d68b9ebb10e2976a8f47bd0db45a790e4dc28c670bc88e2c69837"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-heuristic/suite.json",
+      "bytes": 1882,
+      "sha256": "a8ce6e3c50f861acb14b1077a133d0d9dfeb2ee986619b33cdfe26d223429d8b"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/api-ledger.json",
+      "bytes": 74802,
+      "sha256": "a9296053e053a78a2866d0e4945f2d8aca06fe9eaeb13f2723505fc2bb7fe7c1"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-20/api-ledger.json",
+      "bytes": 26839,
+      "sha256": "f9510d6477e6cf07dfcd4343547ce67bb900954af02be9df7919eca625f09841"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-20/last-frame.png",
+      "bytes": 702,
+      "sha256": "705d4c21439ef422a77f9e79ae3fd5e6597e5ac8cce6020cc31e06e05cc91033"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-20/manifest.json",
+      "bytes": 1044,
+      "sha256": "5d135119057b01b512160ed3ed9f3905d7b361e13cf72bddfaf7bf8ba0892854"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-20/replay.mp4",
+      "bytes": 31709,
+      "sha256": "e3e1878d0106046fe04827cfee3b5eed59a5fc847431c52ba5fcd2e922112d6b"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-20/summary.json",
+      "bytes": 336,
+      "sha256": "9d25c16212c5d8be88f6583ae585c24b721ee57b6583d6cd4f1b54b4cea59165"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-20/transitions.jsonl",
+      "bytes": 987802,
+      "sha256": "2e090a670809c4e6b0bbe0bbd7ec1f312c620d3627878382c7708bba3f23f5d9"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-21/api-ledger.json",
+      "bytes": 47966,
+      "sha256": "39c4e9b28e2a6cd1a0996c87d8970c1f34057a905a41112df093a567c70b0b46"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-21/last-frame.png",
+      "bytes": 702,
+      "sha256": "705d4c21439ef422a77f9e79ae3fd5e6597e5ac8cce6020cc31e06e05cc91033"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-21/manifest.json",
+      "bytes": 1044,
+      "sha256": "8000dbb91815387890348dbe090af3e3bbda71d752b4ec68ee54cc3c34ad7b96"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-21/replay.mp4",
+      "bytes": 32462,
+      "sha256": "7703715be878c3aa0f8618796b5b795fbef127c4cff38d11cfb8585d22e24ba5"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-21/summary.json",
+      "bytes": 335,
+      "sha256": "fb1272471ee7c626280b2fc8fbe5e25ee31c9ab671dc3499bf0e58155871e71b"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/seed-21/transitions.jsonl",
+      "bytes": 1005133,
+      "sha256": "b84b1876af15880669e05078a85500156ff3a0a9d0a3b3dde35d6d48a0192cd1"
+    },
+    {
+      "path": "artifacts/policy-online-v1/train-resumed/suite.json",
+      "bytes": 2319,
+      "sha256": "badc05351241e5c6e4d1e8f9b5cdc574e984bd28cef944533b8ac44d89e6beb4"
+    },
+    {
+      "path": "artifacts/preservation-all/heuristic-demo/frames.jsonl",
+      "bytes": 8518358,
+      "sha256": "5d6ca88b31175aa2d5544c8bc5816246d74dc9754f633ad73799f20572222839"
+    },
+    {
+      "path": "artifacts/preservation-all/heuristic-demo/verification.json",
+      "bytes": 562,
+      "sha256": "b0f821854c6867b3eb8f96698d0f885d530ff121337ca1c8727d296b455d7948"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-baseline__seed-26/frames.jsonl",
+      "bytes": 556547,
+      "sha256": "f94dabe7464d133737b48b2c275cf0586bcdbf75cf985cfb4a99c1f0360dcda1"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-baseline__seed-26/verification.json",
+      "bytes": 590,
+      "sha256": "93fbafbc95ba25186fed4d86126a40d68674a29ddbdf9e150b653d92d8902c0d"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-baseline__seed-27/frames.jsonl",
+      "bytes": 574648,
+      "sha256": "f8e0bbc756989769b8ec91a3ba639b8c684f3f43798990593b4152bd08a036e1"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-baseline__seed-27/verification.json",
+      "bytes": 589,
+      "sha256": "883e78548984578dc893b2985c986b5f8450d7762e967ea587f728fd2bd4e957"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-candidate-resumed__seed-26/frames.jsonl",
+      "bytes": 1415532,
+      "sha256": "5c6fdbc1181beb3ba5f5f86510e3c049beb05e30aac9485c6d3f698064e3630e"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-candidate-resumed__seed-26/verification.json",
+      "bytes": 599,
+      "sha256": "057f23eacfbac2d33d0d6d9b9b1d999a5bc77da4b60f521346b1f1cac969bcf9"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-candidate-resumed__seed-27/frames.jsonl",
+      "bytes": 1415219,
+      "sha256": "dca49adde7de11bf4d9a08b8fdbf33a8b32577525d2fba3a1a6961ba951c33f5"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-candidate-resumed__seed-27/verification.json",
+      "bytes": 598,
+      "sha256": "1c584d4166456301fc1c1da10a2a2101464e50e55e1ef807d74294d6a2a507f3"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-candidate__seed-26/frames.jsonl",
+      "bytes": 527921,
+      "sha256": "4747b66956a1aa4cc61cbb81ab79f7805b33312a479e0f8d614cce7061612b05"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-candidate__seed-26/verification.json",
+      "bytes": 592,
+      "sha256": "fb82e1277d094031ff1aa3141709a715fb6555afee2cf20099225bc85e19be1b"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-heuristic__seed-26/frames.jsonl",
+      "bytes": 1414743,
+      "sha256": "f455b1c546207d89b325d9937bad5e1d8e701c22b65869683b93399104209b85"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-heuristic__seed-26/verification.json",
+      "bytes": 592,
+      "sha256": "d3d62ac53b4ccc43f62d9691a7de0beb123a9ea95f77597431411c6987196681"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-heuristic__seed-27/frames.jsonl",
+      "bytes": 916273,
+      "sha256": "7bc5f46b9f500b1daa1e10edaf00c65f19cf3756c4266f06dbc685bcf8486fa0"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__development-heuristic__seed-27/verification.json",
+      "bytes": 591,
+      "sha256": "2d8c5e41fb68f3cb398c838c68db51ffda6b90723e91753bd535f8dd30e4f6d2"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-baseline__seed-20/frames.jsonl",
+      "bytes": 239213,
+      "sha256": "e0a212fd8adc711b72e2d92b5737928d608e1719d50aa7f5dbb20ad1aeb9f571"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-baseline__seed-20/verification.json",
+      "bytes": 585,
+      "sha256": "761de64099f98fc0cf8aeb2b8b72b099f28bcc50f5286236f1f6daf9e9f64d7a"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-heuristic__seed-20/frames.jsonl",
+      "bytes": 1240500,
+      "sha256": "05603edbc4a13153e85bf3663f58aeec45b672ed3bdab384f0a1e9566bf9d8d9"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-heuristic__seed-20/verification.json",
+      "bytes": 586,
+      "sha256": "34647711cb571380639faf87b6b6b1b65b1de878cfacec99e8c70d6d0287790f"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-heuristic__seed-21/frames.jsonl",
+      "bytes": 1413679,
+      "sha256": "af0c7d3845d0da2475251d57d17b29d5b99e681c4fa0f9e1513cf4de1d5e4a1e"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-heuristic__seed-21/verification.json",
+      "bytes": 585,
+      "sha256": "e64c4269ef526253b62186f9a8dd4ac9d2d280d12431a65c64449e30c0b49751"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-resumed__seed-20/frames.jsonl",
+      "bytes": 555618,
+      "sha256": "2c1bc0cf52a51d14d0efa9253f1118cc336c289822ce7ccd25cb65f1596295fd"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-resumed__seed-20/verification.json",
+      "bytes": 583,
+      "sha256": "1db10e094ce3e2147c33f9b2287a0154972cdc7ec3b70fa61e4fc2ae1cfd76e2"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-resumed__seed-21/frames.jsonl",
+      "bytes": 568275,
+      "sha256": "9dbe270a4cd5c530ce0f9c66255a6ca589a91d2cf7c8072c4fbcbf3c0605a86b"
+    },
+    {
+      "path": "artifacts/preservation-all/policy-online-v1__train-resumed__seed-21/verification.json",
+      "bytes": 582,
+      "sha256": "677b79a833f360b6d905775691c4223f373ee793b4e0cbf4d57c63192df14185"
+    },
+    {
+      "path": "artifacts/preservation-all/random-baseline/frames.jsonl",
+      "bytes": 2769458,
+      "sha256": "c7f6a6b3001e82796d4f15e97c8222db39bf29c07ab7439ac3ef4214fe7549f1"
+    },
+    {
+      "path": "artifacts/preservation-all/random-baseline/verification.json",
+      "bytes": 562,
+      "sha256": "e2667f5a14be03b956a6911244f0327bd19214334fb52b09bf52cb8cc969c66a"
+    },
+    {
+      "path": "artifacts/preservation-all/report.json",
+      "bytes": 8605,
+      "sha256": "a951d1f98f4898a4abda9ccc780ee4d0eab31b9d712887ad4f7a9c947b580e27"
+    },
+    {
+      "path": "artifacts/preservation-replay/seed-26/frames.jsonl",
+      "bytes": 1415532,
+      "sha256": "5c6fdbc1181beb3ba5f5f86510e3c049beb05e30aac9485c6d3f698064e3630e"
+    },
+    {
+      "path": "artifacts/preservation-replay/seed-26/verification.json",
+      "bytes": 599,
+      "sha256": "057f23eacfbac2d33d0d6d9b9b1d999a5bc77da4b60f521346b1f1cac969bcf9"
+    },
+    {
+      "path": "artifacts/preservation-replay/seed-27/frames.jsonl",
+      "bytes": 1415219,
+      "sha256": "dca49adde7de11bf4d9a08b8fdbf33a8b32577525d2fba3a1a6961ba951c33f5"
+    },
+    {
+      "path": "artifacts/preservation-replay/seed-27/replay.mp4",
+      "bytes": 89142,
+      "sha256": "8b7332e0e586688572a79cec9c7fd51b7ffd3e07c0f5469c07536c48783c7502"
+    },
+    {
+      "path": "artifacts/preservation-replay/seed-27/verification.json",
+      "bytes": 598,
+      "sha256": "1c584d4166456301fc1c1da10a2a2101464e50e55e1ef807d74294d6a2a507f3"
+    },
+    {
+      "path": "artifacts/random-baseline/last-frame.png",
+      "bytes": 722,
+      "sha256": "7d6c3015ef73edaf29b3dc3ba49aeb7c3eb8280641e7df80bdc72308cf1e8685"
+    },
+    {
+      "path": "artifacts/random-baseline/manifest.json",
+      "bytes": 709,
+      "sha256": "7dba5759fa79d4e579215177ca37e19631eba3ce6df394cf1b77dd76448ac662"
+    },
+    {
+      "path": "artifacts/random-baseline/summary.json",
+      "bytes": 299,
+      "sha256": "ef3b8f46936815e38e534ce169a214db47dfc84a2ba689cfa30117197265fe91"
+    },
+    {
+      "path": "artifacts/random-baseline/transitions.jsonl",
+      "bytes": 4268820,
+      "sha256": "f02ba9cd9d2d7cb991f41137d94c7f80ddff5914d3abfc326b3128c463471bed"
+    },
+    {
+      "path": "artifacts/teacher-packet.json",
+      "bytes": 461088,
+      "sha256": "8964f39d1e836434571c50d3f2dd726d468ac1907fc659cd2f8d15dad3ff42e4"
+    },
+    {
+      "path": "artifacts/train/dataset.json",
+      "bytes": 615595,
+      "sha256": "b09c51a425fdabe23aa59a890eaa33c4e60ec4c0071ede6904ea5ed72da46012"
+    },
+    {
+      "path": "artifacts/train/manifest.json",
+      "bytes": 1057,
+      "sha256": "002d904200263f7bf42b7b5620726056e995944faf9a32deff038f3098439353"
+    }
+  ]
+}

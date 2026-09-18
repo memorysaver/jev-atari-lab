@@ -1,0 +1,689 @@
+{
+  "decision": {
+    "decision": 111,
+    "observation": {
+      "schema_version": "atari-object-observation-v1",
+      "extractor_version": "pong-ocatari-derived-v1",
+      "game": "ALE/Pong-v5",
+      "observation_source": "ram",
+      "coordinates": {
+        "width_px": 160,
+        "height_px": 210,
+        "origin": "top_left",
+        "x_positive": "right",
+        "y_positive": "down",
+        "bbox_format": "x_y_width_height",
+        "velocity_unit": "pixels_per_raw_frame"
+      },
+      "control": {
+        "requested_hold_frames": 4,
+        "sticky_action_probability": 0.25,
+        "last_requested_action_id": 2,
+        "last_executed_action_id": null
+      },
+      "objects": [
+        {
+          "id": "player",
+          "kind": "paddle",
+          "present": true,
+          "bbox": [
+            140,
+            181,
+            4,
+            13
+          ],
+          "velocity": [
+            0.0,
+            -2.25
+          ],
+          "velocity_valid": true,
+          "sample_interval_raw_frames": 4,
+          "age_since_last_seen_raw_frames": 0
+        },
+        {
+          "id": "opponent",
+          "kind": "paddle",
+          "present": true,
+          "bbox": [
+            16,
+            105,
+            4,
+            15
+          ],
+          "velocity": [
+            0.0,
+            -1.0
+          ],
+          "velocity_valid": true,
+          "sample_interval_raw_frames": 4,
+          "age_since_last_seen_raw_frames": 0
+        },
+        {
+          "id": "ball",
+          "kind": "ball",
+          "present": true,
+          "bbox": [
+            72,
+            107,
+            2,
+            4
+          ],
+          "velocity": [
+            -1.0,
+            -1.0
+          ],
+          "velocity_valid": true,
+          "sample_interval_raw_frames": 4,
+          "age_since_last_seen_raw_frames": 0
+        }
+      ],
+      "history": [
+        {
+          "offset_raw_frames": -12,
+          "boxes": {
+            "player": [
+              140,
+              190,
+              4,
+              4
+            ],
+            "opponent": [
+              16,
+              75,
+              4,
+              15
+            ],
+            "ball": null
+          }
+        },
+        {
+          "offset_raw_frames": -8,
+          "boxes": {
+            "player": [
+              140,
+              190,
+              4,
+              4
+            ],
+            "opponent": [
+              16,
+              69,
+              4,
+              15
+            ],
+            "ball": null
+          }
+        },
+        {
+          "offset_raw_frames": -4,
+          "boxes": {
+            "player": [
+              140,
+              190,
+              4,
+              4
+            ],
+            "opponent": [
+              16,
+              109,
+              4,
+              15
+            ],
+            "ball": [
+              76,
+              111,
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "offset_raw_frames": 0,
+          "boxes": {
+            "player": [
+              140,
+              181,
+              4,
+              13
+            ],
+            "opponent": [
+              16,
+              105,
+              4,
+              15
+            ],
+            "ball": [
+              72,
+              107,
+              2,
+              4
+            ]
+          }
+        }
+      ],
+      "events_observed": [],
+      "candidate_actions": [
+        {
+          "id": 0,
+          "ale_meaning": "NOOP",
+          "effect": "hold",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 1,
+          "ale_meaning": "FIRE",
+          "effect": "hold",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 2,
+          "ale_meaning": "RIGHT",
+          "effect": "up",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 3,
+          "ale_meaning": "LEFT",
+          "effect": "down",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 4,
+          "ale_meaning": "RIGHTFIRE",
+          "effect": "up",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 5,
+          "ale_meaning": "LEFTFIRE",
+          "effect": "down",
+          "hold_raw_frames": 4
+        }
+      ]
+    },
+    "action": 2,
+    "prediction": {
+      "backend": "jev",
+      "requested_model": "jev-1.13.0",
+      "response_model": "jev-1.13.0",
+      "program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "usage": {
+        "input_tokens": 1675,
+        "output_tokens": 68
+      },
+      "elapsed_seconds": 0.25212926510721445,
+      "prediction_type": "action-choice",
+      "selection_rule": "probability-argmax-provider-tie-v1",
+      "chosen_action": 2,
+      "action_probabilities": {
+        "0": 0.05,
+        "1": 0.0,
+        "2": 0.82,
+        "3": 0.13,
+        "4": 0.0,
+        "5": 0.0
+      },
+      "choice_answer": {
+        "choice": "RIGHT",
+        "reported_choice": "RIGHT",
+        "choice_matches_probabilities": true,
+        "probabilities": {
+          "NOOP": 0.05,
+          "FIRE": 0.0,
+          "RIGHT": 0.82,
+          "LEFT": 0.13,
+          "RIGHTFIRE": 0.0,
+          "LEFTFIRE": 0.0
+        },
+        "reported_probabilities": {
+          "NOOP": 0.05,
+          "FIRE": 0.0,
+          "RIGHT": 0.82,
+          "LEFT": 0.13,
+          "RIGHTFIRE": 0.0,
+          "LEFTFIRE": 0.0
+        },
+        "confidence": 0.78
+      }
+    },
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_frames": 4,
+    "next_observation": {
+      "schema_version": "atari-object-observation-v1",
+      "extractor_version": "pong-ocatari-derived-v1",
+      "game": "ALE/Pong-v5",
+      "observation_source": "ram",
+      "coordinates": {
+        "width_px": 160,
+        "height_px": 210,
+        "origin": "top_left",
+        "x_positive": "right",
+        "y_positive": "down",
+        "bbox_format": "x_y_width_height",
+        "velocity_unit": "pixels_per_raw_frame"
+      },
+      "control": {
+        "requested_hold_frames": 4,
+        "sticky_action_probability": 0.25,
+        "last_requested_action_id": 2,
+        "last_executed_action_id": null
+      },
+      "objects": [
+        {
+          "id": "player",
+          "kind": "paddle",
+          "present": true,
+          "bbox": [
+            140,
+            161,
+            4,
+            15
+          ],
+          "velocity": [
+            0.0,
+            -5.0
+          ],
+          "velocity_valid": true,
+          "sample_interval_raw_frames": 4,
+          "age_since_last_seen_raw_frames": 0
+        },
+        {
+          "id": "opponent",
+          "kind": "paddle",
+          "present": true,
+          "bbox": [
+            16,
+            101,
+            4,
+            15
+          ],
+          "velocity": [
+            0.0,
+            -1.0
+          ],
+          "velocity_valid": true,
+          "sample_interval_raw_frames": 4,
+          "age_since_last_seen_raw_frames": 0
+        },
+        {
+          "id": "ball",
+          "kind": "ball",
+          "present": true,
+          "bbox": [
+            68,
+            103,
+            2,
+            4
+          ],
+          "velocity": [
+            -1.0,
+            -1.0
+          ],
+          "velocity_valid": true,
+          "sample_interval_raw_frames": 4,
+          "age_since_last_seen_raw_frames": 0
+        }
+      ],
+      "history": [
+        {
+          "offset_raw_frames": -12,
+          "boxes": {
+            "player": [
+              140,
+              190,
+              4,
+              4
+            ],
+            "opponent": [
+              16,
+              69,
+              4,
+              15
+            ],
+            "ball": null
+          }
+        },
+        {
+          "offset_raw_frames": -8,
+          "boxes": {
+            "player": [
+              140,
+              190,
+              4,
+              4
+            ],
+            "opponent": [
+              16,
+              109,
+              4,
+              15
+            ],
+            "ball": [
+              76,
+              111,
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "offset_raw_frames": -4,
+          "boxes": {
+            "player": [
+              140,
+              181,
+              4,
+              13
+            ],
+            "opponent": [
+              16,
+              105,
+              4,
+              15
+            ],
+            "ball": [
+              72,
+              107,
+              2,
+              4
+            ]
+          }
+        },
+        {
+          "offset_raw_frames": 0,
+          "boxes": {
+            "player": [
+              140,
+              161,
+              4,
+              15
+            ],
+            "opponent": [
+              16,
+              101,
+              4,
+              15
+            ],
+            "ball": [
+              68,
+              103,
+              2,
+              4
+            ]
+          }
+        }
+      ],
+      "events_observed": [],
+      "candidate_actions": [
+        {
+          "id": 0,
+          "ale_meaning": "NOOP",
+          "effect": "hold",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 1,
+          "ale_meaning": "FIRE",
+          "effect": "hold",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 2,
+          "ale_meaning": "RIGHT",
+          "effect": "up",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 3,
+          "ale_meaning": "LEFT",
+          "effect": "down",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 4,
+          "ale_meaning": "RIGHTFIRE",
+          "effect": "up",
+          "hold_raw_frames": 4
+        },
+        {
+          "id": 5,
+          "ale_meaning": "LEFTFIRE",
+          "effect": "down",
+          "hold_raw_frames": 4
+        }
+      ]
+    },
+    "terminated": false,
+    "truncated": false
+  },
+  "request": {
+    "model": "jev-1.13.0",
+    "state": {
+      "observation": {
+        "schema_version": "atari-object-observation-v1",
+        "extractor_version": "pong-ocatari-derived-v1",
+        "game": "ALE/Pong-v5",
+        "observation_source": "ram",
+        "coordinates": {
+          "width_px": 160,
+          "height_px": 210,
+          "origin": "top_left",
+          "x_positive": "right",
+          "y_positive": "down",
+          "bbox_format": "x_y_width_height",
+          "velocity_unit": "pixels_per_raw_frame"
+        },
+        "control": {
+          "requested_hold_frames": 4,
+          "sticky_action_probability": 0.25,
+          "last_requested_action_id": 2,
+          "last_executed_action_id": null
+        },
+        "objects": [
+          {
+            "id": "player",
+            "kind": "paddle",
+            "present": true,
+            "bbox": [
+              140,
+              181,
+              4,
+              13
+            ],
+            "velocity": [
+              0.0,
+              -2.25
+            ],
+            "velocity_valid": true,
+            "sample_interval_raw_frames": 4,
+            "age_since_last_seen_raw_frames": 0
+          },
+          {
+            "id": "opponent",
+            "kind": "paddle",
+            "present": true,
+            "bbox": [
+              16,
+              105,
+              4,
+              15
+            ],
+            "velocity": [
+              0.0,
+              -1.0
+            ],
+            "velocity_valid": true,
+            "sample_interval_raw_frames": 4,
+            "age_since_last_seen_raw_frames": 0
+          },
+          {
+            "id": "ball",
+            "kind": "ball",
+            "present": true,
+            "bbox": [
+              72,
+              107,
+              2,
+              4
+            ],
+            "velocity": [
+              -1.0,
+              -1.0
+            ],
+            "velocity_valid": true,
+            "sample_interval_raw_frames": 4,
+            "age_since_last_seen_raw_frames": 0
+          }
+        ],
+        "history": [
+          {
+            "offset_raw_frames": -12,
+            "boxes": {
+              "player": [
+                140,
+                190,
+                4,
+                4
+              ],
+              "opponent": [
+                16,
+                75,
+                4,
+                15
+              ],
+              "ball": null
+            }
+          },
+          {
+            "offset_raw_frames": -8,
+            "boxes": {
+              "player": [
+                140,
+                190,
+                4,
+                4
+              ],
+              "opponent": [
+                16,
+                69,
+                4,
+                15
+              ],
+              "ball": null
+            }
+          },
+          {
+            "offset_raw_frames": -4,
+            "boxes": {
+              "player": [
+                140,
+                190,
+                4,
+                4
+              ],
+              "opponent": [
+                16,
+                109,
+                4,
+                15
+              ],
+              "ball": [
+                76,
+                111,
+                2,
+                4
+              ]
+            }
+          },
+          {
+            "offset_raw_frames": 0,
+            "boxes": {
+              "player": [
+                140,
+                181,
+                4,
+                13
+              ],
+              "opponent": [
+                16,
+                105,
+                4,
+                15
+              ],
+              "ball": [
+                72,
+                107,
+                2,
+                4
+              ]
+            }
+          }
+        ],
+        "events_observed": [],
+        "candidate_actions": [
+          {
+            "id": 0,
+            "ale_meaning": "NOOP",
+            "effect": "hold",
+            "hold_raw_frames": 4
+          },
+          {
+            "id": 1,
+            "ale_meaning": "FIRE",
+            "effect": "hold",
+            "hold_raw_frames": 4
+          },
+          {
+            "id": 2,
+            "ale_meaning": "RIGHT",
+            "effect": "up",
+            "hold_raw_frames": 4
+          },
+          {
+            "id": 3,
+            "ale_meaning": "LEFT",
+            "effect": "down",
+            "hold_raw_frames": 4
+          },
+          {
+            "id": 4,
+            "ale_meaning": "RIGHTFIRE",
+            "effect": "up",
+            "hold_raw_frames": 4
+          },
+          {
+            "id": 5,
+            "ale_meaning": "LEFTFIRE",
+            "effect": "down",
+            "hold_raw_frames": 4
+          }
+        ]
+      }
+    },
+    "questions": {
+      "next_action": {
+        "type": "choice",
+        "instructions": {
+          "question": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+          "read": "`observation.objects`, `observation.history` and `observation.candidate_actions`",
+          "coordinates": "x increases right; y increases down. Follow the action effect descriptions, not the direction implied by joystick names."
+        },
+        "criteria": {
+          "NOOP": "hold movement of the RIGHT paddle for 4 raw frames (action 0).",
+          "FIRE": "hold movement of the RIGHT paddle for 4 raw frames (action 1).",
+          "RIGHT": "up movement of the RIGHT paddle for 4 raw frames (action 2).",
+          "LEFT": "down movement of the RIGHT paddle for 4 raw frames (action 3).",
+          "RIGHTFIRE": "up movement of the RIGHT paddle for 4 raw frames (action 4).",
+          "LEFTFIRE": "down movement of the RIGHT paddle for 4 raw frames (action 5)."
+        }
+      }
+    }
+  },
+  "response": null,
+  "input_origin": "reconstructed-from-recorded-program-and-observation"
+}

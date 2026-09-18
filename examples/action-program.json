@@ -1,0 +1,5 @@
+{
+  "name": "pong-action-choice-v1",
+  "guidance": "Which available action should the RIGHT paddle take now to return the ball? Choose for the next requested action duration using current positions and recent motion.",
+  "schema_version": "action-choice-program-v1"
+}

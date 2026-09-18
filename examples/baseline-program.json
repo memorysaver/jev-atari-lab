@@ -1,0 +1,11 @@
+{
+  "name": "pong-baseline-v1",
+  "horizon_frames": 240,
+  "guidance": "Consider ball direction and speed, paddle position, and the requested action. Use the recent history to distinguish approaching and departing motion. Account for uncertainty and sticky actions.",
+  "outcome_guidance": [
+    "",
+    "",
+    ""
+  ],
+  "schema_version": "question-program-v1"
+}

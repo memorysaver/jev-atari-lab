@@ -1,0 +1,13 @@
+{
+  "candidates": [
+    {
+      "name": "motion-and-uncertainty-v1",
+      "guidance": "Use multiple historical ball positions to estimate approach direction. Near a change of direction, do not extrapolate an older velocity through a reflection. Distinguish motion toward the player from motion toward the opponent. Treat a missing ball or an invalid velocity as missing evidence. Account for the requested action duration and the fixed continuation policy, not just the immediate distance to the ball.",
+      "outcome_guidance": [
+        "Look for an approaching ball that cannot be covered by the player paddle under the specified continuation.",
+        "No point must occur during the entire horizon; this is not a substitute for uncertainty.",
+        "Consider whether the opponent will miss after the ball travels or rebounds toward it."
+      ]
+    }
+  ]
+}

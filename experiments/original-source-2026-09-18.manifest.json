@@ -1,0 +1,138 @@
+{
+  "kind": "source-archive-v1",
+  "archive": "original-source-2026-09-18.tar.gz",
+  "sha256": "ae2af43e3abb3a61ade5ee4c52593c39abd27de7b25dcd2557ff5d8e49492671",
+  "original_commit": "2b61a64c1aeb70a66e281ff1c6de793d3d4f9b63",
+  "files": [
+    {
+      "path": ".python-version",
+      "bytes": 5,
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1773,
+      "sha256": "b3de4672be48190ab5f189dfde1c1957492bb39f296b87cf81e448964c14ab3e"
+    },
+    {
+      "path": "examples/action-program.json",
+      "bytes": 268,
+      "sha256": "fb702dd90621cd92c9a3eeb5da882a842e2e6d511545ad6245c9ada05dcba5f9"
+    },
+    {
+      "path": "examples/baseline-program.json",
+      "bytes": 364,
+      "sha256": "40811ade71f535e9d1e29f4c6f8cbc88bc50eb844bbc3eda03f39309f24f1f8c"
+    },
+    {
+      "path": "examples/first-event-proposals.json",
+      "bytes": 2239,
+      "sha256": "d230d8a2660a472951b44b347f82c6907848f0f20565a6e28d0e4d7811068d37"
+    },
+    {
+      "path": "examples/manual-proposals.json",
+      "bytes": 867,
+      "sha256": "1fe47166547e0052d5371abb59a046e46c9eabd718119b05e87752914e6b2a9e"
+    },
+    {
+      "path": "examples/vertical-policy-program.json",
+      "bytes": 1112,
+      "sha256": "b4128e51f2599a48f5d99a52d236321ad624ea62659e9959485b5e4b02397727"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 819,
+      "sha256": "4fc96fe425d3fd4299649ac74cbfde7657732d0936bf46a1bcf245af7f4a910b"
+    },
+    {
+      "path": "src/jev_atari/__init__.py",
+      "bytes": 98,
+      "sha256": "a207dcea53389a7dc4275dbf3ec9455927c282c3fca99db6c43c2649054d6584"
+    },
+    {
+      "path": "src/jev_atari/choice.py",
+      "bytes": 9866,
+      "sha256": "9eed348937af75ddb43a98dc9d9585e7ea999b904fdfe7d38828048d12aa4bdb"
+    },
+    {
+      "path": "src/jev_atari/cli.py",
+      "bytes": 13454,
+      "sha256": "8720458b60741cdf69428f4f9867cfa30816e05094e68dd882cd85e744b4e26b"
+    },
+    {
+      "path": "src/jev_atari/environment.py",
+      "bytes": 6599,
+      "sha256": "56e6940a8f919c80e1c5319b2c0786cd4a612188d408db901ab3f7df5a78d286"
+    },
+    {
+      "path": "src/jev_atari/experiment.py",
+      "bytes": 23534,
+      "sha256": "692d09c0977b6d922de248f8c312b37517a05b99838517664788dfc26f225d23"
+    },
+    {
+      "path": "src/jev_atari/io.py",
+      "bytes": 757,
+      "sha256": "14201a4d3270a1885e83a44816882a75e0af4c0d06d66295df49428eb7938543"
+    },
+    {
+      "path": "src/jev_atari/learning.py",
+      "bytes": 13191,
+      "sha256": "1ad1b36e5464551151ed1ccd91a019f2c79ed92a39a78e82f75a655079e61c46"
+    },
+    {
+      "path": "src/jev_atari/models.py",
+      "bytes": 8021,
+      "sha256": "2ecbe6138a9909fe0681cca2d58f4a8dce619fe2efe12cdb223268fae383b7ac"
+    },
+    {
+      "path": "src/jev_atari/observation.py",
+      "bytes": 4952,
+      "sha256": "cfbf212e4f6a0edc860247e5e66596808b7ae5c5094a1335ff1d74678a940a19"
+    },
+    {
+      "path": "src/jev_atari/online.py",
+      "bytes": 10718,
+      "sha256": "53934431494f00277b51cd967863ad1932618ed9baf43af460e9bcefd7bbba4b"
+    },
+    {
+      "path": "src/jev_atari/policies.py",
+      "bytes": 1492,
+      "sha256": "1d139615abcdaaa64e6cbb0bcdbae7be3751e4049756937545cbdd4efce76f0e"
+    },
+    {
+      "path": "src/jev_atari/program.py",
+      "bytes": 4396,
+      "sha256": "ab2a5858e58f83213241e8d4f4f5fb7d1f5a38d9d0f368b01347b54d6623ae6d"
+    },
+    {
+      "path": "tests/test_choice.py",
+      "bytes": 8653,
+      "sha256": "035805e6c222f9bde6ae87c63c58e32b4423e18690e2a219316494491211a6ac"
+    },
+    {
+      "path": "tests/test_environment.py",
+      "bytes": 3309,
+      "sha256": "60998928fc13976a067ad1af44e10683e339d6288f4fbbce416080488a43d6cd"
+    },
+    {
+      "path": "tests/test_learning.py",
+      "bytes": 9626,
+      "sha256": "8a3246aacd928b97d26803f0e2294ecc12e68bb84ba11e40bf56caed75b28fd1"
+    },
+    {
+      "path": "tests/test_models.py",
+      "bytes": 5249,
+      "sha256": "a745b2ed8cb568f31da99ea5e6dc977abd35f80162256ca9adcd065a6744a4bc"
+    },
+    {
+      "path": "tests/test_online.py",
+      "bytes": 6434,
+      "sha256": "67e5da27aaf7b276a7febea78b8a8ff3bffd8b1ef43ecfd7c0068eca4cf39821"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 33617,
+      "sha256": "e7f83c985572b97f98547de09edb26d35143e7abd85f0781c7029a031e764cae"
+    }
+  ]
+}
