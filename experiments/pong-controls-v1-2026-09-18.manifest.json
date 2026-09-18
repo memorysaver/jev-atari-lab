@@ -1,0 +1,979 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "pong-controls-v1-2026-09-18.tar.gz",
+  "sha256": "9c1c9914a44b54bd30be3687ba7535e9433f181f65bb4f6dae7f0b5cce9273bb",
+  "file_count": 194,
+  "uncompressed_bytes": 122452573,
+  "files": [
+    {
+      "path": "pong-controls-v1/api-ledger.json",
+      "bytes": 950284,
+      "sha256": "6d63aad0cb1caf8d5fcd61ab1281cba18d9532f31eff6b625c68e06ff5ba7d4c"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-36/frames.jsonl",
+      "bytes": 1410506,
+      "sha256": "ec4ed28ec9c6c77ce5ad51ef1b248f3cc7a5cef96068298450dc7ffbb89ad80b"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-36/verification.json",
+      "bytes": 574,
+      "sha256": "a58710ed4c54fa50f89777b818369b7bc279fd1ce5941e6166bd8fbb30f9c092"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-37/frames.jsonl",
+      "bytes": 1410568,
+      "sha256": "5a4b0619a9f58a756b7e2d3a851cd71cf041db819e51459588cc5812ed4ff75a"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-37/verification.json",
+      "bytes": 573,
+      "sha256": "563965181b3cd03ccbb2be7ee83462d59cc6b9a6f09d01240027de33274b6551"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-46/frames.jsonl",
+      "bytes": 1410693,
+      "sha256": "8df6ed1f43b1c5143ee125f644e5f6af82aff9e957c0a08e7074525293f8fd12"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-46/verification.json",
+      "bytes": 574,
+      "sha256": "3b4f8ded34d310d0df27988b907626d2d96582828c470bec3dcd6c6f1321cbfc"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-47/frames.jsonl",
+      "bytes": 1410496,
+      "sha256": "ea31dd55ee6b4781a2eab191baa5e21673feae3d81383cba7962692d56f2f72d"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-original/seed-47/verification.json",
+      "bytes": 573,
+      "sha256": "d3065366f198e547f66816f1809e70eb0fd7ab285bf1fbaba1db5f03fb9c7ad2"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-36/frames.jsonl",
+      "bytes": 1414075,
+      "sha256": "e62626e98d6f4c8d28980748dcc8164e8345933831f91d2c9e914001cba6cd9d"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-36/verification.json",
+      "bytes": 573,
+      "sha256": "4f525881637dba50ddbb65689f7eb9efc148d8074bab9d86064d4db19e5a1d61"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-37/frames.jsonl",
+      "bytes": 1414189,
+      "sha256": "861bc11ab358101e63fba84a182d19529dc122f1d66bb5a9a5e4344438f0050b"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-37/verification.json",
+      "bytes": 572,
+      "sha256": "dd3b88a1ee26f1d1be1b9814d0a3b86c72ff71331ffbbb29381bcd6f73f75bac"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-46/frames.jsonl",
+      "bytes": 1414427,
+      "sha256": "45803fb20e1889609b43b3c7c75411103bed359ad6d41bcbb75f132881354c66"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-46/verification.json",
+      "bytes": 572,
+      "sha256": "147f8e6ba6db11ee5d3d62a8077788ca39a071b8cd8d6a9ef4969c8036498ab2"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-47/frames.jsonl",
+      "bytes": 1415502,
+      "sha256": "9e2d0d7e5fcbe341c74f2dca2d3de5386d7af794e958a07b68137c9f01774f86"
+    },
+    {
+      "path": "pong-controls-v1/audit/jev-vertical/seed-47/verification.json",
+      "bytes": 572,
+      "sha256": "78ee98f4cf209a9d88f7ae0a0e149697df4f2a9883289261a86dfb1d77140ba4"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-36/frames.jsonl",
+      "bytes": 1414392,
+      "sha256": "2134d0183f1ddc3ed2584a8f516d3519055c0830f4dfecadba5c3be395e00bcc"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-36/verification.json",
+      "bytes": 571,
+      "sha256": "b7bef07938c7f76da65ac8b2d40285953c2fe19e2c4632902550bdb5ef2c05f8"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-37/frames.jsonl",
+      "bytes": 1413532,
+      "sha256": "987fb5c4f0b64795da945e1adc66e6713476367cbe84ff396daa65377aec703a"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-37/verification.json",
+      "bytes": 570,
+      "sha256": "fec7d02969384de79bbcc00face5e325ac17231b29a4a2e07ef8343e0eafc5b6"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-46/frames.jsonl",
+      "bytes": 1414724,
+      "sha256": "25eab05908ae7a41cfe9ce7c5452381f070f2d98d11f1beebaabdef17ee57fe7"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-46/verification.json",
+      "bytes": 571,
+      "sha256": "62219dd5421113e10f201c5ee20036467a4840849680a7a6938bfdaca48e4db2"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-47/frames.jsonl",
+      "bytes": 1414319,
+      "sha256": "b78b87562b34c7cbec60addfacd8bbb8f5a8cc6b002404d2ae0cb1f1fe465ddb"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-2px/seed-47/verification.json",
+      "bytes": 570,
+      "sha256": "69a5830096fc6aadb02b302b8c612106722a80db4a0fcc69dbe8fadef29bd518"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-36/frames.jsonl",
+      "bytes": 1413981,
+      "sha256": "38dea752266ceb9f1e252c47e45195c24f5635c2d1b2cde2a21668df086d85b9"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-36/verification.json",
+      "bytes": 571,
+      "sha256": "32c33f0b8cc8849941d1492964506a278f5c9c0c6bdb96678a8c1afd3137411a"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-37/frames.jsonl",
+      "bytes": 1413820,
+      "sha256": "4ffc0e03f9a384ad49c3c9b52a6e654f619419c65a18cea97080b843674c1814"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-37/verification.json",
+      "bytes": 569,
+      "sha256": "56938d1b575aea8ca9da04bf0d4c94b9705d1c3856fed6f241a19d28171c7667"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-46/frames.jsonl",
+      "bytes": 1414821,
+      "sha256": "1dfb3f0ff8622fb03fe3949ada56e6bd57e51c41a9bc782465ab65d11995309d"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-46/verification.json",
+      "bytes": 571,
+      "sha256": "bdfd94894487175e4d7bf05c5a7c2871321f215492c595c2b3a208e055f55f7a"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-47/frames.jsonl",
+      "bytes": 1413733,
+      "sha256": "6707baa98b8df1ac2929568d4280a98a13cb4073278a01ec6a300973bc39dff3"
+    },
+    {
+      "path": "pong-controls-v1/audit/python-4px/seed-47/verification.json",
+      "bytes": 570,
+      "sha256": "75c08198c8e3fdf0eecaf3d159d6f5c197708eb75d6856c32a42f3bb3659e724"
+    },
+    {
+      "path": "pong-controls-v1/audit/verification.json",
+      "bytes": 13311,
+      "sha256": "66bb111224f5158915c70fdc3157914ad1ab247ad5ffb6526b1bd58d2a3c1a3b"
+    },
+    {
+      "path": "pong-controls-v1/comparison.json",
+      "bytes": 39366,
+      "sha256": "b1c4a0e554f8cf6c3bfae987a76bb0334ded09a5918c6e7f11b0ee69b49154ab"
+    },
+    {
+      "path": "pong-controls-v1/diagnostics/first-rule-disagreement.json",
+      "bytes": 18066,
+      "sha256": "1fe20914afba502d0c5714696b24787d86c45aee1cb0c3e415acabf7eff2710d"
+    },
+    {
+      "path": "pong-controls-v1/diagnostics/rule-disagreements.json",
+      "bytes": 89113,
+      "sha256": "5160778e919e2a21b63954366d14d0ccbf587886b6a7a8e71c81397a2b0de764"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/api-ledger.json",
+      "bytes": 118804,
+      "sha256": "bb0483e40f66f5ba00233d5e2c5d23a12215f38ba3020528033f712d3903cdf8"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/evaluation.json",
+      "bytes": 2151,
+      "sha256": "4ffc9f380ff24b118c606ad5ee3b6186ceea50ddbbf0f6bbdc5cfd8e3df2bc48"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/frames.jsonl",
+      "bytes": 1410506,
+      "sha256": "ec4ed28ec9c6c77ce5ad51ef1b248f3cc7a5cef96068298450dc7ffbb89ad80b"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/last-frame.png",
+      "bytes": 730,
+      "sha256": "125e6e51e6144104b05f9a8fc11fd6cb5145b6e05f471c3017ea96cd0d4b3bcf"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/manifest.json",
+      "bytes": 1053,
+      "sha256": "79d412b3b9d1e012cd25efdf991701016d03e2cc5a7fd7c5cdfe95d564dd39da"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/model-exchanges.jsonl",
+      "bytes": 1784635,
+      "sha256": "4137cf8d5d7563b5ee43de73c565bfac61b99d9926c0aa0493a7eb2491f286c5"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/replay.mp4",
+      "bytes": 76374,
+      "sha256": "5311bc0d56a5e70f67306cb18ac21b6ee5814921bb143ff92cff6eb2edc2f22f"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/summary.json",
+      "bytes": 355,
+      "sha256": "c0f7fa1331c71b8849e3df58c2a728db0348bedd4a435ec7536fcb54e8e446de"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-36/transitions.jsonl",
+      "bytes": 2559887,
+      "sha256": "ecd39cff9d031268d5c262981ab6356c1d705478340a76761dee2fdece4bfdd1"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/api-ledger.json",
+      "bytes": 118800,
+      "sha256": "f5a48d11f978721901f92ca0f8edd5dce965a1ed0bd689e176ff3619391c7620"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/evaluation.json",
+      "bytes": 2148,
+      "sha256": "91e8dc879ccc92efa94d5ea2384ffcf21b28bc9072c8def7e2b14ca968b75002"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/frames.jsonl",
+      "bytes": 1410568,
+      "sha256": "5a4b0619a9f58a756b7e2d3a851cd71cf041db819e51459588cc5812ed4ff75a"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/last-frame.png",
+      "bytes": 731,
+      "sha256": "c2ea7d49d43eccd87802a7a37a0ad7860627e652889f3ca24c43ee469535987f"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/manifest.json",
+      "bytes": 1053,
+      "sha256": "a2c0951dfe0215d25eed5a32807ca6a47098c7a2931c47044112b02e9bb8dd74"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/model-exchanges.jsonl",
+      "bytes": 1785052,
+      "sha256": "1971e12fce461de0f6355404cf2aaeb84a5991ed78d5119895f64dc8f59bd62a"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/replay.mp4",
+      "bytes": 74797,
+      "sha256": "9233e6ab6ea9871510b381229fcfe35c09ac54963cd32fdb088780a5d5e5e255"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/summary.json",
+      "bytes": 353,
+      "sha256": "b3efd7cd5cbc7a70fd894947559eb0a748ee7d3b3e016f0dfc9ba15ae34a580f"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-37/transitions.jsonl",
+      "bytes": 2559351,
+      "sha256": "96c1aa7e4f2f18c4d3da89dcccb02e883e55a8e647700477d163d76c44b9772b"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/api-ledger.json",
+      "bytes": 118795,
+      "sha256": "d98a3a036ed845fabd303911e78224679a8779e29f7a9b935c74f389d00f28ec"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/evaluation.json",
+      "bytes": 2152,
+      "sha256": "659f594a2b834d8e9726cd554450f1b35e4188945900d975f2123567e93e8787"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/frames.jsonl",
+      "bytes": 1410693,
+      "sha256": "8df6ed1f43b1c5143ee125f644e5f6af82aff9e957c0a08e7074525293f8fd12"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/last-frame.png",
+      "bytes": 732,
+      "sha256": "9a07c6cfbe00162197092303aa059ccc08c7703c451ff753c0261e21879d9514"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/manifest.json",
+      "bytes": 1053,
+      "sha256": "123a0fc4c7edaa661bdcd93640290cbbb58821c64e1fb07555342b090807f08f"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/model-exchanges.jsonl",
+      "bytes": 1785476,
+      "sha256": "a7d7a5d978b8c4c3bde11b58a7b023a6e205024a09e3bce7defeb2fc9f7df8f2"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/replay.mp4",
+      "bytes": 74624,
+      "sha256": "71867c6bd8ad8aa5480f4082f0b0051ca5802600574dffca304d392c76361603"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/summary.json",
+      "bytes": 355,
+      "sha256": "af37d2d5fa6c871e2cba7ae7a441c22ada4236ce331c67b235fbb8ff871a1d0b"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-46/transitions.jsonl",
+      "bytes": 2560916,
+      "sha256": "c90af08930d46e65f7b5dd77196693369bbe3949cadd47a3fa47f52848312671"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/api-ledger.json",
+      "bytes": 118776,
+      "sha256": "c8e37904ed693dca720681f6d38bfbf46b069351f20751d4e9a8232a97a8683e"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/evaluation.json",
+      "bytes": 2148,
+      "sha256": "20bccb938efb6b6ef808ab7e6f3030fad12fb6aa3561732c9860dd0a1255760a"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/frames.jsonl",
+      "bytes": 1410496,
+      "sha256": "ea31dd55ee6b4781a2eab191baa5e21673feae3d81383cba7962692d56f2f72d"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/last-frame.png",
+      "bytes": 730,
+      "sha256": "64e47e4866188c82b6f45d78e41d2966f8c2d500f55097f69d9927bf87e0ef0a"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/manifest.json",
+      "bytes": 1053,
+      "sha256": "e7bb9d63f6f376695caf17299f1832026ae4db9b8164246bd9aed816c7f0c0b1"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/model-exchanges.jsonl",
+      "bytes": 1785009,
+      "sha256": "178341d1f06b5549c26bbb11f9286991b323b08a216f327ddf44ec408efbdee0"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/replay.mp4",
+      "bytes": 74490,
+      "sha256": "25cb69533693f73e23eb48429a82332c50f4665753d9dac7bd11aeec7bbb130e"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/summary.json",
+      "bytes": 353,
+      "sha256": "321354551d6d667addf735a752b7f4850726a3ce6c00eaaf734dfb448895fc74"
+    },
+    {
+      "path": "pong-controls-v1/jev-original/seed-47/transitions.jsonl",
+      "bytes": 2559838,
+      "sha256": "dd789a2877665237ed450b09d4b2b253f22c65c8f7f4003ecc353de5351778ab"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/api-ledger.json",
+      "bytes": 118783,
+      "sha256": "8d47c6a911aca0a19239de23b120d693f52050b7118e27b7bf1a87f1f3c4bb17"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/evaluation.json",
+      "bytes": 2147,
+      "sha256": "f01161d0ee31e68764d3a124ba28db534de3f98b2004894d7996509a9884b21d"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/frames.jsonl",
+      "bytes": 1414075,
+      "sha256": "e62626e98d6f4c8d28980748dcc8164e8345933831f91d2c9e914001cba6cd9d"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/last-frame.png",
+      "bytes": 740,
+      "sha256": "eea0bdca6a519f1578aa4d8d07f173ae9e7a9dfae6310ba75262f6135cc082c0"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/manifest.json",
+      "bytes": 1900,
+      "sha256": "9cffc9870eb20a7f73e226eca7e98b5781aa49b013a530601e1937ed6da72eff"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/model-exchanges.jsonl",
+      "bytes": 2215460,
+      "sha256": "eea3dcaf857fe9c5c97c859bc84c308f423942cbc7ec66ab748e2b0c3898d51e"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/replay.mp4",
+      "bytes": 87706,
+      "sha256": "e3c6a49cc154587c815d93307b4d34c3837c51bb1e12fb92b6102a4944202f68"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/summary.json",
+      "bytes": 353,
+      "sha256": "337ecb05c7a16a8c42bf1601b122623cf6d8fc122459a89f14c6164e547c2955"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-36/transitions.jsonl",
+      "bytes": 2580071,
+      "sha256": "0cfcc8a5b2b0fe01e8a2b7bd2882b29abcaa54bfbe4363ffb2ba3788cbd852c9"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/api-ledger.json",
+      "bytes": 118802,
+      "sha256": "cd7607b45a03d88f5d2865d46a5603786f2de043fd817266b6531d3d49b4cdb3"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/evaluation.json",
+      "bytes": 2145,
+      "sha256": "2d0fa3e3e7166f2be726e17dc4502958138a9937e05413f26a4d3e74de82d633"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/frames.jsonl",
+      "bytes": 1414189,
+      "sha256": "861bc11ab358101e63fba84a182d19529dc122f1d66bb5a9a5e4344438f0050b"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/last-frame.png",
+      "bytes": 728,
+      "sha256": "9b9412e460f097540d14ee1342e20c491e79d53317c54041d87252a037867acd"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/manifest.json",
+      "bytes": 1900,
+      "sha256": "de5189513bec6ca7a7b02d8b7556aef4742583963de898642f7767efa79f67f9"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/model-exchanges.jsonl",
+      "bytes": 2214579,
+      "sha256": "f604b7d40bd8f2a57db299d470d45da068f8ae1b59f9caafe055f1cc90d6a7c2"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/replay.mp4",
+      "bytes": 87168,
+      "sha256": "bc3cd69912d2f530061b4aed7d3ad7dae880e7141e3853d967727f7c2e79f4d4"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/summary.json",
+      "bytes": 352,
+      "sha256": "7514bdd53cf19d44d1b56b3f61a75b1eda03817685cb4e58726226698574a1cc"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-37/transitions.jsonl",
+      "bytes": 2577162,
+      "sha256": "220cfdcadd46fc991801277eb3c73131945c479069fa729c9dd130ab6f5c31d3"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/api-ledger.json",
+      "bytes": 118775,
+      "sha256": "629e67098378ac83c406db6852fe27b3c81e603da3ffe292411cb8b7b7f8f2a1"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/evaluation.json",
+      "bytes": 2143,
+      "sha256": "9d0baa3caa1ee4e5c92ae2a7ccc8b1a7329fafe1b2fb750550aeca40a6ee5665"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/frames.jsonl",
+      "bytes": 1414427,
+      "sha256": "45803fb20e1889609b43b3c7c75411103bed359ad6d41bcbb75f132881354c66"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/last-frame.png",
+      "bytes": 735,
+      "sha256": "1881b686bf1875c73682c34c6a5fd61b9c86dae014863c3b01f18471600112d3"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/manifest.json",
+      "bytes": 1900,
+      "sha256": "e2083e2b3535ca5185a90e8e5bf2622ee43593ea41b39481b3d2c32202684de0"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/model-exchanges.jsonl",
+      "bytes": 2215422,
+      "sha256": "1c72827676c8a7bcc48a625b304176562269a84bc3bae76289e6a8ccf1aacdfd"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/replay.mp4",
+      "bytes": 87675,
+      "sha256": "21349138b9c6a6db8c507dd0370a3c89fca0d6c7a9ebab47b74685e06f2103a8"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/summary.json",
+      "bytes": 352,
+      "sha256": "338c85c71ed29e8725756e3e6cf64a2d3a5897cbafaaa6b0f7a11eb3461c2767"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-46/transitions.jsonl",
+      "bytes": 2578657,
+      "sha256": "6ad96c55cf33dc77039ae2a098e85148f4366e911f73521cad9bd09a0d5ab185"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/api-ledger.json",
+      "bytes": 118770,
+      "sha256": "4fca4c65d2c3ae7feb3fb01e40a872f82c77c4680d74dffe57c67a0a713404b6"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/evaluation.json",
+      "bytes": 2146,
+      "sha256": "979b09d33f99d65975a1c506f0fae68409df0c8395d1a523f512c8692b66e44d"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/frames.jsonl",
+      "bytes": 1415502,
+      "sha256": "9e2d0d7e5fcbe341c74f2dca2d3de5386d7af794e958a07b68137c9f01774f86"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/last-frame.png",
+      "bytes": 743,
+      "sha256": "fbca1e9a515ccf3d346c092223592168c9d814fb3f3c2ee8cc15e9e6071e537d"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/manifest.json",
+      "bytes": 1900,
+      "sha256": "ed091f6f941e10892f20cbec1401b380cd573e6c371f05c926e2134eb9b403d2"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/model-exchanges.jsonl",
+      "bytes": 2215764,
+      "sha256": "52434d24a17dbf4ef3f28924aaa72cc83bb164d1285cd5bef7ae627d72b5cf36"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/replay.mp4",
+      "bytes": 86492,
+      "sha256": "7ab5fe51256e324e536df577d23ad87848585cc26912f38727a1c4667bf07b40"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/summary.json",
+      "bytes": 352,
+      "sha256": "60a238559c09528f504c4af0a578e3298b098bdb00882a8b48697bb0c3198d7c"
+    },
+    {
+      "path": "pong-controls-v1/jev-vertical/seed-47/transitions.jsonl",
+      "bytes": 2580349,
+      "sha256": "2e86dd5042d99ee1fb65124eef3732d288c55adf3068b51f29f25670be9e5553"
+    },
+    {
+      "path": "pong-controls-v1/plan.json",
+      "bytes": 4470,
+      "sha256": "a53d39af63b9abae3c96cd8774ee2847db5c0a251c11dc356934fabf18ec7a90"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-36/evaluation.json",
+      "bytes": 2101,
+      "sha256": "6fa2201784af76c045d15692769a5e54b7eadafaa4c14e57a67c9dd4f6f3a2b0"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-36/frames.jsonl",
+      "bytes": 1414392,
+      "sha256": "2134d0183f1ddc3ed2584a8f516d3519055c0830f4dfecadba5c3be395e00bcc"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-36/last-frame.png",
+      "bytes": 715,
+      "sha256": "23811a6d1ab651857d986d318eebd451aa1475d5ab9df658c6861518f188ca1c"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-36/manifest.json",
+      "bytes": 749,
+      "sha256": "526b64c8ef05f8d1c2dba985225a7f1f68fe61a3b32d179427d0b4ad2253151c"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-36/replay.mp4",
+      "bytes": 85935,
+      "sha256": "f03e2eb5fd21de64fc8fb6e1aec1bc56ed7d045e77e4475c20db0985f692aef2"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-36/summary.json",
+      "bytes": 332,
+      "sha256": "e6e9e7654a983d6afbdcb6e9eaf3d90e76fa233297ee99203510eff97c64693d"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-36/transitions.jsonl",
+      "bytes": 2169813,
+      "sha256": "11d060c2a9ee5850be78327e7d729d46e09b08c063ac02ee84b1a8a9df6b5d71"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-37/evaluation.json",
+      "bytes": 2095,
+      "sha256": "ac5b2044ed58222663c3a5beff2868c8814b578b0e63056b441a7bb485b0f277"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-37/frames.jsonl",
+      "bytes": 1413532,
+      "sha256": "987fb5c4f0b64795da945e1adc66e6713476367cbe84ff396daa65377aec703a"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-37/last-frame.png",
+      "bytes": 719,
+      "sha256": "9513466b7157a08ab9415d14f756b6d5cf78516ee5dd7557d5642e8db56e7863"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-37/manifest.json",
+      "bytes": 749,
+      "sha256": "7876fbac1e7b60d06e33ab8b2ee884fcee8b44c352e5dac24fa776588de6a0e2"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-37/replay.mp4",
+      "bytes": 89532,
+      "sha256": "b5189d91c92f49094a9d936139a123dbca010cfab289b3b1de10037ac720e99d"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-37/summary.json",
+      "bytes": 330,
+      "sha256": "302bc7dc0dd6ebb824b81a97a1e68ddfbbcee0e2ae9202310a186ff571c162b6"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-37/transitions.jsonl",
+      "bytes": 2173824,
+      "sha256": "5e43c11cb7997029b8c9e2bd8f86cd5d1434d360493cb08f959d2c9e231b2fbe"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-46/evaluation.json",
+      "bytes": 2102,
+      "sha256": "bcac59da1dfe76338562f70aa30a1928f5823d03ba34a8d214d7991eb45b6c9f"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-46/frames.jsonl",
+      "bytes": 1414724,
+      "sha256": "25eab05908ae7a41cfe9ce7c5452381f070f2d98d11f1beebaabdef17ee57fe7"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-46/last-frame.png",
+      "bytes": 740,
+      "sha256": "35fd51e75d460a56f9659295b16471fb0ccaac5850d4ad7046fe16d385bec75f"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-46/manifest.json",
+      "bytes": 749,
+      "sha256": "6925f589bc960ef8ad3f0ce6da7f80020a5903c1d68d815b2e93800e1ec4fe5c"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-46/replay.mp4",
+      "bytes": 88083,
+      "sha256": "5b1177de37c4cf4994365c267cb811ba0abe57f97c70a7257a794ca512f648c4"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-46/summary.json",
+      "bytes": 332,
+      "sha256": "299fe7294384465efe87d27a0f751dccc292c5bf6efb10acc195a185bd7e707c"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-46/transitions.jsonl",
+      "bytes": 2173971,
+      "sha256": "f7a09285465f5d908ed8802e9767568a04fce99d9c2d6e68932936a8012298d8"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-47/evaluation.json",
+      "bytes": 2100,
+      "sha256": "8213341dc334af033a1a16a9793da4d189d249d55c99bb640a3e7d772697095e"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-47/frames.jsonl",
+      "bytes": 1414319,
+      "sha256": "b78b87562b34c7cbec60addfacd8bbb8f5a8cc6b002404d2ae0cb1f1fe465ddb"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-47/last-frame.png",
+      "bytes": 730,
+      "sha256": "5acaea080f7e7e47d61cb36fafdbd44e1df7fe15638503d46c1367b74d99e95c"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-47/manifest.json",
+      "bytes": 749,
+      "sha256": "3964ec26846c70ff713a10774aeb25a33f0544b349142dc584f0f442f07eb661"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-47/replay.mp4",
+      "bytes": 87770,
+      "sha256": "7183c2b0dfdef588c632e7a8299fbf5eca2547e92c5a4a4df1163e34d4a8ec7e"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-47/summary.json",
+      "bytes": 331,
+      "sha256": "96e5d36d57b41bf73a14f8746434036a4f2b1c1c01c207f9337e8ce94dd364eb"
+    },
+    {
+      "path": "pong-controls-v1/python-2px/seed-47/transitions.jsonl",
+      "bytes": 2173528,
+      "sha256": "842f6efdc6c124152276afb9e05ea58351c0b4da60b1f8abb2630997c481458b"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-36/evaluation.json",
+      "bytes": 1290,
+      "sha256": "8d1c39636669eabfaebb9f77d4151a54f9157cd0c654829ffeb550a1a9b1451e"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-36/frames.jsonl",
+      "bytes": 1413981,
+      "sha256": "38dea752266ceb9f1e252c47e45195c24f5635c2d1b2cde2a21668df086d85b9"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-36/last-frame.png",
+      "bytes": 719,
+      "sha256": "672872c5c4634781fe07b20dd69816bf6d2240da39f15eab1e1b5c97a0b2d3f2"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-36/manifest.json",
+      "bytes": 753,
+      "sha256": "24c53b212176c6ff62c84c779f68446d20f4da8700515bfd6789e44e3b23b27c"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-36/replay.mp4",
+      "bytes": 88539,
+      "sha256": "402944e979bce224e17e7d9a4ba1e1bf7aaf572435324f1a3721889a4e0d426a"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-36/summary.json",
+      "bytes": 332,
+      "sha256": "a930af4a962bd70f6891e44827d48f4c402778abb67a8138928aa4a270f77de4"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-36/transitions.jsonl",
+      "bytes": 2175327,
+      "sha256": "f98ce9482e35802ac178be70640c127964e9f9d8a977284d210674ef741c80d2"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-37/evaluation.json",
+      "bytes": 1287,
+      "sha256": "f5ef82055879b804c6854f97315fce114075803cf5b975bfc2cbce304edc9759"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-37/frames.jsonl",
+      "bytes": 1413820,
+      "sha256": "4ffc0e03f9a384ad49c3c9b52a6e654f619419c65a18cea97080b843674c1814"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-37/last-frame.png",
+      "bytes": 688,
+      "sha256": "3edb5e57f1f4d54434d7786cb0a1a2f3028ef583516c2dd85fbcb7e2975436e4"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-37/manifest.json",
+      "bytes": 753,
+      "sha256": "d8e45e0955ae0c734ba4ced194ca2ee436839fba0888ffa21b81fae1c10e8119"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-37/replay.mp4",
+      "bytes": 87944,
+      "sha256": "a841d842e7dadbb3ec30dc5c3ed4ecc6a0f6af046abc5b8d6e39a323d60ed5b7"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-37/summary.json",
+      "bytes": 330,
+      "sha256": "040e6228102b0a59b11d8d6e766ec600da45877e0fb9d8468e027ec7e227cf63"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-37/transitions.jsonl",
+      "bytes": 2179251,
+      "sha256": "cd0221acfd692359182499550e21786b23b1c8e4e569eb5586538d151cfbf389"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-46/evaluation.json",
+      "bytes": 1290,
+      "sha256": "514251cc02803a4b87699b4aedefcc27b20ac29d9952560a54b76de9f5e3da2c"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-46/frames.jsonl",
+      "bytes": 1414821,
+      "sha256": "1dfb3f0ff8622fb03fe3949ada56e6bd57e51c41a9bc782465ab65d11995309d"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-46/last-frame.png",
+      "bytes": 718,
+      "sha256": "ae729566381067b1784094681aefec2bc10c04ba907c28091cb4aa6303a58e54"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-46/manifest.json",
+      "bytes": 753,
+      "sha256": "36a1a2caa1ea2fc6a04a0a1cf650add1aa83b546702557af72133e064a6a2c4d"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-46/replay.mp4",
+      "bytes": 85980,
+      "sha256": "f7b83e9a93ea923bb59f48c6dd4c16466ad366c4e6b508e8393563be2d58f7e8"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-46/summary.json",
+      "bytes": 332,
+      "sha256": "606e752c6c56b716c78669c6a614854cbf7af0f228b2dff1dedbde6bed17ecc7"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-46/transitions.jsonl",
+      "bytes": 2169752,
+      "sha256": "91d92232d2e0765c93b9cc765f9c16151ae24ba2a0da26089594bd28b15633e0"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-47/evaluation.json",
+      "bytes": 1289,
+      "sha256": "b4ae7deee84a9ab4cdedc8360051ca3429053b7f614927fd294394cfed069357"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-47/frames.jsonl",
+      "bytes": 1413733,
+      "sha256": "6707baa98b8df1ac2929568d4280a98a13cb4073278a01ec6a300973bc39dff3"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-47/last-frame.png",
+      "bytes": 730,
+      "sha256": "e6a17a5162904b34ff79c54d4b235f132d616196abb14071165f4fffb09ba0b2"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-47/manifest.json",
+      "bytes": 753,
+      "sha256": "cd217e62163122c17603b9613c809068c245f9a13b3dbb33c8f846e699136e5d"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-47/replay.mp4",
+      "bytes": 86878,
+      "sha256": "7edf90bddc841c53f22a7b603da25d25a87d9c5dbb458a35a55983d08bf630aa"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-47/summary.json",
+      "bytes": 331,
+      "sha256": "24ca6412a2ea0e8390ce3cf9c37f2f776428e9a39bf4f9fbd10337d3b2d22383"
+    },
+    {
+      "path": "pong-controls-v1/python-4px/seed-47/transitions.jsonl",
+      "bytes": 2166437,
+      "sha256": "f6852d2f258a95d54e7f9f746191f59516b8090b6d7d1ffe6ac441af3cc3e333"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-original/seed-36/frames.jsonl",
+      "bytes": 1410506,
+      "sha256": "ec4ed28ec9c6c77ce5ad51ef1b248f3cc7a5cef96068298450dc7ffbb89ad80b"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-original/seed-36/verification.json",
+      "bytes": 574,
+      "sha256": "a58710ed4c54fa50f89777b818369b7bc279fd1ce5941e6166bd8fbb30f9c092"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-original/seed-37/frames.jsonl",
+      "bytes": 1410568,
+      "sha256": "5a4b0619a9f58a756b7e2d3a851cd71cf041db819e51459588cc5812ed4ff75a"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-original/seed-37/verification.json",
+      "bytes": 573,
+      "sha256": "563965181b3cd03ccbb2be7ee83462d59cc6b9a6f09d01240027de33274b6551"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-original/seed-46/frames.jsonl",
+      "bytes": 1410693,
+      "sha256": "8df6ed1f43b1c5143ee125f644e5f6af82aff9e957c0a08e7074525293f8fd12"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-original/seed-46/verification.json",
+      "bytes": 574,
+      "sha256": "3b4f8ded34d310d0df27988b907626d2d96582828c470bec3dcd6c6f1321cbfc"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-vertical/seed-36/frames.jsonl",
+      "bytes": 1414075,
+      "sha256": "e62626e98d6f4c8d28980748dcc8164e8345933831f91d2c9e914001cba6cd9d"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-vertical/seed-36/verification.json",
+      "bytes": 573,
+      "sha256": "4f525881637dba50ddbb65689f7eb9efc148d8074bab9d86064d4db19e5a1d61"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-vertical/seed-37/frames.jsonl",
+      "bytes": 1414189,
+      "sha256": "861bc11ab358101e63fba84a182d19529dc122f1d66bb5a9a5e4344438f0050b"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-vertical/seed-37/verification.json",
+      "bytes": 572,
+      "sha256": "dd3b88a1ee26f1d1be1b9814d0a3b86c72ff71331ffbbb29381bcd6f73f75bac"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-vertical/seed-46/frames.jsonl",
+      "bytes": 1414427,
+      "sha256": "45803fb20e1889609b43b3c7c75411103bed359ad6d41bcbb75f132881354c66"
+    },
+    {
+      "path": "pong-controls-v1/verification/jev-vertical/seed-46/verification.json",
+      "bytes": 572,
+      "sha256": "147f8e6ba6db11ee5d3d62a8077788ca39a071b8cd8d6a9ef4969c8036498ab2"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-36/frames.jsonl",
+      "bytes": 1414392,
+      "sha256": "2134d0183f1ddc3ed2584a8f516d3519055c0830f4dfecadba5c3be395e00bcc"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-36/verification.json",
+      "bytes": 571,
+      "sha256": "b7bef07938c7f76da65ac8b2d40285953c2fe19e2c4632902550bdb5ef2c05f8"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-37/frames.jsonl",
+      "bytes": 1413532,
+      "sha256": "987fb5c4f0b64795da945e1adc66e6713476367cbe84ff396daa65377aec703a"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-37/verification.json",
+      "bytes": 570,
+      "sha256": "fec7d02969384de79bbcc00face5e325ac17231b29a4a2e07ef8343e0eafc5b6"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-46/frames.jsonl",
+      "bytes": 1414724,
+      "sha256": "25eab05908ae7a41cfe9ce7c5452381f070f2d98d11f1beebaabdef17ee57fe7"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-46/verification.json",
+      "bytes": 571,
+      "sha256": "62219dd5421113e10f201c5ee20036467a4840849680a7a6938bfdaca48e4db2"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-47/frames.jsonl",
+      "bytes": 1414319,
+      "sha256": "b78b87562b34c7cbec60addfacd8bbb8f5a8cc6b002404d2ae0cb1f1fe465ddb"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-2px/seed-47/verification.json",
+      "bytes": 570,
+      "sha256": "69a5830096fc6aadb02b302b8c612106722a80db4a0fcc69dbe8fadef29bd518"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-36/frames.jsonl",
+      "bytes": 1413981,
+      "sha256": "38dea752266ceb9f1e252c47e45195c24f5635c2d1b2cde2a21668df086d85b9"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-36/verification.json",
+      "bytes": 571,
+      "sha256": "32c33f0b8cc8849941d1492964506a278f5c9c0c6bdb96678a8c1afd3137411a"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-37/frames.jsonl",
+      "bytes": 1413820,
+      "sha256": "4ffc0e03f9a384ad49c3c9b52a6e654f619419c65a18cea97080b843674c1814"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-37/verification.json",
+      "bytes": 569,
+      "sha256": "56938d1b575aea8ca9da04bf0d4c94b9705d1c3856fed6f241a19d28171c7667"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-46/frames.jsonl",
+      "bytes": 1414821,
+      "sha256": "1dfb3f0ff8622fb03fe3949ada56e6bd57e51c41a9bc782465ab65d11995309d"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-46/verification.json",
+      "bytes": 571,
+      "sha256": "bdfd94894487175e4d7bf05c5a7c2871321f215492c595c2b3a208e055f55f7a"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-47/frames.jsonl",
+      "bytes": 1413733,
+      "sha256": "6707baa98b8df1ac2929568d4280a98a13cb4073278a01ec6a300973bc39dff3"
+    },
+    {
+      "path": "pong-controls-v1/verification/python-4px/seed-47/verification.json",
+      "bytes": 570,
+      "sha256": "75c08198c8e3fdf0eecaf3d159d6f5c197708eb75d6856c32a42f3bb3659e724"
+    }
+  ]
+}

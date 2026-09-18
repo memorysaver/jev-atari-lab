@@ -8,9 +8,11 @@ Our goal is to challenge every single-agent Atari game exposed by the pinned
 observations, model inputs and outputs, actions, rewards, videos, and every
 teacher-authored change to the question program.
 
-**Current evidence:** Pong has real Jev trials. A revised direct-action question
-survived 500 decisions on each of two development seeds, scoring one point and
-losing none in total. This is a short-run result, not a solved-game or RL convergence claim.
+**Current evidence:** On four development seeds with equal 2,000-frame horizons,
+the vertical-control Jev question achieved -3 net reward, versus -14 for the literal
+4px Python rule and -52 for the original Jev question. Jev matched the written rule
+on only 66.85% of decisions. See the [controlled comparison](docs/pong-controls-2026-09-18.md).
+This is a short-run result, not a solved-game or RL convergence claim.
 
 [Watch the Pong replay](docs/media/jev-vertical-policy-seed-27.mp4) ·
 [Experiment journal](experiments/README.md) · [Game coverage](docs/games.md) ·
@@ -23,9 +25,10 @@ losing none in total. This is a short-run result, not a solved-game or RL conver
 | **Direct policy** | One Choice question over available actions | Highest action probability | Pong objects; experimental raw RAM for other games |
 | **Value-based** | Each action's first scoring outcome within 240 raw frames | `P(gain) - P(loss)`, then argmax | Pong with fixed heuristic continuation |
 
-The latest video uses **direct policy**, not the 240-frame critic. Its question
-explicitly describes vertical tracking. Jev executes that rule; the video does not
-show a strategy discovered from scratch. Action probabilities are not Q values.
+The videos use **direct policy**, not the 240-frame critic. The candidate question
+explicitly describes vertical tracking, but Jev does not follow that rule exactly.
+The videos do not show a strategy discovered from scratch. Action probabilities
+are not Q values.
 
 The value-based research asks whether experience can improve the questions used
 to estimate consequences. A teacher proposes question changes; actual outcomes
@@ -178,6 +181,7 @@ establish better online play. Keep rejected proposals and unsuccessful runs.
 ## Results and documentation
 
 - [Fixed-frame Pong controls](docs/pong-controls-protocol.md): same-rule Python/Jev comparison, frozen seeds and shared API budget.
+- [Controlled comparison results](docs/pong-controls-2026-09-18.md): all 16 episodes, rule adherence, costs and replayable evidence.
 - [Pong policy pilot](docs/policy-online-2026-09-18.md): seeds, stopping rules, costs and limitations.
 - [Value prediction pilot](docs/pilot-2026-09-18.md): better Brier score, rejected due to MAE regression.
 - [Score versus Choice](docs/choice-ablation-2026-09-18.md): offline question-form comparison.

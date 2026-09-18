@@ -1,0 +1,140 @@
+{
+  "kind": "pong-control-plan-v1",
+  "source_revision": "c415207e8061762abe280c1832c56df987c022d2",
+  "split": "development",
+  "seeds": [
+    36,
+    37,
+    46,
+    47
+  ],
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "frames_per_episode": 2000,
+  "max_decisions": 500,
+  "point_limit": null,
+  "requested_model": "jev-1.13.0",
+  "max_http_attempts": 4400,
+  "max_decision_calls": 4000,
+  "schedule": [
+    {
+      "seed": 36,
+      "arm": "python-2px"
+    },
+    {
+      "seed": 36,
+      "arm": "python-4px"
+    },
+    {
+      "seed": 36,
+      "arm": "jev-original"
+    },
+    {
+      "seed": 36,
+      "arm": "jev-vertical"
+    },
+    {
+      "seed": 37,
+      "arm": "python-2px"
+    },
+    {
+      "seed": 37,
+      "arm": "python-4px"
+    },
+    {
+      "seed": 37,
+      "arm": "jev-vertical"
+    },
+    {
+      "seed": 37,
+      "arm": "jev-original"
+    },
+    {
+      "seed": 46,
+      "arm": "python-2px"
+    },
+    {
+      "seed": 46,
+      "arm": "python-4px"
+    },
+    {
+      "seed": 46,
+      "arm": "jev-original"
+    },
+    {
+      "seed": 46,
+      "arm": "jev-vertical"
+    },
+    {
+      "seed": 47,
+      "arm": "python-2px"
+    },
+    {
+      "seed": 47,
+      "arm": "python-4px"
+    },
+    {
+      "seed": 47,
+      "arm": "jev-vertical"
+    },
+    {
+      "seed": 47,
+      "arm": "jev-original"
+    }
+  ],
+  "arms": {
+    "python-2px": {
+      "policy": "track-ball-center-v1",
+      "program": null,
+      "program_hash": null,
+      "deadband_pixels": 2
+    },
+    "python-4px": {
+      "policy": "track-ball-center-4px-v1",
+      "program": null,
+      "program_hash": null,
+      "deadband_pixels": 4
+    },
+    "jev-original": {
+      "policy": "jev:pong-action-choice-v1",
+      "program": {
+        "name": "pong-action-choice-v1",
+        "guidance": "Which available action should the RIGHT paddle take now to return the ball? Choose for the next requested action duration using current positions and recent motion.",
+        "schema_version": "action-choice-program-v1"
+      },
+      "program_hash": "e3c2d203ffcab06c3e5b355ceb3350044a3f13a9ef5f4c53cb1bd2adb307defa",
+      "deadband_pixels": null
+    },
+    "jev-vertical": {
+      "policy": "jev:pong-vertical-control-v2",
+      "program": {
+        "name": "pong-vertical-control-v2",
+        "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+        "schema_version": "action-choice-program-v1"
+      },
+      "program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "deadband_pixels": null
+    }
+  },
+  "selection_rule": "probability-argmax-provider-tie-v1",
+  "primary_metric": "undiscounted net reward over the fixed evaluation horizon",
+  "termination_rule": "Native terminal has a zero-reward absorbing tail; reset NOOPs are excluded from the horizon. Errors and environment truncation are incomplete.",
+  "inference_rule": "Fresh model calls; no cache, teacher revision, or policy promotion. Jev order alternates by seed. One API realization per policy/seed."
+}

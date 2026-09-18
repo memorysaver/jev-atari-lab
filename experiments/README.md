@@ -35,6 +35,21 @@ Full reports: [value pilot](../docs/pilot-2026-09-18.md),
 
 ## Preserved artifacts
 
+The [fixed-frame controls](../docs/pong-controls-2026-09-18.md) compare four policies
+on four new development seeds. This is not another teacher revision: both Jev
+programs are unchanged. Aggregate net rewards were -52 (original Jev), -3 (vertical
+Jev), -14 (Python 4px), and -15 (Python 2px), with 2,000 frames per episode.
+Vertical Jev's literal-rule agreement was 66.85%; the aggregate advantage was
+concentrated in one seed. All per-seed outcomes remain in the report.
+
+`pong-controls-v1-2026-09-18.tar.gz` contains all 16 videos, original model exchanges,
+frame/decision traces, ledgers and audit records. Its manifest checks every member.
+Readable indexes are [plan](pong-controls-v1-plan.json),
+[results](pong-controls-v1-results.json), and
+[one original input/output showing rule disagreement](pong-controls-v1-decision-15.json).
+All 16 episodes and all 4,000 API exchanges passed offline verification. The run
+used 4,000 of 4,400 allowed attempts; there were no failures or retries.
+
 `atari-evidence-2026-09-18.tar.gz` contains the entire reviewed working artifact tree
 at publication, including original datasets, logs, predictions, programs, feedback,
 selection decisions, failure ledgers, videos, still frames and replay verification.

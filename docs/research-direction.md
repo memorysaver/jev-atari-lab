@@ -13,9 +13,11 @@ updated Jev or teacher model weights.
 
 ## Next controlled comparisons
 
-- Compare direct Jev, the same tracking rule in code, and the value critic under
-  matching frame budgets and seeds. The current 2px heuristic and 4px question
-  are different rules, not an exact same-rule comparison.
+- The [first fixed-frame controls](pong-controls-2026-09-18.md) now compare both
+  Jev questions with Python 2px and 4px rules. The vertical question had better
+  aggregate reward but only 66.85% literal-rule agreement; replicate this result
+  and separate instruction execution from strategy quality. The value critic
+  still needs a matched online comparison.
 - Test multiple teacher rounds with fixed observation/action/reward contracts.
 - Separate trajectory-only feedback from snapshot-based action comparisons.
   Heuristic continuation does not estimate Jev continuation value.

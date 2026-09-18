@@ -1,0 +1,1434 @@
+{
+  "kind": "pong-control-comparison-v1",
+  "status": "complete",
+  "plan_hash": "30c5ca5cc9eba7b1299c4a0ed6c75c948e935dfa326e532d158647d4ba35032e",
+  "episodes": [
+    {
+      "seed": 36,
+      "arm": "python-2px",
+      "status": "complete",
+      "reward": -7.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 7,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 11,
+      "wall_seconds": 0.7302265199832618,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -7.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 40,
+        "agreement_fraction": 0.92,
+        "first_differences": [
+          {
+            "decision": 14,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 35,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 41,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 46,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 91,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 101,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 109,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 117,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 133,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 149,
+            "actual": 3,
+            "rule": 0
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 383,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 4,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 36,
+      "arm": "python-4px",
+      "status": "complete",
+      "reward": -4.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 4,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 11,
+      "wall_seconds": 0.7065679540392011,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -4.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 0,
+        "agreement_fraction": 1.0,
+        "first_differences": [],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 427,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 5,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 36,
+      "arm": "jev-original",
+      "status": "complete",
+      "reward": -13.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 13,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 11,
+      "wall_seconds": 126.00683435797691,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -13.0,
+      "http_wall_seconds": 124.99295990949031,
+      "usage": {
+        "input_tokens": 738400,
+        "output_tokens": 34196
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 290,
+        "agreement_fraction": 0.42,
+        "first_differences": [
+          {
+            "decision": 12,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 13,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 18,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 19,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 20,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 21,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 22,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 26,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 27,
+            "actual": 2,
+            "rule": 3
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 293,
+        "requests_opposing_instantaneous_vertical_gap": 265,
+        "estimated_right_paddle_returns": 0,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 36,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": -2.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 2,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 11,
+      "wall_seconds": 127.56316776003223,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -2.0,
+      "http_wall_seconds": 126.53503330913372,
+      "usage": {
+        "input_tokens": 842705,
+        "output_tokens": 34309
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 171,
+        "agreement_fraction": 0.658,
+        "first_differences": [
+          {
+            "decision": 15,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 16,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 17,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 18,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 19,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 23,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 28,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 29,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 33,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 34,
+            "actual": 0,
+            "rule": 3
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 458,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 7,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 37,
+      "arm": "python-2px",
+      "status": "complete",
+      "reward": -1.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 1,
+      "points_lost": 2,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 4,
+      "wall_seconds": 0.692617055028677,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -1.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 44,
+        "agreement_fraction": 0.912,
+        "first_differences": [
+          {
+            "decision": 28,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 42,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 47,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 63,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 64,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 67,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 68,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 71,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 72,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 75,
+            "actual": 3,
+            "rule": 0
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 438,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 6,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 37,
+      "arm": "python-4px",
+      "status": "complete",
+      "reward": 0.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 1,
+      "points_lost": 1,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 4,
+      "wall_seconds": 0.7072946439730003,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": 0.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 0,
+        "agreement_fraction": 1.0,
+        "first_differences": [],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 455,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 7,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 37,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": -1.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 1,
+      "points_lost": 2,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 4,
+      "wall_seconds": 127.99584999203216,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -1.0,
+      "http_wall_seconds": 126.9223570227623,
+      "usage": {
+        "input_tokens": 841181,
+        "output_tokens": 34347
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 138,
+        "agreement_fraction": 0.724,
+        "first_differences": [
+          {
+            "decision": 15,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 19,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 20,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 21,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 24,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 25,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 28,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 29,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 34,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 36,
+            "actual": 0,
+            "rule": 2
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 440,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 6,
+        "provider_choice_disagreements": 1,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 37,
+      "arm": "jev-original",
+      "status": "complete",
+      "reward": -13.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 13,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 4,
+      "wall_seconds": 131.1971560169477,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -13.0,
+      "http_wall_seconds": 130.1262669400312,
+      "usage": {
+        "input_tokens": 738146,
+        "output_tokens": 34170
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 310,
+        "agreement_fraction": 0.38,
+        "first_differences": [
+          {
+            "decision": 14,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 18,
+            "actual": 3,
+            "rule": 2
+          },
+          {
+            "decision": 20,
+            "actual": 3,
+            "rule": 2
+          },
+          {
+            "decision": 22,
+            "actual": 3,
+            "rule": 2
+          },
+          {
+            "decision": 24,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 28,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 29,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 30,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 31,
+            "actual": 2,
+            "rule": 3
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 291,
+        "requests_opposing_instantaneous_vertical_gap": 264,
+        "estimated_right_paddle_returns": 0,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 46,
+      "arm": "python-2px",
+      "status": "complete",
+      "reward": -4.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 4,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 15,
+      "wall_seconds": 0.6779093649238348,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -4.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 26,
+        "agreement_fraction": 0.948,
+        "first_differences": [
+          {
+            "decision": 13,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 45,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 49,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 52,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 88,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 115,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 118,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 166,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 180,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 237,
+            "actual": 3,
+            "rule": 0
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 429,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 5,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 46,
+      "arm": "python-4px",
+      "status": "complete",
+      "reward": -8.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 8,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 15,
+      "wall_seconds": 0.6552733010612428,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -8.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 0,
+        "agreement_fraction": 1.0,
+        "first_differences": [],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 369,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 3,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 46,
+      "arm": "jev-original",
+      "status": "complete",
+      "reward": -13.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 13,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 15,
+      "wall_seconds": 130.08001644304022,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -13.0,
+      "http_wall_seconds": 129.02097365783993,
+      "usage": {
+        "input_tokens": 738575,
+        "output_tokens": 34200
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 287,
+        "agreement_fraction": 0.426,
+        "first_differences": [
+          {
+            "decision": 11,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 13,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 14,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 16,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 21,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 23,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 24,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 25,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 28,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 29,
+            "actual": 2,
+            "rule": 3
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 294,
+        "requests_opposing_instantaneous_vertical_gap": 266,
+        "estimated_right_paddle_returns": 0,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 46,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": 2.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 2,
+      "points_lost": 0,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 15,
+      "wall_seconds": 129.70364959200379,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": 2.0,
+      "http_wall_seconds": 128.5929086819524,
+      "usage": {
+        "input_tokens": 842036,
+        "output_tokens": 34310
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 180,
+        "agreement_fraction": 0.64,
+        "first_differences": [
+          {
+            "decision": 12,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 14,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 16,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 20,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 22,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 23,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 24,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 25,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 27,
+            "actual": 0,
+            "rule": 2
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 458,
+        "requests_opposing_instantaneous_vertical_gap": 1,
+        "estimated_right_paddle_returns": 7,
+        "provider_choice_disagreements": 1,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 47,
+      "arm": "python-2px",
+      "status": "complete",
+      "reward": -3.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 3,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 3,
+      "wall_seconds": 0.7074985060608014,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -3.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 38,
+        "agreement_fraction": 0.924,
+        "first_differences": [
+          {
+            "decision": 16,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 28,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 47,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 84,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 87,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 98,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 111,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 123,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 143,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 169,
+            "actual": 3,
+            "rule": 0
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 441,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 6,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 47,
+      "arm": "python-4px",
+      "status": "complete",
+      "reward": -2.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 2,
+      "points_lost": 4,
+      "terminated": false,
+      "truncated": true,
+      "backend": "local",
+      "end_reason": "decision_limit",
+      "reset_frames": 3,
+      "wall_seconds": 0.6655742319999263,
+      "simulated_seconds": 33.333333333333336,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -2.0,
+      "http_wall_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 0,
+        "agreement_fraction": 1.0,
+        "first_differences": [],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 396,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 4,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 47,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": -2.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 2,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 3,
+      "wall_seconds": 133.73183265991975,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -2.0,
+      "http_wall_seconds": 132.65156346466392,
+      "usage": {
+        "input_tokens": 842449,
+        "output_tokens": 34332
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 174,
+        "agreement_fraction": 0.652,
+        "first_differences": [
+          {
+            "decision": 14,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 18,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 19,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 22,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 25,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 26,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 27,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 28,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 29,
+            "actual": 0,
+            "rule": 2
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 456,
+        "requests_opposing_instantaneous_vertical_gap": 1,
+        "estimated_right_paddle_returns": 7,
+        "provider_choice_disagreements": 1,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 47,
+      "arm": "jev-original",
+      "status": "complete",
+      "reward": -13.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 13,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 3,
+      "wall_seconds": 131.9096164139919,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -13.0,
+      "http_wall_seconds": 130.844787086593,
+      "usage": {
+        "input_tokens": 738196,
+        "output_tokens": 34194
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 291,
+        "agreement_fraction": 0.418,
+        "first_differences": [
+          {
+            "decision": 14,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 18,
+            "actual": 2,
+            "rule": 0
+          },
+          {
+            "decision": 20,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 22,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 25,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 26,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 27,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 28,
+            "actual": 2,
+            "rule": 3
+          },
+          {
+            "decision": 31,
+            "actual": 2,
+            "rule": 3
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 291,
+        "requests_opposing_instantaneous_vertical_gap": 268,
+        "estimated_right_paddle_returns": 0,
+        "provider_choice_disagreements": 2,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    }
+  ],
+  "interpretation": "Paired development pilot, not a learning curve, independent test, or statistical significance claim. No automatic policy promotion.",
+  "totals": {
+    "python-2px": {
+      "reward": -15.0,
+      "points_scored": 1,
+      "points_lost": 16,
+      "raw_frames": 8000,
+      "reset_frames": 33,
+      "decisions": 2000,
+      "api_attempts": 0,
+      "wall_seconds": 2.808251445996575,
+      "http_wall_seconds": 0,
+      "absorbing_tail_frames": 0,
+      "native_terminations": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    "python-4px": {
+      "reward": -14.0,
+      "points_scored": 3,
+      "points_lost": 17,
+      "raw_frames": 8000,
+      "reset_frames": 33,
+      "decisions": 2000,
+      "api_attempts": 0,
+      "wall_seconds": 2.7347101310733706,
+      "http_wall_seconds": 0,
+      "absorbing_tail_frames": 0,
+      "native_terminations": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    "jev-original": {
+      "reward": -52.0,
+      "points_scored": 0,
+      "points_lost": 52,
+      "raw_frames": 8000,
+      "reset_frames": 33,
+      "decisions": 2000,
+      "api_attempts": 2000,
+      "wall_seconds": 519.1936232319567,
+      "http_wall_seconds": 514.9849875939544,
+      "absorbing_tail_frames": 0,
+      "native_terminations": 0,
+      "usage": {
+        "input_tokens": 2953317,
+        "output_tokens": 136760
+      }
+    },
+    "jev-vertical": {
+      "reward": -3.0,
+      "points_scored": 3,
+      "points_lost": 6,
+      "raw_frames": 8000,
+      "reset_frames": 33,
+      "decisions": 2000,
+      "api_attempts": 2000,
+      "wall_seconds": 518.9945000039879,
+      "http_wall_seconds": 514.7018624785123,
+      "absorbing_tail_frames": 0,
+      "native_terminations": 0,
+      "usage": {
+        "input_tokens": 3368371,
+        "output_tokens": 137298
+      }
+    }
+  },
+  "paired_reward_differences": [
+    {
+      "left": "jev-vertical",
+      "right": "jev-original",
+      "difference": "left minus right",
+      "per_seed": [
+        {
+          "seed": 36,
+          "gain": 11.0
+        },
+        {
+          "seed": 37,
+          "gain": 12.0
+        },
+        {
+          "seed": 46,
+          "gain": 15.0
+        },
+        {
+          "seed": 47,
+          "gain": 11.0
+        }
+      ]
+    },
+    {
+      "left": "jev-vertical",
+      "right": "python-4px",
+      "difference": "left minus right",
+      "per_seed": [
+        {
+          "seed": 36,
+          "gain": 2.0
+        },
+        {
+          "seed": 37,
+          "gain": -1.0
+        },
+        {
+          "seed": 46,
+          "gain": 10.0
+        },
+        {
+          "seed": 47,
+          "gain": 0.0
+        }
+      ]
+    },
+    {
+      "left": "python-4px",
+      "right": "python-2px",
+      "difference": "left minus right",
+      "per_seed": [
+        {
+          "seed": 36,
+          "gain": 3.0
+        },
+        {
+          "seed": 37,
+          "gain": 1.0
+        },
+        {
+          "seed": 46,
+          "gain": -4.0
+        },
+        {
+          "seed": 47,
+          "gain": 1.0
+        }
+      ]
+    }
+  ],
+  "api_attempts": 4000,
+  "http_status_counts": {
+    "200": 4000
+  },
+  "http_wall_seconds": 1029.6868500724668,
+  "usage": {
+    "input_tokens": 6321688,
+    "output_tokens": 274058
+  }
+}

@@ -1,5 +1,18 @@
 # Local validation — initial checks on 2026-09-17
 
+## Fixed-frame controls — 2026-09-18
+
+- 83 tests pass, including deadband boundaries, a single budget across arms/seeds,
+  retries, incomplete-run preservation, pinned-model enforcement before execution,
+  and native-terminal versus error treatment at the evaluation horizon.
+- Lint, formatting, repository checks and wheel/source builds pass; GitHub CI
+  passed for the frozen experiment implementation commit `c415207`.
+- All 16 real episodes replay with matching observations, rewards and frame hashes.
+  All 4,000 original JSON exchanges match the program/state and decoded action.
+- The [report](pong-controls-2026-09-18.md) preserves the complete fixed-seed
+  comparison, costs, literal-rule disagreement and limits. No teacher learning
+  or final-test evaluation occurred in this round.
+
 ## English rebuild and evidence preservation — 2026-09-18
 
 - 104 registered discrete single-agent ALE v5 environments passed an eight-frame

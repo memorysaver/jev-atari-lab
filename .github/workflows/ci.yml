@@ -23,3 +23,11 @@ jobs:
           uv run jev-atari replay
           --episode restored/artifacts/policy-online-v1/development-candidate-resumed/seed-27
           --out artifacts/ci-replay
+      - run: >-
+          uv run python scripts/restore_experiments.py
+          --manifest experiments/pong-controls-v1-2026-09-18.manifest.json
+          --out restored-controls
+      - run: >-
+          uv run python scripts/verify_controls.py
+          --run restored-controls/pong-controls-v1
+          --out artifacts/ci-controls-audit
