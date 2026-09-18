@@ -173,3 +173,30 @@ def test_invalid_horizon_is_rejected_before_any_call(tmp_path, monkeypatch):
         assert not (tmp_path / "run").exists()
     finally:
         evaluator.close()
+
+
+def test_candidate_only_uses_one_budget_without_running_or_inventing_baselines(
+    tmp_path, monkeypatch
+):
+    evaluator = make_evaluator(monkeypatch, 4)
+    try:
+        report = run_control_comparison(
+            Protocol(noop_max=0),
+            baseline=ActionProgram(),
+            candidate=ActionProgram(name="candidate"),
+            seeds=[36, 37],
+            frames=8,
+            evaluator=evaluator,
+            out=tmp_path / "run",
+            candidate_only=True,
+        )
+        plan = read_json(tmp_path / "run/plan.json")
+        assert report["status"] == "complete"
+        assert report["api_attempts"] == plan["max_decision_calls"] == 4
+        assert plan["candidate_only"]
+        assert set(plan["arms"]) == set(report["totals"]) == {"jev-vertical"}
+        assert [e["seed"] for e in report["episodes"]] == [36, 37]
+        assert report["paired_reward_differences"] == []
+        assert not (tmp_path / "run/jev-original").exists()
+    finally:
+        evaluator.close()

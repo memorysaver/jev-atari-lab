@@ -150,6 +150,11 @@ def main() -> None:
     p.add_argument("--max-api-calls", type=int, required=True)
     p.add_argument("--baseline-program", type=Path, required=True)
     p.add_argument("--candidate-program", type=Path, required=True)
+    p.add_argument(
+        "--candidate-only",
+        action="store_true",
+        help="Run only the candidate; no new baseline calls",
+    )
     p.add_argument("--seeds", type=int, nargs="+", required=True)
     p.add_argument("--frames", type=int, default=2000)
     p.add_argument("--source-revision", help="Source commit used for the experiment")
@@ -308,6 +313,7 @@ def main() -> None:
                 video=args.video,
                 source_revision=args.source_revision,
                 on_episode=show_progress,
+                candidate_only=args.candidate_only,
             )
         elif args.command == "policy-feedback":
             if args.out.exists():

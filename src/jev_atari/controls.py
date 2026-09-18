@@ -69,6 +69,7 @@ def run_control_comparison(
     video: bool = False,
     source_revision: str | None = None,
     on_episode=None,
+    candidate_only: bool = False,
 ) -> dict:
     if not seeds or len(set(seeds)) != len(seeds):
         raise ValueError("Seeds must be nonempty and unique")
@@ -85,17 +86,22 @@ def run_control_comparison(
         "jev-original": PinnedActionPolicy(evaluator, baseline),
         "jev-vertical": PinnedActionPolicy(evaluator, candidate),
     }
+    if candidate_only:
+        policies = {"jev-vertical": policies["jev-vertical"]}
     schedule = []
     for index, seed in enumerate(seeds):
         jev_order = ["jev-original", "jev-vertical"]
         if index % 2:
             jev_order.reverse()
         schedule.extend(
-            {"seed": seed, "arm": arm} for arm in ["python-2px", "python-4px", *jev_order]
+            {"seed": seed, "arm": arm}
+            for arm in ["python-2px", "python-4px", *jev_order]
+            if arm in policies
         )
     plan = {
         "kind": "pong-control-plan-v1",
         "source_revision": source_revision,
+        "candidate_only": candidate_only,
         "split": "development",
         "seeds": seeds,
         "protocol": protocol.manifest(),
@@ -104,7 +110,9 @@ def run_control_comparison(
         "point_limit": None,
         "requested_model": evaluator.model,
         "max_http_attempts": evaluator.api.budget.max_calls,
-        "max_decision_calls": 2 * len(seeds) * (frames // protocol.hold_frames),
+        "max_decision_calls": (1 if candidate_only else 2)
+        * len(seeds)
+        * (frames // protocol.hold_frames),
         "schedule": schedule,
         "arms": {
             arm: {
@@ -120,7 +128,12 @@ def run_control_comparison(
         "termination_rule": "Native terminal has a zero-reward absorbing tail; reset NOOPs "
         "are excluded from the horizon. Errors and environment truncation are incomplete.",
         "inference_rule": "Fresh model calls; no cache, teacher revision, or policy promotion. "
-        "Jev order alternates by seed. One API realization per policy/seed.",
+        "One API realization per policy/seed. "
+        + (
+            "Candidate only; no new baseline calls."
+            if candidate_only
+            else "Jev order alternates by seed."
+        ),
     }
     write_json(out / "plan.json", plan)
     report = {
@@ -128,7 +141,10 @@ def run_control_comparison(
         "status": "incomplete",
         "plan_hash": digest(plan),
         "episodes": [],
-        "interpretation": "Paired development pilot, not a learning curve, independent "
+        "interpretation": (
+            "Candidate-only development follow-up" if candidate_only else "Paired development pilot"
+        )
+        + ", not a learning curve, independent "
         "test, or statistical significance claim. No automatic policy promotion.",
     }
     write_json(out / "comparison.json", report)
@@ -210,6 +226,7 @@ def run_control_comparison(
                 ("jev-vertical", "python-4px"),
                 ("python-4px", "python-2px"),
             )
+            if left in policies and right in policies
         ]
         report["status"] = "complete"
         return report

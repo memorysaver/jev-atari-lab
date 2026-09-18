@@ -50,6 +50,9 @@ in the fixed-frame comparison already avoided FIRE variants, so this clarificati
 does not fix an observed FIRE-selection failure or establish better confidence or play.
 The original candidate and published experiment artifacts remain unchanged.
 
+The [bounded rerun protocol](../docs/no-fire-rerun-protocol.md) specifies a
+candidate-only follow-up with a 2,200-attempt cap and historical baseline reuse.
+
 ## Preserved artifacts
 
 The [fixed-frame controls](../docs/pong-controls-2026-09-18.md) compare four policies
