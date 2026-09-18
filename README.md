@@ -13,6 +13,8 @@ the vertical-control Jev question achieved -3 net reward, versus -14 for the lit
 4px Python rule and -52 for the original Jev question. Jev matched the written rule
 on only 66.85% of decisions. See the [controlled comparison](docs/pong-controls-2026-09-18.md).
 This is a short-run result, not a solved-game or RL convergence claim.
+The subsequent [no-FIRE wording experiment](docs/pong-no-fire-2026-09-18.md)
+retains all six actions and reports the full follow-up, including a transport failure.
 
 [Watch the Pong replay](docs/media/jev-vertical-policy-seed-27.mp4) ·
 [Experiment journal](experiments/README.md) · [Game coverage](docs/games.md) ·
@@ -179,6 +181,8 @@ teacher feedback from final-test data. Offline prediction improvement does not
 establish better online play. Keep rejected proposals and unsuccessful runs.
 
 ## Results and documentation
+
+- [How Pong is evaluated](docs/pong-benchmark.md): full-match scores, short-run limits, and fair comparisons.
 
 - [Fixed-frame Pong controls](docs/pong-controls-protocol.md): same-rule Python/Jev comparison, frozen seeds and shared API budget.
 - [Controlled comparison results](docs/pong-controls-2026-09-18.md): all 16 episodes, rule adherence, costs and replayable evidence.

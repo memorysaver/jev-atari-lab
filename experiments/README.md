@@ -33,7 +33,7 @@ Full reports: [value pilot](../docs/pilot-2026-09-18.md),
 [question-form comparison](../docs/choice-ablation-2026-09-18.md),
 [online policy pilot](../docs/policy-online-2026-09-18.md).
 
-## Proposed question-only clarification
+## Question-only no-FIRE clarification
 
 The [no-FIRE candidate](../examples/vertical-policy-no-fire-program.json) keeps
 the six default `ALE/Pong-v5` actions (`NOOP`, `FIRE`, `RIGHT`, `LEFT`, `RIGHTFIRE`,
@@ -45,7 +45,9 @@ option, decoder override, or confidence-based fallback.
 The [proposal record](no-fire-question-proposal.json) preserves the before/after
 programs, hashes and exact text replacement. This was a user-requested manual edit
 after viewing development results, not an isolated train-only teacher update.
-It is **not evaluated or promoted**, and made no new API calls. All 4,000 decisions
+The proposal record describes its creation before evaluation and remains unchanged.
+The [follow-up report](../docs/pong-no-fire-2026-09-18.md) records the subsequent
+evaluation; the candidate is not promoted. All 4,000 decisions
 in the fixed-frame comparison already avoided FIRE variants, so this clarification
 does not fix an observed FIRE-selection failure or establish better confidence or play.
 The original candidate and published experiment artifacts remain unchanged.
@@ -54,6 +56,15 @@ The [bounded rerun protocol](../docs/no-fire-rerun-protocol.md) specifies a
 candidate-only follow-up with a 2,200-attempt cap and historical baseline reuse.
 
 ## Preserved artifacts
+
+The [no-FIRE follow-up](../docs/pong-no-fire-2026-09-18.md) scored -5 versus the
+historical v2 total of -3. Confidence and rule agreement increased without an
+aggregate score improvement. Its LFS archive `pong-no-fire-study-2026-09-18.tar.gz`
+retains four full short episodes, an interrupted prefix, five videos, original
+API/frame logs, a separate continuation plan and audits. Combined use was
+2,089 of 2,200 permitted HTTP attempts; all recorded frames replay successfully.
+The [results index](pong-no-fire-study-results.json) includes both successful and
+failed work. This manual development follow-up is not a promoted teacher round.
 
 The [fixed-frame controls](../docs/pong-controls-2026-09-18.md) compare four policies
 on four new development seeds. This is not another teacher revision: both Jev

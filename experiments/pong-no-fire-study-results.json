@@ -1,0 +1,551 @@
+{
+  "kind": "no-fire-follow-up-audit-v1",
+  "status": "verified",
+  "audit_api_calls": 0,
+  "combined_attempts": 2089,
+  "combined_attempt_cap": 2200,
+  "http_status_counts": {
+    "200": 2087,
+    "transport_error": 1,
+    "529": 1
+  },
+  "usage": {
+    "input_tokens": 3625672,
+    "output_tokens": 143259
+  },
+  "http_wall_seconds": 613.1687898404198,
+  "reference": {
+    "decisions": 2000,
+    "action_counts": {
+      "0": 1300,
+      "2": 347,
+      "3": 353
+    },
+    "noop_fraction": 0.65,
+    "fire_variant_count": 0,
+    "rule_agreement_fraction": 0.6685,
+    "mean_confidence": 0.57861,
+    "confidence_below_0_3": 56,
+    "confidence_below_0_5": 844,
+    "mean_top_two_margin": 0.41483818181818183,
+    "top_two_margin_below_0_1": 283
+  },
+  "candidate": {
+    "decisions": 2000,
+    "action_counts": {
+      "0": 1276,
+      "2": 369,
+      "3": 355
+    },
+    "noop_fraction": 0.638,
+    "fire_variant_count": 0,
+    "rule_agreement_fraction": 0.7015,
+    "mean_confidence": 0.608695,
+    "confidence_below_0_3": 23,
+    "confidence_below_0_5": 763,
+    "mean_top_two_margin": 0.4491110101010101,
+    "top_two_margin_below_0_1": 246
+  },
+  "selected_complete_episodes": [
+    {
+      "seed": 36,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": -1.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 3,
+      "points_lost": 4,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 11,
+      "wall_seconds": 131.72610634600278,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -1.0,
+      "http_wall_seconds": 130.68178891495336,
+      "usage": {
+        "input_tokens": 863757,
+        "output_tokens": 34320
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 118,
+        "agreement_fraction": 0.764,
+        "first_differences": [
+          {
+            "decision": 13,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 15,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 20,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 23,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 24,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 25,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 26,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 27,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 38,
+            "actual": 0,
+            "rule": 3
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 380,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 4,
+        "provider_choice_disagreements": 0,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 37,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": 0.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 0,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 4,
+      "wall_seconds": 130.34335531794932,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": 0.0,
+      "http_wall_seconds": 129.30223484127782,
+      "usage": {
+        "input_tokens": 873139,
+        "output_tokens": 34320
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 167,
+        "agreement_fraction": 0.666,
+        "first_differences": [
+          {
+            "decision": 15,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 19,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 20,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 22,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 23,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 24,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 25,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 26,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 28,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 29,
+            "actual": 0,
+            "rule": 2
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 486,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 8,
+        "provider_choice_disagreements": 2,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 46,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": -3.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 0,
+      "points_lost": 3,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 15,
+      "wall_seconds": 138.21877103799488,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 500,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -3.0,
+      "http_wall_seconds": 137.15093005844392,
+      "usage": {
+        "input_tokens": 868558,
+        "output_tokens": 34322
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 155,
+        "agreement_fraction": 0.69,
+        "first_differences": [
+          {
+            "decision": 12,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 14,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 15,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 20,
+            "actual": 3,
+            "rule": 0
+          },
+          {
+            "decision": 22,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 23,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 24,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 25,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 27,
+            "actual": 0,
+            "rule": 2
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 444,
+        "requests_opposing_instantaneous_vertical_gap": 0,
+        "estimated_right_paddle_returns": 6,
+        "provider_choice_disagreements": 2,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    },
+    {
+      "seed": 47,
+      "arm": "jev-vertical",
+      "status": "complete",
+      "reward": -1.0,
+      "decisions": 500,
+      "raw_frames": 2000,
+      "points_scored": 1,
+      "points_lost": 2,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 3,
+      "wall_seconds": 133.8830358730629,
+      "simulated_seconds": 33.333333333333336,
+      "api_attempts": 501,
+      "evaluation_complete": true,
+      "evaluation_horizon_frames": 2000,
+      "absorbing_tail_frames": 0,
+      "evaluation_reward": -1.0,
+      "http_wall_seconds": 132.63430062425323,
+      "usage": {
+        "input_tokens": 869571,
+        "output_tokens": 34315
+      },
+      "rule_4px_agreement": {
+        "decisions": 500,
+        "different_actions": 157,
+        "agreement_fraction": 0.686,
+        "first_differences": [
+          {
+            "decision": 14,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 17,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 18,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 19,
+            "actual": 0,
+            "rule": 2
+          },
+          {
+            "decision": 22,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 24,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 34,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 35,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 40,
+            "actual": 0,
+            "rule": 3
+          },
+          {
+            "decision": 42,
+            "actual": 0,
+            "rule": 2
+          }
+        ],
+        "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+      },
+      "diagnostics": {
+        "decisions": 500,
+        "visible_ball_and_player_decisions": 441,
+        "requests_opposing_instantaneous_vertical_gap": 1,
+        "estimated_right_paddle_returns": 6,
+        "provider_choice_disagreements": 1,
+        "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+      }
+    }
+  ],
+  "interrupted_prefix": {
+    "seed": 46,
+    "arm": "jev-vertical",
+    "status": "incomplete",
+    "reward": 0.0,
+    "decisions": 87,
+    "raw_frames": 348,
+    "points_scored": 0,
+    "points_lost": 0,
+    "terminated": false,
+    "truncated": false,
+    "backend": "jev",
+    "end_reason": "error",
+    "reset_frames": 15,
+    "error_type": "ModelError",
+    "wall_seconds": 83.69638221489731,
+    "simulated_seconds": 5.8,
+    "api_attempts": 88,
+    "evaluation_complete": false,
+    "evaluation_horizon_frames": 2000,
+    "absorbing_tail_frames": 0,
+    "evaluation_reward": null
+  },
+  "checks": [
+    {
+      "plan_hash": "8bf8110d6cc0cbe8f04e4c3bf99d95dc0a28fc2c0217d1949eb680f8795e5691",
+      "comparison_hash": "cea99b2c31bb6a5542b67f0c580c8151217fd8d9bd4e798c207280b5b74ef54b",
+      "episodes": [
+        {
+          "seed": 36,
+          "exchanges": 500,
+          "replay": {
+            "kind": "verified-pong-replay-v1",
+            "status": "verified",
+            "api_attempts": 0,
+            "source_episode": "artifacts/pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36",
+            "source_status": "complete",
+            "decisions": 500,
+            "raw_frames": 2000,
+            "reward": -1.0,
+            "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7",
+            "raw_frame_evidence": "verified-against-original",
+            "reset_frames": 11,
+            "interpretation": "Recorded observations, actions and outcomes reproduced; no model resampling. An incomplete source remains an incomplete original experiment."
+          }
+        },
+        {
+          "seed": 37,
+          "exchanges": 500,
+          "replay": {
+            "kind": "verified-pong-replay-v1",
+            "status": "verified",
+            "api_attempts": 0,
+            "source_episode": "artifacts/pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37",
+            "source_status": "complete",
+            "decisions": 500,
+            "raw_frames": 2000,
+            "reward": 0.0,
+            "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7",
+            "raw_frame_evidence": "verified-against-original",
+            "reset_frames": 4,
+            "interpretation": "Recorded observations, actions and outcomes reproduced; no model resampling. An incomplete source remains an incomplete original experiment."
+          }
+        },
+        {
+          "seed": 46,
+          "exchanges": 88,
+          "replay": {
+            "kind": "verified-pong-replay-v1",
+            "status": "verified",
+            "api_attempts": 0,
+            "source_episode": "artifacts/pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46",
+            "source_status": "incomplete",
+            "decisions": 87,
+            "raw_frames": 348,
+            "reward": 0.0,
+            "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7",
+            "raw_frame_evidence": "verified-against-original",
+            "reset_frames": 15,
+            "interpretation": "Recorded observations, actions and outcomes reproduced; no model resampling. An incomplete source remains an incomplete original experiment."
+          }
+        }
+      ]
+    },
+    {
+      "plan_hash": "3fe6bf5fa70a4457cf27d798f24d1a47aac8f4698d15e0340d66ae07d72421e5",
+      "comparison_hash": "ec82e545c0c8e2fc0fc6135ab5b46ccb7a7120b378f65e95384890a5e5982af2",
+      "episodes": [
+        {
+          "seed": 46,
+          "exchanges": 500,
+          "replay": {
+            "kind": "verified-pong-replay-v1",
+            "status": "verified",
+            "api_attempts": 0,
+            "source_episode": "artifacts/pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46",
+            "source_status": "complete",
+            "decisions": 500,
+            "raw_frames": 2000,
+            "reward": -3.0,
+            "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7",
+            "raw_frame_evidence": "verified-against-original",
+            "reset_frames": 15,
+            "interpretation": "Recorded observations, actions and outcomes reproduced; no model resampling. An incomplete source remains an incomplete original experiment."
+          }
+        },
+        {
+          "seed": 47,
+          "exchanges": 501,
+          "replay": {
+            "kind": "verified-pong-replay-v1",
+            "status": "verified",
+            "api_attempts": 0,
+            "source_episode": "artifacts/pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47",
+            "source_status": "complete",
+            "decisions": 500,
+            "raw_frames": 2000,
+            "reward": -1.0,
+            "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7",
+            "raw_frame_evidence": "verified-against-original",
+            "reset_frames": 3,
+            "interpretation": "Recorded observations, actions and outcomes reproduced; no model resampling. An incomplete source remains an incomplete original experiment."
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation": "Historical baseline, seen development seeds, manual question edit; no promotion or causal learning claim. Failed prefix excluded from fixed-horizon scores, included in costs and audit."
+}

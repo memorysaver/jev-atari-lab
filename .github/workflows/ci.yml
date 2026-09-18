@@ -31,3 +31,12 @@ jobs:
           uv run python scripts/verify_controls.py
           --run restored-controls/pong-controls-v1
           --out artifacts/ci-controls-audit
+      - run: >-
+          uv run python scripts/restore_experiments.py
+          --manifest experiments/pong-no-fire-study-2026-09-18.manifest.json
+          --out restored-no-fire
+      - run: >-
+          uv run python scripts/verify_no_fire.py
+          --source restored-no-fire/pong-no-fire-study
+          --baseline restored-controls/pong-controls-v1
+          --out artifacts/ci-no-fire-audit

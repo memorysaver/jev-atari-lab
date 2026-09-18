@@ -1,0 +1,16 @@
+{
+  "kind": "interrupted-run-continuation-v1",
+  "reason": "Model transport failure before executing the next action on seed 46",
+  "original_run": "pong-no-fire-v3",
+  "original_attempts": 1088,
+  "combined_attempt_cap": 2200,
+  "continuation_attempt_cap": 1112,
+  "continuation_run": "pong-no-fire-v3-continuation",
+  "seeds": [
+    46,
+    47
+  ],
+  "restart_policy": "Restart seed 46 from its original reset; preserve its 87-decision failed prefix. Do not select among outcomes.",
+  "program_changes": false,
+  "protocol_deviation": "The frozen first run stopped on error as specified. A separate continuation restarts the interrupted seed within the original combined budget."
+}

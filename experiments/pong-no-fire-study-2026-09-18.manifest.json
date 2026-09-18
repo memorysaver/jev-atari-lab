@@ -1,0 +1,324 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "pong-no-fire-study-2026-09-18.tar.gz",
+  "sha256": "d49f7e4f9c575f4f4d21d82adaaa7559148dedf036f2e0b49da44f194415bc89",
+  "file_count": 63,
+  "uncompressed_bytes": 33692483,
+  "files": [
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3/jev-vertical/seed-36/frames.jsonl",
+      "bytes": 1413879,
+      "sha256": "c3059f36c704ad3fdced07c8d7f15b8d7bfcaeecf70fcdb5f2e70d0be3754804"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3/jev-vertical/seed-36/verification.json",
+      "bytes": 591,
+      "sha256": "bb91eac9254cb4fe551461735c72b1f1598b818ceefc897b44a480f78a9f6984"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3/jev-vertical/seed-37/frames.jsonl",
+      "bytes": 1415055,
+      "sha256": "817e0e2b89e93985c8aa182ba204953718f877aeeebf38cbed7dd9bbbccf7cba"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3/jev-vertical/seed-37/verification.json",
+      "bytes": 589,
+      "sha256": "bca1782a00139397ca357badffb7ba08ef6a26f38f391b81d9a40831b5aeb0e6"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3/jev-vertical/seed-46/frames.jsonl",
+      "bytes": 245242,
+      "sha256": "f745e8786a234a75a18841e87dd830f4fd61f3f5d4e729ed24f9a15f2c1aac85"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3/jev-vertical/seed-46/verification.json",
+      "bytes": 590,
+      "sha256": "00ce9bf02fc21585ec4627a83d2fc9d9263a1e0202617cf2eac42902c741309e"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3-continuation/jev-vertical/seed-46/frames.jsonl",
+      "bytes": 1413346,
+      "sha256": "18140d05225b9febe93f9cee922892cecaad184536fc0e377718dfd95570f05b"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3-continuation/jev-vertical/seed-46/verification.json",
+      "bytes": 604,
+      "sha256": "df515dfb3feedb8b056f6fa095263547608da712198c581586718c351befc883"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3-continuation/jev-vertical/seed-47/frames.jsonl",
+      "bytes": 1413455,
+      "sha256": "8848ae9d87714bb551831197195e547f389e25c1046078c5365276c7ff22f287"
+    },
+    {
+      "path": "pong-no-fire-study/audit/pong-no-fire-v3-continuation/jev-vertical/seed-47/verification.json",
+      "bytes": 603,
+      "sha256": "388e9365b0d72708183cc23617baab64de23549ca7a39be8865361ae76373ff8"
+    },
+    {
+      "path": "pong-no-fire-study/audit/verification.json",
+      "bytes": 16607,
+      "sha256": "0cb0a72cef1da1216ad3da817a3ee9896c3f8d38e80d1785d46764cb749430ee"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/api-ledger.json",
+      "bytes": 258312,
+      "sha256": "8b624da765dfc618f0acbfd5f8b55dd643dc152e4b4dba7e04ad86ee0377c42c"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/comparison.json",
+      "bytes": 6283,
+      "sha256": "9c70ffc7057684ad6e509fd05feb3daef8d23acaef19ab29b79e9f3baf267e5b"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/continuation-plan.json",
+      "bytes": 684,
+      "sha256": "f433bb5d212268a8ced5f11997849934cce4105f0c3bb5b7f09bd999453e411f"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/api-ledger.json",
+      "bytes": 118741,
+      "sha256": "75a175aab609758cb0ad03651b95614f7f7d5fa89a313a2995c2a0380e5e9c10"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/evaluation.json",
+      "bytes": 2147,
+      "sha256": "e78810b6b1e42a8d16fdf68917741ffee2f7bb04f2f5d1a70ca462d994306bd5"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/frames.jsonl",
+      "bytes": 1413879,
+      "sha256": "c3059f36c704ad3fdced07c8d7f15b8d7bfcaeecf70fcdb5f2e70d0be3754804"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/last-frame.png",
+      "bytes": 731,
+      "sha256": "42abd7fdae850378a72285920270cab1b368b70794a5dfba08697af543922ab4"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/manifest.json",
+      "bytes": 2146,
+      "sha256": "5e7eb09177cd1295ed39b156f567c551eb4fd667db5c4412533fd6df1b7316bc"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/model-exchanges.jsonl",
+      "bytes": 2322777,
+      "sha256": "ff252d60a2a42ff37ec44861eca721e6ec632419d921c0ff00367392b5e9cbc3"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/replay.mp4",
+      "bytes": 84726,
+      "sha256": "02e4484868580a83af0434dfd792c8870369e36d756d9a22ad70bf0f195a8821"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/summary.json",
+      "bytes": 353,
+      "sha256": "aa222e212b223e0087fc467f83a7f7c0737110d731b26f6f7713b5d0b7a3867e"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-36/transitions.jsonl",
+      "bytes": 2562617,
+      "sha256": "c1091dfc99ee5aa17af92ae1c05601c4433459604c702b06e872f768f8b39bcf"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/api-ledger.json",
+      "bytes": 118784,
+      "sha256": "37ef7838d32c42765fbb150ea7a24b751f70bcc3a09e39af358b277717859776"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/evaluation.json",
+      "bytes": 2144,
+      "sha256": "9daa4da8df04e9dbfc3b890217efe8e9610069a5c2a1c8bed8a17372ea74f5a1"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/frames.jsonl",
+      "bytes": 1415055,
+      "sha256": "817e0e2b89e93985c8aa182ba204953718f877aeeebf38cbed7dd9bbbccf7cba"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/last-frame.png",
+      "bytes": 728,
+      "sha256": "47e25437e057867665cd5a850e61938c5dd412a79b726443b89ebe2135dc358e"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/manifest.json",
+      "bytes": 2146,
+      "sha256": "1fe3ad7a8aa957b974e5a024d42e6b7f37ddc2a310b1303e0e9d7baf97623e96"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/model-exchanges.jsonl",
+      "bytes": 2331652,
+      "sha256": "1d0267a1ba5ae4535244163087fbf5ebac987aa5b0c396ef81080a60eb6e1e0e"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/replay.mp4",
+      "bytes": 89473,
+      "sha256": "770c5b1a820fc1af37336487250d34aefbd1f1eb1edaf0108af9000f3f262c67"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/summary.json",
+      "bytes": 351,
+      "sha256": "375ed6d6f6b536cca9a42b936989fe3b941b8e74c99f995c41a890b0f8ae34a4"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-37/transitions.jsonl",
+      "bytes": 2580561,
+      "sha256": "d89b1be06dd009cb112c4941a1e83534e4f20c4176bc71c607d6b92c525482ae"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46/api-ledger.json",
+      "bytes": 20793,
+      "sha256": "730cfe0333d04111d3a04e132769a17c513f62aaa054baf95ebde7e97553d004"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46/frames.jsonl",
+      "bytes": 245242,
+      "sha256": "f745e8786a234a75a18841e87dd830f4fd61f3f5d4e729ed24f9a15f2c1aac85"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46/manifest.json",
+      "bytes": 2146,
+      "sha256": "228877c7ccdfde6be2a8cde680f012df73297b3ff36ba84ffb3236313c2cdcf7"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46/model-exchanges.jsonl",
+      "bytes": 408688,
+      "sha256": "d403a41fcce4def85e80add333c32d009172e590a63db66f7d500c4d7b0e913a"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46/replay.mp4",
+      "bytes": 15725,
+      "sha256": "1d4079077f22bb4c551760afec1545740b36a491c682f2117df320b8ac1c27ca"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46/summary.json",
+      "bytes": 357,
+      "sha256": "8c83b596c5a310500cfaeddbd6174e73fbed835e4b9c890fedfe9d79dee4a0ed"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/jev-vertical/seed-46/transitions.jsonl",
+      "bytes": 446368,
+      "sha256": "4b0135be5764bf730ffdf3da0571fba07bbeee884a33c85c0727117662bfb91c"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/plan.json",
+      "bytes": 3261,
+      "sha256": "de9d69c858a22305c6b67f0f25f1ff6d3ca8f62972b4e9366c26accdf843708a"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/question-changes.json",
+      "bytes": 4214,
+      "sha256": "f22eb944d9965091c37eaef6deecd8a62dc6177248a85220ed6a13eba7109e73"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3/reference.json",
+      "bytes": 12201,
+      "sha256": "a5a2b847a88e38186f5474959a0983c879d98e9d615a7809f868dad47d2716e2"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/api-ledger.json",
+      "bytes": 237635,
+      "sha256": "8742aab7f2978fc09888d5b02a45e3d50520a8294cc7f88b724a14d81a751a2b"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/comparison.json",
+      "bytes": 6078,
+      "sha256": "3299a06461bbc0adeea591dbed9255e412243f5df083fdc793dee963add008c6"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/api-ledger.json",
+      "bytes": 118742,
+      "sha256": "a1a1f8d7a0b46b68143c5c25a904445739ca1b58baa22b19d4072692970d38c0"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/evaluation.json",
+      "bytes": 2146,
+      "sha256": "12e90eda38ada8c295e18835637720c26299acd06f256e5f69c01f1ec5ca97cf"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/frames.jsonl",
+      "bytes": 1413346,
+      "sha256": "18140d05225b9febe93f9cee922892cecaad184536fc0e377718dfd95570f05b"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/last-frame.png",
+      "bytes": 734,
+      "sha256": "0779ff2410ec9555f6317a69bad70bc935d8d2e59211c8e4d7c62285fb48304b"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/manifest.json",
+      "bytes": 2146,
+      "sha256": "228877c7ccdfde6be2a8cde680f012df73297b3ff36ba84ffb3236313c2cdcf7"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/model-exchanges.jsonl",
+      "bytes": 2326961,
+      "sha256": "dbf6f033991578cfa9b077846bd71d6a97fc1f8e56ddfc7595234cdb36472de1"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/replay.mp4",
+      "bytes": 85107,
+      "sha256": "5d52d0498e4df2ea1522337cea7eaab5ea90c71cd4cbb27f408d7c3d2a2c4f4d"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/summary.json",
+      "bytes": 353,
+      "sha256": "376f91bc857e49a160e0e65a3f25a8243c92886cc6dcdf5e643174fa8589f44b"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-46/transitions.jsonl",
+      "bytes": 2571376,
+      "sha256": "f0f41522c1ad42ef25cf716c53a845c1332cc3c8a06e52f12ed00fb34b9220af"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/api-ledger.json",
+      "bytes": 118896,
+      "sha256": "0eae146c4b69c80d7ecc8868a2957cc206a49ac7ce37a46993921650c7e8725e"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/evaluation.json",
+      "bytes": 2145,
+      "sha256": "e07a44df40d67437fce77abb7634bf897c94c2efee27b527de819f0a2ce29fdd"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/frames.jsonl",
+      "bytes": 1413455,
+      "sha256": "8848ae9d87714bb551831197195e547f389e25c1046078c5365276c7ff22f287"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/last-frame.png",
+      "bytes": 718,
+      "sha256": "c3bd2c4fc46ee0f42fba4a5cfcbd1cb0227d49621fd6ea30ee180db7b73513ef"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/manifest.json",
+      "bytes": 2146,
+      "sha256": "3e1d3d29542166ee885213a0b4a250e088f6b93f87c9e37446fe2ce134ca7bd0"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/model-exchanges.jsonl",
+      "bytes": 2332514,
+      "sha256": "7e5637907720a02d78fc13e128bad8723aa3629b3be203e99cf4551ad41c4708"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/replay.mp4",
+      "bytes": 86594,
+      "sha256": "294e31331933aaa7e15bbfe0bc80769c64f5994f0f38e946ecc1026dae64d789"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/summary.json",
+      "bytes": 351,
+      "sha256": "7ae3a802b5478b1983ba73d79dc44d37132cffa58366096b2fdaed70d3806e62"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/jev-vertical/seed-47/transitions.jsonl",
+      "bytes": 2574067,
+      "sha256": "cc9b3951143b99d9b9169159d2efacc8e025387153316199b48d62b7e03a780f"
+    },
+    {
+      "path": "pong-no-fire-study/pong-no-fire-v3-continuation/plan.json",
+      "bytes": 3127,
+      "sha256": "a3cb9ce233993bad95c9d8142553f06a873150b4fba64aa217752fc73903338c"
+    }
+  ]
+}
