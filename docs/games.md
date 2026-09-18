@@ -1,6 +1,6 @@
 # Atari challenge scope
 
-Our goal is to attempt every discrete single-agent `ALE/*-v5` game registered by the
+Our goal is to attempt and work toward mastering every discrete single-agent `ALE/*-v5` game registered by the
 locked ale-py installation. On 2026-09-18, ale-py 0.11.2 exposes 104 such games.
 The ROM package and website may list a different total; neither defines this experiment's
 denominator. Modes, difficulties, continuous actions and multiplayer are separate extensions.
@@ -9,6 +9,15 @@ denominator. Modes, difficulties, continuous actions and multiplayer are separat
 each game and executes legal actions without model calls. The checked inventory is
 [environment-check-2026-09-18.json](../experiments/environment-check-2026-09-18.json).
 All 104 passed eight-frame smoke checks. This only tests startup and stepping.
+
+Define success separately for each game before declaring mastery: not every game
+has a final level or a universal completion event. Record mode, difficulty, score
+or completion criterion, evaluation budget and replication. Report coverage of
+attempts separately from games meeting those criteria.
+
+The second project goal is to discover reusable teacher-optimizer patterns. A game
+used to develop an adapter or optimization method is not automatically a held-out
+transfer test. See the [research roadmap](research-roadmap.md) for that distinction.
 
 | Capability | Pong | Other registered games |
 | --- | --- | --- |

@@ -1,12 +1,22 @@
 # Jev Atari Lab
 
-**Can structured questions turn a decision model into a better Atari player?**
+**How should a teacher learn to improve the structured questions that control an Atari player?**
 
-Our goal is to challenge every single-agent Atari game exposed by the pinned
+We have two goals: work toward mastering every single-agent Atari game exposed by the pinned
 [Arcade Learning Environment](https://ale.farama.org/environments/) with
-[TypeSafe Jev](https://typesafe.ai/), and publish the evidence behind each attempt:
+[TypeSafe Jev](https://typesafe.ai/), and discover effective **teacher-driven
+optimizers for structured question policies**. We publish the evidence behind each attempt:
 observations, model inputs and outputs, actions, rewards, videos, and every
 teacher-authored change to the question program.
+
+The central research question is which ways of selecting experience, assigning
+credit, proposing edits, retaining candidates and using memory produce repeatable
+improvements under a measured budget. Finding those optimization patterns is the
+intended path to a paper. Initially both teacher and Jev weights stay fixed;
+the question program changes. The full automatic optimizer remains proposed work.
+All project research lives in [docs/](docs/README.md), including the
+[optimizer design](docs/teacher-optimizer.md), [evaluation framework](docs/evaluation-framework.md)
+and [research roadmap](docs/research-roadmap.md).
 
 **Latest long trial:** On a fresh development seed, the unchanged v2 Jev question
 reached the 20,000-frame cap at **7:18** (return -11), with the native match still
