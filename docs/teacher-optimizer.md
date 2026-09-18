@@ -4,6 +4,11 @@ Status: proposed research design, 2026-09-18. Existing logging, imported proposa
 limited selection gates and replay are building blocks. The complete optimizer
 and pattern-discovery process below are not implemented or validated.
 
+The [Pong teacher log](pong/teacher-log.md) now provides a manually maintained
+record format and historical entries. Use the [round template](templates/teacher-round.md)
+for new proposals. Automatic direct-policy teacher logging/orchestration remains
+future work; existing value-learning API traces are documented in that log.
+
 ## What the optimizer controls
 
 The teacher is a proposal engine inside an optimizer. Initially fix its model and

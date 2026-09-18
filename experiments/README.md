@@ -4,6 +4,10 @@ This directory publishes the evidence, including failed attempts and rejected
 question changes. Archives and videos use Git LFS. JSON indexes remain readable
 on GitHub. Nothing here establishes general Atari mastery or RL convergence.
 
+New evidence is grouped by game, starting at [pong/](pong/README.md). Historical
+files remain at their published paths. The [Pong teacher log](../docs/pong/teacher-log.md)
+provides a unified view of proposal provenance, exact changes and later outcomes.
+
 ## Read the actual decisions and teacher changes
 
 - [One Pong decision](pong-decision-111.json): decision 111 from seed 27. The request

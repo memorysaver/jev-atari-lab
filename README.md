@@ -36,6 +36,10 @@ retains all six actions and reports the full follow-up, including a transport fa
 [Experiment journal](experiments/README.md) · [Game coverage](docs/games.md) ·
 [Replay and audit guide](docs/replay.md)
 
+[Pong research directory](docs/pong/README.md) ·
+[Teacher log and question revisions](docs/pong/teacher-log.md) ·
+[Pong evaluation profile](docs/pong/evaluation.md)
+
 ## Two approaches, kept separate
 
 | Track | What Jev predicts | Action selection | Current scope |

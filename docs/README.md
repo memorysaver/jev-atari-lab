@@ -25,6 +25,12 @@ machine-readable evidence and immutable LFS archives remain in
 
 ## Experimental evidence
 
+Game-specific research starts at [Pong](pong/README.md), with its own
+[evaluation profile](pong/evaluation.md) and [teacher log](pong/teacher-log.md).
+For new games, use the shared [evaluation-profile](templates/game-evaluation.md)
+and [teacher-round](templates/teacher-round.md) templates. Outcomes and mastery
+criteria are game-specific; provenance, cost and evidence requirements are shared.
+
 | Experiment | What it establishes | What remains open |
 | --- | --- | --- |
 | [Value pilot](pilot-2026-09-18.md) | A question revision improved Brier score but regressed MAE and was rejected | Improved control or TD learning |

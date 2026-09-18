@@ -16,6 +16,11 @@ default of keeping new research in the private idea repository.
 - Distinguish observed results, source-reported claims, proposed methods and
   unconfirmed conclusions. Link research updates from `docs/README.md`; preserve
   negative results and never retroactively rewrite frozen experiment protocols.
+- Keep game-specific research under `docs/<game>/`, with an evaluation profile and
+  teacher log using `docs/templates/`. New working/published evidence uses
+  `artifacts/<game>/` and `experiments/<game>/`; preserve historical paths. Record
+  teacher provenance and proposal context before evaluation; never invent missing
+  transcripts or treat a manual revision as an isolated automated teacher run.
 - Never commit API keys, `.env`, ROM files or emulator snapshots.
 - Keep working runtime logs in ignored `artifacts/`. Reviewed experiment archives may
   be published under `experiments/` with checksums and provenance. Store archives and

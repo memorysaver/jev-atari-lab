@@ -30,6 +30,11 @@ transfer test. See the [research roadmap](research-roadmap.md) for that distinct
 
 ## Adding a game properly
 
+Create a game directory such as [docs/pong/](pong/README.md), using the shared
+[evaluation-profile template](templates/game-evaluation.md) and
+[teacher-round template](templates/teacher-round.md). Keep each game's endpoints,
+diagnostics and mastery criteria explicit instead of inheriting Pong's metrics.
+
 1. Record environment, ROM hash, legal actions, mode and difficulty.
 2. Define observable state, missing values, history and startup/life-loss behavior.
 3. Validate action effects; joystick labels alone are not semantic evidence.
