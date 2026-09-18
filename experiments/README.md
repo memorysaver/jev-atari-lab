@@ -33,6 +33,23 @@ Full reports: [value pilot](../docs/pilot-2026-09-18.md),
 [question-form comparison](../docs/choice-ablation-2026-09-18.md),
 [online policy pilot](../docs/policy-online-2026-09-18.md).
 
+## Proposed question-only clarification
+
+The [no-FIRE candidate](../examples/vertical-policy-no-fire-program.json) keeps
+the six default `ALE/Pong-v5` actions (`NOOP`, `FIRE`, `RIGHT`, `LEFT`, `RIGHTFIRE`,
+`LEFTFIRE`) visible and selectable. It changes only the guidance and version name:
+explain the fire-button combinations and explicitly request RIGHT/up, LEFT/down,
+or NOOP/no vertical movement for this policy. There is no action mask, renamed
+option, decoder override, or confidence-based fallback.
+
+The [proposal record](no-fire-question-proposal.json) preserves the before/after
+programs, hashes and exact text replacement. This was a user-requested manual edit
+after viewing development results, not an isolated train-only teacher update.
+It is **not evaluated or promoted**, and made no new API calls. All 4,000 decisions
+in the fixed-frame comparison already avoided FIRE variants, so this clarification
+does not fix an observed FIRE-selection failure or establish better confidence or play.
+The original candidate and published experiment artifacts remain unchanged.
+
 ## Preserved artifacts
 
 The [fixed-frame controls](../docs/pong-controls-2026-09-18.md) compare four policies
