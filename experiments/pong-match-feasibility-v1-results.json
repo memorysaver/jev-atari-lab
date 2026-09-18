@@ -1,0 +1,203 @@
+{
+  "kind": "pong-match-suite-v1",
+  "status": "complete",
+  "plan_hash": "5145c91ccb1e2e0c38f95b74cca4278dda600684be8c84549325bf22ff2a402b",
+  "episodes": [
+    {
+      "seed": 56,
+      "arm": "random",
+      "status": "complete",
+      "reward": -19.0,
+      "decisions": 1006,
+      "raw_frames": 4021,
+      "points_scored": 2,
+      "points_lost": 21,
+      "terminated": true,
+      "truncated": false,
+      "backend": "local",
+      "end_reason": "native_termination",
+      "reset_frames": 11,
+      "wall_seconds": 1.2465895779896528,
+      "simulated_seconds": 67.01666666666667,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "censored": false,
+      "outcome": "loss",
+      "capped_episode_return": -19.0,
+      "full_match_return": -19.0
+    },
+    {
+      "seed": 56,
+      "arm": "track-4px",
+      "status": "complete",
+      "reward": -16.0,
+      "decisions": 3896,
+      "raw_frames": 15584,
+      "points_scored": 5,
+      "points_lost": 21,
+      "terminated": true,
+      "truncated": false,
+      "backend": "local",
+      "end_reason": "native_termination",
+      "reset_frames": 11,
+      "wall_seconds": 4.290250150952488,
+      "simulated_seconds": 259.73333333333335,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "censored": false,
+      "outcome": "loss",
+      "capped_episode_return": -16.0,
+      "full_match_return": -16.0
+    },
+    {
+      "seed": 56,
+      "arm": "intercept",
+      "status": "complete",
+      "reward": -18.0,
+      "decisions": 3602,
+      "raw_frames": 14408,
+      "points_scored": 3,
+      "points_lost": 21,
+      "terminated": true,
+      "truncated": false,
+      "backend": "local",
+      "end_reason": "native_termination",
+      "reset_frames": 11,
+      "wall_seconds": 3.9421589869307354,
+      "simulated_seconds": 240.13333333333333,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "censored": false,
+      "outcome": "loss",
+      "capped_episode_return": -18.0,
+      "full_match_return": -18.0
+    },
+    {
+      "seed": 56,
+      "arm": "jev",
+      "status": "complete",
+      "reward": -11.0,
+      "decisions": 5000,
+      "raw_frames": 20000,
+      "points_scored": 7,
+      "points_lost": 18,
+      "terminated": false,
+      "truncated": true,
+      "backend": "jev",
+      "end_reason": "decision_limit",
+      "reset_frames": 11,
+      "wall_seconds": 1336.4534673090093,
+      "simulated_seconds": 333.3333333333333,
+      "api_attempts": 5000,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "censored": true,
+      "outcome": "unfinished",
+      "capped_episode_return": -11.0,
+      "full_match_return": null
+    }
+  ],
+  "aggregates": {
+    "random": {
+      "scheduled_episodes": 1,
+      "recorded_episodes": 1,
+      "evaluated_episodes": 1,
+      "native_matches": 1,
+      "wins": 0,
+      "losses": 1,
+      "unfinished_or_unstarted": 0,
+      "completion_rate": 1.0,
+      "win_rate_completed_matches": 0.0,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "mean_capped_return": -19.0,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": -19.0,
+      "end_reasons": {
+        "native_termination": 1
+      },
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    },
+    "track-4px": {
+      "scheduled_episodes": 1,
+      "recorded_episodes": 1,
+      "evaluated_episodes": 1,
+      "native_matches": 1,
+      "wins": 0,
+      "losses": 1,
+      "unfinished_or_unstarted": 0,
+      "completion_rate": 1.0,
+      "win_rate_completed_matches": 0.0,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "mean_capped_return": -16.0,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": -16.0,
+      "end_reasons": {
+        "native_termination": 1
+      },
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    },
+    "intercept": {
+      "scheduled_episodes": 1,
+      "recorded_episodes": 1,
+      "evaluated_episodes": 1,
+      "native_matches": 1,
+      "wins": 0,
+      "losses": 1,
+      "unfinished_or_unstarted": 0,
+      "completion_rate": 1.0,
+      "win_rate_completed_matches": 0.0,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "mean_capped_return": -18.0,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": -18.0,
+      "end_reasons": {
+        "native_termination": 1
+      },
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    },
+    "jev": {
+      "scheduled_episodes": 1,
+      "recorded_episodes": 1,
+      "evaluated_episodes": 1,
+      "native_matches": 0,
+      "wins": 0,
+      "losses": 0,
+      "unfinished_or_unstarted": 1,
+      "completion_rate": 0.0,
+      "win_rate_completed_matches": null,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        1.0
+      ],
+      "mean_capped_return": -11.0,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": null,
+      "end_reasons": {
+        "decision_limit": 1
+      },
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    }
+  },
+  "api_attempts": 5000,
+  "http_status_counts": {
+    "200": 5000
+  },
+  "http_wall_seconds": 1326.796586408862,
+  "usage": {
+    "input_tokens": 8430279,
+    "output_tokens": 343180
+  }
+}

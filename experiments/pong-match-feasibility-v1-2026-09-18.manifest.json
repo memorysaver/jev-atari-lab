@@ -1,0 +1,224 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "pong-match-feasibility-v1-2026-09-18.tar.gz",
+  "sha256": "05bd765c9fc48512d5a2761b5d080bda2076f0ddea6912e76675f67898adf563",
+  "file_count": 43,
+  "uncompressed_bytes": 166743084,
+  "files": [
+    {
+      "path": "pong-match-feasibility-v1/api-ledger.json",
+      "bytes": 1187641,
+      "sha256": "cd112b7c57f524952b8c779798bf235a7bf71e31523f0c1a45c3ff3514d40f55"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/intercept/seed-56/frames.jsonl",
+      "bytes": 10245715,
+      "sha256": "55349ebd9e8ae1473bb48fb931c06aa6a67831fadfbec3fc7a24a1f868da4af5"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/intercept/seed-56/verification.json",
+      "bytes": 582,
+      "sha256": "569297cee7f886c29abe3d5f608d08b0c1d4ccf75bcadd57acd0a8c3ced4d4bc"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/jev/seed-56/frames.jsonl",
+      "bytes": 14218499,
+      "sha256": "92ac153bf02935f266b5edb38f66b91aeb97b53ae960ab398791895294588c70"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/jev/seed-56/verification.json",
+      "bytes": 576,
+      "sha256": "8489b678f79e46bfbd13ce4e7e04284fbb45eaf994a761b20d4bf353801dcea7"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/random/seed-56/frames.jsonl",
+      "bytes": 2842311,
+      "sha256": "0f4bb9b2e8614c81410e7b34db309da9f8922dd2c9205f77f929573722b058c2"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/random/seed-56/verification.json",
+      "bytes": 578,
+      "sha256": "7a2639b572e8a99662ba725deeae59e1f7f1830f4c4629bf3c5d15bba7cb1e05"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/track-4px/seed-56/frames.jsonl",
+      "bytes": 11074249,
+      "sha256": "8b1d551cede33f982e504f9ed26e28130209adc250f7e10db4711071380fc286"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/track-4px/seed-56/verification.json",
+      "bytes": 582,
+      "sha256": "31157fcc1bb6f89a94fc0778ef0742cc7bc1acfb88b3c2f1ed2a44fcdce2ce5d"
+    },
+    {
+      "path": "pong-match-feasibility-v1/audit/verification.json",
+      "bytes": 3316,
+      "sha256": "bda5366955dd77f49c04a3e4188549b61a99bf49e1d20b179fdf3fcaea5d3e15"
+    },
+    {
+      "path": "pong-match-feasibility-v1/intercept/seed-56/evaluation.json",
+      "bytes": 546,
+      "sha256": "8732ad77fe305480dae9ceac35ccff72bb2c9f9b3149f0ab262200184f040192"
+    },
+    {
+      "path": "pong-match-feasibility-v1/intercept/seed-56/frames.jsonl",
+      "bytes": 10245715,
+      "sha256": "55349ebd9e8ae1473bb48fb931c06aa6a67831fadfbec3fc7a24a1f868da4af5"
+    },
+    {
+      "path": "pong-match-feasibility-v1/intercept/seed-56/last-frame.png",
+      "bytes": 741,
+      "sha256": "f1d347d0cd7a1ecd5df47cd72caa686e86f46fc193b20a0834a7f657aea6363a"
+    },
+    {
+      "path": "pong-match-feasibility-v1/intercept/seed-56/manifest.json",
+      "bytes": 756,
+      "sha256": "9f25adb6cdc8939dea4e640eb344af857707347334b8a491c1df5ea5d6a3ceba"
+    },
+    {
+      "path": "pong-match-feasibility-v1/intercept/seed-56/replay.mp4",
+      "bytes": 633026,
+      "sha256": "9094fa116e96ad0a8b1df73b7844569ec0029ff0646a50e675624f259b0e2f20"
+    },
+    {
+      "path": "pong-match-feasibility-v1/intercept/seed-56/summary.json",
+      "bytes": 340,
+      "sha256": "320ff6ec606c241305886fe15300c89abfed4418179f72c92e700c07cef367b8"
+    },
+    {
+      "path": "pong-match-feasibility-v1/intercept/seed-56/transitions.jsonl",
+      "bytes": 15887983,
+      "sha256": "64d6a1bd3a0abd24e035b8ce93c360715b8e162dd6ba5217b581cc4682c73b86"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/api-ledger.json",
+      "bytes": 1187641,
+      "sha256": "cd112b7c57f524952b8c779798bf235a7bf71e31523f0c1a45c3ff3514d40f55"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/evaluation.json",
+      "bytes": 562,
+      "sha256": "570ca923443b9396a0035d77d1810427e6bd61fd3af43760d873964b42a91841"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/frames.jsonl",
+      "bytes": 14218499,
+      "sha256": "92ac153bf02935f266b5edb38f66b91aeb97b53ae960ab398791895294588c70"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/last-frame.png",
+      "bytes": 727,
+      "sha256": "fe24c99c77bd4ca8c2538b951a662640db30aa5e22960db9551cb9d8b0c6b630"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/manifest.json",
+      "bytes": 1901,
+      "sha256": "914568494f49bfce840e854e17c9d6b8f8d3e69d0af993de4b29db4eeeafdedd"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/model-exchanges.jsonl",
+      "bytes": 22164422,
+      "sha256": "902a36f27038c0879385ba878724120b39958d58d1212c3e70822de1ab7ae430"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/replay.mp4",
+      "bytes": 856411,
+      "sha256": "4ccf6f4d10ac9b07cb32b3b7602243cc33f19442ebfd33c80e1e09adf1763428"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/summary.json",
+      "bytes": 357,
+      "sha256": "d62cdfb8c9dede9120a5054fc162415ec3d0f01bcde1a78cdd96ab687aba7fed"
+    },
+    {
+      "path": "pong-match-feasibility-v1/jev/seed-56/transitions.jsonl",
+      "bytes": 25816923,
+      "sha256": "9668469a7e16319f057706651d5a07bea34fb1f472068c0d44c0749df3ab7ebe"
+    },
+    {
+      "path": "pong-match-feasibility-v1/plan.json",
+      "bytes": 3139,
+      "sha256": "54262173f7fb8949324c9ce96aa8e1c2e06e01a002af196b7378374b26ef5a88"
+    },
+    {
+      "path": "pong-match-feasibility-v1/random/seed-56/evaluation.json",
+      "bytes": 541,
+      "sha256": "d0a6f459ad2385e6f71d8466e8cf124dea6b7267ed676336b12ce29557934c19"
+    },
+    {
+      "path": "pong-match-feasibility-v1/random/seed-56/frames.jsonl",
+      "bytes": 2842311,
+      "sha256": "0f4bb9b2e8614c81410e7b34db309da9f8922dd2c9205f77f929573722b058c2"
+    },
+    {
+      "path": "pong-match-feasibility-v1/random/seed-56/last-frame.png",
+      "bytes": 732,
+      "sha256": "105c3d7fb9c76a05a32b32cdc5a6ecc8e5a0d9cd6a4bb496deab067e6b84ee4e"
+    },
+    {
+      "path": "pong-match-feasibility-v1/random/seed-56/manifest.json",
+      "bytes": 739,
+      "sha256": "a7218fb3376df365375465ad8066d078c878efe499b9c64c92bce714e34c8d7a"
+    },
+    {
+      "path": "pong-match-feasibility-v1/random/seed-56/replay.mp4",
+      "bytes": 166853,
+      "sha256": "de2dfca300cb6d467a67dcde3ab998266be5e04b932a7043dba5e89b45ce7c4c"
+    },
+    {
+      "path": "pong-match-feasibility-v1/random/seed-56/summary.json",
+      "bytes": 338,
+      "sha256": "2d8a26329b7cc96b49712f28edd1aa85db431db14e03315490d085123372f011"
+    },
+    {
+      "path": "pong-match-feasibility-v1/random/seed-56/transitions.jsonl",
+      "bytes": 4377396,
+      "sha256": "0d4ac257a2264905116319b3b2439592523bb59e1917e38705fa5c223b7b204d"
+    },
+    {
+      "path": "pong-match-feasibility-v1/results.json",
+      "bytes": 6626,
+      "sha256": "51c015f5f1a089b7019ddec20329fba7ea8ed4bf3820a17ae3cc454a4f3e2152"
+    },
+    {
+      "path": "pong-match-feasibility-v1/trace-analysis.json",
+      "bytes": 6175,
+      "sha256": "d2dca840ef45e0ca2f0846582ff2bd198392eb9180faf7b77a742ae907eaa920"
+    },
+    {
+      "path": "pong-match-feasibility-v1/track-4px/seed-56/evaluation.json",
+      "bytes": 545,
+      "sha256": "7010168e777ad9a25fb08064d322699c38e1eac2666c00c005133d7dba81c09c"
+    },
+    {
+      "path": "pong-match-feasibility-v1/track-4px/seed-56/frames.jsonl",
+      "bytes": 11074249,
+      "sha256": "8b1d551cede33f982e504f9ed26e28130209adc250f7e10db4711071380fc286"
+    },
+    {
+      "path": "pong-match-feasibility-v1/track-4px/seed-56/last-frame.png",
+      "bytes": 748,
+      "sha256": "35b92c6f5745a1e6f179ca2d7eca610a2ab8292de99968fcf56df38a8505a6ed"
+    },
+    {
+      "path": "pong-match-feasibility-v1/track-4px/seed-56/manifest.json",
+      "bytes": 754,
+      "sha256": "a405a99d597f55b27e9e9dc5933b6a26a79f780c9a19025a582bd6c89a356700"
+    },
+    {
+      "path": "pong-match-feasibility-v1/track-4px/seed-56/replay.mp4",
+      "bytes": 688772,
+      "sha256": "35824cd8b34abb40694d020f1994ddbd9b4b55334f4a7da6fdf6ba34844e9a00"
+    },
+    {
+      "path": "pong-match-feasibility-v1/track-4px/seed-56/summary.json",
+      "bytes": 339,
+      "sha256": "c9d4974653ada3e4b89998ac1e9b2f5d453633f233fd94d711dbe12c28c981da"
+    },
+    {
+      "path": "pong-match-feasibility-v1/track-4px/seed-56/transitions.jsonl",
+      "bytes": 16982228,
+      "sha256": "c0ebd5ef82a47ac455095cdd3959b0605012f1979b84cca055bc740742488770"
+    }
+  ]
+}

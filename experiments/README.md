@@ -57,6 +57,16 @@ candidate-only follow-up with a 2,200-attempt cap and historical baseline reuse.
 
 ## Preserved artifacts
 
+The [long Jev feasibility trial](../docs/pong-match-feasibility-2026-09-18.md)
+uses fresh development seed 56. Frozen v2 Jev reached 20,000 frames at 7:18
+(return -11), with the native match unfinished; local controls completed losses.
+All 5,000 model calls succeeded. `pong-match-feasibility-v1-2026-09-18.tar.gz`
+contains all four videos, original exchanges, 54,013 controlled frames across
+four policies, trajectories and replay audits. See the
+[results index](pong-match-feasibility-v1-results.json) and
+[trace analysis](pong-match-feasibility-v1-trace-analysis.json).
+This is a fixed-policy feasibility trial, not a teacher update or a win-rate estimate.
+
 The [native-match calibration](../docs/pong-match-calibration-2026-09-18.md) adds
 nine local training episodes with zero API calls. Random lost all three native
 games; tracking and interception each had two losses and one unfinished game at

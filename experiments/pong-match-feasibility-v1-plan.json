@@ -1,0 +1,76 @@
+{
+  "kind": "pong-match-plan-v1",
+  "source_revision": "01db805",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "development",
+  "seeds": [
+    56
+  ],
+  "arms": [
+    "random",
+    "track-4px",
+    "intercept",
+    "jev"
+  ],
+  "schedule": [
+    {
+      "seed": 56,
+      "arm": "random"
+    },
+    {
+      "seed": 56,
+      "arm": "track-4px"
+    },
+    {
+      "seed": 56,
+      "arm": "intercept"
+    },
+    {
+      "seed": 56,
+      "arm": "jev"
+    }
+  ],
+  "max_frames_per_episode": 20000,
+  "max_decisions_per_episode": 5000,
+  "point_limit": null,
+  "program": {
+    "name": "pong-vertical-control-v2",
+    "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "model": "jev-1.13.0",
+  "max_http_attempts": 5500,
+  "max_decision_calls": 5000,
+  "local_policies": {
+    "random": "Uniform over all six legal actions; fresh RNG seeded by episode seed.",
+    "track-4px": "track-ball-center-4px-v1",
+    "intercept": {
+      "name": "reflected-intercept-4px-v1",
+      "deadband": 4,
+      "top": 34,
+      "bottom": 194
+    }
+  },
+  "stop_rule": "Native termination or frame cap. Errors stop the suite; no automatic restart, action fallback, absorbing tail, or extra budget. Retain partial evidence.",
+  "primary_metric": "Undiscounted episode return through native termination or frame cap; report full-match completion and win denominators separately.",
+  "inference_rule": "One realization per arm/seed; no teacher update or promotion. All six actions and the observation/decoder contracts remain unchanged."
+}

@@ -1,0 +1,308 @@
+{
+  "kind": "pong-match-trace-analysis-v1",
+  "source_results_hash": "c93adef6dbdad42268b42b01564c59af7eaeec3d0be706f84b6a015891f55065",
+  "decisions": 5000,
+  "action_counts": {
+    "0": 3180,
+    "3": 913,
+    "2": 907
+  },
+  "mean_confidence": 0.56644,
+  "confidence_below_0_5": 2204,
+  "checkpoints": [
+    {
+      "controlled_frame": 2000,
+      "scored": 0,
+      "conceded": 0
+    },
+    {
+      "controlled_frame": 4000,
+      "scored": 0,
+      "conceded": 1
+    },
+    {
+      "controlled_frame": 6000,
+      "scored": 1,
+      "conceded": 1
+    },
+    {
+      "controlled_frame": 8000,
+      "scored": 1,
+      "conceded": 4
+    },
+    {
+      "controlled_frame": 10000,
+      "scored": 1,
+      "conceded": 6
+    },
+    {
+      "controlled_frame": 12000,
+      "scored": 1,
+      "conceded": 10
+    },
+    {
+      "controlled_frame": 14000,
+      "scored": 2,
+      "conceded": 10
+    },
+    {
+      "controlled_frame": 16000,
+      "scored": 3,
+      "conceded": 12
+    },
+    {
+      "controlled_frame": 18000,
+      "scored": 6,
+      "conceded": 14
+    },
+    {
+      "controlled_frame": 20000,
+      "scored": 7,
+      "conceded": 18
+    }
+  ],
+  "scoring_events": [
+    {
+      "controlled_frame": 3387,
+      "decision": 846,
+      "reward": -1.0,
+      "scored": 0,
+      "conceded": 1
+    },
+    {
+      "controlled_frame": 5332,
+      "decision": 1332,
+      "reward": 1.0,
+      "scored": 1,
+      "conceded": 1
+    },
+    {
+      "controlled_frame": 7300,
+      "decision": 1824,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 2
+    },
+    {
+      "controlled_frame": 7680,
+      "decision": 1919,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 3
+    },
+    {
+      "controlled_frame": 7820,
+      "decision": 1954,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 4
+    },
+    {
+      "controlled_frame": 8200,
+      "decision": 2049,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 5
+    },
+    {
+      "controlled_frame": 9060,
+      "decision": 2264,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 6
+    },
+    {
+      "controlled_frame": 10406,
+      "decision": 2601,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 7
+    },
+    {
+      "controlled_frame": 10546,
+      "decision": 2636,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 8
+    },
+    {
+      "controlled_frame": 10926,
+      "decision": 2731,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 9
+    },
+    {
+      "controlled_frame": 11066,
+      "decision": 2766,
+      "reward": -1.0,
+      "scored": 1,
+      "conceded": 10
+    },
+    {
+      "controlled_frame": 12055,
+      "decision": 3013,
+      "reward": 1.0,
+      "scored": 2,
+      "conceded": 10
+    },
+    {
+      "controlled_frame": 14856,
+      "decision": 3713,
+      "reward": 1.0,
+      "scored": 3,
+      "conceded": 10
+    },
+    {
+      "controlled_frame": 15356,
+      "decision": 3838,
+      "reward": -1.0,
+      "scored": 3,
+      "conceded": 11
+    },
+    {
+      "controlled_frame": 15496,
+      "decision": 3873,
+      "reward": -1.0,
+      "scored": 3,
+      "conceded": 12
+    },
+    {
+      "controlled_frame": 16001,
+      "decision": 4000,
+      "reward": 1.0,
+      "scored": 4,
+      "conceded": 12
+    },
+    {
+      "controlled_frame": 16261,
+      "decision": 4065,
+      "reward": -1.0,
+      "scored": 4,
+      "conceded": 13
+    },
+    {
+      "controlled_frame": 17121,
+      "decision": 4280,
+      "reward": -1.0,
+      "scored": 4,
+      "conceded": 14
+    },
+    {
+      "controlled_frame": 17380,
+      "decision": 4344,
+      "reward": 1.0,
+      "scored": 5,
+      "conceded": 14
+    },
+    {
+      "controlled_frame": 17761,
+      "decision": 4440,
+      "reward": 1.0,
+      "scored": 6,
+      "conceded": 14
+    },
+    {
+      "controlled_frame": 18021,
+      "decision": 4505,
+      "reward": -1.0,
+      "scored": 6,
+      "conceded": 15
+    },
+    {
+      "controlled_frame": 18161,
+      "decision": 4540,
+      "reward": -1.0,
+      "scored": 6,
+      "conceded": 16
+    },
+    {
+      "controlled_frame": 18781,
+      "decision": 4695,
+      "reward": -1.0,
+      "scored": 6,
+      "conceded": 17
+    },
+    {
+      "controlled_frame": 19280,
+      "decision": 4819,
+      "reward": 1.0,
+      "scored": 7,
+      "conceded": 17
+    },
+    {
+      "controlled_frame": 19540,
+      "decision": 4884,
+      "reward": -1.0,
+      "scored": 7,
+      "conceded": 18
+    }
+  ],
+  "rule_agreement": {
+    "decisions": 5000,
+    "different_actions": 1734,
+    "agreement_fraction": 0.6532,
+    "first_differences": [
+      {
+        "decision": 13,
+        "actual": 0,
+        "rule": 3
+      },
+      {
+        "decision": 15,
+        "actual": 0,
+        "rule": 3
+      },
+      {
+        "decision": 16,
+        "actual": 0,
+        "rule": 3
+      },
+      {
+        "decision": 18,
+        "actual": 0,
+        "rule": 3
+      },
+      {
+        "decision": 20,
+        "actual": 0,
+        "rule": 2
+      },
+      {
+        "decision": 23,
+        "actual": 0,
+        "rule": 3
+      },
+      {
+        "decision": 25,
+        "actual": 0,
+        "rule": 3
+      },
+      {
+        "decision": 26,
+        "actual": 0,
+        "rule": 2
+      },
+      {
+        "decision": 27,
+        "actual": 0,
+        "rule": 2
+      },
+      {
+        "decision": 32,
+        "actual": 0,
+        "rule": 3
+      }
+    ],
+    "interpretation": "Compared on this policy's visited states, not paired state indices. Rule agreement measures instruction execution, not optimal gameplay."
+  },
+  "diagnostics": {
+    "decisions": 5000,
+    "visible_ball_and_player_decisions": 4607,
+    "requests_opposing_instantaneous_vertical_gap": 8,
+    "estimated_right_paddle_returns": 68,
+    "provider_choice_disagreements": 10,
+    "interpretation": "Returns inferred from positive-to-negative ball vx near the right paddle; may miss contacts. Opposing instantaneous gap is not always a wrong action."
+  },
+  "interpretation": "Post-hoc description of this trajectory. Confidence is not win probability; rule agreement is not optimality. These observations do not identify a causal failure mechanism."
+}

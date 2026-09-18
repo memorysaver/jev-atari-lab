@@ -48,3 +48,11 @@ jobs:
           uv run python scripts/verify_matches.py
           --run restored-match-calibration/pong-match-calibration-v1
           --out artifacts/ci-match-calibration-audit
+      - run: >-
+          uv run python scripts/restore_experiments.py
+          --manifest experiments/pong-match-feasibility-v1-2026-09-18.manifest.json
+          --out restored-match-feasibility
+      - run: >-
+          uv run python scripts/verify_matches.py
+          --run restored-match-feasibility/pong-match-feasibility-v1
+          --out artifacts/ci-match-feasibility-audit

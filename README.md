@@ -8,7 +8,13 @@ Our goal is to challenge every single-agent Atari game exposed by the pinned
 observations, model inputs and outputs, actions, rewards, videos, and every
 teacher-authored change to the question program.
 
-**Current evidence:** On four development seeds with equal 2,000-frame horizons,
+**Latest long trial:** On a fresh development seed, the unchanged v2 Jev question
+reached the 20,000-frame cap at **7:18** (return -11), with the native match still
+unfinished. Random, tracking, and interception controls finished at 2:21, 5:21,
+and 3:21. See the [full report and video](docs/pong-match-feasibility-2026-09-18.md).
+This is one development trajectory, not a solved-game or learning claim.
+
+**Earlier short-run evidence:** On four development seeds with equal 2,000-frame horizons,
 the vertical-control Jev question achieved -3 net reward, versus -14 for the literal
 4px Python rule and -52 for the original Jev question. Jev matched the written rule
 on only 66.85% of decisions. See the [controlled comparison](docs/pong-controls-2026-09-18.md).
@@ -16,7 +22,7 @@ This is a short-run result, not a solved-game or RL convergence claim.
 The subsequent [no-FIRE wording experiment](docs/pong-no-fire-2026-09-18.md)
 retains all six actions and reports the full follow-up, including a transport failure.
 
-[Watch the Pong replay](docs/media/jev-vertical-policy-seed-27.mp4) ·
+[Watch the latest Pong episode](docs/media/pong-match-v2-seed-56.mp4) ·
 [Experiment journal](experiments/README.md) · [Game coverage](docs/games.md) ·
 [Replay and audit guide](docs/replay.md)
 
