@@ -21,7 +21,9 @@ Reset no-ops are accounted for separately and reproducible from the recorded see
 They are not Jev decisions. Sticky actions can differ from the requested joystick
 action; do not label the request as a directly observed executed action.
 
-For a suite, model exchanges are at the suite root and IDs span episodes. Each
+For `policy-suite`, model exchanges are at the suite root and IDs span episodes.
+For `compare-controls`, exchanges are inside each episode directory, with IDs
+unique across the entire comparison's shared budget. Each
 prediction's `exchange_id` links to the API record. Retries also get records and
 consume budget. Unsuccessful HTTP bodies are omitted because they may echo secrets;
 status and request remain. Successful bodies are captured as parsed JSON, with the

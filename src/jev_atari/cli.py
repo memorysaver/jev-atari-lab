@@ -6,6 +6,7 @@ from pathlib import Path
 
 from jev_atari.arcade import ArcadeActionProgram, arcade_play, inventory, resolve_game
 from jev_atari.choice import ActionPolicy, ActionProgram, ChoiceEvaluator, OutcomeChoiceProgram
+from jev_atari.controls import run_control_comparison
 from jev_atari.environment import Protocol
 from jev_atari.experiment import (
     collect,
@@ -140,6 +141,20 @@ def main() -> None:
     p = subs.add_parser("policy-feedback", help="Export training-only online trajectory contexts")
     p.add_argument("--suite", type=Path, required=True)
     p.add_argument("--out", type=Path, required=True)
+    p = subs.add_parser(
+        "compare-controls", help="Four paired Pong controls at a fixed frame horizon"
+    )
+    add_protocol(p)
+    p.add_argument("--backend", choices=["jev"], required=True)
+    p.add_argument("--model", required=True)
+    p.add_argument("--max-api-calls", type=int, required=True)
+    p.add_argument("--baseline-program", type=Path, required=True)
+    p.add_argument("--candidate-program", type=Path, required=True)
+    p.add_argument("--seeds", type=int, nargs="+", required=True)
+    p.add_argument("--frames", type=int, default=2000)
+    p.add_argument("--source-revision", help="Source commit used for the experiment")
+    p.add_argument("--video", action="store_true")
+    p.add_argument("--out", type=Path, required=True)
     p = subs.add_parser("select-policy", help="Apply the paired online development reward gate")
     p.add_argument("--baseline", type=Path, required=True)
     p.add_argument("--candidate", type=Path, required=True)
@@ -192,7 +207,7 @@ def main() -> None:
     args = parser.parse_args()
     evaluator, teacher = None, None
     try:
-        if args.command in {"doctor", "play", "collect", "policy-suite"}:
+        if args.command in {"doctor", "play", "collect", "policy-suite", "compare-controls"}:
             protocol = Protocol(args.hold_frames, args.sticky, args.observation, args.noop_max)
         if args.command == "games":
             if args.out and args.out.exists():
@@ -264,6 +279,35 @@ def main() -> None:
                 play(protocol, policy, seed=args.seed, **common)
                 if args.command == "play"
                 else run_policy_suite(protocol, policy, seeds=args.seeds, **common)
+            )
+        elif args.command == "compare-controls":
+            baseline = ActionProgram.from_dict(read_json(args.baseline_program))
+            candidate = ActionProgram.from_dict(read_json(args.candidate_program))
+            evaluator = ChoiceEvaluator(model=args.model, max_calls=args.max_api_calls)
+
+            def show_progress(episode):
+                print(
+                    json.dumps(
+                        {
+                            "completed_episode": {
+                                key: episode[key] for key in ("arm", "seed", "reward", "raw_frames")
+                            }
+                        }
+                    ),
+                    flush=True,
+                )
+
+            result = run_control_comparison(
+                protocol,
+                baseline=baseline,
+                candidate=candidate,
+                seeds=args.seeds,
+                frames=args.frames,
+                evaluator=evaluator,
+                out=args.out,
+                video=args.video,
+                source_revision=args.source_revision,
+                on_episode=show_progress,
             )
         elif args.command == "policy-feedback":
             if args.out.exists():

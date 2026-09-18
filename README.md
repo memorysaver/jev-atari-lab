@@ -177,6 +177,7 @@ establish better online play. Keep rejected proposals and unsuccessful runs.
 
 ## Results and documentation
 
+- [Fixed-frame Pong controls](docs/pong-controls-protocol.md): same-rule Python/Jev comparison, frozen seeds and shared API budget.
 - [Pong policy pilot](docs/policy-online-2026-09-18.md): seeds, stopping rules, costs and limitations.
 - [Value prediction pilot](docs/pilot-2026-09-18.md): better Brier score, rejected due to MAE regression.
 - [Score versus Choice](docs/choice-ablation-2026-09-18.md): offline question-form comparison.
