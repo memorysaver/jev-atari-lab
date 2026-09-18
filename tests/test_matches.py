@@ -132,3 +132,35 @@ def test_invalid_design_rejected_before_creating_run(tmp_path, seeds, split, fra
             out=tmp_path / "run",
         )
     assert not (tmp_path / "run").exists()
+
+
+def test_evidence_audit_handles_retry_and_rejects_tampered_input(tmp_path, monkeypatch):
+    import importlib.util
+    import json
+    from pathlib import Path
+
+    spec = importlib.util.spec_from_file_location("match_audit", Path("scripts/verify_matches.py"))
+    audit = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(audit)
+    evaluator = make_evaluator(monkeypatch, 3, retry=True)
+    try:
+        run_matches(
+            Protocol(noop_max=0),
+            arms=["jev"],
+            seeds=[56],
+            split="development",
+            max_frames=8,
+            out=tmp_path / "run",
+            evaluator=evaluator,
+            program=ActionProgram(),
+        )
+        result = audit.verify(tmp_path / "run", tmp_path / "audit")
+        assert result["status"] == "verified" and result["audit_api_attempts"] == 0
+        exchanges = tmp_path / "run/jev/seed-56/model-exchanges.jsonl"
+        rows = [json.loads(line) for line in exchanges.read_text().splitlines()]
+        rows[0]["request"]["state"]["observation"]["objects"][0]["bbox"] = [1, 2, 3, 4]
+        exchanges.write_text("".join(json.dumps(r) + "\n" for r in rows))
+        with pytest.raises(AssertionError):
+            audit.verify(tmp_path / "run", tmp_path / "tampered-audit")
+    finally:
+        evaluator.close()

@@ -57,6 +57,16 @@ candidate-only follow-up with a 2,200-attempt cap and historical baseline reuse.
 
 ## Preserved artifacts
 
+The [native-match calibration](../docs/pong-match-calibration-2026-09-18.md) adds
+nine local training episodes with zero API calls. Random lost all three native
+games; tracking and interception each had two losses and one unfinished game at
+20,000 frames. The interception candidate did not improve mean capped return.
+`pong-match-calibration-v1-2026-09-18.tar.gz` preserves all 105,071 controlled
+frames, every decision, the working source patch and offline audits. The
+[results index](pong-match-calibration-v1-results.json) reports explicit completion
+and win-rate denominators. Calibration videos were not recorded and can be rendered
+from replay. This is duration calibration, not Jev learning evidence.
+
 The [no-FIRE follow-up](../docs/pong-no-fire-2026-09-18.md) scored -5 versus the
 historical v2 total of -3. Confidence and rule agreement increased without an
 aggregate score improvement. Its LFS archive `pong-no-fire-study-2026-09-18.tar.gz`

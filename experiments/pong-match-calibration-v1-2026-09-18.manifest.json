@@ -1,0 +1,399 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "pong-match-calibration-v1-2026-09-18.tar.gz",
+  "sha256": "946944bc54c3d8aaf788d9aa5f61f6fb82210c6d2208b3a255016b560b1184ef",
+  "file_count": 78,
+  "uncompressed_bytes": 264393804,
+  "files": [
+    {
+      "path": "pong-match-calibration-v1/api-ledger.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/intercept/seed-50/frames.jsonl",
+      "bytes": 14227813,
+      "sha256": "ce280f547fed705d919b3caf64f44c415691aa5c0b30ff9bafd8cdab02a270f5"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/intercept/seed-50/verification.json",
+      "bytes": 582,
+      "sha256": "caaa359489e170c5b6fa9f1fa54e5b8111b4b84ceb16dcbddf751e88d5c8a0b3"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/intercept/seed-51/frames.jsonl",
+      "bytes": 8188086,
+      "sha256": "842013c8dce3703c8fdc4352d468ff5f151a91898ce17996ea2847e8f177d731"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/intercept/seed-51/verification.json",
+      "bytes": 582,
+      "sha256": "41333657960a264c49596b67206f08868761f8740364d97c67ff8559dddab20b"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/intercept/seed-52/frames.jsonl",
+      "bytes": 8916641,
+      "sha256": "a4c3ac5c1ff266aa0298fd483eaa104267173c5dcba21b85749ac8c42df9e235"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/intercept/seed-52/verification.json",
+      "bytes": 582,
+      "sha256": "f370e50904e2cc8abda095c8c0f149ae98b2cc476f18ff87cc65cb120c694913"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/random/seed-50/frames.jsonl",
+      "bytes": 2313012,
+      "sha256": "a79dd94d05590735de7e4ee1eb46018eca131c7f428fda0c498e9b665d10bcdd"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/random/seed-50/verification.json",
+      "bytes": 577,
+      "sha256": "c4c15f49667a6192087e9193b972eae42d3c7d3f896ee898d6052ee0e13b8e7c"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/random/seed-51/frames.jsonl",
+      "bytes": 2372382,
+      "sha256": "ffa155e6e9734a4708431b07aaff26ce3aebdb8aa1559fcb463e6a4c0cc82425"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/random/seed-51/verification.json",
+      "bytes": 577,
+      "sha256": "3310553968b49804fc3813085d1020906e987264be72bd34235726f4e45e43c4"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/random/seed-52/frames.jsonl",
+      "bytes": 2776619,
+      "sha256": "646bfc01d2b69b6bfea0f879c3fea0090ca1b17e64f714637ea62e1731e1d002"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/random/seed-52/verification.json",
+      "bytes": 577,
+      "sha256": "0b103e6ba141cbcb6653bbc8e8dca025bf8b95eb04c65dc53d5be37350e04072"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/track-4px/seed-50/frames.jsonl",
+      "bytes": 14217143,
+      "sha256": "03d44017850f6d782522ee796745fea79abe926299b64db466cc25df01a7386b"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/track-4px/seed-50/verification.json",
+      "bytes": 580,
+      "sha256": "4c89ef52a1abae824fa1cf24015516601e6cbc3f03ee299725139087961e4af5"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/track-4px/seed-51/frames.jsonl",
+      "bytes": 9257910,
+      "sha256": "50681c05c9892d6fea722cd78f53dbd33c03a9b2a81cac643a492f327ebfee25"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/track-4px/seed-51/verification.json",
+      "bytes": 582,
+      "sha256": "d5f78274566fa536cb86a21b4358942c41761e406368564dd438d60b0cbc33a8"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/track-4px/seed-52/frames.jsonl",
+      "bytes": 12365822,
+      "sha256": "929ff41ea28a741814fee01e77ac87838c5a74be8f58ac7bc39310b77ea6c952"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/track-4px/seed-52/verification.json",
+      "bytes": 582,
+      "sha256": "ad4de97ca6625cb920baee9fe790ada3bc5b719e81f1f62abe7443b74073a341"
+    },
+    {
+      "path": "pong-match-calibration-v1/audit/verification.json",
+      "bytes": 7126,
+      "sha256": "32e2fdac93c73d6467e75f8558169275d9a75f148cac157439c662fb300b0017"
+    },
+    {
+      "path": "pong-match-calibration-v1/implementation-diff.txt",
+      "bytes": 20982,
+      "sha256": "267eea855177e139cff71cf738e6fcf7af60e6a64a9c0ac9cd409d2f4ee6e23d"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-50/evaluation.json",
+      "bytes": 545,
+      "sha256": "7300dc806a211058f8255b1557394b56456dfc2ec01619f99af2421094c8c593"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-50/frames.jsonl",
+      "bytes": 14227813,
+      "sha256": "ce280f547fed705d919b3caf64f44c415691aa5c0b30ff9bafd8cdab02a270f5"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-50/last-frame.png",
+      "bytes": 740,
+      "sha256": "d22a63cd0f164c196bfb258575c98dd8218182847a65db2063c6f0ad36d30d5e"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-50/manifest.json",
+      "bytes": 750,
+      "sha256": "19267d3ff072c7b9e9d38d09e987cef44cc2ca06ea5352397cebafeb38c52ebc"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-50/summary.json",
+      "bytes": 334,
+      "sha256": "b6899088e6a0c2927957c7826f96a9058afee0fde4da7277d416099f0fe321c9"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-50/transitions.jsonl",
+      "bytes": 22073919,
+      "sha256": "0d83681438c3915ada34d36417770e5bbbbaae362466a40ebe020c7dfb9108e1"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-51/evaluation.json",
+      "bytes": 546,
+      "sha256": "f4388ba3c4b8e92aa1e9538b74c70950cd02ffed48f53609749cec9b80556701"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-51/frames.jsonl",
+      "bytes": 8188086,
+      "sha256": "842013c8dce3703c8fdc4352d468ff5f151a91898ce17996ea2847e8f177d731"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-51/last-frame.png",
+      "bytes": 730,
+      "sha256": "75ce201fc6bceb7cceb789b37b4569d2d1851cb4e033f904e99f029941b5155b"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-51/manifest.json",
+      "bytes": 750,
+      "sha256": "5b0042dfc73e5d514bd7cc595ee8c8853d6c2c4a091959a8bb1029266996c1c9"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-51/summary.json",
+      "bytes": 340,
+      "sha256": "8ea28f6a0a2e1eb5219440909ebb78848517cd32edaea200e605cbd93f34de92"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-51/transitions.jsonl",
+      "bytes": 12680417,
+      "sha256": "1907525f5459beda5b1786092da3a2c820903841374a0ed4cd7b187366c9ae9b"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-52/evaluation.json",
+      "bytes": 533,
+      "sha256": "7ea307c7ee2da58a86df1f68e8b80fafb0c1ed09648b231a80ab251107f5b5cf"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-52/frames.jsonl",
+      "bytes": 8916641,
+      "sha256": "a4c3ac5c1ff266aa0298fd483eaa104267173c5dcba21b85749ac8c42df9e235"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-52/last-frame.png",
+      "bytes": 730,
+      "sha256": "7243aa0aa45d7e18886315a6578e12f1d263b6ac281328aed9b2021bcd13436e"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-52/manifest.json",
+      "bytes": 750,
+      "sha256": "dca77cd1b58534b6137bf1431f1c60f17511509942467c006c7fdf438f1040ea"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-52/summary.json",
+      "bytes": 327,
+      "sha256": "9a1614287fc25dd429225a4840d59c73e67cf3f5c3bb27b3034cee1108dd5f20"
+    },
+    {
+      "path": "pong-match-calibration-v1/intercept/seed-52/transitions.jsonl",
+      "bytes": 13831150,
+      "sha256": "57d32c92351de9f4f3d7b65638f5ea395df10f211353fa334e3d5d02cc4a6cc2"
+    },
+    {
+      "path": "pong-match-calibration-v1/plan.json",
+      "bytes": 2222,
+      "sha256": "5243e440fd0c4f74394856ccccbfed3791f3b18938037c0df4977656797cac6f"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-50/evaluation.json",
+      "bytes": 540,
+      "sha256": "3b1dd094340fcc878deb69605a99ae844fce836a912f75c5793956f3033c5625"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-50/frames.jsonl",
+      "bytes": 2313012,
+      "sha256": "a79dd94d05590735de7e4ee1eb46018eca131c7f428fda0c498e9b665d10bcdd"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-50/last-frame.png",
+      "bytes": 728,
+      "sha256": "e9f6a9fd2fb08b75378dcac1a4d85d18e0bb1058a7a8c0e60c81ae8ba8ef4e66"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-50/manifest.json",
+      "bytes": 733,
+      "sha256": "80f113036aae88a4305a676cd51dd5cd2083f6d18b7529c9582d651fdb8bdb14"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-50/summary.json",
+      "bytes": 337,
+      "sha256": "d5c12f250d8cc88deb4b7e9bfc6a97f3069ffa56605cfd1f7c913d9391798706"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-50/transitions.jsonl",
+      "bytes": 3536042,
+      "sha256": "093411ef0673e6371bde7d24a19f6852a9b9b2777609001803b442333f912027"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-51/evaluation.json",
+      "bytes": 527,
+      "sha256": "a5452c98a00f907861a5dc9ea23587b0c48e23f50abcebfc9f84237527c0977c"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-51/frames.jsonl",
+      "bytes": 2372382,
+      "sha256": "ffa155e6e9734a4708431b07aaff26ce3aebdb8aa1559fcb463e6a4c0cc82425"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-51/last-frame.png",
+      "bytes": 724,
+      "sha256": "32ed913c8d09b425e5d9fc5a23b5185916c0b6991353e3dbb0c842d6b25f19eb"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-51/manifest.json",
+      "bytes": 733,
+      "sha256": "c67fff0d439468150a921d509420ec337d044b30db907112421f3a87f898f6c9"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-51/summary.json",
+      "bytes": 324,
+      "sha256": "fa7d98f18412f59fb53f77afb8560cf1de9ec1a470f9c3e303a7dfbb907a453f"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-51/transitions.jsonl",
+      "bytes": 3645337,
+      "sha256": "c6966a057f16f01cc5cf0d46c08906a408d486f061d82e3838ec266fcb500b2e"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-52/evaluation.json",
+      "bytes": 526,
+      "sha256": "78b8b2db2ea2f9696c7bbe4dc284c2a5a8114549fab534a78da2c92e05ae6a74"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-52/frames.jsonl",
+      "bytes": 2776619,
+      "sha256": "646bfc01d2b69b6bfea0f879c3fea0090ca1b17e64f714637ea62e1731e1d002"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-52/last-frame.png",
+      "bytes": 740,
+      "sha256": "ca3a05387b2447de7e1cf79a98dd85bda3b30394c76522e32e1cd5adb3663eeb"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-52/manifest.json",
+      "bytes": 733,
+      "sha256": "2b595607d0a5b0e576c404b9c98a64e868713e3c2d7dbfb62421ac5e87e83c45"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-52/summary.json",
+      "bytes": 323,
+      "sha256": "dc13c3981d74ed809770d22901248709e752e663579e330370c1cc7f1dcdf18c"
+    },
+    {
+      "path": "pong-match-calibration-v1/random/seed-52/transitions.jsonl",
+      "bytes": 4278337,
+      "sha256": "eb1b631a46d11c32900fe96757a17397a6dc5381ed6bd756734d1c7cab0b5d96"
+    },
+    {
+      "path": "pong-match-calibration-v1/results.json",
+      "bytes": 8937,
+      "sha256": "0547cb192185154be282937435a4c9588e61acf649812f66f80dc8761f52ac66"
+    },
+    {
+      "path": "pong-match-calibration-v1/source.json",
+      "bytes": 330,
+      "sha256": "91578e8025d2c089629e64157fb24178591a440953b683d87d8a4b8aa2748237"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-50/evaluation.json",
+      "bytes": 542,
+      "sha256": "07f220d6dbfa37dbe53b810e470360337e9d24af2df481c4017c64bf10a0c07b"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-50/frames.jsonl",
+      "bytes": 14217143,
+      "sha256": "03d44017850f6d782522ee796745fea79abe926299b64db466cc25df01a7386b"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-50/last-frame.png",
+      "bytes": 749,
+      "sha256": "6dbe57b972decb13bade707c6828eae0c21bc02dc30267208a0015a7bebd1fa7"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-50/manifest.json",
+      "bytes": 748,
+      "sha256": "35595b7d331e250a797c55f611c52ccd12431310d71d2b75265baeeb01897b60"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-50/summary.json",
+      "bytes": 333,
+      "sha256": "483754406ba3c2b8aab2c9a113e9af49573257994544db852abe4fe95a4a8271"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-50/transitions.jsonl",
+      "bytes": 21823204,
+      "sha256": "910eb0a3e5bf070ae8b4c3147696f514a89065bd8ac5473a64c9e203e5772e17"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-51/evaluation.json",
+      "bytes": 545,
+      "sha256": "c13ec8ac6579ddceb074379deb099b1232add472175e9d0b1bcfca5811e7f970"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-51/frames.jsonl",
+      "bytes": 9257910,
+      "sha256": "50681c05c9892d6fea722cd78f53dbd33c03a9b2a81cac643a492f327ebfee25"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-51/last-frame.png",
+      "bytes": 743,
+      "sha256": "83a085c970889bf7d2278a42c82b9c1f11040a2df1ddef8c0fde0b7c75fd2ba8"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-51/manifest.json",
+      "bytes": 748,
+      "sha256": "c3524541982784374517bd750979b25b3ca2ef4e34ae4150e05348ba41b2caae"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-51/summary.json",
+      "bytes": 339,
+      "sha256": "64e49fa763f8a3c9b3d3c1fd43168eccdbf4f7cd981ac8aa3d1c84083a3b80af"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-51/transitions.jsonl",
+      "bytes": 14207052,
+      "sha256": "10c556bf6a18de6ef691dd8478efbece066f2c53d8ae519efc073ce2852f12f7"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-52/evaluation.json",
+      "bytes": 546,
+      "sha256": "27b32bd0e0acda59f3bb5890754a24eec80d10f299dbd9a92cb143c826b12b3a"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-52/frames.jsonl",
+      "bytes": 12365822,
+      "sha256": "929ff41ea28a741814fee01e77ac87838c5a74be8f58ac7bc39310b77ea6c952"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-52/last-frame.png",
+      "bytes": 747,
+      "sha256": "cffbb078b918b67ea2bcd20e2366602fe3ac428befcf009e1b9ddb354d3f84d8"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-52/manifest.json",
+      "bytes": 748,
+      "sha256": "3dd6f5e24bd2e9ae3295898dea931060cbe24e05361e8e1f001a3b8ed784f9f0"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-52/summary.json",
+      "bytes": 340,
+      "sha256": "d23aa1efcd6309ca8136347f9e6e0ede1b542d47ea870e9ae3ca579daf3b6415"
+    },
+    {
+      "path": "pong-match-calibration-v1/track-4px/seed-52/transitions.jsonl",
+      "bytes": 18981498,
+      "sha256": "a81a46095744993460d7cef8bdc2df4c0f27b1388bc11a670bff45ce3ea4cab2"
+    }
+  ]
+}

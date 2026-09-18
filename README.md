@@ -182,6 +182,7 @@ establish better online play. Keep rejected proposals and unsuccessful runs.
 
 ## Results and documentation
 
+- [Native-match calibration](docs/pong-match-calibration-2026-09-18.md): local baselines, complete games versus frame caps, and the [next trial protocol](docs/pong-matches-protocol.md).
 - [How Pong is evaluated](docs/pong-benchmark.md): full-match scores, short-run limits, and fair comparisons.
 
 - [Fixed-frame Pong controls](docs/pong-controls-protocol.md): same-rule Python/Jev comparison, frozen seeds and shared API budget.

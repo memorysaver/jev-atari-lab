@@ -40,3 +40,11 @@ jobs:
           --source restored-no-fire/pong-no-fire-study
           --baseline restored-controls/pong-controls-v1
           --out artifacts/ci-no-fire-audit
+      - run: >-
+          uv run python scripts/restore_experiments.py
+          --manifest experiments/pong-match-calibration-v1-2026-09-18.manifest.json
+          --out restored-match-calibration
+      - run: >-
+          uv run python scripts/verify_matches.py
+          --run restored-match-calibration/pong-match-calibration-v1
+          --out artifacts/ci-match-calibration-audit
