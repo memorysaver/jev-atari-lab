@@ -1,4 +1,30 @@
-# OCAtari-derived Pong object extraction
+# Third-party notices
+
+The project license does not replace the licenses of its dependencies or copied
+upstream material. The dependency versions below reflect the current `uv.lock`.
+Packages are installed separately; their complete license and copyright notices
+remain in their distributions. This table summarizes the main runtime packages,
+not every transitive dependency or platform-specific binary component.
+
+| Package | Version | Declared license | Upstream |
+| --- | --- | --- | --- |
+| ale-py | 0.11.2 | GPL-2.0-only | [Arcade Learning Environment](https://github.com/Farama-Foundation/Arcade-Learning-Environment) |
+| gymnasium | 1.3.0 | MIT | [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) |
+| numpy | 2.5.3 | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 | [NumPy](https://github.com/numpy/numpy) |
+| httpx | 0.28.1 | BSD-3-Clause | [HTTPX](https://github.com/encode/httpx) |
+| imageio | 2.37.4 | BSD-2-Clause | [ImageIO](https://github.com/imageio/imageio) |
+| imageio-ffmpeg | 0.6.0 | BSD-2-Clause (Python wrapper) | [imageio-ffmpeg](https://github.com/imageio/imageio-ffmpeg) |
+
+The `imageio-ffmpeg` wrapper's license does not describe all rights or obligations
+for the FFmpeg executable it invokes or distributes. FFmpeg licensing depends on
+the build; preserve the relevant binary distribution's notices when redistributing
+it. See [FFmpeg licensing](https://ffmpeg.org/legal.html).
+
+Atari game ROMs and game audiovisual content retain their respective owners'
+rights. They are not relicensed by this project. Jev is an external service, not
+a model implementation or set of weights distributed under the project license.
+
+## OCAtari-derived Pong object extraction
 
 The Pong RAM mapping and vision color definitions in `src/jev_atari/observation.py`
 are adapted from OCAtari at revision
@@ -10,7 +36,7 @@ are adapted from OCAtari at revision
 The full OCAtari package is not installed. The extraction is Pong-specific, fixed,
 and supplies semantic object observations, not a general learned visual encoder.
 
-## Upstream license
+### Upstream license
 
 MIT License
 

@@ -184,6 +184,26 @@ establish better online play. Keep rejected proposals and unsuccessful runs.
 - [Game coverage](docs/games.md), [research direction](docs/research-direction.md),
   and [third-party attribution](THIRD_PARTY_NOTICES.md).
 
+## License and citation
+
+Copyright (c) 2026 Ming-Cheng Ho (memorysaver).
+
+The project's original software, structured-question programs, and accompanying
+documentation are licensed under the **GNU General Public License version 2 only**
+(`GPL-2.0-only`). See [LICENSE](LICENSE). Dependencies retain their own licenses;
+the OCAtari attribution and main runtime dependency licenses are documented in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+This license does not grant rights to third-party Atari ROMs, game artwork or
+audio appearing in recordings, or the Jev service and model. Historical experiment
+archives remain unchanged so their published checksums and provenance stay valid.
+
+If you use this project in research, please cite it using [CITATION.cff](CITATION.cff)
+or GitHub's **Cite this repository** button. Cite the exact commit or release used
+for your experiments. This is a citation request, not an additional license term.
+There is no associated paper or DOI yet; a future paper can be added as the
+preferred citation and have its own publication license.
+
 ## Development
 
 ```bash
