@@ -19,6 +19,7 @@ from jev_atari.experiment import (
 )
 from jev_atari.io import new_directory, read_json, write_json
 from jev_atari.learning import OpenRouterTeacher, optimize_round, teacher_packet
+from jev_atari.matches import run_matches
 from jev_atari.models import JevEvaluator, MockEvaluator, ModelError, ValuePolicy
 from jev_atari.online import (
     ReplayPrefixEvaluator,
@@ -160,6 +161,21 @@ def main() -> None:
     p.add_argument("--source-revision", help="Source commit used for the experiment")
     p.add_argument("--video", action="store_true")
     p.add_argument("--out", type=Path, required=True)
+    p = subs.add_parser("match-suite", help="Native Pong matches with explicit frame-cap censoring")
+    add_protocol(p)
+    p.add_argument("--backend", choices=["local", "jev"], required=True)
+    p.add_argument(
+        "--arms", nargs="+", choices=["random", "track-4px", "intercept", "jev"], required=True
+    )
+    p.add_argument("--seeds", type=int, nargs="+", required=True)
+    p.add_argument("--split", choices=["train", "development"], required=True)
+    p.add_argument("--max-frames", type=int, required=True)
+    p.add_argument("--program", type=Path)
+    p.add_argument("--model", default="jev-1.13.0")
+    p.add_argument("--max-api-calls", type=int)
+    p.add_argument("--source-revision")
+    p.add_argument("--video", action="store_true")
+    p.add_argument("--out", type=Path, required=True)
     p = subs.add_parser("select-policy", help="Apply the paired online development reward gate")
     p.add_argument("--baseline", type=Path, required=True)
     p.add_argument("--candidate", type=Path, required=True)
@@ -212,7 +228,14 @@ def main() -> None:
     args = parser.parse_args()
     evaluator, teacher = None, None
     try:
-        if args.command in {"doctor", "play", "collect", "policy-suite", "compare-controls"}:
+        if args.command in {
+            "doctor",
+            "play",
+            "collect",
+            "policy-suite",
+            "compare-controls",
+            "match-suite",
+        }:
             protocol = Protocol(args.hold_frames, args.sticky, args.observation, args.noop_max)
         if args.command == "games":
             if args.out and args.out.exists():
@@ -314,6 +337,31 @@ def main() -> None:
                 source_revision=args.source_revision,
                 on_episode=show_progress,
                 candidate_only=args.candidate_only,
+            )
+        elif args.command == "match-suite":
+            live = "jev" in args.arms
+            if (args.backend == "jev") != live:
+                raise ValueError("Use --backend jev exactly when the jev arm is selected")
+            if live and (not args.program or not args.max_api_calls):
+                raise ValueError("Live matches require --program and --max-api-calls")
+            if not live and (args.program or args.max_api_calls is not None):
+                raise ValueError("Local matches do not take a program or API budget")
+            program = ActionProgram.from_dict(read_json(args.program)) if live else None
+            evaluator = (
+                ChoiceEvaluator(model=args.model, max_calls=args.max_api_calls) if live else None
+            )
+            result = run_matches(
+                protocol,
+                arms=args.arms,
+                seeds=args.seeds,
+                split=args.split,
+                max_frames=args.max_frames,
+                evaluator=evaluator,
+                program=program,
+                out=args.out,
+                video=args.video,
+                source_revision=args.source_revision,
+                on_episode=lambda row: print(json.dumps({"completed_episode": row}), flush=True),
             )
         elif args.command == "policy-feedback":
             if args.out.exists():
