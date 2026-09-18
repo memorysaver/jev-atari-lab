@@ -29,6 +29,7 @@ from jev_atari.study import (
     teacher_packet,
     verify_final_seal,
 )
+from jev_atari.study_recovery import recover_diagnostic_response, verify_continuation
 from jev_atari.teacher import invoke_teacher, isolation_check
 
 
@@ -43,7 +44,9 @@ def evaluator_for(budget, phase, max_calls):
     return evaluator
 
 
-def run_episode(root, protocol, program, seed, max_frames, budget, source, *, final_seal=None):
+def run_episode(
+    root, protocol, program, seed, max_frames, budget, source, *, final_seal=None, resume_sources=()
+):
     """An immutable single-episode match suite, with separate sealed final admission."""
     split = split_for_seed(seed)
     if split == "test":
@@ -60,7 +63,7 @@ def run_episode(root, protocol, program, seed, max_frames, budget, source, *, fi
             or plan["program_hash"] != program.hash
             or plan["seeds"] != [seed]
             or plan["max_frames_per_episode"] != max_frames
-            or plan["source_revision"] != source
+            or plan["source_revision"] not in (source, *resume_sources)
             or plan["protocol"] != protocol.manifest()
             or digest(plan) != report["plan_hash"]
         ):
@@ -214,6 +217,20 @@ def propose(root, packet, budget, binary, auth_home):
         if saved["packet_hash"] != digest(packet):
             raise ValueError("Teacher packet changed after proposal")
         return ActionProgram.from_dict(saved["program"]), saved["proposal"]
+    if (root / "invocation-1" / "recovery.json").exists():
+        recovered = recover_diagnostic_response(root / "invocation-1")
+        if recovered["packet_hash"] != digest(packet):
+            raise ValueError("Recovery packet differs from current training packet")
+        write_json(
+            root / "validated.json",
+            {
+                "packet_hash": digest(packet),
+                "program": recovered["program"],
+                "proposal": recovered["proposal"],
+                "recovery": "invocation-1/recovery.json",
+            },
+        )
+        return ActionProgram.from_dict(recovered["program"]), recovered["proposal"]
     current_packet = packet
     for attempt in range(1, 4):
         destination = root / f"invocation-{attempt}"
@@ -256,7 +273,7 @@ def propose(root, packet, budget, binary, auth_home):
     return program, value
 
 
-def run_study(out, repository, binary, auth_home):
+def run_study(out, repository, binary, auth_home, continuation=None):
     out.mkdir(parents=True, exist_ok=True)
     lock = (out / ".run.lock").open("w")
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -282,8 +299,13 @@ def run_study(out, repository, binary, auth_home):
     }
     # JSON roundtrip makes tuples canonical for resume comparisons.
     plan = json.loads(json.dumps(plan))
+    resume_sources = ()
     if (out / "plan.json").exists():
-        if read_json(out / "plan.json") != plan:
+        saved_plan = read_json(out / "plan.json")
+        if continuation is not None:
+            resume_sources = verify_continuation(out, continuation, source)
+            plan["source_revision"] = saved_plan["source_revision"]
+        if saved_plan != plan:
             raise ValueError("Study source/configuration changed")
     else:
         write_json(out / "plan.json", plan)
@@ -300,7 +322,16 @@ def run_study(out, repository, binary, auth_home):
             training = []
             for seed in seeds:
                 path = rd / "training" / f"seed-{seed}"
-                run_episode(path, protocol, programs["A"], seed, 10000, budget, source)
+                run_episode(
+                    path,
+                    protocol,
+                    programs["A"],
+                    seed,
+                    10000,
+                    budget,
+                    source,
+                    resume_sources=resume_sources,
+                )
                 audit_episode(path, repository)
                 training.append(path / "jev" / f"seed-{seed}")
             evidence = sample_training(training)
@@ -333,7 +364,16 @@ def run_study(out, repository, binary, auth_home):
                 for arm, role in schedule if i == 0 else list(reversed(schedule)):
                     program = programs[arm] if role == "parent" else candidates[arm]
                     path = rd / arm / "development" / role / f"seed-{seed}"
-                    row = run_episode(path, protocol, program, seed, 20000, budget, source)
+                    row = run_episode(
+                        path,
+                        protocol,
+                        program,
+                        seed,
+                        20000,
+                        budget,
+                        source,
+                        resume_sources=resume_sources,
+                    )
                     audit_episode(path, repository)
                     results[arm][role].append(row)
             decisions = {}
@@ -375,6 +415,7 @@ def run_study(out, repository, binary, auth_home):
                     budget,
                     source,
                     final_seal=seal,
+                    resume_sources=resume_sources,
                 )
                 audit_episode(path, repository)
                 final_rows[name].append(row)
@@ -397,8 +438,15 @@ def main():
     parser.add_argument("--codex-binary", type=Path, required=True)
     parser.add_argument("--auth-home", type=Path, required=True)
     parser.add_argument("--backend", choices=["jev"], required=True)
+    parser.add_argument("--continuation-receipt", type=Path)
     args = parser.parse_args()
-    run_study(args.out.resolve(), Path.cwd(), args.codex_binary.resolve(), args.auth_home.resolve())
+    run_study(
+        args.out.resolve(),
+        Path.cwd(),
+        args.codex_binary.resolve(),
+        args.auth_home.resolve(),
+        args.continuation_receipt,
+    )
 
 
 if __name__ == "__main__":

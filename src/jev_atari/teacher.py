@@ -72,6 +72,31 @@ PROPOSAL_SCHEMA = {
 }
 
 
+def summarize_events(stdout):
+    """CLI diagnostic errors are not tool operations; retain their existence distinctly."""
+    events, unexpected = [], []
+    for line in stdout.splitlines():
+        try:
+            event = json.loads(line)
+        except ValueError:
+            continue
+        kind = event.get("type")
+        if kind == "turn.completed":
+            events.append({"type": kind, "usage": event.get("usage")})
+        elif kind in {"error", "turn.failed"}:
+            events.append({"type": kind, "message_retained": False})
+        elif kind in {"item.started", "item.updated", "item.completed"}:
+            item = event.get("item", {})
+            item_type = item.get("type")
+            if item_type == "agent_message" and kind == "item.completed":
+                events.append({"type": "agent_message", "text": item.get("text")})
+            elif item_type == "error":
+                events.append({"type": "diagnostic_error", "message_retained": False})
+            elif item_type not in {"agent_message", "reasoning"}:
+                unexpected.append(item_type)
+    return events, unexpected
+
+
 def bubblewrap(binary: Path, private_home: Path, work: Path):
     """Only system runtime, dedicated auth/runtime and output mounts are visible."""
     command = [
@@ -259,23 +284,16 @@ def invoke_teacher(packet, out, budget, *, binary: Path, auth_home: Path, repair
             )
             metadata["exit_code"] = process.returncode
             # Publish only final messages and usage, not private runtime/auth/debug logs.
-            events = []
-            for line in process.stdout.splitlines():
-                try:
-                    event = json.loads(line)
-                except ValueError:
-                    continue
-                if event.get("type") == "turn.completed":
-                    events.append({"type": "turn.completed", "usage": event.get("usage")})
-                elif event.get("type") == "item.completed":
-                    item = event.get("item", {})
-                    if item.get("type") == "agent_message":
-                        events.append({"type": "agent_message", "text": item.get("text")})
-                    elif item.get("type") not in {"reasoning"}:
-                        metadata.setdefault("unexpected_item_types", []).append(item.get("type"))
+            events, unexpected = summarize_events(process.stdout)
+            if unexpected:
+                metadata["unexpected_item_types"] = unexpected
             write_json(out / "events.json", events)
             if metadata.get("unexpected_item_types"):
                 raise ValueError("Teacher attempted non-message activity")
+            if any(e["type"] == "turn.failed" for e in events) or not any(
+                e["type"] == "turn.completed" for e in events
+            ):
+                raise ValueError("Teacher turn did not complete")
             if process.returncode or not (work / "answer.json").exists():
                 # Keep diagnostics privately; never echo provider/credential text in public records.
                 diagnostic = Path(tempfile.mkdtemp(prefix="jev-teacher-error-"))

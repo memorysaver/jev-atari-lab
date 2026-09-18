@@ -11,7 +11,8 @@ repeatable multi-round learning has been established.
 - [Teacher log](teacher-log.md): each proposal's evidence, change and disposition.
 - [Approved longitudinal teacher study](teacher-study-plan.md): three rounds,
   a no-trajectory-feedback control and final evaluation; see its
-  [frozen execution protocol](teacher-study-protocol.md).
+  [frozen execution protocol](teacher-study-protocol.md) and
+  [diagnostic-parser continuation](teacher-study-continuation.md).
 - [Published evidence](../../experiments/pong/README.md): locations of replay data,
   original model exchanges and archives.
 - Shared research: [optimizer design](../teacher-optimizer.md),
