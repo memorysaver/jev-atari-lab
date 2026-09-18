@@ -82,19 +82,43 @@ adapters, startup behavior, and useful policy questions still need validation.
 
 ## Run Jev
 
-Keep `TYPESAFE_API_KEY` in your environment or a local file outside Git. The existing
-shared setup uses `~/.config/typesafe/credentials.env` with directory/file permissions
-700/600. Load it explicitly; never put a key in a command argument or tracked file.
+### API key setup
+
+From the repository root, create a local `.env` from [`.env.example`](.env.example)
+(preserving an existing `.env`):
+
+```bash
+[ -e .env ] || cp .env.example .env
+chmod 600 .env
+```
+
+Open `.env` in your editor and set `TYPESAFE_API_KEY` to your TypeSafe key.
+`OPENROUTER_API_KEY` is optional: leave it empty unless you use the OpenRouter
+teacher through `--teacher-model`. `.env` is ignored by Git; keep `.env.example`
+as an empty template and never put real keys in tracked files or command arguments.
+
+The application reads environment variables; it does **not** automatically load
+`.env`. The commands below explicitly load it with `uv run --env-file .env`.
+If you already export the variables in your shell, omit `--env-file .env`.
+
+**Shared credentials:** you can instead reuse
+`~/.config/typesafe/credentials.env` across applications on this computer. Keep
+its directory/file permissions at 700/600 and replace `--env-file .env` in the
+commands below with `--env-file "$HOME/.config/typesafe/credentials.env"`.
+There is no need to copy the key into the repository; each application must
+explicitly load the shared file or receive the exported environment variables.
+
+### Play with Jev
 
 ```bash
 # Reproduce the Pong candidate with object observations.
-uv run --env-file "$HOME/.config/typesafe/credentials.env" jev-atari play \
+uv run --env-file .env jev-atari play \
   --policy jev-action --program examples/vertical-policy-program.json \
   --model jev-1.13.0 --seed 27 --decisions 500 --max-api-calls 550 \
   --video --out artifacts/pong-direct
 
 # Experimental transport, not a validated Breakout strategy.
-uv run --env-file "$HOME/.config/typesafe/credentials.env" jev-atari arcade-play \
+uv run --env-file .env jev-atari arcade-play \
   --game Breakout --policy jev-action --model jev-1.13.0 \
   --frames 400 --max-api-calls 110 --video --out artifacts/breakout-jev
 ```
@@ -133,7 +157,7 @@ uv run jev-atari collect --seeds 10 11 --split train --behavior heuristic \
   --roots-per-seed 16 --warmup 120 --stride 150 --horizon 240 --out artifacts/train
 uv run jev-atari collect --seeds 16 17 --split development --behavior heuristic \
   --roots-per-seed 12 --warmup 120 --stride 150 --horizon 240 --out artifacts/development
-uv run --env-file "$HOME/.config/typesafe/credentials.env" jev-atari learn \
+uv run --env-file .env jev-atari learn \
   --train artifacts/train/dataset.json --development artifacts/development/dataset.json \
   --backend jev --model jev-1.13.0 --max-api-calls 90 \
   --proposals examples/first-event-proposals.json --out artifacts/value-round
