@@ -1,9 +1,9 @@
 # Proposed first longitudinal teacher study
 
-Status: **awaiting owner approval**, 2026-09-19. No goal, teacher invocation or Jev
-run is started by this document. This is an approval proposal; after approval,
-implement and validate the missing harness, then freeze the executable protocol
-before collecting experimental results. Changes to these limits require a new decision.
+Status: **owner approved**, 2026-09-19. The owner replied "approved, go" after
+reviewing this proposal. Goal mode now tracks implementation, bounded execution
+and publication. The [frozen execution protocol](teacher-study-protocol.md)
+specifies the harness details. Changes to approved limits require a new decision.
 
 ## Question and goal completion
 

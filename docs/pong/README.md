@@ -9,8 +9,9 @@ repeatable multi-round learning has been established.
 - [Evaluation profile](evaluation.md): Pong outcomes, diagnostics, stopping rules
   and the distinction between policy and value-prediction studies.
 - [Teacher log](teacher-log.md): each proposal's evidence, change and disposition.
-- [Proposed longitudinal teacher study](teacher-study-plan.md): three rounds,
-  a no-trajectory-feedback control and final evaluation; awaiting owner approval.
+- [Approved longitudinal teacher study](teacher-study-plan.md): three rounds,
+  a no-trajectory-feedback control and final evaluation; see its
+  [frozen execution protocol](teacher-study-protocol.md).
 - [Published evidence](../../experiments/pong/README.md): locations of replay data,
   original model exchanges and archives.
 - Shared research: [optimizer design](../teacher-optimizer.md),

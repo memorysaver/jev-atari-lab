@@ -44,12 +44,14 @@ class JsonAPI:
         *,
         client: httpx.Client | None = None,
         max_retries: int = 2,
+        retry_transport: bool = False,
     ):
         if not key:
             raise ModelError("Required API key environment variable is missing")
         self.endpoint, self.key, self.budget = endpoint, key, budget
         self.client = client or httpx.Client(timeout=60, follow_redirects=False)
         self.max_retries = max_retries
+        self.retry_transport = retry_transport
         self.ledger: list[dict] = []
         self.trace_path: Path | None = None
 
@@ -84,6 +86,9 @@ class JsonAPI:
                 entry.update(status="transport_error", elapsed_seconds=time.monotonic() - start)
                 self.ledger.append(entry)
                 self.record_exchange(entry, payload)
+                if self.retry_transport and attempt < self.max_retries:
+                    time.sleep(min(0.25 * 2**attempt, 1))
+                    continue
                 raise ModelError("Model transport failed; no action was executed") from None
             entry.update(status=response.status_code, elapsed_seconds=time.monotonic() - start)
             self.ledger.append(entry)
