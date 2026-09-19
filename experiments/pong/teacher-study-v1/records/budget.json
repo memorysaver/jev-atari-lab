@@ -1,0 +1,15 @@
+{
+  "kind": "pong-study-budget-v1",
+  "max_attempts": 220000,
+  "nonfinal_limit": 154000,
+  "final_limit": 66000,
+  "teacher_limit": 8,
+  "live_seconds": 86400,
+  "started_at": 1789748981.6822329,
+  "attempts": 41080,
+  "nonfinal_attempts": 41080,
+  "final_attempts": 0,
+  "teacher_invocations": 3,
+  "teacher_repairs": 0,
+  "training_closed": false
+}

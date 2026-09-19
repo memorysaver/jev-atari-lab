@@ -1,13 +1,14 @@
 # Teacher-driven question optimizer
 
-Status: proposed research design, 2026-09-18. Existing logging, imported proposals,
-limited selection gates and replay are building blocks. The complete optimizer
-and pattern-discovery process below are not implemented or validated.
+Status: research design introduced 2026-09-18; implementation update 2026-09-20.
+The bounded direct-policy teacher loop, repeated-input probes and round records
+are now implemented. Its [first live study](pong/teacher-study-results-2026-09-20.md)
+completed one round and stopped in round two; successful learning and the broader
+pattern-discovery process below remain unvalidated.
 
-The [Pong teacher log](pong/teacher-log.md) now provides a manually maintained
-record format and historical entries. Use the [round template](templates/teacher-round.md)
-for new proposals. Automatic direct-policy teacher logging/orchestration remains
-future work; existing value-learning API traces are documented in that log.
+The [Pong teacher log](pong/teacher-log.md) links historical and isolated automated
+entries. Use the [round template](templates/teacher-round.md) for new proposals;
+`scripts/render_teacher_rounds.py` renders exact completed proposal records.
 
 ## What the optimizer controls
 

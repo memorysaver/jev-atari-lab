@@ -1,8 +1,8 @@
 # Research roadmap and paper plan
 
-Status: proposed studies, 2026-09-18. This roadmap adopts the project's two goals;
-it does not claim that the teacher optimizer exists or authorize an unbounded API
-run. Each paid study needs a frozen protocol with explicit call/resource caps.
+Status: proposed studies, introduced 2026-09-18, updated 2026-09-20. The bounded
+teacher loop is implemented; its [first live attempt](pong/teacher-study-results-2026-09-20.md)
+stopped in round two. This roadmap does not authorize an unbounded API run. Each paid study needs a frozen protocol with explicit call/resource caps.
 
 ## Stage 0: Establish the environment and evidence chain
 
@@ -11,7 +11,7 @@ direct and value-based question programs, imported teacher proposals, limited
 selection gates, API exchange logs, replay and reviewed LFS archives.
 
 The [research index](README.md) links completed experiments. Current evidence is
-mostly fixed-policy evaluation and manual revisions. It does not establish
+fixed-policy evaluation, manual revisions and one isolated A/B teacher round. It does not establish
 autonomous multi-round learning. Native-match completion and reliable win rates
 also remain open. Preserve these runs as historical controls, not fresh held-out data.
 

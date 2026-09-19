@@ -1,0 +1,57 @@
+{
+  "kind": "pong-match-suite-v1",
+  "status": "complete",
+  "plan_hash": "4c93a95a211adea9afd6beaa6f7ddfe3f54a5b492c57e9f6bacbf153b4c1d449",
+  "episodes": [
+    {
+      "seed": 66,
+      "arm": "jev",
+      "status": "complete",
+      "reward": -21.0,
+      "decisions": 757,
+      "raw_frames": 3027,
+      "points_scored": 0,
+      "points_lost": 21,
+      "terminated": true,
+      "truncated": false,
+      "backend": "jev",
+      "end_reason": "native_termination",
+      "reset_frames": 29,
+      "wall_seconds": 223.99565528100356,
+      "simulated_seconds": 50.45,
+      "api_attempts": 757,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "censored": false,
+      "outcome": "loss",
+      "capped_episode_return": -21.0,
+      "full_match_return": -21.0
+    }
+  ],
+  "aggregates": {
+    "jev": {
+      "scheduled_episodes": 1,
+      "recorded_episodes": 1,
+      "evaluated_episodes": 1,
+      "native_matches": 1,
+      "wins": 0,
+      "losses": 1,
+      "unfinished_or_unstarted": 0,
+      "completion_rate": 1.0,
+      "win_rate_completed_matches": 0.0,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "mean_capped_return": -21.0,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": -21.0,
+      "end_reasons": {
+        "native_termination": 1
+      },
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    }
+  },
+  "api_attempts": 757
+}

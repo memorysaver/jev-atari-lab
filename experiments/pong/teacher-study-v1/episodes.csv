@@ -1,0 +1,13 @@
+path,seed,points_scored,points_lost,capped_episode_return,raw_frames,decisions,evaluation_complete,native_match_complete,outcome,end_reason,api_attempts
+round-01/A/development/candidate/seed-66,66,0,21,-21.0,3027,757,True,True,loss,native_termination,757
+round-01/A/development/candidate/seed-67,67,0,21,-21.0,3032,758,True,True,loss,native_termination,758
+round-01/A/development/parent/seed-66,66,11,20,-9.0,20000,5000,True,False,unfinished,decision_limit,5002
+round-01/A/development/parent/seed-67,67,11,21,-10.0,19507,4877,True,True,loss,native_termination,4878
+round-01/B/development/candidate/seed-66,66,7,18,-11.0,20000,5000,True,False,unfinished,decision_limit,5001
+round-01/B/development/candidate/seed-67,67,12,12,0.0,20000,5000,True,False,unfinished,decision_limit,5003
+round-01/B/development/parent/seed-66,66,11,19,-8.0,20000,5000,True,False,unfinished,decision_limit,5000
+round-01/B/development/parent/seed-67,67,10,21,-11.0,17692,4423,True,True,loss,native_termination,4424
+round-01/training/seed-60,60,6,10,-4.0,10000,2500,True,False,unfinished,decision_limit,2500
+round-01/training/seed-61,61,4,9,-5.0,10000,2500,True,False,unfinished,decision_limit,2500
+round-02/training/seed-62,62,5,11,-6.0,10000,2500,True,False,unfinished,decision_limit,2501
+round-02/training/seed-63,63,11,6,5.0,10000,2500,True,False,unfinished,decision_limit,2500

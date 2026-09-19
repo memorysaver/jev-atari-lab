@@ -5,6 +5,19 @@ outcomes. Entries distinguish a teacher's stated hypothesis from observed result
 They record reviewable inputs, outputs and a concise rationale, not an inferred
 transcript or hidden reasoning.
 
+## Isolated automated study
+
+| ID | Intervention | Outcome |
+| --- | --- | --- |
+| [T001-A](teacher-rounds/T001-A.md) | Training-informed incoming intercept | Rejected; mean paired development gain -11.5 |
+| [T001-B](teacher-rounds/T001-B.md) | No-feedback four-frame lookahead | Rejected; +4 mean but one seed regressed |
+| [T002-A](teacher-rounds/T002-A.md) | No proposal: teacher invocation failed | Study incomplete; no final evaluation |
+
+Read the [study report](teacher-study-results-2026-09-20.md). `T` entries record
+fresh isolated requests with exact packets and outputs, not inferred transcripts.
+The renderer `scripts/render_teacher_rounds.py` emits completed proposal records;
+failed operations require an explicit entry such as T002-A.
+
 ## Existing records
 
 | ID | Track and modification | Teacher provenance | Disposition |
@@ -38,8 +51,8 @@ the linked follow-up supplies its later outcome.
 
 Writes depend on the stage reached; failures can leave an incomplete run. Inspect
 status and ledgers, not only a filename. The optional external teacher adapter
-currently serves the value-learning path; it is not an automatic direct-policy
-teacher loop. See [learning.py](../../src/jev_atari/learning.py) and
+currently serves the value-learning path; it is separate from the automatic direct-policy
+loop in `study_runner.py` used by the new study. See [learning.py](../../src/jev_atari/learning.py) and
 [CLI wiring](../../src/jev_atari/cli.py).
 
 ## New entries
@@ -64,4 +77,5 @@ must not create a fictitious teacher update.
 
 Future working records go under `artifacts/pong/<study-id>/<round-id>/`; reviewed
 publication belongs under [experiments/pong/](../../experiments/pong/README.md).
-The human-readable log is maintained explicitly for now, not emitted by the CLI.
+The dedicated study renderer creates proposal entries from original artifacts;
+this index and failed-operation entries are maintained explicitly.

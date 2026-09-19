@@ -1,0 +1,27 @@
+{
+  "kind": "pong-study-publication-closure-v1",
+  "recorded_at": 1789835472.1534672,
+  "study_status": "incomplete",
+  "live_restart": false,
+  "reason": "Round-two A teacher turn failed; original 24-hour deadline has elapsed. No budget reset or new live continuation.",
+  "missing_provider_failure_detail": true,
+  "episodes_completed": 12,
+  "episodes_scheduled": 42,
+  "final_attempts": 0,
+  "budget_unchanged": {
+    "kind": "pong-study-budget-v1",
+    "max_attempts": 220000,
+    "nonfinal_limit": 154000,
+    "final_limit": 66000,
+    "teacher_limit": 8,
+    "live_seconds": 86400,
+    "started_at": 1789748981.6822329,
+    "attempts": 41080,
+    "nonfinal_attempts": 41080,
+    "final_attempts": 0,
+    "teacher_invocations": 3,
+    "teacher_repairs": 0,
+    "training_closed": false
+  },
+  "original_run_status_preserved": true
+}

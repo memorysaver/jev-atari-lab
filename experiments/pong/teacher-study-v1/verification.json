@@ -1,0 +1,190 @@
+{
+  "kind": "pong-teacher-study-audit-v1",
+  "status": "verified",
+  "api_calls_for_audit": 0,
+  "plan_hash": "67fa73f2e82a13e91a7ddc4d39bf776f1eacaddae13efcaf439b301b00362f39",
+  "budget_hash": "0c58f8786e7765c9a454d9b87d8a1285097ba04e963eec9a8cb422ad3ddd4252",
+  "study_status": "incomplete",
+  "continuations": [
+    {
+      "path": "continuations/parser-recovery.json",
+      "sha256": "8c0eac5196c222c1244f9174e2156c503d64a1750c055b8524fe68451bb40a04"
+    }
+  ],
+  "source_revisions": [
+    "16722dfa725472b1200b1e7de2d54ed11eaf9731",
+    "94ceb931b883b89e970786eee29f49ecb819faac"
+  ],
+  "episode_suites": [
+    {
+      "path": "round-01/A/development/candidate/seed-66",
+      "results_hash": "e60412127b014a50eeaeecc6d510dd67adecb8ac90045fa13ff194cfb0a51427",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/A/development/candidate/seed-67",
+      "results_hash": "cf56c5bbd1bff6d1d60b3c7057b2f75b75c0ad2437aaaf1da4afc5e76a7bc393",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/A/development/parent/seed-66",
+      "results_hash": "7fe64f6e4f3c8b27925815e87674627ad895df7e071b4f7238dffe514940e578",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/A/development/parent/seed-67",
+      "results_hash": "9f4c1247614b97da23f85f70c011db5db40f4434c2a5c704472c07ad10bd21ed",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/B/development/candidate/seed-66",
+      "results_hash": "66bce73223bcae332554dfc54d40a391178513bde37964655265b44141f29dea",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/B/development/candidate/seed-67",
+      "results_hash": "52ba868e828b94f2c3a308af528fe38b57983de43dfb937511e836205f77ed68",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/B/development/parent/seed-66",
+      "results_hash": "e8fbab405625d8c739403e7a63d58760a0cbf330a1c4cbdd697afbef421a3371",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/B/development/parent/seed-67",
+      "results_hash": "db6543dd5f5902d7cb86d264ac4556f5db905a351e3f9079340bb3ac7cd7790e",
+      "audit_status": "verified",
+      "split": "development"
+    },
+    {
+      "path": "round-01/training/seed-60",
+      "results_hash": "d0225388d5bab5bde1c74ec07a88f10177481b4b50aa200faf277ddc0e00e1b7",
+      "audit_status": "verified",
+      "split": "train"
+    },
+    {
+      "path": "round-01/training/seed-61",
+      "results_hash": "8dcd022f98245af2ba336bfc5232046d535ff765a234f11fc3a7b3a6ce915920",
+      "audit_status": "verified",
+      "split": "train"
+    },
+    {
+      "path": "round-02/training/seed-62",
+      "results_hash": "7e95828587501d57171b97582d43e3cc879ea349bef87be2961499db5c2bf7ab",
+      "audit_status": "verified",
+      "split": "train"
+    },
+    {
+      "path": "round-02/training/seed-63",
+      "results_hash": "0592c85869c8db66fe156da11017a23f8750d6758b0c55cea036bc8752259977",
+      "audit_status": "verified",
+      "split": "train"
+    }
+  ],
+  "selections": [
+    {
+      "round": 1,
+      "arm": "A",
+      "decision": {
+        "status": "rejected",
+        "accepted": false,
+        "pairs": [
+          {
+            "seed": 66,
+            "parent": -9.0,
+            "candidate": -21.0,
+            "gain": -12.0
+          },
+          {
+            "seed": 67,
+            "parent": -10.0,
+            "candidate": -21.0,
+            "gain": -11.0
+          }
+        ],
+        "mean_gain": -11.5,
+        "rule": "both seeds nonregressing and mean gain >=1; engineering gate",
+        "selected_program": {
+          "name": "pong-vertical-control-v2",
+          "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+          "schema_version": "action-choice-program-v1"
+        },
+        "selected_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d"
+      }
+    },
+    {
+      "round": 1,
+      "arm": "B",
+      "decision": {
+        "status": "rejected",
+        "accepted": false,
+        "pairs": [
+          {
+            "seed": 66,
+            "parent": -8.0,
+            "candidate": -11.0,
+            "gain": -3.0
+          },
+          {
+            "seed": 67,
+            "parent": -11.0,
+            "candidate": 0.0,
+            "gain": 11.0
+          }
+        ],
+        "mean_gain": 4.0,
+        "rule": "both seeds nonregressing and mean gain >=1; engineering gate",
+        "selected_program": {
+          "name": "pong-vertical-control-v2",
+          "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+          "schema_version": "action-choice-program-v1"
+        },
+        "selected_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d"
+      }
+    }
+  ],
+  "probes": [
+    {
+      "path": "round-01/A/probes",
+      "queries": 128,
+      "attempts": 128,
+      "unexecuted_attempts": 0
+    },
+    {
+      "path": "round-01/B/probes",
+      "queries": 128,
+      "attempts": 128,
+      "unexecuted_attempts": 0
+    }
+  ],
+  "teacher_invocations": [
+    {
+      "path": "round-01/A/teacher/invocation-1",
+      "status": "incomplete",
+      "reserved": true
+    },
+    {
+      "path": "round-01/B/teacher/invocation-1",
+      "status": "complete",
+      "reserved": true
+    },
+    {
+      "path": "round-02/A/teacher/invocation-1",
+      "status": "incomplete",
+      "reserved": true
+    }
+  ],
+  "attempts": {
+    "final": 0,
+    "nonfinal": 41080
+  },
+  "scope": "Provenance, packet isolation, raw exchanges and emulator replay. Does not infer missing model attestation or establish learning."
+}

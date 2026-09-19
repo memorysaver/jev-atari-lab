@@ -1,0 +1,48 @@
+{
+  "kind": "pong-study-episode-plan-v1",
+  "source_revision": "16722dfa725472b1200b1e7de2d54ed11eaf9731",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "development",
+  "seeds": [
+    67
+  ],
+  "arms": [
+    "jev"
+  ],
+  "schedule": [
+    {
+      "seed": 67,
+      "arm": "jev"
+    }
+  ],
+  "model": "jev-1.13.0",
+  "program": {
+    "name": "pong-intercept-target-v1",
+    "guidance": "Which action should align the player paddle with the ball's target height? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y+height/2. Larger y is DOWN. If either object is absent, choose NOOP.\nStart with target = current ball center. When ball.velocity_valid is true, vx>0, and the ball's right edge is left of the player's left edge, predict its arrival: t=(player.x-ball.x-ball.width)/vx raw frames; target=ball center+vy*t. Account for wall bounces by reflecting target into the approximate ball-center interval [35,192]: below 35 replace it with 70-target; above 192 replace it with 384-target; repeat until inside. Otherwise use the current ball center; missing velocity is unknown, not zero.\nCompare target with player center. If target is more than four pixels BELOW player center, choose LEFT (down). If more than four pixels ABOVE, choose RIGHT (up). Within four pixels choose NOOP. Horizontal motion determines whether to predict arrival, never the up/down action directly. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act only for the requested duration, then recompute from the next observation.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "program_hash": "afc839f55b05a44af75ee372ee28fce9ebdd1a02c3bd6d2170580f7e3fdea498",
+  "max_frames_per_episode": 20000,
+  "max_decisions_per_episode": 5000,
+  "max_http_attempts": 5500,
+  "point_limit": null,
+  "final_seal_hash": null
+}

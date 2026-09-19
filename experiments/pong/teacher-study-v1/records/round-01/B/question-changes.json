@@ -1,0 +1,24 @@
+{
+  "before": {
+    "name": "pong-vertical-control-v2",
+    "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "after": {
+    "name": "pong-one-decision-lookahead",
+    "guidance": "Which action should vertically align the player paddle with the ball's near-term position? Read player and ball in observation.objects. A bbox is [x, y, width, height]; its vertical center is y + height/2. Larger y means LOWER. If either object is absent, choose NOOP. Start with the current ball center as the target. When available finite-difference history reliably indicates that the ball is moving toward the right-side player, advance the target by the estimated vertical displacement over the next decision (4 raw frames). Respect the history's time units; do not treat displacement per observation as displacement per raw frame. Use the latest motion segment after an evident bounce. If direction, timing or vertical velocity is unknown, use the current ball center. For a ball moving away, also use its current center. If the target is more than four pixels BELOW the player center, choose LEFT (DOWN). If more than four pixels ABOVE, choose RIGHT (UP). Otherwise choose NOOP. Screen side and horizontal direction alone never determine UP or DOWN. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act for the next requested duration, then reconsider.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "candidate_hash": "17502da4850d98cc54f12fb5f48a32681ce07ec8ae34bc95d16ee7c0145fbe87",
+  "proposal": {
+    "name": "pong-one-decision-lookahead",
+    "guidance": "Which action should vertically align the player paddle with the ball's near-term position? Read player and ball in observation.objects. A bbox is [x, y, width, height]; its vertical center is y + height/2. Larger y means LOWER. If either object is absent, choose NOOP. Start with the current ball center as the target. When available finite-difference history reliably indicates that the ball is moving toward the right-side player, advance the target by the estimated vertical displacement over the next decision (4 raw frames). Respect the history's time units; do not treat displacement per observation as displacement per raw frame. Use the latest motion segment after an evident bounce. If direction, timing or vertical velocity is unknown, use the current ball center. For a ball moving away, also use its current center. If the target is more than four pixels BELOW the player center, choose LEFT (DOWN). If more than four pixels ABOVE, choose RIGHT (UP). Otherwise choose NOOP. Screen side and horizontal direction alone never determine UP or DOWN. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act for the next requested duration, then reconsider.",
+    "hypothesis": "A one-decision lookahead on incoming balls may reduce tracking lag caused by acting on a position that changes during the four-frame action.",
+    "operator": "guidance-only replacement: add incoming-ball vertical lookahead",
+    "predicted_changes": "Begin moving toward the incoming ball's next vertical position earlier; sometimes move despite current center alignment, or stop before reaching the current ball center.",
+    "regression_risks": "Wall bounces, noisy finite differences and sticky actions may make extrapolation overshoot. A short horizon may still miss fast diagonal shots. No empirical improvement is established.",
+    "evidence_ids": []
+  },
+  "packet_hash": "abdd06139381bb7dcf6d323b0ead2661f7c35f2e5fb749c36591c451ce37760a"
+}

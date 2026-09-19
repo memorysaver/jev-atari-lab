@@ -1,0 +1,1334 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "teacher-study-v1.tar.gz",
+  "sha256": "f023d93c2ec6429213c5c2d86f9855a20198608b0d9109415c5c97a797816ee1",
+  "file_count": 265,
+  "uncompressed_bytes": 771712284,
+  "files": [
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/candidate/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 2144901,
+      "sha256": "9919c38ea26d41f92127c48ca890d5add8d796091f5a8f24ac973ca9b66c2a9f"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/candidate/seed-66/jev/seed-66/verification.json",
+      "bytes": 611,
+      "sha256": "c991e323606bb6fe8d1e3c88a2f88ef0d2fcb7dace8afd20b59d85dddde7cc55"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/candidate/seed-66/verification.json",
+      "bytes": 1065,
+      "sha256": "39247a8bf8af89832c437a6ade023cf9a5cb9d22ed79d9d6f109962ac69573a4"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/candidate/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 2148314,
+      "sha256": "f0e42fe4e95f8e0364306f5fd8531c4268f0f54269f157d714ab902bd65e3d3d"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/candidate/seed-67/jev/seed-67/verification.json",
+      "bytes": 611,
+      "sha256": "6dfbed768bd4b6c46a95da7f6450227dfc2126b49f038def6a84e0b783dc2961"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/candidate/seed-67/verification.json",
+      "bytes": 1065,
+      "sha256": "50973a696e7b70488f34a1e5a5208620b638597888a13abfc03be9c2f6c98924"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/parent/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 14220402,
+      "sha256": "5ab7b9c7b763c6a3f3d96f42554c92e885855839d865f6011762062f3928c697"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/parent/seed-66/jev/seed-66/verification.json",
+      "bytes": 609,
+      "sha256": "45d2ae65d0f9b9f6c2a9cad8e9e23f97c4ec54447aadb33d4a63edb4b5487e76"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/parent/seed-66/verification.json",
+      "bytes": 1064,
+      "sha256": "72fe44b266f37fdec2c5feffeb4dc2b4b326aaf17024eca482f48803aa9210a3"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/parent/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 13872919,
+      "sha256": "c8ecf2cdd379a555913a077bc096a381736efd8d4c898062a7f982e641ddde63"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/parent/seed-67/jev/seed-67/verification.json",
+      "bytes": 610,
+      "sha256": "d11a62377860e8e27fffc94faa9af6044d0212345a0a9e7731629d4b5d83c768"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/A/development/parent/seed-67/verification.json",
+      "bytes": 1065,
+      "sha256": "6a72546bb8a24dc7bd9c5efb779e1e572f0eceac18888e14815991a0bba6d7e8"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/candidate/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 14218793,
+      "sha256": "f50a1da4c1ea01ac9aae17793e520b4e5f773f47b430063461b12dda871b91ff"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/candidate/seed-66/jev/seed-66/verification.json",
+      "bytes": 613,
+      "sha256": "e8feb655e4219ca48e892be9db71d03d5914ee8fab20ca458959270d0165a029"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/candidate/seed-66/verification.json",
+      "bytes": 1068,
+      "sha256": "119eb8a7afc523abf53615289f4cbfd8a9f782f8d05537043634c6e515aa7ac2"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/candidate/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 14214015,
+      "sha256": "962f8719d849b6ee4a37fb7f544e32895e162bc48396bcef4e9911474f775e0a"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/candidate/seed-67/jev/seed-67/verification.json",
+      "bytes": 611,
+      "sha256": "09fae8c5f124d326013906c3ad1ff874bff412b597374bb30f5b446e0799f5bd"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/candidate/seed-67/verification.json",
+      "bytes": 1066,
+      "sha256": "3ceaf17b83ae5ecef5cf45d76ba3ca091dd7ce7714c4831bf6715eabe2439d83"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/parent/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 14216851,
+      "sha256": "ed9050d6104af6a6101b69fbfbc619faed1f418a7d068d90d9df51c9ed1f33d3"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/parent/seed-66/jev/seed-66/verification.json",
+      "bytes": 609,
+      "sha256": "4d6b64939bae11ac53552bf7aa7f3e0b086de2a0542b51e7d2172cc5e2fded02"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/parent/seed-66/verification.json",
+      "bytes": 1064,
+      "sha256": "2e5659e99b7afa6064ac0782c45bc3139d8ad3d456ace60eff7f54bce6183542"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/parent/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 12568793,
+      "sha256": "c95a2532061c9e48616e18922ca33c0f16a544e907bafa8b69c5c4c22f52de6c"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/parent/seed-67/jev/seed-67/verification.json",
+      "bytes": 610,
+      "sha256": "c477cf81261aee0d69151cf3f3a1f57e95a9ba097063cd9515199c133224cf56"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/B/development/parent/seed-67/verification.json",
+      "bytes": 1065,
+      "sha256": "74d0fe70bc368d8844d0456d067f7179b3030c91f0893b0822aa86835ff8fca1"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/training/seed-60/jev/seed-60/frames.jsonl",
+      "bytes": 7094915,
+      "sha256": "596dec8474de3103deebe825c3b7faa8648f10b60ff887fee65229f6928a27a2"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/training/seed-60/jev/seed-60/verification.json",
+      "bytes": 596,
+      "sha256": "40b35d26f073483c79509162d1926edcdf6e6637072b9d9a9306b373fc6ca51c"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/training/seed-60/verification.json",
+      "bytes": 1051,
+      "sha256": "26981d7bbf978e3f767dfa93998b0a63d961ed5b6de3a9e8918a3b459910a720"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/training/seed-61/jev/seed-61/frames.jsonl",
+      "bytes": 7095808,
+      "sha256": "ddf5a2ce33c7ca12c817e871c321158350555066006a7a60e4aedfa09945b940"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/training/seed-61/jev/seed-61/verification.json",
+      "bytes": 597,
+      "sha256": "f77ec2be8ee19a783405268ba9496cc37c7f3286611ba4cf5e33a3cb255cf7af"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-01/training/seed-61/verification.json",
+      "bytes": 1052,
+      "sha256": "1fd2a6b157b96ae6c03b38457cc65e97c5713139501175616193461ddc096260"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-02/training/seed-62/jev/seed-62/frames.jsonl",
+      "bytes": 7094026,
+      "sha256": "254bbb8cf519f4ff2ddbd8b5d9e40bad4537ae01fceeb882c938e5b1094439bb"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-02/training/seed-62/jev/seed-62/verification.json",
+      "bytes": 597,
+      "sha256": "a37e6b88a2cd5c1adb1886153f6f8430599f45e39449f60d52f239b4f877190a"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-02/training/seed-62/verification.json",
+      "bytes": 1052,
+      "sha256": "73c1e5dc0b5a7841c79e1925bb4c03df836dbe1aefbdb51aea85698ae8799e53"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-02/training/seed-63/jev/seed-63/frames.jsonl",
+      "bytes": 7094189,
+      "sha256": "00abfd5d537ec425341bcde987650fe7fbd3fe80dcad0394838cb166a6808f47"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-02/training/seed-63/jev/seed-63/verification.json",
+      "bytes": 596,
+      "sha256": "47cb40c2c128be1d305a980988f3f8458e33be0d240621b7afba8e0e1049d7df"
+    },
+    {
+      "path": "teacher-study-v1/audit/episodes/round-02/training/seed-63/verification.json",
+      "bytes": 1051,
+      "sha256": "996653f87fd5738c6c91ffc2f0dad3233d56ea80d0babdd33323ff610b7dc2c1"
+    },
+    {
+      "path": "teacher-study-v1/audit/verification.json",
+      "bytes": 7699,
+      "sha256": "edc86c1556d2ded046efeececf95962ee3f679df128f5ef9e0a58e508b0997c5"
+    },
+    {
+      "path": "teacher-study-v1/logs/teacher-study-publication-tests.txt",
+      "bytes": 181,
+      "sha256": "87afed3a81981f6458272cf4345e3813e90885d8bb9aa351dd75508a5fffdbf2"
+    },
+    {
+      "path": "teacher-study-v1/logs/teacher-study-v1-audit.txt",
+      "bytes": 4071,
+      "sha256": "8fcee993b40539d073633847dc8b0a736f2cb71c3c45e63b9eac3b01bd00a1f1"
+    },
+    {
+      "path": "teacher-study-v1/logs/teacher-study-v1-continuation-live.txt",
+      "bytes": 7488,
+      "sha256": "2f0c6f3594dd38ce91c8681c978ace78e688c347b84c014482ebc117a9b30eab"
+    },
+    {
+      "path": "teacher-study-v1/logs/teacher-study-v1-live.txt",
+      "bytes": 2385,
+      "sha256": "1a9659f9f5657b5e3d73dafa0f0ab2887d7fad2e72af67c633a09255290aa27c"
+    },
+    {
+      "path": "teacher-study-v1/reports/closure.json",
+      "bytes": 839,
+      "sha256": "dcf1e7e58fa3559282e733f31cb0adcedba65ba12fdff8813f334bfe5db50e32"
+    },
+    {
+      "path": "teacher-study-v1/reports/descriptive-results.json",
+      "bytes": 45771,
+      "sha256": "956bf29b1101c194141180935b13683f3b60b56ef86be4146c8648bdba6f8299"
+    },
+    {
+      "path": "teacher-study-v1/run/budget.json",
+      "bytes": 352,
+      "sha256": "9edcc6457de33c732b1bc0b3c9f1cfb9ca322b4d3c3e2b7096ed9e6f81ddb639"
+    },
+    {
+      "path": "teacher-study-v1/run/continuations/parser-recovery.json",
+      "bytes": 7798,
+      "sha256": "6bb802744f3974a8c623c33c336ea1e1b6410f47065bd2cf7e129091a37c1d44"
+    },
+    {
+      "path": "teacher-study-v1/run/plan.json",
+      "bytes": 1961,
+      "sha256": "c8acdb4361a3c3ca956646aa6141c1754db71e728bde7ed9d88c3148e56b4acb"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/api-ledger.json",
+      "bytes": 179761,
+      "sha256": "5d6fde1b396d1f5028ae9b9f691fe351a65d6b716acd33b78c8f78c8d61b4b84"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/audit/jev/seed-66/frames.jsonl",
+      "bytes": 2144901,
+      "sha256": "9919c38ea26d41f92127c48ca890d5add8d796091f5a8f24ac973ca9b66c2a9f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/audit/jev/seed-66/verification.json",
+      "bytes": 655,
+      "sha256": "4ef74946c67e3ff20152924e2f726c9b9709fd2c8165084f1444748dbc81dc92"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/audit/verification.json",
+      "bytes": 1109,
+      "sha256": "97a55f5759055137b07fa30e5568b6807ab52a501c4a592c41835c86308ec5c1"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/api-ledger.json",
+      "bytes": 179761,
+      "sha256": "5d6fde1b396d1f5028ae9b9f691fe351a65d6b716acd33b78c8f78c8d61b4b84"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/evaluation.json",
+      "bytes": 546,
+      "sha256": "7fc18fd01196dbb5aa3bcac5681b9dba4483b64f14cbc791875897bb65d50f4f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 2144901,
+      "sha256": "9919c38ea26d41f92127c48ca890d5add8d796091f5a8f24ac973ca9b66c2a9f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/last-frame.png",
+      "bytes": 720,
+      "sha256": "0aa9f0e137c7f7b793f14831df77eccec39b2a26033d16e83a3b0f0192ebdde0"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/manifest.json",
+      "bytes": 2079,
+      "sha256": "b94a11cc3fc0bd07bf15fd760b03660219b8f9c28deee9693405feb19aa45b9b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/model-exchanges.jsonl",
+      "bytes": 3473666,
+      "sha256": "8d8e97380ef4779d8354bcb62eb02f0e004d976f5fbe3444cf5250eb60d19d7c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/replay.mp4",
+      "bytes": 113261,
+      "sha256": "95d1509bfce374b5e7095bd87d49aa458b017d771be1cd78f8273bd62a202540"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/summary.json",
+      "bytes": 346,
+      "sha256": "b5f152e563ad54c53bacba095a1a3a77669dd59408c162545ac59613e18bbf57"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/jev/seed-66/transitions.jsonl",
+      "bytes": 3872582,
+      "sha256": "85e447761fa0382376161bccb7dcf93bb38c2ca4f1b155113ea948577476312f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/plan.json",
+      "bytes": 2374,
+      "sha256": "d4a845544dbcfc5cccc6fa2a4e5f241682515d3415b803a592a17450caf900c4"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-66/results.json",
+      "bytes": 1769,
+      "sha256": "52536ee3faaa987972d575e8910401967a2e043cc74a1d243cb9cbfa34b44a24"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/api-ledger.json",
+      "bytes": 180068,
+      "sha256": "9ce91fb6afa553eeb5a9e71daff20ba30707ff64e71aacfdae776cefe6776b41"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/audit/jev/seed-67/frames.jsonl",
+      "bytes": 2148314,
+      "sha256": "f0e42fe4e95f8e0364306f5fd8531c4268f0f54269f157d714ab902bd65e3d3d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/audit/jev/seed-67/verification.json",
+      "bytes": 655,
+      "sha256": "97e9c495feaa28e613240469cb95db1bf8b44e0f8f2376b0b958c4546ed0b921"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/audit/verification.json",
+      "bytes": 1109,
+      "sha256": "f179170edd172b0a101d7081d4363abaf6768081c7b2b6b231c617226a7ca4ff"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/api-ledger.json",
+      "bytes": 180068,
+      "sha256": "9ce91fb6afa553eeb5a9e71daff20ba30707ff64e71aacfdae776cefe6776b41"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/evaluation.json",
+      "bytes": 558,
+      "sha256": "0f31189f1230af0398cd1359681e32f15b8f28de53068c6a62b29adce6cf37b5"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 2148314,
+      "sha256": "f0e42fe4e95f8e0364306f5fd8531c4268f0f54269f157d714ab902bd65e3d3d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/last-frame.png",
+      "bytes": 720,
+      "sha256": "0aa9f0e137c7f7b793f14831df77eccec39b2a26033d16e83a3b0f0192ebdde0"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/manifest.json",
+      "bytes": 2079,
+      "sha256": "d3be585af86882626dc0886898e95d6c4f6ef96f87c58ad98270da3a500df737"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/model-exchanges.jsonl",
+      "bytes": 3480287,
+      "sha256": "35224ab904b13a8bfb9e40b6a61bbee6daffaee0ee76e3c7a92ac0e37b6f3ad0"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/replay.mp4",
+      "bytes": 115847,
+      "sha256": "03e38be325a9b564fbd7708a25dce19eddc14b60a938907e4a14353b1c61642e"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/summary.json",
+      "bytes": 358,
+      "sha256": "e35db5488f0c1a96b7f6359940e6b17e3f3b4a99cbcd9b081cc0acb0271dab19"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/jev/seed-67/transitions.jsonl",
+      "bytes": 3882033,
+      "sha256": "324326be3ecc0f342c5afc5a19ae7b3546fef6a2c9de6ca8484b17303644a096"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/plan.json",
+      "bytes": 2374,
+      "sha256": "91fae327d979f9f7fa1e493532315a40ec4161766061777a7a837f0966b4689d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/candidate/seed-67/results.json",
+      "bytes": 1781,
+      "sha256": "d9626e2fbba1b9a65dd594cfb70ed39abcf12bcdf53956414ccae4dd243cda4f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/api-ledger.json",
+      "bytes": 1187652,
+      "sha256": "0c43e0c25384a9895598f1f3dd1874559e53d37c3ad7c37d33a285a5aec18270"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/audit/jev/seed-66/frames.jsonl",
+      "bytes": 14220402,
+      "sha256": "5ab7b9c7b763c6a3f3d96f42554c92e885855839d865f6011762062f3928c697"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/audit/jev/seed-66/verification.json",
+      "bytes": 653,
+      "sha256": "347553f4855f2e4b70dfa4368a13cfa19f1c7cf36ec16cdb490d69369066a96b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/audit/verification.json",
+      "bytes": 1108,
+      "sha256": "a3643c0624e1e46cbb233548f8efb0976c6aef59e44d00032246d288b12298d6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/api-ledger.json",
+      "bytes": 1187652,
+      "sha256": "0c43e0c25384a9895598f1f3dd1874559e53d37c3ad7c37d33a285a5aec18270"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/evaluation.json",
+      "bytes": 561,
+      "sha256": "9b437c790f1439273766cf8c0af34ea57e6405c6823dd0e4c8c547ed445c2e50"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 14220402,
+      "sha256": "5ab7b9c7b763c6a3f3d96f42554c92e885855839d865f6011762062f3928c697"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/last-frame.png",
+      "bytes": 730,
+      "sha256": "47cfd639bec6ab18e7183bb08a1acbcf8aace0ba1ff867a2b2c81dff88f191fc"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/manifest.json",
+      "bytes": 1901,
+      "sha256": "252ccb8481f9a4170d96749e13d92ab0afb9dff58507a47dc8a7f8569349db65"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/model-exchanges.jsonl",
+      "bytes": 22162194,
+      "sha256": "f434e2a9d3bcf54f9aa0b66cdc47073041268fec0e564dd71cd251ff75aa2e7c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/replay.mp4",
+      "bytes": 854858,
+      "sha256": "5cddc486515d1a362a2ab53c83d5e5cb6b141d0b1681ff8a49c38571315e95a1"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/summary.json",
+      "bytes": 357,
+      "sha256": "6b2cba5361e044313df291363537cf4b8b1e0bc25c7712162b34150facf9dc59"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/jev/seed-66/transitions.jsonl",
+      "bytes": 25793559,
+      "sha256": "bd33566630846d54c5c31160ebc17621d8e3da85c7ba5e92e09c535b8ee5d9b0"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/plan.json",
+      "bytes": 2196,
+      "sha256": "8e3b7824e170518cfda2a4b31f8cf8d5be4a97eec98b9465d95d919a32627d0d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-66/results.json",
+      "bytes": 1780,
+      "sha256": "5a2fac8eb92d23f9cabbc990e663c161102938837614ec3128a93dbdacf96de6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/api-ledger.json",
+      "bytes": 1158657,
+      "sha256": "7d9374802ac4f62d30687c20bd70c4329c1e61d0650e8e9584724595afb1694d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/audit/jev/seed-67/frames.jsonl",
+      "bytes": 13872919,
+      "sha256": "c8ecf2cdd379a555913a077bc096a381736efd8d4c898062a7f982e641ddde63"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/audit/jev/seed-67/verification.json",
+      "bytes": 654,
+      "sha256": "a03f9f98b375414bbf3abb3bcc85748f25465a98777ed911885d65f0e3faa6ae"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/audit/verification.json",
+      "bytes": 1109,
+      "sha256": "851f4118f0880bd152c85e46e33f442832806a438208bfca9186025259945302"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/api-ledger.json",
+      "bytes": 1158657,
+      "sha256": "7d9374802ac4f62d30687c20bd70c4329c1e61d0650e8e9584724595afb1694d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/evaluation.json",
+      "bytes": 562,
+      "sha256": "6d0d4de95b0b782ec675e1ec416c6f68af1ae14115f141ae009d407a694b772c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 13872919,
+      "sha256": "c8ecf2cdd379a555913a077bc096a381736efd8d4c898062a7f982e641ddde63"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/last-frame.png",
+      "bytes": 711,
+      "sha256": "67b53d6caf15c1678ab9f9e19c1fecc56c3ea64ef09f6ebb8d9c9eb8062341b7"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/manifest.json",
+      "bytes": 1901,
+      "sha256": "d741840d2c50584534d7e82d767b4e9c2bc2a28893f0be390f518d418546c257"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/model-exchanges.jsonl",
+      "bytes": 21612829,
+      "sha256": "e6ed74d4d93b44a03da2108c54e6a00e0ea11559be441a5b98dced3628da25aa"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/replay.mp4",
+      "bytes": 835874,
+      "sha256": "17c900d02a66767a76b4211e8439a61de601062fa2957c29c920f98aa9e03815"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/summary.json",
+      "bytes": 362,
+      "sha256": "78028b21ca9470c28651a0e3463bfbf854180b667b923ad0d2499c8e08b680c6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/jev/seed-67/transitions.jsonl",
+      "bytes": 25157110,
+      "sha256": "e372984b21aa492331d8932c94715efe4a7c98e79ac33f6724a680a3f5f1b6d3"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/plan.json",
+      "bytes": 2196,
+      "sha256": "b3f4d1e3a47d5dadf99a10c86642073456b0517ae13246d853a53b2123666be1"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/development/parent/seed-67/results.json",
+      "bytes": 1786,
+      "sha256": "9207a0d27e3855dc98ddc8a973fe6be0a576b4b1bf7a562eac64f9ce1630b1e6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/probes/api-ledger.json",
+      "bytes": 30412,
+      "sha256": "ab86f6dfe154200ba27aee29757c03fe9110c3399a271b8ebfc035d6c58bb427"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/probes/inputs.json",
+      "bytes": 282313,
+      "sha256": "ff29aa552666e6d1a0a8ae7c97e94f3124967d2e2addae6fbade2463de25fe6c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/probes/model-exchanges.jsonl",
+      "bytes": 576090,
+      "sha256": "957523f535b40617b625f0780b2bfb3e41681fe3e90cf01337154bc94fc20088"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/probes/predictions.jsonl",
+      "bytes": 163555,
+      "sha256": "5cf306bef7f3fa19cf899cdf7ad4d7b72688e8555ff1e4f4a9a654d2328f6375"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/probes/results.json",
+      "bytes": 673,
+      "sha256": "398919ee25d6ed35b03b1367cbdfdb6113b7d9e4f124c6ecc65aef1870afa14d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/question-changes.json",
+      "bytes": 4916,
+      "sha256": "96abaf99da5c0d08f4d758887afddecfa8516716f447e270776606df78c134d8"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/selection.json",
+      "bytes": 1598,
+      "sha256": "649d2033da67aaac81616f033d82e24bbc25513037bd1c10530d66e3b940aac8"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/invocation-1/context-preview.json",
+      "bytes": 10181,
+      "sha256": "e03dd2806d60060b5d69da4a84c9207aad465d4ab8f147b4db933c721cb6fab7"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/invocation-1/events.json",
+      "bytes": 2433,
+      "sha256": "d8a44a087f9d3e905fa46e8d06075ec9e8c3d25863c960b22a802cf8ce897ec3"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/invocation-1/execution.json",
+      "bytes": 1462,
+      "sha256": "1db84824fbf92e54ce666983854240de586907d22092991971de48a255de09d3"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/invocation-1/instructions.txt",
+      "bytes": 584,
+      "sha256": "88db56d9e0c6e4fb655a9c0e5a765329f7df89f8a3cef55260e8227aac43aead"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/invocation-1/packet.json",
+      "bytes": 325039,
+      "sha256": "d9882f7c4e3a9d2bb55c5045e3a02a194a538f9ef73ce899328a3a8bdf34fa5e"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/invocation-1/recovery.json",
+      "bytes": 4190,
+      "sha256": "28e22d4d2663f5b8abeb30d3bdeff7c4111e6e713224a30bcafc4964c36df892"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/invocation-1/response-schema.json",
+      "bytes": 634,
+      "sha256": "f30ebb1457fb331503a04da1e1be09e34246abfab7901054347329a803d9702f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/A/teacher/validated.json",
+      "bytes": 3656,
+      "sha256": "d34d48864c2f05ea1baf302e35a933fe2e31e9217101952270c25ad957c5b3a6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/api-ledger.json",
+      "bytes": 1187766,
+      "sha256": "8f92ddbec6c5482bc523db4af34669fa84bb623942196d7294f8e3a5abdc5eed"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/audit/jev/seed-66/frames.jsonl",
+      "bytes": 14218793,
+      "sha256": "f50a1da4c1ea01ac9aae17793e520b4e5f773f47b430063461b12dda871b91ff"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/audit/jev/seed-66/verification.json",
+      "bytes": 657,
+      "sha256": "bf20e56a15d1f1879e578f96b9674de7220f2207d948dae4a4dbd6fd12c7ad35"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/audit/verification.json",
+      "bytes": 1112,
+      "sha256": "015619ff29f71d045f8bb019d25f9fe8ee69f31fc549284cda57bec53b344753"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/api-ledger.json",
+      "bytes": 1187766,
+      "sha256": "8f92ddbec6c5482bc523db4af34669fa84bb623942196d7294f8e3a5abdc5eed"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/evaluation.json",
+      "bytes": 562,
+      "sha256": "549b3102d1c7a702f3a7e832503a97e31db26c0c7603cc6369c2599778182c80"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 14218793,
+      "sha256": "f50a1da4c1ea01ac9aae17793e520b4e5f773f47b430063461b12dda871b91ff"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/last-frame.png",
+      "bytes": 717,
+      "sha256": "aae8c0c4a310b08486fb9d858b617a4a688763e0395c0dd4f96f119f1fc9a921"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/manifest.json",
+      "bytes": 2082,
+      "sha256": "e629f1b89561923b2364d2dbc91f3228029a04b8fd217726450732c275162235"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/model-exchanges.jsonl",
+      "bytes": 23049263,
+      "sha256": "e109ed57ca800b59caff1a7ea8e0288377be68783252fb8e500266009a750200"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/replay.mp4",
+      "bytes": 840378,
+      "sha256": "fd7eb8f6c68f126ddf50289b85e7e029fbd1f30b270bc96dd86841b0dad0eae2"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/summary.json",
+      "bytes": 357,
+      "sha256": "6cbaf53564dc9bbbb825e16360538581727d628c9513b4d4faaf389e27d33f0c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/jev/seed-66/transitions.jsonl",
+      "bytes": 25831157,
+      "sha256": "8ed1b17a19c28cae79a43098d20e873ef72e4f0de420e12e3085aa486c02e2d6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/plan.json",
+      "bytes": 2374,
+      "sha256": "b22c2f04e3201cd3006eee080fe9f2c04e86eead951e46e22d411fd02e92e9bb"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-66/results.json",
+      "bytes": 1782,
+      "sha256": "1fef5534b87fb1f12491e5ee6737da590d65cfd11c259382c004d70d61c862b1"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/api-ledger.json",
+      "bytes": 1187993,
+      "sha256": "e7006d86964ceb212427abf775bd26deb9c264a09b46f7dd8519fe1963e8a129"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/audit/jev/seed-67/frames.jsonl",
+      "bytes": 14214015,
+      "sha256": "962f8719d849b6ee4a37fb7f544e32895e162bc48396bcef4e9911474f775e0a"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/audit/jev/seed-67/verification.json",
+      "bytes": 655,
+      "sha256": "f9db5ef4ebd21c83006b5fc70e8cffc65730d5c3069c4dad0afc840c12d570d0"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/audit/verification.json",
+      "bytes": 1110,
+      "sha256": "9d12e02add590c54b611f5430c4465241b0c16b3d997e5e9dffa87dd5f6096eb"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/api-ledger.json",
+      "bytes": 1187993,
+      "sha256": "e7006d86964ceb212427abf775bd26deb9c264a09b46f7dd8519fe1963e8a129"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/evaluation.json",
+      "bytes": 559,
+      "sha256": "55494f6ab23559f4d1e9166eee7dd78cc4df891f806329e9045281770cfd6df5"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 14214015,
+      "sha256": "962f8719d849b6ee4a37fb7f544e32895e162bc48396bcef4e9911474f775e0a"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/last-frame.png",
+      "bytes": 742,
+      "sha256": "8e5f45b3d57a71146a96dbf22f08b49fc1520e016a7cef0874cb92896edc319d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/manifest.json",
+      "bytes": 2082,
+      "sha256": "d44318bf756bb655bbd2f6afb066568312a4a45b78227d9dae4f0ec805df3b7a"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/model-exchanges.jsonl",
+      "bytes": 23059860,
+      "sha256": "a5635a98d5c9eed00a14e03fab3b1481ce99304e80c86d11ec6dfa2bff1bc379"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/replay.mp4",
+      "bytes": 859817,
+      "sha256": "e2e7d19891034f963d212ed0a787b72d4501bedce8ea07a694edcb1b6c4b7ee8"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/summary.json",
+      "bytes": 356,
+      "sha256": "31f9828c6526617f205e0a786a0b4a1f1dc5eed8c68d3d9efd385539374b46b9"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/jev/seed-67/transitions.jsonl",
+      "bytes": 25833433,
+      "sha256": "33d7988df1fe103353c5068d188fe952b37310f7069c899c2943cfba842dd928"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/plan.json",
+      "bytes": 2374,
+      "sha256": "041dd3eb8a92dd51411540e36297048777fc3f5e083e849dbab2b3e335205b8c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/candidate/seed-67/results.json",
+      "bytes": 1777,
+      "sha256": "742733067733e0e0bf5f82df72541407118ffe1f84b08d61456ba131c4d927a5"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/api-ledger.json",
+      "bytes": 1187342,
+      "sha256": "f8305aff74cc8f28aaef997ceb330d1f1189d224dae80334ba8ede16300fb4b6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/audit/jev/seed-66/frames.jsonl",
+      "bytes": 14216851,
+      "sha256": "ed9050d6104af6a6101b69fbfbc619faed1f418a7d068d90d9df51c9ed1f33d3"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/audit/jev/seed-66/verification.json",
+      "bytes": 653,
+      "sha256": "0634bb42b42356f15ee64b0f0dcb85a3e2f3c2a9152a8e5ee7d50b1e5ab17d6d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/audit/verification.json",
+      "bytes": 1108,
+      "sha256": "873a41e2209166352b979f646a29b666bb5237dda2e8b2d129128a38cb075313"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/api-ledger.json",
+      "bytes": 1187342,
+      "sha256": "f8305aff74cc8f28aaef997ceb330d1f1189d224dae80334ba8ede16300fb4b6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/evaluation.json",
+      "bytes": 561,
+      "sha256": "e7e7676295dfd4c559ec4b299c17c086f1efce0456e582fecb8c49975ac6489d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/frames.jsonl",
+      "bytes": 14216851,
+      "sha256": "ed9050d6104af6a6101b69fbfbc619faed1f418a7d068d90d9df51c9ed1f33d3"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/last-frame.png",
+      "bytes": 710,
+      "sha256": "d66342a16e79a01d3bf1cf0f341b67c8b220a0a8a74a2270a077fe0f7515ae56"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/manifest.json",
+      "bytes": 1901,
+      "sha256": "252ccb8481f9a4170d96749e13d92ab0afb9dff58507a47dc8a7f8569349db65"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/model-exchanges.jsonl",
+      "bytes": 22154832,
+      "sha256": "4811d8c850d68e8cc80f90005680a13d8eaa2a9945a610c3fd12bcfb1690d786"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/replay.mp4",
+      "bytes": 852103,
+      "sha256": "de76cd071eefc43f1c108d6364993138815d34245c073fb7b262a563103ba265"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/summary.json",
+      "bytes": 357,
+      "sha256": "01c6100795823964925f7c396df71badbd465404d0b2dfc74b8eebbcc572d92b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/jev/seed-66/transitions.jsonl",
+      "bytes": 25793045,
+      "sha256": "f0914e0bffaefce0641ab8cc684f4eac2ca0898b8ca36f99e777880502a37c68"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/plan.json",
+      "bytes": 2196,
+      "sha256": "8e3b7824e170518cfda2a4b31f8cf8d5be4a97eec98b9465d95d919a32627d0d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-66/results.json",
+      "bytes": 1780,
+      "sha256": "9e5bc63515a01e652d99719503a58f70a9c7381deb767a20ef15e93637dfe1b3"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/api-ledger.json",
+      "bytes": 1050664,
+      "sha256": "1a6946dd52f3fe875e5152913bc5e28b76799d26571c7306aaa376120ccb682b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/audit/jev/seed-67/frames.jsonl",
+      "bytes": 12568793,
+      "sha256": "c95a2532061c9e48616e18922ca33c0f16a544e907bafa8b69c5c4c22f52de6c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/audit/jev/seed-67/verification.json",
+      "bytes": 654,
+      "sha256": "4e89d53df11af80b12cc72244e0089873d6379c12c894fd29c7bdb1de22575bd"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/audit/verification.json",
+      "bytes": 1109,
+      "sha256": "7b9f1dade60540fe1c7c6df0b0a9fce2c15eec989fda342333682bf7a8eec3d4"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/api-ledger.json",
+      "bytes": 1050664,
+      "sha256": "1a6946dd52f3fe875e5152913bc5e28b76799d26571c7306aaa376120ccb682b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/evaluation.json",
+      "bytes": 562,
+      "sha256": "714c59c6ec637c64ee2b2dd5ba8de4aa15a60d2f8b7cd8282192d2bf814788ae"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/frames.jsonl",
+      "bytes": 12568793,
+      "sha256": "c95a2532061c9e48616e18922ca33c0f16a544e907bafa8b69c5c4c22f52de6c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/last-frame.png",
+      "bytes": 734,
+      "sha256": "8549d4bd50611b627751eabbf3febd0b8a1a1f838ea12d2cf2b5ab7c11d2246a"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/manifest.json",
+      "bytes": 1901,
+      "sha256": "d741840d2c50584534d7e82d767b4e9c2bc2a28893f0be390f518d418546c257"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/model-exchanges.jsonl",
+      "bytes": 19596185,
+      "sha256": "b588d3b31d799c7b6634fec8c3f8c7cb196bd2d320e39011ac64048a7ea83fcb"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/replay.mp4",
+      "bytes": 753124,
+      "sha256": "c767eba9faa3ee890ee49261f26f4a9217b944149cd17afd0c8f5bdbb892d32d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/summary.json",
+      "bytes": 362,
+      "sha256": "0ec4aced66c3f3180518351b4e7bedd3765bbfecd863923cf2ad8b3d737ff4cf"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/jev/seed-67/transitions.jsonl",
+      "bytes": 22806706,
+      "sha256": "789db07ecbfc2f7201446613a91f907ff213ce1f5f7ac42e3206e407ba57546c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/plan.json",
+      "bytes": 2196,
+      "sha256": "b3f4d1e3a47d5dadf99a10c86642073456b0517ae13246d853a53b2123666be1"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/development/parent/seed-67/results.json",
+      "bytes": 1786,
+      "sha256": "0740370bc4986cda6f81c976981f9dcd642ac8a998270a9aabf8199901044bf2"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/probes/api-ledger.json",
+      "bytes": 30397,
+      "sha256": "00d4fc899557dece1da668cac4bbf40f4f2f7a2abb96d5f1e4421a7af6db4d04"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/probes/inputs.json",
+      "bytes": 282313,
+      "sha256": "ff29aa552666e6d1a0a8ae7c97e94f3124967d2e2addae6fbade2463de25fe6c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/probes/model-exchanges.jsonl",
+      "bytes": 575893,
+      "sha256": "2ecf6212970ba35729acddef74895d2db576f2dba6016c09b4c5a6a15849a67c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/probes/predictions.jsonl",
+      "bytes": 163447,
+      "sha256": "270fb621e7c6abe2bc4b99a7755b3172c27be3321219308096a6230cc953df8e"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/probes/results.json",
+      "bytes": 679,
+      "sha256": "87690f67cde1da981b34c4485c9361e03b04fd534e0180c55f6ec0d58f07258b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/question-changes.json",
+      "bytes": 4646,
+      "sha256": "180b04726290e098f7fc6a6b3b8e05951288c550f59b4500d1f5d264c4f1ce0d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/selection.json",
+      "bytes": 1592,
+      "sha256": "33758944c1a761f9ef08d58dc1fba1445aedd4c2a421eeab2a9e870b068ce7ea"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/invocation-1/context-preview.json",
+      "bytes": 10180,
+      "sha256": "2ed0ad05a7f950e27ec5ffdbf55db469fcc4b76fdd5acc8e721295bd95985096"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/invocation-1/events.json",
+      "bytes": 2293,
+      "sha256": "ef8f87ea15e5d74781897e9641ba6778642589bdcc87127ec31685d7c2be830c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/invocation-1/execution.json",
+      "bytes": 1384,
+      "sha256": "665739602ec84bfe61e43df30d30bb9d81638ea6f4ed35081d8182c2ef2b4341"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/invocation-1/instructions.txt",
+      "bytes": 584,
+      "sha256": "88db56d9e0c6e4fb655a9c0e5a765329f7df89f8a3cef55260e8227aac43aead"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/invocation-1/packet.json",
+      "bytes": 2144,
+      "sha256": "093679d1af64ed08ff72b28bc41fd6e0dedb602265f6b8191dcfcd842a2f3e49"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/invocation-1/proposal.json",
+      "bytes": 1911,
+      "sha256": "cffd625092b935912cbef6891a5eaedf72cb9fad8423423a07b5ae0f90df2899"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/invocation-1/response-schema.json",
+      "bytes": 634,
+      "sha256": "f30ebb1457fb331503a04da1e1be09e34246abfab7901054347329a803d9702f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/B/teacher/validated.json",
+      "bytes": 3342,
+      "sha256": "78294fc16c6750020dec4668cb088a98559c6240a2a758838872613e39268df8"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/api-ledger.json",
+      "bytes": 593726,
+      "sha256": "5bf023a6c89dc99222b385483b32740dea2349f6aae0fe6932bf5c11adae0773"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/audit/jev/seed-60/frames.jsonl",
+      "bytes": 7094915,
+      "sha256": "596dec8474de3103deebe825c3b7faa8648f10b60ff887fee65229f6928a27a2"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/audit/jev/seed-60/verification.json",
+      "bytes": 640,
+      "sha256": "5d55ba48909415e5ddd0825885bcc35c8bdabe8471753a21d8dee981db354312"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/audit/verification.json",
+      "bytes": 1095,
+      "sha256": "44a054e1a36de4fd3fc54be3e639e0abb2ff38d31a56794aaac4708fa75dafb1"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/api-ledger.json",
+      "bytes": 593726,
+      "sha256": "5bf023a6c89dc99222b385483b32740dea2349f6aae0fe6932bf5c11adae0773"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/evaluation.json",
+      "bytes": 559,
+      "sha256": "d0db8fa477c4e6e5a60d5342e2c0c93a1487986aa479942bf2c36b75458716c6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/frames.jsonl",
+      "bytes": 7094915,
+      "sha256": "596dec8474de3103deebe825c3b7faa8648f10b60ff887fee65229f6928a27a2"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/last-frame.png",
+      "bytes": 741,
+      "sha256": "d5c2622a1df8c53aa9bb2c69722433253bdddec3560430c67c6612c219afc583"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/manifest.json",
+      "bytes": 1895,
+      "sha256": "96a7e8fe23586172d5ab4dbb4b5aa8eed9febb97c09809acc3405def9ad89ac1"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/model-exchanges.jsonl",
+      "bytes": 11074782,
+      "sha256": "6f10e86ffa5fcd6d6de98488ab660dcf7f1111699930b5b842cee126fbfe3014"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/replay.mp4",
+      "bytes": 423232,
+      "sha256": "1e41f623342e1a076ac5a9b4911deab3fb165568f2211e06c24c8f5b624c57ed"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/summary.json",
+      "bytes": 355,
+      "sha256": "2464fbccb711b58be0157f25db1a783d0eb3b39622e3a121ebbe73ee0fd9f047"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/jev/seed-60/transitions.jsonl",
+      "bytes": 12892323,
+      "sha256": "e71972f35192c9e95b665730d60e6ff542058cc88b33f47f8f3ed4f87c1fe861"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/plan.json",
+      "bytes": 2190,
+      "sha256": "ef70fc77e0dca5e8db98f006d3c6b5a6817f25d931e993f9791b9014ac3ad503"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-60/results.json",
+      "bytes": 1778,
+      "sha256": "1cfdbf08bff0339023dbabf8a8d81dae03151e664d70456301762f34dddb4aec"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/api-ledger.json",
+      "bytes": 593789,
+      "sha256": "ba3aa6687963345d4048af91ebe581ad9f6450c0dbdad6719c1466707b663786"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/audit/jev/seed-61/frames.jsonl",
+      "bytes": 7095808,
+      "sha256": "ddf5a2ce33c7ca12c817e871c321158350555066006a7a60e4aedfa09945b940"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/audit/jev/seed-61/verification.json",
+      "bytes": 641,
+      "sha256": "4788348a150dd89d686ed3439cc2fac8b2825d950ba6ef8fe2aadac5299acc58"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/audit/verification.json",
+      "bytes": 1096,
+      "sha256": "d858cb739a61a0e15b0c104197ac850a543c8a77bcbd6015bed250f6728eca4a"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/api-ledger.json",
+      "bytes": 593789,
+      "sha256": "ba3aa6687963345d4048af91ebe581ad9f6450c0dbdad6719c1466707b663786"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/evaluation.json",
+      "bytes": 559,
+      "sha256": "3ced92e5f2940286fe0182544e140fcf582e37e92faa2cc63a5589ea82c49b9f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/frames.jsonl",
+      "bytes": 7095808,
+      "sha256": "ddf5a2ce33c7ca12c817e871c321158350555066006a7a60e4aedfa09945b940"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/last-frame.png",
+      "bytes": 732,
+      "sha256": "68a6efb54a2357f76e27a9706ac5a60abe4b0dccbebea9c593d2f0aa0981a621"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/manifest.json",
+      "bytes": 1895,
+      "sha256": "edb5c9bd0fa16aa1ade5d23ee8855b12578885dcb2f6e400685a9e22baeb842d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/model-exchanges.jsonl",
+      "bytes": 11083164,
+      "sha256": "9289b490e4bc7fd679be3702729530c15b5928c47cd1f47a9d287808d9114c52"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/replay.mp4",
+      "bytes": 428235,
+      "sha256": "0c694a634b825f332fcd0673e40e2e07d37f8a9b059e2a5d010699fd1507244b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/summary.json",
+      "bytes": 355,
+      "sha256": "9030b0376e69e282fc931d515228ede3a52932e5c5779c9230d5cc3ec052f137"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/jev/seed-61/transitions.jsonl",
+      "bytes": 12909577,
+      "sha256": "61b35f0dc2e78506d3b6b9cd1bb7b0e05fb9fc203d867e49a995f9766e3fa7f5"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/plan.json",
+      "bytes": 2190,
+      "sha256": "6e7e5b2910785b264dda429b1f2b5b1d1ca57d4fcac03c0aea805142dd4d9c4d"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training/seed-61/results.json",
+      "bytes": 1778,
+      "sha256": "30eb26a75f28aac6e4a4d392704a303d1376cef6621fd75769b6a7405414b5cb"
+    },
+    {
+      "path": "teacher-study-v1/run/round-01/training-evidence.json",
+      "bytes": 465160,
+      "sha256": "4497442fab42981acd2119a392497a5c4d3578e777d86ae8b2865bcc6f12d784"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/A/teacher/invocation-1/context-preview.json",
+      "bytes": 10179,
+      "sha256": "6439826d428083c2c641576d5932285acc977f69c0d61cd84ace27bc8e12ebe6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/A/teacher/invocation-1/events.json",
+      "bytes": 200,
+      "sha256": "5f775f5c52ea19df571aa4ab2a7f0d24a89ed97c05edca80ebb8d040008c4cc2"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/A/teacher/invocation-1/execution.json",
+      "bytes": 1415,
+      "sha256": "6e511333b4df20e1fca0cac53764d13c6e421a06b204d51b4b2ebb7d205529fa"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/A/teacher/invocation-1/instructions.txt",
+      "bytes": 584,
+      "sha256": "88db56d9e0c6e4fb655a9c0e5a765329f7df89f8a3cef55260e8227aac43aead"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/A/teacher/invocation-1/packet.json",
+      "bytes": 325347,
+      "sha256": "8abc84d811862853b017450839f5aba6b80ecfb1c2fc5664d543200a87ea1420"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/A/teacher/invocation-1/response-schema.json",
+      "bytes": 634,
+      "sha256": "f30ebb1457fb331503a04da1e1be09e34246abfab7901054347329a803d9702f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/api-ledger.json",
+      "bytes": 593922,
+      "sha256": "7a22c0aede818940499758565c60b208dd588cec288f01fcc16d12aca9bdef3c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/audit/jev/seed-62/frames.jsonl",
+      "bytes": 7094026,
+      "sha256": "254bbb8cf519f4ff2ddbd8b5d9e40bad4537ae01fceeb882c938e5b1094439bb"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/audit/jev/seed-62/verification.json",
+      "bytes": 641,
+      "sha256": "c19dd2f602d5fd8d8e195b3ccae4ee257be1d85fa216a46a90a197b689f77f7e"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/audit/verification.json",
+      "bytes": 1096,
+      "sha256": "e5cde4d7eaff4f35ea902e2c07df37e6790f89b904a08cf24efba8336715e5b2"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/api-ledger.json",
+      "bytes": 593922,
+      "sha256": "7a22c0aede818940499758565c60b208dd588cec288f01fcc16d12aca9bdef3c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/evaluation.json",
+      "bytes": 560,
+      "sha256": "53f473133a1c4b3dffcee1e02b702b99c06ef715fad814f08fecc1efc33b5815"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/frames.jsonl",
+      "bytes": 7094026,
+      "sha256": "254bbb8cf519f4ff2ddbd8b5d9e40bad4537ae01fceeb882c938e5b1094439bb"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/last-frame.png",
+      "bytes": 733,
+      "sha256": "5bb59827c591533baaee81e9c9d1581abb22891020a2c5f69754f11eaf968308"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/manifest.json",
+      "bytes": 1895,
+      "sha256": "3086919c6ec1717aeae07f42f5b9fd063185d1625a91acd84bdb2b2907487f35"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/model-exchanges.jsonl",
+      "bytes": 11078289,
+      "sha256": "286eee41bdfc32d86687a6c91e76ce16df7190e854921f62b4037677921ca097"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/replay.mp4",
+      "bytes": 427037,
+      "sha256": "a7b746ae6638c834e731d0b9d92d319b2f1e7ca8318b5f26756596e80926af0f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/summary.json",
+      "bytes": 356,
+      "sha256": "34db4a81713e4060eca59192af63b0b65f1db39808d810964561c91369853e46"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/jev/seed-62/transitions.jsonl",
+      "bytes": 12891829,
+      "sha256": "3bccb5e14d1167b836a59ec396a7ac05ea90321496f0deb95859ae4f0513116c"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/plan.json",
+      "bytes": 2190,
+      "sha256": "4ae61e52ee191610be265fffaa3d073030c90769753e66265149602a3b235713"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-62/results.json",
+      "bytes": 1779,
+      "sha256": "c01f5a6f9a300f03a73bc48c484a749a0a28ddee0e52027a8a213dd61ce91700"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/api-ledger.json",
+      "bytes": 593802,
+      "sha256": "2f0c8544b59edbadac57315277bec2f2727cdf17619e7525e66e4890b0945cfa"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/audit/jev/seed-63/frames.jsonl",
+      "bytes": 7094189,
+      "sha256": "00abfd5d537ec425341bcde987650fe7fbd3fe80dcad0394838cb166a6808f47"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/audit/jev/seed-63/verification.json",
+      "bytes": 640,
+      "sha256": "4b2022fbe089a47b90b0ca6690141cd8f408f6e3f527760c66a6146e9f689313"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/audit/verification.json",
+      "bytes": 1095,
+      "sha256": "cf9fc4373093dd00e4d56b143ae97f5a2ff455dcdae655d79eb153a678999b95"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/api-ledger.json",
+      "bytes": 593802,
+      "sha256": "2f0c8544b59edbadac57315277bec2f2727cdf17619e7525e66e4890b0945cfa"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/evaluation.json",
+      "bytes": 558,
+      "sha256": "bf42767a348abd9c5b9917939de1a608ccf70e59fa189325ab8c0db637d16f2f"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/frames.jsonl",
+      "bytes": 7094189,
+      "sha256": "00abfd5d537ec425341bcde987650fe7fbd3fe80dcad0394838cb166a6808f47"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/last-frame.png",
+      "bytes": 689,
+      "sha256": "413e8b3bdc377ad4d69948283c3b8fdfffc1b1e2a98d7f600193d2c7cd393527"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/manifest.json",
+      "bytes": 1895,
+      "sha256": "7c302b9ba285a05b5349b32abecc1b8b16354f604b01c948814969011781bbad"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/model-exchanges.jsonl",
+      "bytes": 11077538,
+      "sha256": "502829b8c8fe8ac371087c19274fa28e7039b940a4802925e75587db7cae9680"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/replay.mp4",
+      "bytes": 431784,
+      "sha256": "87bd4355b46e3c9014ced3362d1b87dcf4add9300f6f1c530886e96aa5a73c5b"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/summary.json",
+      "bytes": 355,
+      "sha256": "47f5498c9cf28e39c6db8929f516e4ce794fd6d81a52642b197b19a6b63efc15"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/jev/seed-63/transitions.jsonl",
+      "bytes": 12898032,
+      "sha256": "d30abd3bd20adc4f3b4605541d07830470d581382cb7414c1fd7ba52d3b8d7d6"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/plan.json",
+      "bytes": 2190,
+      "sha256": "499ad5479a8873cedaaaba7c364916008fa8c4964d09a1cddcab86f505c0f273"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training/seed-63/results.json",
+      "bytes": 1776,
+      "sha256": "3631ba9f13e92d9f17de0772564b0b92344f98076f1c6625887f848fd78fc244"
+    },
+    {
+      "path": "teacher-study-v1/run/round-02/training-evidence.json",
+      "bytes": 462269,
+      "sha256": "cec7e861b6a28be730e1d8d7cf01b6c35d20586d79bbe7ccf4c9da31cfe82101"
+    },
+    {
+      "path": "teacher-study-v1/run/status.json",
+      "bytes": 4277,
+      "sha256": "4d309472b1fc2ff42718caed1167b3cffe59149ef3392623f4bda3a03cb0b0d1"
+    }
+  ]
+}

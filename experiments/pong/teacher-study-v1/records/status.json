@@ -1,0 +1,81 @@
+{
+  "status": "incomplete",
+  "source_revision": "16722dfa725472b1200b1e7de2d54ed11eaf9731",
+  "rounds": [
+    {
+      "round": 1,
+      "decisions": {
+        "A": {
+          "status": "rejected",
+          "accepted": false,
+          "pairs": [
+            {
+              "seed": 66,
+              "parent": -9.0,
+              "candidate": -21.0,
+              "gain": -12.0
+            },
+            {
+              "seed": 67,
+              "parent": -10.0,
+              "candidate": -21.0,
+              "gain": -11.0
+            }
+          ],
+          "mean_gain": -11.5,
+          "rule": "both seeds nonregressing and mean gain >=1; engineering gate",
+          "selected_program": {
+            "name": "pong-vertical-control-v2",
+            "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+            "schema_version": "action-choice-program-v1"
+          },
+          "selected_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d"
+        },
+        "B": {
+          "status": "rejected",
+          "accepted": false,
+          "pairs": [
+            {
+              "seed": 66,
+              "parent": -8.0,
+              "candidate": -11.0,
+              "gain": -3.0
+            },
+            {
+              "seed": 67,
+              "parent": -11.0,
+              "candidate": 0.0,
+              "gain": 11.0
+            }
+          ],
+          "mean_gain": 4.0,
+          "rule": "both seeds nonregressing and mean gain >=1; engineering gate",
+          "selected_program": {
+            "name": "pong-vertical-control-v2",
+            "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+            "schema_version": "action-choice-program-v1"
+          },
+          "selected_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d"
+        }
+      }
+    }
+  ],
+  "active_round": 2,
+  "error_type": "ValueError",
+  "error": "Teacher turn did not complete",
+  "budget": {
+    "kind": "pong-study-budget-v1",
+    "max_attempts": 220000,
+    "nonfinal_limit": 154000,
+    "final_limit": 66000,
+    "teacher_limit": 8,
+    "live_seconds": 86400,
+    "started_at": 1789748981.6822329,
+    "attempts": 41080,
+    "nonfinal_attempts": 41080,
+    "final_attempts": 0,
+    "teacher_invocations": 3,
+    "teacher_repairs": 0,
+    "training_closed": false
+  }
+}

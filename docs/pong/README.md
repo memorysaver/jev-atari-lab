@@ -4,6 +4,11 @@ Pong is the current test environment for the teacher-driven question optimizer.
 Its small action space makes it a useful starting point, but neither mastery nor
 repeatable multi-round learning has been established.
 
+See the [first teacher study results](teacher-study-results-2026-09-20.md): one completed
+round, both candidates rejected, and a technical stop before a second proposal.
+The [next research design](teacher-study-next.md) separates strategy quality from
+Jev question execution. No new live study is launched by that document.
+
 ## Start here
 
 - [Evaluation profile](evaluation.md): Pong outcomes, diagnostics, stopping rules
@@ -50,10 +55,9 @@ development seed 56. That run is unfinished. V2 is a selected experimental refer
 not a policy promoted by the earlier five-point pilot gate; that gate rejected
 promotion because its candidate windows were incomplete. V3 is not promoted.
 
-Next, implement repeated fixed-input comparisons and complete round records before
-running the proposed three-round teacher pilot. Freeze a new study protocol and
-use a fresh teacher context for train-only proposals. The current interactive
-conversation has already seen development results.
+The automated study runner now records fixed-input comparisons and isolated teacher
+proposals. Its first study retained v2 in both arms and stopped on a failed teacher
+invocation in round two. Final tests were not run. See the linked result report.
 
 ## Historical studies
 

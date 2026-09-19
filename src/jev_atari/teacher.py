@@ -211,6 +211,17 @@ def isolation_check(binary: Path):
         }
 
 
+def retain_private_diagnostics(stdout, stderr):
+    """Keep failed transport details outside publishable artifacts, owner access only."""
+    diagnostic = Path(tempfile.mkdtemp(prefix="jev-teacher-error-"))
+    os.chmod(diagnostic, 0o700)
+    for name, content in (("stdout.txt", stdout), ("stderr.txt", stderr)):
+        with (diagnostic / name).open("x") as stream:
+            os.chmod(diagnostic / name, 0o600)
+            stream.write(content or "")
+    return diagnostic
+
+
 def invoke_teacher(packet, out, budget, *, binary: Path, auth_home: Path, repair=False):
     serialized = json.dumps(packet, allow_nan=False)
     if len(serialized.encode()) > 200000:
@@ -288,17 +299,22 @@ def invoke_teacher(packet, out, budget, *, binary: Path, auth_home: Path, repair
             if unexpected:
                 metadata["unexpected_item_types"] = unexpected
             write_json(out / "events.json", events)
+            turn_failed = any(e["type"] == "turn.failed" for e in events) or not any(
+                e["type"] == "turn.completed" for e in events
+            )
+            if (
+                unexpected
+                or turn_failed
+                or process.returncode
+                or not (work / "answer.json").exists()
+            ):
+                retain_private_diagnostics(process.stdout, process.stderr)
+                metadata["private_diagnostics_retained"] = True
             if metadata.get("unexpected_item_types"):
                 raise ValueError("Teacher attempted non-message activity")
-            if any(e["type"] == "turn.failed" for e in events) or not any(
-                e["type"] == "turn.completed" for e in events
-            ):
+            if turn_failed:
                 raise ValueError("Teacher turn did not complete")
             if process.returncode or not (work / "answer.json").exists():
-                # Keep diagnostics privately; never echo provider/credential text in public records.
-                diagnostic = Path(tempfile.mkdtemp(prefix="jev-teacher-error-"))
-                os.chmod(diagnostic, 0o700)
-                (diagnostic / "stderr.txt").write_text(process.stderr)
                 raise RuntimeError(
                     "Teacher failed; private diagnostic retained in temporary directory"
                 )

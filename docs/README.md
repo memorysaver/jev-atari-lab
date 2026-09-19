@@ -17,7 +17,7 @@ machine-readable evidence and immutable LFS archives remain in
 | Document | Purpose | Status |
 | --- | --- | --- |
 | [Research direction](research-direction.md) | Two goals, hypotheses, current evidence and limits | Adopted project direction |
-| [Teacher optimizer](teacher-optimizer.md) | What is optimized, optimizer components, round records and pattern discovery | Research design; full loop not implemented |
+| [Teacher optimizer](teacher-optimizer.md) | What is optimized, optimizer components, round records and pattern discovery | Design; first implemented teacher study incomplete |
 | [Evaluation framework](evaluation-framework.md) | Edit, behavior, outcome and cost measures; controls and uncertainty | Proposed framework; some underlying logging exists |
 | [Research roadmap and paper plan](research-roadmap.md) | Staged studies and evidence required for paper claims | Planned studies; no new live run authorized by this document |
 | [Related work](related-work.md) | Primary sources and boundaries of novelty claims | Targeted review; methods not reproduced |
@@ -29,13 +29,16 @@ Game-specific research starts at [Pong](pong/README.md), with its own
 [evaluation profile](pong/evaluation.md) and [teacher log](pong/teacher-log.md).
 The approved [longitudinal teacher study](pong/teacher-study-plan.md) has a
 [frozen protocol](pong/teacher-study-protocol.md) and an explicit
-[parser continuation record](pong/teacher-study-continuation.md).
+[parser continuation record](pong/teacher-study-continuation.md). Its
+[incomplete results](pong/teacher-study-results-2026-09-20.md) lead to a
+[proposed strategy-versus-execution study](pong/teacher-study-next.md).
 For new games, use the shared [evaluation-profile](templates/game-evaluation.md)
 and [teacher-round](templates/teacher-round.md) templates. Outcomes and mastery
 criteria are game-specific; provenance, cost and evidence requirements are shared.
 
 | Experiment | What it establishes | What remains open |
 | --- | --- | --- |
+| [First teacher study](pong/teacher-study-results-2026-09-20.md) | Audited A/B proposals, behavioral probes and rejection; technical stop in round two | Multi-round learning and final generalization |
 | [Value pilot](pilot-2026-09-18.md) | A question revision improved Brier score but regressed MAE and was rejected | Improved control or TD learning |
 | [Score/Choice comparison](choice-ablation-2026-09-18.md) | Offline representation comparison | General representation superiority |
 | [Direct-policy pilot](policy-online-2026-09-18.md) | Real Jev-controlled Pong trajectories | Complete-match performance |

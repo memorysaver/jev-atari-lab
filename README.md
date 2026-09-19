@@ -13,10 +13,19 @@ The central research question is which ways of selecting experience, assigning
 credit, proposing edits, retaining candidates and using memory produce repeatable
 improvements under a measured budget. Finding those optimization patterns is the
 intended path to a paper. Initially both teacher and Jev weights stay fixed;
-the question program changes. The full automatic optimizer remains proposed work.
+the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
+No repeatable optimization benefit has been established.
 All project research lives in [docs/](docs/README.md), including the
 [optimizer design](docs/teacher-optimizer.md), [evaluation framework](docs/evaluation-framework.md)
 and [research roadmap](docs/research-roadmap.md).
+
+**Latest teacher study:** One completed A/B round rejected both proposed question
+changes. The experience-informed interception candidate lost 0:21 twice; the
+no-feedback lookahead candidate improved one seed and regressed on the other.
+Round two stopped on a failed teacher call; final evaluation was not run.
+The [report](docs/pong/teacher-study-results-2026-09-20.md) and
+[full replayable evidence](experiments/pong/teacher-study-v1/README.md) preserve
+12 episodes, 41,080 Jev attempts and every teacher operation.
 
 **Latest long trial:** On a fresh development seed, the unchanged v2 Jev question
 reached the 20,000-frame cap at **7:18** (return -11), with the native match still
@@ -55,7 +64,8 @@ are not Q values.
 The value-based research asks whether experience can improve the questions used
 to estimate consequences. A teacher proposes question changes; actual outcomes
 and a held-out development gate decide whether they are retained. Jev weights stay
-fixed. Multi-round automatic online learning and TD updates remain future work.
+fixed. The direct-policy teacher loop has been implemented and attempted, with an incomplete
+first study. Successful multi-round learning and TD updates remain unestablished.
 
 ```mermaid
 flowchart LR

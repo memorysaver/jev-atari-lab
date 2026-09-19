@@ -1,0 +1,205 @@
+{
+  "kind": "pong-study-parser-continuation-v1",
+  "created_at": 1789751049.0733607,
+  "source_revision": "16722dfa725472b1200b1e7de2d54ed11eaf9731",
+  "original_plan_hash": "67fa73f2e82a13e91a7ddc4d39bf776f1eacaddae13efcaf439b301b00362f39",
+  "budget_before": {
+    "kind": "pong-study-budget-v1",
+    "max_attempts": 220000,
+    "nonfinal_limit": 154000,
+    "final_limit": 66000,
+    "teacher_limit": 8,
+    "live_seconds": 86400,
+    "started_at": 1789748981.6822329,
+    "attempts": 5000,
+    "nonfinal_attempts": 5000,
+    "final_attempts": 0,
+    "teacher_invocations": 1,
+    "teacher_repairs": 0,
+    "training_closed": false
+  },
+  "status_before": {
+    "status": "incomplete",
+    "source_revision": "94ceb931b883b89e970786eee29f49ecb819faac",
+    "rounds": [],
+    "active_round": 1,
+    "error_type": "ValueError",
+    "error": "Teacher attempted non-message activity",
+    "budget": {
+      "kind": "pong-study-budget-v1",
+      "max_attempts": 220000,
+      "nonfinal_limit": 154000,
+      "final_limit": 66000,
+      "teacher_limit": 8,
+      "live_seconds": 86400,
+      "started_at": 1789748981.6822329,
+      "attempts": 5000,
+      "nonfinal_attempts": 5000,
+      "final_attempts": 0,
+      "teacher_invocations": 1,
+      "teacher_repairs": 0,
+      "training_closed": false
+    }
+  },
+  "preserved_files": [
+    {
+      "path": "plan.json",
+      "sha256": "c8acdb4361a3c3ca956646aa6141c1754db71e728bde7ed9d88c3148e56b4acb"
+    },
+    {
+      "path": "round-01/A/teacher/invocation-1/context-preview.json",
+      "sha256": "e03dd2806d60060b5d69da4a84c9207aad465d4ab8f147b4db933c721cb6fab7"
+    },
+    {
+      "path": "round-01/A/teacher/invocation-1/events.json",
+      "sha256": "d8a44a087f9d3e905fa46e8d06075ec9e8c3d25863c960b22a802cf8ce897ec3"
+    },
+    {
+      "path": "round-01/A/teacher/invocation-1/execution.json",
+      "sha256": "1db84824fbf92e54ce666983854240de586907d22092991971de48a255de09d3"
+    },
+    {
+      "path": "round-01/A/teacher/invocation-1/instructions.txt",
+      "sha256": "88db56d9e0c6e4fb655a9c0e5a765329f7df89f8a3cef55260e8227aac43aead"
+    },
+    {
+      "path": "round-01/A/teacher/invocation-1/packet.json",
+      "sha256": "d9882f7c4e3a9d2bb55c5045e3a02a194a538f9ef73ce899328a3a8bdf34fa5e"
+    },
+    {
+      "path": "round-01/A/teacher/invocation-1/recovery.json",
+      "sha256": "28e22d4d2663f5b8abeb30d3bdeff7c4111e6e713224a30bcafc4964c36df892"
+    },
+    {
+      "path": "round-01/A/teacher/invocation-1/response-schema.json",
+      "sha256": "f30ebb1457fb331503a04da1e1be09e34246abfab7901054347329a803d9702f"
+    },
+    {
+      "path": "round-01/training/seed-60/api-ledger.json",
+      "sha256": "5bf023a6c89dc99222b385483b32740dea2349f6aae0fe6932bf5c11adae0773"
+    },
+    {
+      "path": "round-01/training/seed-60/audit/jev/seed-60/frames.jsonl",
+      "sha256": "596dec8474de3103deebe825c3b7faa8648f10b60ff887fee65229f6928a27a2"
+    },
+    {
+      "path": "round-01/training/seed-60/audit/jev/seed-60/verification.json",
+      "sha256": "5d55ba48909415e5ddd0825885bcc35c8bdabe8471753a21d8dee981db354312"
+    },
+    {
+      "path": "round-01/training/seed-60/audit/verification.json",
+      "sha256": "44a054e1a36de4fd3fc54be3e639e0abb2ff38d31a56794aaac4708fa75dafb1"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/api-ledger.json",
+      "sha256": "5bf023a6c89dc99222b385483b32740dea2349f6aae0fe6932bf5c11adae0773"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/evaluation.json",
+      "sha256": "d0db8fa477c4e6e5a60d5342e2c0c93a1487986aa479942bf2c36b75458716c6"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/frames.jsonl",
+      "sha256": "596dec8474de3103deebe825c3b7faa8648f10b60ff887fee65229f6928a27a2"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/last-frame.png",
+      "sha256": "d5c2622a1df8c53aa9bb2c69722433253bdddec3560430c67c6612c219afc583"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/manifest.json",
+      "sha256": "96a7e8fe23586172d5ab4dbb4b5aa8eed9febb97c09809acc3405def9ad89ac1"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/model-exchanges.jsonl",
+      "sha256": "6f10e86ffa5fcd6d6de98488ab660dcf7f1111699930b5b842cee126fbfe3014"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/replay.mp4",
+      "sha256": "1e41f623342e1a076ac5a9b4911deab3fb165568f2211e06c24c8f5b624c57ed"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/summary.json",
+      "sha256": "2464fbccb711b58be0157f25db1a783d0eb3b39622e3a121ebbe73ee0fd9f047"
+    },
+    {
+      "path": "round-01/training/seed-60/jev/seed-60/transitions.jsonl",
+      "sha256": "e71972f35192c9e95b665730d60e6ff542058cc88b33f47f8f3ed4f87c1fe861"
+    },
+    {
+      "path": "round-01/training/seed-60/plan.json",
+      "sha256": "ef70fc77e0dca5e8db98f006d3c6b5a6817f25d931e993f9791b9014ac3ad503"
+    },
+    {
+      "path": "round-01/training/seed-60/results.json",
+      "sha256": "1cfdbf08bff0339023dbabf8a8d81dae03151e664d70456301762f34dddb4aec"
+    },
+    {
+      "path": "round-01/training/seed-61/api-ledger.json",
+      "sha256": "ba3aa6687963345d4048af91ebe581ad9f6450c0dbdad6719c1466707b663786"
+    },
+    {
+      "path": "round-01/training/seed-61/audit/jev/seed-61/frames.jsonl",
+      "sha256": "ddf5a2ce33c7ca12c817e871c321158350555066006a7a60e4aedfa09945b940"
+    },
+    {
+      "path": "round-01/training/seed-61/audit/jev/seed-61/verification.json",
+      "sha256": "4788348a150dd89d686ed3439cc2fac8b2825d950ba6ef8fe2aadac5299acc58"
+    },
+    {
+      "path": "round-01/training/seed-61/audit/verification.json",
+      "sha256": "d858cb739a61a0e15b0c104197ac850a543c8a77bcbd6015bed250f6728eca4a"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/api-ledger.json",
+      "sha256": "ba3aa6687963345d4048af91ebe581ad9f6450c0dbdad6719c1466707b663786"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/evaluation.json",
+      "sha256": "3ced92e5f2940286fe0182544e140fcf582e37e92faa2cc63a5589ea82c49b9f"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/frames.jsonl",
+      "sha256": "ddf5a2ce33c7ca12c817e871c321158350555066006a7a60e4aedfa09945b940"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/last-frame.png",
+      "sha256": "68a6efb54a2357f76e27a9706ac5a60abe4b0dccbebea9c593d2f0aa0981a621"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/manifest.json",
+      "sha256": "edb5c9bd0fa16aa1ade5d23ee8855b12578885dcb2f6e400685a9e22baeb842d"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/model-exchanges.jsonl",
+      "sha256": "9289b490e4bc7fd679be3702729530c15b5928c47cd1f47a9d287808d9114c52"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/replay.mp4",
+      "sha256": "0c694a634b825f332fcd0673e40e2e07d37f8a9b059e2a5d010699fd1507244b"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/summary.json",
+      "sha256": "9030b0376e69e282fc931d515228ede3a52932e5c5779c9230d5cc3ec052f137"
+    },
+    {
+      "path": "round-01/training/seed-61/jev/seed-61/transitions.jsonl",
+      "sha256": "61b35f0dc2e78506d3b6b9cd1bb7b0e05fb9fc203d867e49a995f9766e3fa7f5"
+    },
+    {
+      "path": "round-01/training/seed-61/plan.json",
+      "sha256": "6e7e5b2910785b264dda429b1f2b5b1d1ca57d4fcac03c0aea805142dd4d9c4d"
+    },
+    {
+      "path": "round-01/training/seed-61/results.json",
+      "sha256": "30eb26a75f28aac6e4a4d392704a303d1376cef6621fd75769b6a7405414b5cb"
+    },
+    {
+      "path": "round-01/training-evidence.json",
+      "sha256": "4497442fab42981acd2119a392497a5c4d3578e777d86ae8b2865bcc6f12d784"
+    }
+  ],
+  "recovery": "round-01/A/teacher/invocation-1/recovery.json",
+  "new_model_calls": 0,
+  "addendum": "docs/pong/teacher-study-continuation.md"
+}

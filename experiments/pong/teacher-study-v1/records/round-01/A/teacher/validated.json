@@ -1,0 +1,23 @@
+{
+  "packet_hash": "778048c6e2a9aa4a417cca720ca56c43b8302acca3064ae04258405dc97d529f",
+  "program": {
+    "name": "pong-intercept-target-v1",
+    "guidance": "Which action should align the player paddle with the ball's target height? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y+height/2. Larger y is DOWN. If either object is absent, choose NOOP.\nStart with target = current ball center. When ball.velocity_valid is true, vx>0, and the ball's right edge is left of the player's left edge, predict its arrival: t=(player.x-ball.x-ball.width)/vx raw frames; target=ball center+vy*t. Account for wall bounces by reflecting target into the approximate ball-center interval [35,192]: below 35 replace it with 70-target; above 192 replace it with 384-target; repeat until inside. Otherwise use the current ball center; missing velocity is unknown, not zero.\nCompare target with player center. If target is more than four pixels BELOW player center, choose LEFT (down). If more than four pixels ABOVE, choose RIGHT (up). Within four pixels choose NOOP. Horizontal motion determines whether to predict arrival, never the up/down action directly. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act only for the requested duration, then recompute from the next observation.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "proposal": {
+    "name": "pong-intercept-target-v1",
+    "guidance": "Which action should align the player paddle with the ball's target height? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y+height/2. Larger y is DOWN. If either object is absent, choose NOOP.\nStart with target = current ball center. When ball.velocity_valid is true, vx>0, and the ball's right edge is left of the player's left edge, predict its arrival: t=(player.x-ball.x-ball.width)/vx raw frames; target=ball center+vy*t. Account for wall bounces by reflecting target into the approximate ball-center interval [35,192]: below 35 replace it with 70-target; above 192 replace it with 384-target; repeat until inside. Otherwise use the current ball center; missing velocity is unknown, not zero.\nCompare target with player center. If target is more than four pixels BELOW player center, choose LEFT (down). If more than four pixels ABOVE, choose RIGHT (up). Within four pixels choose NOOP. Horizontal motion determines whether to predict arrival, never the up/down action directly. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act only for the requested duration, then recompute from the next observation.",
+    "hypothesis": "A predicted arrival height may reduce late corrections and conceded points by positioning the paddle before contact. The samples show diagonal approaches and misses, but do not establish that this edit improves score.",
+    "operator": "replace_current_height_target_with_incoming_intercept",
+    "predicted_changes": "At train-60-decision-166 and -999, choose LEFT toward the lower arrival height despite the ball currently being above the paddle. At train-61-decision-666, anticipate the top-wall bounce and move down toward the eventual intercept.",
+    "regression_risks": "Approximate wall bounds and velocities averaged across bounces can misplace the target. Four-frame movement and sticky actions can still cause overshoot. Changed contact offsets may reduce scoring.",
+    "evidence_ids": [
+      "train-60-decision-166",
+      "train-60-decision-999",
+      "train-60-decision-181",
+      "train-61-decision-666"
+    ]
+  },
+  "recovery": "invocation-1/recovery.json"
+}

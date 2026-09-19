@@ -1,5 +1,9 @@
 # Pong evidence directory
 
+Latest: [teacher-study-v1](teacher-study-v1/README.md) preserves one completed teacher round,
+12 replay-verified episodes and the failed second-round teacher call. Neither
+candidate was promoted; final tests were not run.
+
 Future reviewed Pong runs belong under `experiments/pong/<study-id>/`. Keep small
 JSON indexes readable in Git; archives and videos use Git LFS. Working data belongs
 in ignored `artifacts/pong/<study-id>/<round-id>/` until reviewed. These are storage

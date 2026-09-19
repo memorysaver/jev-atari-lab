@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "guidance": {
+      "type": "string"
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "operator": {
+      "type": "string"
+    },
+    "predicted_changes": {
+      "type": "string"
+    },
+    "regression_risks": {
+      "type": "string"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "guidance",
+    "hypothesis",
+    "operator",
+    "evidence_ids",
+    "predicted_changes",
+    "regression_risks"
+  ]
+}

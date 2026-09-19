@@ -1,0 +1,992 @@
+{
+  "study_status": "incomplete",
+  "budget": {
+    "kind": "pong-study-budget-v1",
+    "max_attempts": 220000,
+    "nonfinal_limit": 154000,
+    "final_limit": 66000,
+    "teacher_limit": 8,
+    "live_seconds": 86400,
+    "started_at": 1789748981.6822329,
+    "attempts": 41080,
+    "nonfinal_attempts": 41080,
+    "final_attempts": 0,
+    "teacher_invocations": 3,
+    "teacher_repairs": 0,
+    "training_closed": false
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "cost": {
+        "http_attempts": 36079,
+        "non_200_attempts": 8,
+        "api_elapsed_seconds": 9739.834824391757,
+        "reported_input_tokens": 61108369,
+        "reported_output_tokens": 2476985,
+        "attempts_without_usage": 8,
+        "monetary_cost": null
+      },
+      "training_cost": {
+        "http_attempts": 5000,
+        "non_200_attempts": 0,
+        "api_elapsed_seconds": 1383.601942469366,
+        "reported_input_tokens": 8425373,
+        "reported_output_tokens": 343193,
+        "attempts_without_usage": 0,
+        "monetary_cost": null
+      },
+      "cumulative_nonfinal_http_attempts": 36079,
+      "arms": {
+        "A": {
+          "cost": {
+            "http_attempts": 11523,
+            "non_200_attempts": 3,
+            "api_elapsed_seconds": 3137.2808758489555,
+            "reported_input_tokens": 19462094,
+            "reported_output_tokens": 790791,
+            "attempts_without_usage": 3,
+            "monetary_cost": null
+          },
+          "question_changes": {
+            "before": {
+              "name": "pong-vertical-control-v2",
+              "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+              "schema_version": "action-choice-program-v1"
+            },
+            "after": {
+              "name": "pong-intercept-target-v1",
+              "guidance": "Which action should align the player paddle with the ball's target height? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y+height/2. Larger y is DOWN. If either object is absent, choose NOOP.\nStart with target = current ball center. When ball.velocity_valid is true, vx>0, and the ball's right edge is left of the player's left edge, predict its arrival: t=(player.x-ball.x-ball.width)/vx raw frames; target=ball center+vy*t. Account for wall bounces by reflecting target into the approximate ball-center interval [35,192]: below 35 replace it with 70-target; above 192 replace it with 384-target; repeat until inside. Otherwise use the current ball center; missing velocity is unknown, not zero.\nCompare target with player center. If target is more than four pixels BELOW player center, choose LEFT (down). If more than four pixels ABOVE, choose RIGHT (up). Within four pixels choose NOOP. Horizontal motion determines whether to predict arrival, never the up/down action directly. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act only for the requested duration, then recompute from the next observation.",
+              "schema_version": "action-choice-program-v1"
+            },
+            "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+            "candidate_hash": "afc839f55b05a44af75ee372ee28fce9ebdd1a02c3bd6d2170580f7e3fdea498",
+            "proposal": {
+              "name": "pong-intercept-target-v1",
+              "guidance": "Which action should align the player paddle with the ball's target height? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y+height/2. Larger y is DOWN. If either object is absent, choose NOOP.\nStart with target = current ball center. When ball.velocity_valid is true, vx>0, and the ball's right edge is left of the player's left edge, predict its arrival: t=(player.x-ball.x-ball.width)/vx raw frames; target=ball center+vy*t. Account for wall bounces by reflecting target into the approximate ball-center interval [35,192]: below 35 replace it with 70-target; above 192 replace it with 384-target; repeat until inside. Otherwise use the current ball center; missing velocity is unknown, not zero.\nCompare target with player center. If target is more than four pixels BELOW player center, choose LEFT (down). If more than four pixels ABOVE, choose RIGHT (up). Within four pixels choose NOOP. Horizontal motion determines whether to predict arrival, never the up/down action directly. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act only for the requested duration, then recompute from the next observation.",
+              "hypothesis": "A predicted arrival height may reduce late corrections and conceded points by positioning the paddle before contact. The samples show diagonal approaches and misses, but do not establish that this edit improves score.",
+              "operator": "replace_current_height_target_with_incoming_intercept",
+              "predicted_changes": "At train-60-decision-166 and -999, choose LEFT toward the lower arrival height despite the ball currently being above the paddle. At train-61-decision-666, anticipate the top-wall bounce and move down toward the eventual intercept.",
+              "regression_risks": "Approximate wall bounds and velocities averaged across bounces can misplace the target. Four-frame movement and sticky actions can still cause overshoot. Changed contact offsets may reduce scoring.",
+              "evidence_ids": [
+                "train-60-decision-166",
+                "train-60-decision-999",
+                "train-60-decision-181",
+                "train-61-decision-666"
+              ]
+            },
+            "packet_hash": "778048c6e2a9aa4a417cca720ca56c43b8302acca3064ae04258405dc97d529f"
+          },
+          "probe": {
+            "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+            "candidate_hash": "afc839f55b05a44af75ee372ee28fce9ebdd1a02c3bd6d2170580f7e3fdea498",
+            "inputs_hash": "f589b11c1b13d4ee19738a3c3d24a12cd40deca9c05cd44b18273733b8fc82ca",
+            "metrics": {
+              "parent_candidate": {
+                "count": 32,
+                "action_flip_fraction": 0.5,
+                "mean_js_bits": 0.05741250341723913
+              },
+              "parent_repeat": {
+                "count": 32,
+                "action_flip_fraction": 0.0625,
+                "mean_js_bits": 0.002976004961418113
+              },
+              "candidate_repeat": {
+                "count": 32,
+                "action_flip_fraction": 0.0625,
+                "mean_js_bits": 0.0027151398846103595
+              }
+            }
+          },
+          "selection": {
+            "status": "rejected",
+            "accepted": false,
+            "pairs": [
+              {
+                "seed": 66,
+                "parent": -9.0,
+                "candidate": -21.0,
+                "gain": -12.0
+              },
+              {
+                "seed": 67,
+                "parent": -10.0,
+                "candidate": -21.0,
+                "gain": -11.0
+              }
+            ],
+            "mean_gain": -11.5,
+            "rule": "both seeds nonregressing and mean gain >=1; engineering gate",
+            "selected_program": {
+              "name": "pong-vertical-control-v2",
+              "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+              "schema_version": "action-choice-program-v1"
+            },
+            "selected_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d"
+          },
+          "development": {
+            "parent": [
+              {
+                "seed": 66,
+                "arm": "jev",
+                "status": "complete",
+                "reward": -9.0,
+                "decisions": 5000,
+                "raw_frames": 20000,
+                "points_scored": 11,
+                "points_lost": 20,
+                "terminated": false,
+                "truncated": true,
+                "backend": "jev",
+                "end_reason": "decision_limit",
+                "reset_frames": 29,
+                "wall_seconds": 1418.6825940440176,
+                "simulated_seconds": 333.3333333333333,
+                "api_attempts": 5002,
+                "evaluation_complete": true,
+                "native_match_complete": false,
+                "censored": true,
+                "outcome": "unfinished",
+                "capped_episode_return": -9.0,
+                "full_match_return": null
+              },
+              {
+                "seed": 67,
+                "arm": "jev",
+                "status": "complete",
+                "reward": -10.0,
+                "decisions": 4877,
+                "raw_frames": 19507,
+                "points_scored": 11,
+                "points_lost": 21,
+                "terminated": true,
+                "truncated": false,
+                "backend": "jev",
+                "end_reason": "native_termination",
+                "reset_frames": 24,
+                "wall_seconds": 1286.9242072449997,
+                "simulated_seconds": 325.1166666666667,
+                "api_attempts": 4878,
+                "evaluation_complete": true,
+                "native_match_complete": true,
+                "censored": false,
+                "outcome": "loss",
+                "capped_episode_return": -10.0,
+                "full_match_return": -10.0
+              }
+            ],
+            "candidate": [
+              {
+                "seed": 66,
+                "arm": "jev",
+                "status": "complete",
+                "reward": -21.0,
+                "decisions": 757,
+                "raw_frames": 3027,
+                "points_scored": 0,
+                "points_lost": 21,
+                "terminated": true,
+                "truncated": false,
+                "backend": "jev",
+                "end_reason": "native_termination",
+                "reset_frames": 29,
+                "wall_seconds": 223.99565528100356,
+                "simulated_seconds": 50.45,
+                "api_attempts": 757,
+                "evaluation_complete": true,
+                "native_match_complete": true,
+                "censored": false,
+                "outcome": "loss",
+                "capped_episode_return": -21.0,
+                "full_match_return": -21.0
+              },
+              {
+                "seed": 67,
+                "arm": "jev",
+                "status": "complete",
+                "reward": -21.0,
+                "decisions": 758,
+                "raw_frames": 3032,
+                "points_scored": 0,
+                "points_lost": 21,
+                "terminated": true,
+                "truncated": false,
+                "backend": "jev",
+                "end_reason": "native_termination",
+                "reset_frames": 24,
+                "wall_seconds": 206.94846489292104,
+                "simulated_seconds": 50.53333333333333,
+                "api_attempts": 758,
+                "evaluation_complete": true,
+                "native_match_complete": true,
+                "censored": false,
+                "outcome": "loss",
+                "capped_episode_return": -21.0,
+                "full_match_return": -21.0
+              }
+            ]
+          },
+          "development_aggregates": {
+            "parent": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 2,
+              "evaluated_episodes": 2,
+              "native_matches": 1,
+              "wins": 0,
+              "losses": 1,
+              "unfinished_or_unstarted": 1,
+              "completion_rate": 0.5,
+              "win_rate_completed_matches": 0.0,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                0.5
+              ],
+              "mean_capped_return": -9.5,
+              "sample_sd_capped_return": 0.7071067811865476,
+              "mean_completed_match_return": -10.0,
+              "end_reasons": {
+                "decision_limit": 1,
+                "native_termination": 1
+              },
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            },
+            "candidate": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 2,
+              "evaluated_episodes": 2,
+              "native_matches": 2,
+              "wins": 0,
+              "losses": 2,
+              "unfinished_or_unstarted": 0,
+              "completion_rate": 1.0,
+              "win_rate_completed_matches": 0.0,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                0.0
+              ],
+              "mean_capped_return": -21.0,
+              "sample_sd_capped_return": 0.0,
+              "mean_completed_match_return": -21.0,
+              "end_reasons": {
+                "native_termination": 2
+              },
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            }
+          },
+          "selected_development_mean": -9.5
+        },
+        "B": {
+          "cost": {
+            "http_attempts": 19556,
+            "non_200_attempts": 5,
+            "api_elapsed_seconds": 5218.952006073436,
+            "reported_input_tokens": 33220902,
+            "reported_output_tokens": 1343001,
+            "attempts_without_usage": 5,
+            "monetary_cost": null
+          },
+          "question_changes": {
+            "before": {
+              "name": "pong-vertical-control-v2",
+              "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+              "schema_version": "action-choice-program-v1"
+            },
+            "after": {
+              "name": "pong-one-decision-lookahead",
+              "guidance": "Which action should vertically align the player paddle with the ball's near-term position? Read player and ball in observation.objects. A bbox is [x, y, width, height]; its vertical center is y + height/2. Larger y means LOWER. If either object is absent, choose NOOP. Start with the current ball center as the target. When available finite-difference history reliably indicates that the ball is moving toward the right-side player, advance the target by the estimated vertical displacement over the next decision (4 raw frames). Respect the history's time units; do not treat displacement per observation as displacement per raw frame. Use the latest motion segment after an evident bounce. If direction, timing or vertical velocity is unknown, use the current ball center. For a ball moving away, also use its current center. If the target is more than four pixels BELOW the player center, choose LEFT (DOWN). If more than four pixels ABOVE, choose RIGHT (UP). Otherwise choose NOOP. Screen side and horizontal direction alone never determine UP or DOWN. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act for the next requested duration, then reconsider.",
+              "schema_version": "action-choice-program-v1"
+            },
+            "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+            "candidate_hash": "17502da4850d98cc54f12fb5f48a32681ce07ec8ae34bc95d16ee7c0145fbe87",
+            "proposal": {
+              "name": "pong-one-decision-lookahead",
+              "guidance": "Which action should vertically align the player paddle with the ball's near-term position? Read player and ball in observation.objects. A bbox is [x, y, width, height]; its vertical center is y + height/2. Larger y means LOWER. If either object is absent, choose NOOP. Start with the current ball center as the target. When available finite-difference history reliably indicates that the ball is moving toward the right-side player, advance the target by the estimated vertical displacement over the next decision (4 raw frames). Respect the history's time units; do not treat displacement per observation as displacement per raw frame. Use the latest motion segment after an evident bounce. If direction, timing or vertical velocity is unknown, use the current ball center. For a ball moving away, also use its current center. If the target is more than four pixels BELOW the player center, choose LEFT (DOWN). If more than four pixels ABOVE, choose RIGHT (UP). Otherwise choose NOOP. Screen side and horizontal direction alone never determine UP or DOWN. Prefer the non-FIRE option when a FIRE alias gives the same movement. Act for the next requested duration, then reconsider.",
+              "hypothesis": "A one-decision lookahead on incoming balls may reduce tracking lag caused by acting on a position that changes during the four-frame action.",
+              "operator": "guidance-only replacement: add incoming-ball vertical lookahead",
+              "predicted_changes": "Begin moving toward the incoming ball's next vertical position earlier; sometimes move despite current center alignment, or stop before reaching the current ball center.",
+              "regression_risks": "Wall bounces, noisy finite differences and sticky actions may make extrapolation overshoot. A short horizon may still miss fast diagonal shots. No empirical improvement is established.",
+              "evidence_ids": []
+            },
+            "packet_hash": "abdd06139381bb7dcf6d323b0ead2661f7c35f2e5fb749c36591c451ce37760a"
+          },
+          "probe": {
+            "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+            "candidate_hash": "17502da4850d98cc54f12fb5f48a32681ce07ec8ae34bc95d16ee7c0145fbe87",
+            "inputs_hash": "f589b11c1b13d4ee19738a3c3d24a12cd40deca9c05cd44b18273733b8fc82ca",
+            "metrics": {
+              "parent_candidate": {
+                "count": 32,
+                "action_flip_fraction": 0.21875,
+                "mean_js_bits": 0.018836981599118993
+              },
+              "parent_repeat": {
+                "count": 32,
+                "action_flip_fraction": 0.09375,
+                "mean_js_bits": 0.0025508204554701114
+              },
+              "candidate_repeat": {
+                "count": 32,
+                "action_flip_fraction": 0.125,
+                "mean_js_bits": 0.0020746068600194637
+              }
+            }
+          },
+          "selection": {
+            "status": "rejected",
+            "accepted": false,
+            "pairs": [
+              {
+                "seed": 66,
+                "parent": -8.0,
+                "candidate": -11.0,
+                "gain": -3.0
+              },
+              {
+                "seed": 67,
+                "parent": -11.0,
+                "candidate": 0.0,
+                "gain": 11.0
+              }
+            ],
+            "mean_gain": 4.0,
+            "rule": "both seeds nonregressing and mean gain >=1; engineering gate",
+            "selected_program": {
+              "name": "pong-vertical-control-v2",
+              "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+              "schema_version": "action-choice-program-v1"
+            },
+            "selected_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d"
+          },
+          "development": {
+            "parent": [
+              {
+                "seed": 66,
+                "arm": "jev",
+                "status": "complete",
+                "reward": -8.0,
+                "decisions": 5000,
+                "raw_frames": 20000,
+                "points_scored": 11,
+                "points_lost": 19,
+                "terminated": false,
+                "truncated": true,
+                "backend": "jev",
+                "end_reason": "decision_limit",
+                "reset_frames": 29,
+                "wall_seconds": 1383.7745377030224,
+                "simulated_seconds": 333.3333333333333,
+                "api_attempts": 5000,
+                "evaluation_complete": true,
+                "native_match_complete": false,
+                "censored": true,
+                "outcome": "unfinished",
+                "capped_episode_return": -8.0,
+                "full_match_return": null
+              },
+              {
+                "seed": 67,
+                "arm": "jev",
+                "status": "complete",
+                "reward": -11.0,
+                "decisions": 4423,
+                "raw_frames": 17692,
+                "points_scored": 10,
+                "points_lost": 21,
+                "terminated": true,
+                "truncated": false,
+                "backend": "jev",
+                "end_reason": "native_termination",
+                "reset_frames": 24,
+                "wall_seconds": 1193.8950580050005,
+                "simulated_seconds": 294.8666666666667,
+                "api_attempts": 4424,
+                "evaluation_complete": true,
+                "native_match_complete": true,
+                "censored": false,
+                "outcome": "loss",
+                "capped_episode_return": -11.0,
+                "full_match_return": -11.0
+              }
+            ],
+            "candidate": [
+              {
+                "seed": 66,
+                "arm": "jev",
+                "status": "complete",
+                "reward": -11.0,
+                "decisions": 5000,
+                "raw_frames": 20000,
+                "points_scored": 7,
+                "points_lost": 18,
+                "terminated": false,
+                "truncated": true,
+                "backend": "jev",
+                "end_reason": "decision_limit",
+                "reset_frames": 29,
+                "wall_seconds": 1341.7588947960176,
+                "simulated_seconds": 333.3333333333333,
+                "api_attempts": 5001,
+                "evaluation_complete": true,
+                "native_match_complete": false,
+                "censored": true,
+                "outcome": "unfinished",
+                "capped_episode_return": -11.0,
+                "full_match_return": null
+              },
+              {
+                "seed": 67,
+                "arm": "jev",
+                "status": "complete",
+                "reward": 0.0,
+                "decisions": 5000,
+                "raw_frames": 20000,
+                "points_scored": 12,
+                "points_lost": 12,
+                "terminated": false,
+                "truncated": true,
+                "backend": "jev",
+                "end_reason": "decision_limit",
+                "reset_frames": 24,
+                "wall_seconds": 1323.6787103120005,
+                "simulated_seconds": 333.3333333333333,
+                "api_attempts": 5003,
+                "evaluation_complete": true,
+                "native_match_complete": false,
+                "censored": true,
+                "outcome": "unfinished",
+                "capped_episode_return": 0.0,
+                "full_match_return": null
+              }
+            ]
+          },
+          "development_aggregates": {
+            "parent": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 2,
+              "evaluated_episodes": 2,
+              "native_matches": 1,
+              "wins": 0,
+              "losses": 1,
+              "unfinished_or_unstarted": 1,
+              "completion_rate": 0.5,
+              "win_rate_completed_matches": 0.0,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                0.5
+              ],
+              "mean_capped_return": -9.5,
+              "sample_sd_capped_return": 2.1213203435596424,
+              "mean_completed_match_return": -11.0,
+              "end_reasons": {
+                "decision_limit": 1,
+                "native_termination": 1
+              },
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            },
+            "candidate": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 2,
+              "evaluated_episodes": 2,
+              "native_matches": 0,
+              "wins": 0,
+              "losses": 0,
+              "unfinished_or_unstarted": 2,
+              "completion_rate": 0.0,
+              "win_rate_completed_matches": null,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                1.0
+              ],
+              "mean_capped_return": -5.5,
+              "sample_sd_capped_return": 7.7781745930520225,
+              "mean_completed_match_return": null,
+              "end_reasons": {
+                "decision_limit": 2
+              },
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            }
+          },
+          "selected_development_mean": -9.5
+        }
+      }
+    },
+    {
+      "round": 2,
+      "cost": {
+        "http_attempts": 5001,
+        "non_200_attempts": 1,
+        "api_elapsed_seconds": 1348.9537500508595,
+        "reported_input_tokens": 8418806,
+        "reported_output_tokens": 343303,
+        "attempts_without_usage": 1,
+        "monetary_cost": null
+      },
+      "training_cost": {
+        "http_attempts": 5001,
+        "non_200_attempts": 1,
+        "api_elapsed_seconds": 1348.9537500508595,
+        "reported_input_tokens": 8418806,
+        "reported_output_tokens": 343303,
+        "attempts_without_usage": 1,
+        "monetary_cost": null
+      },
+      "cumulative_nonfinal_http_attempts": 41080,
+      "arms": {
+        "A": {
+          "cost": {
+            "http_attempts": 0,
+            "non_200_attempts": 0,
+            "api_elapsed_seconds": 0,
+            "reported_input_tokens": 0,
+            "reported_output_tokens": 0,
+            "attempts_without_usage": 0,
+            "monetary_cost": null
+          },
+          "question_changes": null,
+          "probe": null,
+          "selection": null,
+          "development": {
+            "parent": [],
+            "candidate": []
+          },
+          "development_aggregates": {
+            "parent": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 0,
+              "evaluated_episodes": 0,
+              "native_matches": 0,
+              "wins": 0,
+              "losses": 0,
+              "unfinished_or_unstarted": 2,
+              "completion_rate": 0.0,
+              "win_rate_completed_matches": null,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                1.0
+              ],
+              "mean_capped_return": null,
+              "sample_sd_capped_return": null,
+              "mean_completed_match_return": null,
+              "end_reasons": {},
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            },
+            "candidate": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 0,
+              "evaluated_episodes": 0,
+              "native_matches": 0,
+              "wins": 0,
+              "losses": 0,
+              "unfinished_or_unstarted": 2,
+              "completion_rate": 0.0,
+              "win_rate_completed_matches": null,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                1.0
+              ],
+              "mean_capped_return": null,
+              "sample_sd_capped_return": null,
+              "mean_completed_match_return": null,
+              "end_reasons": {},
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            }
+          },
+          "selected_development_mean": null
+        },
+        "B": {
+          "cost": {
+            "http_attempts": 0,
+            "non_200_attempts": 0,
+            "api_elapsed_seconds": 0,
+            "reported_input_tokens": 0,
+            "reported_output_tokens": 0,
+            "attempts_without_usage": 0,
+            "monetary_cost": null
+          },
+          "question_changes": null,
+          "probe": null,
+          "selection": null,
+          "development": {
+            "parent": [],
+            "candidate": []
+          },
+          "development_aggregates": {
+            "parent": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 0,
+              "evaluated_episodes": 0,
+              "native_matches": 0,
+              "wins": 0,
+              "losses": 0,
+              "unfinished_or_unstarted": 2,
+              "completion_rate": 0.0,
+              "win_rate_completed_matches": null,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                1.0
+              ],
+              "mean_capped_return": null,
+              "sample_sd_capped_return": null,
+              "mean_completed_match_return": null,
+              "end_reasons": {},
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            },
+            "candidate": {
+              "scheduled_episodes": 2,
+              "recorded_episodes": 0,
+              "evaluated_episodes": 0,
+              "native_matches": 0,
+              "wins": 0,
+              "losses": 0,
+              "unfinished_or_unstarted": 2,
+              "completion_rate": 0.0,
+              "win_rate_completed_matches": null,
+              "win_fraction_all_scheduled": 0.0,
+              "possible_win_fraction_bounds": [
+                0.0,
+                1.0
+              ],
+              "mean_capped_return": null,
+              "sample_sd_capped_return": null,
+              "mean_completed_match_return": null,
+              "end_reasons": {},
+              "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+            }
+          },
+          "selected_development_mean": null
+        }
+      }
+    }
+  ],
+  "total_executor_cost": {
+    "http_attempts": 41080,
+    "non_200_attempts": 9,
+    "api_elapsed_seconds": 11088.788574442617,
+    "reported_input_tokens": 69527175,
+    "reported_output_tokens": 2820288,
+    "attempts_without_usage": 9,
+    "monetary_cost": null
+  },
+  "episodes": [
+    {
+      "path": "round-01/A/development/candidate/seed-66",
+      "seed": 66,
+      "points_scored": 0,
+      "points_lost": 21,
+      "capped_episode_return": -21.0,
+      "raw_frames": 3027,
+      "decisions": 757,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "outcome": "loss",
+      "end_reason": "native_termination",
+      "api_attempts": 757
+    },
+    {
+      "path": "round-01/A/development/candidate/seed-67",
+      "seed": 67,
+      "points_scored": 0,
+      "points_lost": 21,
+      "capped_episode_return": -21.0,
+      "raw_frames": 3032,
+      "decisions": 758,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "outcome": "loss",
+      "end_reason": "native_termination",
+      "api_attempts": 758
+    },
+    {
+      "path": "round-01/A/development/parent/seed-66",
+      "seed": 66,
+      "points_scored": 11,
+      "points_lost": 20,
+      "capped_episode_return": -9.0,
+      "raw_frames": 20000,
+      "decisions": 5000,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 5002
+    },
+    {
+      "path": "round-01/A/development/parent/seed-67",
+      "seed": 67,
+      "points_scored": 11,
+      "points_lost": 21,
+      "capped_episode_return": -10.0,
+      "raw_frames": 19507,
+      "decisions": 4877,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "outcome": "loss",
+      "end_reason": "native_termination",
+      "api_attempts": 4878
+    },
+    {
+      "path": "round-01/B/development/candidate/seed-66",
+      "seed": 66,
+      "points_scored": 7,
+      "points_lost": 18,
+      "capped_episode_return": -11.0,
+      "raw_frames": 20000,
+      "decisions": 5000,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 5001
+    },
+    {
+      "path": "round-01/B/development/candidate/seed-67",
+      "seed": 67,
+      "points_scored": 12,
+      "points_lost": 12,
+      "capped_episode_return": 0.0,
+      "raw_frames": 20000,
+      "decisions": 5000,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 5003
+    },
+    {
+      "path": "round-01/B/development/parent/seed-66",
+      "seed": 66,
+      "points_scored": 11,
+      "points_lost": 19,
+      "capped_episode_return": -8.0,
+      "raw_frames": 20000,
+      "decisions": 5000,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 5000
+    },
+    {
+      "path": "round-01/B/development/parent/seed-67",
+      "seed": 67,
+      "points_scored": 10,
+      "points_lost": 21,
+      "capped_episode_return": -11.0,
+      "raw_frames": 17692,
+      "decisions": 4423,
+      "evaluation_complete": true,
+      "native_match_complete": true,
+      "outcome": "loss",
+      "end_reason": "native_termination",
+      "api_attempts": 4424
+    },
+    {
+      "path": "round-01/training/seed-60",
+      "seed": 60,
+      "points_scored": 6,
+      "points_lost": 10,
+      "capped_episode_return": -4.0,
+      "raw_frames": 10000,
+      "decisions": 2500,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 2500
+    },
+    {
+      "path": "round-01/training/seed-61",
+      "seed": 61,
+      "points_scored": 4,
+      "points_lost": 9,
+      "capped_episode_return": -5.0,
+      "raw_frames": 10000,
+      "decisions": 2500,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 2500
+    },
+    {
+      "path": "round-02/training/seed-62",
+      "seed": 62,
+      "points_scored": 5,
+      "points_lost": 11,
+      "capped_episode_return": -6.0,
+      "raw_frames": 10000,
+      "decisions": 2500,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 2501
+    },
+    {
+      "path": "round-02/training/seed-63",
+      "seed": 63,
+      "points_scored": 11,
+      "points_lost": 6,
+      "capped_episode_return": 5.0,
+      "raw_frames": 10000,
+      "decisions": 2500,
+      "evaluation_complete": true,
+      "native_match_complete": false,
+      "outcome": "unfinished",
+      "end_reason": "decision_limit",
+      "api_attempts": 2500
+    }
+  ],
+  "final": {},
+  "paired_final": [
+    {
+      "comparison": "A minus V2",
+      "paired_seeds": [],
+      "mean_paired_difference": null,
+      "n": 0
+    },
+    {
+      "comparison": "A minus B",
+      "paired_seeds": [],
+      "mean_paired_difference": null,
+      "n": 0
+    },
+    {
+      "comparison": "B minus V2",
+      "paired_seeds": [],
+      "mean_paired_difference": null,
+      "n": 0
+    }
+  ],
+  "teacher_invocations": [
+    {
+      "path": "round-01/A/teacher/invocation-1",
+      "execution_status": "incomplete",
+      "requested_model": "gpt-6-astra",
+      "requested_reasoning_effort": "high",
+      "provider_response_model": null,
+      "wall_seconds": 25.457900524139404,
+      "completed_turn_usage": [
+        {
+          "input_tokens": 60161,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 710,
+          "reasoning_output_tokens": 243
+        }
+      ],
+      "diagnostic_markers": 0,
+      "offline_recovery": true
+    },
+    {
+      "path": "round-01/B/teacher/invocation-1",
+      "execution_status": "complete",
+      "requested_model": "gpt-6-astra",
+      "requested_reasoning_effort": "high",
+      "provider_response_model": null,
+      "wall_seconds": 25.712705850601196,
+      "completed_turn_usage": [
+        {
+          "input_tokens": 9197,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 742,
+          "reasoning_output_tokens": 340
+        }
+      ],
+      "diagnostic_markers": 1,
+      "offline_recovery": false
+    },
+    {
+      "path": "round-02/A/teacher/invocation-1",
+      "execution_status": "incomplete",
+      "requested_model": "gpt-6-astra",
+      "requested_reasoning_effort": "high",
+      "provider_response_model": null,
+      "wall_seconds": 1.8636369705200195,
+      "completed_turn_usage": [],
+      "diagnostic_markers": 2,
+      "offline_recovery": false
+    }
+  ],
+  "final_aggregates": {
+    "A": {
+      "scheduled_episodes": 4,
+      "recorded_episodes": 0,
+      "evaluated_episodes": 0,
+      "native_matches": 0,
+      "wins": 0,
+      "losses": 0,
+      "unfinished_or_unstarted": 4,
+      "completion_rate": 0.0,
+      "win_rate_completed_matches": null,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        1.0
+      ],
+      "mean_capped_return": null,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": null,
+      "end_reasons": {},
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    },
+    "B": {
+      "scheduled_episodes": 4,
+      "recorded_episodes": 0,
+      "evaluated_episodes": 0,
+      "native_matches": 0,
+      "wins": 0,
+      "losses": 0,
+      "unfinished_or_unstarted": 4,
+      "completion_rate": 0.0,
+      "win_rate_completed_matches": null,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        1.0
+      ],
+      "mean_capped_return": null,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": null,
+      "end_reasons": {},
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    },
+    "V2": {
+      "scheduled_episodes": 4,
+      "recorded_episodes": 0,
+      "evaluated_episodes": 0,
+      "native_matches": 0,
+      "wins": 0,
+      "losses": 0,
+      "unfinished_or_unstarted": 4,
+      "completion_rate": 0.0,
+      "win_rate_completed_matches": null,
+      "win_fraction_all_scheduled": 0.0,
+      "possible_win_fraction_bounds": [
+        0.0,
+        1.0
+      ],
+      "mean_capped_return": null,
+      "sample_sd_capped_return": null,
+      "mean_completed_match_return": null,
+      "end_reasons": {},
+      "interpretation": "Capped-return mean includes frame-capped episodes but excludes errors. Denominators are explicit. Completed-match means and win rates may be selection-biased when completion is low. Bounds treat every unfinished/unstarted match as an unknown win or loss, not a draw. No confidence interval from this small pilot."
+    }
+  },
+  "limitations": [
+    "One optimizer run per arm; no replicated optimizer-level uncertainty estimate.",
+    "Development scores are reused for selection and are not generalization estimates.",
+    "Capped returns are not native-match wins; report completion and win denominators.",
+    "Missing billing data is unavailable, not zero monetary cost.",
+    "Teacher usage and invocation accounting are separate from Jev HTTP attempts."
+  ]
+}

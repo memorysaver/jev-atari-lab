@@ -1,0 +1,82 @@
+{
+  "kind": "pong-teacher-study-v1",
+  "source_revision": "94ceb931b883b89e970786eee29f49ecb819faac",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "initial_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "train_seeds": [
+    [
+      60,
+      61
+    ],
+    [
+      62,
+      63
+    ],
+    [
+      64,
+      65
+    ]
+  ],
+  "development_seeds": [
+    66,
+    67
+  ],
+  "final_seeds": [
+    68,
+    69,
+    78,
+    79
+  ],
+  "teacher_isolation": {
+    "kind": "teacher-isolation-check-v1",
+    "filesystem_check": "passed",
+    "codex_version": "codex-cli 0.154.0",
+    "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+    "config_sha256": "2bd2692de80902d700829d38d31395d56fb193e797c3bd69b37ca18574ce0233",
+    "disabled_features": [
+      "shell_tool",
+      "unified_exec",
+      "code_mode",
+      "code_mode_host",
+      "multi_agent",
+      "apps",
+      "plugins",
+      "hooks",
+      "memories",
+      "shell_snapshot",
+      "browser_use",
+      "browser_use_external",
+      "computer_use",
+      "image_generation",
+      "view_image",
+      "in_app_browser",
+      "workspace_dependencies",
+      "skill_search",
+      "sleep_tool",
+      "goals"
+    ],
+    "repository_mounted": false,
+    "host_home_mounted": false,
+    "network": "provider access; web tool disabled",
+    "api_calls": 0
+  },
+  "approval": "Owner approved the 2026-09-19 study proposal in conversation."
+}

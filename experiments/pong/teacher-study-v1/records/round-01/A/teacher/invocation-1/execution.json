@@ -1,0 +1,50 @@
+{
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "high",
+  "packet_hash": "778048c6e2a9aa4a417cca720ca56c43b8302acca3064ae04258405dc97d529f",
+  "status": "incomplete",
+  "timeout_seconds": 900,
+  "isolation": {
+    "kind": "teacher-isolation-check-v1",
+    "filesystem_check": "passed",
+    "codex_version": "codex-cli 0.154.0",
+    "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+    "config_sha256": "2bd2692de80902d700829d38d31395d56fb193e797c3bd69b37ca18574ce0233",
+    "disabled_features": [
+      "shell_tool",
+      "unified_exec",
+      "code_mode",
+      "code_mode_host",
+      "multi_agent",
+      "apps",
+      "plugins",
+      "hooks",
+      "memories",
+      "shell_snapshot",
+      "browser_use",
+      "browser_use_external",
+      "computer_use",
+      "image_generation",
+      "view_image",
+      "in_app_browser",
+      "workspace_dependencies",
+      "skill_search",
+      "sleep_tool",
+      "goals"
+    ],
+    "repository_mounted": false,
+    "host_home_mounted": false,
+    "network": "provider access; web tool disabled",
+    "api_calls": 0
+  },
+  "invocation_mode": "isolated Codex exec",
+  "provider_response_model": null,
+  "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+  "started_at": 1789750386.1962106,
+  "exit_code": 0,
+  "unexpected_item_types": [
+    "error"
+  ],
+  "error_type": "ValueError",
+  "wall_seconds": 25.457900524139404
+}

@@ -1,5 +1,9 @@
 # Experiment journal
 
+Latest: [teacher-study-v1](pong/teacher-study-v1/README.md) preserves one completed teacher round,
+12 replay-verified episodes and the failed second-round teacher call. Neither
+candidate was promoted; final tests were not run.
+
 This directory publishes the evidence, including failed attempts and rejected
 question changes. Archives and videos use Git LFS. JSON indexes remain readable
 on GitHub. Nothing here establishes general Atari mastery or RL convergence.

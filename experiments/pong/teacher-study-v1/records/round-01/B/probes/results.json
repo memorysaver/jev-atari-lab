@@ -1,0 +1,22 @@
+{
+  "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "candidate_hash": "17502da4850d98cc54f12fb5f48a32681ce07ec8ae34bc95d16ee7c0145fbe87",
+  "inputs_hash": "f589b11c1b13d4ee19738a3c3d24a12cd40deca9c05cd44b18273733b8fc82ca",
+  "metrics": {
+    "parent_candidate": {
+      "count": 32,
+      "action_flip_fraction": 0.21875,
+      "mean_js_bits": 0.018836981599118993
+    },
+    "parent_repeat": {
+      "count": 32,
+      "action_flip_fraction": 0.09375,
+      "mean_js_bits": 0.0025508204554701114
+    },
+    "candidate_repeat": {
+      "count": 32,
+      "action_flip_fraction": 0.125,
+      "mean_js_bits": 0.0020746068600194637
+    }
+  }
+}
