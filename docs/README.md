@@ -65,3 +65,6 @@ Use explicit evidence labels in new research: **observed** for our executed runs
 **source-reported** for external performance claims, **proposed** for unrun methods,
 and **unconfirmed** for unresolved conclusions. Link claims to a report, source,
 program version and experiment revision as appropriate. Preserve negative results.
+
+The [question execution diagnostics protocol](pong/question-diagnostics-protocol.md) freezes the next offline
+adherence analysis and separate literal Python strategy trials. No new model calls.

@@ -74,3 +74,6 @@ invocation in round two. Final tests were not run. See the linked result report.
 Observation and replay contracts remain in [observation.md](../observation.md),
 [protocol.md](../protocol.md) and [replay.md](../replay.md). Historical run protocols
 stay frozen; this directory does not alter their selection gates or results.
+
+The [question execution diagnostics protocol](question-diagnostics-protocol.md) freezes the next offline
+adherence analysis and separate literal Python strategy trials. No new model calls.
