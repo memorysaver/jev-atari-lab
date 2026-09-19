@@ -1,0 +1,719 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "question-diagnostics-v1.tar.gz",
+  "sha256": "03847ee38608df445afe53bce37fa727434fd2ea1bc28916a81051cdf286adf0",
+  "file_count": 142,
+  "uncompressed_bytes": 846048002,
+  "files": [
+    {
+      "path": "question-diagnostics-v1/analysis/conflicting-rules.json",
+      "bytes": 435,
+      "sha256": "648af7ef5997262a877dfea4737ce270b12d6032dfb7af26467ddf5f6792449b"
+    },
+    {
+      "path": "question-diagnostics-v1/analysis/decisions.jsonl",
+      "bytes": 54255307,
+      "sha256": "a619fafd2a477af3b899664c29e5192eb266c87ce344812f86a9b2d28d9da591"
+    },
+    {
+      "path": "question-diagnostics-v1/analysis/example.json",
+      "bytes": 19132,
+      "sha256": "07544432779ad921a6173c419b1d748b618d1597fd93f6c66f7f878325224a2e"
+    },
+    {
+      "path": "question-diagnostics-v1/analysis/results.json",
+      "bytes": 131463,
+      "sha256": "2230ca949c00830163e350b2a665b6d76fef9b883ad024e74ba96afe9f0ecebd"
+    },
+    {
+      "path": "question-diagnostics-v1/analysis-extended/decisions.jsonl",
+      "bytes": 54255307,
+      "sha256": "a619fafd2a477af3b899664c29e5192eb266c87ce344812f86a9b2d28d9da591"
+    },
+    {
+      "path": "question-diagnostics-v1/analysis-extended/example.json",
+      "bytes": 19002,
+      "sha256": "ae30d9f3f16c0c2afacb27d096a70df9b9165602008bee947bdc989da97ab2c6"
+    },
+    {
+      "path": "question-diagnostics-v1/analysis-extended/results.json",
+      "bytes": 132800,
+      "sha256": "8a0859b36effcabca8dd432d68848c38bfaa16dcd1eefa48d163ac75057e9d9e"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-80/frames.jsonl",
+      "bytes": 14215029,
+      "sha256": "e8f156418457ea6b28a5fa9a8791d3607eb20b1c587aed7625cba6d27a1c4d01"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-80/verification.json",
+      "bytes": 590,
+      "sha256": "e55ce9177da4db5958fba08652f9b26aaa0a7d759749d3dfca430c32f04fc48c"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-81/frames.jsonl",
+      "bytes": 14219289,
+      "sha256": "dbf735e97595449547f45c024b97ef632a51842cb9843d8948c7d03b1d0e5085"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-81/verification.json",
+      "bytes": 590,
+      "sha256": "0e6b5617f335046c72d0e19ca670760e5c9f7821a356d7b8abcc36b844c0fd87"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-82/frames.jsonl",
+      "bytes": 14219225,
+      "sha256": "1c832f38dce5f59e0518b638babed4dabbc87e94d1d8f45b93e3bf7f5029543a"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-82/verification.json",
+      "bytes": 590,
+      "sha256": "9dcaa826d65148b38bb79d1b115de73a3302d9ea60b0234e23054b883c1e7489"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-83/frames.jsonl",
+      "bytes": 7444109,
+      "sha256": "1962e9b97c7003f355f1437c95bba684eebda871de059d878a75d6238a694282"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/intercept/seed-83/verification.json",
+      "bytes": 591,
+      "sha256": "bdac5fcf396b2d1e874cd68ab79e6ed8cbe2f6f08607827889f8c8ea23ea7b75"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-80/frames.jsonl",
+      "bytes": 14219816,
+      "sha256": "eac227d7643343af88009dc48c0123a93e993e43ecba9a357f861b67fbed9040"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-80/verification.json",
+      "bytes": 590,
+      "sha256": "2dc95da2c87a3b7cb08c685772aea3e8b6532939f5e403e87a8c4614d98215f0"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-81/frames.jsonl",
+      "bytes": 8935815,
+      "sha256": "0e1b7659ee05e2b3569dc3bbff368b86dcedb7cc547bbd4cbd9a584c9c3c5a47"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-81/verification.json",
+      "bytes": 590,
+      "sha256": "c073e55d91c3878a116609213f5c94f0d2e1d6064a21e53da41a67d9160c1f41"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-82/frames.jsonl",
+      "bytes": 14213027,
+      "sha256": "442708f462914e6d224115bd5c46dde57ce38a1e76332d0db2edfdbce166f69b"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-82/verification.json",
+      "bytes": 590,
+      "sha256": "a114ab457379f84946f0364621cf45b66b0bbf385e6e9bdb824c9137b4ccbef8"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-83/frames.jsonl",
+      "bytes": 10556649,
+      "sha256": "69bd1e45773b4f5af63ed395462d299724b68199c2d929ae086b8226c3a384c0"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead/seed-83/verification.json",
+      "bytes": 591,
+      "sha256": "37e09118ffba04d930cf3a6cb7670fd4eec132a7ddefba31d4d78a089c6cba83"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-80/frames.jsonl",
+      "bytes": 14209873,
+      "sha256": "f276d097953880e2dd57536a24f62f450490eadd880b13f0f8f68f7c7fb53267"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-80/verification.json",
+      "bytes": 602,
+      "sha256": "2e23720c7c30ce51d1b1bdc92eb1a3a3905f08b3e6b4d15c6ee4aecb6f0a8d6c"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-81/frames.jsonl",
+      "bytes": 11573545,
+      "sha256": "b5acf304068bd8b78a0d8ba78e403aaea8eb1eece0147eddd4e7c183c0e7f5e8"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-81/verification.json",
+      "bytes": 603,
+      "sha256": "53719b60c8737abbef392928c62ade5b4fc6502a1d166c90f9b4fb44a59d9abf"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-82/frames.jsonl",
+      "bytes": 14219303,
+      "sha256": "3e60e027052fe86bba3f8ded3d50c0d0118e0d522dbf30861ac57e6a85efe44a"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-82/verification.json",
+      "bytes": 603,
+      "sha256": "e97640ed6c1ba853e7647699088b895ad997f3b47742d172f6112281c4372b99"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-83/frames.jsonl",
+      "bytes": 11512318,
+      "sha256": "906d3d20523906b206e93c4f4dc8f19183e3e9cbd1ca81cc83f4b774dbcc7f16"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/lookahead-conservative/seed-83/verification.json",
+      "bytes": 604,
+      "sha256": "3bb78eca95e04e57c7acbf61a032fff949574994e0dd4ea0fc47e78876948da4"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-80/frames.jsonl",
+      "bytes": 11880920,
+      "sha256": "9d4e565f5f54f5ca9b299124e425f56e12e59f2cc8ecb5d505beed5baf5b118b"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-80/verification.json",
+      "bytes": 584,
+      "sha256": "1682e434d12daaaf1dbee7a9bcb594f51268468ec9a79df776f48dc3bd2344fc"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-81/frames.jsonl",
+      "bytes": 13227475,
+      "sha256": "cccb994c18b834c09ff469d2177caf9a36138bbcece0b8a4741305269d47c2b3"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-81/verification.json",
+      "bytes": 583,
+      "sha256": "346655e336e3b1f3f56887d8ea11ad4f83aa98d07f90f1201d93614ce9a5bcb3"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-82/frames.jsonl",
+      "bytes": 14221164,
+      "sha256": "8de2b4782cecbfbac544dac1e9de14895b18b41eb2580e84afce20d013cdbd33"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-82/verification.json",
+      "bytes": 583,
+      "sha256": "9c700a96d7465a46a0f61bb4b3f5feca749a6918cc2a580714ecfcedc9084cca"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-83/frames.jsonl",
+      "bytes": 11664086,
+      "sha256": "c7570c038ae74d6125b92a4e4868aeb57e19c8dbc57c8f74286866d0544cba31"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/v2/seed-83/verification.json",
+      "bytes": 584,
+      "sha256": "d8ac7bb80bb32f5ce226f3759fd6d0cfcc1383f6518596bfb4f72fc75b0bce99"
+    },
+    {
+      "path": "question-diagnostics-v1/audit/verification.json",
+      "bytes": 2053,
+      "sha256": "0775a61935eebc6cdcca53cbd24b10905930b7632ece593a907f83011610ce66"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-80/frames.jsonl",
+      "bytes": 14215029,
+      "sha256": "e8f156418457ea6b28a5fa9a8791d3607eb20b1c587aed7625cba6d27a1c4d01"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-80/last-frame.png",
+      "bytes": 733,
+      "sha256": "42a9e3d546ce28b85049feebd6344487b712dd8f8330eb3de1a6b77ba534cef5"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-80/manifest.json",
+      "bytes": 747,
+      "sha256": "e83a63a6cf6a1f01c99df831ff47203d1b78995a55c033b9dee5a7cf8e3f714a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-80/replay.mp4",
+      "bytes": 889629,
+      "sha256": "4e63b14addc35777892f9e2bb3dfe839ce2905c27795d677472b2cf73fa66876"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-80/summary.json",
+      "bytes": 333,
+      "sha256": "05eb2920061e746d73ece67266023c63898ab9b67635a5b980a2321975918b29"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-80/transitions.jsonl",
+      "bytes": 22935636,
+      "sha256": "9e4c06f711258243e637bc137d3f2dbdd5ccd86cf1b3639546d52b06f2b1d66c"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-81/frames.jsonl",
+      "bytes": 14219289,
+      "sha256": "dbf735e97595449547f45c024b97ef632a51842cb9843d8948c7d03b1d0e5085"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-81/last-frame.png",
+      "bytes": 747,
+      "sha256": "ef3afa23bedd1d55d64ec5f5a94b1d579fbd53717a89ec1d2c3f16081e8e2163"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-81/manifest.json",
+      "bytes": 747,
+      "sha256": "5353ad0c2d3716c0e88f9c856cb284a0132094e77fc1344e66ce438ecf264e18"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-81/replay.mp4",
+      "bytes": 887059,
+      "sha256": "75e7afb568602581fda065615ce1e0f6039021c95f603eb9741ce895400e159a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-81/summary.json",
+      "bytes": 334,
+      "sha256": "0d927638cd08f9ee670a56146cbc076a702b3b2944ddc2c8b8e835b7c199fcd6"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-81/transitions.jsonl",
+      "bytes": 22926184,
+      "sha256": "eb1f0ef1e108c155ffa87693055b0f6d5570c3bd5bb85665d1c533dbf1c348fb"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-82/frames.jsonl",
+      "bytes": 14219225,
+      "sha256": "1c832f38dce5f59e0518b638babed4dabbc87e94d1d8f45b93e3bf7f5029543a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-82/last-frame.png",
+      "bytes": 734,
+      "sha256": "2b932a944bae705ba2e7e502e9903664a0893b2d88bc34dad4e716c8bd771110"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-82/manifest.json",
+      "bytes": 747,
+      "sha256": "28d781675b106742d6a5350963c1a82c185b47769a13b38df8c3783e9db0ab54"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-82/replay.mp4",
+      "bytes": 891231,
+      "sha256": "9b261733eca9f778468119526a97bddd05c96d0e2850751c7b381b12dde9329a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-82/summary.json",
+      "bytes": 333,
+      "sha256": "b4cba93a70d6825f33492f3da4f8861801b1cd5ae4ed8b9883e1590549a8a5a7"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-82/transitions.jsonl",
+      "bytes": 22947016,
+      "sha256": "cf81b398aa356adc4363bb63530a773218a18fdd3f910415e70d7e50a5e17fcc"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-83/frames.jsonl",
+      "bytes": 7444109,
+      "sha256": "1962e9b97c7003f355f1437c95bba684eebda871de059d878a75d6238a694282"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-83/last-frame.png",
+      "bytes": 726,
+      "sha256": "0de6464cd28742a45b7ebfeb8fbfeed35061a67dbea14f2e323f6943aba81adf"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-83/manifest.json",
+      "bytes": 747,
+      "sha256": "c8606f83b4f5175be08acc703f42538cf540cfd4db5eb8e95b020f4e712dd761"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-83/replay.mp4",
+      "bytes": 455800,
+      "sha256": "9220446ebf3ee6f281a45ebc80832d35c410fab6b7cd2a3622b12429d7c8082b"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-83/summary.json",
+      "bytes": 339,
+      "sha256": "ed590b1248d0924fc76e5ea6e3088e2173fc5bd0981cd67ebb296746033eba1f"
+    },
+    {
+      "path": "question-diagnostics-v1/local/intercept/seed-83/transitions.jsonl",
+      "bytes": 12006851,
+      "sha256": "8f456fb6889ef2fed07dd60a4bfb08ba69a389ebbf2adb04802bf67c5cbabe09"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-80/frames.jsonl",
+      "bytes": 14219816,
+      "sha256": "eac227d7643343af88009dc48c0123a93e993e43ecba9a357f861b67fbed9040"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-80/last-frame.png",
+      "bytes": 721,
+      "sha256": "62e95cdc19650b1b07901846de4a63490b56370ffe5695b436005782bb528228"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-80/manifest.json",
+      "bytes": 747,
+      "sha256": "c979cba0767ac33f4d521d5f8a8bafec78c6af2489e64e219ddd89d12b055026"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-80/replay.mp4",
+      "bytes": 894008,
+      "sha256": "ec0d1ddaea70943b0e7976fd46e5cf3cd47e3eb3cf3aacafda5221330c51021e"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-80/summary.json",
+      "bytes": 333,
+      "sha256": "8ccc18b2f207452d952a5a10268c4aca530fa5259cb392ffcca90251666b43f0"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-80/transitions.jsonl",
+      "bytes": 22947149,
+      "sha256": "1320cfcf04d29b908652603d8a8a4083eff207a4a8ca5a83c2c40d0ed637a5ef"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-81/frames.jsonl",
+      "bytes": 8935815,
+      "sha256": "0e1b7659ee05e2b3569dc3bbff368b86dcedb7cc547bbd4cbd9a584c9c3c5a47"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-81/last-frame.png",
+      "bytes": 730,
+      "sha256": "2e998e3d36a18b734b9f7ab930c64fca11b0fe328eec78d1e65ba15138d93f6b"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-81/manifest.json",
+      "bytes": 747,
+      "sha256": "25ab5b27e7acfedba9ee977200b9e040c99e60add29119bc04d2b8ce66319d4a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-81/replay.mp4",
+      "bytes": 554766,
+      "sha256": "d4c6afaecf19b54b9363537bf00ef5368f08f5245a037813caabdd24757ce080"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-81/summary.json",
+      "bytes": 326,
+      "sha256": "7fb61cfcc7ce1c3d7fff881a14423a9005e06e31f6b6174908a9de05d5b50af1"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-81/transitions.jsonl",
+      "bytes": 14392906,
+      "sha256": "4a0fab773bd85fef524454134ade44093a90a9cd9fe909d1061bdcfc896e42df"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-82/frames.jsonl",
+      "bytes": 14213027,
+      "sha256": "442708f462914e6d224115bd5c46dde57ce38a1e76332d0db2edfdbce166f69b"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-82/last-frame.png",
+      "bytes": 712,
+      "sha256": "1bdda379e9888fa428c7d8db1fff3689be4cb1eb4d77bf6bba0fe822cbd3cd6f"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-82/manifest.json",
+      "bytes": 747,
+      "sha256": "5baa8b271a2fda91abf0bb1850d5d8ee448c9d7685d05e5e81f81632d6f80943"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-82/replay.mp4",
+      "bytes": 888746,
+      "sha256": "9d7202ce3ef9d21536e13342a58b1256cc822ea86a3f056bddd52ebba3275dc6"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-82/summary.json",
+      "bytes": 334,
+      "sha256": "78bf082b5529cbe1a0e519749c021b1b8822d8073c4b936d26ae89e723d113d5"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-82/transitions.jsonl",
+      "bytes": 22930541,
+      "sha256": "2a0df5d250673a7d3b5e1a09f989c401f111a2cfb8a6e46a2f5b1d4f55c4beec"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-83/frames.jsonl",
+      "bytes": 10556649,
+      "sha256": "69bd1e45773b4f5af63ed395462d299724b68199c2d929ae086b8226c3a384c0"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-83/last-frame.png",
+      "bytes": 747,
+      "sha256": "00af1d9d91b76d8047580f2c8cc52084d23c854396b586d4b6587218c3620cad"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-83/manifest.json",
+      "bytes": 747,
+      "sha256": "2199e1a5ca8e6f9060f3f897c50ed32812aa11d724c52c7029931d81bea89874"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-83/replay.mp4",
+      "bytes": 654752,
+      "sha256": "70203936ceb2a8f06e48b73cd516c3201426f90b3e6b0dfa996d72df2463958c"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-83/summary.json",
+      "bytes": 339,
+      "sha256": "277375ae9a0ec31c1e273ae0484fb4aeada7608ee857031ec8141b39c00431cc"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead/seed-83/transitions.jsonl",
+      "bytes": 17029283,
+      "sha256": "65eed389d66d7571bceca1b2d4326a2f19ff4f564eb382c999ccb0fe3c067f2c"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-80/frames.jsonl",
+      "bytes": 14209873,
+      "sha256": "f276d097953880e2dd57536a24f62f450490eadd880b13f0f8f68f7c7fb53267"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-80/last-frame.png",
+      "bytes": 722,
+      "sha256": "0ebbd6b9a4fb6bb1e510282a3871bf4be1e30a81effcd1160195c0d2f8e3632b"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-80/manifest.json",
+      "bytes": 760,
+      "sha256": "34a6d3faee48d47f75c93c6e784fb32e0b70456adf1d9d1cba24f111d0829377"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-80/replay.mp4",
+      "bytes": 892860,
+      "sha256": "c180f91a36540ef5b60570e8f1365551555107838004ed3b46ff7e0db7e25989"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-80/summary.json",
+      "bytes": 332,
+      "sha256": "17f934cb721011a83f5350afe6625fcaea4bbed1b383b66d3cb9910a7698b7fa"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-80/transitions.jsonl",
+      "bytes": 23063664,
+      "sha256": "35d5951dff776a1ecfec1f9363b5c7d976933aad95dfa965fb9a5063bc350c09"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-81/frames.jsonl",
+      "bytes": 11573545,
+      "sha256": "b5acf304068bd8b78a0d8ba78e403aaea8eb1eece0147eddd4e7c183c0e7f5e8"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-81/last-frame.png",
+      "bytes": 728,
+      "sha256": "8d96f126ec0b9938edc97edd89cee1e38be54b46c6d71edff3f9e3c633af923e"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-81/manifest.json",
+      "bytes": 760,
+      "sha256": "ece37d8c28359122c61850011b66e3f0bf3b2892c84f06d3b8a3e04130b63e7d"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-81/replay.mp4",
+      "bytes": 721761,
+      "sha256": "df7b4cadbadc6f57c4924aca083a7008c45583df7c06da34ff4dd05eac1bfc33"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-81/summary.json",
+      "bytes": 326,
+      "sha256": "2089a3df0f77a93c4f080b3933db8e838a6ed23ed707599139b8eaf01679261d"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-81/transitions.jsonl",
+      "bytes": 18770345,
+      "sha256": "d82af8ce63e94e76b8f23e4f47f9e976766a29101e153a7ac05c5193e1ec6815"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-82/frames.jsonl",
+      "bytes": 14219303,
+      "sha256": "3e60e027052fe86bba3f8ded3d50c0d0118e0d522dbf30861ac57e6a85efe44a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-82/last-frame.png",
+      "bytes": 741,
+      "sha256": "7f7c001e3e1ea056bf32ce457f07325bd4d7d3cf51d791534fefba50883887fb"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-82/manifest.json",
+      "bytes": 760,
+      "sha256": "195a6fd8f02b5d40ad21e729cfb81a5f31c4c4bdd0f454c26042e9ab22a0b1e6"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-82/replay.mp4",
+      "bytes": 885847,
+      "sha256": "266b36bf603d78646dd4ef617183cde4d719212737bded47d0767d4b97c0a115"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-82/summary.json",
+      "bytes": 334,
+      "sha256": "8ffd70a005d1b182fad5ba00d5934c3b898e4cb58d8f72d57471aea2e79bf98a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-82/transitions.jsonl",
+      "bytes": 23055123,
+      "sha256": "8227966b21e6e6069303b88f619b92fc6971c4e2d06bdbad603c4197e37694f9"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-83/frames.jsonl",
+      "bytes": 11512318,
+      "sha256": "906d3d20523906b206e93c4f4dc8f19183e3e9cbd1ca81cc83f4b774dbcc7f16"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-83/last-frame.png",
+      "bytes": 709,
+      "sha256": "3ef61aaad3d7d5d218392a5d525c9463aeb8893c3e52ebff9f6adbbad945d9a5"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-83/manifest.json",
+      "bytes": 760,
+      "sha256": "09b138e0701feddd9662b2133eabfab206c8fbe2f4d4c2d0b06e289c4194ee44"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-83/replay.mp4",
+      "bytes": 714768,
+      "sha256": "9c85b12f48055aed79e55b1141f894637308b57e105984ed6242a08da371f2de"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-83/summary.json",
+      "bytes": 328,
+      "sha256": "a60a92db7a86c41b0b7e7e99594be4351e7ee7b7b01060ae111d3e939e9f425e"
+    },
+    {
+      "path": "question-diagnostics-v1/local/lookahead-conservative/seed-83/transitions.jsonl",
+      "bytes": 18656513,
+      "sha256": "ddb8a4f87eb16a31e47d5348712669496cece9c78546999abc31bd497a5e6dd9"
+    },
+    {
+      "path": "question-diagnostics-v1/local/plan.json",
+      "bytes": 975,
+      "sha256": "8ac98edc0988ddc70b4bb3f761af893ed945dc7c2ce9fcf65137824303fd52cf"
+    },
+    {
+      "path": "question-diagnostics-v1/local/results.json",
+      "bytes": 14244,
+      "sha256": "e8d5eaa6a4fbbc5813c8f67bbd651dd2400b647ffcfd3af94765f2018105583b"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-80/frames.jsonl",
+      "bytes": 11880920,
+      "sha256": "9d4e565f5f54f5ca9b299124e425f56e12e59f2cc8ecb5d505beed5baf5b118b"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-80/last-frame.png",
+      "bytes": 746,
+      "sha256": "bb2f8cb5cf42f6a1263c85b61d9834ee61f85fbac73628a4bf933c478adf4c5c"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-80/manifest.json",
+      "bytes": 740,
+      "sha256": "5c40d64d26eeba9b06973fe9ea0e4ce80c2a875034a87f2e2de5b6c1baef6f72"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-80/replay.mp4",
+      "bytes": 735636,
+      "sha256": "f70c2357d429f7b04b8e1ee4f5812cfcd7646133c734bc2a5f8178dfa7b969cc"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-80/summary.json",
+      "bytes": 326,
+      "sha256": "7f38d77551f8282aedf6e6aac0371f5d3e5de27af0bc1fbf78d99e70654a011f"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-80/transitions.jsonl",
+      "bytes": 19104181,
+      "sha256": "93d4cb2707ac4738ea590f839738296c6e48323b1cc5dfa1471dea6b6c6e7ad8"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-81/frames.jsonl",
+      "bytes": 13227475,
+      "sha256": "cccb994c18b834c09ff469d2177caf9a36138bbcece0b8a4741305269d47c2b3"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-81/last-frame.png",
+      "bytes": 735,
+      "sha256": "c6fa6dcf0d209f827ddc7484caef77449c3b6f63c04eb616a59f3b82566e78a8"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-81/manifest.json",
+      "bytes": 740,
+      "sha256": "4ddac3ae087abca3e9ef6557c5daf5135f41506db39875555b5caf1f4bbe291b"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-81/replay.mp4",
+      "bytes": 822740,
+      "sha256": "a4e097d3e89cbefc9630b1b1e56e2d671b720069e709167616c43330f89df3b0"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-81/summary.json",
+      "bytes": 338,
+      "sha256": "9a23d4242c0d2e2c12a1d74bde4008e07f2e1a6441ab2e9b2c01694f8f239709"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-81/transitions.jsonl",
+      "bytes": 21254325,
+      "sha256": "e527cd7755b2feb17976ccb9aa7d0778739a811f9191b1a1c5262caf7b9d043a"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-82/frames.jsonl",
+      "bytes": 14221164,
+      "sha256": "8de2b4782cecbfbac544dac1e9de14895b18b41eb2580e84afce20d013cdbd33"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-82/last-frame.png",
+      "bytes": 724,
+      "sha256": "e4a6d61a63323000824e3a1b68afd55ff34c61ef909c0c8ec0c4521c4f63f837"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-82/manifest.json",
+      "bytes": 740,
+      "sha256": "92b542678af8649d79660479a525b28b3655c9eeb9b49764a6bbf0f02fc11d28"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-82/replay.mp4",
+      "bytes": 883267,
+      "sha256": "41d901f0694957507776f4324cc8f346be5280684b80ebe62d9e67a55c508d03"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-82/summary.json",
+      "bytes": 334,
+      "sha256": "fcccd418bb194f973f6458337f06477b062651d36ceb6aa3afcaa19dc80f4268"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-82/transitions.jsonl",
+      "bytes": 22862313,
+      "sha256": "4e2acdd21877d6755825a2e2997d9fac756d8de3be7327a3c8a8e1db2dd6f5f7"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-83/frames.jsonl",
+      "bytes": 11664086,
+      "sha256": "c7570c038ae74d6125b92a4e4868aeb57e19c8dbc57c8f74286866d0544cba31"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-83/last-frame.png",
+      "bytes": 726,
+      "sha256": "d76bfdba1e1b5481ab3006af4cf9cb8fadca13f4c6ac84b5937a02e09a67b4a6"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-83/manifest.json",
+      "bytes": 740,
+      "sha256": "7adef0cb6b725764dd7e4cf2f694313659ad322b7147c496672bfff54e9b6896"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-83/replay.mp4",
+      "bytes": 720037,
+      "sha256": "7cf5799e0be467a2e52ccf0382d6cde472fcab18ecfe4f971aea4569d5019d58"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-83/summary.json",
+      "bytes": 340,
+      "sha256": "6c0c4ed8b111ae25882f31b2b6e518445debde8b69bcc6093462297d2ae1dcf6"
+    },
+    {
+      "path": "question-diagnostics-v1/local/v2/seed-83/transitions.jsonl",
+      "bytes": 18739223,
+      "sha256": "714e37ca49dac588689d5db42d0f842f061971536da64388fa64a80a750fd1be"
+    },
+    {
+      "path": "question-diagnostics-v1/logs/question-diagnostics-audit.txt",
+      "bytes": 80,
+      "sha256": "55b3ee43ef624979b4b7019387a301bd41cdf1ef14dade473756e9e0e0cf6df2"
+    },
+    {
+      "path": "question-diagnostics-v1/logs/question-diagnostics-final-tests.txt",
+      "bytes": 181,
+      "sha256": "933ddf45bd74241a6d9c3ec5ebda31bca5ebbd6c18ab5391406e8f690f3fdefc"
+    },
+    {
+      "path": "question-diagnostics-v1/logs/question-diagnostics-live.txt",
+      "bytes": 942,
+      "sha256": "1a0fbfe535531e70345dad70835c0b602c45910b399a39f1936b6481f9a222f6"
+    },
+    {
+      "path": "question-diagnostics-v1/logs/question-diagnostics-tests.txt",
+      "bytes": 181,
+      "sha256": "96a45c74cb65edf91ef135a75a4a3c02491e954eec0edc3e281893a275ec07b3"
+    }
+  ]
+}

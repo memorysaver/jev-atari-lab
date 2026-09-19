@@ -19,6 +19,11 @@ All project research lives in [docs/](docs/README.md), including the
 [optimizer design](docs/teacher-optimizer.md), [evaluation framework](docs/evaluation-framework.md)
 and [research roadmap](docs/research-roadmap.md).
 
+**Latest diagnostics:** The failed interception question matched its active rule
+on only 90/598 original decisions. Separately, 16 Python control episodes found
+mixed strategy results; conservative lookahead had the best training mean but no
+completed wins. [Read the zero-model-call diagnostic study](docs/pong/question-diagnostics-results-2026-09-20.md).
+
 **Latest teacher study:** One completed A/B round rejected both proposed question
 changes. The experience-informed interception candidate lost 0:21 twice; the
 no-feedback lookahead candidate improved one seed and regressed on the other.

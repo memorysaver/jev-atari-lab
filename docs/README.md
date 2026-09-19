@@ -68,3 +68,6 @@ program version and experiment revision as appropriate. Preserve negative result
 
 The [question execution diagnostics protocol](pong/question-diagnostics-protocol.md) freezes the next offline
 adherence analysis and separate literal Python strategy trials. No new model calls.
+
+[Question diagnostics results](pong/question-diagnostics-results-2026-09-20.md): low interception-rule adherence,
+16 separate literal-control episodes and no new model calls.

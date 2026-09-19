@@ -1,6 +1,8 @@
 # Next research: separate strategy quality from question execution
 
-Status: **proposed after teacher-study-v1; no new live study launched here**.
+Status: **proposed after teacher-study-v1; no new live model study launched here**.
+The first [offline diagnostic study](question-diagnostics-results-2026-09-20.md)
+now tests action adherence and literal strategies; teacher optimization remains open.
 The [incomplete first study](teacher-study-results-2026-09-20.md) provides two rejected
 edits and a transport failure, not a multi-round learning curve. Preserve its
 frozen protocol and reserve a distinct study ID, budget and data split for a new run.

@@ -117,6 +117,36 @@ def analyze(study, out, repository):
                         }
                     )
                 probes.append({"arm": arm, "role": role, "rule": rule, **metrics(rows)})
+    # Exploratory extension after inspecting initial results; not a frozen primary metric.
+    subsets = []
+    for seed in (66, 67):
+        active = groups[("A", "candidate", seed, "intercept")]
+        current = groups[("A", "candidate", seed, "v2")]
+        for agree in (True, False):
+            selected = [
+                a
+                for a, b in zip(active, current, strict=True)
+                if a["mode"] == "intercept" and (a["expected"] == b["expected"]) == agree
+            ]
+            subsets.append({"seed": seed, "interpretations_agree": agree, **metrics(selected)})
+    relative = "round-01/A/development/candidate/seed-66/jev/seed-66/"
+    example = None
+    for row in load(relative + "transitions.jsonl", True):
+        d = interpret(row["observation"], "intercept")
+        if d["mode"] == "intercept" and d["action"] == 2 and row["action"] == 3:
+            exchanges = load(relative + "model-exchanges.jsonl", True)
+            exchange = next(
+                e for e in exchanges if e["exchange_id"] == row["prediction"]["exchange_id"]
+            )
+            example = {
+                "selection": "First seed-66 A active intercept with rule up and Jev down.",
+                "source_episode": relative,
+                "interpretation": d,
+                "original_transition": row,
+                "original_exchange": exchange,
+            }
+            break
+    write_json(out / "example.json", example)
     report = {
         "kind": "question-adherence-diagnostics-v1",
         "status": "complete",
@@ -125,6 +155,7 @@ def analyze(study, out, repository):
         "source_files": sources,
         "trajectories": trajectories,
         "shared_training_probes": probes,
+        "exploratory_agreement_subsets": subsets,
         "limits": "Post-hoc rule interpretations, not optimal-action labels or causal effects. "
         "Visited states differ between trajectories. Probe repeats are not independent states. "
         "B reliability wording is underspecified; both operationalizations are reported.",

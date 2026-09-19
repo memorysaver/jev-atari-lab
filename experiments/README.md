@@ -147,3 +147,6 @@ uv run --env-file "$HOME/.config/typesafe/credentials.env" \
 
 Do not overwrite a published archive or quietly discard failed rounds. Preserve the
 question program and observation contract that generated each result.
+
+[Question diagnostics v1](pong/question-diagnostics-v1/README.md) adds 16 replayed Python control episodes,
+original-state adherence analysis and 16 videos, with zero new model calls.

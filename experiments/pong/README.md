@@ -31,3 +31,6 @@ This directory adds a game-level entry point; it does not copy, rename or reinte
 those archives. See the [existing publishing/replay guide](../README.md) for review,
 checksums and restoration. Verify remote LFS retrieval before claiming a new archive
 is preserved. Preserve failed work and clearly mark missing historical transcripts.
+
+[Question diagnostics v1](question-diagnostics-v1/README.md) adds 16 replayed Python control episodes,
+original-state adherence analysis and 16 videos, with zero new model calls.

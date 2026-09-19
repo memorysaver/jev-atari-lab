@@ -1,0 +1,5026 @@
+{
+  "kind": "question-adherence-diagnostics-v1",
+  "status": "complete",
+  "api_attempts": 0,
+  "source_archive_sha256": "f023d93c2ec6429213c5c2d86f9855a20198608b0d9109415c5c97a797816ee1",
+  "source_files": {
+    "round-01/A/development/parent/seed-66/jev/seed-66/transitions.jsonl": "bd33566630846d54c5c31160ebc17621d8e3da85c7ba5e92e09c535b8ee5d9b0",
+    "round-01/A/development/parent/seed-67/jev/seed-67/transitions.jsonl": "e372984b21aa492331d8932c94715efe4a7c98e79ac33f6724a680a3f5f1b6d3",
+    "round-01/A/development/candidate/seed-66/jev/seed-66/transitions.jsonl": "85e447761fa0382376161bccb7dcf93bb38c2ca4f1b155113ea948577476312f",
+    "round-01/A/development/candidate/seed-67/jev/seed-67/transitions.jsonl": "324326be3ecc0f342c5afc5a19ae7b3546fef6a2c9de6ca8484b17303644a096",
+    "round-01/B/development/parent/seed-66/jev/seed-66/transitions.jsonl": "f0914e0bffaefce0641ab8cc684f4eac2ca0898b8ca36f99e777880502a37c68",
+    "round-01/B/development/parent/seed-67/jev/seed-67/transitions.jsonl": "789db07ecbfc2f7201446613a91f907ff213ce1f5f7ac42e3206e407ba57546c",
+    "round-01/B/development/candidate/seed-66/jev/seed-66/transitions.jsonl": "8ed1b17a19c28cae79a43098d20e873ef72e4f0de420e12e3085aa486c02e2d6",
+    "round-01/B/development/candidate/seed-67/jev/seed-67/transitions.jsonl": "33d7988df1fe103353c5068d188fe952b37310f7069c899c2943cfba842dd928",
+    "round-01/A/probes/inputs.json": "ff29aa552666e6d1a0a8ae7c97e94f3124967d2e2addae6fbade2463de25fe6c",
+    "round-01/A/probes/predictions.jsonl": "5cf306bef7f3fa19cf899cdf7ad4d7b72688e8555ff1e4f4a9a654d2328f6375",
+    "round-01/B/probes/inputs.json": "ff29aa552666e6d1a0a8ae7c97e94f3124967d2e2addae6fbade2463de25fe6c",
+    "round-01/B/probes/predictions.jsonl": "270fb621e7c6abe2bc4b99a7755b3172c27be3321219308096a6230cc953df8e",
+    "round-01/A/development/candidate/seed-66/jev/seed-66/model-exchanges.jsonl": "8d8e97380ef4779d8354bcb62eb02f0e004d976f5fbe3444cf5250eb60d19d7c"
+  },
+  "trajectories": [
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 66,
+      "rule": "v2",
+      "n": 5000,
+      "matches": 3499,
+      "agreement": 0.6998,
+      "confusion": {
+        "0->0": 1758,
+        "3->3": 836,
+        "3->0": 274,
+        "2->0": 1114,
+        "2->2": 905,
+        "0->2": 10,
+        "0->3": 102,
+        "3->2": 1
+      },
+      "mean_probability_of_rule_action": 0.5534690303030303,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2309,
+            "matches": 1551,
+            "agreement": 0.6717193590298831,
+            "confusion": {
+              "0->0": 575,
+              "2->2": 490,
+              "2->0": 557,
+              "3->0": 141,
+              "0->2": 4,
+              "3->3": 486,
+              "0->3": 56
+            },
+            "mean_probability_of_rule_action": 0.514644583557533
+          },
+          "outgoing": {
+            "n": 2135,
+            "matches": 1411,
+            "agreement": 0.6608899297423888,
+            "confusion": {
+              "3->3": 330,
+              "3->0": 127,
+              "2->0": 544,
+              "0->0": 683,
+              "0->3": 46,
+              "2->2": 398,
+              "3->2": 1,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4913390580275826
+          },
+          "stationary-x": {
+            "n": 26,
+            "matches": 13,
+            "agreement": 0.5,
+            "confusion": {
+              "2->2": 1,
+              "0->0": 9,
+              "3->3": 3,
+              "2->0": 10,
+              "3->0": 3
+            },
+            "mean_probability_of_rule_action": 0.4211538461538461
+          },
+          "unknown": {
+            "n": 530,
+            "matches": 524,
+            "agreement": 0.9886792452830189,
+            "confusion": {
+              "0->0": 491,
+              "3->3": 17,
+              "2->2": 16,
+              "3->0": 3,
+              "2->0": 3
+            },
+            "mean_probability_of_rule_action": 0.9793809796073947
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 4512,
+            "matches": 3011,
+            "agreement": 0.6673315602836879,
+            "confusion": {
+              "3->3": 836,
+              "3->0": 274,
+              "2->0": 1114,
+              "0->0": 1270,
+              "2->2": 905,
+              "0->2": 10,
+              "0->3": 102,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.5052183403180744
+          },
+          "missing-object": {
+            "n": 488,
+            "matches": 488,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 488
+            },
+            "mean_probability_of_rule_action": 0.9995901639344262
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 3499,
+            "agreement": 0.6998,
+            "confusion": {
+              "0->0": 1758,
+              "3->3": 836,
+              "3->0": 274,
+              "2->0": 1114,
+              "2->2": 905,
+              "0->2": 10,
+              "0->3": 102,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.5534690303030303
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 66,
+      "rule": "intercept",
+      "n": 5000,
+      "matches": 2813,
+      "agreement": 0.5626,
+      "confusion": {
+        "0->0": 1335,
+        "3->3": 772,
+        "3->0": 665,
+        "2->0": 1146,
+        "2->2": 706,
+        "3->2": 200,
+        "0->3": 76,
+        "2->3": 90,
+        "0->2": 10
+      },
+      "mean_probability_of_rule_action": 0.4867088686868687,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2309,
+            "matches": 865,
+            "agreement": 0.37462104807275876,
+            "confusion": {
+              "3->0": 532,
+              "2->2": 291,
+              "2->0": 589,
+              "3->2": 199,
+              "3->3": 422,
+              "0->0": 152,
+              "0->3": 30,
+              "2->3": 90,
+              "0->2": 4
+            },
+            "mean_probability_of_rule_action": 0.3700794869439304
+          },
+          "outgoing": {
+            "n": 2135,
+            "matches": 1411,
+            "agreement": 0.6608899297423888,
+            "confusion": {
+              "3->3": 330,
+              "3->0": 127,
+              "2->0": 544,
+              "0->0": 683,
+              "0->3": 46,
+              "2->2": 398,
+              "3->2": 1,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4913390580275826
+          },
+          "stationary-x": {
+            "n": 26,
+            "matches": 13,
+            "agreement": 0.5,
+            "confusion": {
+              "2->2": 1,
+              "0->0": 9,
+              "3->3": 3,
+              "2->0": 10,
+              "3->0": 3
+            },
+            "mean_probability_of_rule_action": 0.4211538461538461
+          },
+          "unknown": {
+            "n": 530,
+            "matches": 524,
+            "agreement": 0.9886792452830189,
+            "confusion": {
+              "0->0": 491,
+              "3->3": 17,
+              "2->2": 16,
+              "3->0": 3,
+              "2->0": 3
+            },
+            "mean_probability_of_rule_action": 0.9793809796073947
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2359,
+            "matches": 1565,
+            "agreement": 0.6634167019923697,
+            "confusion": {
+              "3->3": 368,
+              "3->0": 142,
+              "2->0": 598,
+              "0->0": 735,
+              "0->3": 47,
+              "2->2": 462,
+              "3->2": 1,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4967979498246561
+          },
+          "intercept": {
+            "n": 2153,
+            "matches": 760,
+            "agreement": 0.35299581978634464,
+            "confusion": {
+              "3->0": 523,
+              "2->2": 244,
+              "2->0": 548,
+              "3->2": 199,
+              "3->3": 404,
+              "0->0": 112,
+              "0->3": 29,
+              "2->3": 90,
+              "0->2": 4
+            },
+            "mean_probability_of_rule_action": 0.35940454240500685
+          },
+          "missing-object": {
+            "n": 488,
+            "matches": 488,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 488
+            },
+            "mean_probability_of_rule_action": 0.9995901639344262
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 3883,
+            "matches": 2546,
+            "agreement": 0.6556785990213753,
+            "confusion": {
+              "0->0": 1307,
+              "3->3": 569,
+              "3->0": 339,
+              "2->0": 884,
+              "0->3": 58,
+              "2->2": 670,
+              "2->3": 30,
+              "3->2": 20,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.5431796460614384
+          },
+          "1": {
+            "n": 1031,
+            "matches": 265,
+            "agreement": 0.25703200775945684,
+            "confusion": {
+              "3->0": 305,
+              "2->2": 36,
+              "2->0": 253,
+              "3->2": 127,
+              "3->3": 203,
+              "0->3": 18,
+              "2->3": 59,
+              "0->2": 4,
+              "0->0": 26
+            },
+            "mean_probability_of_rule_action": 0.2992596184933721
+          },
+          "2": {
+            "n": 82,
+            "matches": 0,
+            "agreement": 0.0,
+            "confusion": {
+              "3->2": 53,
+              "3->0": 20,
+              "2->0": 9
+            },
+            "mean_probability_of_rule_action": 0.1739159891598916
+          },
+          "3": {
+            "n": 4,
+            "matches": 2,
+            "agreement": 0.5,
+            "confusion": {
+              "3->0": 1,
+              "2->3": 1,
+              "0->0": 2
+            },
+            "mean_probability_of_rule_action": 0.395
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 66,
+      "rule": "lookahead",
+      "n": 5000,
+      "matches": 3380,
+      "agreement": 0.676,
+      "confusion": {
+        "0->0": 1605,
+        "3->3": 871,
+        "3->0": 442,
+        "2->0": 1099,
+        "2->2": 904,
+        "0->3": 67,
+        "0->2": 11,
+        "3->2": 1
+      },
+      "mean_probability_of_rule_action": 0.5463876767676767,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2309,
+            "matches": 1432,
+            "agreement": 0.6201818969250757,
+            "confusion": {
+              "2->0": 542,
+              "2->2": 489,
+              "0->0": 422,
+              "3->0": 309,
+              "3->3": 521,
+              "0->3": 21,
+              "0->2": 5
+            },
+            "mean_probability_of_rule_action": 0.4993103403021117
+          },
+          "outgoing": {
+            "n": 2135,
+            "matches": 1411,
+            "agreement": 0.6608899297423888,
+            "confusion": {
+              "3->3": 330,
+              "3->0": 127,
+              "2->0": 544,
+              "0->0": 683,
+              "0->3": 46,
+              "2->2": 398,
+              "3->2": 1,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4913390580275826
+          },
+          "stationary-x": {
+            "n": 26,
+            "matches": 13,
+            "agreement": 0.5,
+            "confusion": {
+              "2->2": 1,
+              "0->0": 9,
+              "3->3": 3,
+              "2->0": 10,
+              "3->0": 3
+            },
+            "mean_probability_of_rule_action": 0.4211538461538461
+          },
+          "unknown": {
+            "n": 530,
+            "matches": 524,
+            "agreement": 0.9886792452830189,
+            "confusion": {
+              "0->0": 491,
+              "3->3": 17,
+              "2->2": 16,
+              "3->0": 3,
+              "2->0": 3
+            },
+            "mean_probability_of_rule_action": 0.9793809796073947
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2203,
+            "matches": 1460,
+            "agreement": 0.6627326373127553,
+            "confusion": {
+              "3->3": 350,
+              "3->0": 133,
+              "2->0": 557,
+              "0->0": 695,
+              "0->3": 46,
+              "2->2": 415,
+              "3->2": 1,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.49533854202487887
+          },
+          "lookahead": {
+            "n": 2309,
+            "matches": 1432,
+            "agreement": 0.6201818969250757,
+            "confusion": {
+              "2->0": 542,
+              "2->2": 489,
+              "0->0": 422,
+              "3->0": 309,
+              "3->3": 521,
+              "0->3": 21,
+              "0->2": 5
+            },
+            "mean_probability_of_rule_action": 0.4993103403021117
+          },
+          "missing-object": {
+            "n": 488,
+            "matches": 488,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 488
+            },
+            "mean_probability_of_rule_action": 0.9995901639344262
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 3380,
+            "agreement": 0.676,
+            "confusion": {
+              "0->0": 1605,
+              "3->3": 871,
+              "3->0": 442,
+              "2->0": 1099,
+              "2->2": 904,
+              "0->3": 67,
+              "0->2": 11,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.5463876767676767
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 66,
+      "rule": "lookahead-conservative",
+      "n": 5000,
+      "matches": 3410,
+      "agreement": 0.682,
+      "confusion": {
+        "0->0": 1639,
+        "3->3": 867,
+        "3->0": 426,
+        "2->0": 1081,
+        "2->2": 904,
+        "0->3": 71,
+        "0->2": 11,
+        "3->2": 1
+      },
+      "mean_probability_of_rule_action": 0.5491244040404041,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2309,
+            "matches": 1462,
+            "agreement": 0.6331745344304894,
+            "confusion": {
+              "0->0": 456,
+              "2->2": 489,
+              "2->0": 524,
+              "3->3": 517,
+              "3->0": 293,
+              "0->3": 25,
+              "0->2": 5
+            },
+            "mean_probability_of_rule_action": 0.5052365578697323
+          },
+          "outgoing": {
+            "n": 2135,
+            "matches": 1411,
+            "agreement": 0.6608899297423888,
+            "confusion": {
+              "3->3": 330,
+              "3->0": 127,
+              "2->0": 544,
+              "0->0": 683,
+              "0->3": 46,
+              "2->2": 398,
+              "3->2": 1,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4913390580275826
+          },
+          "stationary-x": {
+            "n": 26,
+            "matches": 13,
+            "agreement": 0.5,
+            "confusion": {
+              "2->2": 1,
+              "0->0": 9,
+              "3->3": 3,
+              "2->0": 10,
+              "3->0": 3
+            },
+            "mean_probability_of_rule_action": 0.4211538461538461
+          },
+          "unknown": {
+            "n": 530,
+            "matches": 524,
+            "agreement": 0.9886792452830189,
+            "confusion": {
+              "0->0": 491,
+              "3->3": 17,
+              "2->2": 16,
+              "3->0": 3,
+              "2->0": 3
+            },
+            "mean_probability_of_rule_action": 0.9793809796073947
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2203,
+            "matches": 1460,
+            "agreement": 0.6627326373127553,
+            "confusion": {
+              "3->3": 350,
+              "3->0": 133,
+              "2->0": 557,
+              "0->0": 695,
+              "0->3": 46,
+              "2->2": 415,
+              "3->2": 1,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.49533854202487887
+          },
+          "lookahead": {
+            "n": 2148,
+            "matches": 1354,
+            "agreement": 0.6303538175046555,
+            "confusion": {
+              "2->2": 464,
+              "2->0": 482,
+              "0->0": 388,
+              "3->3": 502,
+              "3->0": 286,
+              "0->3": 21,
+              "0->2": 5
+            },
+            "mean_probability_of_rule_action": 0.5021526719711078
+          },
+          "missing-object": {
+            "n": 488,
+            "matches": 488,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 488
+            },
+            "mean_probability_of_rule_action": 0.9995901639344262
+          },
+          "uncertain-motion-fallback": {
+            "n": 161,
+            "matches": 108,
+            "agreement": 0.6708074534161491,
+            "confusion": {
+              "0->0": 68,
+              "3->0": 7,
+              "2->2": 25,
+              "2->0": 42,
+              "0->3": 4,
+              "3->3": 15
+            },
+            "mean_probability_of_rule_action": 0.5463805759457934
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 3410,
+            "agreement": 0.682,
+            "confusion": {
+              "0->0": 1639,
+              "3->3": 867,
+              "3->0": 426,
+              "2->0": 1081,
+              "2->2": 904,
+              "0->3": 71,
+              "0->2": 11,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.5491244040404041
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 67,
+      "rule": "v2",
+      "n": 4877,
+      "matches": 3207,
+      "agreement": 0.6575763789214681,
+      "confusion": {
+        "0->0": 1875,
+        "3->3": 616,
+        "3->0": 334,
+        "2->0": 1206,
+        "2->2": 716,
+        "3->2": 3,
+        "0->3": 119,
+        "0->2": 8
+      },
+      "mean_probability_of_rule_action": 0.5324324441876216,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2224,
+            "matches": 1420,
+            "agreement": 0.6384892086330936,
+            "confusion": {
+              "2->0": 581,
+              "2->2": 383,
+              "0->0": 657,
+              "3->3": 380,
+              "3->2": 3,
+              "3->0": 160,
+              "0->3": 55,
+              "0->2": 5
+            },
+            "mean_probability_of_rule_action": 0.48413905239444804
+          },
+          "outgoing": {
+            "n": 2036,
+            "matches": 1221,
+            "agreement": 0.599705304518664,
+            "confusion": {
+              "3->0": 164,
+              "0->0": 703,
+              "3->3": 208,
+              "2->0": 588,
+              "0->3": 60,
+              "2->2": 310,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.47492498660475085
+          },
+          "stationary-x": {
+            "n": 84,
+            "matches": 38,
+            "agreement": 0.4523809523809524,
+            "confusion": {
+              "0->0": 22,
+              "3->0": 9,
+              "2->0": 33,
+              "3->3": 5,
+              "0->3": 4,
+              "2->2": 11
+            },
+            "mean_probability_of_rule_action": 0.40964886964886965
+          },
+          "unknown": {
+            "n": 533,
+            "matches": 528,
+            "agreement": 0.9906191369606003,
+            "confusion": {
+              "0->0": 493,
+              "3->3": 23,
+              "2->2": 12,
+              "2->0": 4,
+              "3->0": 1
+            },
+            "mean_probability_of_rule_action": 0.9729643527204503
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 4394,
+            "matches": 2724,
+            "agreement": 0.6199362767410105,
+            "confusion": {
+              "3->3": 616,
+              "3->0": 334,
+              "0->0": 1392,
+              "2->0": 1206,
+              "2->2": 716,
+              "3->2": 3,
+              "0->3": 119,
+              "0->2": 8
+            },
+            "mean_probability_of_rule_action": 0.4811386049847588
+          },
+          "missing-object": {
+            "n": 483,
+            "matches": 483,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 483
+            },
+            "mean_probability_of_rule_action": 0.9990683229813665
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 4877,
+            "matches": 3207,
+            "agreement": 0.6575763789214681,
+            "confusion": {
+              "0->0": 1875,
+              "3->3": 616,
+              "3->0": 334,
+              "2->0": 1206,
+              "2->2": 716,
+              "3->2": 3,
+              "0->3": 119,
+              "0->2": 8
+            },
+            "mean_probability_of_rule_action": 0.5324324441876216
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 67,
+      "rule": "intercept",
+      "n": 4877,
+      "matches": 2478,
+      "agreement": 0.5080992413368874,
+      "confusion": {
+        "0->0": 1334,
+        "3->3": 577,
+        "3->0": 765,
+        "2->0": 1316,
+        "2->2": 567,
+        "0->2": 9,
+        "3->2": 151,
+        "0->3": 81,
+        "2->3": 77
+      },
+      "mean_probability_of_rule_action": 0.4608550752553213,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2224,
+            "matches": 691,
+            "agreement": 0.3107014388489209,
+            "confusion": {
+              "2->0": 691,
+              "2->2": 234,
+              "3->3": 341,
+              "0->2": 6,
+              "3->0": 591,
+              "3->2": 151,
+              "0->0": 116,
+              "2->3": 77,
+              "0->3": 17
+            },
+            "mean_probability_of_rule_action": 0.327177349029867
+          },
+          "outgoing": {
+            "n": 2036,
+            "matches": 1221,
+            "agreement": 0.599705304518664,
+            "confusion": {
+              "3->0": 164,
+              "0->0": 703,
+              "3->3": 208,
+              "2->0": 588,
+              "0->3": 60,
+              "2->2": 310,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.47492498660475085
+          },
+          "stationary-x": {
+            "n": 84,
+            "matches": 38,
+            "agreement": 0.4523809523809524,
+            "confusion": {
+              "0->0": 22,
+              "3->0": 9,
+              "2->0": 33,
+              "3->3": 5,
+              "0->3": 4,
+              "2->2": 11
+            },
+            "mean_probability_of_rule_action": 0.40964886964886965
+          },
+          "unknown": {
+            "n": 533,
+            "matches": 528,
+            "agreement": 0.9906191369606003,
+            "confusion": {
+              "0->0": 493,
+              "3->3": 23,
+              "2->2": 12,
+              "2->0": 4,
+              "3->0": 1
+            },
+            "mean_probability_of_rule_action": 0.9729643527204503
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2290,
+            "matches": 1384,
+            "agreement": 0.6043668122270742,
+            "confusion": {
+              "3->3": 245,
+              "3->0": 183,
+              "0->0": 768,
+              "2->0": 656,
+              "0->3": 64,
+              "2->2": 371,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.4793840589299105
+          },
+          "intercept": {
+            "n": 2104,
+            "matches": 611,
+            "agreement": 0.29039923954372626,
+            "confusion": {
+              "2->0": 660,
+              "2->2": 196,
+              "3->3": 332,
+              "0->2": 6,
+              "3->0": 582,
+              "3->2": 151,
+              "0->0": 83,
+              "2->3": 77,
+              "0->3": 17
+            },
+            "mean_probability_of_rule_action": 0.317134366478473
+          },
+          "missing-object": {
+            "n": 483,
+            "matches": 483,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 483
+            },
+            "mean_probability_of_rule_action": 0.9990683229813665
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 3787,
+            "matches": 2238,
+            "agreement": 0.5909691048323211,
+            "confusion": {
+              "0->0": 1295,
+              "3->3": 427,
+              "3->0": 453,
+              "2->0": 995,
+              "0->3": 72,
+              "2->2": 516,
+              "3->2": 10,
+              "2->3": 16,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.5151506882930174
+          },
+          "1": {
+            "n": 1019,
+            "matches": 237,
+            "agreement": 0.2325809617271835,
+            "confusion": {
+              "2->0": 313,
+              "2->2": 49,
+              "3->3": 150,
+              "0->2": 6,
+              "3->0": 292,
+              "3->2": 102,
+              "0->0": 38,
+              "2->3": 60,
+              "0->3": 9
+            },
+            "mean_probability_of_rule_action": 0.27833923137161604
+          },
+          "2": {
+            "n": 64,
+            "matches": 2,
+            "agreement": 0.03125,
+            "confusion": {
+              "3->2": 35,
+              "3->0": 19,
+              "2->0": 7,
+              "2->3": 1,
+              "2->2": 2
+            },
+            "mean_probability_of_rule_action": 0.1771875
+          },
+          "3": {
+            "n": 6,
+            "matches": 1,
+            "agreement": 0.16666666666666666,
+            "confusion": {
+              "3->2": 4,
+              "0->0": 1,
+              "3->0": 1
+            },
+            "mean_probability_of_rule_action": 0.2494781144781145
+          },
+          "4": {
+            "n": 1,
+            "matches": 0,
+            "agreement": 0.0,
+            "confusion": {
+              "2->0": 1
+            },
+            "mean_probability_of_rule_action": 0.25
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 67,
+      "rule": "lookahead",
+      "n": 4877,
+      "matches": 2979,
+      "agreement": 0.610826327660447,
+      "confusion": {
+        "0->0": 1604,
+        "3->3": 660,
+        "3->0": 548,
+        "2->0": 1263,
+        "2->2": 715,
+        "0->3": 75,
+        "0->2": 11,
+        "3->2": 1
+      },
+      "mean_probability_of_rule_action": 0.5164961486921709,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2224,
+            "matches": 1192,
+            "agreement": 0.5359712230215827,
+            "confusion": {
+              "2->0": 638,
+              "2->2": 382,
+              "0->3": 11,
+              "0->2": 8,
+              "0->0": 386,
+              "3->3": 424,
+              "3->0": 374,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.4491924187922389
+          },
+          "outgoing": {
+            "n": 2036,
+            "matches": 1221,
+            "agreement": 0.599705304518664,
+            "confusion": {
+              "3->0": 164,
+              "0->0": 703,
+              "3->3": 208,
+              "2->0": 588,
+              "0->3": 60,
+              "2->2": 310,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.47492498660475085
+          },
+          "stationary-x": {
+            "n": 84,
+            "matches": 38,
+            "agreement": 0.4523809523809524,
+            "confusion": {
+              "0->0": 22,
+              "3->0": 9,
+              "2->0": 33,
+              "3->3": 5,
+              "0->3": 4,
+              "2->2": 11
+            },
+            "mean_probability_of_rule_action": 0.40964886964886965
+          },
+          "unknown": {
+            "n": 533,
+            "matches": 528,
+            "agreement": 0.9906191369606003,
+            "confusion": {
+              "0->0": 493,
+              "3->3": 23,
+              "2->2": 12,
+              "2->0": 4,
+              "3->0": 1
+            },
+            "mean_probability_of_rule_action": 0.9729643527204503
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2170,
+            "matches": 1304,
+            "agreement": 0.6009216589861751,
+            "confusion": {
+              "3->3": 236,
+              "3->0": 174,
+              "0->0": 735,
+              "2->0": 625,
+              "0->3": 64,
+              "2->2": 333,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.478063492063492
+          },
+          "lookahead": {
+            "n": 2224,
+            "matches": 1192,
+            "agreement": 0.5359712230215827,
+            "confusion": {
+              "2->0": 638,
+              "2->2": 382,
+              "0->3": 11,
+              "0->2": 8,
+              "0->0": 386,
+              "3->3": 424,
+              "3->0": 374,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.4491924187922389
+          },
+          "missing-object": {
+            "n": 483,
+            "matches": 483,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 483
+            },
+            "mean_probability_of_rule_action": 0.9990683229813665
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 4877,
+            "matches": 2979,
+            "agreement": 0.610826327660447,
+            "confusion": {
+              "0->0": 1604,
+              "3->3": 660,
+              "3->0": 548,
+              "2->0": 1263,
+              "2->2": 715,
+              "0->3": 75,
+              "0->2": 11,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.5164961486921709
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "seed": 67,
+      "rule": "lookahead-conservative",
+      "n": 4877,
+      "matches": 3011,
+      "agreement": 0.6173877383637482,
+      "confusion": {
+        "0->0": 1638,
+        "3->3": 658,
+        "3->0": 526,
+        "2->0": 1251,
+        "2->2": 715,
+        "0->3": 77,
+        "0->2": 11,
+        "3->2": 1
+      },
+      "mean_probability_of_rule_action": 0.5190079387270283,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2224,
+            "matches": 1224,
+            "agreement": 0.5503597122302158,
+            "confusion": {
+              "2->0": 626,
+              "2->2": 382,
+              "0->3": 13,
+              "0->2": 8,
+              "0->0": 420,
+              "3->3": 422,
+              "3->0": 352,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.4547005123174188
+          },
+          "outgoing": {
+            "n": 2036,
+            "matches": 1221,
+            "agreement": 0.599705304518664,
+            "confusion": {
+              "3->0": 164,
+              "0->0": 703,
+              "3->3": 208,
+              "2->0": 588,
+              "0->3": 60,
+              "2->2": 310,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.47492498660475085
+          },
+          "stationary-x": {
+            "n": 84,
+            "matches": 38,
+            "agreement": 0.4523809523809524,
+            "confusion": {
+              "0->0": 22,
+              "3->0": 9,
+              "2->0": 33,
+              "3->3": 5,
+              "0->3": 4,
+              "2->2": 11
+            },
+            "mean_probability_of_rule_action": 0.40964886964886965
+          },
+          "unknown": {
+            "n": 533,
+            "matches": 528,
+            "agreement": 0.9906191369606003,
+            "confusion": {
+              "0->0": 493,
+              "3->3": 23,
+              "2->2": 12,
+              "2->0": 4,
+              "3->0": 1
+            },
+            "mean_probability_of_rule_action": 0.9729643527204503
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2170,
+            "matches": 1304,
+            "agreement": 0.6009216589861751,
+            "confusion": {
+              "3->3": 236,
+              "3->0": 174,
+              "0->0": 735,
+              "2->0": 625,
+              "0->3": 64,
+              "2->2": 333,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.478063492063492
+          },
+          "lookahead": {
+            "n": 2095,
+            "matches": 1130,
+            "agreement": 0.5393794749403341,
+            "confusion": {
+              "2->0": 601,
+              "2->2": 372,
+              "0->3": 11,
+              "0->2": 8,
+              "0->0": 351,
+              "3->3": 407,
+              "3->0": 344,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.44722345170077865
+          },
+          "missing-object": {
+            "n": 483,
+            "matches": 483,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 483
+            },
+            "mean_probability_of_rule_action": 0.9990683229813665
+          },
+          "uncertain-motion-fallback": {
+            "n": 129,
+            "matches": 94,
+            "agreement": 0.7286821705426356,
+            "confusion": {
+              "0->0": 69,
+              "3->0": 8,
+              "3->3": 15,
+              "2->2": 10,
+              "2->0": 25,
+              "0->3": 2
+            },
+            "mean_probability_of_rule_action": 0.5761302952000626
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 4877,
+            "matches": 3011,
+            "agreement": 0.6173877383637482,
+            "confusion": {
+              "0->0": 1638,
+              "3->3": 658,
+              "3->0": 526,
+              "2->0": 1251,
+              "2->2": 715,
+              "0->3": 77,
+              "0->2": 11,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.5190079387270283
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "v2",
+      "n": 757,
+      "matches": 379,
+      "agreement": 0.5006605019815059,
+      "confusion": {
+        "0->0": 348,
+        "3->0": 13,
+        "3->3": 4,
+        "2->2": 27,
+        "2->3": 325,
+        "2->0": 40
+      },
+      "mean_probability_of_rule_action": 0.6048480845442537,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 394,
+            "matches": 49,
+            "agreement": 0.12436548223350254,
+            "confusion": {
+              "3->3": 2,
+              "2->2": 27,
+              "2->3": 325,
+              "0->0": 20,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.30121417217863916
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 2,
+            "agreement": 0.14285714285714285,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 2
+            },
+            "mean_probability_of_rule_action": 0.3885714285714286
+          },
+          "unknown": {
+            "n": 349,
+            "matches": 328,
+            "agreement": 0.9398280802292264,
+            "confusion": {
+              "0->0": 328,
+              "3->0": 1,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.9563083557639431
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 429,
+            "matches": 51,
+            "agreement": 0.11888111888111888,
+            "confusion": {
+              "3->0": 13,
+              "3->3": 4,
+              "2->2": 27,
+              "2->3": 325,
+              "2->0": 40,
+              "0->0": 20
+            },
+            "mean_probability_of_rule_action": 0.30272727272727273
+          },
+          "missing-object": {
+            "n": 328,
+            "matches": 328,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 328
+            },
+            "mean_probability_of_rule_action": 1.0
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 757,
+            "matches": 379,
+            "agreement": 0.5006605019815059,
+            "confusion": {
+              "0->0": 348,
+              "3->0": 13,
+              "3->3": 4,
+              "2->2": 27,
+              "2->3": 325,
+              "2->0": 40
+            },
+            "mean_probability_of_rule_action": 0.6048480845442537
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "intercept",
+      "n": 757,
+      "matches": 379,
+      "agreement": 0.5006605019815059,
+      "confusion": {
+        "0->0": 348,
+        "3->0": 13,
+        "3->3": 4,
+        "2->3": 321,
+        "2->2": 27,
+        "0->3": 4,
+        "2->0": 40
+      },
+      "mean_probability_of_rule_action": 0.6044121532364597,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 394,
+            "matches": 49,
+            "agreement": 0.12436548223350254,
+            "confusion": {
+              "3->3": 2,
+              "2->3": 321,
+              "2->2": 27,
+              "0->3": 4,
+              "0->0": 20,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.30037660872686256
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 2,
+            "agreement": 0.14285714285714285,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 2
+            },
+            "mean_probability_of_rule_action": 0.3885714285714286
+          },
+          "unknown": {
+            "n": 349,
+            "matches": 328,
+            "agreement": 0.9398280802292264,
+            "confusion": {
+              "0->0": 328,
+              "3->0": 1,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.9563083557639431
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 140,
+            "matches": 23,
+            "agreement": 0.16428571428571428,
+            "confusion": {
+              "3->0": 13,
+              "3->3": 2,
+              "2->3": 64,
+              "2->2": 1,
+              "2->0": 40,
+              "0->0": 20
+            },
+            "mean_probability_of_rule_action": 0.29615440115440117
+          },
+          "intercept": {
+            "n": 289,
+            "matches": 28,
+            "agreement": 0.09688581314878893,
+            "confusion": {
+              "3->3": 2,
+              "2->3": 257,
+              "2->2": 26,
+              "0->3": 4
+            },
+            "mean_probability_of_rule_action": 0.3047694942504631
+          },
+          "missing-object": {
+            "n": 328,
+            "matches": 328,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 328
+            },
+            "mean_probability_of_rule_action": 1.0
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 739,
+            "matches": 369,
+            "agreement": 0.4993234100135318,
+            "confusion": {
+              "0->0": 348,
+              "3->0": 13,
+              "3->3": 2,
+              "2->3": 316,
+              "2->2": 19,
+              "2->0": 40,
+              "0->3": 1
+            },
+            "mean_probability_of_rule_action": 0.609702300405954
+          },
+          "1": {
+            "n": 18,
+            "matches": 10,
+            "agreement": 0.5555555555555556,
+            "confusion": {
+              "3->3": 2,
+              "2->3": 5,
+              "2->2": 8,
+              "0->3": 3
+            },
+            "mean_probability_of_rule_action": 0.3872222222222222
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "lookahead",
+      "n": 757,
+      "matches": 391,
+      "agreement": 0.5165125495376486,
+      "confusion": {
+        "0->0": 361,
+        "3->0": 13,
+        "3->3": 3,
+        "0->3": 8,
+        "2->2": 27,
+        "2->3": 318,
+        "2->0": 27
+      },
+      "mean_probability_of_rule_action": 0.6103434610303832,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 394,
+            "matches": 61,
+            "agreement": 0.1548223350253807,
+            "confusion": {
+              "3->3": 1,
+              "0->3": 8,
+              "2->2": 27,
+              "2->3": 318,
+              "0->0": 33,
+              "2->0": 7
+            },
+            "mean_probability_of_rule_action": 0.31177254781315694
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 2,
+            "agreement": 0.14285714285714285,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 2
+            },
+            "mean_probability_of_rule_action": 0.3885714285714286
+          },
+          "unknown": {
+            "n": 349,
+            "matches": 328,
+            "agreement": 0.9398280802292264,
+            "confusion": {
+              "0->0": 328,
+              "3->0": 1,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.9563083557639431
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 35,
+            "matches": 2,
+            "agreement": 0.05714285714285714,
+            "confusion": {
+              "3->0": 13,
+              "3->3": 2,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.31976046176046174
+          },
+          "lookahead": {
+            "n": 394,
+            "matches": 61,
+            "agreement": 0.1548223350253807,
+            "confusion": {
+              "3->3": 1,
+              "0->3": 8,
+              "2->2": 27,
+              "2->3": 318,
+              "0->0": 33,
+              "2->0": 7
+            },
+            "mean_probability_of_rule_action": 0.31177254781315694
+          },
+          "missing-object": {
+            "n": 328,
+            "matches": 328,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 328
+            },
+            "mean_probability_of_rule_action": 1.0
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 757,
+            "matches": 391,
+            "agreement": 0.5165125495376486,
+            "confusion": {
+              "0->0": 361,
+              "3->0": 13,
+              "3->3": 3,
+              "0->3": 8,
+              "2->2": 27,
+              "2->3": 318,
+              "2->0": 27
+            },
+            "mean_probability_of_rule_action": 0.6103434610303832
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "lookahead-conservative",
+      "n": 757,
+      "matches": 391,
+      "agreement": 0.5165125495376486,
+      "confusion": {
+        "0->0": 361,
+        "3->0": 13,
+        "3->3": 3,
+        "0->3": 8,
+        "2->2": 27,
+        "2->3": 318,
+        "2->0": 27
+      },
+      "mean_probability_of_rule_action": 0.6103434610303832,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 394,
+            "matches": 61,
+            "agreement": 0.1548223350253807,
+            "confusion": {
+              "3->3": 1,
+              "0->3": 8,
+              "2->2": 27,
+              "2->3": 318,
+              "0->0": 33,
+              "2->0": 7
+            },
+            "mean_probability_of_rule_action": 0.31177254781315694
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 2,
+            "agreement": 0.14285714285714285,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 2
+            },
+            "mean_probability_of_rule_action": 0.3885714285714286
+          },
+          "unknown": {
+            "n": 349,
+            "matches": 328,
+            "agreement": 0.9398280802292264,
+            "confusion": {
+              "0->0": 328,
+              "3->0": 1,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.9563083557639431
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 35,
+            "matches": 2,
+            "agreement": 0.05714285714285714,
+            "confusion": {
+              "3->0": 13,
+              "3->3": 2,
+              "2->0": 20
+            },
+            "mean_probability_of_rule_action": 0.31976046176046174
+          },
+          "lookahead": {
+            "n": 372,
+            "matches": 55,
+            "agreement": 0.1478494623655914,
+            "confusion": {
+              "0->3": 8,
+              "2->2": 22,
+              "2->3": 302,
+              "0->0": 33,
+              "2->0": 7
+            },
+            "mean_probability_of_rule_action": 0.31066009557945046
+          },
+          "missing-object": {
+            "n": 328,
+            "matches": 328,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 328
+            },
+            "mean_probability_of_rule_action": 1.0
+          },
+          "uncertain-motion-fallback": {
+            "n": 22,
+            "matches": 6,
+            "agreement": 0.2727272727272727,
+            "confusion": {
+              "3->3": 1,
+              "2->3": 16,
+              "2->2": 5
+            },
+            "mean_probability_of_rule_action": 0.33058310376492195
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 757,
+            "matches": 391,
+            "agreement": 0.5165125495376486,
+            "confusion": {
+              "0->0": 361,
+              "3->0": 13,
+              "3->3": 3,
+              "0->3": 8,
+              "2->2": 27,
+              "2->3": 318,
+              "2->0": 27
+            },
+            "mean_probability_of_rule_action": 0.6103434610303832
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "v2",
+      "n": 758,
+      "matches": 430,
+      "agreement": 0.5672823218997362,
+      "confusion": {
+        "0->0": 351,
+        "3->0": 12,
+        "3->3": 4,
+        "2->2": 75,
+        "2->3": 289,
+        "2->0": 27
+      },
+      "mean_probability_of_rule_action": 0.614141680658831,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 393,
+            "matches": 83,
+            "agreement": 0.21119592875318066,
+            "confusion": {
+              "2->2": 61,
+              "2->3": 289,
+              "0->0": 21,
+              "3->3": 1,
+              "2->0": 21
+            },
+            "mean_probability_of_rule_action": 0.3162693088647287
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 3,
+            "agreement": 0.21428571428571427,
+            "confusion": {
+              "3->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.3661111111111111
+          },
+          "stationary-x": {
+            "n": 1,
+            "matches": 1,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 1
+            },
+            "mean_probability_of_rule_action": 0.8
+          },
+          "unknown": {
+            "n": 350,
+            "matches": 343,
+            "agreement": 0.98,
+            "confusion": {
+              "0->0": 329,
+              "3->0": 1,
+              "2->2": 14,
+              "2->0": 6
+            },
+            "mean_probability_of_rule_action": 0.9580000000000001
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 449,
+            "matches": 121,
+            "agreement": 0.26948775055679286,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 4,
+              "0->0": 42,
+              "2->2": 75,
+              "2->3": 289,
+              "2->0": 27
+            },
+            "mean_probability_of_rule_action": 0.34859553215900657
+          },
+          "missing-object": {
+            "n": 309,
+            "matches": 309,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 309
+            },
+            "mean_probability_of_rule_action": 1.0
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 758,
+            "matches": 430,
+            "agreement": 0.5672823218997362,
+            "confusion": {
+              "0->0": 351,
+              "3->0": 12,
+              "3->3": 4,
+              "2->2": 75,
+              "2->3": 289,
+              "2->0": 27
+            },
+            "mean_probability_of_rule_action": 0.614141680658831
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "intercept",
+      "n": 758,
+      "matches": 432,
+      "agreement": 0.5699208443271768,
+      "confusion": {
+        "0->0": 351,
+        "3->0": 12,
+        "3->3": 11,
+        "2->2": 70,
+        "2->3": 278,
+        "3->2": 5,
+        "0->3": 4,
+        "2->0": 27
+      },
+      "mean_probability_of_rule_action": 0.6148145038778284,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 393,
+            "matches": 85,
+            "agreement": 0.21628498727735368,
+            "confusion": {
+              "2->2": 56,
+              "2->3": 278,
+              "3->3": 8,
+              "3->2": 5,
+              "0->0": 21,
+              "0->3": 4,
+              "2->0": 21
+            },
+            "mean_probability_of_rule_action": 0.31756701878839283
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 3,
+            "agreement": 0.21428571428571427,
+            "confusion": {
+              "3->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.3661111111111111
+          },
+          "stationary-x": {
+            "n": 1,
+            "matches": 1,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 1
+            },
+            "mean_probability_of_rule_action": 0.8
+          },
+          "unknown": {
+            "n": 350,
+            "matches": 343,
+            "agreement": 0.98,
+            "confusion": {
+              "0->0": 329,
+              "3->0": 1,
+              "2->2": 14,
+              "2->0": 6
+            },
+            "mean_probability_of_rule_action": 0.9580000000000001
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 140,
+            "matches": 61,
+            "agreement": 0.4357142857142857,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 4,
+              "0->0": 42,
+              "2->2": 15,
+              "2->3": 41,
+              "2->0": 26
+            },
+            "mean_probability_of_rule_action": 0.41054689754689755
+          },
+          "intercept": {
+            "n": 309,
+            "matches": 62,
+            "agreement": 0.20064724919093851,
+            "confusion": {
+              "2->2": 55,
+              "2->3": 237,
+              "3->3": 7,
+              "3->2": 5,
+              "0->3": 4,
+              "2->0": 1
+            },
+            "mean_probability_of_rule_action": 0.3221774378085058
+          },
+          "missing-object": {
+            "n": 309,
+            "matches": 309,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 309
+            },
+            "mean_probability_of_rule_action": 1.0
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 741,
+            "matches": 422,
+            "agreement": 0.5695006747638327,
+            "confusion": {
+              "0->0": 351,
+              "3->0": 12,
+              "3->3": 7,
+              "2->3": 276,
+              "2->2": 64,
+              "0->3": 4,
+              "2->0": 27
+            },
+            "mean_probability_of_rule_action": 0.6196752954647692
+          },
+          "1": {
+            "n": 17,
+            "matches": 10,
+            "agreement": 0.5882352941176471,
+            "confusion": {
+              "2->2": 6,
+              "2->3": 2,
+              "3->3": 4,
+              "3->2": 5
+            },
+            "mean_probability_of_rule_action": 0.4029411764705882
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "lookahead",
+      "n": 758,
+      "matches": 442,
+      "agreement": 0.58311345646438,
+      "confusion": {
+        "0->0": 363,
+        "3->0": 13,
+        "3->3": 4,
+        "2->2": 75,
+        "2->3": 282,
+        "0->3": 7,
+        "2->0": 14
+      },
+      "mean_probability_of_rule_action": 0.6194451107379868,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 393,
+            "matches": 95,
+            "agreement": 0.24173027989821882,
+            "confusion": {
+              "2->2": 61,
+              "2->3": 282,
+              "3->0": 1,
+              "3->3": 1,
+              "0->3": 7,
+              "0->0": 33,
+              "2->0": 8
+            },
+            "mean_probability_of_rule_action": 0.32649831649831645
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 3,
+            "agreement": 0.21428571428571427,
+            "confusion": {
+              "3->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.3661111111111111
+          },
+          "stationary-x": {
+            "n": 1,
+            "matches": 1,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 1
+            },
+            "mean_probability_of_rule_action": 0.8
+          },
+          "unknown": {
+            "n": 350,
+            "matches": 343,
+            "agreement": 0.98,
+            "confusion": {
+              "0->0": 329,
+              "3->0": 1,
+              "2->2": 14,
+              "2->0": 6
+            },
+            "mean_probability_of_rule_action": 0.9580000000000001
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 56,
+            "matches": 38,
+            "agreement": 0.6785714285714286,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 3,
+              "0->0": 21,
+              "2->2": 14,
+              "2->0": 6
+            },
+            "mean_probability_of_rule_action": 0.5754563492063492
+          },
+          "lookahead": {
+            "n": 393,
+            "matches": 95,
+            "agreement": 0.24173027989821882,
+            "confusion": {
+              "2->2": 61,
+              "2->3": 282,
+              "3->0": 1,
+              "3->3": 1,
+              "0->3": 7,
+              "0->0": 33,
+              "2->0": 8
+            },
+            "mean_probability_of_rule_action": 0.32649831649831645
+          },
+          "missing-object": {
+            "n": 309,
+            "matches": 309,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 309
+            },
+            "mean_probability_of_rule_action": 1.0
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 758,
+            "matches": 442,
+            "agreement": 0.58311345646438,
+            "confusion": {
+              "0->0": 363,
+              "3->0": 13,
+              "3->3": 4,
+              "2->2": 75,
+              "2->3": 282,
+              "0->3": 7,
+              "2->0": 14
+            },
+            "mean_probability_of_rule_action": 0.6194451107379868
+          }
+        }
+      }
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "lookahead-conservative",
+      "n": 758,
+      "matches": 442,
+      "agreement": 0.58311345646438,
+      "confusion": {
+        "0->0": 363,
+        "3->0": 13,
+        "3->3": 4,
+        "2->2": 75,
+        "2->3": 282,
+        "0->3": 7,
+        "2->0": 14
+      },
+      "mean_probability_of_rule_action": 0.6194451107379868,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 393,
+            "matches": 95,
+            "agreement": 0.24173027989821882,
+            "confusion": {
+              "2->2": 61,
+              "2->3": 282,
+              "3->0": 1,
+              "3->3": 1,
+              "0->3": 7,
+              "0->0": 33,
+              "2->0": 8
+            },
+            "mean_probability_of_rule_action": 0.32649831649831645
+          },
+          "outgoing": {
+            "n": 14,
+            "matches": 3,
+            "agreement": 0.21428571428571427,
+            "confusion": {
+              "3->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.3661111111111111
+          },
+          "stationary-x": {
+            "n": 1,
+            "matches": 1,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 1
+            },
+            "mean_probability_of_rule_action": 0.8
+          },
+          "unknown": {
+            "n": 350,
+            "matches": 343,
+            "agreement": 0.98,
+            "confusion": {
+              "0->0": 329,
+              "3->0": 1,
+              "2->2": 14,
+              "2->0": 6
+            },
+            "mean_probability_of_rule_action": 0.9580000000000001
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 56,
+            "matches": 38,
+            "agreement": 0.6785714285714286,
+            "confusion": {
+              "3->0": 12,
+              "3->3": 3,
+              "0->0": 21,
+              "2->2": 14,
+              "2->0": 6
+            },
+            "mean_probability_of_rule_action": 0.5754563492063492
+          },
+          "lookahead": {
+            "n": 372,
+            "matches": 91,
+            "agreement": 0.2446236559139785,
+            "confusion": {
+              "2->2": 57,
+              "2->3": 265,
+              "3->0": 1,
+              "3->3": 1,
+              "0->3": 7,
+              "0->0": 33,
+              "2->0": 8
+            },
+            "mean_probability_of_rule_action": 0.3272146193113935
+          },
+          "missing-object": {
+            "n": 309,
+            "matches": 309,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 309
+            },
+            "mean_probability_of_rule_action": 1.0
+          },
+          "uncertain-motion-fallback": {
+            "n": 21,
+            "matches": 4,
+            "agreement": 0.19047619047619047,
+            "confusion": {
+              "2->3": 17,
+              "2->2": 4
+            },
+            "mean_probability_of_rule_action": 0.3138095238095238
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 758,
+            "matches": 442,
+            "agreement": 0.58311345646438,
+            "confusion": {
+              "0->0": 363,
+              "3->0": 13,
+              "3->3": 4,
+              "2->2": 75,
+              "2->3": 282,
+              "0->3": 7,
+              "2->0": 14
+            },
+            "mean_probability_of_rule_action": 0.6194451107379868
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 66,
+      "rule": "v2",
+      "n": 5000,
+      "matches": 3340,
+      "agreement": 0.668,
+      "confusion": {
+        "0->0": 1647,
+        "3->3": 813,
+        "3->0": 313,
+        "2->0": 1235,
+        "2->2": 880,
+        "0->3": 96,
+        "3->2": 4,
+        "0->2": 12
+      },
+      "mean_probability_of_rule_action": 0.5362181212121212,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2299,
+            "matches": 1533,
+            "agreement": 0.6668116572422792,
+            "confusion": {
+              "2->2": 497,
+              "0->0": 547,
+              "3->0": 164,
+              "3->3": 489,
+              "0->3": 55,
+              "2->0": 541,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.5017762663608684
+          },
+          "outgoing": {
+            "n": 2156,
+            "matches": 1284,
+            "agreement": 0.5955473098330241,
+            "confusion": {
+              "3->3": 305,
+              "3->0": 144,
+              "2->0": 677,
+              "0->0": 611,
+              "2->2": 368,
+              "0->3": 41,
+              "3->2": 4,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4680331609227713
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 14,
+            "agreement": 0.45161290322580644,
+            "confusion": {
+              "2->0": 15,
+              "0->0": 7,
+              "2->2": 3,
+              "3->0": 2,
+              "3->3": 4
+            },
+            "mean_probability_of_rule_action": 0.40191267513848156
+          },
+          "unknown": {
+            "n": 514,
+            "matches": 509,
+            "agreement": 0.9902723735408561,
+            "confusion": {
+              "0->0": 482,
+              "3->3": 15,
+              "2->2": 12,
+              "3->0": 3,
+              "2->0": 2
+            },
+            "mean_probability_of_rule_action": 0.9843738945879024
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 4521,
+            "matches": 2861,
+            "agreement": 0.632824596328246,
+            "confusion": {
+              "3->3": 813,
+              "3->0": 313,
+              "2->0": 1235,
+              "0->0": 1168,
+              "2->2": 880,
+              "0->3": 96,
+              "3->2": 4,
+              "0->2": 12
+            },
+            "mean_probability_of_rule_action": 0.48710475692559296
+          },
+          "missing-object": {
+            "n": 479,
+            "matches": 479,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 479
+            },
+            "mean_probability_of_rule_action": 0.9997703549060543
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 3340,
+            "agreement": 0.668,
+            "confusion": {
+              "0->0": 1647,
+              "3->3": 813,
+              "3->0": 313,
+              "2->0": 1235,
+              "2->2": 880,
+              "0->3": 96,
+              "3->2": 4,
+              "0->2": 12
+            },
+            "mean_probability_of_rule_action": 0.5362181212121212
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 66,
+      "rule": "intercept",
+      "n": 5000,
+      "matches": 2654,
+      "agreement": 0.5308,
+      "confusion": {
+        "0->0": 1238,
+        "3->3": 752,
+        "3->0": 726,
+        "2->0": 1231,
+        "0->2": 17,
+        "2->2": 664,
+        "3->2": 215,
+        "0->3": 68,
+        "2->3": 89
+      },
+      "mean_probability_of_rule_action": 0.4710710505050505,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2299,
+            "matches": 847,
+            "agreement": 0.3684210526315789,
+            "confusion": {
+              "0->2": 11,
+              "2->2": 281,
+              "2->0": 537,
+              "3->0": 577,
+              "3->2": 211,
+              "3->3": 428,
+              "0->0": 138,
+              "0->3": 27,
+              "2->3": 89
+            },
+            "mean_probability_of_rule_action": 0.36009059714148883
+          },
+          "outgoing": {
+            "n": 2156,
+            "matches": 1284,
+            "agreement": 0.5955473098330241,
+            "confusion": {
+              "3->3": 305,
+              "3->0": 144,
+              "2->0": 677,
+              "0->0": 611,
+              "2->2": 368,
+              "0->3": 41,
+              "3->2": 4,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4680331609227713
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 14,
+            "agreement": 0.45161290322580644,
+            "confusion": {
+              "2->0": 15,
+              "0->0": 7,
+              "2->2": 3,
+              "3->0": 2,
+              "3->3": 4
+            },
+            "mean_probability_of_rule_action": 0.40191267513848156
+          },
+          "unknown": {
+            "n": 514,
+            "matches": 509,
+            "agreement": 0.9902723735408561,
+            "confusion": {
+              "0->0": 482,
+              "3->3": 15,
+              "2->2": 12,
+              "3->0": 3,
+              "2->0": 2
+            },
+            "mean_probability_of_rule_action": 0.9843738945879024
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2373,
+            "matches": 1431,
+            "agreement": 0.6030341340075853,
+            "confusion": {
+              "3->3": 351,
+              "3->0": 159,
+              "2->0": 729,
+              "0->0": 657,
+              "2->2": 423,
+              "0->3": 44,
+              "3->2": 4,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4751455132871062
+          },
+          "intercept": {
+            "n": 2148,
+            "matches": 744,
+            "agreement": 0.3463687150837989,
+            "confusion": {
+              "0->2": 11,
+              "2->2": 241,
+              "2->0": 502,
+              "3->0": 567,
+              "3->2": 211,
+              "3->3": 401,
+              "0->0": 102,
+              "2->3": 89,
+              "0->3": 24
+            },
+            "mean_probability_of_rule_action": 0.3486708330982074
+          },
+          "missing-object": {
+            "n": 479,
+            "matches": 479,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 479
+            },
+            "mean_probability_of_rule_action": 0.9997703549060543
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 3856,
+            "matches": 2372,
+            "agreement": 0.6151452282157677,
+            "confusion": {
+              "0->0": 1204,
+              "3->3": 561,
+              "3->0": 388,
+              "2->0": 982,
+              "3->2": 25,
+              "2->2": 607,
+              "0->3": 57,
+              "0->2": 7,
+              "2->3": 25
+            },
+            "mean_probability_of_rule_action": 0.5248923362253238
+          },
+          "1": {
+            "n": 1072,
+            "matches": 279,
+            "agreement": 0.26026119402985076,
+            "confusion": {
+              "0->2": 10,
+              "2->2": 55,
+              "2->0": 248,
+              "3->0": 320,
+              "3->2": 141,
+              "3->3": 190,
+              "0->0": 34,
+              "2->3": 63,
+              "0->3": 11
+            },
+            "mean_probability_of_rule_action": 0.29681940675410823
+          },
+          "2": {
+            "n": 68,
+            "matches": 3,
+            "agreement": 0.04411764705882353,
+            "confusion": {
+              "2->2": 2,
+              "3->2": 46,
+              "3->0": 17,
+              "3->3": 1,
+              "2->3": 1,
+              "2->0": 1
+            },
+            "mean_probability_of_rule_action": 0.18411764705882352
+          },
+          "3": {
+            "n": 4,
+            "matches": 0,
+            "agreement": 0.0,
+            "confusion": {
+              "3->2": 3,
+              "3->0": 1
+            },
+            "mean_probability_of_rule_action": 0.165
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 66,
+      "rule": "lookahead",
+      "n": 5000,
+      "matches": 3235,
+      "agreement": 0.647,
+      "confusion": {
+        "0->0": 1507,
+        "3->3": 851,
+        "3->0": 460,
+        "2->0": 1228,
+        "2->2": 877,
+        "0->3": 58,
+        "0->2": 15,
+        "3->2": 4
+      },
+      "mean_probability_of_rule_action": 0.5316886868686869,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2299,
+            "matches": 1428,
+            "agreement": 0.6211396259243149,
+            "confusion": {
+              "2->2": 494,
+              "2->0": 534,
+              "3->0": 311,
+              "0->0": 407,
+              "0->3": 17,
+              "3->3": 527,
+              "0->2": 9
+            },
+            "mean_probability_of_rule_action": 0.491925386971059
+          },
+          "outgoing": {
+            "n": 2156,
+            "matches": 1284,
+            "agreement": 0.5955473098330241,
+            "confusion": {
+              "3->3": 305,
+              "3->0": 144,
+              "2->0": 677,
+              "0->0": 611,
+              "2->2": 368,
+              "0->3": 41,
+              "3->2": 4,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4680331609227713
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 14,
+            "agreement": 0.45161290322580644,
+            "confusion": {
+              "2->0": 15,
+              "0->0": 7,
+              "2->2": 3,
+              "3->0": 2,
+              "3->3": 4
+            },
+            "mean_probability_of_rule_action": 0.40191267513848156
+          },
+          "unknown": {
+            "n": 514,
+            "matches": 509,
+            "agreement": 0.9902723735408561,
+            "confusion": {
+              "0->0": 482,
+              "3->3": 15,
+              "2->2": 12,
+              "3->0": 3,
+              "2->0": 2
+            },
+            "mean_probability_of_rule_action": 0.9843738945879024
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2222,
+            "matches": 1328,
+            "agreement": 0.5976597659765976,
+            "confusion": {
+              "3->3": 324,
+              "3->0": 149,
+              "2->0": 694,
+              "0->0": 621,
+              "2->2": 383,
+              "0->3": 41,
+              "3->2": 4,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.471924828846521
+          },
+          "lookahead": {
+            "n": 2299,
+            "matches": 1428,
+            "agreement": 0.6211396259243149,
+            "confusion": {
+              "2->2": 494,
+              "2->0": 534,
+              "3->0": 311,
+              "0->0": 407,
+              "0->3": 17,
+              "3->3": 527,
+              "0->2": 9
+            },
+            "mean_probability_of_rule_action": 0.491925386971059
+          },
+          "missing-object": {
+            "n": 479,
+            "matches": 479,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 479
+            },
+            "mean_probability_of_rule_action": 0.9997703549060543
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 3235,
+            "agreement": 0.647,
+            "confusion": {
+              "0->0": 1507,
+              "3->3": 851,
+              "3->0": 460,
+              "2->0": 1228,
+              "2->2": 877,
+              "0->3": 58,
+              "0->2": 15,
+              "3->2": 4
+            },
+            "mean_probability_of_rule_action": 0.5316886868686869
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 66,
+      "rule": "lookahead-conservative",
+      "n": 5000,
+      "matches": 3259,
+      "agreement": 0.6518,
+      "confusion": {
+        "0->0": 1535,
+        "3->3": 847,
+        "3->0": 444,
+        "2->0": 1216,
+        "2->2": 877,
+        "0->3": 62,
+        "0->2": 15,
+        "3->2": 4
+      },
+      "mean_probability_of_rule_action": 0.5337552121212121,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2299,
+            "matches": 1452,
+            "agreement": 0.631578947368421,
+            "confusion": {
+              "2->2": 494,
+              "2->0": 522,
+              "3->0": 295,
+              "0->0": 435,
+              "0->3": 21,
+              "3->3": 523,
+              "0->2": 9
+            },
+            "mean_probability_of_rule_action": 0.4964197872592827
+          },
+          "outgoing": {
+            "n": 2156,
+            "matches": 1284,
+            "agreement": 0.5955473098330241,
+            "confusion": {
+              "3->3": 305,
+              "3->0": 144,
+              "2->0": 677,
+              "0->0": 611,
+              "2->2": 368,
+              "0->3": 41,
+              "3->2": 4,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.4680331609227713
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 14,
+            "agreement": 0.45161290322580644,
+            "confusion": {
+              "2->0": 15,
+              "0->0": 7,
+              "2->2": 3,
+              "3->0": 2,
+              "3->3": 4
+            },
+            "mean_probability_of_rule_action": 0.40191267513848156
+          },
+          "unknown": {
+            "n": 514,
+            "matches": 509,
+            "agreement": 0.9902723735408561,
+            "confusion": {
+              "0->0": 482,
+              "3->3": 15,
+              "2->2": 12,
+              "3->0": 3,
+              "2->0": 2
+            },
+            "mean_probability_of_rule_action": 0.9843738945879024
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2222,
+            "matches": 1328,
+            "agreement": 0.5976597659765976,
+            "confusion": {
+              "3->3": 324,
+              "3->0": 149,
+              "2->0": 694,
+              "0->0": 621,
+              "2->2": 383,
+              "0->3": 41,
+              "3->2": 4,
+              "0->2": 6
+            },
+            "mean_probability_of_rule_action": 0.471924828846521
+          },
+          "lookahead": {
+            "n": 2138,
+            "matches": 1343,
+            "agreement": 0.6281571562207671,
+            "confusion": {
+              "2->2": 459,
+              "2->0": 483,
+              "3->0": 287,
+              "0->0": 380,
+              "0->3": 16,
+              "3->3": 504,
+              "0->2": 9
+            },
+            "mean_probability_of_rule_action": 0.4938450926477119
+          },
+          "missing-object": {
+            "n": 479,
+            "matches": 479,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 479
+            },
+            "mean_probability_of_rule_action": 0.9997703549060543
+          },
+          "uncertain-motion-fallback": {
+            "n": 161,
+            "matches": 109,
+            "agreement": 0.6770186335403726,
+            "confusion": {
+              "2->2": 35,
+              "0->0": 55,
+              "2->0": 39,
+              "3->0": 8,
+              "3->3": 19,
+              "0->3": 5
+            },
+            "mean_probability_of_rule_action": 0.5306104523495828
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 3259,
+            "agreement": 0.6518,
+            "confusion": {
+              "0->0": 1535,
+              "3->3": 847,
+              "3->0": 444,
+              "2->0": 1216,
+              "2->2": 877,
+              "0->3": 62,
+              "0->2": 15,
+              "3->2": 4
+            },
+            "mean_probability_of_rule_action": 0.5337552121212121
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 67,
+      "rule": "v2",
+      "n": 4423,
+      "matches": 2875,
+      "agreement": 0.6500113045444269,
+      "confusion": {
+        "0->0": 1622,
+        "3->3": 584,
+        "3->0": 278,
+        "2->0": 1164,
+        "2->2": 669,
+        "0->3": 99,
+        "3->2": 2,
+        "0->2": 5
+      },
+      "mean_probability_of_rule_action": 0.5284957191174691,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2034,
+            "matches": 1276,
+            "agreement": 0.6273352999016716,
+            "confusion": {
+              "2->2": 351,
+              "2->0": 555,
+              "0->0": 577,
+              "3->0": 145,
+              "3->3": 348,
+              "0->3": 55,
+              "0->2": 3
+            },
+            "mean_probability_of_rule_action": 0.48292184380679953
+          },
+          "outgoing": {
+            "n": 1826,
+            "matches": 1065,
+            "agreement": 0.5832420591456736,
+            "confusion": {
+              "3->0": 128,
+              "0->0": 553,
+              "3->3": 211,
+              "2->0": 585,
+              "2->2": 301,
+              "3->2": 2,
+              "0->3": 44,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4561310807970173
+          },
+          "stationary-x": {
+            "n": 50,
+            "matches": 28,
+            "agreement": 0.56,
+            "confusion": {
+              "2->0": 20,
+              "3->3": 6,
+              "0->0": 15,
+              "2->2": 7,
+              "3->0": 2
+            },
+            "mean_probability_of_rule_action": 0.45299999999999996
+          },
+          "unknown": {
+            "n": 513,
+            "matches": 506,
+            "agreement": 0.98635477582846,
+            "confusion": {
+              "0->0": 477,
+              "3->3": 19,
+              "2->2": 10,
+              "3->0": 3,
+              "2->0": 4
+            },
+            "mean_probability_of_rule_action": 0.9741290093921673
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 3954,
+            "matches": 2406,
+            "agreement": 0.6084977238239757,
+            "confusion": {
+              "3->3": 584,
+              "3->0": 278,
+              "0->0": 1153,
+              "2->0": 1164,
+              "2->2": 669,
+              "0->3": 99,
+              "3->2": 2,
+              "0->2": 5
+            },
+            "mean_probability_of_rule_action": 0.47268501913418454
+          },
+          "missing-object": {
+            "n": 469,
+            "matches": 469,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 469
+            },
+            "mean_probability_of_rule_action": 0.9990191897654584
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 4423,
+            "matches": 2875,
+            "agreement": 0.6500113045444269,
+            "confusion": {
+              "0->0": 1622,
+              "3->3": 584,
+              "3->0": 278,
+              "2->0": 1164,
+              "2->2": 669,
+              "0->3": 99,
+              "3->2": 2,
+              "0->2": 5
+            },
+            "mean_probability_of_rule_action": 0.5284957191174691
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 67,
+      "rule": "intercept",
+      "n": 4423,
+      "matches": 2241,
+      "agreement": 0.5066696812118472,
+      "confusion": {
+        "0->0": 1163,
+        "3->3": 544,
+        "3->0": 699,
+        "2->0": 1202,
+        "2->2": 534,
+        "3->2": 137,
+        "0->3": 66,
+        "0->2": 5,
+        "2->3": 73
+      },
+      "mean_probability_of_rule_action": 0.46025927372298614,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2034,
+            "matches": 642,
+            "agreement": 0.31563421828908556,
+            "confusion": {
+              "2->2": 216,
+              "2->0": 593,
+              "0->0": 118,
+              "3->0": 566,
+              "3->2": 135,
+              "3->3": 308,
+              "0->2": 3,
+              "0->3": 22,
+              "2->3": 73
+            },
+            "mean_probability_of_rule_action": 0.3345394455866432
+          },
+          "outgoing": {
+            "n": 1826,
+            "matches": 1065,
+            "agreement": 0.5832420591456736,
+            "confusion": {
+              "3->0": 128,
+              "0->0": 553,
+              "3->3": 211,
+              "2->0": 585,
+              "2->2": 301,
+              "3->2": 2,
+              "0->3": 44,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4561310807970173
+          },
+          "stationary-x": {
+            "n": 50,
+            "matches": 28,
+            "agreement": 0.56,
+            "confusion": {
+              "2->0": 20,
+              "3->3": 6,
+              "0->0": 15,
+              "2->2": 7,
+              "3->0": 2
+            },
+            "mean_probability_of_rule_action": 0.45299999999999996
+          },
+          "unknown": {
+            "n": 513,
+            "matches": 506,
+            "agreement": 0.98635477582846,
+            "confusion": {
+              "0->0": 477,
+              "3->3": 19,
+              "2->2": 10,
+              "3->0": 3,
+              "2->0": 4
+            },
+            "mean_probability_of_rule_action": 0.9741290093921673
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2056,
+            "matches": 1218,
+            "agreement": 0.5924124513618677,
+            "confusion": {
+              "3->3": 250,
+              "3->0": 147,
+              "0->0": 616,
+              "2->0": 642,
+              "2->2": 352,
+              "3->2": 2,
+              "0->3": 45,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4654625044216484
+          },
+          "intercept": {
+            "n": 1898,
+            "matches": 554,
+            "agreement": 0.291886195995785,
+            "confusion": {
+              "2->2": 182,
+              "2->0": 560,
+              "0->0": 78,
+              "3->0": 552,
+              "3->2": 135,
+              "3->3": 294,
+              "0->2": 3,
+              "0->3": 21,
+              "2->3": 73
+            },
+            "mean_probability_of_rule_action": 0.32149412991878745
+          },
+          "missing-object": {
+            "n": 469,
+            "matches": 469,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 469
+            },
+            "mean_probability_of_rule_action": 0.9990191897654584
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 3516,
+            "matches": 2032,
+            "agreement": 0.5779294653014789,
+            "confusion": {
+              "0->0": 1140,
+              "3->3": 405,
+              "3->0": 425,
+              "2->0": 972,
+              "3->2": 13,
+              "2->2": 487,
+              "0->3": 54,
+              "2->3": 18,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.506320830604107
+          },
+          "1": {
+            "n": 848,
+            "matches": 208,
+            "agreement": 0.24528301886792453,
+            "confusion": {
+              "2->2": 46,
+              "2->0": 223,
+              "0->0": 23,
+              "3->0": 255,
+              "3->2": 93,
+              "3->3": 139,
+              "0->2": 3,
+              "0->3": 12,
+              "2->3": 54
+            },
+            "mean_probability_of_rule_action": 0.28971817228892704
+          },
+          "2": {
+            "n": 52,
+            "matches": 0,
+            "agreement": 0.0,
+            "confusion": {
+              "3->2": 27,
+              "3->0": 19,
+              "2->0": 5,
+              "2->3": 1
+            },
+            "mean_probability_of_rule_action": 0.16214840714840714
+          },
+          "3": {
+            "n": 7,
+            "matches": 1,
+            "agreement": 0.14285714285714285,
+            "confusion": {
+              "3->2": 4,
+              "2->0": 2,
+              "2->2": 1
+            },
+            "mean_probability_of_rule_action": 0.1985714285714286
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 67,
+      "rule": "lookahead",
+      "n": 4423,
+      "matches": 2699,
+      "agreement": 0.6102193081618811,
+      "confusion": {
+        "0->0": 1403,
+        "3->3": 630,
+        "3->0": 476,
+        "2->0": 1185,
+        "2->2": 666,
+        "0->2": 8,
+        "3->2": 2,
+        "0->3": 53
+      },
+      "mean_probability_of_rule_action": 0.5162735654076374,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2034,
+            "matches": 1100,
+            "agreement": 0.5408062930186824,
+            "confusion": {
+              "2->2": 348,
+              "2->0": 576,
+              "0->0": 358,
+              "3->3": 394,
+              "0->2": 6,
+              "3->0": 343,
+              "0->3": 9
+            },
+            "mean_probability_of_rule_action": 0.45634436796678685
+          },
+          "outgoing": {
+            "n": 1826,
+            "matches": 1065,
+            "agreement": 0.5832420591456736,
+            "confusion": {
+              "3->0": 128,
+              "0->0": 553,
+              "3->3": 211,
+              "2->0": 585,
+              "2->2": 301,
+              "3->2": 2,
+              "0->3": 44,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4561310807970173
+          },
+          "stationary-x": {
+            "n": 50,
+            "matches": 28,
+            "agreement": 0.56,
+            "confusion": {
+              "2->0": 20,
+              "3->3": 6,
+              "0->0": 15,
+              "2->2": 7,
+              "3->0": 2
+            },
+            "mean_probability_of_rule_action": 0.45299999999999996
+          },
+          "unknown": {
+            "n": 513,
+            "matches": 506,
+            "agreement": 0.98635477582846,
+            "confusion": {
+              "0->0": 477,
+              "3->3": 19,
+              "2->2": 10,
+              "3->0": 3,
+              "2->0": 4
+            },
+            "mean_probability_of_rule_action": 0.9741290093921673
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 1920,
+            "matches": 1130,
+            "agreement": 0.5885416666666666,
+            "confusion": {
+              "3->3": 236,
+              "3->0": 133,
+              "0->0": 576,
+              "2->0": 609,
+              "2->2": 318,
+              "3->2": 2,
+              "0->3": 44,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.461840382996633
+          },
+          "lookahead": {
+            "n": 2034,
+            "matches": 1100,
+            "agreement": 0.5408062930186824,
+            "confusion": {
+              "2->2": 348,
+              "2->0": 576,
+              "0->0": 358,
+              "3->3": 394,
+              "0->2": 6,
+              "3->0": 343,
+              "0->3": 9
+            },
+            "mean_probability_of_rule_action": 0.45634436796678685
+          },
+          "missing-object": {
+            "n": 469,
+            "matches": 469,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 469
+            },
+            "mean_probability_of_rule_action": 0.9990191897654584
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 4423,
+            "matches": 2699,
+            "agreement": 0.6102193081618811,
+            "confusion": {
+              "0->0": 1403,
+              "3->3": 630,
+              "3->0": 476,
+              "2->0": 1185,
+              "2->2": 666,
+              "0->2": 8,
+              "3->2": 2,
+              "0->3": 53
+            },
+            "mean_probability_of_rule_action": 0.5162735654076374
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "seed": 67,
+      "rule": "lookahead-conservative",
+      "n": 4423,
+      "matches": 2714,
+      "agreement": 0.613610671489939,
+      "confusion": {
+        "0->0": 1423,
+        "3->3": 625,
+        "3->0": 468,
+        "2->0": 1173,
+        "2->2": 666,
+        "0->2": 8,
+        "3->2": 2,
+        "0->3": 58
+      },
+      "mean_probability_of_rule_action": 0.518545778837436,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2034,
+            "matches": 1115,
+            "agreement": 0.548180924287119,
+            "confusion": {
+              "2->2": 348,
+              "2->0": 564,
+              "0->0": 378,
+              "3->3": 389,
+              "0->2": 6,
+              "3->0": 335,
+              "0->3": 14
+            },
+            "mean_probability_of_rule_action": 0.46128537091663935
+          },
+          "outgoing": {
+            "n": 1826,
+            "matches": 1065,
+            "agreement": 0.5832420591456736,
+            "confusion": {
+              "3->0": 128,
+              "0->0": 553,
+              "3->3": 211,
+              "2->0": 585,
+              "2->2": 301,
+              "3->2": 2,
+              "0->3": 44,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4561310807970173
+          },
+          "stationary-x": {
+            "n": 50,
+            "matches": 28,
+            "agreement": 0.56,
+            "confusion": {
+              "2->0": 20,
+              "3->3": 6,
+              "0->0": 15,
+              "2->2": 7,
+              "3->0": 2
+            },
+            "mean_probability_of_rule_action": 0.45299999999999996
+          },
+          "unknown": {
+            "n": 513,
+            "matches": 506,
+            "agreement": 0.98635477582846,
+            "confusion": {
+              "0->0": 477,
+              "3->3": 19,
+              "2->2": 10,
+              "3->0": 3,
+              "2->0": 4
+            },
+            "mean_probability_of_rule_action": 0.9741290093921673
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 1920,
+            "matches": 1130,
+            "agreement": 0.5885416666666666,
+            "confusion": {
+              "3->3": 236,
+              "3->0": 133,
+              "0->0": 576,
+              "2->0": 609,
+              "2->2": 318,
+              "3->2": 2,
+              "0->3": 44,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.461840382996633
+          },
+          "lookahead": {
+            "n": 1907,
+            "matches": 1030,
+            "agreement": 0.540115364446775,
+            "confusion": {
+              "2->2": 336,
+              "2->0": 536,
+              "0->0": 322,
+              "3->3": 372,
+              "0->2": 6,
+              "3->0": 326,
+              "0->3": 9
+            },
+            "mean_probability_of_rule_action": 0.4537246614016409
+          },
+          "missing-object": {
+            "n": 469,
+            "matches": 469,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 469
+            },
+            "mean_probability_of_rule_action": 0.9990191897654584
+          },
+          "uncertain-motion-fallback": {
+            "n": 127,
+            "matches": 85,
+            "agreement": 0.6692913385826772,
+            "confusion": {
+              "0->0": 56,
+              "3->3": 17,
+              "3->0": 9,
+              "2->0": 28,
+              "2->2": 12,
+              "0->3": 5
+            },
+            "mean_probability_of_rule_action": 0.5748150799331901
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 4423,
+            "matches": 2714,
+            "agreement": 0.613610671489939,
+            "confusion": {
+              "0->0": 1423,
+              "3->3": 625,
+              "3->0": 468,
+              "2->0": 1173,
+              "2->2": 666,
+              "0->2": 8,
+              "3->2": 2,
+              "0->3": 58
+            },
+            "mean_probability_of_rule_action": 0.518545778837436
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "v2",
+      "n": 5000,
+      "matches": 2824,
+      "agreement": 0.5648,
+      "confusion": {
+        "0->0": 1672,
+        "3->3": 495,
+        "3->0": 258,
+        "2->0": 1674,
+        "2->2": 657,
+        "0->2": 14,
+        "0->3": 162,
+        "2->3": 55,
+        "3->2": 13
+      },
+      "mean_probability_of_rule_action": 0.4565660404040405,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2369,
+            "matches": 1190,
+            "agreement": 0.5023216547066273,
+            "confusion": {
+              "2->2": 352,
+              "0->0": 548,
+              "3->0": 139,
+              "3->3": 290,
+              "2->0": 869,
+              "0->2": 12,
+              "0->3": 118,
+              "2->3": 33,
+              "3->2": 8
+            },
+            "mean_probability_of_rule_action": 0.3845470321620596
+          },
+          "outgoing": {
+            "n": 2174,
+            "matches": 1200,
+            "agreement": 0.5519779208831647,
+            "confusion": {
+              "3->3": 190,
+              "3->0": 114,
+              "2->0": 791,
+              "0->0": 713,
+              "0->3": 40,
+              "2->2": 297,
+              "2->3": 22,
+              "3->2": 5,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4359439844628437
+          },
+          "stationary-x": {
+            "n": 27,
+            "matches": 14,
+            "agreement": 0.5185185185185185,
+            "confusion": {
+              "2->0": 9,
+              "0->3": 4,
+              "0->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.4018930041152263
+          },
+          "unknown": {
+            "n": 430,
+            "matches": 420,
+            "agreement": 0.9767441860465116,
+            "confusion": {
+              "0->0": 400,
+              "3->3": 12,
+              "2->2": 8,
+              "3->0": 5,
+              "2->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9610347662673244
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 4603,
+            "matches": 2427,
+            "agreement": 0.5272648272865522,
+            "confusion": {
+              "3->3": 495,
+              "3->0": 258,
+              "2->0": 1674,
+              "0->0": 1275,
+              "2->2": 657,
+              "0->2": 14,
+              "0->3": 162,
+              "2->3": 55,
+              "3->2": 13
+            },
+            "mean_probability_of_rule_action": 0.40985014165114103
+          },
+          "missing-object": {
+            "n": 397,
+            "matches": 397,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 397
+            },
+            "mean_probability_of_rule_action": 0.9982115869017633
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 2824,
+            "agreement": 0.5648,
+            "confusion": {
+              "0->0": 1672,
+              "3->3": 495,
+              "3->0": 258,
+              "2->0": 1674,
+              "2->2": 657,
+              "0->2": 14,
+              "0->3": 162,
+              "2->3": 55,
+              "3->2": 13
+            },
+            "mean_probability_of_rule_action": 0.4565660404040405
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "intercept",
+      "n": 5000,
+      "matches": 2325,
+      "agreement": 0.465,
+      "confusion": {
+        "0->0": 1261,
+        "3->3": 561,
+        "3->0": 808,
+        "2->0": 1535,
+        "0->2": 17,
+        "2->2": 503,
+        "3->2": 164,
+        "0->3": 65,
+        "2->3": 86
+      },
+      "mean_probability_of_rule_action": 0.43020212121212126,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2369,
+            "matches": 691,
+            "agreement": 0.2916842549598987,
+            "confusion": {
+              "0->2": 15,
+              "2->2": 198,
+              "2->0": 730,
+              "3->0": 689,
+              "3->3": 356,
+              "3->2": 159,
+              "0->0": 137,
+              "2->3": 64,
+              "0->3": 21
+            },
+            "mean_probability_of_rule_action": 0.328903471182914
+          },
+          "outgoing": {
+            "n": 2174,
+            "matches": 1200,
+            "agreement": 0.5519779208831647,
+            "confusion": {
+              "3->3": 190,
+              "3->0": 114,
+              "2->0": 791,
+              "0->0": 713,
+              "0->3": 40,
+              "2->2": 297,
+              "2->3": 22,
+              "3->2": 5,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4359439844628437
+          },
+          "stationary-x": {
+            "n": 27,
+            "matches": 14,
+            "agreement": 0.5185185185185185,
+            "confusion": {
+              "2->0": 9,
+              "0->3": 4,
+              "0->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.4018930041152263
+          },
+          "unknown": {
+            "n": 430,
+            "matches": 420,
+            "agreement": 0.9767441860465116,
+            "confusion": {
+              "0->0": 400,
+              "3->3": 12,
+              "2->2": 8,
+              "3->0": 5,
+              "2->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9610347662673244
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2388,
+            "matches": 1315,
+            "agreement": 0.5506700167504187,
+            "confusion": {
+              "3->3": 217,
+              "3->0": 132,
+              "2->0": 864,
+              "0->0": 763,
+              "0->3": 47,
+              "2->2": 335,
+              "2->3": 23,
+              "3->2": 5,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.43291237331438337
+          },
+          "intercept": {
+            "n": 2215,
+            "matches": 613,
+            "agreement": 0.2767494356659142,
+            "confusion": {
+              "0->2": 15,
+              "2->2": 168,
+              "2->0": 671,
+              "3->0": 676,
+              "3->3": 344,
+              "3->2": 159,
+              "0->0": 101,
+              "2->3": 63,
+              "0->3": 18
+            },
+            "mean_probability_of_rule_action": 0.32547442825546663
+          },
+          "missing-object": {
+            "n": 397,
+            "matches": 397,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 397
+            },
+            "mean_probability_of_rule_action": 0.9982115869017633
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 3924,
+            "matches": 2113,
+            "agreement": 0.5384811416921509,
+            "confusion": {
+              "0->0": 1233,
+              "3->3": 426,
+              "3->0": 476,
+              "2->0": 1238,
+              "0->3": 53,
+              "2->2": 454,
+              "0->2": 3,
+              "2->3": 33,
+              "3->2": 8
+            },
+            "mean_probability_of_rule_action": 0.4739748916277968
+          },
+          "1": {
+            "n": 985,
+            "matches": 207,
+            "agreement": 0.2101522842639594,
+            "confusion": {
+              "0->2": 14,
+              "2->2": 45,
+              "2->0": 288,
+              "3->0": 296,
+              "3->3": 135,
+              "3->2": 118,
+              "0->0": 27,
+              "2->3": 50,
+              "0->3": 12
+            },
+            "mean_probability_of_rule_action": 0.2764280367123007
+          },
+          "2": {
+            "n": 86,
+            "matches": 3,
+            "agreement": 0.03488372093023256,
+            "confusion": {
+              "3->2": 36,
+              "3->0": 35,
+              "2->2": 3,
+              "2->0": 9,
+              "2->3": 3
+            },
+            "mean_probability_of_rule_action": 0.20104651162790696
+          },
+          "3": {
+            "n": 5,
+            "matches": 2,
+            "agreement": 0.4,
+            "confusion": {
+              "2->2": 1,
+              "3->2": 2,
+              "3->0": 1,
+              "0->0": 1
+            },
+            "mean_probability_of_rule_action": 0.3123030303030303
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "lookahead",
+      "n": 5000,
+      "matches": 2879,
+      "agreement": 0.5758,
+      "confusion": {
+        "0->0": 1604,
+        "3->3": 606,
+        "3->0": 368,
+        "2->0": 1632,
+        "2->2": 669,
+        "0->3": 52,
+        "2->3": 54,
+        "3->2": 5,
+        "0->2": 10
+      },
+      "mean_probability_of_rule_action": 0.4709046868686869,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2369,
+            "matches": 1245,
+            "agreement": 0.5255382017729,
+            "confusion": {
+              "2->2": 364,
+              "2->0": 827,
+              "3->0": 249,
+              "0->3": 8,
+              "0->0": 480,
+              "3->3": 401,
+              "2->3": 32,
+              "0->2": 8
+            },
+            "mean_probability_of_rule_action": 0.41481011039052407
+          },
+          "outgoing": {
+            "n": 2174,
+            "matches": 1200,
+            "agreement": 0.5519779208831647,
+            "confusion": {
+              "3->3": 190,
+              "3->0": 114,
+              "2->0": 791,
+              "0->0": 713,
+              "0->3": 40,
+              "2->2": 297,
+              "2->3": 22,
+              "3->2": 5,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4359439844628437
+          },
+          "stationary-x": {
+            "n": 27,
+            "matches": 14,
+            "agreement": 0.5185185185185185,
+            "confusion": {
+              "2->0": 9,
+              "0->3": 4,
+              "0->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.4018930041152263
+          },
+          "unknown": {
+            "n": 430,
+            "matches": 420,
+            "agreement": 0.9767441860465116,
+            "confusion": {
+              "0->0": 400,
+              "3->3": 12,
+              "2->2": 8,
+              "3->0": 5,
+              "2->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9610347662673244
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2234,
+            "matches": 1237,
+            "agreement": 0.553715308863026,
+            "confusion": {
+              "3->3": 205,
+              "3->0": 119,
+              "2->0": 805,
+              "0->0": 727,
+              "0->3": 44,
+              "2->2": 305,
+              "2->3": 22,
+              "3->2": 5,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4366823110242985
+          },
+          "lookahead": {
+            "n": 2369,
+            "matches": 1245,
+            "agreement": 0.5255382017729,
+            "confusion": {
+              "2->2": 364,
+              "2->0": 827,
+              "3->0": 249,
+              "0->3": 8,
+              "0->0": 480,
+              "3->3": 401,
+              "2->3": 32,
+              "0->2": 8
+            },
+            "mean_probability_of_rule_action": 0.41481011039052407
+          },
+          "missing-object": {
+            "n": 397,
+            "matches": 397,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 397
+            },
+            "mean_probability_of_rule_action": 0.9982115869017633
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 2879,
+            "agreement": 0.5758,
+            "confusion": {
+              "0->0": 1604,
+              "3->3": 606,
+              "3->0": 368,
+              "2->0": 1632,
+              "2->2": 669,
+              "0->3": 52,
+              "2->3": 54,
+              "3->2": 5,
+              "0->2": 10
+            },
+            "mean_probability_of_rule_action": 0.4709046868686869
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 66,
+      "rule": "lookahead-conservative",
+      "n": 5000,
+      "matches": 2889,
+      "agreement": 0.5778,
+      "confusion": {
+        "0->0": 1624,
+        "3->3": 596,
+        "3->0": 363,
+        "2->0": 1617,
+        "2->2": 669,
+        "0->3": 62,
+        "2->3": 54,
+        "3->2": 5,
+        "0->2": 10
+      },
+      "mean_probability_of_rule_action": 0.4712029292929293,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2369,
+            "matches": 1255,
+            "agreement": 0.5297593921485859,
+            "confusion": {
+              "2->2": 364,
+              "2->0": 812,
+              "3->0": 244,
+              "0->3": 18,
+              "0->0": 500,
+              "3->3": 391,
+              "2->3": 32,
+              "0->2": 8
+            },
+            "mean_probability_of_rule_action": 0.41543957941594073
+          },
+          "outgoing": {
+            "n": 2174,
+            "matches": 1200,
+            "agreement": 0.5519779208831647,
+            "confusion": {
+              "3->3": 190,
+              "3->0": 114,
+              "2->0": 791,
+              "0->0": 713,
+              "0->3": 40,
+              "2->2": 297,
+              "2->3": 22,
+              "3->2": 5,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4359439844628437
+          },
+          "stationary-x": {
+            "n": 27,
+            "matches": 14,
+            "agreement": 0.5185185185185185,
+            "confusion": {
+              "2->0": 9,
+              "0->3": 4,
+              "0->0": 11,
+              "3->3": 3
+            },
+            "mean_probability_of_rule_action": 0.4018930041152263
+          },
+          "unknown": {
+            "n": 430,
+            "matches": 420,
+            "agreement": 0.9767441860465116,
+            "confusion": {
+              "0->0": 400,
+              "3->3": 12,
+              "2->2": 8,
+              "3->0": 5,
+              "2->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9610347662673244
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2234,
+            "matches": 1237,
+            "agreement": 0.553715308863026,
+            "confusion": {
+              "3->3": 205,
+              "3->0": 119,
+              "2->0": 805,
+              "0->0": 727,
+              "0->3": 44,
+              "2->2": 305,
+              "2->3": 22,
+              "3->2": 5,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.4366823110242985
+          },
+          "lookahead": {
+            "n": 2213,
+            "matches": 1152,
+            "agreement": 0.5205603253502034,
+            "confusion": {
+              "2->2": 338,
+              "2->0": 779,
+              "3->0": 237,
+              "0->3": 7,
+              "0->0": 439,
+              "3->3": 375,
+              "2->3": 30,
+              "0->2": 8
+            },
+            "mean_probability_of_rule_action": 0.41344283321237685
+          },
+          "missing-object": {
+            "n": 397,
+            "matches": 397,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 397
+            },
+            "mean_probability_of_rule_action": 0.9982115869017633
+          },
+          "uncertain-motion-fallback": {
+            "n": 156,
+            "matches": 103,
+            "agreement": 0.6602564102564102,
+            "confusion": {
+              "2->2": 26,
+              "0->0": 61,
+              "2->0": 33,
+              "0->3": 11,
+              "3->0": 7,
+              "2->3": 2,
+              "3->3": 16
+            },
+            "mean_probability_of_rule_action": 0.44376521626521626
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 2889,
+            "agreement": 0.5778,
+            "confusion": {
+              "0->0": 1624,
+              "3->3": 596,
+              "3->0": 363,
+              "2->0": 1617,
+              "2->2": 669,
+              "0->3": 62,
+              "2->3": 54,
+              "3->2": 5,
+              "0->2": 10
+            },
+            "mean_probability_of_rule_action": 0.4712029292929293
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "v2",
+      "n": 5000,
+      "matches": 2734,
+      "agreement": 0.5468,
+      "confusion": {
+        "0->0": 1632,
+        "3->3": 433,
+        "2->0": 1761,
+        "0->3": 230,
+        "2->2": 669,
+        "3->0": 196,
+        "2->3": 43,
+        "0->2": 22,
+        "3->2": 14
+      },
+      "mean_probability_of_rule_action": 0.4417092121212121,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2288,
+            "matches": 1257,
+            "agreement": 0.5493881118881119,
+            "confusion": {
+              "2->2": 347,
+              "2->0": 730,
+              "0->0": 631,
+              "3->3": 279,
+              "0->3": 135,
+              "0->2": 21,
+              "3->0": 116,
+              "3->2": 14,
+              "2->3": 15
+            },
+            "mean_probability_of_rule_action": 0.40219149537331356
+          },
+          "outgoing": {
+            "n": 2272,
+            "matches": 1058,
+            "agreement": 0.46566901408450706,
+            "confusion": {
+              "3->3": 146,
+              "2->0": 1018,
+              "0->0": 609,
+              "0->3": 94,
+              "2->2": 303,
+              "3->0": 73,
+              "2->3": 28,
+              "0->2": 1
+            },
+            "mean_probability_of_rule_action": 0.38767690105278135
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 18,
+            "agreement": 0.5806451612903226,
+            "confusion": {
+              "2->0": 10,
+              "3->0": 2,
+              "0->0": 8,
+              "2->2": 7,
+              "3->3": 3,
+              "0->3": 1
+            },
+            "mean_probability_of_rule_action": 0.4148387096774193
+          },
+          "unknown": {
+            "n": 409,
+            "matches": 401,
+            "agreement": 0.980440097799511,
+            "confusion": {
+              "0->0": 384,
+              "3->3": 5,
+              "2->2": 12,
+              "2->0": 3,
+              "3->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9649633251833741
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 4622,
+            "matches": 2356,
+            "agreement": 0.5097360450021635,
+            "confusion": {
+              "3->3": 433,
+              "2->0": 1761,
+              "0->0": 1254,
+              "0->3": 230,
+              "2->2": 669,
+              "3->0": 196,
+              "2->3": 43,
+              "0->2": 22,
+              "3->2": 14
+            },
+            "mean_probability_of_rule_action": 0.3961566552587755
+          },
+          "missing-object": {
+            "n": 378,
+            "matches": 378,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 378
+            },
+            "mean_probability_of_rule_action": 0.9987037037037036
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 2734,
+            "agreement": 0.5468,
+            "confusion": {
+              "0->0": 1632,
+              "3->3": 433,
+              "2->0": 1761,
+              "0->3": 230,
+              "2->2": 669,
+              "3->0": 196,
+              "2->3": 43,
+              "0->2": 22,
+              "3->2": 14
+            },
+            "mean_probability_of_rule_action": 0.4417092121212121
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "intercept",
+      "n": 5000,
+      "matches": 2132,
+      "agreement": 0.4264,
+      "confusion": {
+        "0->0": 1106,
+        "3->3": 519,
+        "2->0": 1624,
+        "0->3": 115,
+        "2->2": 507,
+        "0->2": 14,
+        "3->0": 859,
+        "3->2": 184,
+        "2->3": 72
+      },
+      "mean_probability_of_rule_action": 0.40932935353535355,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2288,
+            "matches": 655,
+            "agreement": 0.2862762237762238,
+            "confusion": {
+              "2->2": 185,
+              "2->0": 593,
+              "0->0": 105,
+              "0->2": 13,
+              "3->0": 779,
+              "3->2": 184,
+              "3->3": 365,
+              "2->3": 44,
+              "0->3": 20
+            },
+            "mean_probability_of_rule_action": 0.331431314897224
+          },
+          "outgoing": {
+            "n": 2272,
+            "matches": 1058,
+            "agreement": 0.46566901408450706,
+            "confusion": {
+              "3->3": 146,
+              "2->0": 1018,
+              "0->0": 609,
+              "0->3": 94,
+              "2->2": 303,
+              "3->0": 73,
+              "2->3": 28,
+              "0->2": 1
+            },
+            "mean_probability_of_rule_action": 0.38767690105278135
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 18,
+            "agreement": 0.5806451612903226,
+            "confusion": {
+              "2->0": 10,
+              "3->0": 2,
+              "0->0": 8,
+              "2->2": 7,
+              "3->3": 3,
+              "0->3": 1
+            },
+            "mean_probability_of_rule_action": 0.4148387096774193
+          },
+          "unknown": {
+            "n": 409,
+            "matches": 401,
+            "agreement": 0.980440097799511,
+            "confusion": {
+              "0->0": 384,
+              "3->3": 5,
+              "2->2": 12,
+              "2->0": 3,
+              "3->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9649633251833741
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2455,
+            "matches": 1155,
+            "agreement": 0.47046843177189407,
+            "confusion": {
+              "3->3": 164,
+              "2->0": 1082,
+              "0->0": 649,
+              "0->3": 104,
+              "2->2": 342,
+              "3->0": 84,
+              "2->3": 28,
+              "0->2": 2
+            },
+            "mean_probability_of_rule_action": 0.3894717027710918
+          },
+          "intercept": {
+            "n": 2167,
+            "matches": 599,
+            "agreement": 0.2764190124596216,
+            "confusion": {
+              "2->2": 165,
+              "2->0": 542,
+              "0->0": 79,
+              "0->2": 12,
+              "3->0": 775,
+              "3->2": 184,
+              "3->3": 355,
+              "2->3": 44,
+              "0->3": 11
+            },
+            "mean_probability_of_rule_action": 0.32901879897265224
+          },
+          "missing-object": {
+            "n": 378,
+            "matches": 378,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 378
+            },
+            "mean_probability_of_rule_action": 0.9987037037037036
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 3842,
+            "matches": 1903,
+            "agreement": 0.49531494013534616,
+            "confusion": {
+              "0->0": 1073,
+              "3->3": 393,
+              "2->0": 1360,
+              "0->3": 107,
+              "3->0": 432,
+              "2->2": 437,
+              "2->3": 36,
+              "0->2": 4
+            },
+            "mean_probability_of_rule_action": 0.44863549603268504
+          },
+          "1": {
+            "n": 1080,
+            "matches": 226,
+            "agreement": 0.20925925925925926,
+            "confusion": {
+              "2->2": 68,
+              "2->0": 254,
+              "0->0": 32,
+              "0->2": 9,
+              "3->0": 397,
+              "3->2": 151,
+              "3->3": 126,
+              "2->3": 35,
+              "0->3": 8
+            },
+            "mean_probability_of_rule_action": 0.2842161429105874
+          },
+          "2": {
+            "n": 71,
+            "matches": 2,
+            "agreement": 0.028169014084507043,
+            "confusion": {
+              "3->0": 30,
+              "3->2": 29,
+              "2->0": 8,
+              "2->2": 2,
+              "2->3": 1,
+              "0->2": 1
+            },
+            "mean_probability_of_rule_action": 0.20258073694693415
+          },
+          "3": {
+            "n": 7,
+            "matches": 1,
+            "agreement": 0.14285714285714285,
+            "confusion": {
+              "3->2": 4,
+              "2->0": 2,
+              "0->0": 1
+            },
+            "mean_probability_of_rule_action": 0.23607503607503608
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "lookahead",
+      "n": 5000,
+      "matches": 2687,
+      "agreement": 0.5374,
+      "confusion": {
+        "0->0": 1435,
+        "3->3": 563,
+        "2->0": 1768,
+        "0->3": 101,
+        "2->2": 689,
+        "3->0": 386,
+        "2->3": 42,
+        "0->2": 15,
+        "3->2": 1
+      },
+      "mean_probability_of_rule_action": 0.45094236363636364,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2288,
+            "matches": 1210,
+            "agreement": 0.5288461538461539,
+            "confusion": {
+              "2->2": 367,
+              "2->0": 737,
+              "0->0": 434,
+              "3->3": 409,
+              "3->0": 306,
+              "0->2": 14,
+              "0->3": 6,
+              "3->2": 1,
+              "2->3": 14
+            },
+            "mean_probability_of_rule_action": 0.42236883697110966
+          },
+          "outgoing": {
+            "n": 2272,
+            "matches": 1058,
+            "agreement": 0.46566901408450706,
+            "confusion": {
+              "3->3": 146,
+              "2->0": 1018,
+              "0->0": 609,
+              "0->3": 94,
+              "2->2": 303,
+              "3->0": 73,
+              "2->3": 28,
+              "0->2": 1
+            },
+            "mean_probability_of_rule_action": 0.38767690105278135
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 18,
+            "agreement": 0.5806451612903226,
+            "confusion": {
+              "2->0": 10,
+              "3->0": 2,
+              "0->0": 8,
+              "2->2": 7,
+              "3->3": 3,
+              "0->3": 1
+            },
+            "mean_probability_of_rule_action": 0.4148387096774193
+          },
+          "unknown": {
+            "n": 409,
+            "matches": 401,
+            "agreement": 0.980440097799511,
+            "confusion": {
+              "0->0": 384,
+              "3->3": 5,
+              "2->2": 12,
+              "2->0": 3,
+              "3->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9649633251833741
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2334,
+            "matches": 1099,
+            "agreement": 0.4708654670094259,
+            "confusion": {
+              "3->3": 154,
+              "2->0": 1031,
+              "0->0": 623,
+              "0->3": 95,
+              "2->2": 322,
+              "3->0": 80,
+              "2->3": 28,
+              "0->2": 1
+            },
+            "mean_probability_of_rule_action": 0.3902407537240442
+          },
+          "lookahead": {
+            "n": 2288,
+            "matches": 1210,
+            "agreement": 0.5288461538461539,
+            "confusion": {
+              "2->2": 367,
+              "2->0": 737,
+              "0->0": 434,
+              "3->3": 409,
+              "3->0": 306,
+              "0->2": 14,
+              "0->3": 6,
+              "3->2": 1,
+              "2->3": 14
+            },
+            "mean_probability_of_rule_action": 0.42236883697110966
+          },
+          "missing-object": {
+            "n": 378,
+            "matches": 378,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 378
+            },
+            "mean_probability_of_rule_action": 0.9987037037037036
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 2687,
+            "agreement": 0.5374,
+            "confusion": {
+              "0->0": 1435,
+              "3->3": 563,
+              "2->0": 1768,
+              "0->3": 101,
+              "2->2": 689,
+              "3->0": 386,
+              "2->3": 42,
+              "0->2": 15,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.45094236363636364
+          }
+        }
+      }
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "seed": 67,
+      "rule": "lookahead-conservative",
+      "n": 5000,
+      "matches": 2695,
+      "agreement": 0.539,
+      "confusion": {
+        "0->0": 1450,
+        "3->3": 557,
+        "2->0": 1763,
+        "0->3": 107,
+        "2->2": 688,
+        "3->0": 376,
+        "2->3": 42,
+        "0->2": 16,
+        "3->2": 1
+      },
+      "mean_probability_of_rule_action": 0.45107236363636366,
+      "strata": {
+        "motion": {
+          "incoming": {
+            "n": 2288,
+            "matches": 1218,
+            "agreement": 0.5323426573426573,
+            "confusion": {
+              "2->2": 366,
+              "2->0": 732,
+              "0->0": 449,
+              "3->3": 403,
+              "3->0": 296,
+              "0->2": 15,
+              "0->3": 12,
+              "3->2": 1,
+              "2->3": 14
+            },
+            "mean_probability_of_rule_action": 0.42265292788020065
+          },
+          "outgoing": {
+            "n": 2272,
+            "matches": 1058,
+            "agreement": 0.46566901408450706,
+            "confusion": {
+              "3->3": 146,
+              "2->0": 1018,
+              "0->0": 609,
+              "0->3": 94,
+              "2->2": 303,
+              "3->0": 73,
+              "2->3": 28,
+              "0->2": 1
+            },
+            "mean_probability_of_rule_action": 0.38767690105278135
+          },
+          "stationary-x": {
+            "n": 31,
+            "matches": 18,
+            "agreement": 0.5806451612903226,
+            "confusion": {
+              "2->0": 10,
+              "3->0": 2,
+              "0->0": 8,
+              "2->2": 7,
+              "3->3": 3,
+              "0->3": 1
+            },
+            "mean_probability_of_rule_action": 0.4148387096774193
+          },
+          "unknown": {
+            "n": 409,
+            "matches": 401,
+            "agreement": 0.980440097799511,
+            "confusion": {
+              "0->0": 384,
+              "3->3": 5,
+              "2->2": 12,
+              "2->0": 3,
+              "3->0": 5
+            },
+            "mean_probability_of_rule_action": 0.9649633251833741
+          }
+        },
+        "mode": {
+          "current-height": {
+            "n": 2334,
+            "matches": 1099,
+            "agreement": 0.4708654670094259,
+            "confusion": {
+              "3->3": 154,
+              "2->0": 1031,
+              "0->0": 623,
+              "0->3": 95,
+              "2->2": 322,
+              "3->0": 80,
+              "2->3": 28,
+              "0->2": 1
+            },
+            "mean_probability_of_rule_action": 0.3902407537240442
+          },
+          "lookahead": {
+            "n": 2131,
+            "matches": 1116,
+            "agreement": 0.5236977944626936,
+            "confusion": {
+              "2->2": 336,
+              "2->0": 688,
+              "3->3": 381,
+              "0->0": 399,
+              "3->0": 295,
+              "0->2": 14,
+              "0->3": 5,
+              "3->2": 1,
+              "2->3": 12
+            },
+            "mean_probability_of_rule_action": 0.4208797975057947
+          },
+          "missing-object": {
+            "n": 378,
+            "matches": 378,
+            "agreement": 1.0,
+            "confusion": {
+              "0->0": 378
+            },
+            "mean_probability_of_rule_action": 0.9987037037037036
+          },
+          "uncertain-motion-fallback": {
+            "n": 157,
+            "matches": 102,
+            "agreement": 0.6496815286624203,
+            "confusion": {
+              "0->0": 50,
+              "2->2": 30,
+              "2->0": 44,
+              "3->3": 22,
+              "0->3": 7,
+              "3->0": 1,
+              "0->2": 1,
+              "2->3": 2
+            },
+            "mean_probability_of_rule_action": 0.4467200669111497
+          }
+        },
+        "reflections": {
+          "0": {
+            "n": 5000,
+            "matches": 2695,
+            "agreement": 0.539,
+            "confusion": {
+              "0->0": 1450,
+              "3->3": 557,
+              "2->0": 1763,
+              "0->3": 107,
+              "2->2": 688,
+              "3->0": 376,
+              "2->3": 42,
+              "0->2": 16,
+              "3->2": 1
+            },
+            "mean_probability_of_rule_action": 0.45107236363636366
+          }
+        }
+      }
+    }
+  ],
+  "shared_training_probes": [
+    {
+      "arm": "A",
+      "role": "parent",
+      "rule": "v2",
+      "n": 64,
+      "matches": 42,
+      "agreement": 0.65625,
+      "confusion": {
+        "0->0": 22,
+        "2->0": 19,
+        "2->2": 7,
+        "3->3": 13,
+        "3->0": 3
+      },
+      "mean_probability_of_rule_action": 0.5003472222222223
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "rule": "intercept",
+      "n": 64,
+      "matches": 36,
+      "agreement": 0.5625,
+      "confusion": {
+        "0->0": 20,
+        "3->0": 7,
+        "2->0": 17,
+        "3->2": 1,
+        "3->3": 10,
+        "2->2": 6,
+        "2->3": 1,
+        "0->3": 2
+      },
+      "mean_probability_of_rule_action": 0.4544097222222222
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "rule": "lookahead",
+      "n": 64,
+      "matches": 44,
+      "agreement": 0.6875,
+      "confusion": {
+        "0->0": 25,
+        "2->0": 15,
+        "3->0": 4,
+        "2->2": 7,
+        "3->3": 12,
+        "0->3": 1
+      },
+      "mean_probability_of_rule_action": 0.5263825757575757
+    },
+    {
+      "arm": "A",
+      "role": "parent",
+      "rule": "lookahead-conservative",
+      "n": 64,
+      "matches": 44,
+      "agreement": 0.6875,
+      "confusion": {
+        "0->0": 25,
+        "2->0": 15,
+        "3->0": 4,
+        "2->2": 7,
+        "3->3": 12,
+        "0->3": 1
+      },
+      "mean_probability_of_rule_action": 0.5263825757575757
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "rule": "v2",
+      "n": 64,
+      "matches": 28,
+      "agreement": 0.4375,
+      "confusion": {
+        "0->0": 16,
+        "2->3": 14,
+        "0->3": 6,
+        "2->2": 2,
+        "2->0": 10,
+        "3->3": 10,
+        "3->0": 6
+      },
+      "mean_probability_of_rule_action": 0.43892045454545453
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "rule": "intercept",
+      "n": 64,
+      "matches": 30,
+      "agreement": 0.46875,
+      "confusion": {
+        "0->0": 16,
+        "3->3": 12,
+        "0->3": 6,
+        "2->2": 2,
+        "2->3": 12,
+        "2->0": 10,
+        "3->0": 6
+      },
+      "mean_probability_of_rule_action": 0.4523579545454545
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "rule": "lookahead",
+      "n": 64,
+      "matches": 28,
+      "agreement": 0.4375,
+      "confusion": {
+        "0->0": 16,
+        "2->3": 10,
+        "3->3": 10,
+        "2->2": 2,
+        "2->0": 10,
+        "3->0": 6,
+        "0->3": 10
+      },
+      "mean_probability_of_rule_action": 0.44440972222222225
+    },
+    {
+      "arm": "A",
+      "role": "candidate",
+      "rule": "lookahead-conservative",
+      "n": 64,
+      "matches": 28,
+      "agreement": 0.4375,
+      "confusion": {
+        "0->0": 16,
+        "2->3": 10,
+        "3->3": 10,
+        "2->2": 2,
+        "2->0": 10,
+        "3->0": 6,
+        "0->3": 10
+      },
+      "mean_probability_of_rule_action": 0.44440972222222225
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "rule": "v2",
+      "n": 64,
+      "matches": 41,
+      "agreement": 0.640625,
+      "confusion": {
+        "0->0": 22,
+        "2->0": 19,
+        "2->2": 7,
+        "3->3": 12,
+        "3->0": 4
+      },
+      "mean_probability_of_rule_action": 0.49274305555555553
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "rule": "intercept",
+      "n": 64,
+      "matches": 35,
+      "agreement": 0.546875,
+      "confusion": {
+        "0->0": 20,
+        "3->0": 8,
+        "2->0": 17,
+        "3->2": 1,
+        "3->3": 9,
+        "2->2": 6,
+        "2->3": 1,
+        "0->3": 2
+      },
+      "mean_probability_of_rule_action": 0.44743055555555555
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "rule": "lookahead",
+      "n": 64,
+      "matches": 43,
+      "agreement": 0.671875,
+      "confusion": {
+        "0->0": 25,
+        "2->0": 15,
+        "3->0": 5,
+        "2->2": 7,
+        "3->3": 11,
+        "0->3": 1
+      },
+      "mean_probability_of_rule_action": 0.513655303030303
+    },
+    {
+      "arm": "B",
+      "role": "parent",
+      "rule": "lookahead-conservative",
+      "n": 64,
+      "matches": 43,
+      "agreement": 0.671875,
+      "confusion": {
+        "0->0": 25,
+        "2->0": 15,
+        "3->0": 5,
+        "2->2": 7,
+        "3->3": 11,
+        "0->3": 1
+      },
+      "mean_probability_of_rule_action": 0.513655303030303
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "rule": "v2",
+      "n": 64,
+      "matches": 32,
+      "agreement": 0.5,
+      "confusion": {
+        "0->0": 18,
+        "2->0": 23,
+        "0->3": 4,
+        "2->2": 3,
+        "3->3": 11,
+        "3->0": 5
+      },
+      "mean_probability_of_rule_action": 0.44831123737373735
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "rule": "intercept",
+      "n": 64,
+      "matches": 29,
+      "agreement": 0.453125,
+      "confusion": {
+        "0->0": 17,
+        "3->0": 9,
+        "0->3": 5,
+        "2->2": 3,
+        "2->0": 20,
+        "3->3": 9,
+        "2->3": 1
+      },
+      "mean_probability_of_rule_action": 0.4406723484848485
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "rule": "lookahead",
+      "n": 64,
+      "matches": 42,
+      "agreement": 0.65625,
+      "confusion": {
+        "0->0": 25,
+        "2->0": 19,
+        "3->3": 14,
+        "2->2": 3,
+        "0->3": 1,
+        "3->0": 2
+      },
+      "mean_probability_of_rule_action": 0.4876010101010101
+    },
+    {
+      "arm": "B",
+      "role": "candidate",
+      "rule": "lookahead-conservative",
+      "n": 64,
+      "matches": 42,
+      "agreement": 0.65625,
+      "confusion": {
+        "0->0": 25,
+        "2->0": 19,
+        "3->3": 14,
+        "2->2": 3,
+        "0->3": 1,
+        "3->0": 2
+      },
+      "mean_probability_of_rule_action": 0.4876010101010101
+    }
+  ],
+  "exploratory_agreement_subsets": [
+    {
+      "seed": 66,
+      "interpretations_agree": true,
+      "n": 283,
+      "matches": 27,
+      "agreement": 0.09540636042402827,
+      "confusion": {
+        "3->3": 1,
+        "2->2": 26,
+        "2->3": 256
+      },
+      "mean_probability_of_rule_action": 0.30532997822750474
+    },
+    {
+      "seed": 66,
+      "interpretations_agree": false,
+      "n": 6,
+      "matches": 1,
+      "agreement": 0.16666666666666666,
+      "confusion": {
+        "2->3": 1,
+        "0->3": 4,
+        "3->3": 1
+      },
+      "mean_probability_of_rule_action": 0.2783333333333333
+    },
+    {
+      "seed": 67,
+      "interpretations_agree": true,
+      "n": 293,
+      "matches": 55,
+      "agreement": 0.18771331058020477,
+      "confusion": {
+        "2->2": 55,
+        "2->3": 237,
+        "2->0": 1
+      },
+      "mean_probability_of_rule_action": 0.31980487468542074
+    },
+    {
+      "seed": 67,
+      "interpretations_agree": false,
+      "n": 16,
+      "matches": 7,
+      "agreement": 0.4375,
+      "confusion": {
+        "3->3": 7,
+        "3->2": 5,
+        "0->3": 4
+      },
+      "mean_probability_of_rule_action": 0.365625
+    }
+  ],
+  "limits": "Post-hoc rule interpretations, not optimal-action labels or causal effects. Visited states differ between trajectories. Probe repeats are not independent states. B reliability wording is underspecified; both operationalizations are reported."
+}

@@ -72,3 +72,18 @@ jobs:
       - run: >-
           cmp experiments/pong/teacher-study-v1/descriptive-results.json
           artifacts/ci-teacher-study-report/descriptive-results.json
+      - run: >-
+          uv run python scripts/restore_experiments.py
+          --manifest experiments/pong/question-diagnostics-v1/question-diagnostics-v1.manifest.json
+          --out restored-question-diagnostics
+      - run: >-
+          uv run python scripts/question_diagnostics.py verify
+          --run restored-question-diagnostics/question-diagnostics-v1/local
+          --out artifacts/ci-question-diagnostics-replay
+      - run: >-
+          uv run python scripts/question_diagnostics.py analyze
+          --study restored-teacher-study/teacher-study-v1/run
+          --out artifacts/ci-question-diagnostics-analysis
+      - run: >-
+          cmp experiments/pong/question-diagnostics-v1/adherence.json
+          artifacts/ci-question-diagnostics-analysis/results.json

@@ -1,0 +1,104 @@
+{
+  "status": "verified",
+  "api_attempts": 0,
+  "plan_hash": "a533c36a9456a75ffe633a5cfb388f32b93995d9ab62a2707f05342d269ad059",
+  "results_hash": "ccddbff9d2b3d9e043b18adfcc290ab096169d485df581e0891e9c6056f69253",
+  "episodes": [
+    {
+      "rule": "v2",
+      "seed": 80,
+      "status": "verified",
+      "raw_frames": 16710
+    },
+    {
+      "rule": "intercept",
+      "seed": 80,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "lookahead",
+      "seed": 80,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "lookahead-conservative",
+      "seed": 80,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "v2",
+      "seed": 81,
+      "status": "verified",
+      "raw_frames": 18604
+    },
+    {
+      "rule": "intercept",
+      "seed": 81,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "lookahead",
+      "seed": 81,
+      "status": "verified",
+      "raw_frames": 12579
+    },
+    {
+      "rule": "lookahead-conservative",
+      "seed": 81,
+      "status": "verified",
+      "raw_frames": 16287
+    },
+    {
+      "rule": "v2",
+      "seed": 82,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "intercept",
+      "seed": 82,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "lookahead",
+      "seed": 82,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "lookahead-conservative",
+      "seed": 82,
+      "status": "verified",
+      "raw_frames": 20000
+    },
+    {
+      "rule": "v2",
+      "seed": 83,
+      "status": "verified",
+      "raw_frames": 16412
+    },
+    {
+      "rule": "intercept",
+      "seed": 83,
+      "status": "verified",
+      "raw_frames": 10484
+    },
+    {
+      "rule": "lookahead",
+      "seed": 83,
+      "status": "verified",
+      "raw_frames": 14858
+    },
+    {
+      "rule": "lookahead-conservative",
+      "seed": 83,
+      "status": "verified",
+      "raw_frames": 16200
+    }
+  ]
+}
