@@ -80,3 +80,6 @@ adherence analysis and separate literal Python strategy trials. No new model cal
 
 [Question diagnostics results](question-diagnostics-results-2026-09-20.md): low interception-rule adherence,
 16 separate literal-control episodes and no new model calls.
+
+The [stratified motion probe](motion-probe-protocol.md) freezes a three-question behavior comparison
+on existing training states, capped at 520 Jev attempts, with no gameplay promotion.
