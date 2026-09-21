@@ -27,6 +27,9 @@ machine-readable evidence and immutable LFS archives remain in
 
 Game-specific research starts at [Pong](pong/README.md), with its own
 [evaluation profile](pong/evaluation.md) and [teacher log](pong/teacher-log.md).
+The [Pong research endpoint](pong/research-endpoint.md) distinguishes teacher-authored
+policy improvement from a repeatable benefit of experience feedback; neither is
+established by the current evidence.
 The approved [longitudinal teacher study](pong/teacher-study-plan.md) has a
 [frozen protocol](pong/teacher-study-protocol.md) and an explicit
 [parser continuation record](pong/teacher-study-continuation.md). Its

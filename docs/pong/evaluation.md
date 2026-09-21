@@ -4,6 +4,8 @@ Profile ID: `pong-evaluation-v1`, documented 2026-09-18. This is the game-specif
 interpretation of the [shared framework](../evaluation-framework.md), not a frozen
 configuration for the next live run. Each study must still declare its seeds,
 caps, budgets, repetitions, endpoint and selection threshold before evaluation.
+The [research endpoint](research-endpoint.md) defines the teacher-improvement and
+feedback-benefit milestones, current evidence status and proposed finite stopping rule.
 
 ## Environment and outcome contract
 

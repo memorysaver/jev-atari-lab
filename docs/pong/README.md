@@ -11,6 +11,8 @@ Jev question execution. No new live study is launched by that document.
 
 ## Start here
 
+- [Research endpoint and evidence status](research-endpoint.md): what would establish
+  teacher-driven improvement, the stronger feedback claim, and what is still missing.
 - [Evaluation profile](evaluation.md): Pong outcomes, diagnostics, stopping rules
   and the distinction between policy and value-prediction studies.
 - [Teacher log](teacher-log.md): each proposal's evidence, change and disposition.
