@@ -150,3 +150,6 @@ question program and observation contract that generated each result.
 
 [Question diagnostics v1](pong/question-diagnostics-v1/README.md) adds 16 replayed Python control episodes,
 original-state adherence analysis and 16 videos, with zero new model calls.
+
+[Motion probe v1](pong/motion-probe-v1/README.md) preserves 480 fresh Jev responses on 80 stratified
+training states, with negative wording results and no gameplay promotion.

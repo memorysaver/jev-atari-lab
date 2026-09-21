@@ -34,3 +34,6 @@ is preserved. Preserve failed work and clearly mark missing historical transcrip
 
 [Question diagnostics v1](question-diagnostics-v1/README.md) adds 16 replayed Python control episodes,
 original-state adherence analysis and 16 videos, with zero new model calls.
+
+[Motion probe v1](motion-probe-v1/README.md) preserves 480 fresh Jev responses on 80 stratified
+training states, with negative wording results and no gameplay promotion.

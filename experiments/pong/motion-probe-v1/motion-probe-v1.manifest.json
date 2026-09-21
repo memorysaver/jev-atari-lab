@@ -1,0 +1,104 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "motion-probe-v1.tar.gz",
+  "sha256": "af8655846271cb165d3256bc5c09d31916f9990f458eaad381e907e15388f2ac",
+  "file_count": 19,
+  "uncompressed_bytes": 3639115,
+  "files": [
+    {
+      "path": "motion-probe-v1/audit/regenerated-pack/coverage.json",
+      "bytes": 1001,
+      "sha256": "0f41491648dba5abf140fa8ea5080ab7001278aa083388f45ff0746e644d3c6b"
+    },
+    {
+      "path": "motion-probe-v1/audit/regenerated-pack/inputs.json",
+      "bytes": 373197,
+      "sha256": "7f8dab6f430eda70f0ca4e8735aaa9efaff4ba68c0b1b415f26a1b792b860ab7"
+    },
+    {
+      "path": "motion-probe-v1/audit/regenerated-pack/programs.json",
+      "bytes": 3951,
+      "sha256": "133c84a01a034b857dfb7ced939c98b98889d61a6e89579aef4ce25df9a06efe"
+    },
+    {
+      "path": "motion-probe-v1/audit/regenerated-pack/provenance.json",
+      "bytes": 4072,
+      "sha256": "9f10d12ea544e06099c489dd8ad929b5310b08dfa463a3442dcba8b632750948"
+    },
+    {
+      "path": "motion-probe-v1/audit/verification.json",
+      "bytes": 519,
+      "sha256": "ab836a2389254049813d2d419e89a919e8e74a6da138a337680b17bd3775a937"
+    },
+    {
+      "path": "motion-probe-v1/logs/motion-probe-audit.txt",
+      "bytes": 495,
+      "sha256": "37bc717754851a08c19346151910b39678e05e6ac33aacfe404be5fe4cb9885d"
+    },
+    {
+      "path": "motion-probe-v1/logs/motion-probe-live.txt",
+      "bytes": 602,
+      "sha256": "844cfd2b9f0d27a0d94a3d8131d5131d6cf5fbff6f33c9e04e267cd585a9d7fc"
+    },
+    {
+      "path": "motion-probe-v1/logs/motion-probe-tests.txt",
+      "bytes": 181,
+      "sha256": "c8434f9241da8672be86744856685c9b7e23d237ce8b66bb6d5764252ca94fc6"
+    },
+    {
+      "path": "motion-probe-v1/pack/coverage.json",
+      "bytes": 1001,
+      "sha256": "0f41491648dba5abf140fa8ea5080ab7001278aa083388f45ff0746e644d3c6b"
+    },
+    {
+      "path": "motion-probe-v1/pack/guidance-diff.txt",
+      "bytes": 2587,
+      "sha256": "a6c64818e1ce8ac5c7ce3449430ecd7d646ef35f19d9a7dff8b4d762740c0df9"
+    },
+    {
+      "path": "motion-probe-v1/pack/inputs.json",
+      "bytes": 373197,
+      "sha256": "7f8dab6f430eda70f0ca4e8735aaa9efaff4ba68c0b1b415f26a1b792b860ab7"
+    },
+    {
+      "path": "motion-probe-v1/pack/programs.json",
+      "bytes": 3951,
+      "sha256": "133c84a01a034b857dfb7ced939c98b98889d61a6e89579aef4ce25df9a06efe"
+    },
+    {
+      "path": "motion-probe-v1/pack/provenance.json",
+      "bytes": 4072,
+      "sha256": "9f10d12ea544e06099c489dd8ad929b5310b08dfa463a3442dcba8b632750948"
+    },
+    {
+      "path": "motion-probe-v1/run/api-ledger.json",
+      "bytes": 114043,
+      "sha256": "59b3f0d51bfedfc1c4823dd62ba523ae62ce68c1ea24e8e68cea7525871babae"
+    },
+    {
+      "path": "motion-probe-v1/run/budget.json",
+      "bytes": 99,
+      "sha256": "ca380e275dbc80b356da94047f8582c90a93ac3b0b3389c2df82b35155ba3234"
+    },
+    {
+      "path": "motion-probe-v1/run/model-exchanges.jsonl",
+      "bytes": 2210716,
+      "sha256": "97c668f57dd56f4a07c06ce9a2d801da0ff6f76c68e6fff5175462bb1e01ad22"
+    },
+    {
+      "path": "motion-probe-v1/run/plan.json",
+      "bytes": 66691,
+      "sha256": "68cebd822a5de5b91d1a5460c29ef1639292588f816808cbc92d2124921c86aa"
+    },
+    {
+      "path": "motion-probe-v1/run/predictions.jsonl",
+      "bytes": 463417,
+      "sha256": "040b72f03d6c407896a50fa6b8cb6f7e4512a4fde72bc3267985925a579f009d"
+    },
+    {
+      "path": "motion-probe-v1/run/results.json",
+      "bytes": 15323,
+      "sha256": "2010520f9708487c9c59454bad80206dacf8f865b9eb4bf0538828014115f583"
+    }
+  ]
+}

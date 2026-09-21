@@ -1,0 +1,673 @@
+{
+  "status": "complete",
+  "plan_hash": "13e9fc9859781f59aa2dcdf0a32d8e4ea5cbde3bf4b62923edfad6036ea2ed20",
+  "completed_predictions": 480,
+  "attempts": 480,
+  "metrics": [
+    {
+      "program": "v2",
+      "stratum": "all",
+      "responses": 160,
+      "states": 80,
+      "matches": {
+        "v2": 117,
+        "intercept": 68,
+        "lookahead": 109,
+        "lookahead-conservative": 109
+      },
+      "agreement": {
+        "v2": 0.73125,
+        "intercept": 0.425,
+        "lookahead": 0.68125,
+        "lookahead-conservative": 0.68125
+      },
+      "repeat_pairs": 80,
+      "repeat_action_flips": 5
+    },
+    {
+      "program": "v2",
+      "stratum": "missing",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 16,
+        "intercept": 16,
+        "lookahead": 16,
+        "lookahead-conservative": 16
+      },
+      "agreement": {
+        "v2": 1.0,
+        "intercept": 1.0,
+        "lookahead": 1.0,
+        "lookahead-conservative": 1.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "v2",
+      "stratum": "unknown-motion",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 10,
+        "intercept": 10,
+        "lookahead": 10,
+        "lookahead-conservative": 10
+      },
+      "agreement": {
+        "v2": 0.625,
+        "intercept": 0.625,
+        "lookahead": 0.625,
+        "lookahead-conservative": 0.625
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 2
+    },
+    {
+      "program": "v2",
+      "stratum": "outgoing",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 10,
+        "intercept": 10,
+        "lookahead": 10,
+        "lookahead-conservative": 10
+      },
+      "agreement": {
+        "v2": 0.625,
+        "intercept": 0.625,
+        "lookahead": 0.625,
+        "lookahead-conservative": 0.625
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "v2",
+      "stratum": "stationary-x",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 8,
+        "intercept": 8,
+        "lookahead": 8,
+        "lookahead-conservative": 8
+      },
+      "agreement": {
+        "v2": 0.5,
+        "intercept": 0.5,
+        "lookahead": 0.5,
+        "lookahead-conservative": 0.5
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "v2",
+      "stratum": "incoming-uncertain-conflict",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 8,
+        "intercept": 0,
+        "lookahead": 8,
+        "lookahead-conservative": 8
+      },
+      "agreement": {
+        "v2": 0.5,
+        "intercept": 0.0,
+        "lookahead": 0.5,
+        "lookahead-conservative": 0.5
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "v2",
+      "stratum": "incoming-uncertain-same",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 10,
+        "intercept": 4,
+        "lookahead": 10,
+        "lookahead-conservative": 10
+      },
+      "agreement": {
+        "v2": 0.625,
+        "intercept": 0.25,
+        "lookahead": 0.625,
+        "lookahead-conservative": 0.625
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "v2",
+      "stratum": "incoming-stable-conflict",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 12,
+        "intercept": 2,
+        "lookahead": 4,
+        "lookahead-conservative": 4
+      },
+      "agreement": {
+        "v2": 0.75,
+        "intercept": 0.125,
+        "lookahead": 0.25,
+        "lookahead-conservative": 0.25
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "v2",
+      "stratum": "incoming-stable-same-up",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 12,
+        "intercept": 5,
+        "lookahead": 12,
+        "lookahead-conservative": 12
+      },
+      "agreement": {
+        "v2": 0.75,
+        "intercept": 0.3125,
+        "lookahead": 0.75,
+        "lookahead-conservative": 0.75
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 2
+    },
+    {
+      "program": "v2",
+      "stratum": "incoming-stable-same-down",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 16,
+        "intercept": 8,
+        "lookahead": 16,
+        "lookahead-conservative": 16
+      },
+      "agreement": {
+        "v2": 1.0,
+        "intercept": 0.5,
+        "lookahead": 1.0,
+        "lookahead-conservative": 1.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "v2",
+      "stratum": "incoming-stable-same-hold",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 15,
+        "intercept": 5,
+        "lookahead": 15,
+        "lookahead-conservative": 15
+      },
+      "agreement": {
+        "v2": 0.9375,
+        "intercept": 0.3125,
+        "lookahead": 0.9375,
+        "lookahead-conservative": 0.9375
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "all",
+      "responses": 160,
+      "states": 80,
+      "matches": {
+        "v2": 105,
+        "intercept": 65,
+        "lookahead": 103,
+        "lookahead-conservative": 99
+      },
+      "agreement": {
+        "v2": 0.65625,
+        "intercept": 0.40625,
+        "lookahead": 0.64375,
+        "lookahead-conservative": 0.61875
+      },
+      "repeat_pairs": 80,
+      "repeat_action_flips": 5
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "missing",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 16,
+        "intercept": 16,
+        "lookahead": 16,
+        "lookahead-conservative": 16
+      },
+      "agreement": {
+        "v2": 1.0,
+        "intercept": 1.0,
+        "lookahead": 1.0,
+        "lookahead-conservative": 1.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "unknown-motion",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 5,
+        "intercept": 5,
+        "lookahead": 5,
+        "lookahead-conservative": 5
+      },
+      "agreement": {
+        "v2": 0.3125,
+        "intercept": 0.3125,
+        "lookahead": 0.3125,
+        "lookahead-conservative": 0.3125
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "outgoing",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 7,
+        "intercept": 7,
+        "lookahead": 7,
+        "lookahead-conservative": 7
+      },
+      "agreement": {
+        "v2": 0.4375,
+        "intercept": 0.4375,
+        "lookahead": 0.4375,
+        "lookahead-conservative": 0.4375
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "stationary-x",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 7,
+        "intercept": 7,
+        "lookahead": 7,
+        "lookahead-conservative": 7
+      },
+      "agreement": {
+        "v2": 0.4375,
+        "intercept": 0.4375,
+        "lookahead": 0.4375,
+        "lookahead-conservative": 0.4375
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "incoming-uncertain-conflict",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 6,
+        "intercept": 2,
+        "lookahead": 10,
+        "lookahead-conservative": 6
+      },
+      "agreement": {
+        "v2": 0.375,
+        "intercept": 0.125,
+        "lookahead": 0.625,
+        "lookahead-conservative": 0.375
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "incoming-uncertain-same",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 15,
+        "intercept": 9,
+        "lookahead": 15,
+        "lookahead-conservative": 15
+      },
+      "agreement": {
+        "v2": 0.9375,
+        "intercept": 0.5625,
+        "lookahead": 0.9375,
+        "lookahead-conservative": 0.9375
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "incoming-stable-conflict",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 11,
+        "intercept": 1,
+        "lookahead": 5,
+        "lookahead-conservative": 5
+      },
+      "agreement": {
+        "v2": 0.6875,
+        "intercept": 0.0625,
+        "lookahead": 0.3125,
+        "lookahead-conservative": 0.3125
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "incoming-stable-same-up",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 6,
+        "intercept": 6,
+        "lookahead": 6,
+        "lookahead-conservative": 6
+      },
+      "agreement": {
+        "v2": 0.375,
+        "intercept": 0.375,
+        "lookahead": 0.375,
+        "lookahead-conservative": 0.375
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "incoming-stable-same-down",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 16,
+        "intercept": 8,
+        "lookahead": 16,
+        "lookahead-conservative": 16
+      },
+      "agreement": {
+        "v2": 1.0,
+        "intercept": 0.5,
+        "lookahead": 1.0,
+        "lookahead-conservative": 1.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "ambiguous",
+      "stratum": "incoming-stable-same-hold",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 16,
+        "intercept": 4,
+        "lookahead": 16,
+        "lookahead-conservative": 16
+      },
+      "agreement": {
+        "v2": 1.0,
+        "intercept": 0.25,
+        "lookahead": 1.0,
+        "lookahead-conservative": 1.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "precise",
+      "stratum": "all",
+      "responses": 160,
+      "states": 80,
+      "matches": {
+        "v2": 63,
+        "intercept": 72,
+        "lookahead": 83,
+        "lookahead-conservative": 73
+      },
+      "agreement": {
+        "v2": 0.39375,
+        "intercept": 0.45,
+        "lookahead": 0.51875,
+        "lookahead-conservative": 0.45625
+      },
+      "repeat_pairs": 80,
+      "repeat_action_flips": 3
+    },
+    {
+      "program": "precise",
+      "stratum": "missing",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 16,
+        "intercept": 16,
+        "lookahead": 16,
+        "lookahead-conservative": 16
+      },
+      "agreement": {
+        "v2": 1.0,
+        "intercept": 1.0,
+        "lookahead": 1.0,
+        "lookahead-conservative": 1.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "precise",
+      "stratum": "unknown-motion",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 0,
+        "intercept": 0,
+        "lookahead": 0,
+        "lookahead-conservative": 0
+      },
+      "agreement": {
+        "v2": 0.0,
+        "intercept": 0.0,
+        "lookahead": 0.0,
+        "lookahead-conservative": 0.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "precise",
+      "stratum": "outgoing",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 6,
+        "intercept": 6,
+        "lookahead": 6,
+        "lookahead-conservative": 6
+      },
+      "agreement": {
+        "v2": 0.375,
+        "intercept": 0.375,
+        "lookahead": 0.375,
+        "lookahead-conservative": 0.375
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "precise",
+      "stratum": "stationary-x",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 2,
+        "intercept": 2,
+        "lookahead": 2,
+        "lookahead-conservative": 2
+      },
+      "agreement": {
+        "v2": 0.125,
+        "intercept": 0.125,
+        "lookahead": 0.125,
+        "lookahead-conservative": 0.125
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "precise",
+      "stratum": "incoming-uncertain-conflict",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 1,
+        "intercept": 6,
+        "lookahead": 11,
+        "lookahead-conservative": 1
+      },
+      "agreement": {
+        "v2": 0.0625,
+        "intercept": 0.375,
+        "lookahead": 0.6875,
+        "lookahead-conservative": 0.0625
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "precise",
+      "stratum": "incoming-uncertain-same",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 16,
+        "intercept": 10,
+        "lookahead": 16,
+        "lookahead-conservative": 16
+      },
+      "agreement": {
+        "v2": 1.0,
+        "intercept": 0.625,
+        "lookahead": 1.0,
+        "lookahead-conservative": 1.0
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "precise",
+      "stratum": "incoming-stable-conflict",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 1,
+        "intercept": 7,
+        "lookahead": 11,
+        "lookahead-conservative": 11
+      },
+      "agreement": {
+        "v2": 0.0625,
+        "intercept": 0.4375,
+        "lookahead": 0.6875,
+        "lookahead-conservative": 0.6875
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "precise",
+      "stratum": "incoming-stable-same-up",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 8,
+        "intercept": 10,
+        "lookahead": 8,
+        "lookahead-conservative": 8
+      },
+      "agreement": {
+        "v2": 0.5,
+        "intercept": 0.625,
+        "lookahead": 0.5,
+        "lookahead-conservative": 0.5
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    },
+    {
+      "program": "precise",
+      "stratum": "incoming-stable-same-down",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 11,
+        "intercept": 7,
+        "lookahead": 11,
+        "lookahead-conservative": 11
+      },
+      "agreement": {
+        "v2": 0.6875,
+        "intercept": 0.4375,
+        "lookahead": 0.6875,
+        "lookahead-conservative": 0.6875
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 1
+    },
+    {
+      "program": "precise",
+      "stratum": "incoming-stable-same-hold",
+      "responses": 16,
+      "states": 8,
+      "matches": {
+        "v2": 2,
+        "intercept": 8,
+        "lookahead": 2,
+        "lookahead-conservative": 2
+      },
+      "agreement": {
+        "v2": 0.125,
+        "intercept": 0.5,
+        "lookahead": 0.125,
+        "lookahead-conservative": 0.125
+      },
+      "repeat_pairs": 8,
+      "repeat_action_flips": 0
+    }
+  ],
+  "reported_input_tokens": 826394,
+  "reported_output_tokens": 32937,
+  "attempts_without_usage": 0,
+  "api_elapsed_seconds": 118.00783100305125,
+  "non_200_attempts": 0
+}

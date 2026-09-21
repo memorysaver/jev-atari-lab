@@ -18,6 +18,15 @@ fresh isolated requests with exact packets and outputs, not inferred transcripts
 The renderer `scripts/render_teacher_rounds.py` emits completed proposal records;
 failed operations require an explicit entry such as T002-A.
 
+## Manual diagnostic revisions
+
+| ID | Intervention and provenance | Observed result |
+| --- | --- | --- |
+| [D001](teacher-rounds/D001-motion-reliability.md) | Explicit history-based reliability; coordinator with prior development exposure | Negative probe result; not promoted |
+
+D001 is a separate bounded diagnostic, not a resumed isolated teacher round.
+Its 480 fresh Jev responses and all regressions are preserved in the linked report.
+
 ## Existing records
 
 | ID | Track and modification | Teacher provenance | Disposition |

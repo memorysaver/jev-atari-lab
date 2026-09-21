@@ -83,3 +83,6 @@ adherence analysis and separate literal Python strategy trials. No new model cal
 
 The [stratified motion probe](motion-probe-protocol.md) freezes a three-question behavior comparison
 on existing training states, capped at 520 Jev attempts, with no gameplay promotion.
+
+[Motion probe results](motion-probe-results-2026-09-21.md): 480 fresh Jev responses; explicit reliability
+wording regressed despite better coverage of rare motion-conflict states.

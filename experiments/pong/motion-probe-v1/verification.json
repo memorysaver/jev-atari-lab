@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "run_status": "complete",
+  "audit_api_attempts": 0,
+  "source_revision": "f7899acf9a01952207e62c155e0994a436c7f233",
+  "states": 80,
+  "predictions": 480,
+  "attempts": 480,
+  "unexecuted_attempts": 0,
+  "plan_hash": "13e9fc9859781f59aa2dcdf0a32d8e4ea5cbde3bf4b62923edfad6036ea2ed20",
+  "results_hash": "5ab360a43ea5c363f4144bc4cbbb5a9459ac949e9a4524e33635e6c0056db59c",
+  "scope": "Training-source hashes, deterministic selection, requests/responses and metrics. No gameplay inference."
+}

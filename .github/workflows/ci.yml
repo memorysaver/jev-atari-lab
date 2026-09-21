@@ -87,3 +87,13 @@ jobs:
       - run: >-
           cmp experiments/pong/question-diagnostics-v1/adherence.json
           artifacts/ci-question-diagnostics-analysis/results.json
+      - run: >-
+          uv run python scripts/restore_experiments.py
+          --manifest experiments/pong/motion-probe-v1/motion-probe-v1.manifest.json
+          --out restored-motion-probe
+      - run: >-
+          uv run python scripts/motion_probe.py verify
+          --pack restored-motion-probe/motion-probe-v1/pack
+          --run restored-motion-probe/motion-probe-v1/run
+          --source restored-question-diagnostics/question-diagnostics-v1/local
+          --out artifacts/ci-motion-probe-audit

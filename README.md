@@ -19,6 +19,12 @@ All project research lives in [docs/](docs/README.md), including the
 [optimizer design](docs/teacher-optimizer.md), [evaluation framework](docs/evaluation-framework.md)
 and [research roadmap](docs/research-roadmap.md).
 
+**Latest Jev probe:** On 80 stratified training states, a question with explicit
+motion-reliability conditions regressed versus its ambiguous parent: 1/16 versus
+6/16 matches in the targeted conflict stratum, and 73/160 versus 99/160 overall.
+All 480 fresh responses are preserved; no gameplay improvement or promotion is
+claimed. [Read the report](docs/pong/motion-probe-results-2026-09-21.md).
+
 **Latest diagnostics:** The failed interception question matched its active rule
 on only 90/598 original decisions. Separately, 16 Python control episodes found
 mixed strategy results; conservative lookahead had the best training mean but no
