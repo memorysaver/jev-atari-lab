@@ -15,6 +15,9 @@ Jev question execution. No new live study is launched by that document.
 
 ## Start here
 
+- [Criteria-edit teacher protocol](criteria-teacher-protocol.md) and
+  [study log](criteria-teacher-log.md): bounded continuation toward the research endpoint.
+
 - [Research endpoint and evidence status](research-endpoint.md): what would establish
   teacher-driven improvement, the stronger feedback claim, and what is still missing.
 - [Evaluation profile](evaluation.md): Pong outcomes, diagnostics, stopping rules

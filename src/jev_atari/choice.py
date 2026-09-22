@@ -54,29 +54,50 @@ class ActionProgram:
         "Choose for the next requested action duration using current positions and recent motion."
     )
     schema_version: str = "action-choice-program-v1"
+    action_criteria: dict[str, str] | None = None
 
     def __post_init__(self):
-        if self.schema_version != "action-choice-program-v1":
+        if self.schema_version not in {"action-choice-program-v1", "action-choice-program-v2"}:
             raise ValueError("Unsupported action program schema")
         if not isinstance(self.name, str) or not 1 <= len(self.name) <= 100:
             raise ValueError("Action program name must be 1–100 characters")
         if not isinstance(self.guidance, str) or not 1 <= len(self.guidance) <= 2000:
             raise ValueError("Action guidance must be 1–2000 characters")
+        if self.schema_version == "action-choice-program-v1":
+            if self.action_criteria is not None:
+                raise ValueError("Custom criteria require explicit v2 program schema")
+        elif (
+            not isinstance(self.action_criteria, dict)
+            or set(self.action_criteria)
+            != {"NOOP", "FIRE", "RIGHT", "LEFT", "RIGHTFIRE", "LEFTFIRE"}
+            or any(
+                not isinstance(v, str) or not 1 <= len(v) <= 500
+                for v in self.action_criteria.values()
+            )
+        ):
+            raise ValueError("Criteria must describe all six Pong actions in 1–500 characters each")
 
     @classmethod
     def from_dict(cls, value: dict):
-        if set(value) - {"name", "guidance", "schema_version"}:
+        if set(value) - {"name", "guidance", "schema_version", "action_criteria"}:
             raise ValueError("Unknown action program fields")
         return cls(**value)
 
     def to_dict(self):
-        return asdict(self)
+        value = asdict(self)
+        if self.action_criteria is None:
+            del value["action_criteria"]
+        return value
 
     @property
     def hash(self):
         return digest(self.to_dict())
 
     def request(self, observation: dict, model: str) -> dict:
+        if self.action_criteria is not None and set(self.action_criteria) != {
+            a["ale_meaning"] for a in observation["candidate_actions"]
+        }:
+            raise ValueError("Custom criteria cannot mask or introduce native actions")
         return {
             "model": model,
             "state": {"observation": observation},
@@ -92,7 +113,9 @@ class ActionProgram:
                     },
                     "criteria": {
                         action["ale_meaning"]: (
-                            f"{action['effect']} movement of the RIGHT paddle for "
+                            self.action_criteria[action["ale_meaning"]]
+                            if self.action_criteria is not None
+                            else f"{action['effect']} movement of the RIGHT paddle for "
                             f"{action['hold_raw_frames']} raw frames (action {action['id']})."
                         )
                         for action in observation["candidate_actions"]

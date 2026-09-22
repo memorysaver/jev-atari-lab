@@ -70,7 +70,7 @@ def test_failed_teacher_retains_private_diagnostics_before_raising(tmp_path, mon
     auth = tmp_path / "auth"
     auth.mkdir()
     (auth / "auth.json").write_text("{}")
-    monkeypatch.setattr(teacher, "isolation_check", lambda binary: {})
+    monkeypatch.setattr(teacher, "isolation_check", lambda binary, *args: {})
     monkeypatch.setattr(teacher, "bubblewrap", lambda *args: [])
     responses = iter(
         [

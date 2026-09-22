@@ -18,6 +18,10 @@ All 480 fresh responses are retained locally; no gameplay or final test was run.
 
 ## Research map
 
+Active continuation: the [criteria-edit teacher protocol](pong/criteria-teacher-protocol.md)
+uses three independent A/B searches, two rounds and sealed final evaluation within
+60,000 Jev attempts. The [study log](pong/criteria-teacher-log.md) records isolated proposals.
+
 | Document | Purpose | Status |
 | --- | --- | --- |
 | [Research direction](research-direction.md) | Two goals, hypotheses, current evidence and limits | Adopted project direction |

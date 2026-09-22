@@ -164,24 +164,24 @@ def bubblewrap(binary: Path, private_home: Path, work: Path):
     return command
 
 
-def teacher_config():
+def teacher_config(instructions=INSTRUCTIONS):
     return (
         'model = "gpt-6-astra"\nmodel_reasoning_effort = "high"\n'
         'approval_policy = "never"\nsandbox_mode = "read-only"\n'
         'web_search = "disabled"\nproject_doc_max_bytes = 0\n'
         'cli_auth_credentials_store = "file"\n'
-        f"developer_instructions = {json.dumps(INSTRUCTIONS)}\n"
+        f"developer_instructions = {json.dumps(instructions)}\n"
         "[features]\n" + "".join(f"{name} = false\n" for name in DISABLED_FEATURES)
     )
 
 
-def isolation_check(binary: Path):
+def isolation_check(binary: Path, instructions=INSTRUCTIONS):
     with tempfile.TemporaryDirectory(prefix="jev-teacher-isolation-") as tmp:
         root = Path(tmp)
         private, work = root / "private", root / "work"
         private.mkdir()
         work.mkdir()
-        private.joinpath("config.toml").write_text(teacher_config())
+        private.joinpath("config.toml").write_text(teacher_config(instructions))
         command = bubblewrap(binary, private, work)
         check = subprocess.run(
             command
@@ -202,7 +202,7 @@ def isolation_check(binary: Path):
             "filesystem_check": "passed",
             "codex_version": check.stdout.strip(),
             "binary_sha256": hashlib.sha256(binary.read_bytes()).hexdigest(),
-            "config_sha256": hashlib.sha256(teacher_config().encode()).hexdigest(),
+            "config_sha256": hashlib.sha256(teacher_config(instructions).encode()).hexdigest(),
             "disabled_features": list(DISABLED_FEATURES),
             "repository_mounted": False,
             "host_home_mounted": False,
@@ -222,21 +222,32 @@ def retain_private_diagnostics(stdout, stderr):
     return diagnostic
 
 
-def invoke_teacher(packet, out, budget, *, binary: Path, auth_home: Path, repair=False):
+def invoke_teacher(
+    packet,
+    out,
+    budget,
+    *,
+    binary: Path,
+    auth_home: Path,
+    repair=False,
+    instructions=INSTRUCTIONS,
+    proposal_schema=None,
+):
+    proposal_schema = PROPOSAL_SCHEMA if proposal_schema is None else proposal_schema
     serialized = json.dumps(packet, allow_nan=False)
     if len(serialized.encode()) > 200000:
         raise ValueError("Teacher packet exceeds 200 KB")
     out.mkdir(parents=True, exist_ok=False)
     write_json(out / "packet.json", packet)
-    write_json(out / "response-schema.json", PROPOSAL_SCHEMA)
-    out.joinpath("instructions.txt").write_text(INSTRUCTIONS + "\n")
+    write_json(out / "response-schema.json", proposal_schema)
+    out.joinpath("instructions.txt").write_text(instructions + "\n")
     metadata = {
         "requested_model": TEACHER_MODEL,
         "requested_reasoning_effort": "high",
         "packet_hash": digest(packet),
         "status": "prepared",
         "timeout_seconds": 900,
-        "isolation": isolation_check(binary),
+        "isolation": isolation_check(binary, instructions),
         "invocation_mode": "isolated Codex exec",
         "provider_response_model": None,
         "provider_response_model_note": "CLI final JSON is not an API model attestation.",
@@ -252,8 +263,8 @@ def invoke_teacher(packet, out, budget, *, binary: Path, auth_home: Path, repair
         os.chmod(private / "auth.json", 0o600)
         if (auth_home / "models_cache.json").exists():
             shutil.copyfile(auth_home / "models_cache.json", private / "models_cache.json")
-        private.joinpath("config.toml").write_text(teacher_config())
-        write_json(work / "schema.json", PROPOSAL_SCHEMA)
+        private.joinpath("config.toml").write_text(teacher_config(instructions))
+        write_json(work / "schema.json", proposal_schema)
         preview = subprocess.run(
             bubblewrap(binary, private, work)
             + ["/teacher-codex", "debug", "prompt-input", "PACKET_SUPPLIED_ON_STDIN"],

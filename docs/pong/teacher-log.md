@@ -7,6 +7,10 @@ transcript or hidden reasoning.
 
 ## Isolated automated study
 
+The new [criteria-edit teacher log](criteria-teacher-log.md) tracks three independent
+two-round A/B searches under a distinct [protocol](criteria-teacher-protocol.md).
+The historical study entries below remain unchanged.
+
 | ID | Intervention | Outcome |
 | --- | --- | --- |
 | [T001-A](teacher-rounds/T001-A.md) | Training-informed incoming intercept | Rejected; mean paired development gain -11.5 |
