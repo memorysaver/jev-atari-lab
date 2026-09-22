@@ -150,3 +150,22 @@ A separate [follow-up design note](teacher-study-next.md#candidate-experience-af
 identifies incumbent-only feedback after rejection as a possible research variable.
 This is a hypothesis for a future controlled comparison, not an identified cause
 of the observed failures, a change to the current packets, or a new live launch.
+
+## Search 2 round 1 completed
+
+| Development seed | Fresh v2 return | A return | B return | A gain | B gain |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 116 | -1 (1:2) | -6 (0:6) | -2 (2:4) | -5 | -1 |
+| 117 | +1 (1:0) | -5 (0:5) | +1 (1:0) | -6 | 0 |
+| Mean | 0 | -5.5 | -0.5 | -5.5 | -0.5 |
+
+Both candidates were rejected; both incumbents remain v2. All eight round episodes
+completed their 2,000-frame evaluation and passed the runner's replay verification.
+The round used 4,480 Jev attempts: 1,000 training, 3,000 development and 480 probe
+responses, with two successful teacher calls. Across the first three completed
+rounds, all six proposals were rejected. This remains development evidence, not
+an estimate of a replicated final-test feedback effect.
+
+Search 2 round 2 has started. The remaining three rounds and sealed final procedure
+retain the original source, schedule, selector and budgets. No threshold or primary
+comparison is changed in response to these negative results.
