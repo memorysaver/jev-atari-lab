@@ -85,6 +85,14 @@ def test_full_probe_roundtrip_and_tampering(tmp_path, monkeypatch):
         auditor.verify_probe(root, states, programs)
     (root / "predictions.jsonl").write_text(predictions)
     raw = [json.loads(line) for line in (root / "model-exchanges.jsonl").read_text().splitlines()]
+    original_raw = json.loads(json.dumps(raw))
+    raw[0]["transport"]["usage"]["input_tokens"] += 1
+    (root / "model-exchanges.jsonl").write_text("\n".join(json.dumps(r) for r in raw) + "\n")
+    write_json(root / "api-ledger.json", [r["transport"] for r in raw])
+    with pytest.raises(AssertionError):
+        auditor.verify_probe(root, states, programs)
+    raw = original_raw
+    write_json(root / "api-ledger.json", [r["transport"] for r in raw])
     raw[0]["request"]["questions"]["next_action"]["criteria"]["LEFT"] = "Tampered criterion"
     (root / "model-exchanges.jsonl").write_text("\n".join(json.dumps(r) for r in raw) + "\n")
     with pytest.raises(AssertionError):

@@ -57,6 +57,7 @@ def verify_probe(root, states, programs):
             raise AssertionError("Prediction lacks its original response")
         response = exchange["response"]
         assert response["model"] == "jev-1.13.0"
+        assert exchange["transport"].get("usage", {}) == response.get("usage", {})
         answer = validate_choices(response, request["questions"], prefer_probabilities=True)[
             "next_action"
         ]
@@ -123,6 +124,7 @@ def verify(root, out, repository):
     baseline = ActionProgram.from_dict(plan["initial_program"])
     assert baseline.hash == plan["initial_program_hash"]
     selected, complete_rounds, exchanges, episode_rows = {"V2": baseline}, [], [], {}
+    final_attempts = 0
     for path in sorted(root.rglob("plan.json")):
         if path == root / "plan.json":
             continue
@@ -146,7 +148,10 @@ def verify(root, out, repository):
         if report["status"] == "complete":
             episode_rows[str(episode_root.relative_to(root))] = report["episodes"][0]
         for trace in episode_root.glob("jev/seed-*/model-exchanges.jsonl"):
-            exchanges.extend(lines(trace))
+            captured = lines(trace)
+            exchanges.extend(captured)
+            if value["split"] == "test":
+                final_attempts += len(captured)
     for search in range(3):
         incumbent, best, memory = (
             {"A": baseline, "B": baseline},
@@ -178,6 +183,12 @@ def verify(root, out, repository):
                     candidate[arm] = parse(saved["proposal"], packet)
                     proposals[arm] = saved["proposal"]
                     assert saved["program"] == candidate[arm].to_dict()
+                    assert any(
+                        read_json(p / "execution.json")["status"] == "complete"
+                        and read_json(p / "proposal.json") == saved["proposal"]
+                        for p in teacher.glob("invocation-*")
+                        if (p / "proposal.json").exists()
+                    ), "Validated candidate lacks an original completed teacher proposal"
             if (rd / "probe").exists():
                 assert set(candidate) == {"A", "B"}
                 exchanges.extend(verify_probe(rd / "probe", states, {"V2": baseline, **candidate}))
@@ -251,6 +262,11 @@ def verify(root, out, repository):
     assert repairs == budget["teacher_repairs"] <= 2
     assert retries == budget["teacher_transport_retries"] <= 2
     assert len(exchanges) == budget["attempts"]
+    assert final_attempts == budget["final_attempts"]
+    assert len(exchanges) - final_attempts == budget["nonfinal_attempts"]
+    for exchange in exchanges:
+        if exchange["response"] is not None:
+            assert exchange["transport"].get("usage", {}) == exchange["response"].get("usage", {})
     ledger = [e["transport"] for e in exchanges]
     costs = {
         "jev_attempts": len(ledger),
@@ -268,6 +284,8 @@ def verify(root, out, repository):
         seal = read_json(root / "final-seal.json")["seal"]
         assert len(complete_rounds) == 6 and budget["training_closed"]
         assert seal["programs"] == {k: p.to_dict() for k, p in selected.items()}
+        assert seal["program_hashes"] == {k: p.hash for k, p in selected.items()}
+        assert seal["source_revision"] == plan["source_revision"]
     if status["status"] == "complete":
         expected = {
             role: [episode_rows[f"final/{p.hash}/seed-{s}"] for s in FINAL]
