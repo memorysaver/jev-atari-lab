@@ -133,3 +133,20 @@ Search 2 training seeds 110 and 111 completed at 0:2 and 1:4 (returns -2 and -3)
 with both original trajectories replayed. B's isolated proposal is
 `pong-incoming-intercept`; A's teacher call follows these training episodes.
 Development and final outcomes remain outside the teacher inputs.
+
+## Search 2 round 1: first development seed
+
+Both teachers completed their proposals: A's `pong-incoming-intercept-v1` cites
+training loss windows, while B's `pong-incoming-intercept` uses no empirical
+feedback. All three programs passed the 480-response basic probe screen.
+
+At the 2,000-frame cap on development seed 116, fresh v2 scored 1:2 (return -1),
+A scored 0:6 (return -6), and B scored 2:4 (return -2). The paired gains are -5
+and -1. Both candidates therefore fail the nonregression gate on this seed. All
+three episodes replayed successfully. Seed 117 is still running; its scheduled
+results must be retained before recording the completed round.
+
+A separate [follow-up design note](teacher-study-next.md#candidate-experience-after-rejection-proposed-follow-up-2026-09-23)
+identifies incumbent-only feedback after rejection as a possible research variable.
+This is a hypothesis for a future controlled comparison, not an identified cause
+of the observed failures, a change to the current packets, or a new live launch.
