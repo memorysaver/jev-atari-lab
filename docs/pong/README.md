@@ -4,9 +4,9 @@ Pong is the current test environment for the teacher-driven question optimizer.
 Its small action space makes it a useful starting point, but neither mastery nor
 repeatable multi-round learning has been established.
 
-Latest: [compact wording results](wording-probe-results-2026-09-22.md): agreement fell
-from 76/160 to 62/160 against freshly evaluated expanded wording. The candidate
-failed its prospective screen; all 480 responses are retained in reviewed local evidence.
+Latest: [criteria-edit teacher results](criteria-teacher-results-2026-09-23.md).
+Three completed rounds rejected all six evaluated proposals; HTTP 402 stopped the
+fourth round after 15,093 attempts. All 27 trajectories replayed, but no final test ran.
 
 See the [first teacher study results](teacher-study-results-2026-09-20.md): one completed
 round, both candidates rejected, and a technical stop before a second proposal.
@@ -19,8 +19,9 @@ Jev question execution. No new live study is launched by that document.
   32 replayed local episodes, +1.5 mean gain over tracking with two seed regressions;
   zero model calls, no Jev improvement claim. [Protocol](relative-motion-controls-protocol.md).
 
-- [Criteria-edit teacher protocol](criteria-teacher-protocol.md) and
-  [study log](criteria-teacher-log.md): bounded continuation toward the research endpoint.
+- [Criteria-edit teacher report](criteria-teacher-results-2026-09-23.md),
+  [protocol](criteria-teacher-protocol.md) and [study log](criteria-teacher-log.md):
+  incomplete bounded study, with negative development results and a technical stop.
 
 - [Research endpoint and evidence status](research-endpoint.md): what would establish
   teacher-driven improvement, the stronger feedback claim, and what is still missing.

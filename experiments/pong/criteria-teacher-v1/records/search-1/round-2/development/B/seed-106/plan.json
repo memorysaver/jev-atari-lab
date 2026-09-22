@@ -1,0 +1,56 @@
+{
+  "kind": "pong-study-episode-plan-v1",
+  "source_revision": "4b61d879b3802a5eb18d2194fe2ddc3124fbba09",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "development",
+  "seeds": [
+    106
+  ],
+  "arms": [
+    "jev"
+  ],
+  "schedule": [
+    {
+      "seed": 106,
+      "arm": "jev"
+    }
+  ],
+  "model": "jev-1.13.0",
+  "program": {
+    "name": "pong-bounded-incoming-lead",
+    "guidance": "Which action should vertically align the player paddle with the ball over the next decision? Read player and ball from observation.objects and motion information from the supplied history. A bbox is [x, y, width, height]; its vertical center is y + height/2. Larger y means lower. RIGHT moves the player UP; LEFT moves it DOWN.\nUse a short incoming lead as the principal change. Start with the current ball center as the target. When recent history establishes consistent rightward motion toward the player and a usable vertical velocity, project the ball center forward by four raw frames. If the ball will reach the player's left edge sooner, project only until contact: use the horizontal gap between the ball's right edge and the player's left edge divided by horizontal speed. Never project beyond four raw frames. Convert velocities and durations to matching units; if their timing is unclear, retain the current ball center.\nUse the projected height only when the recent motion supports continued flight over that short interval. Account for a wall reflection only if its location is established by the supplied observation/history. If a bounce or reset makes the projection uncertain, retain the current ball center. Missing velocity is unknown, not zero. When the ball moves away, retain its current center as the target.\nChoose RIGHT when the target is more than four pixels above the player center, LEFT when it is more than four pixels below, and NOOP within four pixels. If player or ball is absent, choose NOOP. Horizontal motion selects whether to use prediction; it does not directly select UP or DOWN. Prefer non-FIRE actions over FIRE aliases with equivalent movement. Reconsider after each decision.",
+    "schema_version": "action-choice-program-v2",
+    "action_criteria": {
+      "NOOP": "Choose when the selected target is within four pixels of the player center, or player or ball is absent. The target is the credible short incoming projection defined in the guidance, otherwise the current ball center. Prefer NOOP over equivalent stationary FIRE.",
+      "FIRE": "Stationary alternative when the selected target is within four pixels of the player center, or player or ball is absent. FIRE supplies no vertical correction; prefer NOOP when their movement effects are equivalent.",
+      "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use the credible incoming projection capped at four raw frames, otherwise current ball height. Rightward ball motion alone does not justify moving up. Prefer RIGHT over equivalent RIGHTFIRE.",
+      "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use the credible incoming projection capped at four raw frames, otherwise current ball height. Larger y means lower. Prefer LEFT over equivalent LEFTFIRE.",
+      "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using exactly the same target as RIGHT. Prefer RIGHT when both produce equivalent vertical movement.",
+      "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using exactly the same target as LEFT. Prefer LEFT when both produce equivalent vertical movement."
+    }
+  },
+  "program_hash": "2c4a0278c33e6f00e3d329fc48d7fa5debadf578fff894819d7838395b0cd11c",
+  "max_frames_per_episode": 2000,
+  "max_decisions_per_episode": 500,
+  "max_http_attempts": 1000,
+  "point_limit": null,
+  "final_seal_hash": null
+}

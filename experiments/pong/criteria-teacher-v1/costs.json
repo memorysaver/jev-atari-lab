@@ -1,0 +1,68 @@
+{
+  "jev_attempts": 15093,
+  "jev_non_200_attempts": 2,
+  "jev_input_tokens": 27433995,
+  "jev_output_tokens": 1034742,
+  "jev_attempts_without_usage": 2,
+  "jev_api_seconds": 4283.16327866794,
+  "teacher_invocations": 8,
+  "teacher_completed_usage": [
+    {
+      "input_tokens": 9383,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1210,
+      "reasoning_output_tokens": 372
+    },
+    {
+      "input_tokens": 60085,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1816,
+      "reasoning_output_tokens": 812
+    },
+    {
+      "input_tokens": 10200,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1373,
+      "reasoning_output_tokens": 494
+    },
+    {
+      "input_tokens": 58694,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1868,
+      "reasoning_output_tokens": 866
+    },
+    {
+      "input_tokens": 9383,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1175,
+      "reasoning_output_tokens": 358
+    },
+    {
+      "input_tokens": 55788,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1202,
+      "reasoning_output_tokens": 261
+    },
+    {
+      "input_tokens": 10179,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1290,
+      "reasoning_output_tokens": 434
+    },
+    {
+      "input_tokens": 58467,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1466,
+      "reasoning_output_tokens": 516
+    }
+  ],
+  "billing": "Not recorded; no currency claim."
+}

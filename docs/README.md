@@ -12,20 +12,22 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Latest: [compact wording results](pong/wording-probe-results-2026-09-22.md). The same-rule
-restatement regressed from 76/160 to 62/160 agreement and failed its prospective screen.
-All 480 fresh responses are retained locally; no gameplay or final test was run.
+Latest: [criteria-edit teacher study](pong/criteria-teacher-results-2026-09-23.md).
+HTTP 402 stopped the fourth round after 15,093 Jev attempts. Three rounds completed,
+all six evaluated proposals were rejected, and no final tests ran. All 27 recorded
+trajectories replayed; complete local evidence preserves the technical stop.
 
 ## Research map
 
-Active continuation: the [criteria-edit teacher protocol](pong/criteria-teacher-protocol.md)
-uses three independent A/B searches, two rounds and sealed final evaluation within
-60,000 Jev attempts. The [study log](pong/criteria-teacher-log.md) records isolated proposals.
+The [criteria-edit teacher protocol](pong/criteria-teacher-protocol.md) planned three
+independent A/B searches, two rounds and sealed final evaluation within 60,000 Jev
+attempts. Execution stopped incomplete. The [study log](pong/criteria-teacher-log.md)
+records all eight isolated proposals and the terminal state.
 
 Parallel local diagnostic: [relative-motion controls results](pong/relative-motion-controls-results-2026-09-23.md).
 The literal relative-motion rule gained +1.5 mean capped return over tracking on eight
 training seeds, with two regressions; all 32 episodes replayed, zero model calls.
-These results stay outside the running teacher packets and do not establish Jev improvement.
+These results stayed outside the teacher packets and do not establish Jev improvement.
 
 | Document | Purpose | Status |
 | --- | --- | --- |

@@ -1,0 +1,56 @@
+{
+  "kind": "pong-study-episode-plan-v1",
+  "source_revision": "4b61d879b3802a5eb18d2194fe2ddc3124fbba09",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "development",
+  "seeds": [
+    116
+  ],
+  "arms": [
+    "jev"
+  ],
+  "schedule": [
+    {
+      "seed": 116,
+      "arm": "jev"
+    }
+  ],
+  "model": "jev-1.13.0",
+  "program": {
+    "name": "pong-incoming-intercept",
+    "guidance": "Which action best aligns the player paddle with the ball's expected arrival height? Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half the height. Larger y means DOWN. The player is the right paddle: RIGHT moves UP and LEFT moves DOWN, regardless of the ball's horizontal direction.\nUse observation.history, when available, to estimate ball motion from successive positions. Missing velocity is unknown, not zero. The principal change is to target the incoming ball's predicted vertical position at the player's left face instead of always chasing its current height. When the ball is moving toward the player and motion is sufficiently clear, estimate the remaining horizontal travel time and corresponding vertical travel. Account for top or bottom rebounds only when the relevant boundary is supported by the observation or history; do not invent wall coordinates or extrapolate straight through a known wall. After an apparent rebound, use the newest consistent motion rather than averaging across the reversal. If the arrival estimate is uncertain, use the current ball center. Also use the current ball center while the ball travels away.\nIf the target is more than four pixels below the player center, choose LEFT. If it is more than four pixels above, choose RIGHT. Within four pixels choose NOOP. If player or ball is absent, choose NOOP. Prefer non-FIRE actions when a FIRE alias gives the same movement. Act for the next four raw frames, then reassess; do not commit to a full predicted trajectory.",
+    "schema_version": "action-choice-program-v2",
+    "action_criteria": {
+      "NOOP": "Hold position when the target height is within four pixels of the player center, or when player or ball is absent. The target is the supported incoming arrival estimate, otherwise the current ball center. Prefer this stationary action over FIRE.",
+      "FIRE": "Stationary FIRE alternative when the same alignment conditions as NOOP apply. It provides no vertical correction; prefer NOOP when firing has no distinct benefit supported by the observation.",
+      "RIGHT": "Move UP when the target height is more than four pixels above the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Being the right paddle or seeing rightward ball motion alone does not justify RIGHT.",
+      "LEFT": "Move DOWN when the target height is more than four pixels below the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Reassess after the requested duration to avoid passing the target.",
+      "RIGHTFIRE": "Move UP with FIRE when the target is more than four pixels above the player center, under the same targeting rule as RIGHT. Prefer RIGHT unless the observation supports a distinct benefit from firing.",
+      "LEFTFIRE": "Move DOWN with FIRE when the target is more than four pixels below the player center, under the same targeting rule as LEFT. Prefer LEFT unless the observation supports a distinct benefit from firing."
+    }
+  },
+  "program_hash": "26fbe1dbff5e34aa8618e0b6c1b236bf5cc8b4fad959abcde9d208955a05814c",
+  "max_frames_per_episode": 2000,
+  "max_decisions_per_episode": 500,
+  "max_http_attempts": 1000,
+  "point_limit": null,
+  "final_seal_hash": null
+}

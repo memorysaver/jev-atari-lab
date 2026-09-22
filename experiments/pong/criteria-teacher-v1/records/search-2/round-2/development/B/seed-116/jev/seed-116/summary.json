@@ -1,0 +1,17 @@
+{
+  "status": "incomplete",
+  "reward": 0.0,
+  "decisions": 171,
+  "raw_frames": 684,
+  "points_scored": 1,
+  "points_lost": 1,
+  "terminated": false,
+  "truncated": false,
+  "backend": "jev",
+  "end_reason": "error",
+  "reset_frames": 7,
+  "error_type": "ModelError",
+  "wall_seconds": 45.739154049006174,
+  "simulated_seconds": 11.4,
+  "api_attempts": 172
+}

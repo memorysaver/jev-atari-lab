@@ -1,0 +1,19 @@
+{
+  "kind": "criteria-teacher-closure-v1",
+  "study_status": "incomplete",
+  "observed_exec_session": 24216,
+  "observed_exit_code": 1,
+  "terminal_error_type": "ModelError",
+  "terminal_http_status": 402,
+  "failed_http_response_body_recorded": false,
+  "account_cause_confirmed": false,
+  "jev_attempts": 15093,
+  "successful_jev_responses": 15091,
+  "teacher_invocations": 8,
+  "final_attempts": 0,
+  "runtime_lock_excluded_from_archive": true,
+  "original_run_modified": false,
+  "restart_allowed_under_frozen_protocol": false,
+  "continuation": "A distinct prospectively bounded study is required after service access is restored. Do not resume or overwrite this root, reset its counters, or reinterpret missing outcomes as scores.",
+  "publication": "Local only; no remote push or retrieval."
+}

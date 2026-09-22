@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "reward": -2.0,
+  "decisions": 500,
+  "raw_frames": 2000,
+  "points_scored": 1,
+  "points_lost": 3,
+  "terminated": false,
+  "truncated": true,
+  "backend": "jev",
+  "end_reason": "decision_limit",
+  "reset_frames": 17,
+  "wall_seconds": 200.7327208439965,
+  "simulated_seconds": 33.333333333333336,
+  "api_attempts": 501
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "pong-criteria-teacher-v1-packet",
+  "arm": "B",
+  "round": 1,
+  "current_program": {
+    "name": "pong-vertical-control-v2",
+    "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "current_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "contract": {
+    "objective": "Improve actual points scored minus conceded in ALE Pong.",
+    "executor": "jev-1.13.0",
+    "representation": "One native-action Choice question. Edit guidance <=2000 characters plus all six criterion descriptions <=500 characters each. Name <=100 characters. Native action meanings, observations, question read/coordinate fields and probability-argmax decoder are fixed. Criteria are text, never Python predicates.",
+    "fixed": "RAM-derived boxes and finite-difference history; six actions; argmax; 4 raw frames per decision; sticky=0.25; weights, sensors and reward fixed.",
+    "semantics": "Player is right paddle. RIGHT moves up, LEFT down. y increases down. All six options remain available. State has objects, history and candidate_actions. Missing velocity is unknown. Native match ends at 21.",
+    "prior_knowledge": "Starting question is a hand-written vertical tracking rule. You may reason from game mechanics; do not assume an edit works.",
+    "evaluation": "Capped return at 2000 raw frames, or earlier native termination. A fresh v2 baseline and the same development selector evaluate both arms. Development scores and final evidence are not provided to teachers."
+  },
+  "prior_edits": [],
+  "evidence": null,
+  "visibility": "no empirical feedback"
+}

@@ -128,7 +128,7 @@ def verify(root, out, repository):
     baseline = ActionProgram.from_dict(plan["initial_program"])
     assert baseline.hash == plan["initial_program_hash"]
     selected, complete_rounds, exchanges, episode_rows = {"V2": baseline}, [], [], {}
-    final_attempts = 0
+    final_attempts, replayed_episode_count = 0, 0
     for path in sorted(root.rglob("plan.json")):
         if path == root / "plan.json":
             continue
@@ -148,6 +148,7 @@ def verify(root, out, repository):
                 Protocol(),
             )
         verify_episode(episode_root, out / "episodes" / episode_root.relative_to(root))
+        replayed_episode_count += 1
         report = read_json(episode_root / "results.json")
         if report["status"] == "complete":
             episode_rows[str(episode_root.relative_to(root))] = report["episodes"][0]
@@ -303,14 +304,19 @@ def verify(root, out, repository):
         "study_status": status["status"],
         "completed_rounds": len(complete_rounds),
         "episode_count": len(episode_rows),
+        "completed_episode_count": len(episode_rows),
+        "replayed_episode_count": replayed_episode_count,
+        "incomplete_episode_count": replayed_episode_count - len(episode_rows),
+        "final_evaluation_verified": status["status"] == "complete",
         "source_revision": plan["source_revision"],
         "plan_hash": digest(plan),
         "status_hash": digest(status),
         "budget_hash": digest(budget),
         "costs_hash": digest(costs),
         "audit_api_attempts": 0,
-        "scope": "Original Jev requests/responses, replayed episodes, teacher packets/proposals, "
-        "development selections, shared final outcomes and prospective endpoint.",
+        "scope": "Original Jev requests/responses, complete and incomplete episode replay, "
+        "teacher packets/proposals and completed development selections. Final outcomes and "
+        "endpoint verified only when final_evaluation_verified is true.",
     }
     write_json(out / "verification.json", result)
     return result

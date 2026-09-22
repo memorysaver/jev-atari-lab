@@ -1,0 +1,823 @@
+{
+  "kind": "criteria-teacher-rendered-records-v1",
+  "study_status": "incomplete",
+  "status_hash": "131c38d0643ad45cab2e10246dada71d5c2654b32b13cb5a595a4d320e3ede4d",
+  "records": [
+    {
+      "id": "C1-R1-A",
+      "packet_hash": "c4036cefeacc812d95481fb6c5bebd2b74ae7e93215ca066eba4e85c8766da5d",
+      "arm": "A",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "training only",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "c4036cefeacc812d95481fb6c5bebd2b74ae7e93215ca066eba4e85c8766da5d",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790092129.3731532,
+          "exit_code": 0,
+          "wall_seconds": 60.15911793708801
+        }
+      ],
+      "decision": {
+        "accepted": false,
+        "status": "rejected",
+        "seeds": [
+          106,
+          107
+        ],
+        "paired_gains_over_fresh_v2": [
+          -5.0,
+          -4.0
+        ],
+        "mean_gain": -4.5,
+        "previous_best_gain": 0.0,
+        "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+        "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+      },
+      "program_hash": "d62447b21d6848b75e387f43d5e553e97097a4d71664448162ba1e4687c55384",
+      "program": {
+        "name": "pong-reflected-intercept-v1",
+        "guidance": "Which action should align the player paddle with the incoming ball's predicted crossing height? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y plus half height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN.\nThe principal target is the ball's future height at the player's front face, rather than its current height. When ball velocity_valid is true, horizontal velocity is positive, and the ball's right edge has not passed the player's left edge, estimate travel time as the horizontal gap between those edges divided by horizontal velocity. Project the ball center vertically for that many raw frames using its vertical velocity. Account for top and bottom bounces: reflect the projected trajectory between approximate ball-center limits y=34 and y=194, repeating reflections if necessary. Do not clamp the ball at a wall or project through it. These are playfield limits, not the full image edges.\nUse history to check for a recent bounce: a finite-difference velocity spanning a bounce can understate speed. If the incoming trajectory is ambiguous, use the current ball center as the target until a clear velocity is available. Also use the current ball center when velocity is missing or invalid, the ball is moving away, or it has already passed the paddle. Missing velocity is unknown, not zero.\nCompare this target with the player center. Target more than four pixels ABOVE: RIGHT. More than four pixels BELOW: LEFT. Within four pixels: NOOP. If player or ball is absent, choose NOOP. Prefer NOOP, RIGHT and LEFT over their FIRE aliases, which have the same vertical effects. Request only the next four-frame action and recompute from the next observation.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Hold when the target defined in guidance is within four pixels of the player center, or when player or ball is absent. For a clear incoming trajectory, judge the reflected crossing height rather than current ball height. Prefer this to FIRE for holding.",
+          "FIRE": "The same vertical hold as NOOP: appropriate when the guidance target is within four pixels of the player center or an essential object is absent. It provides no additional alignment benefit; prefer NOOP.",
+          "RIGHT": "Move UP when the guidance target is more than four pixels above the player center. For a clear incoming ball, use its reflected crossing height; otherwise use current ball height. Horizontal rightward travel alone does not justify this action. Prefer RIGHT to RIGHTFIRE.",
+          "LEFT": "Move DOWN when the guidance target is more than four pixels below the player center. For a clear incoming ball, use its reflected crossing height; otherwise use current ball height. A future top-wall bounce can justify moving down while the ball currently rises. Prefer LEFT to LEFTFIRE.",
+          "RIGHTFIRE": "Move UP under the same target-above condition as RIGHT: the guidance target is more than four pixels above the player center. FIRE adds no vertical advantage, so prefer RIGHT when both fit.",
+          "LEFTFIRE": "Move DOWN under the same target-below condition as LEFT: the guidance target is more than four pixels below the player center. FIRE adds no vertical advantage, so prefer LEFT when both fit."
+        }
+      },
+      "proposal": {
+        "name": "pong-reflected-intercept-v1",
+        "guidance": "Which action should align the player paddle with the incoming ball's predicted crossing height? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y plus half height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN.\nThe principal target is the ball's future height at the player's front face, rather than its current height. When ball velocity_valid is true, horizontal velocity is positive, and the ball's right edge has not passed the player's left edge, estimate travel time as the horizontal gap between those edges divided by horizontal velocity. Project the ball center vertically for that many raw frames using its vertical velocity. Account for top and bottom bounces: reflect the projected trajectory between approximate ball-center limits y=34 and y=194, repeating reflections if necessary. Do not clamp the ball at a wall or project through it. These are playfield limits, not the full image edges.\nUse history to check for a recent bounce: a finite-difference velocity spanning a bounce can understate speed. If the incoming trajectory is ambiguous, use the current ball center as the target until a clear velocity is available. Also use the current ball center when velocity is missing or invalid, the ball is moving away, or it has already passed the paddle. Missing velocity is unknown, not zero.\nCompare this target with the player center. Target more than four pixels ABOVE: RIGHT. More than four pixels BELOW: LEFT. Within four pixels: NOOP. If player or ball is absent, choose NOOP. Prefer NOOP, RIGHT and LEFT over their FIRE aliases, which have the same vertical effects. Request only the next four-frame action and recompute from the next observation.",
+        "hypothesis": "Tracking current height can draw the paddle toward a wall even when an incoming ball will bounce and reach the paddle elsewhere. Targeting the reflected crossing height may allow earlier positioning and reduce late pursuit. The supplied loss windows show that alignment after the ball passes the paddle cannot recover the point; they do not establish that this proposal will improve return.",
+        "operator": "Replace instantaneous ball-height tracking with reflected incoming-trajectory interception; retain the four-pixel alignment tolerance and native action preferences.",
+        "predicted_changes": "Incoming diagonal balls should produce earlier movement toward their eventual crossing height, including movement opposite their current vertical direction before a wall bounce. A stable intercept target may reduce repeated chasing during approach and could reduce concessions. Outgoing-ball tracking and missing-object behavior remain as before.",
+        "regression_risks": "Approximate wall limits and velocities averaged across bounces can yield incorrect intercepts, particularly over long flights. Sticky actions and paddle drift can still cause overshoot. Different contact positions may produce easier returns for the opponent or longer rallies, potentially lowering points scored within the evaluation cap even if more balls are returned.",
+        "evidence_ids": [
+          "train-101-decision-232",
+          "train-101-decision-332",
+          "train-100-decision-199",
+          "train-100-decision-332",
+          "train-101-decision-60",
+          "train-101-decision-61",
+          "train-100-decision-213"
+        ],
+        "action_criteria": {
+          "NOOP": "Hold when the target defined in guidance is within four pixels of the player center, or when player or ball is absent. For a clear incoming trajectory, judge the reflected crossing height rather than current ball height. Prefer this to FIRE for holding.",
+          "FIRE": "The same vertical hold as NOOP: appropriate when the guidance target is within four pixels of the player center or an essential object is absent. It provides no additional alignment benefit; prefer NOOP.",
+          "RIGHT": "Move UP when the guidance target is more than four pixels above the player center. For a clear incoming ball, use its reflected crossing height; otherwise use current ball height. Horizontal rightward travel alone does not justify this action. Prefer RIGHT to RIGHTFIRE.",
+          "LEFT": "Move DOWN when the guidance target is more than four pixels below the player center. For a clear incoming ball, use its reflected crossing height; otherwise use current ball height. A future top-wall bounce can justify moving down while the ball currently rises. Prefer LEFT to LEFTFIRE.",
+          "RIGHTFIRE": "Move UP under the same target-above condition as RIGHT: the guidance target is more than four pixels above the player center. FIRE adds no vertical advantage, so prefer RIGHT when both fit.",
+          "LEFTFIRE": "Move DOWN under the same target-below condition as LEFT: the guidance target is more than four pixels below the player center. FIRE adds no vertical advantage, so prefer LEFT when both fit."
+        }
+      }
+    },
+    {
+      "id": "C1-R1-B",
+      "packet_hash": "673cd152ad34d23a0ca6b96fc13cb0be98f17a6a41dec97d47de64e44584edca",
+      "arm": "B",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "no empirical feedback",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "673cd152ad34d23a0ca6b96fc13cb0be98f17a6a41dec97d47de64e44584edca",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790091811.1562576,
+          "exit_code": 0,
+          "wall_seconds": 40.48743009567261
+        }
+      ],
+      "decision": {
+        "accepted": false,
+        "status": "rejected",
+        "seeds": [
+          106,
+          107
+        ],
+        "paired_gains_over_fresh_v2": [
+          -4.0,
+          1.0
+        ],
+        "mean_gain": -1.5,
+        "previous_best_gain": 0.0,
+        "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+        "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+      },
+      "program_hash": "abfb6be24346e0546420ca61a5200e9eba59f4afac6445041c97fffa3ac69fc7",
+      "program": {
+        "name": "pong-incoming-intercept",
+        "guidance": "Which action should align the player paddle with the ball's expected arrival height? Read player and ball from observation.objects and use the supplied history to estimate ball motion when available. A bbox is [x, y, width, height]; vertical center is y + height/2. Larger y means lower. The player is the right paddle: RIGHT moves UP and LEFT moves DOWN.\nUse one principal change: target the incoming ball's predicted interception height instead of always chasing its current height. When consecutive observations establish rightward ball motion toward the player, estimate the time until the ball's right edge reaches the player's left edge from their horizontal gap and the ball's horizontal speed. Project the ball center vertically over that time using its observed vertical speed. Account for top/bottom reflections only when the ball-center bounce limits are established by the supplied observation/history; do not invent boundary coordinates. If a possible reflection makes the projection uncertain, use the current ball center. Use consistent time units for displacement and arrival time. Do not extrapolate across an observed bounce or reset using stale velocity.\nIf velocity is missing, inconsistent, or the ball is moving away, use the current ball center as the target. Missing velocity is unknown, not zero. If player or ball is absent, choose NOOP.\nIf the target is more than four pixels below the player center, choose LEFT. If more than four pixels above, choose RIGHT. Within four pixels, choose NOOP. Prefer non-FIRE actions over their equivalent FIRE alternatives. Horizontal direction determines whether prediction applies, never the paddle's vertical movement directly. Reconsider after each four-raw-frame decision using the new observation.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Choose when the selected target height is within four pixels of the player center, or when player or ball is absent. The target is a credible incoming interception estimate when available, otherwise the current ball center. Prefer this stationary action over FIRE.",
+          "FIRE": "Stationary FIRE alternative when the selected target is within four pixels of the player center, or an object is absent. It supplies no vertical correction; prefer NOOP when both have the same movement effect.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use a credible incoming interception estimate, otherwise current ball height. The player being on the right or the ball traveling right does not itself justify this action.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use a credible incoming interception estimate, otherwise current ball height. Larger screen y means lower. Prefer this over LEFTFIRE for the same correction.",
+          "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using the same interception estimate or fallback as RIGHT. Prefer RIGHT when the movement effects are equivalent.",
+          "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using the same interception estimate or fallback as LEFT. Prefer LEFT when the movement effects are equivalent."
+        }
+      },
+      "proposal": {
+        "name": "pong-incoming-intercept",
+        "guidance": "Which action should align the player paddle with the ball's expected arrival height? Read player and ball from observation.objects and use the supplied history to estimate ball motion when available. A bbox is [x, y, width, height]; vertical center is y + height/2. Larger y means lower. The player is the right paddle: RIGHT moves UP and LEFT moves DOWN.\nUse one principal change: target the incoming ball's predicted interception height instead of always chasing its current height. When consecutive observations establish rightward ball motion toward the player, estimate the time until the ball's right edge reaches the player's left edge from their horizontal gap and the ball's horizontal speed. Project the ball center vertically over that time using its observed vertical speed. Account for top/bottom reflections only when the ball-center bounce limits are established by the supplied observation/history; do not invent boundary coordinates. If a possible reflection makes the projection uncertain, use the current ball center. Use consistent time units for displacement and arrival time. Do not extrapolate across an observed bounce or reset using stale velocity.\nIf velocity is missing, inconsistent, or the ball is moving away, use the current ball center as the target. Missing velocity is unknown, not zero. If player or ball is absent, choose NOOP.\nIf the target is more than four pixels below the player center, choose LEFT. If more than four pixels above, choose RIGHT. Within four pixels, choose NOOP. Prefer non-FIRE actions over their equivalent FIRE alternatives. Horizontal direction determines whether prediction applies, never the paddle's vertical movement directly. Reconsider after each four-raw-frame decision using the new observation.",
+        "hypothesis": "Tracking current ball height can leave the paddle behind an incoming diagonal trajectory. Targeting a credible arrival-height estimate may establish interception alignment earlier and reduce conceded points.",
+        "operator": "Replace guidance and all six action-criterion descriptions with incoming-interception targeting.",
+        "predicted_changes": "During reliably observed incoming flight, movement should follow predicted arrival height, sometimes differing from current-height tracking. Uncertain trajectories retain current-height tracking. This may improve points scored minus conceded through more successful returns; no improvement has been measured.",
+        "regression_risks": "Finite-difference estimates can be stale near collisions, and uncertain wall limits can invalidate long projections. Prediction errors, sticky actions, and the fixed four-frame interval may cause overshoot. Conservative fallback may limit gains, and successful returns do not guarantee more points scored.",
+        "evidence_ids": [],
+        "action_criteria": {
+          "NOOP": "Choose when the selected target height is within four pixels of the player center, or when player or ball is absent. The target is a credible incoming interception estimate when available, otherwise the current ball center. Prefer this stationary action over FIRE.",
+          "FIRE": "Stationary FIRE alternative when the selected target is within four pixels of the player center, or an object is absent. It supplies no vertical correction; prefer NOOP when both have the same movement effect.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use a credible incoming interception estimate, otherwise current ball height. The player being on the right or the ball traveling right does not itself justify this action.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use a credible incoming interception estimate, otherwise current ball height. Larger screen y means lower. Prefer this over LEFTFIRE for the same correction.",
+          "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using the same interception estimate or fallback as RIGHT. Prefer RIGHT when the movement effects are equivalent.",
+          "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using the same interception estimate or fallback as LEFT. Prefer LEFT when the movement effects are equivalent."
+        }
+      }
+    },
+    {
+      "id": "C1-R2-A",
+      "packet_hash": "60fbcc85749809d804e3cda8a873f30727f27e81320728291db30c19b70c56a0",
+      "arm": "A",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "training only",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "60fbcc85749809d804e3cda8a873f30727f27e81320728291db30c19b70c56a0",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790093557.7289283,
+          "exit_code": 0,
+          "wall_seconds": 60.712390661239624
+        }
+      ],
+      "decision": {
+        "accepted": false,
+        "status": "rejected",
+        "seeds": [
+          106,
+          107
+        ],
+        "paired_gains_over_fresh_v2": [
+          -1.0,
+          0.0
+        ],
+        "mean_gain": -0.5,
+        "previous_best_gain": 0.0,
+        "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+        "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+      },
+      "program_hash": "67d2e249f331df8db6fe21a26369487bea5bd93ed2e36332e597fe859f5feef4",
+      "program": {
+        "name": "pong-relative-motion-lookahead-v1",
+        "guidance": "Which action should reduce the anticipated vertical gap while avoiding overshoot? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y plus half height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN. If either object is absent, choose NOOP.\nUse a short lookahead instead of comparing only current centers. Estimate each object's vertical center two raw frames ahead by adding twice its vertical velocity to its current center, but only when that object's velocity_valid is true and velocity is available. Otherwise use its current center as a fallback; missing velocity is unknown, not evidence of rest. These estimates are approximate, especially after an action change.\nFor the ball forecast, reflect any excursion beyond approximate ball-center limits y=32 and y=194 back into the playfield. If history shows a recent vertical reversal and the latest velocity spans that bounce, use the current ball center until the direction becomes clear. Use the player's observed bbox height, including when clipped near a wall.\nCompare the forecast ball center with the forecast player center. Ball more than four pixels ABOVE: RIGHT. More than four pixels BELOW: LEFT. Within four pixels: NOOP. Thus a paddle rapidly approaching alignment can stop before its current center reaches the ball; if its forecast passes the ball by more than four pixels, reverse. A ball moving vertically away can justify starting movement before the current gap exceeds four pixels. Horizontal travel alone never selects UP or DOWN.\nPrefer NOOP, RIGHT and LEFT over their FIRE aliases. The lookahead does not change the action duration: act for the fixed four raw frames, then reconsider from the next observation.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Hold when either essential object is absent or the two forecast centers defined in guidance differ by at most four pixels. This includes braking before current alignment when existing paddle motion is already closing the gap. Prefer NOOP to FIRE.",
+          "FIRE": "Provides the same vertical hold as NOOP. Appropriate when an essential object is absent or the forecast centers are within four pixels. It adds no vertical correction; prefer NOOP.",
+          "RIGHT": "Move UP when the forecast ball center is more than four pixels above the forecast player center. This can brake downward overshoot even if the ball is currently below the paddle. Use the velocity fallbacks in guidance. Prefer RIGHT to RIGHTFIRE.",
+          "LEFT": "Move DOWN when the forecast ball center is more than four pixels below the forecast player center. This can brake upward overshoot even if the ball is currently above the paddle. Use the velocity fallbacks in guidance. Prefer LEFT to LEFTFIRE.",
+          "RIGHTFIRE": "Move UP under the same condition as RIGHT: the forecast ball center is more than four pixels above the forecast player center. FIRE adds no vertical advantage; prefer RIGHT.",
+          "LEFTFIRE": "Move DOWN under the same condition as LEFT: the forecast ball center is more than four pixels below the forecast player center. FIRE adds no vertical advantage; prefer LEFT."
+        }
+      },
+      "proposal": {
+        "name": "pong-relative-motion-lookahead-v1",
+        "guidance": "Which action should reduce the anticipated vertical gap while avoiding overshoot? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y plus half height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN. If either object is absent, choose NOOP.\nUse a short lookahead instead of comparing only current centers. Estimate each object's vertical center two raw frames ahead by adding twice its vertical velocity to its current center, but only when that object's velocity_valid is true and velocity is available. Otherwise use its current center as a fallback; missing velocity is unknown, not evidence of rest. These estimates are approximate, especially after an action change.\nFor the ball forecast, reflect any excursion beyond approximate ball-center limits y=32 and y=194 back into the playfield. If history shows a recent vertical reversal and the latest velocity spans that bounce, use the current ball center until the direction becomes clear. Use the player's observed bbox height, including when clipped near a wall.\nCompare the forecast ball center with the forecast player center. Ball more than four pixels ABOVE: RIGHT. More than four pixels BELOW: LEFT. Within four pixels: NOOP. Thus a paddle rapidly approaching alignment can stop before its current center reaches the ball; if its forecast passes the ball by more than four pixels, reverse. A ball moving vertically away can justify starting movement before the current gap exceeds four pixels. Horizontal travel alone never selects UP or DOWN.\nPrefer NOOP, RIGHT and LEFT over their FIRE aliases. The lookahead does not change the action duration: act for the fixed four raw frames, then reconsider from the next observation.",
+        "hypothesis": "Current-center tracking ignores substantial paddle motion during and after an action. In train-103-decision-232, NOOP accompanies another 16 pixels of downward displacement; in train-103-decision-332 and train-103-decision-499, a reversal request still accompanies motion in the previous direction. Comparing short-term forecast centers may initiate braking or reversal earlier and reduce oscillation, potentially reducing concessions. These observations do not establish an improvement in points scored minus conceded.",
+        "operator": "Replace the instantaneous vertical-gap comparison with a two-raw-frame relative-motion forecast, retaining the four-pixel tolerance, missing-object hold and native action preferences.",
+        "predicted_changes": "Movement should begin earlier when the ball is pulling away vertically and stop earlier when the paddle is closing rapidly. Some currently aligned states should request a correction because their forecast gap is large, while some visibly misaligned states should hold because their forecast centers converge. This could improve contact timing without requiring a full-flight intercept estimate.",
+        "regression_risks": "Finite-difference velocities are averages, and sticky actions make future paddle displacement uncertain. Two-frame extrapolation may brake too early or trigger unnecessary reversals. Wall reflections are approximate, and clipped paddle boxes distort center motion. Short lookahead still cannot anticipate distant bounces. Changed contact positions could produce easier opponent returns or longer rallies, reducing scoring within the frame cap.",
+        "evidence_ids": [
+          "train-103-decision-232",
+          "train-103-decision-332",
+          "train-103-decision-499",
+          "train-102-decision-499",
+          "train-102-decision-365"
+        ],
+        "action_criteria": {
+          "NOOP": "Hold when either essential object is absent or the two forecast centers defined in guidance differ by at most four pixels. This includes braking before current alignment when existing paddle motion is already closing the gap. Prefer NOOP to FIRE.",
+          "FIRE": "Provides the same vertical hold as NOOP. Appropriate when an essential object is absent or the forecast centers are within four pixels. It adds no vertical correction; prefer NOOP.",
+          "RIGHT": "Move UP when the forecast ball center is more than four pixels above the forecast player center. This can brake downward overshoot even if the ball is currently below the paddle. Use the velocity fallbacks in guidance. Prefer RIGHT to RIGHTFIRE.",
+          "LEFT": "Move DOWN when the forecast ball center is more than four pixels below the forecast player center. This can brake upward overshoot even if the ball is currently above the paddle. Use the velocity fallbacks in guidance. Prefer LEFT to LEFTFIRE.",
+          "RIGHTFIRE": "Move UP under the same condition as RIGHT: the forecast ball center is more than four pixels above the forecast player center. FIRE adds no vertical advantage; prefer RIGHT.",
+          "LEFTFIRE": "Move DOWN under the same condition as LEFT: the forecast ball center is more than four pixels below the forecast player center. FIRE adds no vertical advantage; prefer LEFT."
+        }
+      }
+    },
+    {
+      "id": "C1-R2-B",
+      "packet_hash": "2994d56d92072efa6ed2dd796638908daed617c80dfb982e555ca457cf4a78b3",
+      "arm": "B",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "no empirical feedback",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "2994d56d92072efa6ed2dd796638908daed617c80dfb982e555ca457cf4a78b3",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790093227.3576767,
+          "exit_code": 0,
+          "wall_seconds": 45.390074491500854
+        }
+      ],
+      "decision": {
+        "accepted": false,
+        "status": "rejected",
+        "seeds": [
+          106,
+          107
+        ],
+        "paired_gains_over_fresh_v2": [
+          -4.0,
+          0.0
+        ],
+        "mean_gain": -2.0,
+        "previous_best_gain": 0.0,
+        "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+        "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+      },
+      "program_hash": "2c4a0278c33e6f00e3d329fc48d7fa5debadf578fff894819d7838395b0cd11c",
+      "program": {
+        "name": "pong-bounded-incoming-lead",
+        "guidance": "Which action should vertically align the player paddle with the ball over the next decision? Read player and ball from observation.objects and motion information from the supplied history. A bbox is [x, y, width, height]; its vertical center is y + height/2. Larger y means lower. RIGHT moves the player UP; LEFT moves it DOWN.\nUse a short incoming lead as the principal change. Start with the current ball center as the target. When recent history establishes consistent rightward motion toward the player and a usable vertical velocity, project the ball center forward by four raw frames. If the ball will reach the player's left edge sooner, project only until contact: use the horizontal gap between the ball's right edge and the player's left edge divided by horizontal speed. Never project beyond four raw frames. Convert velocities and durations to matching units; if their timing is unclear, retain the current ball center.\nUse the projected height only when the recent motion supports continued flight over that short interval. Account for a wall reflection only if its location is established by the supplied observation/history. If a bounce or reset makes the projection uncertain, retain the current ball center. Missing velocity is unknown, not zero. When the ball moves away, retain its current center as the target.\nChoose RIGHT when the target is more than four pixels above the player center, LEFT when it is more than four pixels below, and NOOP within four pixels. If player or ball is absent, choose NOOP. Horizontal motion selects whether to use prediction; it does not directly select UP or DOWN. Prefer non-FIRE actions over FIRE aliases with equivalent movement. Reconsider after each decision.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Choose when the selected target is within four pixels of the player center, or player or ball is absent. The target is the credible short incoming projection defined in the guidance, otherwise the current ball center. Prefer NOOP over equivalent stationary FIRE.",
+          "FIRE": "Stationary alternative when the selected target is within four pixels of the player center, or player or ball is absent. FIRE supplies no vertical correction; prefer NOOP when their movement effects are equivalent.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use the credible incoming projection capped at four raw frames, otherwise current ball height. Rightward ball motion alone does not justify moving up. Prefer RIGHT over equivalent RIGHTFIRE.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use the credible incoming projection capped at four raw frames, otherwise current ball height. Larger y means lower. Prefer LEFT over equivalent LEFTFIRE.",
+          "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using exactly the same target as RIGHT. Prefer RIGHT when both produce equivalent vertical movement.",
+          "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using exactly the same target as LEFT. Prefer LEFT when both produce equivalent vertical movement."
+        }
+      },
+      "proposal": {
+        "name": "pong-bounded-incoming-lead",
+        "guidance": "Which action should vertically align the player paddle with the ball over the next decision? Read player and ball from observation.objects and motion information from the supplied history. A bbox is [x, y, width, height]; its vertical center is y + height/2. Larger y means lower. RIGHT moves the player UP; LEFT moves it DOWN.\nUse a short incoming lead as the principal change. Start with the current ball center as the target. When recent history establishes consistent rightward motion toward the player and a usable vertical velocity, project the ball center forward by four raw frames. If the ball will reach the player's left edge sooner, project only until contact: use the horizontal gap between the ball's right edge and the player's left edge divided by horizontal speed. Never project beyond four raw frames. Convert velocities and durations to matching units; if their timing is unclear, retain the current ball center.\nUse the projected height only when the recent motion supports continued flight over that short interval. Account for a wall reflection only if its location is established by the supplied observation/history. If a bounce or reset makes the projection uncertain, retain the current ball center. Missing velocity is unknown, not zero. When the ball moves away, retain its current center as the target.\nChoose RIGHT when the target is more than four pixels above the player center, LEFT when it is more than four pixels below, and NOOP within four pixels. If player or ball is absent, choose NOOP. Horizontal motion selects whether to use prediction; it does not directly select UP or DOWN. Prefer non-FIRE actions over FIRE aliases with equivalent movement. Reconsider after each decision.",
+        "hypothesis": "A four-frame lead may reduce the lag of current-height tracking during incoming diagonal flight. Bounding prediction to the next decision may also reduce sensitivity to uncertain distant bounces compared with the prior full-arrival projection. Neither benefit has been measured.",
+        "operator": "Replace the guidance and all six criteria with bounded incoming-lead targeting while retaining the four-pixel alignment threshold and native action meanings.",
+        "predicted_changes": "During reliable incoming flight, the paddle should begin vertical corrections slightly earlier. Predictions should stay close to the observed ball height, with current-height tracking retained when motion is uncertain or outgoing. More timely returns could improve points scored minus conceded.",
+        "regression_risks": "Finite-difference motion can miss a recent collision, and even a short projection can cross a wall bounce. Leading the ball may cause unnecessary movement when it already overlaps the paddle. Sticky actions can prolong corrections. A four-frame horizon may be too short to address difficult interceptions, and additional returns may not yield additional points.",
+        "evidence_ids": [],
+        "action_criteria": {
+          "NOOP": "Choose when the selected target is within four pixels of the player center, or player or ball is absent. The target is the credible short incoming projection defined in the guidance, otherwise the current ball center. Prefer NOOP over equivalent stationary FIRE.",
+          "FIRE": "Stationary alternative when the selected target is within four pixels of the player center, or player or ball is absent. FIRE supplies no vertical correction; prefer NOOP when their movement effects are equivalent.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use the credible incoming projection capped at four raw frames, otherwise current ball height. Rightward ball motion alone does not justify moving up. Prefer RIGHT over equivalent RIGHTFIRE.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use the credible incoming projection capped at four raw frames, otherwise current ball height. Larger y means lower. Prefer LEFT over equivalent LEFTFIRE.",
+          "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using exactly the same target as RIGHT. Prefer RIGHT when both produce equivalent vertical movement.",
+          "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using exactly the same target as LEFT. Prefer LEFT when both produce equivalent vertical movement."
+        }
+      }
+    },
+    {
+      "id": "C2-R1-A",
+      "packet_hash": "23d20460f00109863cad11ea8bcb83460fbe9d82fb94860aa17561aaec0e6ae4",
+      "arm": "A",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "training only",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "23d20460f00109863cad11ea8bcb83460fbe9d82fb94860aa17561aaec0e6ae4",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790094932.3725185,
+          "exit_code": 0,
+          "wall_seconds": 41.06079983711243
+        }
+      ],
+      "decision": {
+        "accepted": false,
+        "status": "rejected",
+        "seeds": [
+          116,
+          117
+        ],
+        "paired_gains_over_fresh_v2": [
+          -5.0,
+          -6.0
+        ],
+        "mean_gain": -5.5,
+        "previous_best_gain": 0.0,
+        "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+        "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+      },
+      "program_hash": "be587c32ec9bde125a35b8ec5207e2258be30efb406591bc5badacebbb24c854",
+      "program": {
+        "name": "pong-incoming-intercept-v1",
+        "guidance": "Align the player paddle with the incoming ball's predicted crossing height. Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half the height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN.\nUse the ball's current vertical center as the default target. When ball velocity is valid, horizontal velocity is positive, and the ball is still left of the player, predict its height when its right edge reaches the player's left edge: remaining horizontal gap divided by horizontal velocity gives time in raw frames; advance the ball center vertically by vertical velocity times that time. Account for top and bottom bounces by reflecting the projected path at approximate ball-center heights 34 and 194, repeating reflections if needed. Do not clamp the ball trajectory at a wall. Use history to check that the latest velocity represents steady travel: if the most recent interval contains a bounce or disagrees substantially with the preceding interval, use the current ball center until a consistent outgoing velocity is observed. Missing velocity is unknown, not zero. For a leftward ball, unknown motion, or a ball already beyond the paddle, retain the current-center target.\nCompare the target with the player's current vertical center. Target more than four pixels ABOVE: RIGHT. Target more than four pixels BELOW: LEFT. Within four pixels: NOOP. If player or ball is absent, NOOP. Horizontal position and velocity determine whether and how far to predict, never the up/down action directly. Prefer NOOP, RIGHT and LEFT over their equivalent FIRE aliases. Act for the next requested four raw frames, then recompute from the next observation.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Hold when the selected target is within four pixels of the player center, or when player or ball is absent. For a reliable incoming trajectory, judge alignment against the reflected crossing height, even if the current ball height differs.",
+          "FIRE": "Stationary FIRE alias: appropriate under the same alignment or missing-object conditions as NOOP. It adds no vertical correction; prefer NOOP when their movement effects are equivalent.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use the predicted crossing height for reliable incoming motion and the current ball center otherwise. Rightward ball travel alone is not a reason to move up.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use the predicted crossing height for reliable incoming motion and the current ball center otherwise. Downward means increasing screen y.",
+          "RIGHTFIRE": "Move UP with FIRE when the same target-above-center condition as RIGHT applies. This is an upward movement alias; prefer RIGHT when their vertical effects are equivalent.",
+          "LEFTFIRE": "Move DOWN with FIRE when the same target-below-center condition as LEFT applies. This is a downward movement alias; prefer LEFT when their vertical effects are equivalent."
+        }
+      },
+      "proposal": {
+        "name": "pong-incoming-intercept-v1",
+        "guidance": "Align the player paddle with the incoming ball's predicted crossing height. Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half the height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN.\nUse the ball's current vertical center as the default target. When ball velocity is valid, horizontal velocity is positive, and the ball is still left of the player, predict its height when its right edge reaches the player's left edge: remaining horizontal gap divided by horizontal velocity gives time in raw frames; advance the ball center vertically by vertical velocity times that time. Account for top and bottom bounces by reflecting the projected path at approximate ball-center heights 34 and 194, repeating reflections if needed. Do not clamp the ball trajectory at a wall. Use history to check that the latest velocity represents steady travel: if the most recent interval contains a bounce or disagrees substantially with the preceding interval, use the current ball center until a consistent outgoing velocity is observed. Missing velocity is unknown, not zero. For a leftward ball, unknown motion, or a ball already beyond the paddle, retain the current-center target.\nCompare the target with the player's current vertical center. Target more than four pixels ABOVE: RIGHT. Target more than four pixels BELOW: LEFT. Within four pixels: NOOP. If player or ball is absent, NOOP. Horizontal position and velocity determine whether and how far to predict, never the up/down action directly. Prefer NOOP, RIGHT and LEFT over their equivalent FIRE aliases. Act for the next requested four raw frames, then recompute from the next observation.",
+        "hypothesis": "Tracking current ball height can leave the paddle behind a sloped incoming trajectory or draw it toward a wall before a bounce. Predicting the crossing height may allow earlier positioning and fewer late corrections. Supplied loss windows show missed crossings followed by apparent alignment only after the ball has passed the paddle; they motivate this hypothesis but do not establish that the edit improves return.",
+        "operator": "Replace the incoming-ball current-height target with a velocity-based, wall-reflected crossing-height target; retain the existing movement mapping, four-pixel deadband and fallback tracking.",
+        "predicted_changes": "Expect earlier movement toward incoming crossing heights, including movement opposite the ball's current vertical offset when a bounce changes the destination. This may reduce conceded points and create more return opportunities. Whether points scored minus conceded improves requires evaluation.",
+        "regression_risks": "Approximate wall and collision coordinates can bias predictions. Finite-difference velocity around bounces can remain misleading despite the history check. Sticky movement and the unchanged narrow deadband can cause overshoot around a stationary target. More centered returns may prolong rallies without increasing points scored within the frame cap.",
+        "evidence_ids": [
+          "train-110-decision-266",
+          "train-110-decision-178",
+          "train-110-decision-179",
+          "train-111-decision-59",
+          "train-111-decision-60",
+          "train-111-decision-166"
+        ],
+        "action_criteria": {
+          "NOOP": "Hold when the selected target is within four pixels of the player center, or when player or ball is absent. For a reliable incoming trajectory, judge alignment against the reflected crossing height, even if the current ball height differs.",
+          "FIRE": "Stationary FIRE alias: appropriate under the same alignment or missing-object conditions as NOOP. It adds no vertical correction; prefer NOOP when their movement effects are equivalent.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use the predicted crossing height for reliable incoming motion and the current ball center otherwise. Rightward ball travel alone is not a reason to move up.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use the predicted crossing height for reliable incoming motion and the current ball center otherwise. Downward means increasing screen y.",
+          "RIGHTFIRE": "Move UP with FIRE when the same target-above-center condition as RIGHT applies. This is an upward movement alias; prefer RIGHT when their vertical effects are equivalent.",
+          "LEFTFIRE": "Move DOWN with FIRE when the same target-below-center condition as LEFT applies. This is a downward movement alias; prefer LEFT when their vertical effects are equivalent."
+        }
+      }
+    },
+    {
+      "id": "C2-R1-B",
+      "packet_hash": "673cd152ad34d23a0ca6b96fc13cb0be98f17a6a41dec97d47de64e44584edca",
+      "arm": "B",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "no empirical feedback",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "673cd152ad34d23a0ca6b96fc13cb0be98f17a6a41dec97d47de64e44584edca",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790094599.0087268,
+          "exit_code": 0,
+          "wall_seconds": 42.16003346443176
+        }
+      ],
+      "decision": {
+        "accepted": false,
+        "status": "rejected",
+        "seeds": [
+          116,
+          117
+        ],
+        "paired_gains_over_fresh_v2": [
+          -1.0,
+          0.0
+        ],
+        "mean_gain": -0.5,
+        "previous_best_gain": 0.0,
+        "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+        "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+      },
+      "program_hash": "26fbe1dbff5e34aa8618e0b6c1b236bf5cc8b4fad959abcde9d208955a05814c",
+      "program": {
+        "name": "pong-incoming-intercept",
+        "guidance": "Which action best aligns the player paddle with the ball's expected arrival height? Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half the height. Larger y means DOWN. The player is the right paddle: RIGHT moves UP and LEFT moves DOWN, regardless of the ball's horizontal direction.\nUse observation.history, when available, to estimate ball motion from successive positions. Missing velocity is unknown, not zero. The principal change is to target the incoming ball's predicted vertical position at the player's left face instead of always chasing its current height. When the ball is moving toward the player and motion is sufficiently clear, estimate the remaining horizontal travel time and corresponding vertical travel. Account for top or bottom rebounds only when the relevant boundary is supported by the observation or history; do not invent wall coordinates or extrapolate straight through a known wall. After an apparent rebound, use the newest consistent motion rather than averaging across the reversal. If the arrival estimate is uncertain, use the current ball center. Also use the current ball center while the ball travels away.\nIf the target is more than four pixels below the player center, choose LEFT. If it is more than four pixels above, choose RIGHT. Within four pixels choose NOOP. If player or ball is absent, choose NOOP. Prefer non-FIRE actions when a FIRE alias gives the same movement. Act for the next four raw frames, then reassess; do not commit to a full predicted trajectory.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Hold position when the target height is within four pixels of the player center, or when player or ball is absent. The target is the supported incoming arrival estimate, otherwise the current ball center. Prefer this stationary action over FIRE.",
+          "FIRE": "Stationary FIRE alternative when the same alignment conditions as NOOP apply. It provides no vertical correction; prefer NOOP when firing has no distinct benefit supported by the observation.",
+          "RIGHT": "Move UP when the target height is more than four pixels above the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Being the right paddle or seeing rightward ball motion alone does not justify RIGHT.",
+          "LEFT": "Move DOWN when the target height is more than four pixels below the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Reassess after the requested duration to avoid passing the target.",
+          "RIGHTFIRE": "Move UP with FIRE when the target is more than four pixels above the player center, under the same targeting rule as RIGHT. Prefer RIGHT unless the observation supports a distinct benefit from firing.",
+          "LEFTFIRE": "Move DOWN with FIRE when the target is more than four pixels below the player center, under the same targeting rule as LEFT. Prefer LEFT unless the observation supports a distinct benefit from firing."
+        }
+      },
+      "proposal": {
+        "name": "pong-incoming-intercept",
+        "guidance": "Which action best aligns the player paddle with the ball's expected arrival height? Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half the height. Larger y means DOWN. The player is the right paddle: RIGHT moves UP and LEFT moves DOWN, regardless of the ball's horizontal direction.\nUse observation.history, when available, to estimate ball motion from successive positions. Missing velocity is unknown, not zero. The principal change is to target the incoming ball's predicted vertical position at the player's left face instead of always chasing its current height. When the ball is moving toward the player and motion is sufficiently clear, estimate the remaining horizontal travel time and corresponding vertical travel. Account for top or bottom rebounds only when the relevant boundary is supported by the observation or history; do not invent wall coordinates or extrapolate straight through a known wall. After an apparent rebound, use the newest consistent motion rather than averaging across the reversal. If the arrival estimate is uncertain, use the current ball center. Also use the current ball center while the ball travels away.\nIf the target is more than four pixels below the player center, choose LEFT. If it is more than four pixels above, choose RIGHT. Within four pixels choose NOOP. If player or ball is absent, choose NOOP. Prefer non-FIRE actions when a FIRE alias gives the same movement. Act for the next four raw frames, then reassess; do not commit to a full predicted trajectory.",
+        "hypothesis": "Current-height tracking may lag behind a diagonally approaching ball. Targeting its estimated arrival height could position the paddle earlier and reduce conceded points, provided motion and rebound estimates are reliable.",
+        "operator": "Replace current-height tracking with history-based incoming interception; preserve movement meanings, deadband, missing-object fallback and non-FIRE preference.",
+        "predicted_changes": "During clear incoming diagonal motion, movement should begin toward the estimated contact height before the ball reaches that height. Outgoing or uncertain-motion states should retain current-height tracking. This may improve points scored minus conceded through more successful returns; no empirical improvement is established.",
+        "regression_risks": "Finite-difference estimates near rebounds, uncertain wall locations and long flight times can produce incorrect targets. Sticky actions can cause overshoot despite reassessment. More reliable contact may still produce easy opponent returns, so fewer misses need not yield a better point differential.",
+        "evidence_ids": [],
+        "action_criteria": {
+          "NOOP": "Hold position when the target height is within four pixels of the player center, or when player or ball is absent. The target is the supported incoming arrival estimate, otherwise the current ball center. Prefer this stationary action over FIRE.",
+          "FIRE": "Stationary FIRE alternative when the same alignment conditions as NOOP apply. It provides no vertical correction; prefer NOOP when firing has no distinct benefit supported by the observation.",
+          "RIGHT": "Move UP when the target height is more than four pixels above the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Being the right paddle or seeing rightward ball motion alone does not justify RIGHT.",
+          "LEFT": "Move DOWN when the target height is more than four pixels below the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Reassess after the requested duration to avoid passing the target.",
+          "RIGHTFIRE": "Move UP with FIRE when the target is more than four pixels above the player center, under the same targeting rule as RIGHT. Prefer RIGHT unless the observation supports a distinct benefit from firing.",
+          "LEFTFIRE": "Move DOWN with FIRE when the target is more than four pixels below the player center, under the same targeting rule as LEFT. Prefer LEFT unless the observation supports a distinct benefit from firing."
+        }
+      }
+    },
+    {
+      "id": "C2-R2-A",
+      "packet_hash": "ebff2e6a395a73432f2c634780b9ad3e75d484e558162130075649f10090878a",
+      "arm": "A",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "training only",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "ebff2e6a395a73432f2c634780b9ad3e75d484e558162130075649f10090878a",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790096323.632054,
+          "exit_code": 0,
+          "wall_seconds": 48.40383243560791
+        }
+      ],
+      "decision": null,
+      "program_hash": "0abda786d1336f9a912a9a2bb6225aeec54e1ee5551256509eb095d2d175eb09",
+      "program": {
+        "name": "pong-bounded-incoming-lookahead-v1",
+        "guidance": "Which action aligns the player paddle with the incoming ball's near-future height? Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half its height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN. If player or ball is absent, choose NOOP.\nDefault target: the ball's current vertical center. For a ball moving right toward the player with reliable velocity, look ahead for the smaller of 24 raw frames and the time until its right edge reaches the player's left edge. That arrival time is the horizontal edge gap divided by positive horizontal velocity. Advance the ball center by vertical velocity times this lookahead. Reflect its path at approximate ball-center heights 33 and 193 if it reaches a wall; do not clamp it there. This target anticipates incoming movement while limiting distant extrapolation.\nUse prediction only when velocity_valid is true and the latest two history intervals show approximately consistent horizontal and vertical motion. An interval spanning a bounce can report a misleading average; use the current center until two consistent intervals establish the new direction. Missing velocity is unknown, not zero. For leftward motion, unknown motion, or a ball whose right edge has already reached the player's left edge, use the current-center target.\nIf the target is more than four pixels ABOVE the player center, choose RIGHT. If more than four pixels BELOW, choose LEFT. Within four pixels, choose NOOP. Horizontal travel selects the prediction horizon, never the vertical action directly. Prefer NOOP, RIGHT and LEFT over equivalent FIRE aliases. Reconsider after the next requested four raw frames.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Hold when the selected target is within four pixels of the player center, or player or ball is absent. For reliable incoming motion, compare with the bounded, wall-reflected future target; otherwise compare with the current ball center.",
+          "FIRE": "Stationary FIRE is appropriate under the same alignment or missing-object conditions as NOOP. It supplies no vertical correction; prefer NOOP when their movement effects are equivalent.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use the bounded future target for reliable incoming motion and the current ball center otherwise. Rightward ball travel alone does not imply UP.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use the bounded future target for reliable incoming motion and the current ball center otherwise. DOWN increases screen y.",
+          "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using the same prediction and fallback rules as RIGHT. Prefer RIGHT when their vertical effects are equivalent.",
+          "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using the same prediction and fallback rules as LEFT. Prefer LEFT when their vertical effects are equivalent."
+        }
+      },
+      "proposal": {
+        "name": "pong-bounded-incoming-lookahead-v1",
+        "guidance": "Which action aligns the player paddle with the incoming ball's near-future height? Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half its height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN. If player or ball is absent, choose NOOP.\nDefault target: the ball's current vertical center. For a ball moving right toward the player with reliable velocity, look ahead for the smaller of 24 raw frames and the time until its right edge reaches the player's left edge. That arrival time is the horizontal edge gap divided by positive horizontal velocity. Advance the ball center by vertical velocity times this lookahead. Reflect its path at approximate ball-center heights 33 and 193 if it reaches a wall; do not clamp it there. This target anticipates incoming movement while limiting distant extrapolation.\nUse prediction only when velocity_valid is true and the latest two history intervals show approximately consistent horizontal and vertical motion. An interval spanning a bounce can report a misleading average; use the current center until two consistent intervals establish the new direction. Missing velocity is unknown, not zero. For leftward motion, unknown motion, or a ball whose right edge has already reached the player's left edge, use the current-center target.\nIf the target is more than four pixels ABOVE the player center, choose RIGHT. If more than four pixels BELOW, choose LEFT. Within four pixels, choose NOOP. Horizontal travel selects the prediction horizon, never the vertical action directly. Prefer NOOP, RIGHT and LEFT over equivalent FIRE aliases. Reconsider after the next requested four raw frames.",
+        "hypothesis": "Current-height tracking can react too late to an incoming ball, especially after a wall bounce. The histories in the supplied loss windows show the ball crossing the paddle while the paddle remains below it, followed by alignment after the crossing. A bounded lookahead may initiate corrections earlier without relying on a full-flight prediction.",
+        "operator": "Replace current-height tracking for reliable incoming motion with a wall-reflected prediction capped at 24 raw frames or paddle arrival, whichever comes first. Retain the movement mapping, four-pixel deadband and fallback tracking.",
+        "predicted_changes": "Expect earlier corrections along incoming trajectories and earlier reversals near predicted wall bounces. This may reduce late misses and create additional scoring opportunities. Improvement in points scored minus conceded remains untested.",
+        "regression_risks": "The 24-frame horizon is unvalidated. Approximate wall positions and finite-difference velocities can bias targets; the consistency check can delay recovery after bounces. Sticky actions and the narrow deadband may still cause overshoot. Changed contact positions may produce less effective returns or longer rallies within the frame cap.",
+        "evidence_ids": [
+          "train-112-decision-495",
+          "train-112-decision-496",
+          "train-113-decision-120",
+          "train-113-decision-121",
+          "train-113-decision-251",
+          "train-113-decision-252",
+          "train-113-decision-465"
+        ],
+        "action_criteria": {
+          "NOOP": "Hold when the selected target is within four pixels of the player center, or player or ball is absent. For reliable incoming motion, compare with the bounded, wall-reflected future target; otherwise compare with the current ball center.",
+          "FIRE": "Stationary FIRE is appropriate under the same alignment or missing-object conditions as NOOP. It supplies no vertical correction; prefer NOOP when their movement effects are equivalent.",
+          "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use the bounded future target for reliable incoming motion and the current ball center otherwise. Rightward ball travel alone does not imply UP.",
+          "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use the bounded future target for reliable incoming motion and the current ball center otherwise. DOWN increases screen y.",
+          "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using the same prediction and fallback rules as RIGHT. Prefer RIGHT when their vertical effects are equivalent.",
+          "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using the same prediction and fallback rules as LEFT. Prefer LEFT when their vertical effects are equivalent."
+        }
+      }
+    },
+    {
+      "id": "C2-R2-B",
+      "packet_hash": "07d5e91a8c878560fad906885d87e2f9737c9ea361d64d789f066428852d7c4c",
+      "arm": "B",
+      "parent_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+      "visibility": "no empirical feedback",
+      "invocations": [
+        {
+          "requested_model": "gpt-6-astra",
+          "requested_reasoning_effort": "high",
+          "packet_hash": "07d5e91a8c878560fad906885d87e2f9737c9ea361d64d789f066428852d7c4c",
+          "status": "complete",
+          "timeout_seconds": 900,
+          "isolation": {
+            "kind": "teacher-isolation-check-v1",
+            "filesystem_check": "passed",
+            "codex_version": "codex-cli 0.154.0",
+            "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+            "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+            "disabled_features": [
+              "shell_tool",
+              "unified_exec",
+              "code_mode",
+              "code_mode_host",
+              "multi_agent",
+              "apps",
+              "plugins",
+              "hooks",
+              "memories",
+              "shell_snapshot",
+              "browser_use",
+              "browser_use_external",
+              "computer_use",
+              "image_generation",
+              "view_image",
+              "in_app_browser",
+              "workspace_dependencies",
+              "skill_search",
+              "sleep_tool",
+              "goals"
+            ],
+            "repository_mounted": false,
+            "host_home_mounted": false,
+            "network": "provider access; web tool disabled",
+            "api_calls": 0
+          },
+          "invocation_mode": "isolated Codex exec",
+          "provider_response_model": null,
+          "provider_response_model_note": "CLI final JSON is not an API model attestation.",
+          "started_at": 1790095988.6824677,
+          "exit_code": 0,
+          "wall_seconds": 43.512088775634766
+        }
+      ],
+      "decision": null,
+      "program_hash": "d7ca441f97d284800b14cdb3de92f3591ba965db50245c8b5c4931e4cdb64619",
+      "program": {
+        "name": "pong-bounded-incoming-lead",
+        "guidance": "Which action best aligns the player paddle with a short-term incoming ball target? Read player and ball in observation.objects. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means DOWN. RIGHT moves the player UP; LEFT moves it DOWN.\nThe principal change is bounded anticipation. Start with the current ball center as the target. Use available finite-difference motion or observation.history to estimate ball velocity only when timing and recent motion are clear. Missing velocity is unknown, not zero. If the ball is moving toward the right-side player, estimate the time until the ball's right edge reaches the player's left face. Project its vertical center forward by that time or eight raw frames, whichever is shorter. Never project beyond contact. This limited lead avoids relying on a full long-distance trajectory. If a wall rebound could occur within that interval, use the projection only when the boundary and reflected motion are supported by the observation or history; otherwise retain the current ball center. After a direction reversal, use only motion from after the reversal. If motion is uncertain, the ball is traveling away, or it has already passed the contact plane, retain the current ball center.\nChoose LEFT when the target is more than four pixels below the player center, RIGHT when more than four pixels above, and NOOP within four pixels. If player or ball is absent, choose NOOP. Horizontal position or direction alone never selects vertical movement. Prefer non-FIRE actions when firing has no distinct supported benefit. Reassess after the next four raw frames.",
+        "schema_version": "action-choice-program-v2",
+        "action_criteria": {
+          "NOOP": "Hold when the target is within four pixels of the player center, or player or ball is absent. The target is the supported incoming projection capped at eight raw frames and contact time; otherwise it is the current ball center. Prefer NOOP over equivalent stationary FIRE.",
+          "FIRE": "Remain stationary with FIRE when the target is within four pixels of the player center and the observation supports a distinct benefit from firing. It supplies no vertical correction; prefer NOOP when firing is equivalent or player or ball is absent.",
+          "RIGHT": "Move UP when the target is more than four pixels above the player center. Use the supported incoming projection capped at eight raw frames and contact time, otherwise the current ball center. Rightward ball motion alone does not justify moving up.",
+          "LEFT": "Move DOWN when the target is more than four pixels below the player center. Use the supported incoming projection capped at eight raw frames and contact time, otherwise the current ball center. Reassess after four raw frames.",
+          "RIGHTFIRE": "Move UP with FIRE when the same target used for RIGHT is more than four pixels above the player center and firing has a distinct benefit supported by the observation. Prefer RIGHT when the two actions provide equivalent movement.",
+          "LEFTFIRE": "Move DOWN with FIRE when the same target used for LEFT is more than four pixels below the player center and firing has a distinct benefit supported by the observation. Prefer LEFT when the two actions provide equivalent movement."
+        }
+      },
+      "proposal": {
+        "name": "pong-bounded-incoming-lead",
+        "guidance": "Which action best aligns the player paddle with a short-term incoming ball target? Read player and ball in observation.objects. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means DOWN. RIGHT moves the player UP; LEFT moves it DOWN.\nThe principal change is bounded anticipation. Start with the current ball center as the target. Use available finite-difference motion or observation.history to estimate ball velocity only when timing and recent motion are clear. Missing velocity is unknown, not zero. If the ball is moving toward the right-side player, estimate the time until the ball's right edge reaches the player's left face. Project its vertical center forward by that time or eight raw frames, whichever is shorter. Never project beyond contact. This limited lead avoids relying on a full long-distance trajectory. If a wall rebound could occur within that interval, use the projection only when the boundary and reflected motion are supported by the observation or history; otherwise retain the current ball center. After a direction reversal, use only motion from after the reversal. If motion is uncertain, the ball is traveling away, or it has already passed the contact plane, retain the current ball center.\nChoose LEFT when the target is more than four pixels below the player center, RIGHT when more than four pixels above, and NOOP within four pixels. If player or ball is absent, choose NOOP. Horizontal position or direction alone never selects vertical movement. Prefer non-FIRE actions when firing has no distinct supported benefit. Reassess after the next four raw frames.",
+        "hypothesis": "A short lead during incoming motion may reduce the lag of current-height tracking while limiting errors from long-range extrapolation. The eight-frame cap is an untested design choice, not an empirically selected value.",
+        "operator": "Replace the current-ball target with a bounded incoming projection when recent motion supports it; preserve the four-pixel deadband, movement semantics and fallback behavior.",
+        "predicted_changes": "The paddle should begin correcting toward an approaching ball's near-future height earlier, with smaller anticipatory deviations than unrestricted arrival prediction. This could increase successful returns and improve points scored minus conceded, but no improvement is established.",
+        "regression_risks": "Eight frames may provide insufficient lead for steep incoming trajectories. Noisy velocity, rebound ambiguity and sticky actions may cause incorrect corrections or overshoot. Additional returns may remain easy for the opponent and need not improve point differential.",
+        "evidence_ids": [],
+        "action_criteria": {
+          "NOOP": "Hold when the target is within four pixels of the player center, or player or ball is absent. The target is the supported incoming projection capped at eight raw frames and contact time; otherwise it is the current ball center. Prefer NOOP over equivalent stationary FIRE.",
+          "FIRE": "Remain stationary with FIRE when the target is within four pixels of the player center and the observation supports a distinct benefit from firing. It supplies no vertical correction; prefer NOOP when firing is equivalent or player or ball is absent.",
+          "RIGHT": "Move UP when the target is more than four pixels above the player center. Use the supported incoming projection capped at eight raw frames and contact time, otherwise the current ball center. Rightward ball motion alone does not justify moving up.",
+          "LEFT": "Move DOWN when the target is more than four pixels below the player center. Use the supported incoming projection capped at eight raw frames and contact time, otherwise the current ball center. Reassess after four raw frames.",
+          "RIGHTFIRE": "Move UP with FIRE when the same target used for RIGHT is more than four pixels above the player center and firing has a distinct benefit supported by the observation. Prefer RIGHT when the two actions provide equivalent movement.",
+          "LEFTFIRE": "Move DOWN with FIRE when the same target used for LEFT is more than four pixels below the player center and firing has a distinct benefit supported by the observation. Prefer LEFT when the two actions provide equivalent movement."
+        }
+      }
+    }
+  ],
+  "note": "Original proposals and observed dispositions only; no inferred reasoning."
+}

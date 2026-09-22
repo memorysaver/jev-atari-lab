@@ -1,0 +1,5282 @@
+[
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.618676548008807,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1626,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25500216500950046,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1896,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.34787868399871513,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1909,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23163182199641597,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1896,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25094275899755303,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1909,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23265345199615695,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1626,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2788652980088955,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1897,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26708837700425647,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1910,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26392662500438746,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1627,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2562539009959437,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1910,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2812148380035069,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1627,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31507699099893216,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1897,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25001803599298,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2866963749984279,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1636,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2473441659967648,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1906,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29223233299853746,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1636,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24984255200251937,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1906,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3190500869968673,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29126266700041015,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1606,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24358209301135503,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1876,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2490152710088296,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1889,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.248243009991711,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1876,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.298902069000178,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1889,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2944320240058005,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1606,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2580696410004748,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1899,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.297496247003437,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1912,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26935485200374387,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1629,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24839233700186014,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1912,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2641764350119047,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1629,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23453393200179562,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1899,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2587960050004767,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1910,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.32569305300421547,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1627,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27756742399651557,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1897,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2818906769971363,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1627,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31137169199064374,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1897,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2311815459979698,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1910,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2662733460019808,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1631,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2441107810009271,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1901,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29924335099349264,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1914,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2930610559997149,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1901,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29272082600800786,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1914,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2510014159925049,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1631,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31770707899704576,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1901,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23555960999510717,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1914,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2578135859948816,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1631,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2334688099945197,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1914,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25663281000743154,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1631,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2539805299893487,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1901,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2733472109975992,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1945,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2519256750092609,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1662,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2367289950052509,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1932,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29555796799832024,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1662,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25653763400623575,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1932,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25768976600375026,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1945,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2700197300000582,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1648,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2693448319914751,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1918,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2798927670082776,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1931,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3118749220011523,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1918,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2857389400014654,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1931,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28945684200152755,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1648,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24642045500513632,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1887,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28793544600193854,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1900,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3080788249935722,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1617,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23092649300815538,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1900,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2388299640006153,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1617,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26941564300796017,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1887,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2344695110077737,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1937,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26308330000028946,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1654,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27087325099273585,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1924,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3316862150095403,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1654,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.262973005999811,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1924,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26591327899950556,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1937,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23672556699602865,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1653,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2482090460107429,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1923,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2391974539932562,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1936,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2383720959915081,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1923,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28986155000166036,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1936,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29281196200463455,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1653,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29775974100630265,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1882,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2857622120063752,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1895,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30338080700312275,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1612,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.4392564849986229,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1895,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3078625939961057,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1612,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31882175999635365,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1882,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3475456820015097,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1932,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31105449100141414,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1649,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2834884720068658,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29444904199044686,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1649,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2781219379976392,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.293995382002322,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1932,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30619307099550497,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1652,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27554914499341976,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1922,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2525943519867724,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1935,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3088127410010202,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1922,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2511250320094405,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1935,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.4041397160035558,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1652,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24265077500604093,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27033115600352176,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2663749210041715,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1702,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2380826180014992,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25849015699350275,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1702,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2712717560061719,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2637956079997821,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2942244879959617,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2680816810025135,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24253686399606522,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.287856026989175,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2826467440027045,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30827678000787273,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1701,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.262233663990628,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2925409599993145,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.35258759499993175,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28000227799930144,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2658378470077878,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1701,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2389816809882177,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1957,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.32045636500697583,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28268059600668494,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1687,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.291205097004422,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28154986300796736,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1687,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3490377529960824,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1957,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2836823699908564,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3090529350010911,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1701,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27302160501130857,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23216005400172435,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1701,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3610089730063919,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25673143900348805,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28308859099342953,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24241037901083473,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30130748699593823,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26428634399781004,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3163770620012656,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28682549799850676,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2324593879893655,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2597027189913206,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.274598905001767,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24514511199959088,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2519501779897837,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.22835810499964282,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2919650010007899,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2727514029975282,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3472626660077367,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3002997099974891,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25195512699428946,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28310923800745513,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2800837569957366,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28509671599022113,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26348277600482106,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2708449549973011,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27886654299800284,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27393614599714056,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25571509600558784,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1975,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2833461160043953,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24649910700100008,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1705,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30158450799353886,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2530884540028637,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1705,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26434661500388756,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1975,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.325467046990525,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1976,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24345870800607372,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1693,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31318144498800393,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1963,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2754776689980645,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1693,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.32491531599953305,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1963,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.288029244999052,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1976,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25995566599885933,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23575902401353233,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30925994498829823,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27017461200011894,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2651470259879716,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2690145349915838,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25700387101096567,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1954,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29938478500116616,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29278429700934794,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1684,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2955536520021269,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2679660939902533,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1684,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2944949819939211,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1954,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24562529800459743,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24388425500364974,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1701,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26576529000885785,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3033796599920606,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1701,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23671356998966075,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24992900399956852,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.34389571999781765,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23906917100248393,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2544386020017555,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.275654316006694,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24060672799532767,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24798988399561495,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2630704710027203,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3720398580044275,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2828509870014386,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24276897001254838,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2619525110058021,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.265776400003233,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2725257040001452,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2856534750026185,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25215226999716833,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29531969799427316,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28421770699787885,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23942593099491205,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3135087080008816,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1681,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3468435469985707,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1951,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2404290080012288,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3055765449971659,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1951,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23850225099886302,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24346142100694124,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1681,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2789720959990518,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2525932360003935,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.283016362998751,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28502320700499695,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28201657099998556,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23620142100844532,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2775509460043395,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25442478599143215,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1684,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2736982829956105,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1954,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2734226239990676,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1684,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.22843068699876312,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1954,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.280430755999987,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27559656799712684,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1681,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26800059601373505,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1951,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2721495059959125,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2681223410036182,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1951,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29225938199670054,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31453851399419364,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1681,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29316684100194834,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2568159310030751,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26101145800203085,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2684446269995533,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.319685501002823,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25356587501300965,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3005743739922764,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28124929999466985,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1684,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.22935112999402918,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1954,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2550783939950634,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1684,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3025107779976679,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1954,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23265973399975337,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2564043079910334,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29504568901029415,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.241991107002832,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2541135080100503,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3280833960016025,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2914050999970641,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31834221399913076,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1949,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31872529300744645,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1962,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27380378800444305,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1679,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2766924140014453,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1962,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28935803000058513,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1679,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2512049929937348,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1949,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28160107000439893,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2924310090020299,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1702,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2489308340009302,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30760652100434527,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1702,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3085201200010488,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2567445479944581,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23039563199563418,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1681,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2836395739868749,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1951,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2472178210009588,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2519549209973775,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1951,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2564812390046427,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25314682799216826,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1681,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.37582217500312254,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31786774400097784,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2517682459874777,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3047713710111566,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24343694299750496,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2419997230026638,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23155428699101321,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25287598599970806,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1696,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3007905020058388,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.341736016998766,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1696,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23950578599760775,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26682489601080306,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2530974859982962,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3632493609911762,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2759979770053178,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.22658080999099184,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26214476399763953,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28490913299901877,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27500393700029235,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3076801449933555,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2966804440075066,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24182159200427122,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2467799720034236,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2718748949992005,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2875924899999518,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2408002320007654,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1683,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28959256199595984,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1953,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30776889900153037,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1683,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24805053399177268,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1953,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2697229299956234,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2558472340024309,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1690,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24409187500714324,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3038091879861895,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27136883699859027,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28844888499588706,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28662690200144425,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1690,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2981370589986909,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24083351300214417,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24445215000014286,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2760385510046035,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27987207799742464,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25901462699403055,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23779096000362188,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23343007700168528,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1688,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2619581259932602,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1958,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25938417200814,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1688,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26822597900172696,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1958,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2668369680031901,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.33765394799411297,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1696,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.303901749997749,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24466791001032107,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2598351760098012,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24254232399107423,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.39825047001068015,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1696,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28034753700194415,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1961,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2911597820057068,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2541724930051714,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1691,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28145622900046874,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30620836799789686,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1691,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2916843229904771,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1961,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2921977229998447,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2749716950056609,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2514808109990554,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2916243020008551,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2773840610025218,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3164403789996868,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2615510420000646,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29915906899259426,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24900472699664533,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2512118929880671,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3061293610080611,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27280253999924753,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31203912099590525,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27653499800362624,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23955091700190678,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29382631700718775,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2877450900123222,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.4085300669976277,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2414729339943733,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25579469600052107,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24571139000181574,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2646364529937273,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31855165600427426,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2793690140097169,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3006983469967963,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1688,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.23160282398748677,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1958,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3127723780053202,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25024889000633266,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1958,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3541870310000377,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2714580100000603,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1688,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2678548700059764,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2738564890023554,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2955032109894091,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27027197399002034,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3369003910047468,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2499260110053001,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2405369409971172,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26088063001225237,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27236013900255784,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24987086000328418,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26150454398884904,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29838288998871576,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29125703999307007,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27797154599102214,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2736594149901066,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2548696019948693,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3143385970033705,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2560932979977224,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1703,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2682120810059132,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3126746759953676,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3626495250064181,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2587173240026459,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3133274839929072,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2517616580007598,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3010153729992453,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26785761400242336,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2989585750037804,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2565459840116091,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24779071800003294,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3658083920017816,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28524504000961315,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1687,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2727539070037892,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1957,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29535530500288587,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.254077163990587,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1957,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2638055429997621,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2811054969934048,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1687,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31748459801019635,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1961,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24227679999603424,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30522824100626167,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1691,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2826742210017983,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31675062999420334,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1691,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30088585200428497,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1961,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2909004679968348,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3560988770041149,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29783653700724244,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.269061982005951,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1700,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2999645070085535,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29713722299493384,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29691144499520306,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1669,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2499606630008202,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1939,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31973852100782096,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2558033489913214,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1939,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3083074489986757,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24742822600819636,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1669,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3138921879872214,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2492951509921113,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2762202729936689,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.4044186009996338,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1982,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2264344639988849,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1699,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.35522610098996665,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27863671600061934,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2505532700015465,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2586745730077382,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2626672350015724,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28355620200454723,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26923664499190636,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26057165500242263,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1705,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25996126599784475,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1975,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27472722801030613,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24677038700610865,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1975,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30353357100102585,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2722415369935334,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1705,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2782807759940624,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26988252000592183,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1981,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2794549090031069,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1698,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28246581301209517,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1981,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28358885199122597,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1698,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2717715170001611,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2591218810121063,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24614521900366526,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1683,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2723573309922358,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1953,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2534831130033126,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1683,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.267411965993233,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1953,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3084162899904186,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.30700419600179885,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2860058160003973,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29739583900664,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27243749899207614,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26269651800976135,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26508677199308295,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1685,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29697014100383967,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31586626000353135,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2969806009932654,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1690,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3055144170066342,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3073974629951408,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1690,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.32344670199381653,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.37532335199648514,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29292194699519314,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25055287800205406,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26761999099107925,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1686,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.31945597400772385,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1956,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26490860199555755,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27030705400102306,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3004116009979043,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2705303590046242,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27364428198779933,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1959,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2498316330020316,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24101839901413769,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1689,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.27214614900003653,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29884206599672325,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.35540770400257315,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1690,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28117595399089623,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1973,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24964429599640425,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1690,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.4107696040009614,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3602568399946904,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1981,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25271990899636876,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1698,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3198984429909615,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3212871439900482,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1698,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.3304411290009739,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2644410860084463,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1981,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25778816000092775,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1683,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29262698999082204,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1953,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.4651780789863551,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2748428600025363,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1953,
+      "output_tokens": 68
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.24175860799732618,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26325639300921466,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1683,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.28600206700502895,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.29702190500393044,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.2683802870014915,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.26030573999742046,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1965,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.25663109798915684,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1682,
+      "output_tokens": 69
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "jev-1.13.0",
+    "status": 200,
+    "elapsed_seconds": 0.265530561999185,
+    "response_model": "jev-1.13.0",
+    "usage": {
+      "input_tokens": 1952,
+      "output_tokens": 69
+    }
+  }
+]

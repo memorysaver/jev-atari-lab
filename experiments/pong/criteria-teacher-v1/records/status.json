@@ -1,0 +1,138 @@
+{
+  "status": "incomplete",
+  "plan_hash": "b3e3f4f2fb2e88ac371965662198d9a191b05d91f560316dd8f210a0dd688b84",
+  "completed_rounds": [
+    {
+      "search": 1,
+      "round": 1,
+      "decisions": {
+        "A": {
+          "accepted": false,
+          "status": "rejected",
+          "seeds": [
+            106,
+            107
+          ],
+          "paired_gains_over_fresh_v2": [
+            -5.0,
+            -4.0
+          ],
+          "mean_gain": -4.5,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        },
+        "B": {
+          "accepted": false,
+          "status": "rejected",
+          "seeds": [
+            106,
+            107
+          ],
+          "paired_gains_over_fresh_v2": [
+            -4.0,
+            1.0
+          ],
+          "mean_gain": -1.5,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        }
+      }
+    },
+    {
+      "search": 1,
+      "round": 2,
+      "decisions": {
+        "A": {
+          "accepted": false,
+          "status": "rejected",
+          "seeds": [
+            106,
+            107
+          ],
+          "paired_gains_over_fresh_v2": [
+            -1.0,
+            0.0
+          ],
+          "mean_gain": -0.5,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        },
+        "B": {
+          "accepted": false,
+          "status": "rejected",
+          "seeds": [
+            106,
+            107
+          ],
+          "paired_gains_over_fresh_v2": [
+            -4.0,
+            0.0
+          ],
+          "mean_gain": -2.0,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        }
+      }
+    },
+    {
+      "search": 2,
+      "round": 1,
+      "decisions": {
+        "A": {
+          "accepted": false,
+          "status": "rejected",
+          "seeds": [
+            116,
+            117
+          ],
+          "paired_gains_over_fresh_v2": [
+            -5.0,
+            -6.0
+          ],
+          "mean_gain": -5.5,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        },
+        "B": {
+          "accepted": false,
+          "status": "rejected",
+          "seeds": [
+            116,
+            117
+          ],
+          "paired_gains_over_fresh_v2": [
+            -1.0,
+            0.0
+          ],
+          "mean_gain": -0.5,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        }
+      }
+    }
+  ],
+  "active": "search-2/round-2",
+  "error_type": "ModelError",
+  "budget": {
+    "kind": "pong-criteria-teacher-v1",
+    "max_attempts": 60000,
+    "nonfinal_limit": 29000,
+    "final_limit": 31000,
+    "teacher_limit": 16,
+    "live_seconds": 86400,
+    "started_at": 1790091811.1552057,
+    "attempts": 15093,
+    "nonfinal_attempts": 15093,
+    "final_attempts": 0,
+    "teacher_invocations": 8,
+    "teacher_repairs": 0,
+    "teacher_transport_retries": 0,
+    "training_closed": false
+  }
+}

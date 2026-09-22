@@ -1,0 +1,56 @@
+{
+  "kind": "pong-study-episode-plan-v1",
+  "source_revision": "4b61d879b3802a5eb18d2194fe2ddc3124fbba09",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "development",
+  "seeds": [
+    106
+  ],
+  "arms": [
+    "jev"
+  ],
+  "schedule": [
+    {
+      "seed": 106,
+      "arm": "jev"
+    }
+  ],
+  "model": "jev-1.13.0",
+  "program": {
+    "name": "pong-incoming-intercept",
+    "guidance": "Which action should align the player paddle with the ball's expected arrival height? Read player and ball from observation.objects and use the supplied history to estimate ball motion when available. A bbox is [x, y, width, height]; vertical center is y + height/2. Larger y means lower. The player is the right paddle: RIGHT moves UP and LEFT moves DOWN.\nUse one principal change: target the incoming ball's predicted interception height instead of always chasing its current height. When consecutive observations establish rightward ball motion toward the player, estimate the time until the ball's right edge reaches the player's left edge from their horizontal gap and the ball's horizontal speed. Project the ball center vertically over that time using its observed vertical speed. Account for top/bottom reflections only when the ball-center bounce limits are established by the supplied observation/history; do not invent boundary coordinates. If a possible reflection makes the projection uncertain, use the current ball center. Use consistent time units for displacement and arrival time. Do not extrapolate across an observed bounce or reset using stale velocity.\nIf velocity is missing, inconsistent, or the ball is moving away, use the current ball center as the target. Missing velocity is unknown, not zero. If player or ball is absent, choose NOOP.\nIf the target is more than four pixels below the player center, choose LEFT. If more than four pixels above, choose RIGHT. Within four pixels, choose NOOP. Prefer non-FIRE actions over their equivalent FIRE alternatives. Horizontal direction determines whether prediction applies, never the paddle's vertical movement directly. Reconsider after each four-raw-frame decision using the new observation.",
+    "schema_version": "action-choice-program-v2",
+    "action_criteria": {
+      "NOOP": "Choose when the selected target height is within four pixels of the player center, or when player or ball is absent. The target is a credible incoming interception estimate when available, otherwise the current ball center. Prefer this stationary action over FIRE.",
+      "FIRE": "Stationary FIRE alternative when the selected target is within four pixels of the player center, or an object is absent. It supplies no vertical correction; prefer NOOP when both have the same movement effect.",
+      "RIGHT": "Move UP when the selected target is more than four pixels above the player center. Use a credible incoming interception estimate, otherwise current ball height. The player being on the right or the ball traveling right does not itself justify this action.",
+      "LEFT": "Move DOWN when the selected target is more than four pixels below the player center. Use a credible incoming interception estimate, otherwise current ball height. Larger screen y means lower. Prefer this over LEFTFIRE for the same correction.",
+      "RIGHTFIRE": "Move UP with FIRE when the selected target is more than four pixels above the player center, using the same interception estimate or fallback as RIGHT. Prefer RIGHT when the movement effects are equivalent.",
+      "LEFTFIRE": "Move DOWN with FIRE when the selected target is more than four pixels below the player center, using the same interception estimate or fallback as LEFT. Prefer LEFT when the movement effects are equivalent."
+    }
+  },
+  "program_hash": "abfb6be24346e0546420ca61a5200e9eba59f4afac6445041c97fffa3ac69fc7",
+  "max_frames_per_episode": 2000,
+  "max_decisions_per_episode": 500,
+  "max_http_attempts": 1000,
+  "point_limit": null,
+  "final_seal_hash": null
+}

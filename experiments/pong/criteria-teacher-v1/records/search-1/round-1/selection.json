@@ -1,0 +1,48 @@
+{
+  "decisions": {
+    "A": {
+      "accepted": false,
+      "status": "rejected",
+      "seeds": [
+        106,
+        107
+      ],
+      "paired_gains_over_fresh_v2": [
+        -5.0,
+        -4.0
+      ],
+      "mean_gain": -4.5,
+      "previous_best_gain": 0.0,
+      "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+      "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+    },
+    "B": {
+      "accepted": false,
+      "status": "rejected",
+      "seeds": [
+        106,
+        107
+      ],
+      "paired_gains_over_fresh_v2": [
+        -4.0,
+        1.0
+      ],
+      "mean_gain": -1.5,
+      "previous_best_gain": 0.0,
+      "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+      "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+    }
+  },
+  "selected_programs": {
+    "A": {
+      "name": "pong-vertical-control-v2",
+      "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+      "schema_version": "action-choice-program-v1"
+    },
+    "B": {
+      "name": "pong-vertical-control-v2",
+      "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+      "schema_version": "action-choice-program-v1"
+    }
+  }
+}

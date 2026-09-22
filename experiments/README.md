@@ -162,3 +162,8 @@ reviewed locally; no remote preservation, gameplay improvement or teacher benefi
 training episodes and videos with zero model calls. A manually operationalized
 teacher hypothesis improves mean capped return but regresses on two seeds. No Jev
 improvement or final-test claim; the archive is locally verified only.
+
+[Criteria-edit teacher study](pong/criteria-teacher-v1/README.md): HTTP 402 stopped
+the fourth round after 15,093 Jev attempts. Three rounds rejected all six evaluated
+proposals. All 27 trajectories and eight teacher outputs are retained and replayed;
+no final test ran. Local evidence only; no remote preservation is claimed.

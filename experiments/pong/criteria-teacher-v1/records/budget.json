@@ -1,0 +1,16 @@
+{
+  "kind": "pong-criteria-teacher-v1",
+  "max_attempts": 60000,
+  "nonfinal_limit": 29000,
+  "final_limit": 31000,
+  "teacher_limit": 16,
+  "live_seconds": 86400,
+  "started_at": 1790091811.1552057,
+  "attempts": 15093,
+  "nonfinal_attempts": 15093,
+  "final_attempts": 0,
+  "teacher_invocations": 8,
+  "teacher_repairs": 0,
+  "teacher_transport_retries": 0,
+  "training_closed": false
+}

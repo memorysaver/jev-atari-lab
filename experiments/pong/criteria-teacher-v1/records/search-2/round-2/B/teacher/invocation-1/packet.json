@@ -1,0 +1,44 @@
+{
+  "kind": "pong-criteria-teacher-v1-packet",
+  "arm": "B",
+  "round": 2,
+  "current_program": {
+    "name": "pong-vertical-control-v2",
+    "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "current_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "contract": {
+    "objective": "Improve actual points scored minus conceded in ALE Pong.",
+    "executor": "jev-1.13.0",
+    "representation": "One native-action Choice question. Edit guidance <=2000 characters plus all six criterion descriptions <=500 characters each. Name <=100 characters. Native action meanings, observations, question read/coordinate fields and probability-argmax decoder are fixed. Criteria are text, never Python predicates.",
+    "fixed": "RAM-derived boxes and finite-difference history; six actions; argmax; 4 raw frames per decision; sticky=0.25; weights, sensors and reward fixed.",
+    "semantics": "Player is right paddle. RIGHT moves up, LEFT down. y increases down. All six options remain available. State has objects, history and candidate_actions. Missing velocity is unknown. Native match ends at 21.",
+    "prior_knowledge": "Starting question is a hand-written vertical tracking rule. You may reason from game mechanics; do not assume an edit works.",
+    "evaluation": "Capped return at 2000 raw frames, or earlier native termination. A fresh v2 baseline and the same development selector evaluate both arms. Development scores and final evidence are not provided to teachers."
+  },
+  "prior_edits": [
+    {
+      "round": 1,
+      "proposal": {
+        "name": "pong-incoming-intercept",
+        "guidance": "Which action best aligns the player paddle with the ball's expected arrival height? Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y plus half the height. Larger y means DOWN. The player is the right paddle: RIGHT moves UP and LEFT moves DOWN, regardless of the ball's horizontal direction.\nUse observation.history, when available, to estimate ball motion from successive positions. Missing velocity is unknown, not zero. The principal change is to target the incoming ball's predicted vertical position at the player's left face instead of always chasing its current height. When the ball is moving toward the player and motion is sufficiently clear, estimate the remaining horizontal travel time and corresponding vertical travel. Account for top or bottom rebounds only when the relevant boundary is supported by the observation or history; do not invent wall coordinates or extrapolate straight through a known wall. After an apparent rebound, use the newest consistent motion rather than averaging across the reversal. If the arrival estimate is uncertain, use the current ball center. Also use the current ball center while the ball travels away.\nIf the target is more than four pixels below the player center, choose LEFT. If it is more than four pixels above, choose RIGHT. Within four pixels choose NOOP. If player or ball is absent, choose NOOP. Prefer non-FIRE actions when a FIRE alias gives the same movement. Act for the next four raw frames, then reassess; do not commit to a full predicted trajectory.",
+        "hypothesis": "Current-height tracking may lag behind a diagonally approaching ball. Targeting its estimated arrival height could position the paddle earlier and reduce conceded points, provided motion and rebound estimates are reliable.",
+        "operator": "Replace current-height tracking with history-based incoming interception; preserve movement meanings, deadband, missing-object fallback and non-FIRE preference.",
+        "predicted_changes": "During clear incoming diagonal motion, movement should begin toward the estimated contact height before the ball reaches that height. Outgoing or uncertain-motion states should retain current-height tracking. This may improve points scored minus conceded through more successful returns; no empirical improvement is established.",
+        "regression_risks": "Finite-difference estimates near rebounds, uncertain wall locations and long flight times can produce incorrect targets. Sticky actions can cause overshoot despite reassessment. More reliable contact may still produce easy opponent returns, so fewer misses need not yield a better point differential.",
+        "evidence_ids": [],
+        "action_criteria": {
+          "NOOP": "Hold position when the target height is within four pixels of the player center, or when player or ball is absent. The target is the supported incoming arrival estimate, otherwise the current ball center. Prefer this stationary action over FIRE.",
+          "FIRE": "Stationary FIRE alternative when the same alignment conditions as NOOP apply. It provides no vertical correction; prefer NOOP when firing has no distinct benefit supported by the observation.",
+          "RIGHT": "Move UP when the target height is more than four pixels above the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Being the right paddle or seeing rightward ball motion alone does not justify RIGHT.",
+          "LEFT": "Move DOWN when the target height is more than four pixels below the player center. Use the supported incoming arrival estimate, otherwise the current ball center. Reassess after the requested duration to avoid passing the target.",
+          "RIGHTFIRE": "Move UP with FIRE when the target is more than four pixels above the player center, under the same targeting rule as RIGHT. Prefer RIGHT unless the observation supports a distinct benefit from firing.",
+          "LEFTFIRE": "Move DOWN with FIRE when the target is more than four pixels below the player center, under the same targeting rule as LEFT. Prefer LEFT unless the observation supports a distinct benefit from firing."
+        }
+      }
+    }
+  ],
+  "evidence": null,
+  "visibility": "no empirical feedback"
+}

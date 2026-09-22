@@ -1,0 +1,28 @@
+{
+  "kind": "pong-match-audit-v1",
+  "status": "verified",
+  "audit_api_attempts": 0,
+  "plan_hash": "c95905d5c79598fc4202aee10af0430b70906c4c719c395c5b8aba791d208a4e",
+  "results_hash": "45230e2bef32d9537a2b0fd91e884a0f5100b7baf2a4e81cde334ed582aac5bc",
+  "episodes": [
+    {
+      "arm": "jev",
+      "seed": 106,
+      "captured_exchanges": 501,
+      "replay": {
+        "kind": "verified-pong-replay-v1",
+        "status": "verified",
+        "api_attempts": 0,
+        "source_episode": "artifacts/pong/criteria-teacher-v1/search-1/round-1/development/B/seed-106/jev/seed-106",
+        "source_status": "complete",
+        "decisions": 500,
+        "raw_frames": 2000,
+        "reward": -2.0,
+        "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7",
+        "raw_frame_evidence": "verified-against-original",
+        "reset_frames": 17,
+        "interpretation": "Recorded observations, actions and outcomes reproduced; no model resampling. An incomplete source remains an incomplete original experiment."
+      }
+    }
+  ]
+}

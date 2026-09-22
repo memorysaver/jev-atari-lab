@@ -16,11 +16,13 @@ intended path to a paper. Initially both teacher and Jev weights stay fixed;
 the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
 No repeatable optimization benefit has been established.
 
-**Active study:** Three independent, two-round teacher searches now compare
-experience feedback with no empirical feedback while allowing edits to action
-criteria and guidance. The 60,000-attempt protocol reserves sealed final evaluation.
-[Protocol](docs/pong/criteria-teacher-protocol.md) · [Live study log](docs/pong/criteria-teacher-log.md).
-Execution is in progress; no outcome or policy improvement is claimed yet.
+**Latest teacher study — incomplete:** HTTP 402 stopped the criteria-edit study
+after 15,093 Jev attempts. Three rounds completed and all six evaluated proposals
+were rejected; two additional proposals lack complete development results.
+All 27 trajectories replayed, including the interrupted episode. No final tests ran.
+[Report](docs/pong/criteria-teacher-results-2026-09-23.md) ·
+[Local evidence](experiments/pong/criteria-teacher-v1/README.md) ·
+[Protocol](docs/pong/criteria-teacher-protocol.md).
 All project research lives in [docs/](docs/README.md), including the
 [optimizer design](docs/teacher-optimizer.md), [evaluation framework](docs/evaluation-framework.md)
 and [research roadmap](docs/research-roadmap.md).
@@ -42,7 +44,7 @@ on only 90/598 original decisions. Separately, 16 Python control episodes found
 mixed strategy results; conservative lookahead had the best training mean but no
 completed wins. [Read the zero-model-call diagnostic study](docs/pong/question-diagnostics-results-2026-09-20.md).
 
-**Latest teacher study:** One completed A/B round rejected both proposed question
+**Earlier teacher study:** One completed A/B round rejected both proposed question
 changes. The experience-informed interception candidate lost 0:21 twice; the
 no-feedback lookahead candidate improved one seed and regressed on the other.
 Round two stopped on a failed teacher call; final evaluation was not run.

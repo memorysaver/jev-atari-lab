@@ -1,7 +1,13 @@
 # Criteria-edit teacher log
 
-Status: prepared before live access, 2026-09-22. Three independent searches with
-two A/B rounds follow the [frozen protocol](criteria-teacher-protocol.md).
+Current status: **incomplete**, 2026-09-23. HTTP 402 stopped search 2 round 2.
+Three rounds completed; six proposals were rejected and two lack complete
+development evaluations. No final tests ran. [Report](criteria-teacher-results-2026-09-23.md) ·
+[All original teacher records](../../experiments/pong/criteria-teacher-v1/README.md).
+
+The preparation and execution entries below are chronological snapshots.
+Three independent searches with two A/B rounds were planned under the
+[frozen protocol](criteria-teacher-protocol.md).
 
 A receives training trajectories/outcomes; B receives proposal-only memory. The
 requested teacher is GPT-6 Astra with high reasoning in packet-only filesystem
@@ -169,3 +175,24 @@ an estimate of a replicated final-test feedback effect.
 Search 2 round 2 has started. The remaining three rounds and sealed final procedure
 retain the original source, schedule, selector and budgets. No threshold or primary
 comparison is changed in response to these negative results.
+
+## Terminal stop in search 2 round 2
+
+Training seeds 112/113 completed at 2:1 and 3:2. A proposed
+`pong-bounded-incoming-lookahead-v1` with a 24-frame cap; B proposed
+`pong-bounded-incoming-lead` with an eight-frame cap. All programs passed the fourth
+probe. B's first development episode on seed 116 then stopped on HTTP 402 after
+171 decisions / 684 frames at 1:1. The supervisor exited with code 1; this run is
+no longer active. The error response body is absent, so the account cause remains
+unconfirmed. No episode restart or extra access probe followed the stop.
+
+Actual use is 15,093 Jev attempts and eight successful teacher invocations. The
+whole-study offline audit replayed all 27 episodes, including the incomplete one,
+validated 1,920 probe responses, reconstructed packets/proposals and selections,
+and reconciled costs. No final seal, final episodes or endpoint result exists.
+The interrupted score is not treated as a complete evaluation or selection result.
+
+See the [final report](criteria-teacher-results-2026-09-23.md) and
+[local archive](../../experiments/pong/criteria-teacher-v1/README.md). Restoring
+service access and freezing a distinct follow-up are prerequisites for further
+live work; this frozen run cannot be resumed or overwritten.

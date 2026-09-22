@@ -1,0 +1,146 @@
+{
+  "kind": "pong-criteria-teacher-v1",
+  "source_revision": "4b61d879b3802a5eb18d2194fe2ddc3124fbba09",
+  "limits": {
+    "max_attempts": 60000,
+    "nonfinal_limit": 29000,
+    "final_limit": 31000,
+    "teacher_limit": 16,
+    "live_seconds": 86400
+  },
+  "training_seeds": [
+    [
+      [
+        100,
+        101
+      ],
+      [
+        102,
+        103
+      ]
+    ],
+    [
+      [
+        110,
+        111
+      ],
+      [
+        112,
+        113
+      ]
+    ],
+    [
+      [
+        120,
+        121
+      ],
+      [
+        122,
+        123
+      ]
+    ]
+  ],
+  "development_seeds": [
+    [
+      106,
+      107
+    ],
+    [
+      116,
+      117
+    ],
+    [
+      126,
+      127
+    ]
+  ],
+  "final_seeds": [
+    148,
+    149,
+    158,
+    159,
+    168,
+    169,
+    178,
+    179
+  ],
+  "frames": 2000,
+  "initial_program": {
+    "name": "pong-vertical-control-v2",
+    "guidance": "Which action should vertically align the player paddle with the ball now? Read the objects with id player and ball in `observation.objects`. A bbox is [x, y, width, height]; its vertical center is y plus half its height. Larger y means LOWER on the screen. If the ball center is more than four pixels BELOW the player center, choose LEFT, which moves the paddle DOWN. If the ball center is more than four pixels ABOVE the player center, choose RIGHT, which moves the paddle UP. If the centers are within four pixels, choose NOOP to avoid moving past alignment. If the ball or player is absent, choose NOOP. The player being on the RIGHT side of the screen is not a reason to choose RIGHT. Likewise, a ball moving horizontally right does not imply that the paddle should move up. Judge the vertical gap, not the horizontal direction. Prefer the non-FIRE option when a FIRE alias would produce the same vertical movement. Act for only the next requested duration, then reconsider using the next observation.",
+    "schema_version": "action-choice-program-v1"
+  },
+  "initial_program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "model": "jev-1.13.0",
+  "teacher_isolation": {
+    "kind": "teacher-isolation-check-v1",
+    "filesystem_check": "passed",
+    "codex_version": "codex-cli 0.154.0",
+    "binary_sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022",
+    "config_sha256": "4ffc9e784c463dd6ebb26c3f32749cc9e4e3713297c0cca0a183bf55db4db364",
+    "disabled_features": [
+      "shell_tool",
+      "unified_exec",
+      "code_mode",
+      "code_mode_host",
+      "multi_agent",
+      "apps",
+      "plugins",
+      "hooks",
+      "memories",
+      "shell_snapshot",
+      "browser_use",
+      "browser_use_external",
+      "computer_use",
+      "image_generation",
+      "view_image",
+      "in_app_browser",
+      "workspace_dependencies",
+      "skill_search",
+      "sleep_tool",
+      "goals"
+    ],
+    "repository_mounted": false,
+    "host_home_mounted": false,
+    "network": "provider access; web tool disabled",
+    "api_calls": 0
+  },
+  "teacher_binary": {
+    "sha256": "3188814c35471432d4123203e0eb38e5bddc60226e3d7ddf0e59e649ea140022"
+  },
+  "probe_input_hash": "bb1a29eb964906eb2a515bcbf291d427361801db5c97885b086c1c7e8435e87c",
+  "probe_source": "experiments/pong/motion-probe-v1/inputs.json",
+  "source_inventory": {
+    "requested_seeds": [
+      100,
+      101,
+      102,
+      103,
+      106,
+      107,
+      110,
+      111,
+      112,
+      113,
+      116,
+      117,
+      120,
+      121,
+      122,
+      123,
+      126,
+      127,
+      148,
+      149,
+      158,
+      159,
+      168,
+      169,
+      178,
+      179
+    ],
+    "existing_episode_manifests": [],
+    "scope": "Local artifacts and tracked experiment trees; no remote inventory claim."
+  },
+  "authorization": "Owner requested continued experimentation toward the research endpoint on 2026-09-22. Conservative 60000-attempt stage selected."
+}

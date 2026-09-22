@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "archive_file_count": 506,
+  "all_member_checksums_verified": true,
+  "replayed_episodes": 27,
+  "complete_episodes": 26,
+  "incomplete_episodes": 1,
+  "final_evaluation_performed": false,
+  "costs_equal_after_teacher_usage_order_normalization": true,
+  "cost_order_note": "The original and restored auditors visit teacher directories in different filesystem order. The teacher usage multisets and every scalar cost are identical; raw events are retained. This changes costs_hash, not measured usage.",
+  "api_attempts": 0,
+  "remote_retrieval_performed": false
+}

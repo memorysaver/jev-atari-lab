@@ -1,0 +1,41 @@
+{
+  "kind": "pong-play-v1",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "seed": 106,
+  "split": "development",
+  "policy": "jev:pong-relative-motion-lookahead-v1",
+  "max_decisions": 500,
+  "point_limit": null,
+  "video_clock": "simulation, 60 raw frames/second",
+  "question_program": {
+    "name": "pong-relative-motion-lookahead-v1",
+    "guidance": "Which action should reduce the anticipated vertical gap while avoiding overshoot? Read player and ball from observation.objects. A bbox is [x,y,width,height]; vertical center is y plus half height. Larger y means DOWN. RIGHT moves UP; LEFT moves DOWN. If either object is absent, choose NOOP.\nUse a short lookahead instead of comparing only current centers. Estimate each object's vertical center two raw frames ahead by adding twice its vertical velocity to its current center, but only when that object's velocity_valid is true and velocity is available. Otherwise use its current center as a fallback; missing velocity is unknown, not evidence of rest. These estimates are approximate, especially after an action change.\nFor the ball forecast, reflect any excursion beyond approximate ball-center limits y=32 and y=194 back into the playfield. If history shows a recent vertical reversal and the latest velocity spans that bounce, use the current ball center until the direction becomes clear. Use the player's observed bbox height, including when clipped near a wall.\nCompare the forecast ball center with the forecast player center. Ball more than four pixels ABOVE: RIGHT. More than four pixels BELOW: LEFT. Within four pixels: NOOP. Thus a paddle rapidly approaching alignment can stop before its current center reaches the ball; if its forecast passes the ball by more than four pixels, reverse. A ball moving vertically away can justify starting movement before the current gap exceeds four pixels. Horizontal travel alone never selects UP or DOWN.\nPrefer NOOP, RIGHT and LEFT over their FIRE aliases. The lookahead does not change the action duration: act for the fixed four raw frames, then reconsider from the next observation.",
+    "schema_version": "action-choice-program-v2",
+    "action_criteria": {
+      "NOOP": "Hold when either essential object is absent or the two forecast centers defined in guidance differ by at most four pixels. This includes braking before current alignment when existing paddle motion is already closing the gap. Prefer NOOP to FIRE.",
+      "FIRE": "Provides the same vertical hold as NOOP. Appropriate when an essential object is absent or the forecast centers are within four pixels. It adds no vertical correction; prefer NOOP.",
+      "RIGHT": "Move UP when the forecast ball center is more than four pixels above the forecast player center. This can brake downward overshoot even if the ball is currently below the paddle. Use the velocity fallbacks in guidance. Prefer RIGHT to RIGHTFIRE.",
+      "LEFT": "Move DOWN when the forecast ball center is more than four pixels below the forecast player center. This can brake upward overshoot even if the ball is currently above the paddle. Use the velocity fallbacks in guidance. Prefer LEFT to LEFTFIRE.",
+      "RIGHTFIRE": "Move UP under the same condition as RIGHT: the forecast ball center is more than four pixels above the forecast player center. FIRE adds no vertical advantage; prefer RIGHT.",
+      "LEFTFIRE": "Move DOWN under the same condition as LEFT: the forecast ball center is more than four pixels below the forecast player center. FIRE adds no vertical advantage; prefer LEFT."
+    }
+  }
+}

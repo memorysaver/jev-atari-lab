@@ -1,0 +1,18 @@
+{
+  "kind": "pong-criteria-teacher-v1-audit",
+  "status": "verified",
+  "study_status": "incomplete",
+  "completed_rounds": 3,
+  "episode_count": 26,
+  "completed_episode_count": 26,
+  "replayed_episode_count": 27,
+  "incomplete_episode_count": 1,
+  "final_evaluation_verified": false,
+  "source_revision": "4b61d879b3802a5eb18d2194fe2ddc3124fbba09",
+  "plan_hash": "b3e3f4f2fb2e88ac371965662198d9a191b05d91f560316dd8f210a0dd688b84",
+  "status_hash": "131c38d0643ad45cab2e10246dada71d5c2654b32b13cb5a595a4d320e3ede4d",
+  "budget_hash": "c870c3922fe279c57bebc86dc48cc379073194e726583c0d90d0d948f7518389",
+  "costs_hash": "9f17ba420561148f14e419eb7edf0926c35b60c90d58d495f3933616b08b6439",
+  "audit_api_attempts": 0,
+  "scope": "Original Jev requests/responses, complete and incomplete episode replay, teacher packets/proposals and completed development selections. Final outcomes and endpoint verified only when final_evaluation_verified is true."
+}

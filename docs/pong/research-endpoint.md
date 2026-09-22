@@ -64,6 +64,7 @@ project objective with its own native-match endpoint and threshold.
 | Did the no-feedback candidate establish improvement? | Development gains -3 and +11; mean +4; rejected by its frozen gate | Mixed exploratory outcome; no final test |
 | Did explicit motion-reliability wording improve execution? | Agreement with the conservative rule fell from 99/160 to 73/160 | Negative diagnostic result; no gameplay measured |
 | Did compact wording recover the same conservative rule? | Fresh comparison: 62/160 compact versus 76/160 expanded; prospective screen failed | Negative diagnostic result; no gameplay measured |
+| Did action-criteria editing produce a retained improvement? | Three completed rounds rejected six proposals; HTTP 402 interrupted the fourth round after 15,093 attempts | Negative completed development comparisons; remaining study incomplete |
 | Has the selected teacher policy improved on untouched final tests? | Final tests were not run; both arms retained v2 | Not established |
 | Does feedback produce a repeatable optimizer advantage? | One incomplete optimization trajectory per arm | Not established |
 
@@ -71,13 +72,21 @@ Sources: [short-window controls](../pong-controls-2026-09-18.md),
 [teacher study results](teacher-study-results-2026-09-20.md),
 [question diagnostics](question-diagnostics-results-2026-09-20.md), and
 [motion probe results](motion-probe-results-2026-09-21.md), and
-[wording probe results](wording-probe-results-2026-09-22.md).
+[wording probe results](wording-probe-results-2026-09-22.md), and
+[criteria-edit study results](criteria-teacher-results-2026-09-23.md).
 
 The first teacher study stopped during round two after a failed teacher invocation.
 That incomplete execution is not evidence that the general approach cannot work.
 The later motion wording was a development-informed manual diagnostic, not a new
 isolated teacher round. Literal Python strategy results also cannot substitute for
 Jev gameplay. At present neither milestone has been met.
+
+The later criteria-edit study also stopped technically, with no final test. Its
+26 complete evaluations and one interrupted episode were replayed and archived
+locally. All six fully evaluated proposals were rejected. A1/B1 retained v2; two
+further proposals lack complete development results and search 3 never started.
+The HTTP 402 account cause remains unconfirmed because no error body was recorded.
+Service access must be restored before a distinct bounded follow-up can proceed.
 
 ## Next study and finite stopping rule
 
