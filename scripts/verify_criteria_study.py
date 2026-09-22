@@ -33,6 +33,10 @@ def lines(path):
 
 
 def verify_probe(root, states, programs):
+    # Teacher reconstruction visits B first; the frozen probe visits V2, A, B.
+    # Rebuild that declared order independently of the caller's mapping order.
+    assert set(programs) == {"V2", "A", "B"}
+    programs = {name: programs[name] for name in ("V2", "A", "B")}
     assert read_json(root / "inputs.json") == states
     assert read_json(root / "programs.json") == {k: p.to_dict() for k, p in programs.items()}
     order = schedule(states, programs)

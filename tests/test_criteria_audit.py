@@ -70,6 +70,15 @@ def test_full_probe_roundtrip_and_tampering(tmp_path, monkeypatch):
     root = tmp_path / "probe"
     criteria_study.probe(root, states, programs, budget)
     assert len(auditor.verify_probe(root, states, programs)) == 480
+    teacher_order = {name: programs[name] for name in ("V2", "B", "A")}
+    assert len(auditor.verify_probe(root, states, teacher_order)) == 480
+    schedule = read_json(root / "schedule.json")
+    reordered = list(schedule)
+    reordered[1], reordered[2] = reordered[2], reordered[1]
+    write_json(root / "schedule.json", reordered)
+    with pytest.raises(AssertionError):
+        auditor.verify_probe(root, states, teacher_order)
+    write_json(root / "schedule.json", schedule)
     screen = read_json(root / "screen.json")
     modified = json.loads(json.dumps(screen))
     modified["A"]["eligible"] = False

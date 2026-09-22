@@ -112,3 +112,24 @@ Separately, the [literal relative-motion diagnostic](relative-motion-controls-re
 completed all 32 local episodes with zero model calls and a +1.5 mean training gain
 over tracking, including two seed regressions. Those manually operationalized
 results stay outside this study's packets and do not establish Jev improvement.
+
+## Completed-search audit and search 2 training
+
+An independent offline audit of search 1 replayed all 16 episodes, reconstructed
+both rounds' training packets and prior-proposal memory, validated 960 original
+probe responses, and recomputed both selectors and the 8,961 Jev attempts. Four
+original successful teacher invocations match the saved proposals. Both selected
+hashes equal v2. Receipt: `artifacts/pong/criteria-search1-audit-v2/verification.json`.
+This receipt covers search 1 only and uses zero model calls.
+
+The first audit attempt stopped because its caller constructed a program mapping
+in teacher order B,A, whereas the frozen probe uses V2,A,B. The offline auditor now
+explicitly reconstructs that declared order, independently of mapping insertion
+order. Regression checks accept reordered caller mappings but still reject modified
+saved schedules. All 146 tests pass. No live runner, protocol or experimental
+artifact was altered; the failed audit directory is retained without a success receipt.
+
+Search 2 training seeds 110 and 111 completed at 0:2 and 1:4 (returns -2 and -3),
+with both original trajectories replayed. B's isolated proposal is
+`pong-incoming-intercept`; A's teacher call follows these training episodes.
+Development and final outcomes remain outside the teacher inputs.
