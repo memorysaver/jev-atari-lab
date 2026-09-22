@@ -69,7 +69,8 @@ def test_labels_stay_out_of_model_input_and_missing_denominators():
     assert all(r["responses"] == 0 and r["agreement"]["v2"] is None for r in results)
 
 
-def test_mock_transport_retry_roundtrip_and_audit(tmp_path, monkeypatch):
+@pytest.mark.parametrize("kind", ["motion-probe-v1", "wording-probe-v1"])
+def test_mock_transport_retry_roundtrip_and_audit(tmp_path, monkeypatch, kind):
     import importlib.util
     import json
     from pathlib import Path
@@ -149,16 +150,42 @@ def test_mock_transport_retry_roundtrip_and_audit(tmp_path, monkeypatch):
         return states, programs
 
     monkeypatch.setattr(module, "prepare", fake_prepare)
-    report = module.run(pack, tmp_path / "run", "jev")
+    report = module.run(pack, tmp_path / "run", "jev", kind=kind)
     assert report["status"] == "complete" and report["attempts"] == 7
     assert report["completed_predictions"] == 6 and report["non_200_attempts"] == 1
     assert calls[0] == calls[1]
-    result = module.verify(pack, tmp_path / "run", tmp_path / "audit", tmp_path, tmp_path)
+    result = module.verify(
+        pack,
+        tmp_path / "run",
+        tmp_path / "audit",
+        tmp_path,
+        tmp_path,
+        kind=kind,
+        prepare_fn=fake_prepare,
+    )
     assert result["status"] == "verified" and result["predictions"] == 6
+    with pytest.raises(AssertionError):
+        module.verify(
+            pack,
+            tmp_path / "run",
+            tmp_path / "wrong-study",
+            tmp_path,
+            tmp_path,
+            kind="unrelated-study",
+            prepare_fn=fake_prepare,
+        )
     rows = (tmp_path / "run/predictions.jsonl").read_text().splitlines()
     bad = json.loads(rows[0])
     bad["prediction"]["chosen_action"] = 3
     rows[0] = json.dumps(bad)
     (tmp_path / "run/predictions.jsonl").write_text("\n".join(rows) + "\n")
     with pytest.raises(AssertionError):
-        module.verify(pack, tmp_path / "run", tmp_path / "bad-audit", tmp_path, tmp_path)
+        module.verify(
+            pack,
+            tmp_path / "run",
+            tmp_path / "bad-audit",
+            tmp_path,
+            tmp_path,
+            kind=kind,
+            prepare_fn=fake_prepare,
+        )

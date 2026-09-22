@@ -10,7 +10,7 @@ from jev_atari.io import digest, new_directory, read_json, write_json
 from jev_atari.motion_probe import LIMIT, MODEL, ProbeBudget, prepare, schedule, summarize
 
 
-def run(pack, out, backend):
+def run(pack, out, backend, *, kind="motion-probe-v1"):
     if backend != "jev":
         raise ValueError("Live execution needs explicit --backend jev")
     if subprocess.check_output(["git", "status", "--porcelain"], text=True).strip():
@@ -21,7 +21,7 @@ def run(pack, out, backend):
         raise ValueError("Prepared inputs exceed the frozen budget")
     new_directory(out)
     plan = {
-        "kind": "motion-probe-v1",
+        "kind": kind,
         "source_revision": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
         "model": MODEL,
         "max_attempts": LIMIT,
@@ -88,12 +88,13 @@ def run(pack, out, backend):
     return report
 
 
-def verify(pack, run_path, out, source, repository):
+def verify(pack, run_path, out, source, repository, *, kind="motion-probe-v1", prepare_fn=None):
     new_directory(out)
-    states, programs = prepare(source, out / "regenerated-pack", repository)
+    states, programs = (prepare_fn or prepare)(source, out / "regenerated-pack", repository)
     for name in ["inputs.json", "programs.json", "coverage.json", "provenance.json"]:
         assert read_json(pack / name) == read_json(out / "regenerated-pack" / name)
     plan, report = read_json(run_path / "plan.json"), read_json(run_path / "results.json")
+    assert plan["kind"] == kind
     assert plan["model"] == MODEL and plan["max_attempts"] == LIMIT
     assert plan["max_live_seconds"] == 14400
     assert plan["input_hash"] == digest(states) and plan["programs_hash"] == digest(programs)
