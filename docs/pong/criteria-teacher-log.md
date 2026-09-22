@@ -53,3 +53,27 @@ audit. B's seed-106 episode recorded one 60.01-second transport failure and its
 successful bounded retry, with 501 attempts for 500 decisions. The episode replay
 verified. No episode restart, clock reset or model substitution was performed.
 The in-progress source of truth remains the live operation records, not this snapshot.
+
+## Search 1 round 1 completed
+
+All eight scheduled episodes and the 480-query probe completed. Both candidates
+were rejected; both arms retain v2 for round two.
+
+| Development seed | Fresh v2 return | A return | B return | A gain | B gain |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 106 | +2 | -3 | -2 | -5 | -4 |
+| 107 | -2 | -6 | -1 | -4 | +1 |
+| Mean | 0 | -4.5 | -1.5 | -4.5 | -1.5 |
+
+A separate offline round audit replayed the eight episodes, validated all original
+probe exchanges, reconstructed both teacher packets from training data, matched
+the selected candidates to their original teacher outputs, and recomputed both
+rejections. Its local receipt is `artifacts/pong/criteria-C1R1-audit/verification.json`.
+The receipt covers this completed round only, not the still-running study's global
+budget or future final evaluation. Round use: 4,481 Jev attempts and two teacher
+invocations. The audit made zero model calls.
+
+Round two has started. B proposed `pong-bounded-incoming-lead`; A's next proposal
+will receive new v2 training trajectories from seeds 102/103. Detailed development
+outcomes stay outside both teacher packets. The selected current v2 and prior
+proposals still expose indirect selection history, as declared in the protocol.
