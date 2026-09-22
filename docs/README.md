@@ -22,6 +22,9 @@ Active continuation: the [criteria-edit teacher protocol](pong/criteria-teacher-
 uses three independent A/B searches, two rounds and sealed final evaluation within
 60,000 Jev attempts. The [study log](pong/criteria-teacher-log.md) records isolated proposals.
 
+Parallel local diagnostic: [relative-motion literal controls](pong/relative-motion-controls-protocol.md),
+32 training episodes with zero model calls, kept outside the running teacher packets.
+
 | Document | Purpose | Status |
 | --- | --- | --- |
 | [Research direction](research-direction.md) | Two goals, hypotheses, current evidence and limits | Adopted project direction |
