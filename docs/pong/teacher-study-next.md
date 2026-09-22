@@ -80,3 +80,47 @@ prospective screen (62/160 versus expanded 76/160). Before more reliability logi
 the next proposed diagnostic should separate object-center extraction, deadband
 comparison and native-action mapping. Changes to question topology need their own
 frozen protocol and costs. No further model run is launched by this update.
+
+## Candidate experience after rejection: proposed follow-up, 2026-09-23
+
+The first completed search in the [criteria study](criteria-teacher-log.md) exposes
+a specific feedback limitation. After round-one candidates were rejected, both
+incumbents remained v2. The next A packet contained new v2 training trajectories
+from seeds 102/103 and prior proposal text. It did not contain trajectories from
+executing the rejected interception candidate. The offline search audit reconstructed
+this packet and confirmed the behavior. In the frozen source,
+`criteria_study.run` collects training using `incumbent["A"]`, and modification
+memory stores each proposal without empirical outcome fields.
+
+This is a valid test of incumbent-experience feedback, not a protocol error. The
+teacher can infer some selection history from the retained program, but cannot
+directly inspect how its rejected rule behaved. The observed rejection does not
+prove that this limitation caused failure; the rule or its execution may simply
+be poor. Do not alter the running study, supply its development trajectories to
+teachers, or reinterpret its primary comparison.
+
+A separately frozen follow-up could isolate **which policy generates feedback**:
+
+- Continue the current incumbent-only training-packet procedure as a reference.
+- Give another teacher the same bounded volume of fresh training experience split
+  between its incumbent and its own previous candidate, including a rejected one.
+  Record program hashes on every example and preserve successful as well as failed
+  windows. A proposal's training execution must be scheduled regardless of its
+  development selection, so failure evidence is not selectively collected.
+- Retain a no-empirical-feedback search when testing the endpoint's feedback-benefit
+  claim. A comparison between two feedback sources alone cannot establish that claim.
+
+Keep proposal opportunities, question representation, fixed Jev model, observations,
+native actions, decoder, development gate and final schedule comparable. Match the
+training episode/decision budget and packet sampling capacity between the two
+feedback-source arms; record actual text/token differences. The no-feedback arm's
+unused teacher context is not equal computation merely because invocation counts
+match. Report both total method cost and teacher-visible information.
+
+Use fresh training seeds for candidate rollouts. Never import development/final
+trajectories into feedback, label different evolving trajectories as same-state
+counterfactuals, or feed these coordinator notes to a supposedly isolated control.
+Handle round one, identical incumbent/candidate hashes, missing episodes, packet
+caps and tie retention prospectively. Freeze concrete seeds, repetitions, horizon,
+cost caps and all final comparisons before any follow-up call, after auditing the
+current study. This section allocates no calls and launches no follow-up experiment.
