@@ -109,3 +109,13 @@ identifies a testable limitation of incumbent-only feedback after rejection; it
 does not explain these failures causally or authorize changing this study.
 The overall research goal remains unmet. This incomplete study must not be
 presented as evidence that feedback optimization works or cannot work in general.
+
+Access follow-up at 2026-09-22 17:12 UTC: the public
+[OpenAPI schema](https://api.typesafe.ai/openapi.json) returned HTTP 200 and listed
+only `POST /v1/systemone` and `GET /v1/models`, with no documented credit-balance
+endpoint or HTTP 402 explanation. The [provider status page](https://status.typesafe.ai/)
+reported services operational. This establishes public documentation availability,
+not restored inference access for the account. The local browser could not attach
+to an existing Chrome debugging session, so no account balance was read. No
+authenticated inference retry or payment operation was performed. The account-side
+cause and restoration remain unconfirmed; the original experiment stays closed.
