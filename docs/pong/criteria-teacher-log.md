@@ -77,3 +77,38 @@ Round two has started. B proposed `pong-bounded-incoming-lead`; A's next proposa
 will receive new v2 training trajectories from seeds 102/103. Detailed development
 outcomes stay outside both teacher packets. The selected current v2 and prior
 proposals still expose indirect selection history, as declared in the protocol.
+
+## Search 1 round 2 completed
+
+A proposed `pong-relative-motion-lookahead-v1`, forecasting both ball and player
+centers two raw frames ahead to brake or reverse before overshooting. B proposed
+`pong-bounded-incoming-lead`, using a short incoming-ball forecast. A received v2
+training returns -4 and +1 on seeds 102/103. Both original teacher calls succeeded
+without repair or access retry. All three programs passed the basic probe screen.
+
+| Development seed | Fresh v2 return | A return | B return | A gain | B gain |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 106 | 0 (1:1) | -1 (2:3) | -4 (0:4) | -1 | -4 |
+| 107 | +1 (3:2) | +1 (2:1) | +1 (2:1) | 0 | 0 |
+| Mean | +0.5 | 0 | -1.5 | -0.5 | -2 |
+
+Both were rejected under the unchanged selector. All eight round episodes reached
+the 2,000-frame cap and passed the runner's replay verification. This round used
+4,480 Jev attempts: 1,000 training, 3,000 development and 480 probe responses.
+The first search therefore used 8,961 attempts and four successful teacher calls;
+one Jev transport retry occurred in round one. This is a completed-search snapshot,
+not a live global counter or an independent audit of the entire ongoing study.
+
+Both final selections A1 and B1 remain the identical v2 program. Consequently the
+predeclared primary A1-versus-v2 comparison cannot show positive improvement:
+the frozen final procedure shares trajectories for identical program hashes.
+The study cannot meet its primary policy-improvement criterion. The remaining
+two independent searches still run as planned to retain complete evidence about
+the search procedure. Their results must not replace A1 post hoc as the primary.
+No final-test trajectories have yet been generated or supplied to teachers.
+
+Search 2 round 1 has started with an independent B packet and fresh seed schedule.
+Separately, the [literal relative-motion diagnostic](relative-motion-controls-results-2026-09-23.md)
+completed all 32 local episodes with zero model calls and a +1.5 mean training gain
+over tracking, including two seed regressions. Those manually operationalized
+results stay outside this study's packets and do not establish Jev improvement.
