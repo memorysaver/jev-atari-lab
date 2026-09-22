@@ -153,3 +153,7 @@ original-state adherence analysis and 16 videos, with zero new model calls.
 
 [Motion probe v1](pong/motion-probe-v1/README.md) preserves 480 fresh Jev responses on 80 stratified
 training states, with negative wording results and no gameplay promotion.
+
+[Compact wording probe](pong/wording-probe-v1/README.md): 480 fresh Jev responses,
+negative same-rule wording result and a failed prospective screen. Evidence is
+reviewed locally; no remote preservation, gameplay improvement or teacher benefit is claimed.

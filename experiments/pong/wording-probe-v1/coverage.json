@@ -1,0 +1,35 @@
+{
+  "unique_training_states": 66020,
+  "pool_counts": {
+    "missing": 4763,
+    "unknown-motion": 441,
+    "outgoing": 28885,
+    "stationary-x": 484,
+    "incoming-stable-same-up": 11111,
+    "incoming-stable-conflict": 7334,
+    "incoming-uncertain-same": 1552,
+    "incoming-stable-same-down": 9777,
+    "incoming-stable-same-hold": 1142,
+    "incoming-uncertain-conflict": 531
+  },
+  "selected_counts": {
+    "missing": 8,
+    "unknown-motion": 8,
+    "outgoing": 8,
+    "stationary-x": 8,
+    "incoming-uncertain-conflict": 8,
+    "incoming-uncertain-same": 8,
+    "incoming-stable-conflict": 8,
+    "incoming-stable-same-up": 8,
+    "incoming-stable-same-down": 8,
+    "incoming-stable-same-hold": 8
+  },
+  "hash_uniform_32_counts": {
+    "incoming-stable-conflict": 4,
+    "outgoing": 16,
+    "stationary-x": 1,
+    "incoming-stable-same-down": 4,
+    "incoming-stable-same-up": 7
+  },
+  "limits": "Stratification intentionally changes state frequencies. Missing strata are not backfilled."
+}

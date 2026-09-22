@@ -1,0 +1,22 @@
+{
+  "kind": "wording-probe-v1",
+  "status": "not-eligible",
+  "primary_contrast": "Compact minus freshly evaluated expanded conservative-rule agreement",
+  "overall_difference": -0.08749999999999997,
+  "checks": {
+    "complete_schedule": true,
+    "overall_at_least_80_percent": false,
+    "overall_gain_at_least_10_points": false,
+    "missing_objects_all_correct": true,
+    "unknown-motion_at_least_75_percent": false,
+    "outgoing_at_least_75_percent": false,
+    "stationary-x_at_least_75_percent": false,
+    "incoming-uncertain-conflict_at_least_75_percent": false,
+    "incoming-uncertain-same_at_least_75_percent": false,
+    "incoming-stable-conflict_at_least_75_percent": false,
+    "incoming-stable-same-up_at_least_75_percent": false,
+    "incoming-stable-same-down_at_least_75_percent": false,
+    "incoming-stable-same-hold_at_least_75_percent": true
+  },
+  "limits": "Descriptive thresholds on reused training states, not significance, optimality, policy promotion or authorization for gameplay calls."
+}

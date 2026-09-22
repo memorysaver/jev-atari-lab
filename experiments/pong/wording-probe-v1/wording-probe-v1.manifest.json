@@ -1,0 +1,109 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "wording-probe-v1.tar.gz",
+  "sha256": "c2cd1c052de9a4c20a7be5b61ad2eff2b40ed3fb70045ec1140396ccd0f6f162",
+  "file_count": 20,
+  "uncompressed_bytes": 3582684,
+  "files": [
+    {
+      "path": "wording-probe-v1/audit/paired-description.json",
+      "bytes": 421,
+      "sha256": "e4c5e470ae572ba7288384890bd27e487b49afa143229ca88c55d8071d253c27"
+    },
+    {
+      "path": "wording-probe-v1/audit/regenerated-pack/coverage.json",
+      "bytes": 1001,
+      "sha256": "0f41491648dba5abf140fa8ea5080ab7001278aa083388f45ff0746e644d3c6b"
+    },
+    {
+      "path": "wording-probe-v1/audit/regenerated-pack/inputs.json",
+      "bytes": 373197,
+      "sha256": "7f8dab6f430eda70f0ca4e8735aaa9efaff4ba68c0b1b415f26a1b792b860ab7"
+    },
+    {
+      "path": "wording-probe-v1/audit/regenerated-pack/programs.json",
+      "bytes": 3597,
+      "sha256": "c07bb5f037e228876a86d32dee2d9c00c6d5e44d433ccea7cf79ef5a26317360"
+    },
+    {
+      "path": "wording-probe-v1/audit/regenerated-pack/provenance.json",
+      "bytes": 4506,
+      "sha256": "3ce6cb774e7050a36e9dd680bcf7b3383d48d6ac47aa5148ae320552c5623ba2"
+    },
+    {
+      "path": "wording-probe-v1/audit/screen.json",
+      "bytes": 1023,
+      "sha256": "76a6e267606aa1e9cc6c04532f141bc17019ba7590835b97b95338f0e0a9b9fa"
+    },
+    {
+      "path": "wording-probe-v1/audit/verification.json",
+      "bytes": 519,
+      "sha256": "06bc94acb348b5e8ff760b61d3f7755738cbaf544502e950a59db3f75956b4b0"
+    },
+    {
+      "path": "wording-probe-v1/pack/coverage.json",
+      "bytes": 1001,
+      "sha256": "0f41491648dba5abf140fa8ea5080ab7001278aa083388f45ff0746e644d3c6b"
+    },
+    {
+      "path": "wording-probe-v1/pack/guidance-diff.txt",
+      "bytes": 2226,
+      "sha256": "71d6d64cf86353a741ad9ee07bd486bdefad2d869037c1dadf4fdc8f9c1aed4e"
+    },
+    {
+      "path": "wording-probe-v1/pack/inputs.json",
+      "bytes": 373197,
+      "sha256": "7f8dab6f430eda70f0ca4e8735aaa9efaff4ba68c0b1b415f26a1b792b860ab7"
+    },
+    {
+      "path": "wording-probe-v1/pack/intervention-audit.json",
+      "bytes": 1128,
+      "sha256": "e69c902ce8f88cc05ebcb27cc58ac152b85363c0ff8fe751afc6e73da22191cb"
+    },
+    {
+      "path": "wording-probe-v1/pack/programs.json",
+      "bytes": 3597,
+      "sha256": "c07bb5f037e228876a86d32dee2d9c00c6d5e44d433ccea7cf79ef5a26317360"
+    },
+    {
+      "path": "wording-probe-v1/pack/provenance.json",
+      "bytes": 4506,
+      "sha256": "3ce6cb774e7050a36e9dd680bcf7b3383d48d6ac47aa5148ae320552c5623ba2"
+    },
+    {
+      "path": "wording-probe-v1/run/api-ledger.json",
+      "bytes": 114031,
+      "sha256": "93a5adb5376036615daba06ff84c1936703f5367bf5ed3498354cdeb39bcedc4"
+    },
+    {
+      "path": "wording-probe-v1/run/budget.json",
+      "bytes": 99,
+      "sha256": "aa86559a76df07d564815978fec5478994696c2d853abb079a2d29a8e983dbaf"
+    },
+    {
+      "path": "wording-probe-v1/run/model-exchanges.jsonl",
+      "bytes": 2153063,
+      "sha256": "aa3e3bb2b24bb58d67b6bafdce98a85f8058fa6ab0f55a2420f8e44fc3c150de"
+    },
+    {
+      "path": "wording-probe-v1/run/plan.json",
+      "bytes": 66532,
+      "sha256": "d8af07984d5b45d1abddbbf172b4daf31af26c5f517e25f230e3375c35a8f079"
+    },
+    {
+      "path": "wording-probe-v1/run/predictions.jsonl",
+      "bytes": 462725,
+      "sha256": "ec6709dd1f610ec02f6ce715a2229014f228b21fd1f42ca31c990222b54e9a67"
+    },
+    {
+      "path": "wording-probe-v1/run/results.json",
+      "bytes": 15292,
+      "sha256": "e670d8f9a95ae405388d2efd1faca034bac7730556105f1be20ae66e27db4741"
+    },
+    {
+      "path": "wording-probe-v1/run/screen.json",
+      "bytes": 1023,
+      "sha256": "76a6e267606aa1e9cc6c04532f141bc17019ba7590835b97b95338f0e0a9b9fa"
+    }
+  ]
+}

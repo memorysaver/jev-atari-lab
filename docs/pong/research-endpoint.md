@@ -63,13 +63,15 @@ project objective with its own native-match endpoint and threshold.
 | Did the isolated experience-informed teacher improve gameplay? | First candidate lost 0:21 twice; mean development gain -11.5 | Negative for that candidate |
 | Did the no-feedback candidate establish improvement? | Development gains -3 and +11; mean +4; rejected by its frozen gate | Mixed exploratory outcome; no final test |
 | Did explicit motion-reliability wording improve execution? | Agreement with the conservative rule fell from 99/160 to 73/160 | Negative diagnostic result; no gameplay measured |
+| Did compact wording recover the same conservative rule? | Fresh comparison: 62/160 compact versus 76/160 expanded; prospective screen failed | Negative diagnostic result; no gameplay measured |
 | Has the selected teacher policy improved on untouched final tests? | Final tests were not run; both arms retained v2 | Not established |
 | Does feedback produce a repeatable optimizer advantage? | One incomplete optimization trajectory per arm | Not established |
 
 Sources: [short-window controls](../pong-controls-2026-09-18.md),
 [teacher study results](teacher-study-results-2026-09-20.md),
 [question diagnostics](question-diagnostics-results-2026-09-20.md), and
-[motion probe results](motion-probe-results-2026-09-21.md).
+[motion probe results](motion-probe-results-2026-09-21.md), and
+[wording probe results](wording-probe-results-2026-09-22.md).
 
 The first teacher study stopped during round two after a failed teacher invocation.
 That incomplete execution is not evidence that the general approach cannot work.

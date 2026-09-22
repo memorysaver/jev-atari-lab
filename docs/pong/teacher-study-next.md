@@ -72,3 +72,11 @@ experience, measurable behavioral edits and reproducible environmental outcomes.
 Evidence for a successful optimizer requires more than that methodology. This
 study supplies negative/incomplete results and precise next tests; it does not
 establish novelty, RL convergence or a stronger Atari agent.
+
+## Update after the wording probe, 2026-09-22
+
+The [same-rule compact restatement](wording-probe-results-2026-09-22.md) failed its
+prospective screen (62/160 versus expanded 76/160). Before more reliability logic,
+the next proposed diagnostic should separate object-center extraction, deadband
+comparison and native-action mapping. Changes to question topology need their own
+frozen protocol and costs. No further model run is launched by this update.

@@ -97,3 +97,13 @@ jobs:
           --run restored-motion-probe/motion-probe-v1/run
           --source restored-question-diagnostics/question-diagnostics-v1/local
           --out artifacts/ci-motion-probe-audit
+      - run: >-
+          uv run python scripts/restore_experiments.py
+          --manifest experiments/pong/wording-probe-v1/wording-probe-v1.manifest.json
+          --out restored-wording-probe
+      - run: >-
+          uv run python scripts/wording_probe.py verify
+          --pack restored-wording-probe/wording-probe-v1/pack
+          --run restored-wording-probe/wording-probe-v1/run
+          --source restored-question-diagnostics/question-diagnostics-v1/local
+          --out artifacts/ci-wording-probe-audit

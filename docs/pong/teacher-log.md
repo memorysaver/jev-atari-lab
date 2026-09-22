@@ -23,7 +23,7 @@ failed operations require an explicit entry such as T002-A.
 | ID | Intervention and provenance | Observed result |
 | --- | --- | --- |
 | [D001](teacher-rounds/D001-motion-reliability.md) | Explicit history-based reliability; coordinator with prior development exposure | Negative probe result; not promoted |
-| [D002](teacher-rounds/D002-compact-wording.md) | Compact restatement of the same conservative rule; coordinator with prior diagnostic exposure | Frozen before evaluation |
+| [D002](teacher-rounds/D002-compact-wording.md) | Compact restatement of the same conservative rule; coordinator with prior diagnostic exposure | Negative: 62/160 versus fresh expanded 76/160; screen failed |
 
 D001 is a separate bounded diagnostic, not a resumed isolated teacher round.
 Its 480 fresh Jev responses and all regressions are preserved in the linked report.

@@ -37,3 +37,7 @@ original-state adherence analysis and 16 videos, with zero new model calls.
 
 [Motion probe v1](motion-probe-v1/README.md) preserves 480 fresh Jev responses on 80 stratified
 training states, with negative wording results and no gameplay promotion.
+
+[Wording probe v1](wording-probe-v1/README.md) adds 480 fresh responses comparing compact
+and expanded forms of the same rule. The candidate failed its prospective screen;
+reviewed local evidence is prepared, with remote publication not performed.

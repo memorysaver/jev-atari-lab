@@ -1,0 +1,33 @@
+{
+  "kind": "wording-probe-v1",
+  "changed_model_request_fields": [
+    "questions.next_action.instructions.question"
+  ],
+  "guidance_characters": {
+    "v2": 1005,
+    "expanded": 1365,
+    "compact": 820
+  },
+  "program_hashes": {
+    "v2": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+    "expanded": "a74abe3a079b4dcc985ed63cddec70be192644d2c6de4e2908f3f1f9fa8f5bc1",
+    "compact": "6458de912457248a0596e417e8edb2b8498a213be1cf95f62436a9545a21c4f0"
+  },
+  "source_regression_audit": {
+    "status": "verified",
+    "run_status": "complete",
+    "audit_api_attempts": 0,
+    "source_revision": "f7899acf9a01952207e62c155e0994a436c7f233",
+    "states": 80,
+    "predictions": 480,
+    "attempts": 480,
+    "unexecuted_attempts": 0,
+    "plan_hash": "13e9fc9859781f59aa2dcdf0a32d8e4ea5cbde3bf4b62923edfad6036ea2ed20",
+    "results_hash": "5ab360a43ea5c363f4144bc4cbbb5a9459ac949e9a4524e33635e6c0056db59c",
+    "scope": "Training-source hashes, deterministic selection, requests/responses and metrics. No gameplay inference."
+  },
+  "offline_tests": {
+    "passed": 132,
+    "live_model_calls": 0
+  }
+}

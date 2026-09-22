@@ -33,3 +33,17 @@ neither semantic equivalence inside Jev nor a pure length effect is assumed.
 
 Evaluation results will be appended after the frozen run. Keep this proposal text,
 the original program and the protocol unchanged, including if the candidate fails.
+
+## Observed evaluation, 2026-09-22
+
+**Negative; not eligible and not promoted.** Compact matched the conservative rule
+on 62/160 responses (38.75%), versus freshly evaluated expanded's 76/160 (47.50%).
+Uncertain-conflict agreement improved from 1/16 to 7/16, but stable up/down and
+other behavior regressed. The candidate failed both overall screen conditions and
+eight of the nine non-missing strata. All 480 scheduled responses completed in
+480 attempts without retries or failures; final-test/gameplay calls were zero.
+
+See the [full results](../wording-probe-results-2026-09-22.md) and
+[reviewed local evidence](../../../experiments/pong/wording-probe-v1/README.md).
+This outcome falsifies improvement for this restatement on the selected training
+states; it does not establish the internal cause or a general failure of compression.

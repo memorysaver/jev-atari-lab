@@ -1,0 +1,16 @@
+{
+  "kind": "wording-probe-v1-paired-description",
+  "status": "post-hoc-descriptive-only",
+  "paired_responses": {
+    "both-correct": 44,
+    "neither-correct": 66,
+    "compact-only": 18,
+    "expanded-only": 32
+  },
+  "state_mean_agreement_changes": {
+    "tied": 48,
+    "improved": 13,
+    "regressed": 19
+  },
+  "limits": "Repeats and nearby states are correlated; no significance or causal gameplay inference."
+}

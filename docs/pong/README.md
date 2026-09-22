@@ -4,8 +4,9 @@ Pong is the current test environment for the teacher-driven question optimizer.
 Its small action space makes it a useful starting point, but neither mastery nor
 repeatable multi-round learning has been established.
 
-Next diagnostic: [compact versus expanded wording](wording-probe-protocol.md),
-one manual restatement of the same rule with a frozen 520-attempt cap and screen.
+Latest: [compact wording results](wording-probe-results-2026-09-22.md): agreement fell
+from 76/160 to 62/160 against freshly evaluated expanded wording. The candidate
+failed its prospective screen; all 480 responses are retained in reviewed local evidence.
 
 See the [first teacher study results](teacher-study-results-2026-09-20.md): one completed
 round, both candidates rejected, and a technical stop before a second proposal.

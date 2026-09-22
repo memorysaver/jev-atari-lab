@@ -12,9 +12,9 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Next bounded diagnostic: [compact versus expanded wording](pong/wording-probe-protocol.md),
-with one [manual candidate](pong/teacher-rounds/D002-compact-wording.md) and a prospective
-behavioral screen on reused training states. The rule and model requests' other fields stay fixed.
+Latest: [compact wording results](pong/wording-probe-results-2026-09-22.md). The same-rule
+restatement regressed from 76/160 to 62/160 agreement and failed its prospective screen.
+All 480 fresh responses are retained locally; no gameplay or final test was run.
 
 ## Research map
 
