@@ -15,8 +15,9 @@ Jev question execution. No new live study is launched by that document.
 
 ## Start here
 
-- [Relative-motion literal controls](relative-motion-controls-protocol.md): a separate
-  zero-model-call diagnostic of C1-R2-A's strategy and its interpretation limits.
+- [Relative-motion controls results](relative-motion-controls-results-2026-09-23.md):
+  32 replayed local episodes, +1.5 mean gain over tracking with two seed regressions;
+  zero model calls, no Jev improvement claim. [Protocol](relative-motion-controls-protocol.md).
 
 - [Criteria-edit teacher protocol](criteria-teacher-protocol.md) and
   [study log](criteria-teacher-log.md): bounded continuation toward the research endpoint.

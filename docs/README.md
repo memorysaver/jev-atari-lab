@@ -22,8 +22,10 @@ Active continuation: the [criteria-edit teacher protocol](pong/criteria-teacher-
 uses three independent A/B searches, two rounds and sealed final evaluation within
 60,000 Jev attempts. The [study log](pong/criteria-teacher-log.md) records isolated proposals.
 
-Parallel local diagnostic: [relative-motion literal controls](pong/relative-motion-controls-protocol.md),
-32 training episodes with zero model calls, kept outside the running teacher packets.
+Parallel local diagnostic: [relative-motion controls results](pong/relative-motion-controls-results-2026-09-23.md).
+The literal relative-motion rule gained +1.5 mean capped return over tracking on eight
+training seeds, with two regressions; all 32 episodes replayed, zero model calls.
+These results stay outside the running teacher packets and do not establish Jev improvement.
 
 | Document | Purpose | Status |
 | --- | --- | --- |

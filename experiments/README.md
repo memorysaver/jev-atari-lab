@@ -157,3 +157,8 @@ training states, with negative wording results and no gameplay promotion.
 [Compact wording probe](pong/wording-probe-v1/README.md): 480 fresh Jev responses,
 negative same-rule wording result and a failed prospective screen. Evidence is
 reviewed locally; no remote preservation, gameplay improvement or teacher benefit is claimed.
+
+[Relative-motion controls](pong/relative-motion-controls-v1/README.md): 32 replayed
+training episodes and videos with zero model calls. A manually operationalized
+teacher hypothesis improves mean capped return but regresses on two seeds. No Jev
+improvement or final-test claim; the archive is locally verified only.

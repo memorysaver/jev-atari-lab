@@ -1,0 +1,44 @@
+{
+  "kind": "relative-motion-controls-v1",
+  "source_revision": "82ab2b3ffa03fbed56bb897db1fbef966ad1a5c5",
+  "seeds": [
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    140,
+    141
+  ],
+  "rules": [
+    "track-4",
+    "ball-lookahead-2",
+    "relative-lookahead-2",
+    "relative-unguarded-2"
+  ],
+  "frames_per_episode": 2000,
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "train",
+  "source_program_hash": "67d2e249f331df8db6fe21a26369487bea5bd93ed2e36332e597fe859f5feef4",
+  "api_attempts": 0,
+  "limits": "Manual Python interpretations, including a bounce-guard sensitivity arm. Not Jev gameplay or a teacher-policy promotion. Not fed to the running criteria study."
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "descriptive-training-comparison",
+  "seeds": [
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    140,
+    141
+  ],
+  "contrasts": {
+    "ball-lookahead-2": {
+      "paired_gains_over_track_4": [
+        4.0,
+        5.0,
+        -3.0,
+        2.0,
+        -1.0,
+        -1.0,
+        1.0,
+        -4.0
+      ],
+      "mean_gain": 0.375,
+      "positive": 4,
+      "zero": 0,
+      "negative": 4
+    },
+    "relative-lookahead-2": {
+      "paired_gains_over_track_4": [
+        5.0,
+        5.0,
+        0.0,
+        5.0,
+        1.0,
+        0.0,
+        -1.0,
+        -3.0
+      ],
+      "mean_gain": 1.5,
+      "positive": 4,
+      "zero": 2,
+      "negative": 2
+    },
+    "relative-unguarded-2": {
+      "paired_gains_over_track_4": [
+        5.0,
+        5.0,
+        -2.0,
+        0.0,
+        1.0,
+        1.0,
+        -1.0,
+        -4.0
+      ],
+      "mean_gain": 0.625,
+      "positive": 4,
+      "zero": 1,
+      "negative": 3
+    }
+  },
+  "api_attempts": 0
+}
