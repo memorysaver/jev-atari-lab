@@ -15,6 +15,12 @@ improvements under a measured budget. Finding those optimization patterns is the
 intended path to a paper. Initially both teacher and Jev weights stay fixed;
 the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
 No repeatable optimization benefit has been established.
+
+**Active study:** Three independent, two-round teacher searches now compare
+experience feedback with no empirical feedback while allowing edits to action
+criteria and guidance. The 60,000-attempt protocol reserves sealed final evaluation.
+[Protocol](docs/pong/criteria-teacher-protocol.md) · [Live study log](docs/pong/criteria-teacher-log.md).
+Execution is in progress; no outcome or policy improvement is claimed yet.
 All project research lives in [docs/](docs/README.md), including the
 [optimizer design](docs/teacher-optimizer.md), [evaluation framework](docs/evaluation-framework.md)
 and [research roadmap](docs/research-roadmap.md).
