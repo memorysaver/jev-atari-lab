@@ -22,6 +22,10 @@ The OpenRouter study stopped on HTTP 502 in round two; one development round
 accepted B and rejected A. All 12 trajectories replayed, no final tests ran,
 and the owner closed this Pong stage. [Local archive](../experiments/pong/candidate-feedback-openrouter-v1/README.md).
 
+[Ten-round Seaquest protocol](seaquest/ten-round-protocol.md): owner-authorized
+autonomous question research with full episode videos, development/final separation
+and a mandatory stop after round 10.
+
 ## Research map
 
 [Seaquest observation v2 protocol](seaquest/observation-v2-protocol.md) fixes animation
