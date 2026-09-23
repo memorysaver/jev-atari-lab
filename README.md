@@ -16,7 +16,13 @@ intended path to a paper. Initially both teacher and Jev weights stay fixed;
 the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
 No repeatable optimization benefit has been established.
 
-**Latest teacher study — incomplete:** HTTP 402 stopped the criteria-edit study
+**New bounded Pong stage launched:** one A/B search with three consecutive rounds
+on OpenRouter, including feedback from the previous candidate, followed by sealed
+final evaluation. Results are pending; [launch record](docs/pong/candidate-feedback-openrouter-log.md)
+and [protocol](docs/pong/candidate-feedback-openrouter-protocol.md).
+[Next-game recommendation: Seaquest](docs/next-atari-game-2026-09-23.md).
+
+**Previous teacher study — incomplete:** HTTP 402 stopped the criteria-edit study
 after 15,093 Jev attempts. Three rounds completed and all six evaluated proposals
 were rejected; two additional proposals lack complete development results.
 All 27 trajectories replayed, including the interrupted episode. No final tests ran.

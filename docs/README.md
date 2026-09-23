@@ -19,7 +19,7 @@ trajectories replayed; complete local evidence preserves the technical stop.
 
 ## Research map
 
-New prospective work: [three-round Pong closure on OpenRouter](pong/candidate-feedback-openrouter-protocol.md),
+New stage ([launch record](pong/candidate-feedback-openrouter-log.md)): [three-round Pong closure on OpenRouter](pong/candidate-feedback-openrouter-protocol.md),
 with training feedback from the previous candidate as well as the incumbent.
 [Next-game recommendation](next-atari-game-2026-09-23.md): Seaquest, pending observation
 validation and a small capability-separation pilot. No non-Pong live calls allocated.
