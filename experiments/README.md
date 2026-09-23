@@ -167,3 +167,8 @@ improvement or final-test claim; the archive is locally verified only.
 the fourth round after 15,093 Jev attempts. Three rounds rejected all six evaluated
 proposals. All 27 trajectories and eight teacher outputs are retained and replayed;
 no final test ran. Local evidence only; no remote preservation is claimed.
+
+[OpenRouter playback pilot](pong/openrouter-player-pilot-v1/README.md): one successful
+access check and 100 successful playback requests, with model identity pinned and
+400 frames replayed. Records disclose the supplementary plan-writer failure; the
+source/schedule were frozen before calls. No policy-improvement or final-test claim.

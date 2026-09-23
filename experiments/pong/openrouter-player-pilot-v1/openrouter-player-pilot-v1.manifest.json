@@ -1,0 +1,94 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "openrouter-player-pilot-v1.tar.gz",
+  "sha256": "bd733635f2ee9361bee73d77c6ca583bfa2a71d8e7e04f61068dbddc4107b98f",
+  "file_count": 17,
+  "uncompressed_bytes": 1608749,
+  "files": [
+    {
+      "path": "openrouter-player-pilot-v1/audit/frames.jsonl",
+      "bytes": 282209,
+      "sha256": "f390bb0a45269251858582729ea938c937490328d3f97a9be8d420294eec46a4"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/audit/verification.json",
+      "bytes": 573,
+      "sha256": "0f6153cc3b59f33bd79f942ac775f56194993f9d3ed9e7a273f5184810e03282"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/api-ledger.json",
+      "bytes": 28923,
+      "sha256": "022959776466ed22504098e7fdc3b7ed0c83bf44a6272fb0f1ae4f8f4ab56e1c"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/frames.jsonl",
+      "bytes": 282209,
+      "sha256": "f390bb0a45269251858582729ea938c937490328d3f97a9be8d420294eec46a4"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/last-frame.png",
+      "bytes": 715,
+      "sha256": "d446d910ce84d49376f7b1913610b6e78a6001a93599db1b615bc0588ad81dac"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/manifest.json",
+      "bytes": 2175,
+      "sha256": "1a0f08fba8289f348badcf34e3405529ae94b7875cd63e990228268beec7141a"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/model-exchanges.jsonl",
+      "bytes": 457892,
+      "sha256": "400b6ed39f6c20fa50bb25f020864dd149e84f25e10b8281e48e84d82c0b4f64"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/replay.mp4",
+      "bytes": 18685,
+      "sha256": "7b60678f6fd5544f5d343ab1a893c80808ab8cf8d54608ddb478322951436b5f"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/summary.json",
+      "bytes": 357,
+      "sha256": "7d8e399b808ee7376a459e47d98ebe1af90af6e6bfc346d0032ce86cbebf3b56"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/episode/transitions.jsonl",
+      "bytes": 524863,
+      "sha256": "fdcb0a2ade373d115f563f987c31dbc86cf0913bb59cca04ce670154723314a8"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/plan.json",
+      "bytes": 2832,
+      "sha256": "d4bcc0e7010b270c58225a17efbf4bc8ee322926aea3fd138cfc1aa5563e8eb4"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/preflight/api-ledger.json",
+      "bytes": 291,
+      "sha256": "ceecd9a00938835c9dd46e234c20d46abf8c47e19e22f322f04101e4424578cf"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/preflight/model-exchanges.jsonl",
+      "bytes": 4520,
+      "sha256": "121986e10256532f7e9addf06bc8f6173e253dc9b8dd32ec712b394f8ab0f4d6"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/preflight/plan.json",
+      "bytes": 585,
+      "sha256": "f281a4db47bc98025c5a20c0ed9cb037b071856fa7c8d7abdff5285228d9027a"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/preflight/result.json",
+      "bytes": 439,
+      "sha256": "e67e449f713d2be9cddb31547d50f122c8bc04ab49990468d45dcc862deddaf5"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/preflight/validated-answers.json",
+      "bytes": 459,
+      "sha256": "e09492dcef1c59f59d8009b24653ec54cd36ffe9873570dc10d10ab496e8319b"
+    },
+    {
+      "path": "openrouter-player-pilot-v1/verification.json",
+      "bytes": 1022,
+      "sha256": "a835f313de32bee6de39dc246989b9e50cb2b7c9d67a57e9e4cf5d4b4f903d74"
+    }
+  ]
+}

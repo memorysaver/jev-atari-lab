@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "scope": "One bounded transport/playback pilot; no performance improvement or provider equivalence claim.",
+  "source_revision": "7f195a0823c0be8b3a8e1b9d59634fd1849df3e3",
+  "program_hash": "2ef87250f491fcd5a2ba72f29e3f03b6bc66c4ab7315e9e724df76352326633d",
+  "requested_model": "~typesafe/jev-latest",
+  "response_models": {
+    "typesafe/jev-1.13-20260917": 100
+  },
+  "providers": {
+    "TypeSafe": 100
+  },
+  "api_attempts": 100,
+  "successful_responses": 100,
+  "retries": 0,
+  "controlled_frames": 400,
+  "reset_frames": 16,
+  "points": [
+    0,
+    0
+  ],
+  "actions": {
+    "0": 71,
+    "3": 13,
+    "2": 16
+  },
+  "input_tokens": 166686,
+  "output_tokens": 6871,
+  "reported_cost_usd": "0.007000812",
+  "wall_seconds": 31.740818669990404,
+  "audit_api_attempts": 0,
+  "final_test_access": false,
+  "plan_json_written_after_start": true,
+  "prospective_schedule_source": "docs/pong/openrouter-migration.md at the recorded source revision; JSON metadata writer failed before launch."
+}

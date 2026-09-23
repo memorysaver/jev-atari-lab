@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "artifact_path": "artifacts/pong/openrouter-access-check-20260923T143856692484Z",
+  "requested_model": "~typesafe/jev-latest",
+  "response_model": "typesafe/jev-1.13-20260917",
+  "provider": "TypeSafe",
+  "validated_response": true,
+  "usage": {
+    "input_tokens": 1620,
+    "output_tokens": 69,
+    "cost": 6.804e-05
+  },
+  "choice": "NOOP",
+  "attempts": 1,
+  "elapsed_seconds": 1.087,
+  "http_status": 200
+}

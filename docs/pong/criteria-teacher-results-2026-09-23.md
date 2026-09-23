@@ -119,3 +119,9 @@ not restored inference access for the account. The local browser could not attac
 to an existing Chrome debugging session, so no account balance was read. No
 authenticated inference retry or payment operation was performed. The account-side
 cause and restoration remain unconfirmed; the original experiment stays closed.
+
+On 2026-09-23 the owner requested an alternative OpenRouter route. A separate
+[migration pilot](openrouter-migration.md) completed one access check and 100
+playback requests through OpenRouter with the returned model identity pinned.
+This enables future work on that transport; it does not establish direct-account
+restoration, resume this study or make the two providers' results interchangeable.
