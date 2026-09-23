@@ -19,6 +19,11 @@ trajectories replayed; complete local evidence preserves the technical stop.
 
 ## Research map
 
+New prospective work: [three-round Pong closure on OpenRouter](pong/candidate-feedback-openrouter-protocol.md),
+with training feedback from the previous candidate as well as the incumbent.
+[Next-game recommendation](next-atari-game-2026-09-23.md): Seaquest, pending observation
+validation and a small capability-separation pilot. No non-Pong live calls allocated.
+
 [OpenRouter migration](pong/openrouter-migration.md): one access request and all 100
 playback requests succeeded; 400 frames replayed with explicit model identity pinning.
 The setup metadata deviation is preserved; this is not a performance improvement claim.

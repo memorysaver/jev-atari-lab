@@ -39,6 +39,18 @@ def verify(root, out):
         path = root / arm / f"seed-{seed}"
         manifest, summary = read_json(path / "manifest.json"), read_json(path / "summary.json")
         assert manifest["protocol"] == plan["protocol"]
+        transport = plan.get("model_transport")
+        expected_model = plan["model"]
+        if transport is not None:
+            from jev_atari.openrouter import ENDPOINT
+
+            assert transport["backend"] == "openrouter" and transport["endpoint"] == ENDPOINT
+            assert transport["requested_model"] == plan["model"]
+            assert transport["expected_response_model"].startswith("typesafe/")
+            assert transport["max_retries"] == 0
+            assert transport["max_api_calls"] == plan["max_http_attempts"]
+            assert manifest["model_transport"] == transport
+            expected_model = transport["expected_response_model"]
         assert manifest["seed"] == seed and manifest["split"] == plan["split"]
         assert manifest["point_limit"] is None
         assert manifest["max_decisions"] == plan["max_decisions_per_episode"]
@@ -71,7 +83,13 @@ def verify(root, out):
                     assert exchange["response"] is None
                 else:
                     raise AssertionError("Recorded action lacks its model response")
-                assert exchange["response"]["model"] == plan["model"]
+                assert exchange["response"]["model"] == expected_model
+                assert prediction["response_model"] == expected_model
+                assert prediction["requested_model"] == plan["model"]
+                if transport is not None:
+                    assert prediction["backend"] == "openrouter"
+                    assert prediction["expected_response_model"] == expected_model
+                    assert prediction["usage"] == exchange["response"].get("usage", {})
                 assert prediction["program_hash"] == program.hash
                 assert prediction["selection_rule"] == ActionPolicy.selection_rule
                 answer = validate_choices(
