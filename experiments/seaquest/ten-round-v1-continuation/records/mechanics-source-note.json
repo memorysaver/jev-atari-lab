@@ -1,0 +1,7 @@
+{
+  "consulted_during": "round 3, after its program was frozen",
+  "source": "https://ale.farama.org/environments/seaquest/",
+  "source_kind": "Official ALE environment documentation",
+  "source_reported_mechanics": "Enemy hits yield points; oxygen depletion requires surfacing; surfacing with fewer than six divers incurs a diver loss. These source-reported rules do not validate a cause-of-death or rescue-event classifier for our recorded RAM.",
+  "use": "May inform later coordinator proposals; no change to active round 3."
+}

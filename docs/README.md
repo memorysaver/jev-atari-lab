@@ -12,10 +12,12 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Latest: [Seaquest fixed-question pilot](seaquest/fixed-question-pilot-results-2026-09-24.md)
-completed two 80-point games, but all 1,108 actions fit a DOWN/NOOP rule. Original
-and restored evidence replayed; cost US$0.119, zero teacher calls. The next research
-question is state-dependent action criteria and effective state diversity.
+Latest: [Seaquest ten-round results](seaquest/ten-round-results-2026-09-24.md).
+Exactly ten rounds and 24 episodes completed; unused capacity is closed. The sealed
+round-three question passed development (+290 mean) and final (+210 mean) paired
+gates. All recordings and restored evidence replayed. Seven coordinator proposals,
+zero isolated teacher calls; no mastery or causal feedback-benefit claim.
+[Videos and evidence](../experiments/seaquest/ten-round-v1-continuation/README.md).
 
 [Pong closure](pong/candidate-feedback-results-2026-09-24.md).
 The OpenRouter study stopped on HTTP 502 in round two; one development round
@@ -37,7 +39,8 @@ The [fixed-question pilot](seaquest/fixed-question-pilot-protocol.md) completed 
 [Seaquest research](seaquest/README.md) has started with a bounded, zero-model-call
 observation/action calibration: [eight trajectories replayed](seaquest/calibration-results-2026-09-24.md),
 with oxygen checks passing and player-visibility limits retained. The [selection rationale](next-atari-game-2026-09-23.md)
-explains its proposed value; no Seaquest learning result is available.
+explains its proposed value. The completed ten-round study establishes bounded
+policy improvement, while repeatable teacher-learning benefit remains unestablished.
 
 [OpenRouter migration](pong/openrouter-migration.md): one access request and all 100
 playback requests succeeded; 400 frames replayed with explicit model identity pinning.

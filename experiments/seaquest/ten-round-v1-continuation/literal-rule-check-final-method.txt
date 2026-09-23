@@ -1,0 +1,51 @@
+import json
+from pathlib import Path
+from collections import Counter
+root=Path('artifacts/seaquest/ten-round-v1-continuation')
+
+def expected(o,number):
+ program=json.loads((root/f'round-{number:02d}'/'proposal.json').read_text())['program']
+ guidance=program['guidance']
+ lo,hi=(62,76) if 'y<62' in guidance else (86,100)
+ threshold=8 if 'oxygen_raw<=8' in guidance else 20
+ p=next((p for p in o['objects'] if p['kind']=='player'),None)
+ if o['object_state']!='active' or p is None:return 'NOOP'
+ y=p['bbox'][1];oxygen=o['oxygen_raw'];carried=o['carried_divers']
+ if y<=46 and oxygen<60:return 'FIRE'
+ if y>46 and (carried==6 or (oxygen<=threshold and (number not in (4,5,8) or carried>=1))):return 'UPFIRE'
+ if number in (4,5,8) and carried==0 and (number!=8 or oxygen<=32):
+  divers=[d for d in o['objects'] if d['kind']=='diver']
+  if divers:
+   px=p['bbox'][0]+p['bbox'][2]/2;py=p['bbox'][1]+p['bbox'][3]/2
+   d=min(divers,key=lambda d:abs(d['bbox'][0]+d['bbox'][2]/2-px)+abs(d['bbox'][1]+d['bbox'][3]/2-py))
+   dx=d['bbox'][0]+d['bbox'][2]/2-px;dy=d['bbox'][1]+d['bbox'][3]/2-py
+   if dy>5:return 'DOWNFIRE'
+   if dy< -5:return 'UPFIRE'
+   if dx>5:return 'RIGHTFIRE'
+   if dx< -5:return 'LEFTFIRE'
+   return 'FIRE'
+ if y<lo:return 'DOWNFIRE'
+ if y>hi:return 'UPFIRE'
+ if number==2:return 'FIRE'
+ px=p['bbox'][0]+p['bbox'][2]/2;py=p['bbox'][1]+p['bbox'][3]/2
+ enemies=[e for e in o['objects'] if e['kind'] in ('shark','enemy_submarine') and abs(e['bbox'][1]+e['bbox'][3]/2-py)<=12]
+ if not enemies:return 'FIRE'
+ e=min(enemies,key=lambda e:abs(e['bbox'][0]+e['bbox'][2]/2-px))
+ ex=e['bbox'][0]+e['bbox'][2]/2
+ if ex<px and p['facing']=='right':return 'LEFTFIRE'
+ if ex>px and p['facing']=='left':return 'RIGHTFIRE'
+ return 'FIRE'
+
+result={'kind':'posthoc-literal-rule-check','limits':'Literal execution agreement on visited training states, not best-action labels or proof of learning. Rounds 2 through 8 target rules are implemented; no held-out states are inspected. Rules 4 and 5 intentionally share the same intended policy.','episodes':[]}
+for n in range(2,9):
+ for p in sorted((root/f'round-{n:02d}'/'candidate').glob('seed-*')):
+  if not (p/'summary.json').exists():continue
+  rows=[json.loads(s) for s in (p/'transitions.jsonl').read_text().splitlines()];rows=[r for r in rows if r['phase']=='control']
+  misses=[];matrix=Counter()
+  for i,r in enumerate(rows):
+   a=r['prediction']['choice_answer']['choice'];e=expected(r['observation'],n);matrix[f'{e}->{a}']+=1
+   if a!=e:misses.append({'decision':i,'expected':e,'actual':a})
+  result['episodes'].append({'round':n,'seed':p.name,'episode_status':json.loads((p/'summary.json').read_text())['status'],'decisions':len(rows),'matches':len(rows)-len(misses),'matrix':dict(matrix),'mismatches':misses})
+(root/'literal-rule-check-final.json').write_text(json.dumps(result,indent=2)+'\n')
+for r in result['episodes']:print(json.dumps({k:v for k,v in r.items() if k!='mismatches'}))
+(root/'literal-rule-check-final-method.txt').write_text(Path(__file__).read_text())

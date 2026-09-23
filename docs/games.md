@@ -23,8 +23,8 @@ transfer test. See the [research roadmap](research-roadmap.md) for that distinct
 | --- | --- | --- | --- |
 | Boot/action smoke check | Passed | Passed | Passed in recorded installation |
 | Generic raw-RAM runner | Available | Available | Available |
-| Semantic object adapter | RAM and simple RGB rules | Experimental v2 in dedicated pilot | Not implemented |
-| Live Jev experiment | Recorded studies | Two fixed-question training games | Not yet tested |
+| Semantic object adapter | RAM and simple RGB rules | Experimental v2 in dedicated studies | Not implemented |
+| Live Jev experiment | Recorded studies | Ten-round study; held-out gates passed | Not yet tested |
 | Value-based labels | 240-frame first-point outcome | Not implemented | Not implemented |
 | Multi-round learning or solved-game claim | Not established | Not established | Not established |
 
@@ -58,3 +58,8 @@ pixel-support gate after the original calibration exposed visibility errors. The
 two 80-point games with DOWN/NOOP behavior; all recordings replayed. This dedicated
 pilot does not change the generic raw-RAM CLI or its catalog adapter status.
 No isolated Seaquest teacher or learning result is available.
+
+The subsequent [ten-round study](seaquest/ten-round-results-2026-09-24.md) completed
+24 episodes, with development mean 80 to 370 and final mean 80 to 290. All ten rounds
+and recordings are preserved and the budget is closed. This establishes bounded
+question-policy improvement, not Seaquest mastery or repeatable teacher optimization.

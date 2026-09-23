@@ -1,0 +1,67 @@
+{
+  "round": 4,
+  "study_plan_hash": "d097ab14c82114f1ae47a3229d36b5cde620d5240e609a6b905bbf302cf1a7bc",
+  "source_revision": "285b2c386cfb356172e687a4b6430601c4dacd72",
+  "jobs": [
+    {
+      "role": "candidate",
+      "seed": 320,
+      "program": {
+        "name": "seaquest-one-diver-supply-v1",
+        "guidance": "Seaquest rule, re-evaluated every four frames. Player is kind=player, x=bbox[0], y=bbox[1]; center adds half width/height. Priority 1: unavailable objects or missing player -> NOOP. Priority 2: y<=46 and oxygen_raw<60 -> FIRE until refilled. Priority 3: at y>46, carried_divers==6 OR (carried_divers>=1 and oxygen_raw<=20) -> UPFIRE. Surfacing with zero divers loses a submarine according to the game manual, so collect a diver before returning. Priority 4: SEEK only if carried_divers==0 and at least one kind=diver is visible. Target the diver with minimum Manhattan center distance, first listed on ties. If target center y is more than 5 below player center y -> DOWNFIRE; more than 5 above -> UPFIRE; otherwise center x more than 5 right -> RIGHTFIRE, more than 5 left -> LEFTFIRE; otherwise FIRE. Collect by contact. Priority 5, HUNT when not seeking: y<86 -> DOWNFIRE; y>100 -> UPFIRE. In 86..100 find the nearest shark/enemy_submarine within 12 pixels of player center y. If it is left and facing right -> LEFTFIRE; if right and facing left -> RIGHTFIRE; otherwise FIRE. Oxygen with zero divers is an urgent collection problem, not permission to surface empty. All 18 actions remain available. FIRE is horizontal in the facing direction; moving horizontally also changes facing. Boxes/identities remain provisional. Do not treat inferred events as observed rewards.",
+        "schema_version": "seaquest-action-criteria-v2",
+        "action_criteria": {
+          "NOOP": "Object state is unavailable or no player object exists. Wait for active observations.",
+          "FIRE": "Active player: wait at y<=46 while oxygen_raw<60. Otherwise, after return priority, either the sought diver is within 5 pixels on both center axes, or hunting depth is 86..100 and the nearest same-lane enemy is already faced or absent. Stay and shoot.",
+          "UP": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "RIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "LEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWN": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPRIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPLEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNRIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNLEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPFIRE": "Active, not waiting for surface refill. First return upward if y>46 and (carried_divers==6 OR (carried_divers>=1 and oxygen_raw<=20)). Otherwise, if seeking a diver, its center y is more than 5 pixels above player center y. If not seeking, player y>100. Fire during ascent.",
+          "RIGHTFIRE": "Active, not refilling/returning. If seeking, diver center y is within 5 pixels and diver center x is more than 5 pixels right of player center. Otherwise at hunting depth 86..100, nearest same-lane enemy is right but player.facing is left. Move right and fire.",
+          "LEFTFIRE": "Active, not refilling/returning. If seeking, diver center y is within 5 pixels and diver center x is more than 5 pixels left of player center. Otherwise at hunting depth 86..100, nearest same-lane enemy is left but player.facing is right. Move left and fire.",
+          "DOWNFIRE": "Active, not surface-refilling or returning. If seeking a diver, its center y is more than 5 pixels below player center y. If not seeking, player y<86. Fire during descent.",
+          "UPRIGHTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPLEFTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNRIGHTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNLEFTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies."
+        }
+      },
+      "program_hash": "7462024d3e1fe18c352f22840511d9e3320844dff30382ddb4237b090ec65b0a"
+    },
+    {
+      "role": "candidate",
+      "seed": 321,
+      "program": {
+        "name": "seaquest-one-diver-supply-v1",
+        "guidance": "Seaquest rule, re-evaluated every four frames. Player is kind=player, x=bbox[0], y=bbox[1]; center adds half width/height. Priority 1: unavailable objects or missing player -> NOOP. Priority 2: y<=46 and oxygen_raw<60 -> FIRE until refilled. Priority 3: at y>46, carried_divers==6 OR (carried_divers>=1 and oxygen_raw<=20) -> UPFIRE. Surfacing with zero divers loses a submarine according to the game manual, so collect a diver before returning. Priority 4: SEEK only if carried_divers==0 and at least one kind=diver is visible. Target the diver with minimum Manhattan center distance, first listed on ties. If target center y is more than 5 below player center y -> DOWNFIRE; more than 5 above -> UPFIRE; otherwise center x more than 5 right -> RIGHTFIRE, more than 5 left -> LEFTFIRE; otherwise FIRE. Collect by contact. Priority 5, HUNT when not seeking: y<86 -> DOWNFIRE; y>100 -> UPFIRE. In 86..100 find the nearest shark/enemy_submarine within 12 pixels of player center y. If it is left and facing right -> LEFTFIRE; if right and facing left -> RIGHTFIRE; otherwise FIRE. Oxygen with zero divers is an urgent collection problem, not permission to surface empty. All 18 actions remain available. FIRE is horizontal in the facing direction; moving horizontally also changes facing. Boxes/identities remain provisional. Do not treat inferred events as observed rewards.",
+        "schema_version": "seaquest-action-criteria-v2",
+        "action_criteria": {
+          "NOOP": "Object state is unavailable or no player object exists. Wait for active observations.",
+          "FIRE": "Active player: wait at y<=46 while oxygen_raw<60. Otherwise, after return priority, either the sought diver is within 5 pixels on both center axes, or hunting depth is 86..100 and the nearest same-lane enemy is already faced or absent. Stay and shoot.",
+          "UP": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "RIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "LEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWN": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPRIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPLEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNRIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNLEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPFIRE": "Active, not waiting for surface refill. First return upward if y>46 and (carried_divers==6 OR (carried_divers>=1 and oxygen_raw<=20)). Otherwise, if seeking a diver, its center y is more than 5 pixels above player center y. If not seeking, player y>100. Fire during ascent.",
+          "RIGHTFIRE": "Active, not refilling/returning. If seeking, diver center y is within 5 pixels and diver center x is more than 5 pixels right of player center. Otherwise at hunting depth 86..100, nearest same-lane enemy is right but player.facing is left. Move right and fire.",
+          "LEFTFIRE": "Active, not refilling/returning. If seeking, diver center y is within 5 pixels and diver center x is more than 5 pixels left of player center. Otherwise at hunting depth 86..100, nearest same-lane enemy is left but player.facing is right. Move left and fire.",
+          "DOWNFIRE": "Active, not surface-refilling or returning. If seeking a diver, its center y is more than 5 pixels below player center y. If not seeking, player y<86. Fire during descent.",
+          "UPRIGHTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "UPLEFTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNRIGHTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+          "DOWNLEFTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies."
+        }
+      },
+      "program_hash": "7462024d3e1fe18c352f22840511d9e3320844dff30382ddb4237b090ec65b0a"
+    }
+  ]
+}

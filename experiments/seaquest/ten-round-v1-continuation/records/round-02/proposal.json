@@ -1,0 +1,33 @@
+{
+  "origin": "interactive-coordinator-training-feedback",
+  "hypothesis": "Round 1 retains DOWN/NOOP collapse despite bottom-depth states. Explicit mutually ordered oxygen/depth conditions in both guidance and option criteria may produce firing and upward corrections, improving controlled return.",
+  "program": {
+    "name": "seaquest-depth-band-fire-v1",
+    "guidance": "Execute this explicit four-case Seaquest controller, checking the current state every four frames. Read player as the object whose kind is player; y is bbox[1], not height. First choose NOOP if object_state is unavailable or player is missing. Otherwise: at surface y<=46 with oxygen_raw<60 choose FIRE to wait for refill. At y>46, if oxygen_raw<=20 or carried_divers==6 choose UPFIRE. Otherwise choose DOWNFIRE when y<86, UPFIRE when y>100, and FIRE when 86<=y<=100. Re-evaluate these conditions now; do not continue the previous action by habit. FIRE shoots horizontally in the submarine facing direction. This is a simple depth-stabilizing firing hypothesis, not a claim of optimal rescue play. All eighteen native options remain selectable, but the target rule specifies the above four. Coordinates increase right/down. Do not infer rewards or causes of death from boxes.",
+    "schema_version": "seaquest-action-criteria-v2",
+    "action_criteria": {
+      "NOOP": "object_state is not active, or there is no player object. Wait for a usable player observation.",
+      "FIRE": "Player is active. Hold position and fire when (player y <=46 and oxygen_raw <60), OR when (oxygen_raw >20, carried_divers <6 and 86 <= player y <=100).",
+      "UP": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "RIGHT": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "LEFT": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "DOWN": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "UPRIGHT": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "UPLEFT": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "DOWNRIGHT": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "DOWNLEFT": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "UPFIRE": "Player is active and y >46. Ascend while firing if oxygen_raw <=20 OR carried_divers ==6 OR player y >100. The low-oxygen or full-load condition overrides the hunting depth.",
+      "RIGHTFIRE": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "LEFTFIRE": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "DOWNFIRE": "Player is active, oxygen_raw >20, carried_divers <6, and player y <86. Dive while firing, but at y <=46 wait until oxygen_raw >=60 before diving.",
+      "UPRIGHTFIRE": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "UPLEFTFIRE": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "DOWNRIGHTFIRE": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement.",
+      "DOWNLEFTFIRE": "This action is outside the four-case target policy. Select only if no listed NOOP, FIRE, UPFIRE or DOWNFIRE condition applies; do not prefer it merely because its name describes movement."
+    }
+  },
+  "evidence": [
+    "artifacts/seaquest/ten-round-v1/round-01/results.json"
+  ],
+  "risks": "A fixed hunting band can miss divers and firing targets. No lateral avoidance; surface-refill and carried-diver semantics are provisional. Action diversity alone is not policy improvement."
+}

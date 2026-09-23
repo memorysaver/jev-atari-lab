@@ -1,5 +1,12 @@
 # Experiment journal
 
+2026-09-24: [Seaquest ten-round study](seaquest/ten-round-v1-continuation/README.md)
+completed and stopped after 24 episodes. The sealed candidate passed development
+(+290 mean) and final (+210 mean) gates. All API/frame/video records and restored
+archives passed audit. Seven coordinator proposals, zero isolated teacher calls,
+US$2.24 reported cost; the original HTTP 520 interruption remains preserved.
+[All recordings](seaquest/ten-round-v1-continuation/videos.md).
+
 2026-09-24: [Seaquest fixed-question pilot](seaquest/fixed-question-pilot-v1/README.md)
 preserves two completed 80-point games, all 1,108 original API exchanges and videos.
 All actions fit DOWN/NOOP; no teacher or learning claim. The

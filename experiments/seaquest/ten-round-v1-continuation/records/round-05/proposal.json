@@ -1,0 +1,35 @@
+{
+  "origin": "interactive-coordinator-training-feedback",
+  "hypothesis": "Keep round 4 intended strategy, but repair its demonstrated facing branch: training seed 320 decision 233 had a loaded left-facing player x=38 and right-side same-lane shark x=53, yet chose FIRE. Explicit direction polarity, a grounded worked example and FIRE exclusions may restore the intended turns.",
+  "program": {
+    "name": "seaquest-one-diver-explicit-facing-v1",
+    "guidance": "Seaquest rule, re-evaluate each four frames. Player is kind=player, x=bbox[0], y=bbox[1]; centers add half box size. In order: (1) Missing player/unavailable -> NOOP. (2) At y<=46 with oxygen_raw<60 -> FIRE to refill. (3) At y>46, if carried_divers==6 OR (carried_divers>=1 and oxygen_raw<=20) -> UPFIRE. Empty surfacing loses the sub, so collect a diver first. (4) SEEK means carried_divers==0 AND at least one visible kind=diver. Target minimum Manhattan center distance, first listed on ties. Target center y more than 5 below -> DOWNFIRE; more than 5 above -> UPFIRE. If within 5 vertically: center x more than 5 right -> RIGHTFIRE; more than 5 left -> LEFTFIRE; otherwise FIRE. (5) HUNT means not SEEK. If y<86 -> DOWNFIRE; y>100 -> UPFIRE. At y=86..100 choose the nearest shark/enemy_submarine within 12 center-y pixels, nearest by absolute center-x difference. TURN TEST: enemy to left AND facing right -> LEFTFIRE; enemy to right AND facing left -> RIGHTFIRE; otherwise FIRE. FIRE does not turn. Facing left shoots toward SMALLER x; facing right shoots toward LARGER x. Example: loaded player at x=38,y=89 facing left, shark at x=53,y=95 -> RIGHTFIRE, not FIRE. A visible player missile does not mean the next enemy is already faced. All eighteen options remain selectable. Positions and object identities remain provisional; observed native reward alone measures performance.",
+    "schema_version": "seaquest-action-criteria-v2",
+    "action_criteria": {
+      "NOOP": "Object state is unavailable or no player object exists. Wait for active observations.",
+      "FIRE": "FIRE keeps the CURRENT facing; it never turns toward a target. Choose for surface refill (y<=46, oxygen<60), or SEEK with diver center within 5 on both axes, or HUNT at y=86..100 when no same-lane enemy exists or it is ALREADY faced. An enemy right of a left-facing player is NOT already faced. An enemy left of a right-facing player is NOT already faced. Those cases require RIGHTFIRE or LEFTFIRE, respectively. Return and depth-correction priorities still apply.",
+      "UP": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "RIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "LEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "DOWN": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "UPRIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "UPLEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "DOWNRIGHT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "DOWNLEFT": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "UPFIRE": "Active, not waiting for surface refill. First return upward if y>46 and (carried_divers==6 OR (carried_divers>=1 and oxygen_raw<=20)). Otherwise, if seeking a diver, its center y is more than 5 pixels above player center y. If not seeking, player y>100. Fire during ascent.",
+      "RIGHTFIRE": "In HUNT (carried_divers>=1 OR no visible diver), after refill/return/depth checks, nearest same-lane enemy is RIGHT of player center and player.facing==left. RIGHTFIRE turns toward that enemy; plain FIRE shoots away. Example player x=38 facing left, enemy x=53 -> RIGHTFIRE. Alternatively in SEEK, target center y is within 5 and target center x is more than 5 right. Active observations required.",
+      "LEFTFIRE": "In HUNT (carried_divers>=1 OR no visible diver), after refill/return/depth checks, nearest same-lane enemy is LEFT of player center and player.facing==right. LEFTFIRE turns toward that enemy; plain FIRE shoots away. Alternatively in SEEK, target center y is within 5 and target center x is more than 5 left. Active observations required.",
+      "DOWNFIRE": "Active, not surface-refilling or returning. If seeking a diver, its center y is more than 5 pixels below player center y. If not seeking, player y<86. Fire during descent.",
+      "UPRIGHTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "UPLEFTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "DOWNRIGHTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies.",
+      "DOWNLEFTFIRE": "Outside this six-action target rule. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE applies."
+    }
+  },
+  "evidence": [
+    "artifacts/seaquest/ten-round-v1-continuation/round-02/results.json",
+    "artifacts/seaquest/ten-round-v1-continuation/round-03/results.json",
+    "artifacts/seaquest/ten-round-v1-continuation/round-04/results.json"
+  ],
+  "risks": "The worked example may overfit a training state. More verbose exclusions can harm other branches; the one-diver strategy itself may remain poor. This is a wording/criteria repair, not a validated optimal-action label."
+}

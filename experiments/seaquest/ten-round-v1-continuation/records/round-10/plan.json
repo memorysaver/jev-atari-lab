@@ -1,0 +1,87 @@
+{
+  "round": 10,
+  "study_plan_hash": "afa347f9ebc58d5588407a829c39840d657f7f257af1dbe83ee03e3dddc9547c",
+  "source_revision": "c6dabbccbf9c7bbf7206e32bb58880feccdadfcd",
+  "jobs": [
+    {
+      "role": "baseline",
+      "seed": 328,
+      "program": {
+        "name": "seaquest-rescue-and-oxygen-baseline-v1",
+        "guidance": "Choose one native action to earn game score in Seaquest. Control the player submarine. Leave the surface by moving down to engage in play; remaining at the surface without scoring is not success. Collect divers by contacting them, avoid enemy bodies and missiles, and fire toward enemies when useful. Oxygen is a displayed resource with raw level 0..64; it decreases underwater. Return to the surface before it is exhausted. Return collected divers to the surface; capacity is six. Do not treat oxygen or carried-diver readings as a precomputed action or reward. Use current positions and recent motion to balance progress with survival. Do not chase an enemy into immediate danger or continue diving when oxygen is nearly empty. Boxes are [x,y,width,height], x increases right and y increases down. UP means decreasing y and DOWN increasing y; left/right change x. FIRE can be combined with movement. History has raw-frame timestamps and RAM-slot IDs, not guaranteed object identities. Do not extrapolate across subtype changes, sudden jumps, missing objects or life losses. When object_state is unavailable during animation/end, positions are unknown; choose NOOP until active observations return. Act for four raw frames, then reconsider.",
+        "schema_version": "seaquest-action-choice-v1"
+      },
+      "program_hash": "d76d597a229e8fc4ac82076ee29bddbe0cf087280d7fa29cac9aec37cf23a66b"
+    },
+    {
+      "role": "candidate",
+      "seed": 328,
+      "program": {
+        "name": "seaquest-depth-band-facing-v1",
+        "guidance": "Use current Seaquest objects to execute this rule every four frames. Player is kind=player; x=bbox[0], y=bbox[1]; centers add half width/height. First: unavailable objects or missing player -> NOOP. At y<=46 and oxygen_raw<60 -> FIRE while refilling. At y>46 and (oxygen_raw<=20 or carried_divers==6) -> UPFIRE. Otherwise y<86 -> DOWNFIRE; y>100 -> UPFIRE. At 86<=y<=100, find sharks/enemy_submarines within 12 pixels of the player center y. Choose the one with smallest absolute center-x distance (first listed breaks ties). If it is left of player center and player.facing is right, choose LEFTFIRE. If it is right and facing is left, choose RIGHTFIRE. If already facing it or no such enemy exists, choose FIRE. Only turn long enough to face the enemy; do not keep chasing it horizontally. Shooting is horizontal in the facing direction, including while moving vertically. Do not confuse divers with enemies. Re-evaluate the priorities using this observation rather than repeating the previous action. Boxes and identities remain provisional; no inferred death cause or reward. All eighteen native choices remain available.",
+        "schema_version": "seaquest-action-criteria-v2",
+        "action_criteria": {
+          "NOOP": "object_state is not active, or there is no player object. Wait for a usable player observation.",
+          "FIRE": "Active player: at y<=46 with oxygen_raw<60, stay and fire while refilling. Otherwise, with oxygen_raw>20, carried_divers<6 and 86<=y<=100, fire without moving when no same-lane enemy exists or the nearest same-lane enemy is already on the side player.facing points toward.",
+          "UP": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "RIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "LEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWN": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPFIRE": "Player is active and y >46. Ascend while firing if oxygen_raw <=20 OR carried_divers ==6 OR player y >100. The low-oxygen or full-load condition overrides the hunting depth.",
+          "RIGHTFIRE": "Active player, oxygen_raw>20, carried_divers<6, 86<=player y<=100. The nearest shark or enemy_submarine whose center y differs by at most 12 is to the RIGHT of the player center, but player.facing is left. Turn right and fire; re-evaluate facing next decision.",
+          "LEFTFIRE": "Active player, oxygen_raw>20, carried_divers<6, 86<=player y<=100. The nearest shark or enemy_submarine whose center y differs by at most 12 is to the LEFT of the player center, but player.facing is right. Turn left and fire; re-evaluate facing next decision.",
+          "DOWNFIRE": "Player is active, oxygen_raw >20, carried_divers <6, and player y <86. Dive while firing, but at y <=46 wait until oxygen_raw >=60 before diving.",
+          "UPRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition."
+        }
+      },
+      "program_hash": "12176a58c289536d74822a4719feed19af1f6e0523f9766a2ec41adc46b9cea5"
+    },
+    {
+      "role": "baseline",
+      "seed": 329,
+      "program": {
+        "name": "seaquest-rescue-and-oxygen-baseline-v1",
+        "guidance": "Choose one native action to earn game score in Seaquest. Control the player submarine. Leave the surface by moving down to engage in play; remaining at the surface without scoring is not success. Collect divers by contacting them, avoid enemy bodies and missiles, and fire toward enemies when useful. Oxygen is a displayed resource with raw level 0..64; it decreases underwater. Return to the surface before it is exhausted. Return collected divers to the surface; capacity is six. Do not treat oxygen or carried-diver readings as a precomputed action or reward. Use current positions and recent motion to balance progress with survival. Do not chase an enemy into immediate danger or continue diving when oxygen is nearly empty. Boxes are [x,y,width,height], x increases right and y increases down. UP means decreasing y and DOWN increasing y; left/right change x. FIRE can be combined with movement. History has raw-frame timestamps and RAM-slot IDs, not guaranteed object identities. Do not extrapolate across subtype changes, sudden jumps, missing objects or life losses. When object_state is unavailable during animation/end, positions are unknown; choose NOOP until active observations return. Act for four raw frames, then reconsider.",
+        "schema_version": "seaquest-action-choice-v1"
+      },
+      "program_hash": "d76d597a229e8fc4ac82076ee29bddbe0cf087280d7fa29cac9aec37cf23a66b"
+    },
+    {
+      "role": "candidate",
+      "seed": 329,
+      "program": {
+        "name": "seaquest-depth-band-facing-v1",
+        "guidance": "Use current Seaquest objects to execute this rule every four frames. Player is kind=player; x=bbox[0], y=bbox[1]; centers add half width/height. First: unavailable objects or missing player -> NOOP. At y<=46 and oxygen_raw<60 -> FIRE while refilling. At y>46 and (oxygen_raw<=20 or carried_divers==6) -> UPFIRE. Otherwise y<86 -> DOWNFIRE; y>100 -> UPFIRE. At 86<=y<=100, find sharks/enemy_submarines within 12 pixels of the player center y. Choose the one with smallest absolute center-x distance (first listed breaks ties). If it is left of player center and player.facing is right, choose LEFTFIRE. If it is right and facing is left, choose RIGHTFIRE. If already facing it or no such enemy exists, choose FIRE. Only turn long enough to face the enemy; do not keep chasing it horizontally. Shooting is horizontal in the facing direction, including while moving vertically. Do not confuse divers with enemies. Re-evaluate the priorities using this observation rather than repeating the previous action. Boxes and identities remain provisional; no inferred death cause or reward. All eighteen native choices remain available.",
+        "schema_version": "seaquest-action-criteria-v2",
+        "action_criteria": {
+          "NOOP": "object_state is not active, or there is no player object. Wait for a usable player observation.",
+          "FIRE": "Active player: at y<=46 with oxygen_raw<60, stay and fire while refilling. Otherwise, with oxygen_raw>20, carried_divers<6 and 86<=y<=100, fire without moving when no same-lane enemy exists or the nearest same-lane enemy is already on the side player.facing points toward.",
+          "UP": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "RIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "LEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWN": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPFIRE": "Player is active and y >46. Ascend while firing if oxygen_raw <=20 OR carried_divers ==6 OR player y >100. The low-oxygen or full-load condition overrides the hunting depth.",
+          "RIGHTFIRE": "Active player, oxygen_raw>20, carried_divers<6, 86<=player y<=100. The nearest shark or enemy_submarine whose center y differs by at most 12 is to the RIGHT of the player center, but player.facing is left. Turn right and fire; re-evaluate facing next decision.",
+          "LEFTFIRE": "Active player, oxygen_raw>20, carried_divers<6, 86<=player y<=100. The nearest shark or enemy_submarine whose center y differs by at most 12 is to the LEFT of the player center, but player.facing is right. Turn left and fire; re-evaluate facing next decision.",
+          "DOWNFIRE": "Player is active, oxygen_raw >20, carried_divers <6, and player y <86. Dive while firing, but at y <=46 wait until oxygen_raw >=60 before diving.",
+          "UPRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "UPLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+          "DOWNLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition."
+        }
+      },
+      "program_hash": "12176a58c289536d74822a4719feed19af1f6e0523f9766a2ec41adc46b9cea5"
+    }
+  ]
+}

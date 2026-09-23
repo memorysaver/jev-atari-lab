@@ -65,3 +65,19 @@ seeds. The [completed result](fixed-question-pilot-results-2026-09-24.md) record
 80 points per seed with collapsed DOWN/NOOP behavior. It is a dedicated pilot;
 the generic CLI still exposes raw RAM for Seaquest. No teacher endpoint, mastery
 criterion or final evaluation has been adopted.
+
+## Completed ten-round research contract
+
+The [ten-round protocol](ten-round-protocol.md), with its documented
+[exact-state continuation](ten-round-continuation-protocol.md), subsequently adopted
+separate training/development/final seeds and a fixed 256-frame seeded startup
+prefix. Control then ran for at most 800 decisions/3,200 raw frames or native end.
+Controlled native return excludes prefix reward; all frames are recorded.
+
+The highest training mean among seven coordinator proposals selected one program
+before development. Each held-out two-seed gate required mean paired gain >=20
+with no regression. Both gates [passed](ten-round-results-2026-09-24.md): development
++290, final +210. Matched prefix/start equality and actual distinct seed starts were
+verified. This is a bounded policy-improvement endpoint, not mastery, an isolated
+teacher endpoint, causal feedback benefit or independent optimizer replication.
+All ten rounds and 24 videos are preserved; the allocation is closed.

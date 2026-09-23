@@ -1,0 +1,47 @@
+{
+  "scope": "Training visited states only. Excludes expected FIRE and NOOP to expose movement/turning branches. Not matched-state comparisons, optimal-action labels or causal wording effects.",
+  "rounds": [
+    {
+      "round": 2,
+      "non_fire_noop_rule_matches": 77,
+      "non_fire_noop_rule_opportunities": 177,
+      "percent": 43.5
+    },
+    {
+      "round": 3,
+      "non_fire_noop_rule_matches": 129,
+      "non_fire_noop_rule_opportunities": 175,
+      "percent": 73.71
+    },
+    {
+      "round": 4,
+      "non_fire_noop_rule_matches": 119,
+      "non_fire_noop_rule_opportunities": 740,
+      "percent": 16.08
+    },
+    {
+      "round": 5,
+      "non_fire_noop_rule_matches": 196,
+      "non_fire_noop_rule_opportunities": 573,
+      "percent": 34.21
+    },
+    {
+      "round": 6,
+      "non_fire_noop_rule_matches": 77,
+      "non_fire_noop_rule_opportunities": 120,
+      "percent": 64.17
+    },
+    {
+      "round": 7,
+      "non_fire_noop_rule_matches": 98,
+      "non_fire_noop_rule_opportunities": 270,
+      "percent": 36.3
+    },
+    {
+      "round": 8,
+      "non_fire_noop_rule_matches": 113,
+      "non_fire_noop_rule_opportunities": 675,
+      "percent": 16.74
+    }
+  ]
+}

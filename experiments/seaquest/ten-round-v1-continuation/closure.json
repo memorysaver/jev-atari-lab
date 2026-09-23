@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "recorded_at": "2026-09-23T21:57:53.853045+00:00",
+  "stopped_after_round": 10,
+  "model_calls_closed": true,
+  "used_attempts": 16848,
+  "unused_attempts_closed": 7152,
+  "original_deadline_started_at": 1790185758.381211,
+  "episodes": 24,
+  "collection_raw_frames": 73229,
+  "controlled_raw_frames": 67085,
+  "prefix_raw_frames": 6144,
+  "model_decisions": 16778,
+  "http_status_counts": {
+    "200": 16778,
+    "529": 63,
+    "520": 5,
+    "503": 2
+  },
+  "reported_cost_usd": 2.235472092,
+  "selected_training_round": 3,
+  "development_gate": {
+    "passed": true,
+    "mean_gain": 290.0,
+    "paired_gains": [
+      280.0,
+      300.0
+    ]
+  },
+  "final_gate": {
+    "passed": true,
+    "mean_gain": 210.0,
+    "paired_gains": [
+      200.0,
+      220.0
+    ]
+  },
+  "isolated_teacher_calls": 0,
+  "coordinator_proposals": 7,
+  "technical_continuation": "Original HTTP 520 stop and partial recording preserved; exact-state continuation inherited all attempts and the original deadline. Composite counts include inherited calls once.",
+  "scope": "Bounded held-out score improvement; no mastery, statistical significance, causal feedback benefit or repeated teacher-optimizer claim. Local preservation only."
+}

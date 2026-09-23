@@ -1,0 +1,65 @@
+{
+  "observed": [
+    {
+      "round": 3,
+      "seed": 320,
+      "controlled_reward": 340.0,
+      "life_losses": 1,
+      "end_reason": "frame_cap",
+      "last_oxygen": 0,
+      "last_carried": 0,
+      "last_object_state": "unavailable-during-animation-or-end"
+    },
+    {
+      "round": 3,
+      "seed": 321,
+      "controlled_reward": 360.0,
+      "life_losses": 1,
+      "end_reason": "frame_cap",
+      "last_oxygen": 61,
+      "last_carried": 0,
+      "last_object_state": "active"
+    },
+    {
+      "round": 6,
+      "seed": 320,
+      "controlled_reward": 300.0,
+      "life_losses": 2,
+      "end_reason": "frame_cap",
+      "last_oxygen": 20,
+      "last_carried": 1,
+      "last_object_state": "active"
+    },
+    {
+      "round": 6,
+      "seed": 321,
+      "controlled_reward": 380.0,
+      "life_losses": 1,
+      "end_reason": "frame_cap",
+      "last_oxygen": 63,
+      "last_carried": 0,
+      "last_object_state": "active"
+    },
+    {
+      "round": 7,
+      "seed": 320,
+      "controlled_reward": 300.0,
+      "life_losses": 2,
+      "end_reason": "frame_cap",
+      "last_oxygen": 33,
+      "last_carried": 0,
+      "last_object_state": "active"
+    },
+    {
+      "round": 7,
+      "seed": 321,
+      "controlled_reward": 340.0,
+      "life_losses": 0,
+      "end_reason": "frame_cap",
+      "last_oxygen": 25,
+      "last_carried": 0,
+      "last_object_state": "active"
+    }
+  ],
+  "interpretation_limit": "A later oxygen threshold may postpone an empty return beyond the fixed horizon. No native loss before a frame cap does not establish indefinite survival. These records are descriptive, not a counterfactual cause-of-death classifier."
+}

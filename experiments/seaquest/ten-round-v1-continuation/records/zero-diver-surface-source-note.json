@@ -1,0 +1,8 @@
+{
+  "consulted_during": "round 3 after seed 320 completed; active program unchanged",
+  "source": "https://atariage.com/manual_html_page.php?SoftwareLabelID=424",
+  "source_kind": "Transcribed original Activision Seaquest instruction manual, linked by official ALE documentation",
+  "source_reported_rule": "Surfacing with no divers costs the submarine; surfacing with fewer than six costs one diver. Holding fire requests continuous torpedoes; horizontal movement also sets facing.",
+  "observed_training_context": "Round 3 seed 320 reached the surface near decision 786 with carried_divers=0 and then entered unavailable animation before the 800-decision cap. This resembles the manual rule but is not a validated per-frame cause classifier.",
+  "research_implication": "Later proposals may explicitly collect at least one diver before an oxygen-return cycle. This adds external game-rule knowledge as well as training feedback, preventing a feedback-only causal claim."
+}

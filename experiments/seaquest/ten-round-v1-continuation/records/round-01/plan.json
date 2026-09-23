@@ -1,0 +1,27 @@
+{
+  "round": 1,
+  "study_plan_hash": "d097ab14c82114f1ae47a3229d36b5cde620d5240e609a6b905bbf302cf1a7bc",
+  "source_revision": "285b2c386cfb356172e687a4b6430601c4dacd72",
+  "jobs": [
+    {
+      "role": "candidate",
+      "seed": 320,
+      "program": {
+        "name": "seaquest-rescue-and-oxygen-baseline-v1",
+        "guidance": "Choose one native action to earn game score in Seaquest. Control the player submarine. Leave the surface by moving down to engage in play; remaining at the surface without scoring is not success. Collect divers by contacting them, avoid enemy bodies and missiles, and fire toward enemies when useful. Oxygen is a displayed resource with raw level 0..64; it decreases underwater. Return to the surface before it is exhausted. Return collected divers to the surface; capacity is six. Do not treat oxygen or carried-diver readings as a precomputed action or reward. Use current positions and recent motion to balance progress with survival. Do not chase an enemy into immediate danger or continue diving when oxygen is nearly empty. Boxes are [x,y,width,height], x increases right and y increases down. UP means decreasing y and DOWN increasing y; left/right change x. FIRE can be combined with movement. History has raw-frame timestamps and RAM-slot IDs, not guaranteed object identities. Do not extrapolate across subtype changes, sudden jumps, missing objects or life losses. When object_state is unavailable during animation/end, positions are unknown; choose NOOP until active observations return. Act for four raw frames, then reconsider.",
+        "schema_version": "seaquest-action-choice-v1"
+      },
+      "program_hash": "d76d597a229e8fc4ac82076ee29bddbe0cf087280d7fa29cac9aec37cf23a66b"
+    },
+    {
+      "role": "candidate",
+      "seed": 321,
+      "program": {
+        "name": "seaquest-rescue-and-oxygen-baseline-v1",
+        "guidance": "Choose one native action to earn game score in Seaquest. Control the player submarine. Leave the surface by moving down to engage in play; remaining at the surface without scoring is not success. Collect divers by contacting them, avoid enemy bodies and missiles, and fire toward enemies when useful. Oxygen is a displayed resource with raw level 0..64; it decreases underwater. Return to the surface before it is exhausted. Return collected divers to the surface; capacity is six. Do not treat oxygen or carried-diver readings as a precomputed action or reward. Use current positions and recent motion to balance progress with survival. Do not chase an enemy into immediate danger or continue diving when oxygen is nearly empty. Boxes are [x,y,width,height], x increases right and y increases down. UP means decreasing y and DOWN increasing y; left/right change x. FIRE can be combined with movement. History has raw-frame timestamps and RAM-slot IDs, not guaranteed object identities. Do not extrapolate across subtype changes, sudden jumps, missing objects or life losses. When object_state is unavailable during animation/end, positions are unknown; choose NOOP until active observations return. Act for four raw frames, then reconsider.",
+        "schema_version": "seaquest-action-choice-v1"
+      },
+      "program_hash": "d76d597a229e8fc4ac82076ee29bddbe0cf087280d7fa29cac9aec37cf23a66b"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "plan_hash": "afa347f9ebc58d5588407a829c39840d657f7f257af1dbe83ee03e3dddc9547c",
+  "rounds": [
+    {
+      "status": "complete",
+      "round": 1,
+      "plan_hash": "f4598c3949e2570491a3eea28a5bcbefe085c2eb49cba04897208fdf718ad314",
+      "mean_controlled_return": 70.0
+    },
+    {
+      "status": "complete",
+      "round": 2,
+      "plan_hash": "65f0d304b1e237590fa288bb55ceb06f26c39b0a30c82b5cf0e08d43c6fa734f",
+      "mean_controlled_return": 190.0
+    },
+    {
+      "status": "complete",
+      "round": 3,
+      "plan_hash": "7ad169f8180c039d53a15e76176493a81ba3c2301696ccbd59dfcdfbc45af985",
+      "mean_controlled_return": 350.0
+    },
+    {
+      "status": "complete",
+      "round": 4,
+      "plan_hash": "72b8282b0708d2af421fc7553cc02d4ee69734b3f4b8f31708fb64c628860fbe",
+      "mean_controlled_return": 160.0,
+      "continuation_revision": "c6dabbccbf9c7bbf7206e32bb58880feccdadfcd"
+    },
+    {
+      "status": "complete",
+      "round": 5,
+      "plan_hash": "4cad18adb46aea7db8e0d82b624c0509dd28c06e547ff7f2d2e35fcd384afa36",
+      "mean_controlled_return": 260.0
+    },
+    {
+      "status": "complete",
+      "round": 6,
+      "plan_hash": "32b6d31ee9ac0c2baa0330f782add714ca67fbbe023b86c2d34b56a5ec0ee1cf",
+      "mean_controlled_return": 340.0
+    },
+    {
+      "status": "complete",
+      "round": 7,
+      "plan_hash": "3e6d98e69b2183cc6c7419ef158ff957150ce30e26d3a7a59ab2a3099146efbd",
+      "mean_controlled_return": 320.0
+    },
+    {
+      "status": "complete",
+      "round": 8,
+      "plan_hash": "23ea7a79b9ef808ec4a4369ade052fac13135b0b75982edd9b2a5f10cb8d60b3",
+      "mean_controlled_return": 280.0
+    },
+    {
+      "status": "complete",
+      "round": 9,
+      "plan_hash": "1b0b246fc08de31f6f98a129edad26453086b6bc6fd0d7e6abfab090252bd0b0",
+      "mean_controlled_return": 370.0,
+      "gate": {
+        "passed": true,
+        "mean_gain": 290.0,
+        "paired_gains": [
+          280.0,
+          300.0
+        ]
+      }
+    },
+    {
+      "status": "complete",
+      "round": 10,
+      "plan_hash": "6734d5424195343339e33552741db91173572e82926a7236fcf612c57bf61478",
+      "mean_controlled_return": 290.0,
+      "gate": {
+        "passed": true,
+        "mean_gain": 210.0,
+        "paired_gains": [
+          200.0,
+          220.0
+        ]
+      }
+    }
+  ],
+  "budget": {
+    "max_calls": 24000,
+    "used": 16848,
+    "started_at": 1790185758.381211,
+    "live_seconds": 86400,
+    "round_attempts": {
+      "1": 903,
+      "2": 1398,
+      "3": 1600,
+      "4": 1372,
+      "5": 1627,
+      "6": 1630,
+      "7": 1602,
+      "8": 1601,
+      "9": 2577,
+      "10": 2538
+    },
+    "closed": true
+  },
+  "stopped_after_round": 10
+}

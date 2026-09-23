@@ -16,6 +16,15 @@ intended path to a paper. Initially both teacher and Jev weights stay fixed;
 the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
 No repeatable optimization benefit has been established.
 
+**Seaquest ten-round study completed and stopped:** the training-selected question
+passed both held-out gates: development mean 80 to 370, final mean 80 to 290,
+with no seed regression. All 24 episodes and recordings were audited, archived,
+restored and re-audited. Reported API cost US$2.24. Seven coordinator-authored
+proposals, zero isolated teacher calls; no mastery or causal feedback-benefit claim.
+[Results](docs/seaquest/ten-round-results-2026-09-24.md) ·
+[All videos](experiments/seaquest/ten-round-v1-continuation/videos.md) ·
+[Evidence and documented HTTP 520 continuation](experiments/seaquest/ten-round-v1-continuation/README.md).
+
 **Pong stage closed; Seaquest started:** the OpenRouter study stopped on HTTP 502
 in round two. One completed development round accepted B (+1.5 mean versus V2)
 and rejected A (-12.5); no final tests ran. All 12 trajectories, including the
@@ -26,7 +35,7 @@ interrupted one, replayed and are preserved in a verified local archive.
 two completed trajectories scored 80 each, but all 1,108 decisions fit DOWN when
 objects are active and NOOP otherwise. Observation v2 passed its bounded validation;
 all pilot/control trajectories and restored archives replayed. Cost US$0.119, zero
-teacher calls. No strategy improvement or learning benefit is established.
+teacher calls. That pilot did not establish strategy improvement or learning benefit.
 
 **Previous teacher study — incomplete:** HTTP 402 stopped the criteria-edit study
 after 15,093 Jev attempts. Three rounds completed and all six evaluated proposals
@@ -39,7 +48,7 @@ All project research lives in [docs/](docs/README.md), including the
 [optimizer design](docs/teacher-optimizer.md), [evaluation framework](docs/evaluation-framework.md)
 and [research roadmap](docs/research-roadmap.md).
 
-**Latest Jev probe:** Compact wording of the same conservative rule regressed to
+**Latest Pong Jev probe:** Compact wording of the same conservative rule regressed to
 62/160 matches (38.75%), versus freshly evaluated expanded wording's 76/160 (47.50%).
 It failed its prospective screen. All 480 responses are retained in reviewed local
 evidence; no gameplay or final test was run.
@@ -90,7 +99,7 @@ retains all six actions and reports the full follow-up, including a transport fa
 
 | Track | What Jev predicts | Action selection | Current scope |
 | --- | --- | --- | --- |
-| **Direct policy** | One Choice question over available actions | Highest action probability | Pong objects; bounded Seaquest object pilot; experimental raw RAM elsewhere |
+| **Direct policy** | One Choice question over available actions | Highest action probability | Pong objects; held-out Seaquest object policy comparison; experimental raw RAM elsewhere |
 | **Value-based** | Each action's first scoring outcome within 240 raw frames | `P(gain) - P(loss)`, then argmax | Pong with fixed heuristic continuation |
 
 The videos use **direct policy**, not the 240-frame critic. The candidate question

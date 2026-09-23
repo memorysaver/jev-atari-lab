@@ -1,0 +1,136 @@
+{
+  "status": "complete",
+  "round": 9,
+  "plan_hash": "1b0b246fc08de31f6f98a129edad26453086b6bc6fd0d7e6abfab090252bd0b0",
+  "episodes": [
+    {
+      "role": "baseline",
+      "seed": 326,
+      "summary": {
+        "status": "complete",
+        "seed": 326,
+        "decisions": 562,
+        "agent_decisions": 498,
+        "frames": 2245,
+        "controlled_frames": 1989,
+        "reward": 80.0,
+        "controlled_reward": 80.0,
+        "prefix_reward": 0.0,
+        "life_losses": 4,
+        "controlled_life_losses": 4,
+        "terminated": true,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "native_termination",
+        "wall_seconds": 135.80935642900295,
+        "api_attempts": 500,
+        "reported_cost_usd": 0.054293946,
+        "action_histogram": {
+          "DOWN": 407,
+          "NOOP": 91
+        }
+      }
+    },
+    {
+      "role": "candidate",
+      "seed": 326,
+      "summary": {
+        "status": "complete",
+        "seed": 326,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 360.0,
+        "controlled_reward": 360.0,
+        "prefix_reward": 0.0,
+        "life_losses": 0,
+        "controlled_life_losses": 0,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 232.45199662199593,
+        "api_attempts": 800,
+        "reported_cost_usd": 0.112416612,
+        "action_histogram": {
+          "DOWNFIRE": 29,
+          "FIRE": 652,
+          "RIGHTFIRE": 40,
+          "LEFTFIRE": 37,
+          "UPFIRE": 23,
+          "NOOP": 19
+        }
+      }
+    },
+    {
+      "role": "baseline",
+      "seed": 327,
+      "summary": {
+        "status": "complete",
+        "seed": 327,
+        "decisions": 541,
+        "agent_decisions": 477,
+        "frames": 2161,
+        "controlled_frames": 1905,
+        "reward": 80.0,
+        "controlled_reward": 80.0,
+        "prefix_reward": 0.0,
+        "life_losses": 4,
+        "controlled_life_losses": 4,
+        "terminated": true,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "native_termination",
+        "wall_seconds": 141.16166685399367,
+        "api_attempts": 477,
+        "reported_cost_usd": 0.05147814,
+        "action_histogram": {
+          "DOWN": 385,
+          "NOOP": 92
+        }
+      }
+    },
+    {
+      "role": "candidate",
+      "seed": 327,
+      "summary": {
+        "status": "complete",
+        "seed": 327,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 380.0,
+        "controlled_reward": 380.0,
+        "prefix_reward": 0.0,
+        "life_losses": 1,
+        "controlled_life_losses": 1,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 254.25215948699042,
+        "api_attempts": 800,
+        "reported_cost_usd": 0.11056626,
+        "action_histogram": {
+          "DOWNFIRE": 30,
+          "RIGHTFIRE": 26,
+          "LEFTFIRE": 26,
+          "FIRE": 675,
+          "UPFIRE": 19,
+          "NOOP": 24
+        }
+      }
+    }
+  ],
+  "mean_controlled_return": 370.0,
+  "gate": {
+    "passed": true,
+    "mean_gain": 290.0,
+    "paired_gains": [
+      280.0,
+      300.0
+    ]
+  }
+}

@@ -1,26 +1,32 @@
 # Seaquest research
 
-Started 2026-09-24 after the owner closed the [Pong stage](../pong/candidate-feedback-results-2026-09-24.md).
-The [first fixed-question Jev pilot](fixed-question-pilot-results-2026-09-24.md)
-completed two native games at 80 points each. All 1,108 decisions matched DOWN when
-objects were active and NOOP otherwise. Original and restored evidence replayed;
-reported cost was US$0.119, with zero isolated teacher calls.
+The [ten-round study](ten-round-results-2026-09-24.md) completed exactly ten rounds
+and stopped. The training-selected round-three question improved development mean
+return from 80 to 370 and final mean from 80 to 290, with neither seed regressing.
+Both prospective gates passed. All 24 episodes and full recordings were replayed,
+archived, restored and audited again; reported API cost US$2.24.
 
-The initial calibration exposed animation/visibility errors. Observation v2 passed
-its frozen pixel-support gate on four fresh training trajectories, while retained
-box disagreements and unvalidated object identities limit its interpretation.
+Seven revisions were authored by the interactive coordinator, with zero isolated
+teacher calls. This establishes bounded question-policy improvement over the
+collapsed baseline, not mastery or a causal benefit of experience feedback.
+Complex diver-collection rules still produced substantial execution errors, and
+empty surfacing remains unresolved. All unused call capacity is closed.
 
-- [Pilot results](fixed-question-pilot-results-2026-09-24.md): actions, matched controls, costs and limitations.
-- [Pilot protocol](fixed-question-pilot-protocol.md): frozen question and execution budget.
-- [Observation v2 results](observation-v2-results-2026-09-24.md) and [protocol](observation-v2-protocol.md).
-- [Initial calibration results](calibration-results-2026-09-24.md) and [protocol](calibration-protocol.md).
-- [Evaluation profile](evaluation.md): environment, observation limits and endpoints.
-- [Teacher log](teacher-log.md): no isolated proposals yet.
+- [Ten-round results](ten-round-results-2026-09-24.md), [protocol](ten-round-protocol.md),
+  and [prospective HTTP 520 continuation](ten-round-continuation-protocol.md).
+- [Reviewed evidence](../../experiments/seaquest/ten-round-v1-continuation/README.md)
+  and [all recordings](../../experiments/seaquest/ten-round-v1-continuation/videos.md).
+- [Teacher/coordinator log](teacher-log.md): exact proposals and selection provenance.
+- [Evaluation profile](evaluation.md): environment, endpoints and observation limits.
+- [Earlier fixed-question pilot](fixed-question-pilot-results-2026-09-24.md)
+  and [protocol](fixed-question-pilot-protocol.md): two 80-point games, DOWN/NOOP collapse.
+- [Observation v2 results](observation-v2-results-2026-09-24.md)
+  and [protocol](observation-v2-protocol.md): bounded pixel-support gate passed.
+- [Initial calibration](calibration-results-2026-09-24.md)
+  and [protocol](calibration-protocol.md): retained animation/visibility failures.
 - [Selection rationale](../next-atari-game-2026-09-23.md).
 
-The next research question is whether state-dependent action criteria can resolve
-the observed action collapse. Any next study needs a separate frozen budget and
-measured state diversity. The pilot's unused capacity is closed.
-
-Seaquest is a new development game, not a held-out transfer evaluation. We do not
-carry a claim of Pong mastery or teacher-learning benefit into this experiment.
+Started 2026-09-24 after the owner closed the
+[Pong stage](../pong/candidate-feedback-results-2026-09-24.md). Seaquest is a
+method-development game, not a held-out transfer evaluation. Observation shapes,
+persistent identities, full rescue semantics and causes of death remain provisional.

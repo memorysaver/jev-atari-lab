@@ -1,0 +1,443 @@
+{
+  "status": "verified",
+  "study_status": "complete",
+  "episodes": [
+    {
+      "round": 1,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 490,
+        "raw_frames": 1957,
+        "api_attempts": 0,
+        "summary_hash": "f2450e1e0ccb4e4bfab56ffe53b673fd4d906b01d2bf687224823dbfbfc27a4a"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "1957"
+      }
+    },
+    {
+      "round": 1,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 541,
+        "raw_frames": 2161,
+        "api_attempts": 0,
+        "summary_hash": "71ebef8c5531be97e83b91e34d698970daf65380cedbb92d9e7fcbcd0363defb"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2161"
+      }
+    },
+    {
+      "round": 2,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 662,
+        "raw_frames": 2645,
+        "api_attempts": 0,
+        "summary_hash": "3d44fed231e180fb092d826ea792af142208da50e9a787de41a7ad17f6d4da17"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2645"
+      }
+    },
+    {
+      "round": 2,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "51a8a81a878db5c6f525833bfdc65d0b4a89cdde91d3fd70bda15d49eb204cd0"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 3,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "0453d6bcba52ba279565d77826ebd85bc044b60e545198cafeb35e495393ce8d"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 3,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "c922d0a5952aeceecbe62b4ae03ae9693841bb609bbaf67bdf141f7f3f8b73ae"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 4,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 717,
+        "raw_frames": 2865,
+        "api_attempts": 0,
+        "summary_hash": "371f14d6010304b1684f2a76780aff248442e1b2f1ea07f3f5f63ddce5beaee8"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2865"
+      }
+    },
+    {
+      "round": 4,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 778,
+        "raw_frames": 3109,
+        "api_attempts": 0,
+        "summary_hash": "8b10587bc4a07dbe61b7bd7ee28fff2dce978d57490941cf287778e62887c694"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3109"
+      }
+    },
+    {
+      "round": 5,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "b381107ed67ad128dfc5010f9b535c922bf73660dfc55fd8a9c553449640de02"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 5,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "02ab757ee8822b58181057797b158bef0c4861b6e61cc365e89ca8df83fc3a57"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 6,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "ac56627dfca9757a33e7a925a802461a20bdf4ff6779f712466412f06c3521ab"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 6,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "794c11f7fe8df28a869e393f87f0e6b679a76c3c38b707d333ba95ab2f51a404"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 7,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "dbf350ff551bb5993aec32e7450b92846e503cf4fd362608ac27fb2d27c15f7f"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 7,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "cbbc6e3e840529d3430b5ae3f7a62a53c89f398a7e2de18aac026b19b4931f5c"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 8,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "17f7eb73052c52e6b36544d11361d79e068b937818e3a3f94a0fa32192609b2c"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 8,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "4501f152f371748672b6957a0d23e02e8533f16184505be7213a6ea5bbf8e3ba"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 9,
+      "role": "baseline",
+      "seed": 326,
+      "replay": {
+        "status": "verified",
+        "decisions": 562,
+        "raw_frames": 2245,
+        "api_attempts": 0,
+        "summary_hash": "6a502b58b4c07fad455cd2a6c007124299b85721642bd65caca332a8d2cdde02"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2245"
+      }
+    },
+    {
+      "round": 9,
+      "role": "candidate",
+      "seed": 326,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "ccceab0ba5a6852153f32274e9ca43223fb9ff6f5f494ed79db3ca39fa3e9080"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 9,
+      "role": "baseline",
+      "seed": 327,
+      "replay": {
+        "status": "verified",
+        "decisions": 541,
+        "raw_frames": 2161,
+        "api_attempts": 0,
+        "summary_hash": "ca8bcbc91243a2f40beeb800c11cdd3b1ee76199799b65b2ceb3aa4ebc7e7881"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2161"
+      }
+    },
+    {
+      "round": 9,
+      "role": "candidate",
+      "seed": 327,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "33e4faf3cfcf5c2003fd10d6b30ec7f1cdec933bc3061948b492ee2133c79349"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 10,
+      "role": "baseline",
+      "seed": 328,
+      "replay": {
+        "status": "verified",
+        "decisions": 522,
+        "raw_frames": 2085,
+        "api_attempts": 0,
+        "summary_hash": "dd4dd45ffd4193218b24cf556669a3249da8b682e303196958f931981084e461"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2085"
+      }
+    },
+    {
+      "round": 10,
+      "role": "candidate",
+      "seed": 328,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "71912aaabe340e19a83376d34f1b6fd79ddd7b52f79f5f4000b1780cb04d2ffb"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 10,
+      "role": "baseline",
+      "seed": 329,
+      "replay": {
+        "status": "verified",
+        "decisions": 541,
+        "raw_frames": 2161,
+        "api_attempts": 0,
+        "summary_hash": "102f867979f163a3b639887b750bad88b516de977eb0fa1424ecf7a4cb520c49"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2161"
+      }
+    },
+    {
+      "round": 10,
+      "role": "candidate",
+      "seed": 329,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "7504a537a4f84fea9ffef4cb1b1bea31e1fc52f7ea6a322b64c1f8f89b03ad04"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    }
+  ],
+  "plan_hash": "afa347f9ebc58d5588407a829c39840d657f7f257af1dbe83ee03e3dddc9547c",
+  "report_hash": "c0a8baa040f7b9fb020a869635cfe9255ed6f922f04df887f9db934986d70dbe",
+  "costs_hash": "67f24e3616462449ba5ebd5f7c9b219e3137c3a0aa3ee4d5e361228a590923b7",
+  "audit_api_attempts": 0,
+  "scope": "Original API requests/responses, action decoding, raw-frame replay and video frame counts"
+}
