@@ -1,5 +1,11 @@
 # Pong teacher log
 
+2026-09-24: the owner closed this Pong stage after the OpenRouter run stopped in
+round two. [Final closure report and exact teacher records](candidate-feedback-results-2026-09-24.md)
+preserve one development-positive B proposal, a rejected A proposal, and an
+unevaluated second B proposal. No final tests or teacher-feedback advantage were
+established. Work proceeds to [Seaquest](../seaquest/README.md).
+
 This is the human-readable entry point for teacher proposals and their measured
 outcomes. Entries distinguish a teacher's stated hypothesis from observed results.
 They record reviewable inputs, outputs and a concise rationale, not an inferred

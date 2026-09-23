@@ -59,3 +59,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## OCAtari-derived Seaquest calibration mapping
+
+`src/jev_atari/seaquest.py` adapts the RAM mappings from the same MIT-licensed
+OCAtari revision `99c874675df6b76a33a80b57776c123fbcd051af`:
+
+- https://github.com/k4ntz/OC_Atari/blob/99c874675df6b76a33a80b57776c123fbcd051af/ocatari/ram/seaquest.py
+
+The copyright and full permission notice above also apply to this adaptation.
+The full OCAtari package is not installed. This mapping is experimental and its
+local calibration does not establish complete semantic accuracy.

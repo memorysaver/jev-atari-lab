@@ -1,0 +1,18 @@
+{
+  "kind": "pong-candidate-study-closure-v1",
+  "closed_at": "2026-09-23T16:48:15.463009+00:00",
+  "decision": "Owner requested closing the Pong research stage and proceeding to Seaquest.",
+  "original_study_status": "incomplete",
+  "reason": "HTTP 502 stopped second-round training; frozen zero-retry protocol.",
+  "runner_exit_code": 1,
+  "runner_finished_at": 1790178591.858228,
+  "runner_pid_absent_at_closure": true,
+  "final_evaluation_run": false,
+  "second_round_A_teacher_invoked": false,
+  "candidate_feedback_effect_tested": false,
+  "recovery_or_new_pong_calls_authorized_by_closure": false,
+  "primary_improvement_established": false,
+  "replicated_feedback_advantage_established": false,
+  "scope": "Close the bounded Pong stage without claiming mastery or research-goal achievement.",
+  "supervision_note": "Original supervisor status field contains the study status object after exit; explicit exit_code=1 is authoritative."
+}

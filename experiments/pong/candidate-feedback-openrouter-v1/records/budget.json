@@ -1,0 +1,16 @@
+{
+  "kind": "pong-candidate-feedback-openrouter-v1",
+  "max_attempts": 30000,
+  "nonfinal_limit": 17000,
+  "final_limit": 13000,
+  "teacher_limit": 10,
+  "live_seconds": 86400,
+  "started_at": 1790175875.793746,
+  "attempts": 6106,
+  "nonfinal_attempts": 6106,
+  "final_attempts": 0,
+  "teacher_invocations": 3,
+  "teacher_repairs": 0,
+  "teacher_transport_retries": 0,
+  "training_closed": false
+}

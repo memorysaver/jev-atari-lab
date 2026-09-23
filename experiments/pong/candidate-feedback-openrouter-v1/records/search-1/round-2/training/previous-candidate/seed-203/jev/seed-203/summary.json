@@ -1,0 +1,17 @@
+{
+  "status": "incomplete",
+  "reward": -2.0,
+  "decisions": 125,
+  "raw_frames": 500,
+  "points_scored": 0,
+  "points_lost": 2,
+  "terminated": false,
+  "truncated": false,
+  "backend": "openrouter",
+  "end_reason": "error",
+  "reset_frames": 9,
+  "error_type": "ModelError",
+  "wall_seconds": 103.33843882600195,
+  "simulated_seconds": 8.333333333333334,
+  "api_attempts": 126
+}

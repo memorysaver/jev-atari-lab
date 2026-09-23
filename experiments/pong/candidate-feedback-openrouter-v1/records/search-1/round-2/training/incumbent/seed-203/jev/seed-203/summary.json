@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "reward": 1.0,
+  "decisions": 500,
+  "raw_frames": 2000,
+  "points_scored": 3,
+  "points_lost": 2,
+  "terminated": false,
+  "truncated": true,
+  "backend": "openrouter",
+  "end_reason": "decision_limit",
+  "reset_frames": 9,
+  "wall_seconds": 254.83348336900235,
+  "simulated_seconds": 33.333333333333336,
+  "api_attempts": 500
+}

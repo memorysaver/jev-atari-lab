@@ -1,0 +1,1064 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "candidate-feedback-openrouter-v1.tar.gz",
+  "sha256": "5bafe0856afab84fcdf4e54d2b9500819c7d306916b459887b645aa78b05d5fe",
+  "file_count": 211,
+  "uncompressed_bytes": 99958194,
+  "files": [
+    {
+      "path": "candidate-feedback-openrouter-v1/budget.json",
+      "bytes": 399,
+      "sha256": "35b49b7563f7c5f930f68bb236613fd4ed4cfbe9b4b743f018313929ac83b2f5"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/plan.json",
+      "bytes": 3863,
+      "sha256": "2eec287da17a4812db97a07110b434cf301281cfffd647c952e50decf676cb93"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/invocation-1/context-preview.json",
+      "bytes": 10432,
+      "sha256": "ad473fede55557e81bc81abcbc7ada19b4b180354e578daf8198dcd1e6d5665b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/invocation-1/events.json",
+      "bytes": 5316,
+      "sha256": "dd38abac98d2a420619891eea2f18552da568b26c17376d12b5c62d770309514"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/invocation-1/execution.json",
+      "bytes": 1383,
+      "sha256": "fd9f3238018671b42b57317c2f581f29c82bd1444b75e37dc028cc5bc591b699"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/invocation-1/instructions.txt",
+      "bytes": 835,
+      "sha256": "6b5945087cda09478b2033ed66aca6ee6a6f4043068d6ad76dab5891868d5ba2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/invocation-1/packet.json",
+      "bytes": 332173,
+      "sha256": "649354b9f375142f3d1669c4e561a875af83779c939175b892b1fd5906bf3af1"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/invocation-1/proposal.json",
+      "bytes": 4879,
+      "sha256": "e928c3bcd13c54b61b81c258253aa2f5f03bd0dfc5fc31646c9800e9215bbe4a"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/invocation-1/response-schema.json",
+      "bytes": 1259,
+      "sha256": "d1d14e9b1052d80b6cdfb65795ecf938bbce74da01f42b6eefd89effada7b7a6"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/A/teacher/validated.json",
+      "bytes": 8508,
+      "sha256": "30315c8088a9c18ba70240a9e139d16e19ad061ae3e36d8a6826c3db69f25824"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/invocation-1/context-preview.json",
+      "bytes": 10432,
+      "sha256": "00fd21808fc2aeeee4be9482a639c569cf60278ad0d429987ac8963e70a7a464"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/invocation-1/events.json",
+      "bytes": 4693,
+      "sha256": "bc4ba31fd2532872b1b42c10b13fb70b16527d86b5cae9c7b53839a3dfd21a4f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/invocation-1/execution.json",
+      "bytes": 1382,
+      "sha256": "be00749c4995571523acd2f94bd352be608c219fff8c551df04ce0c3d2c2ac1d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/invocation-1/instructions.txt",
+      "bytes": 835,
+      "sha256": "6b5945087cda09478b2033ed66aca6ee6a6f4043068d6ad76dab5891868d5ba2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/invocation-1/packet.json",
+      "bytes": 2910,
+      "sha256": "0c386b368e3ef01fe6557bea1b4eb0104d09e987e82375eb6caaf281efabd97c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/invocation-1/proposal.json",
+      "bytes": 4273,
+      "sha256": "c201402e5dee3bc5db49bd1cfd88a9af2632d1d2aeaa4317e42a8f4cd7de3f3c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/invocation-1/response-schema.json",
+      "bytes": 1259,
+      "sha256": "d1d14e9b1052d80b6cdfb65795ecf938bbce74da01f42b6eefd89effada7b7a6"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/B/teacher/validated.json",
+      "bytes": 7671,
+      "sha256": "15bfa179d74f1378bd79234a4699e82d323bdfeed5907265506cf0702ba95264"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/api-ledger.json",
+      "bytes": 144372,
+      "sha256": "340ef4a7bed656261337adaf1533bc1fd635d1e1fafb4dc55400cb8a1b6e653f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/audit/jev/seed-206/frames.jsonl",
+      "bytes": 1410675,
+      "sha256": "cb6cd69b48327a7ab065c43d103564fc5e0e876970478408ca45d858d9cc45f3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/audit/jev/seed-206/verification.json",
+      "bytes": 671,
+      "sha256": "00ba9b3eb9fc2a1233a2cbc01fd5f7bbb101eec43bb4e70065270204fb3f2f00"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/audit/verification.json",
+      "bytes": 1126,
+      "sha256": "3bd46dfef045a6ef722fe5ef59595beaf63c71dbc122e945bc9ca6fb8357ea84"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/api-ledger.json",
+      "bytes": 144372,
+      "sha256": "340ef4a7bed656261337adaf1533bc1fd635d1e1fafb4dc55400cb8a1b6e653f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/evaluation.json",
+      "bytes": 566,
+      "sha256": "99f0db487ea205bc3890efe7ce63bb7db6eb0ab847c953b9d4bac1012e6bedd0"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/frames.jsonl",
+      "bytes": 1410675,
+      "sha256": "cb6cd69b48327a7ab065c43d103564fc5e0e876970478408ca45d858d9cc45f3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/last-frame.png",
+      "bytes": 734,
+      "sha256": "c538c759581fe8045efed60193bbe980b6ea7fa4a050fc50492732e33ae4aa57"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/manifest.json",
+      "bytes": 4532,
+      "sha256": "96e2ae79ed75330590ec7a93186745b7ec9c2d7ea8e23d87409941ae2c286c10"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/model-exchanges.jsonl",
+      "bytes": 3195742,
+      "sha256": "33823bf8371a32e6047f45ffbeb938a01f9bd6cd3bcd3c8a8ab0127fb2283baa"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/replay.mp4",
+      "bytes": 74157,
+      "sha256": "18e14ed95bc6f921691b7891e9060b3419119c62fda7b82270fa3a287c9d1a39"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/summary.json",
+      "bytes": 360,
+      "sha256": "4b7fca9081fd12a4c5fd99c4cc4b7f57216571eded33a0cdd9bab58844074981"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/jev/seed-206/transitions.jsonl",
+      "bytes": 2609402,
+      "sha256": "c2fe0f1886148ed5d9db68b92d2601ce9ae21fbfaea7dbb1cb24dfd466f15336"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/plan.json",
+      "bytes": 4850,
+      "sha256": "de745cee19383e05fa75cad2ee19dc5bd8575c17bcd09fa5a3655c1583f7ebf3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-206/results.json",
+      "bytes": 1785,
+      "sha256": "19d516cd8be02cec5bee9245d4cb13f1f0c78a2f5af2c0df140ceef9f3ce76fa"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/api-ledger.json",
+      "bytes": 144677,
+      "sha256": "99e6034fa71c0570b32c6d6eb77fc6a8064b6774396b4c5f5aeedef0426ab90f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/audit/jev/seed-207/frames.jsonl",
+      "bytes": 1410540,
+      "sha256": "8c0e89858e5cc9a985bef90778048e1b58fe866bb067712b63a85f5c04ab6c1e"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/audit/jev/seed-207/verification.json",
+      "bytes": 670,
+      "sha256": "351fad88e0f49e5559f6647c10d8c739e24d70e685f5f86b152ba45544c9dbca"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/audit/verification.json",
+      "bytes": 1125,
+      "sha256": "4baeb146f68065d9f734981f9e5c0865adb7347e159789537d699dd5cc66fb37"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/api-ledger.json",
+      "bytes": 144677,
+      "sha256": "99e6034fa71c0570b32c6d6eb77fc6a8064b6774396b4c5f5aeedef0426ab90f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/evaluation.json",
+      "bytes": 567,
+      "sha256": "24fe787ffa9829196bb15a6b4fad9bf50217a04faff2d9f18b087335c79c7826"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/frames.jsonl",
+      "bytes": 1410540,
+      "sha256": "8c0e89858e5cc9a985bef90778048e1b58fe866bb067712b63a85f5c04ab6c1e"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/last-frame.png",
+      "bytes": 730,
+      "sha256": "64e47e4866188c82b6f45d78e41d2966f8c2d500f55097f69d9927bf87e0ef0a"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/manifest.json",
+      "bytes": 4532,
+      "sha256": "6db9e5e184a183eae94ad66d348f2da0cdae412809b93d318d88771cf9dba940"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/model-exchanges.jsonl",
+      "bytes": 3195684,
+      "sha256": "b1de1f488b86b0cd01aaa120bcd34c13d0c206d9d0466c7aca96ce5f5630b23c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/replay.mp4",
+      "bytes": 74433,
+      "sha256": "a7c7d6c801d475151081d99f6c9aa9a7f694118a6ec094c72afcd586c6676918"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/summary.json",
+      "bytes": 361,
+      "sha256": "d723356f3271283848008abfe5de6435ed8d4404834a63e6a97e5271b99bd8de"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/jev/seed-207/transitions.jsonl",
+      "bytes": 2608751,
+      "sha256": "549b352d98a869ef2dfb508a998a0d6e2eff0fefe524f819a381d1c7d48eb0f9"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/plan.json",
+      "bytes": 4850,
+      "sha256": "873e791bfbacab86441244c4b1a653dbad5f57e39ac51f9d05bccdc8c1ef8ae9"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/A/seed-207/results.json",
+      "bytes": 1786,
+      "sha256": "7cd58dc71ac7c2de1a15116c782415752f2a15bc2e2d1ef41be37fef226b77e2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/api-ledger.json",
+      "bytes": 144612,
+      "sha256": "6f6e53dc73ca74ebaac17c5845109c475dc5cf384d3a3420738abd57d6aa9df2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/audit/jev/seed-206/frames.jsonl",
+      "bytes": 1414088,
+      "sha256": "27f70b09f5f54ea345b5730f07a78fd77ae18291fbc19c3aeceefed5ed08d788"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/audit/jev/seed-206/verification.json",
+      "bytes": 669,
+      "sha256": "6b26cb60f2e28aee17e538c347c284c3a0ad5783c173b9d84d763e11fc2b1ee8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/audit/verification.json",
+      "bytes": 1124,
+      "sha256": "620e0edd9b9a2a0dc7a298b2b3f08f24bc9307219399ff9183dd377a4533551e"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/api-ledger.json",
+      "bytes": 144612,
+      "sha256": "6f6e53dc73ca74ebaac17c5845109c475dc5cf384d3a3420738abd57d6aa9df2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/evaluation.json",
+      "bytes": 563,
+      "sha256": "10a113c05526b43cfda375c08a944bd86b00cbf59eb914e39ad96cd4569ad0d6"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/frames.jsonl",
+      "bytes": 1414088,
+      "sha256": "27f70b09f5f54ea345b5730f07a78fd77ae18291fbc19c3aeceefed5ed08d788"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/last-frame.png",
+      "bytes": 712,
+      "sha256": "2e88231dcf90016a4a3aba82eb622ef77736a473dbcef1ac3b768cf7ca203a74"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/manifest.json",
+      "bytes": 4318,
+      "sha256": "a173fc9d52771a6cf42d65ae30c97b451099ee66200e21d188ad724f23947897"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/model-exchanges.jsonl",
+      "bytes": 3098126,
+      "sha256": "272bea38f1c7cf542f62f7c55bf6dcfb4247c9798a62257baa143ac621c023d9"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/replay.mp4",
+      "bytes": 87524,
+      "sha256": "81eb59010341a90a3d51f6b06c5f833b7fb88e150fd3624696f853e978a6532b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/summary.json",
+      "bytes": 359,
+      "sha256": "132f71f70879dd0000c6b2d834ec9ef89b2449bac35bfeeb43e6be5ef67df007"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/jev/seed-206/transitions.jsonl",
+      "bytes": 2636449,
+      "sha256": "1ce504cfa9b060c992b61b67f4c8068b8e93a99a5bb2a232a670d27cbbe1dff5"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/plan.json",
+      "bytes": 4631,
+      "sha256": "b107f34ddd43445c1b32a3256383bf7eb27e01c3b879c88f8bd3db8308037d84"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-206/results.json",
+      "bytes": 1780,
+      "sha256": "b4fd38bb37bac777592caaebe89c4ca1e5fe4ee949b8dc798c6986a93eefa187"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/api-ledger.json",
+      "bytes": 144604,
+      "sha256": "e4085911637118b70e92218c9e882e7145485640cc8be5a67d2e0475f837731c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/audit/jev/seed-207/frames.jsonl",
+      "bytes": 1413760,
+      "sha256": "32cb9ad3647890c3f329ad785d749125019232f039349db22c2712f951005f8c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/audit/jev/seed-207/verification.json",
+      "bytes": 668,
+      "sha256": "f773ee9d4dd4a31a345e080aef797facfb66736e18bf790a132578871c043874"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/audit/verification.json",
+      "bytes": 1123,
+      "sha256": "25497af63d88a30b22b7d353f87ef25c10d7fb8eee5baf4b53ddbbb1ce196519"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/api-ledger.json",
+      "bytes": 144604,
+      "sha256": "e4085911637118b70e92218c9e882e7145485640cc8be5a67d2e0475f837731c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/evaluation.json",
+      "bytes": 562,
+      "sha256": "8eeb05ac2bdd2f9ccd428f81d57791f6ebb8ba7008f5cf2fdc5b5d0cce7e6d38"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/frames.jsonl",
+      "bytes": 1413760,
+      "sha256": "32cb9ad3647890c3f329ad785d749125019232f039349db22c2712f951005f8c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/last-frame.png",
+      "bytes": 711,
+      "sha256": "421d566acb55334cfbf2659a81f370938be352ad8e04d5645a76a180014fa08d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/manifest.json",
+      "bytes": 4318,
+      "sha256": "a7e2aafdcc0ac8e71780c4ebe6a84b1c1337be1928ed8f98fb807972fef41096"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/model-exchanges.jsonl",
+      "bytes": 3097706,
+      "sha256": "49c8e4c0026fb54168da86b59cfa2bedfebe22880d5f26723e1faa0e3da94870"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/replay.mp4",
+      "bytes": 88750,
+      "sha256": "1347f8da41f2eff8de73316ec6732b4ed1ce9db644f182dee08b3e9c69dc23a8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/summary.json",
+      "bytes": 358,
+      "sha256": "ddb174fd530832708b71838a9761399a9f88798a9e2d374ea6f3741fc9b6b035"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/jev/seed-207/transitions.jsonl",
+      "bytes": 2635840,
+      "sha256": "b5cc71bfd07854bf1168fe27b72178bd1e14f5716cd1d3897187169686a9a698"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/plan.json",
+      "bytes": 4631,
+      "sha256": "e1d80bdda029ca59e98dde3b6dbe1ac341736a1e1a31031fa2782baa92825590"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/B/seed-207/results.json",
+      "bytes": 1779,
+      "sha256": "f27ca6586974449825a060458a03bb1376ff064e194fcf69a3c01f79575482dd"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/api-ledger.json",
+      "bytes": 144486,
+      "sha256": "fb04fa1c7425488f21d57dbe2d09b9f8e8b0613f8147242a8ca6a1961c9a7040"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/audit/jev/seed-206/frames.jsonl",
+      "bytes": 1415043,
+      "sha256": "695b40d1fbd8cdb9dc238dae592324bf56dafcbe15e50d3b3f6b9b64f3a9aa6f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/audit/jev/seed-206/verification.json",
+      "bytes": 670,
+      "sha256": "82e23ca681cfb5109beeacb05aff88b56e9bbfe221c1650b414acbcd9416c082"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/audit/verification.json",
+      "bytes": 1125,
+      "sha256": "b7601974cca7b19e43bb8f4133629fb8f6a3164e0a06c0fbd6038889c89c53d6"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/api-ledger.json",
+      "bytes": 144486,
+      "sha256": "fb04fa1c7425488f21d57dbe2d09b9f8e8b0613f8147242a8ca6a1961c9a7040"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/evaluation.json",
+      "bytes": 561,
+      "sha256": "84c7f55b72859e7b5ead8df1316a1a7749ee0c10254d20d476caf60d04b03f4d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/frames.jsonl",
+      "bytes": 1415043,
+      "sha256": "695b40d1fbd8cdb9dc238dae592324bf56dafcbe15e50d3b3f6b9b64f3a9aa6f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/last-frame.png",
+      "bytes": 723,
+      "sha256": "75217f9130dc6d3837d98d4b679a012ff0fef0cba4afedd358a7c2e81150382c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/manifest.json",
+      "bytes": 2181,
+      "sha256": "31d05aed4f7a8144c5167eadf4f45312d2e3c312f7ac4324bdbfde74a372fd93"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/model-exchanges.jsonl",
+      "bytes": 2296957,
+      "sha256": "67dd26970ed0fe9c6d11d46b5e5fe60cacadff14b176ad4c1baa8761749061dd"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/replay.mp4",
+      "bytes": 87409,
+      "sha256": "9386a71c0100e1eec0b6364289c3d074a14cfcce986a90c2c32e406bde213217"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/summary.json",
+      "bytes": 357,
+      "sha256": "97eee21d9974a2983ba8401672bdb84117965602e7590866b299a5033ed4bc89"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/jev/seed-206/transitions.jsonl",
+      "bytes": 2638828,
+      "sha256": "5590b82c2601fb26211b5e11c3b0ab798e5c6899ed8e93aa5687f8fa5a6bec80"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/plan.json",
+      "bytes": 2502,
+      "sha256": "faa0e22bd1b7a9468d51c21ec04aecdaf387b1b1cdde392d9e399b979c442779"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-206/results.json",
+      "bytes": 1778,
+      "sha256": "9514df7df75995aa07b7594ea7bc7673edd952e0d2951c7f2025c152f9687280"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/api-ledger.json",
+      "bytes": 144485,
+      "sha256": "511ff5cfb4ab2cc8cab260891a800b1eb9a6d04ef320bc0858b2085920c660d7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/audit/jev/seed-207/frames.jsonl",
+      "bytes": 1414329,
+      "sha256": "7494a471a6b15cdfe1b6c75c5288994c63b1aff740cfda7bbc9d003172de4382"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/audit/jev/seed-207/verification.json",
+      "bytes": 670,
+      "sha256": "8e06d08f4011cc6aa1263aa73ef6889b5e742b7c4272d070544e9a25a2858cd2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/audit/verification.json",
+      "bytes": 1125,
+      "sha256": "9b1741885f3326ec86e4481c268584a1dbf2c4b0cc51aa672550cf32854d32c7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/api-ledger.json",
+      "bytes": 144485,
+      "sha256": "511ff5cfb4ab2cc8cab260891a800b1eb9a6d04ef320bc0858b2085920c660d7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/evaluation.json",
+      "bytes": 564,
+      "sha256": "2230f57961cee1b43e8dfff0fdc77614160f2998d981938acdbc74cef044c606"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/frames.jsonl",
+      "bytes": 1414329,
+      "sha256": "7494a471a6b15cdfe1b6c75c5288994c63b1aff740cfda7bbc9d003172de4382"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/last-frame.png",
+      "bytes": 720,
+      "sha256": "c4b7161c8682b43af17427776812acae1100c6e2beffd3879b2038d930091fee"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/manifest.json",
+      "bytes": 2181,
+      "sha256": "fa6493526214e854afc5dd3b21747bfbeb01161c98f99e5dc123f6f05bf92f45"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/model-exchanges.jsonl",
+      "bytes": 2293275,
+      "sha256": "d700f3d3eb1dfda19660068abdf0aa6e2983edf12650b3b08be2bb7328e939fa"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/replay.mp4",
+      "bytes": 86317,
+      "sha256": "604a0d76e0d62f86a70ad344b0570e6b13e8ae70ba637ae771d7eef03ee4aa09"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/summary.json",
+      "bytes": 359,
+      "sha256": "240ddac58fd938cd6d4fb271da213a5f2da92ffe3a10b4700491b4b5669230b8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/jev/seed-207/transitions.jsonl",
+      "bytes": 2630097,
+      "sha256": "7329d157c89f1fa79971794409005d6ef2fa638e19c1b4a71b571ca710e72e1e"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/plan.json",
+      "bytes": 2502,
+      "sha256": "985a90e793283ae9e7ea5680381c8956b05d34d14023b8e67a12852e1f7db937"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/development/V2/seed-207/results.json",
+      "bytes": 1782,
+      "sha256": "b26949939833bc4bd9a3e531fb64d50065cd1b0b9932de79ad877935e7fed673"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/api-ledger.json",
+      "bytes": 138675,
+      "sha256": "ff2822b8134df9cfbfe95beb48f80ea6dbb50a851be8b71e2a7ede0bcf0cefc7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/inputs.json",
+      "bytes": 373197,
+      "sha256": "7f8dab6f430eda70f0ca4e8735aaa9efaff4ba68c0b1b415f26a1b792b860ab7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/model-exchanges.jsonl",
+      "bytes": 2750493,
+      "sha256": "87d8e0332b6e064d257160757b948883a7cd04423031193b5d91c9f9da8f64ff"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/predictions.jsonl",
+      "bytes": 513573,
+      "sha256": "ca903b219d40a0cdf0534dea352526da560441245a41e3bce7f3c4b8126ce7a7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/programs.json",
+      "bytes": 7865,
+      "sha256": "eee369db1db052e331e3f0afa428cd90bc62406ec513f39c6db1edaba42b8aaf"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/results.json",
+      "bytes": 14877,
+      "sha256": "b603e302a25b9df780465debf3c636b962ed98cab66474041a9eeb5473857db3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/schedule.json",
+      "bytes": 59203,
+      "sha256": "b943fc6e5d0704bb5b0ee3d196c8c8610d2c10a8e0880af693ba3b0bf832fe7c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/probe/screen.json",
+      "bytes": 358,
+      "sha256": "57463f5581a598fc2c875ec3060af2f4cd7179ce7ae94b8d62dfebcbbf0139d4"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/selection.json",
+      "bytes": 5405,
+      "sha256": "253ad802835b206f286b320756e797080874622546302592a4fc4c9d7fc9f177"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/api-ledger.json",
+      "bytes": 144607,
+      "sha256": "5b6b1acb1e9e7a9913a9c40603304d39c401e15a73c898f62b55b98c7e499dd1"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/audit/jev/seed-200/frames.jsonl",
+      "bytes": 1413460,
+      "sha256": "a57e5db941a47d9dbff5b3b79efec5af5f0aa4b664a219757310de6dece3ba0c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/audit/jev/seed-200/verification.json",
+      "bytes": 673,
+      "sha256": "d4782c5216c2f74d795d0923ace1bb18f0ac00a9eba3321cc011ab7276f9388b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/audit/verification.json",
+      "bytes": 1128,
+      "sha256": "5996f229a15db463e547c4e590be242df0ee5edd2071d2820276a7d4f7bf2960"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/api-ledger.json",
+      "bytes": 144607,
+      "sha256": "5b6b1acb1e9e7a9913a9c40603304d39c401e15a73c898f62b55b98c7e499dd1"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/evaluation.json",
+      "bytes": 562,
+      "sha256": "f39e51c99f7c296cfd3ff41ef362d17ee80185dc9f53b0f81651c9e7eb00746a"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/frames.jsonl",
+      "bytes": 1413460,
+      "sha256": "a57e5db941a47d9dbff5b3b79efec5af5f0aa4b664a219757310de6dece3ba0c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/last-frame.png",
+      "bytes": 737,
+      "sha256": "4bac250a13a7d2e288fb6b599065080ab3bd2d784f9fbfa33f8b62bc73690d5e"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/manifest.json",
+      "bytes": 2175,
+      "sha256": "091d1438a677435957a476fed54784b804073d97287bf0e414546aeabe39a5fe"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/model-exchanges.jsonl",
+      "bytes": 2291783,
+      "sha256": "b7e4b1830410f380cc4e85c64fc88965588b2d109aa16b8c2440d9ccee506154"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/replay.mp4",
+      "bytes": 87462,
+      "sha256": "8c9133488c07dc607f0c8664d0eae1a8184c58e626df675e680568fa5849cf3b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/summary.json",
+      "bytes": 358,
+      "sha256": "08f28643ca399ac6d0cdcccaf8ae471cb6f13e78537935303b80106caa025e7c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/jev/seed-200/transitions.jsonl",
+      "bytes": 2628544,
+      "sha256": "ec0dae4e25ef7f33e3beaf0a719532c8ad05f4a7fd0e0f49001c6ac879ef2525"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/plan.json",
+      "bytes": 2496,
+      "sha256": "ce86064aa30addd2fbf26b6ff1c192f8d45fe6199453588b3ea7e4f5aa8359b5"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-200/results.json",
+      "bytes": 1779,
+      "sha256": "dd9e09bd055d64a50ac1b67e6a8bd662173b19e34e78de5725cdf69f21082628"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/api-ledger.json",
+      "bytes": 144588,
+      "sha256": "65595b54b09cbcb1cbb0ffe7be213221631ccc31ef341a89246cdf772bfbe4bf"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/audit/jev/seed-201/frames.jsonl",
+      "bytes": 1415417,
+      "sha256": "b22d03938e65e02639b15a067adbccfff265909c6e28870e2029339bc0387bd8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/audit/jev/seed-201/verification.json",
+      "bytes": 674,
+      "sha256": "6077a006f3d2d62af5465969fe0f9994a11412c77c0b9ddbd948c99b4b0e610d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/audit/verification.json",
+      "bytes": 1129,
+      "sha256": "8ba0a2626ffd37dc5245cede12429c7a3a951edc3d75a48f3b2b8908b0aa11d7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/api-ledger.json",
+      "bytes": 144588,
+      "sha256": "65595b54b09cbcb1cbb0ffe7be213221631ccc31ef341a89246cdf772bfbe4bf"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/evaluation.json",
+      "bytes": 563,
+      "sha256": "44d23c7e00ce975542fa26caf72e27ead13c642276a37872efe09408fbbadb0d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/frames.jsonl",
+      "bytes": 1415417,
+      "sha256": "b22d03938e65e02639b15a067adbccfff265909c6e28870e2029339bc0387bd8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/last-frame.png",
+      "bytes": 728,
+      "sha256": "dfebdc1329044418de94f87ad8214a2ee6cf059913cc59e3d4e05409bdc7d19b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/manifest.json",
+      "bytes": 2175,
+      "sha256": "5625a38bd8f5f554cb61d2597406268ca34af8a0f7518345d6e2c0ad97f47bb3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/model-exchanges.jsonl",
+      "bytes": 2291888,
+      "sha256": "9d87a14307f4abb4a660c6f3f57636389442c0fd5a3b426deebf544cf5f2d598"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/replay.mp4",
+      "bytes": 83922,
+      "sha256": "8996db0edad7ba738ba5294fff2feddd6453cc25bd64f55472eb32e35c3b86c0"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/summary.json",
+      "bytes": 358,
+      "sha256": "28edc32b591af712e3dec7385b6a4c26cfdd33921fc1bba923f3307d629b1c30"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/jev/seed-201/transitions.jsonl",
+      "bytes": 2628910,
+      "sha256": "1a84753915a560f57742ea1d4a22122c9ec442d908fec3920fa52af38f50939a"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/plan.json",
+      "bytes": 2496,
+      "sha256": "98a13a88c098c9c9fe2f64c6882ad58a797511bd33c20e856e877f39539e9dce"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-1/training/incumbent/seed-201/results.json",
+      "bytes": 1781,
+      "sha256": "7edcb1012e261244fc471504a246d85bc55dc2858bf3bbf3a8bc884600d39505"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/invocation-1/context-preview.json",
+      "bytes": 10430,
+      "sha256": "d47614291daa2be8b5ca23bd84d615928b9ac46e9019caf371d69717da57d7d2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/invocation-1/events.json",
+      "bytes": 4947,
+      "sha256": "314e062d86071f2d1eea5de50abe342f943f7ba98d607d7447aca0eb2deb24f9"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/invocation-1/execution.json",
+      "bytes": 1383,
+      "sha256": "f5c8550aa759fd4945bb47a907f3cd621846d56840fd14a64faad566409ec34f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/invocation-1/instructions.txt",
+      "bytes": 835,
+      "sha256": "6b5945087cda09478b2033ed66aca6ee6a6f4043068d6ad76dab5891868d5ba2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/invocation-1/packet.json",
+      "bytes": 9459,
+      "sha256": "27f78cd6cc7bc9c2104fbec96c2af5240836ba06b6fbad4d1861cfd38ad8cf7f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/invocation-1/proposal.json",
+      "bytes": 4525,
+      "sha256": "787a4549946c79d1c2c2fcb81eb055a3ce4d15103f72fa1230170c36914ba6e3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/invocation-1/response-schema.json",
+      "bytes": 1259,
+      "sha256": "d1d14e9b1052d80b6cdfb65795ecf938bbce74da01f42b6eefd89effada7b7a6"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/B/teacher/validated.json",
+      "bytes": 8118,
+      "sha256": "b120abe6462a396e9db4948524db0c9d680b2475ceebc5f2eedde00028dbaff3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/api-ledger.json",
+      "bytes": 144633,
+      "sha256": "d15f10f785935e2ca272d5b0a7eb2bf678148e993eb6b27747a6b1d47a96edf7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/audit/jev/seed-202/frames.jsonl",
+      "bytes": 1413579,
+      "sha256": "56c1e6cfd8882788b4291203f6b2d5830da98ed0732cfb59cd98722706212e39"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/audit/jev/seed-202/verification.json",
+      "bytes": 673,
+      "sha256": "d5d5b89491b965151a84899094c4ac9d98cd2287866ceb95a6408317e8da70bc"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/audit/verification.json",
+      "bytes": 1128,
+      "sha256": "284425b52b94644b66348fd3685d2c0b2338eabe1ab6acabeadb7675f2728c27"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/api-ledger.json",
+      "bytes": 144633,
+      "sha256": "d15f10f785935e2ca272d5b0a7eb2bf678148e993eb6b27747a6b1d47a96edf7"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/evaluation.json",
+      "bytes": 562,
+      "sha256": "addd60c8869587f747660787e0217670fb85040b5dabf3cbc87032a0b06a69aa"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/frames.jsonl",
+      "bytes": 1413579,
+      "sha256": "56c1e6cfd8882788b4291203f6b2d5830da98ed0732cfb59cd98722706212e39"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/last-frame.png",
+      "bytes": 707,
+      "sha256": "e8b1fa025f68f0695f25654ad9b74bdb27354e6e82dc952480aec8f736d18a6c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/manifest.json",
+      "bytes": 2175,
+      "sha256": "6bafadb3a50e61f7a3c6dc9223c5a8fe8cac50775dc218daa9891959b81ba5b3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/model-exchanges.jsonl",
+      "bytes": 2293194,
+      "sha256": "188274997b178b479c34c878886ab265c4682aadeece77103b67748bbd3b167b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/replay.mp4",
+      "bytes": 87261,
+      "sha256": "b24e294c56dc661805f1229a303bd4091772e8ecaff3d196242b460aadacb3b1"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/summary.json",
+      "bytes": 358,
+      "sha256": "4e7e0c6885aea1263d744079e67f1f1e965a20f6bece76121b727ac0e86a3c9a"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/jev/seed-202/transitions.jsonl",
+      "bytes": 2631151,
+      "sha256": "81eea56399d568f14c01e887f578858e1afbe782695678a2f177a36fed238427"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/plan.json",
+      "bytes": 2496,
+      "sha256": "b6172e02247cba08e97459f1ded79aa658b2ebf2bef737a3efaea7db45ebe6a2"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-202/results.json",
+      "bytes": 1779,
+      "sha256": "0cb38f4c2d1ab75f1edc0fe37e734607ad5aea960d955475e2cc4dced3538e86"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/api-ledger.json",
+      "bytes": 144502,
+      "sha256": "f79d017525eb18825e070d9e7ba0d87e434efab891e13484f1adc1b74320c724"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/audit/jev/seed-203/frames.jsonl",
+      "bytes": 1413388,
+      "sha256": "ac2a88341451f49461f4abf032ab28c5b98f43023cb885f6565c2e15de2ba28b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/audit/jev/seed-203/verification.json",
+      "bytes": 673,
+      "sha256": "cd413e955bb607570f1a93c440f5f11a3271549bb00cb48818fcd9533061f660"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/audit/verification.json",
+      "bytes": 1128,
+      "sha256": "ff66d0d184c9d4085838393b83b55163c3abdf6642b75edf788c1ca8fe151481"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/api-ledger.json",
+      "bytes": 144502,
+      "sha256": "f79d017525eb18825e070d9e7ba0d87e434efab891e13484f1adc1b74320c724"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/evaluation.json",
+      "bytes": 562,
+      "sha256": "e4945f01ed46dd959cb28e6d66b98c2d0cff2a3938178c8a558dca3f419d2d4f"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/frames.jsonl",
+      "bytes": 1413388,
+      "sha256": "ac2a88341451f49461f4abf032ab28c5b98f43023cb885f6565c2e15de2ba28b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/last-frame.png",
+      "bytes": 741,
+      "sha256": "b689a7f11e583986bf608c9d73420910bfaf6a29c4cc61f44738010d7c82cbc9"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/manifest.json",
+      "bytes": 2175,
+      "sha256": "7654f3fae1afa0382148c1339c4de5191f540bf18e624239a9de61c1978cfebd"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/model-exchanges.jsonl",
+      "bytes": 2289752,
+      "sha256": "c59627f426b8d3d6dac96b35c21600bf49645465954221a8b82b523822b41deb"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/replay.mp4",
+      "bytes": 85486,
+      "sha256": "a342effd18742260c29a569c271e7746304e23fe764ff19497e3286a99b2676c"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/summary.json",
+      "bytes": 358,
+      "sha256": "d80dff9652115fa3807619789e91dc932be89175e18f1312c9506edc378af25d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/jev/seed-203/transitions.jsonl",
+      "bytes": 2624232,
+      "sha256": "bf401d84084fb8d8052681ee085fe21c289edb284b1dd64b3e791f4796e0a158"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/plan.json",
+      "bytes": 2496,
+      "sha256": "96b784e5e24ae1c12905c35c8a5b51816186307a365cebd3be3445ff42d97cee"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/incumbent/seed-203/results.json",
+      "bytes": 1779,
+      "sha256": "6a7260257d3a10eb08e365ad017d31cc16cad365a0fda37723efbdf28341d386"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/api-ledger.json",
+      "bytes": 144641,
+      "sha256": "e6f48984e4201547148d678eeaac2c81e61f2738d6ac191b73f9148e81cdc304"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/audit/jev/seed-202/frames.jsonl",
+      "bytes": 1410556,
+      "sha256": "131eaab208301bdcbc8a259ac78b3c4e6fe3eb74ca86275579c44cdcdd39c982"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/audit/jev/seed-202/verification.json",
+      "bytes": 684,
+      "sha256": "b147cb2ed9eab3209c2934c73a3557bba1b7280a602dfe8b0d9b3f4bc2559899"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/audit/verification.json",
+      "bytes": 1139,
+      "sha256": "0ac928b4e440bc590d13ea47b3c97c07ce39c36003dbdf1c0217b9bd514dc9a5"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/api-ledger.json",
+      "bytes": 144641,
+      "sha256": "e6f48984e4201547148d678eeaac2c81e61f2738d6ac191b73f9148e81cdc304"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/evaluation.json",
+      "bytes": 566,
+      "sha256": "8afe801d390031cec30c336a433bf279d39d8ff95a221bdd53bff865b04c8798"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/frames.jsonl",
+      "bytes": 1410556,
+      "sha256": "131eaab208301bdcbc8a259ac78b3c4e6fe3eb74ca86275579c44cdcdd39c982"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/last-frame.png",
+      "bytes": 730,
+      "sha256": "833248651085a66ed02aae0898d0056a280bb85ad86bd9886425ee902db5e18d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/manifest.json",
+      "bytes": 4526,
+      "sha256": "c682bebd3ce992221e673756cf13f1c0d35cafe888d7b872977eca4b3fff99c8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/model-exchanges.jsonl",
+      "bytes": 3194614,
+      "sha256": "6b90dfdbb08a3c80a31496300b580269bacb0cff0d0c6ab50e92e092989c4098"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/replay.mp4",
+      "bytes": 74108,
+      "sha256": "9205bc9c44e67f0d9c3671489538cd464051c6fccd9750ba764094856d51873d"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/summary.json",
+      "bytes": 360,
+      "sha256": "31a2d922dee908f412c725eff432bd4f6d738ed32cb94b29d1d76188ee8574cc"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/jev/seed-202/transitions.jsonl",
+      "bytes": 2607603,
+      "sha256": "927128204b0d62d3186d1d2060d1a18f74b440cda303da854f6aa31e957c2203"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/plan.json",
+      "bytes": 4844,
+      "sha256": "36c32d51bd6014c063a1084080ecf7c8072f2743ebbb5e4c6ff850f170045683"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-202/results.json",
+      "bytes": 1785,
+      "sha256": "98867d772e2f5725036f9c5b14b23f321611d5d1ffd34622e1439bbf8097f907"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/api-ledger.json",
+      "bytes": 36277,
+      "sha256": "8255ad4eb0ccdbbe5df5cba00dea2cc0d7bb3e9cb0fdb45a356a60c88697eac8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/jev/seed-203/api-ledger.json",
+      "bytes": 36277,
+      "sha256": "8255ad4eb0ccdbbe5df5cba00dea2cc0d7bb3e9cb0fdb45a356a60c88697eac8"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/jev/seed-203/frames.jsonl",
+      "bytes": 351860,
+      "sha256": "e8a58f378a4837c58246d965c021d510173927682ec04fcbfbdfc818c77de4a6"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/jev/seed-203/manifest.json",
+      "bytes": 4526,
+      "sha256": "10a9dd33c094c83988a62d2fd53479fa1e61bc770bc1680d6cd74cdc5e9b446e"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/jev/seed-203/model-exchanges.jsonl",
+      "bytes": 804403,
+      "sha256": "d04af6f037b6f78e3387616af50a7a4bbf8040566e3ca088d3426a24560f3e8b"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/jev/seed-203/replay.mp4",
+      "bytes": 20469,
+      "sha256": "a64f4e0f142b7f02836e03fbec7fcaae8ae25e868f3c4bfb85fde7b092d63280"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/jev/seed-203/summary.json",
+      "bytes": 381,
+      "sha256": "ebbe9d334e2bbdcaaf108e4635c0ee8a89c6465c04b2b537e3926b2a4b074f06"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/jev/seed-203/transitions.jsonl",
+      "bytes": 651412,
+      "sha256": "7ae7f64cf824ea3518fce1d2664e3b16f07d0972030398c8e1edc9724ce355e3"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/plan.json",
+      "bytes": 4844,
+      "sha256": "1fe3b686d6dd5589068b016b563d2bb7b03be7dbc26a7ab83a5eaf513a42c957"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/search-1/round-2/training/previous-candidate/seed-203/results.json",
+      "bytes": 1832,
+      "sha256": "3d836676ee926272052554957c56367c6112271befb10f461600f1dba7bfc430"
+    },
+    {
+      "path": "candidate-feedback-openrouter-v1/status.json",
+      "bytes": 1781,
+      "sha256": "1f932ec6c2f46579b89078e00d47ec3519fc7d77940c24d5f2112787db26e211"
+    }
+  ]
+}

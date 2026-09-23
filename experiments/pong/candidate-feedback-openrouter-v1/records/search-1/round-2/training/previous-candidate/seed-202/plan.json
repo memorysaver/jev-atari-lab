@@ -1,0 +1,64 @@
+{
+  "kind": "pong-candidate-feedback-openrouter-v1-episode-plan",
+  "source_revision": "96ec5944460406af41ba565e95049b16bbaae7e2",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "train",
+  "seeds": [
+    202
+  ],
+  "arms": [
+    "jev"
+  ],
+  "schedule": [
+    {
+      "seed": 202,
+      "arm": "jev"
+    }
+  ],
+  "model": "~typesafe/jev-latest",
+  "model_transport": {
+    "backend": "openrouter",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "requested_model": "~typesafe/jev-latest",
+    "expected_response_model": "typesafe/jev-1.13-20260917",
+    "max_api_calls": 500,
+    "max_retries": 0
+  },
+  "program": {
+    "name": "pong-reflected-intercept-v1",
+    "guidance": "Which action should align the player paddle with the ball's expected arrival height? Read player and ball in observation.objects. Boxes are [x,y,width,height]; vertical center is y plus half the height. Larger y means LOWER. RIGHT moves UP; LEFT moves DOWN. If either object is absent, choose NOOP.\nUse one target height. Normally use the ball's current vertical center. When valid ball velocity shows movement toward the right paddle (vx positive), and the ball's right edge is still left of the player's left edge, instead estimate its arrival height: divide the horizontal gap between those edges by vx to obtain raw frames until contact, then project the ball center vertically for that time using vy. Reflect the projected path at the top and bottom walls, approximately ball-center y=36 and y=194, including multiple bounces if needed. Reflection reverses vertical direction; do not simply clamp the projected height to a wall. Use this arrival height even if it lies opposite the ball's current vertical position relative to the paddle.\nUse prediction only when velocity is valid and compatible with the latest history. A missing velocity is unknown, not zero. If recent history suggests a bounce has mixed directions within the velocity sample, fall back to current ball height until a consistent estimate is available. For a ball moving away, stationary horizontally, or already past the contact plane, also use current ball height.\nCompare the target with the player's vertical center: target more than four pixels ABOVE means RIGHT; more than four pixels BELOW means LEFT; within four pixels means NOOP. Horizontal direction determines whether to predict, never which vertical action to take. Prefer non-FIRE actions over equivalent FIRE aliases. Recompute from the next observation after the requested four raw frames.",
+    "schema_version": "action-choice-program-v2",
+    "action_criteria": {
+      "NOOP": "Hold when the target height defined in guidance is within four pixels of the player's vertical center, or when player or ball is absent. For reliable incoming motion, compare against reflected arrival height; current alignment with the ball alone does not justify holding.",
+      "FIRE": "A hold alias, appropriate under the same alignment or missing-object conditions as NOOP. It adds no vertical correction; prefer NOOP when their effects are equivalent.",
+      "RIGHT": "Move UP when the target height is more than four pixels ABOVE the player's vertical center. Use reflected arrival height for reliable incoming motion and current ball height otherwise. A ball currently below the paddle can still require UP if its predicted arrival is above.",
+      "LEFT": "Move DOWN when the target height is more than four pixels BELOW the player's vertical center. Use reflected arrival height for reliable incoming motion and current ball height otherwise. A ball currently above the paddle can still require DOWN if its predicted arrival is below.",
+      "RIGHTFIRE": "An UP alias, appropriate when the guidance's target is more than four pixels above the player's vertical center, exactly as for RIGHT. Prefer RIGHT when the vertical effects are equivalent.",
+      "LEFTFIRE": "A DOWN alias, appropriate when the guidance's target is more than four pixels below the player's vertical center, exactly as for LEFT. Prefer LEFT when the vertical effects are equivalent."
+    }
+  },
+  "program_hash": "410a8fa22eb7ebce3de7742ee0d11e321f8fd88dc8e1b9805794c7f3a058775c",
+  "max_frames_per_episode": 2000,
+  "max_decisions_per_episode": 500,
+  "max_http_attempts": 500,
+  "point_limit": null,
+  "final_seal_hash": null
+}

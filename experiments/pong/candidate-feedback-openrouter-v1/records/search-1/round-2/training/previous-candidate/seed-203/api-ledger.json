@@ -1,0 +1,1508 @@
+[
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.6154625249910168,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1704,
+      "output_tokens": 69,
+      "cost": 7.1568e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5082442309940234,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1757,
+      "output_tokens": 69,
+      "cost": 7.3794e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.43198891798965633,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1806,
+      "output_tokens": 69,
+      "cost": 7.5852e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.44047598098404706,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.45965245098341256,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.506848411023384,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5137202839832753,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.43791402399074286,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.45269990898668766,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.47503465198678896,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.47594103901064955,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.47384718401008286,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.46920884400606155,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1856,
+      "output_tokens": 69,
+      "cost": 7.7952e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4337189639918506,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1902,
+      "output_tokens": 69,
+      "cost": 7.9884e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.43781388900242746,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1934,
+      "output_tokens": 69,
+      "cost": 8.1228e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.44295397101086564,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1957,
+      "output_tokens": 68,
+      "cost": 8.2194e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5891752679890487,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 69,
+      "cost": 8.337e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.6028933979978319,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 69,
+      "cost": 8.3412e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.639340651978273,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1987,
+      "output_tokens": 69,
+      "cost": 8.3454e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5255045910016634,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 69,
+      "cost": 8.3496e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4907054999785032,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 68,
+      "cost": 8.337e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.48800174600910395,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 68,
+      "cost": 8.3496e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.523783607990481,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1987,
+      "output_tokens": 69,
+      "cost": 8.3454e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4937907560088206,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 69,
+      "cost": 8.3496e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4984454090008512,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 69,
+      "cost": 8.3496e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.49904998898273334,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1988,
+      "output_tokens": 69,
+      "cost": 8.3496e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5903531119984109,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 69,
+      "cost": 8.337e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4420659109891858,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 69,
+      "cost": 8.337e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4339895389857702,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1993,
+      "output_tokens": 68,
+      "cost": 8.3706e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5042125410109293,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1992,
+      "output_tokens": 68,
+      "cost": 8.3664e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4751180140010547,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1989,
+      "output_tokens": 68,
+      "cost": 8.3538e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5157796730054542,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1992,
+      "output_tokens": 68,
+      "cost": 8.3664e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.46137371598160826,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1987,
+      "output_tokens": 68,
+      "cost": 8.3454e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.47719531899201684,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 68,
+      "cost": 8.3412e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4894457210029941,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1985,
+      "output_tokens": 68,
+      "cost": 8.337e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.6281308000034187,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 68,
+      "cost": 8.3328e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4335501179739367,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1978,
+      "output_tokens": 68,
+      "cost": 8.3076e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5232474710210226,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1977,
+      "output_tokens": 68,
+      "cost": 8.3034e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.43111855001188815,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68,
+      "cost": 8.2782e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4916716929874383,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68,
+      "cost": 8.2782e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.49294991698116064,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 68,
+      "cost": 8.2614e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.6623841660039034,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68,
+      "cost": 8.2656e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4568940500030294,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68,
+      "cost": 8.2572e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4316120249859523,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68,
+      "cost": 8.2656e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.49191500499728136,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1966,
+      "output_tokens": 68,
+      "cost": 8.2572e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4882849389978219,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68,
+      "cost": 8.2656e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4580603380163666,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68,
+      "cost": 8.2656e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4318688519997522,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1968,
+      "output_tokens": 68,
+      "cost": 8.2656e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.526780730986502,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68,
+      "cost": 8.2782e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.541928979975637,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 68,
+      "cost": 8.2908e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5219241089944262,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1970,
+      "output_tokens": 68,
+      "cost": 8.274e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5009089369850699,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1972,
+      "output_tokens": 68,
+      "cost": 8.2824e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4409130069834646,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1969,
+      "output_tokens": 68,
+      "cost": 8.2698e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.470667435991345,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68,
+      "cost": 8.2782e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.43379766200087033,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1971,
+      "output_tokens": 68,
+      "cost": 8.2782e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5674944109923672,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 68,
+      "cost": 8.2908e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.44648944499203935,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1975,
+      "output_tokens": 68,
+      "cost": 8.295e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4502121999976225,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.45950741998967715,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1978,
+      "output_tokens": 68,
+      "cost": 8.3076e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.44347928700153716,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68,
+      "cost": 8.3286e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.44759055000031367,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1984,
+      "output_tokens": 68,
+      "cost": 8.3328e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4793769830139354,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1986,
+      "output_tokens": 68,
+      "cost": 8.3412e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4686996469972655,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1927,
+      "output_tokens": 69,
+      "cost": 8.0934e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.45472374101518653,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1925,
+      "output_tokens": 69,
+      "cost": 8.085e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5510949240124319,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1924,
+      "output_tokens": 69,
+      "cost": 8.0808e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4980270490050316,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1927,
+      "output_tokens": 69,
+      "cost": 8.0934e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5097542270086706,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1922,
+      "output_tokens": 69,
+      "cost": 8.0724e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5194927949924022,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1924,
+      "output_tokens": 69,
+      "cost": 8.0808e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.44096970499958843,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1922,
+      "output_tokens": 69,
+      "cost": 8.0724e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4613316080067307,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1922,
+      "output_tokens": 69,
+      "cost": 8.0724e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.44379104499239475,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.48822341501363553,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1920,
+      "output_tokens": 69,
+      "cost": 8.064e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4523080650251359,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5183650999970268,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4510828089842107,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.43886214701342396,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4657300779945217,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4565964190114755,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4295941590098664,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1940,
+      "output_tokens": 69,
+      "cost": 8.148e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4265026010107249,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1955,
+      "output_tokens": 68,
+      "cost": 8.211e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.491040138003882,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1967,
+      "output_tokens": 68,
+      "cost": 8.2614e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4763254020072054,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1983,
+      "output_tokens": 68,
+      "cost": 8.3286e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.49410408799303696,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1981,
+      "output_tokens": 68,
+      "cost": 8.3202e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.45839477799017914,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1978,
+      "output_tokens": 68,
+      "cost": 8.3076e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.46574572002282366,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1978,
+      "output_tokens": 68,
+      "cost": 8.3076e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4147989399789367,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1978,
+      "output_tokens": 68,
+      "cost": 8.3076e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.52232775700395,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4838987280090805,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4940129909955431,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.49414146901108325,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4508608719916083,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5057465810095891,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4398219980066642,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.48705711201182567,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.45084258101996966,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4597303539921995,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1977,
+      "output_tokens": 68,
+      "cost": 8.3034e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.505002585996408,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1976,
+      "output_tokens": 68,
+      "cost": 8.2992e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4516977719904389,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.46724086900940165,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1913,
+      "output_tokens": 69,
+      "cost": 8.0346e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.467525818006834,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.43836114698206075,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1916,
+      "output_tokens": 69,
+      "cost": 8.0472e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4211189560010098,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4749451449897606,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4973382289754227,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4487494410132058,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4723672459949739,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.47630045301048085,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.9218546929769218,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4614807159814518,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1917,
+      "output_tokens": 69,
+      "cost": 8.0514e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5073707200062927,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1919,
+      "output_tokens": 69,
+      "cost": 8.0598e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4589085579791572,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1915,
+      "output_tokens": 69,
+      "cost": 8.043e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4251181389845442,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1916,
+      "output_tokens": 69,
+      "cost": 8.0472e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5606618619931396,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1913,
+      "output_tokens": 69,
+      "cost": 8.0346e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5330854500061832,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1934,
+      "output_tokens": 68,
+      "cost": 8.1228e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5694475460040849,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1950,
+      "output_tokens": 68,
+      "cost": 8.19e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.462182324990863,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1962,
+      "output_tokens": 68,
+      "cost": 8.2404e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.46355115799815394,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 68,
+      "cost": 8.2908e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.47375059899059124,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1974,
+      "output_tokens": 68,
+      "cost": 8.2908e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.46937514399178326,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1976,
+      "output_tokens": 68,
+      "cost": 8.2992e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5633628319774289,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1977,
+      "output_tokens": 68,
+      "cost": 8.3034e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5204690009995829,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1978,
+      "output_tokens": 68,
+      "cost": 8.3076e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.4312295989948325,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.45360938701196574,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5642656619893387,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 200,
+    "elapsed_seconds": 0.5028115310124122,
+    "response_model": "typesafe/jev-1.13-20260917",
+    "usage": {
+      "input_tokens": 1979,
+      "output_tokens": 68,
+      "cost": 8.3118e-05
+    }
+  },
+  {
+    "attempt": 1,
+    "requested_model": "~typesafe/jev-latest",
+    "status": 502,
+    "elapsed_seconds": 41.83014674499282
+  }
+]

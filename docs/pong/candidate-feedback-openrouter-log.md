@@ -22,3 +22,10 @@ The supervised runner executes all rounds and final evaluation, writes round
 selections and the final endpoint, and records its actual exit status. Errors
 preserve incomplete records. An ended process must never be described as running.
 No live non-Pong experiment has started; [Seaquest is the next-game recommendation](../next-atari-game-2026-09-23.md).
+
+## Closure, 2026-09-24
+
+The runner exited 1 after an HTTP 502 in second-round training. The owner requested
+Pong closure, with no restart. [Closure report](candidate-feedback-results-2026-09-24.md)
+and [verified local evidence](../../experiments/pong/candidate-feedback-openrouter-v1/README.md)
+supersede the launch-time running state. No final tests were executed.

@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "guidance": {
+      "type": "string"
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "operator": {
+      "type": "string"
+    },
+    "predicted_changes": {
+      "type": "string"
+    },
+    "regression_risks": {
+      "type": "string"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action_criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "NOOP": {
+          "type": "string"
+        },
+        "FIRE": {
+          "type": "string"
+        },
+        "RIGHT": {
+          "type": "string"
+        },
+        "LEFT": {
+          "type": "string"
+        },
+        "RIGHTFIRE": {
+          "type": "string"
+        },
+        "LEFTFIRE": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "NOOP",
+        "FIRE",
+        "RIGHT",
+        "LEFT",
+        "RIGHTFIRE",
+        "LEFTFIRE"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "guidance",
+    "hypothesis",
+    "operator",
+    "evidence_ids",
+    "predicted_changes",
+    "regression_risks",
+    "action_criteria"
+  ]
+}

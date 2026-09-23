@@ -1,0 +1,62 @@
+{
+  "status": "incomplete",
+  "plan_hash": "bda41abbe020bc18c35e593ca2a182a38af110dba5490ddfe801abbc70c49ad7",
+  "completed_rounds": [
+    {
+      "search": 1,
+      "round": 1,
+      "decisions": {
+        "A": {
+          "accepted": false,
+          "status": "rejected",
+          "seeds": [
+            206,
+            207
+          ],
+          "paired_gains_over_fresh_v2": [
+            -13.0,
+            -12.0
+          ],
+          "mean_gain": -12.5,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        },
+        "B": {
+          "accepted": true,
+          "status": "accepted",
+          "seeds": [
+            206,
+            207
+          ],
+          "paired_gains_over_fresh_v2": [
+            1.0,
+            2.0
+          ],
+          "mean_gain": 1.5,
+          "previous_best_gain": 0.0,
+          "rule": "Nonregressing on both seeds, mean >=1 over fresh v2; strictly exceed previous best gain.",
+          "limit": "Earlier selected score is historical; not a fresh candidate-versus-incumbent comparison."
+        }
+      }
+    }
+  ],
+  "active": "search-1/round-2",
+  "error_type": "ModelError",
+  "budget": {
+    "kind": "pong-candidate-feedback-openrouter-v1",
+    "max_attempts": 30000,
+    "nonfinal_limit": 17000,
+    "final_limit": 13000,
+    "teacher_limit": 10,
+    "live_seconds": 86400,
+    "started_at": 1790175875.793746,
+    "attempts": 6106,
+    "nonfinal_attempts": 6106,
+    "final_attempts": 0,
+    "teacher_invocations": 3,
+    "teacher_repairs": 0,
+    "teacher_transport_retries": 0,
+    "training_closed": false
+  }
+}

@@ -12,17 +12,16 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Latest: [criteria-edit teacher study](pong/criteria-teacher-results-2026-09-23.md).
-HTTP 402 stopped the fourth round after 15,093 Jev attempts. Three rounds completed,
-all six evaluated proposals were rejected, and no final tests ran. All 27 recorded
-trajectories replayed; complete local evidence preserves the technical stop.
+Latest: [Pong closure](pong/candidate-feedback-results-2026-09-24.md).
+The OpenRouter study stopped on HTTP 502 in round two; one development round
+accepted B and rejected A. All 12 trajectories replayed, no final tests ran,
+and the owner closed this Pong stage. [Local archive](../experiments/pong/candidate-feedback-openrouter-v1/README.md).
 
 ## Research map
 
-New stage ([launch record](pong/candidate-feedback-openrouter-log.md)): [three-round Pong closure on OpenRouter](pong/candidate-feedback-openrouter-protocol.md),
-with training feedback from the previous candidate as well as the incumbent.
-[Next-game recommendation](next-atari-game-2026-09-23.md): Seaquest, pending observation
-validation and a small capability-separation pilot. No non-Pong live calls allocated.
+[Seaquest research](seaquest/README.md) has started with a bounded, zero-model-call
+observation/action calibration. The [selection rationale](next-atari-game-2026-09-23.md)
+explains its proposed value; no Seaquest learning result is available.
 
 [OpenRouter migration](pong/openrouter-migration.md): one access request and all 100
 playback requests succeeded; 400 frames replayed with explicit model identity pinning.

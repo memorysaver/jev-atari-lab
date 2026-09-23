@@ -1,5 +1,11 @@
 # Pong research
 
+2026-09-24: the owner closed this Pong stage after the OpenRouter run stopped in
+round two. [Final closure report and exact teacher records](candidate-feedback-results-2026-09-24.md)
+preserve one development-positive B proposal, a rejected A proposal, and an
+unevaluated second B proposal. No final tests or teacher-feedback advantage were
+established. Work proceeds to [Seaquest](../seaquest/README.md).
+
 Pong is the current test environment for the teacher-driven question optimizer.
 Its small action space makes it a useful starting point, but neither mastery nor
 repeatable multi-round learning has been established.

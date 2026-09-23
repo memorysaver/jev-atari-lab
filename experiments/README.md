@@ -1,5 +1,9 @@
 # Experiment journal
 
+2026-09-24: [Pong OpenRouter closure](pong/candidate-feedback-openrouter-v1/README.md)
+preserves 12 verified trajectories and all original evidence from the incomplete
+candidate-feedback study. Its checksummed local LFS archive was restored and audited.
+
 Latest: [teacher-study-v1](pong/teacher-study-v1/README.md) preserves one completed teacher round,
 12 replay-verified episodes and the failed second-round teacher call. Neither
 candidate was promoted; final tests were not run.

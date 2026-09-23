@@ -1,0 +1,18 @@
+{
+  "kind": "pong-candidate-feedback-openrouter-v1-audit",
+  "status": "verified",
+  "study_status": "incomplete",
+  "completed_rounds": 1,
+  "episode_count": 11,
+  "completed_episode_count": 11,
+  "replayed_episode_count": 12,
+  "incomplete_episode_count": 1,
+  "final_evaluation_verified": false,
+  "source_revision": "96ec5944460406af41ba565e95049b16bbaae7e2",
+  "plan_hash": "bda41abbe020bc18c35e593ca2a182a38af110dba5490ddfe801abbc70c49ad7",
+  "status_hash": "a23d8f71d299359dcbebc175470969210c8ba3d370ea9eb31ea4d482ab3e71af",
+  "budget_hash": "a9fbd83199201e22f7a756c6a2497dbd4fce1274cd068b40f1c8f33a93f0f827",
+  "costs_hash": "52b5c863edea70ac1a764380deb3dc40fe38576775e08dd205ad18e251e19de7",
+  "audit_api_attempts": 0,
+  "scope": "Original Jev requests/responses, complete and incomplete episode replay, teacher packets/proposals and completed development selections. Final outcomes and endpoint verified only when final_evaluation_verified is true."
+}

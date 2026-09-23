@@ -1,0 +1,64 @@
+{
+  "kind": "pong-candidate-feedback-openrouter-v1-episode-plan",
+  "source_revision": "96ec5944460406af41ba565e95049b16bbaae7e2",
+  "protocol": {
+    "hold_frames": 4,
+    "sticky": 0.25,
+    "observation": "ram",
+    "noop_max": 30,
+    "game": "ALE/Pong-v5",
+    "mode": 0,
+    "difficulty": 0,
+    "frameskip": 1,
+    "full_action_space": false,
+    "extractor": "pong-ocatari-derived-v1",
+    "rom_sha256": "41623e3c26148f96cbe77d56512845d224a63c8fe5bf90e38527155e39ec96d3",
+    "versions": {
+      "ale-py": "0.11.2",
+      "gymnasium": "1.3.0",
+      "numpy": "2.5.3"
+    },
+    "protocol_hash": "85486a2fb59e7c421e0930f70e7f0b9faa5262f1b6af747e7bb83eab4decc3b7"
+  },
+  "split": "development",
+  "seeds": [
+    206
+  ],
+  "arms": [
+    "jev"
+  ],
+  "schedule": [
+    {
+      "seed": 206,
+      "arm": "jev"
+    }
+  ],
+  "model": "~typesafe/jev-latest",
+  "model_transport": {
+    "backend": "openrouter",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "requested_model": "~typesafe/jev-latest",
+    "expected_response_model": "typesafe/jev-1.13-20260917",
+    "max_api_calls": 500,
+    "max_retries": 0
+  },
+  "program": {
+    "name": "pong-incoming-four-frame-lead-v1",
+    "guidance": "Which action should align the player paddle with the ball's near-future height? Read player and ball in observation.objects. A bbox is [x, y, width, height]; vertical center is y + height/2. Larger y means lower. RIGHT moves UP; LEFT moves DOWN. If either object is absent, choose NOOP.\nUse the current ball center as the default target. The principal change is a short predictive lead for incoming balls: when observation/history establishes reliable ball velocity toward the right-side player, target the ball center predicted four raw frames ahead. Express velocity per raw frame using the available history timing; do not treat an unknown velocity as zero. If the ball will reach the player's left face sooner, shorten the prediction to that contact time, using the horizontal gap from the ball's right edge and its rightward speed. Thus target height is current ball center plus vertical velocity times the prediction horizon.\nFor an outgoing ball or uncertain velocity, retain the current-height target. After a visible wall/paddle bounce or point reset, do not extrapolate pre-event velocity; use current height until post-event motion is established. Do not invent wall coordinates or extrapolate through a known impending wall collision without accounting for its reversal; use current height if that reversal cannot be resolved from the observation/history.\nIf target height is more than four pixels below player center, choose LEFT. If more than four pixels above, choose RIGHT. Otherwise choose NOOP. Horizontal direction determines whether to predict, never whether to move up or down. Prefer non-FIRE actions over their equivalent FIRE aliases. Act for the next requested duration, then reconsider.",
+    "schema_version": "action-choice-program-v2",
+    "action_criteria": {
+      "NOOP": "Choose when player or ball is absent, or when the selected target height is within four pixels of the player center. The target uses a short incoming-ball prediction only when reliable; otherwise it is the current ball center.",
+      "FIRE": "Stationary alternative when both objects are present and the selected target is within four pixels of the player center. It gives no vertical correction; prefer NOOP under the supplied movement-equivalence rule.",
+      "RIGHT": "Move UP when the selected target height is more than four pixels above the player center. Use the reliable incoming-ball prediction when available, otherwise current ball height. Prefer this over RIGHTFIRE.",
+      "LEFT": "Move DOWN when the selected target height is more than four pixels below the player center. Use the reliable incoming-ball prediction when available, otherwise current ball height. Prefer this over LEFTFIRE.",
+      "RIGHTFIRE": "Upward movement alias appropriate to the same target-above condition as RIGHT: the selected target is more than four pixels above player center. Prefer RIGHT when firing produces the same vertical movement.",
+      "LEFTFIRE": "Downward movement alias appropriate to the same target-below condition as LEFT: the selected target is more than four pixels below player center. Prefer LEFT when firing produces the same vertical movement."
+    }
+  },
+  "program_hash": "e119b730fef714603de26a59be70f92b5554f919aeda681b5e03c50f37ae52c0",
+  "max_frames_per_episode": 2000,
+  "max_decisions_per_episode": 500,
+  "max_http_attempts": 500,
+  "point_limit": null,
+  "final_seal_hash": null
+}

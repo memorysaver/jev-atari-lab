@@ -1,0 +1,34 @@
+{
+  "jev_attempts": 6106,
+  "jev_non_200_attempts": 1,
+  "jev_input_tokens": 11012103,
+  "jev_output_tokens": 418665,
+  "jev_attempts_without_usage": 1,
+  "jev_api_seconds": 2530.020126923395,
+  "teacher_invocations": 3,
+  "teacher_completed_usage": [
+    {
+      "input_tokens": 63301,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1711,
+      "reasoning_output_tokens": 748
+    },
+    {
+      "input_tokens": 9422,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1655,
+      "reasoning_output_tokens": 812
+    },
+    {
+      "input_tokens": 10632,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1186,
+      "reasoning_output_tokens": 313
+    }
+  ],
+  "openrouter_reported_cost_usd": 0.462508326,
+  "billing": "Successful-response OpenRouter usage costs; failed-call billing and teacher USD unavailable."
+}
