@@ -19,6 +19,9 @@ and the owner closed this Pong stage. [Local archive](../experiments/pong/candid
 
 ## Research map
 
+[Seaquest observation v2 protocol](seaquest/observation-v2-protocol.md) fixes animation
+availability and prospectively gates a future small Jev pilot on fresh training checks.
+
 [Seaquest research](seaquest/README.md) has started with a bounded, zero-model-call
 observation/action calibration: [eight trajectories replayed](seaquest/calibration-results-2026-09-24.md),
 with oxygen checks passing and player-visibility limits retained. The [selection rationale](next-atari-game-2026-09-23.md)

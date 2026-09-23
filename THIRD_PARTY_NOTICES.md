@@ -70,3 +70,7 @@ OCAtari revision `99c874675df6b76a33a80b57776c123fbcd051af`:
 The copyright and full permission notice above also apply to this adaptation.
 The full OCAtari package is not installed. This mapping is experimental and its
 local calibration does not establish complete semantic accuracy.
+
+The v2 observation diagnostics in `src/jev_atari/seaquest_observation.py` also
+adapt color definitions from the same revision's `ocatari/vision/seaquest.py`.
+The same MIT notice applies; color support is not complete semantic validation.
