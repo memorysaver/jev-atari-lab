@@ -1,0 +1,155 @@
+{
+  "status": "verified",
+  "study_status": "incomplete-technical-stop",
+  "episodes": [
+    {
+      "round": 1,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 490,
+        "raw_frames": 1957,
+        "api_attempts": 0,
+        "summary_hash": "f2450e1e0ccb4e4bfab56ffe53b673fd4d906b01d2bf687224823dbfbfc27a4a"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "1957"
+      }
+    },
+    {
+      "round": 1,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 541,
+        "raw_frames": 2161,
+        "api_attempts": 0,
+        "summary_hash": "71ebef8c5531be97e83b91e34d698970daf65380cedbb92d9e7fcbcd0363defb"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2161"
+      }
+    },
+    {
+      "round": 2,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 662,
+        "raw_frames": 2645,
+        "api_attempts": 0,
+        "summary_hash": "3d44fed231e180fb092d826ea792af142208da50e9a787de41a7ad17f6d4da17"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2645"
+      }
+    },
+    {
+      "round": 2,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "51a8a81a878db5c6f525833bfdc65d0b4a89cdde91d3fd70bda15d49eb204cd0"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 3,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "0453d6bcba52ba279565d77826ebd85bc044b60e545198cafeb35e495393ce8d"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 3,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "c922d0a5952aeceecbe62b4ae03ae9693841bb609bbaf67bdf141f7f3f8b73ae"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 4,
+      "role": "candidate",
+      "seed": 320,
+      "replay": {
+        "status": "verified",
+        "decisions": 717,
+        "raw_frames": 2865,
+        "api_attempts": 0,
+        "summary_hash": "371f14d6010304b1684f2a76780aff248442e1b2f1ea07f3f5f63ddce5beaee8"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2865"
+      }
+    },
+    {
+      "round": 4,
+      "role": "candidate",
+      "seed": 321,
+      "replay": {
+        "status": "verified",
+        "decisions": 140,
+        "raw_frames": 560,
+        "api_attempts": 0,
+        "summary_hash": "2602e8a12340c12f2aa667136fa3d575d23ba93515e4e77e1aa45785221beb6d"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "560"
+      }
+    }
+  ],
+  "plan_hash": "d097ab14c82114f1ae47a3229d36b5cde620d5240e609a6b905bbf302cf1a7bc",
+  "report_hash": "1e2b24ab82ffb6ec9f60c471403abe85035de1075118c7031b18f44ddf39cad5",
+  "costs_hash": "532c1064f2b02f12137b3922f8a493a539e814e90431cc5990cf0355874e92e6",
+  "audit_api_attempts": 0,
+  "scope": "Original API requests/responses, action decoding, raw-frame replay and video frame counts"
+}

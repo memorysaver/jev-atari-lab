@@ -24,7 +24,8 @@ and the owner closed this Pong stage. [Local archive](../experiments/pong/candid
 
 [Ten-round Seaquest protocol](seaquest/ten-round-protocol.md): owner-authorized
 autonomous question research with full episode videos, development/final separation
-and a mandatory stop after round 10.
+and a mandatory stop after round 10. A documented [continuation contract](seaquest/ten-round-continuation-protocol.md)
+preserves the original round-four HTTP 520 stop and resumes from verified recorded state.
 
 ## Research map
 

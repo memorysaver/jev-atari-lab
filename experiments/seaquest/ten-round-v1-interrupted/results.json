@@ -1,0 +1,37 @@
+{
+  "status": "incomplete-technical-stop",
+  "plan_hash": "d097ab14c82114f1ae47a3229d36b5cde620d5240e609a6b905bbf302cf1a7bc",
+  "rounds": [
+    {
+      "status": "complete",
+      "round": 1,
+      "plan_hash": "f4598c3949e2570491a3eea28a5bcbefe085c2eb49cba04897208fdf718ad314",
+      "mean_controlled_return": 70.0
+    },
+    {
+      "status": "complete",
+      "round": 2,
+      "plan_hash": "65f0d304b1e237590fa288bb55ceb06f26c39b0a30c82b5cf0e08d43c6fa734f",
+      "mean_controlled_return": 190.0
+    },
+    {
+      "status": "complete",
+      "round": 3,
+      "plan_hash": "7ad169f8180c039d53a15e76176493a81ba3c2301696ccbd59dfcdfbc45af985",
+      "mean_controlled_return": 350.0
+    }
+  ],
+  "budget": {
+    "max_calls": 24000,
+    "used": 4632,
+    "started_at": 1790185758.381211,
+    "live_seconds": 86400,
+    "round_attempts": {
+      "1": 903,
+      "2": 1398,
+      "3": 1600,
+      "4": 731
+    },
+    "closed": false
+  }
+}

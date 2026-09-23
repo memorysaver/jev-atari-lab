@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import random
+import shutil
 import subprocess
 import time
 from collections import Counter
@@ -134,8 +135,24 @@ class ResearchBudget:
         self.used = state["used"]
 
 
-def play_episode(path, seed, evaluator, source, program):
-    new_directory(path)
+class ResearchEvaluator(PilotEvaluator):
+    """Prospective continuation transport; original pilot defaults remain unchanged."""
+
+    def __init__(self, budget, *, client=None):
+        super().__init__(budget, client=client)
+        self.api.retry_statuses = self.api.retry_statuses | {520}
+
+    @property
+    def transport_manifest(self):
+        return {
+            **super().transport_manifest,
+            "retry_http_statuses": sorted(self.api.retry_statuses),
+        }
+
+
+def play_episode(path, seed, evaluator, source, program, *, resume=False):
+    if not resume:
+        new_directory(path)
     observer, histogram = Observer(), Counter()
     ledger_start = len(evaluator.ledger)
     evaluator.api.trace_path = path / "model-exchanges.jsonl"
@@ -155,9 +172,49 @@ def play_episode(path, seed, evaluator, source, program):
         truncated=False,
         max_carried_divers=0,
     )
+    previous_rows, previous_ledger, previous_wall = [], [], 0.0
+    if resume:
+        summary = read_json(path / "summary.json")
+        manifest = read_json(path / "manifest.json")
+        if summary["status"] != "incomplete" or summary["terminated"] or summary["truncated"]:
+            raise ValueError("Only an unfinished nonterminal trajectory can resume")
+        if manifest["seed"] != seed or manifest["program"] != program.to_dict():
+            raise ValueError("Continuation must keep original seed and exact program")
+        previous_rows = [
+            json.loads(s) for s in (path / "transitions.jsonl").read_text().splitlines()
+        ]
+        previous_ledger = read_json(path / "api-ledger.json")
+        previous_wall = summary["wall_seconds"]
+        histogram.update(summary["action_histogram"])
+        write_json(path / "predecessor-summary.json", summary)
+        write_json(
+            path / "continuation.json",
+            {
+                "source_revision": source,
+                "predecessor_manifest_hash": digest(manifest),
+                "predecessor_summary_hash": digest(summary),
+                "program_hash": program.hash,
+                "predecessor_files": {
+                    name: {
+                        "bytes": (path / name).stat().st_size,
+                        "sha256": hashlib.sha256((path / name).read_bytes()).hexdigest(),
+                    }
+                    for name in ("transitions.jsonl", "model-exchanges.jsonl", "episode.mp4")
+                },
+                "predecessor_frames": summary["frames"],
+                "predecessor_decisions": summary["decisions"],
+                "recovery": "Exact raw-frame replay to the unexecuted observation; no old "
+                "model calls repeated",
+                "model_transport": evaluator.transport_manifest,
+            },
+        )
+        (path / "episode.mp4").rename(path / "predecessor-episode.mp4")
     started, writer = time.monotonic(), None
     try:
-        with make_game("Seaquest") as env, (path / "transitions.jsonl").open("x") as stream:
+        with (
+            make_game("Seaquest") as env,
+            (path / "transitions.jsonl").open("a" if resume else "x") as stream,
+        ):
             env.reset(seed=seed)
             names = env.unwrapped.get_action_meanings()
             assert tuple(names) == NAMES
@@ -165,22 +222,23 @@ def play_episode(path, seed, evaluator, source, program):
             obs = observer.observe(
                 env.unwrapped.ale.getRAM(), raw_frame=0, lives=lives, names=names
             )
-            write_json(
-                path / "manifest.json",
-                {
-                    "kind": "seaquest-research-episode-v1",
-                    "seed": seed,
-                    "split": split_for_seed(seed),
-                    "source_revision": source,
-                    "program": program.to_dict(),
-                    "program_hash": program.hash,
-                    "schema": SCHEMA,
-                    "action_names": names,
-                    "model_transport": evaluator.transport_manifest,
-                    "max_agent_decisions": DECISIONS,
-                    "prefix_actions": prefix_actions(seed),
-                },
-            )
+            if not resume:
+                write_json(
+                    path / "manifest.json",
+                    {
+                        "kind": "seaquest-research-episode-v1",
+                        "seed": seed,
+                        "split": split_for_seed(seed),
+                        "source_revision": source,
+                        "program": program.to_dict(),
+                        "program_hash": program.hash,
+                        "schema": SCHEMA,
+                        "action_names": names,
+                        "model_transport": evaluator.transport_manifest,
+                        "max_agent_decisions": DECISIONS,
+                        "prefix_actions": prefix_actions(seed),
+                    },
+                )
             writer = imageio.get_writer(
                 path / "episode.mp4",
                 fps=60,
@@ -188,8 +246,48 @@ def play_episode(path, seed, evaluator, source, program):
                 macro_block_size=1,
                 ffmpeg_log_level="error",
             )
+            replay_frames = 0
+            for row in previous_rows:
+                assert row["observation"] == obs
+                for expected in row["frames"]:
+                    _, reward, terminated, truncated, _ = env.step(row["action"])
+                    ram, rgb = env.unwrapped.ale.getRAM(), env.unwrapped.ale.getScreenRGB()
+                    lives = env.unwrapped.ale.lives()
+                    assert expected == {
+                        "ram": ram.tolist(),
+                        "rgb_hash": hashlib.sha256(rgb.tobytes()).hexdigest(),
+                        "reward": float(reward),
+                        "lives": lives,
+                        "terminated": terminated,
+                        "truncated": truncated,
+                    }
+                    writer.append_data(rgb)
+                    replay_frames += 1
+                obs = observer.observe(
+                    ram,
+                    raw_frame=replay_frames,
+                    lives=lives,
+                    names=names,
+                    ended=terminated or truncated,
+                )
+                assert obs == row["next_observation"] and screen_checks(obs, rgb) == row["checks"]
+            if resume:
+                assert (
+                    replay_frames == summary["frames"]
+                    and len(previous_rows) == summary["decisions"]
+                )
+                write_json(
+                    path / "continuation-replay.json",
+                    {
+                        "status": "verified",
+                        "frames": replay_frames,
+                        "api_attempts": 0,
+                        "resume_observation_hash": digest(obs),
+                        "global_attempts_before_resume": evaluator.api.budget.used,
+                    },
+                )
             actor = ActionPolicy(evaluator, program)
-            for decision in range(PREFIX_DECISIONS + DECISIONS):
+            for decision in range(len(previous_rows), PREFIX_DECISIONS + DECISIONS):
                 controlled = decision >= PREFIX_DECISIONS
                 if controlled:
                     if decision == PREFIX_DECISIONS:
@@ -280,9 +378,9 @@ def play_episode(path, seed, evaluator, source, program):
     finally:
         if writer:
             writer.close()
-        ledger = evaluator.ledger[ledger_start:]
+        ledger = previous_ledger + evaluator.ledger[ledger_start:]
         summary.update(
-            wall_seconds=time.monotonic() - started,
+            wall_seconds=previous_wall + time.monotonic() - started,
             api_attempts=len(ledger),
             reported_cost_usd=sum((e.get("usage") or {}).get("cost", 0) for e in ledger),
             action_histogram=dict(histogram),
@@ -356,7 +454,10 @@ def paired_gate(episodes):
 def run_round(root, number, proposal_path=None):
     source = source_revision()
     plan, report = read_json(root / "plan.json"), read_json(root / "results.json")
-    if source != plan["source_revision"] or report["status"] != "running":
+    if (
+        source != plan.get("continuation_revision", plan["source_revision"])
+        or report["status"] != "running"
+    ):
         raise ValueError("Study source changed or study closed")
     if number != len(report["rounds"]) + 1 or not 1 <= number <= 10:
         raise ValueError("Rounds must execute exactly once in order, stopping at ten")
@@ -437,7 +538,7 @@ def run_round(root, number, proposal_path=None):
         "episodes": [],
     }
     write_json(path / "results.json", result)
-    evaluator = PilotEvaluator(budget)
+    evaluator = ResearchEvaluator(budget)
     try:
         for role, p, seed in jobs:
             summary = play_episode(path / role / f"seed-{seed}", seed, evaluator, source, p)
@@ -472,15 +573,106 @@ def run_round(root, number, proposal_path=None):
     print(json.dumps(result), flush=True)
 
 
+def continue_study(predecessor, root, audit, archive_manifest):
+    """New append-only lineage, preserving the stopped original tree and its budget."""
+    source = source_revision()
+    old_plan, old_report, old_budget = [
+        read_json(predecessor / f"{n}.json") for n in ("plan", "results", "budget")
+    ]
+    verified = read_json(audit / "verification.json")
+    if (
+        old_report["status"] != "incomplete-technical-stop"
+        or len(old_report["rounds"]) != 3
+        or verified["status"] != "verified"
+        or verified["report_hash"] != digest(old_report)
+        or verified["plan_hash"] != digest(old_plan)
+    ):
+        raise ValueError("Require the audited original round-four technical stop")
+    archived = read_json(archive_manifest)
+    archive_path = archive_manifest.parent / archived["archive"]
+    if hashlib.sha256(archive_path.read_bytes()).hexdigest() != archived["sha256"]:
+        raise ValueError("Predecessor archive checksum mismatch")
+    for member in archived["files"]:
+        original = predecessor / Path(member["path"]).relative_to(predecessor.name)
+        if hashlib.sha256(original.read_bytes()).hexdigest() != member["sha256"]:
+            raise ValueError("Predecessor differs from its closed archive")
+    failed = predecessor / "round-04" / "candidate" / "seed-321"
+    if read_json(failed / "api-ledger.json")[-1]["status"] != 520:
+        raise ValueError("This continuation is specific to the preserved HTTP 520 stop")
+    if root.exists():
+        raise ValueError("Never overwrite a continuation root")
+    shutil.copytree(predecessor, root)
+    lineage = root / "continuation"
+    for name in ("plan", "results", "budget"):
+        write_json(lineage / f"predecessor-{name}.json", read_json(predecessor / f"{name}.json"))
+    write_json(lineage / "predecessor-audit.json", verified)
+    for name in ("closure", "stop-verification", "stop-costs"):
+        if (root / f"{name}.json").exists():
+            shutil.move(root / f"{name}.json", lineage / f"predecessor-{name}.json")
+    plan = {
+        **old_plan,
+        "continuation_revision": source,
+        "predecessor_root": str(predecessor),
+        "predecessor_plan_hash": digest(old_plan),
+        "predecessor_report_hash": digest(old_report),
+        "predecessor_budget_hash": digest(old_budget),
+        "predecessor_archive_sha256": archived["sha256"],
+        "continuation": "Resume round 4 seed 321 at its recorded unexecuted observation; "
+        "same overall budgets/deadline; add HTTP 520 to bounded transient "
+        "retries",
+    }
+    write_json(root / "plan.json", plan)
+    report = {**old_report, "plan_hash": digest(plan), "status": "continuing-round-04"}
+    write_json(root / "results.json", report)
+    path = root / "round-04"
+    result = read_json(path / "results.json")
+    write_json(lineage / "predecessor-round-04-results.json", result)
+    budget = ResearchBudget(root / "budget.json", 4)
+    evaluator = ResearchEvaluator(budget)
+    try:
+        program = load_program(read_json(path / "proposal.json")["program"])
+        summary = play_episode(
+            path / "candidate" / "seed-321", 321, evaluator, source, program, resume=True
+        )
+        result["episodes"].append({"role": "candidate", "seed": 321, "summary": summary})
+        result.pop("error_type", None)
+        result.update(
+            status="complete",
+            mean_controlled_return=mean(
+                e["summary"]["controlled_reward"] for e in result["episodes"]
+            ),
+        )
+        result["continuation_revision"] = source
+        report["rounds"].append({k: v for k, v in result.items() if k != "episodes"})
+        report["status"] = "running"
+    except Exception as exc:
+        result["error_type"] = type(exc).__name__
+        report["status"] = "incomplete-technical-stop"
+        raise
+    finally:
+        evaluator.close()
+        write_json(path / "results.json", result)
+        report["budget"] = read_json(budget.path)
+        write_json(root / "results.json", report)
+    print(json.dumps(result), flush=True)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--initialize", action="store_true")
+    parser.add_argument("--continue-from", type=Path)
+    parser.add_argument("--predecessor-audit", type=Path)
+    parser.add_argument("--predecessor-archive", type=Path)
     parser.add_argument("--round", type=int)
     parser.add_argument("--proposal", type=Path)
     parser.add_argument("--backend", choices=["openrouter"], required=True)
     args = parser.parse_args()
-    if args.initialize:
+    if args.continue_from:
+        continue_study(
+            args.continue_from, args.root, args.predecessor_audit, args.predecessor_archive
+        )
+    elif args.initialize:
         initialize(args.root)
     else:
         run_round(args.root, args.round, args.proposal)

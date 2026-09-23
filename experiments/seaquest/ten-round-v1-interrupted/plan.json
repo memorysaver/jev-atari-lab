@@ -1,0 +1,43 @@
+{
+  "kind": "seaquest-ten-round-study-v1",
+  "source_revision": "285b2c386cfb356172e687a4b6430601c4dacd72",
+  "rounds": 10,
+  "train_seeds": [
+    320,
+    321
+  ],
+  "development_seeds": [
+    326,
+    327
+  ],
+  "final_seeds": [
+    328,
+    329
+  ],
+  "decisions_per_episode": 800,
+  "max_attempts": 24000,
+  "prefix": "32 NOOP holds then 32 random.Random(seed).randrange(18) holds; each hold 4 frames",
+  "live_seconds": 86400,
+  "model": "~typesafe/jev-latest",
+  "response_model": "typesafe/jev-1.13-20260917",
+  "schema": "seaquest-objects-v2",
+  "mode": 0,
+  "difficulty": 0,
+  "sticky": 0.25,
+  "frameskip": 1,
+  "hold_frames": 4,
+  "program_baseline": {
+    "name": "seaquest-rescue-and-oxygen-baseline-v1",
+    "guidance": "Choose one native action to earn game score in Seaquest. Control the player submarine. Leave the surface by moving down to engage in play; remaining at the surface without scoring is not success. Collect divers by contacting them, avoid enemy bodies and missiles, and fire toward enemies when useful. Oxygen is a displayed resource with raw level 0..64; it decreases underwater. Return to the surface before it is exhausted. Return collected divers to the surface; capacity is six. Do not treat oxygen or carried-diver readings as a precomputed action or reward. Use current positions and recent motion to balance progress with survival. Do not chase an enemy into immediate danger or continue diving when oxygen is nearly empty. Boxes are [x,y,width,height], x increases right and y increases down. UP means decreasing y and DOWN increasing y; left/right change x. FIRE can be combined with movement. History has raw-frame timestamps and RAM-slot IDs, not guaranteed object identities. Do not extrapolate across subtype changes, sudden jumps, missing objects or life losses. When object_state is unavailable during animation/end, positions are unknown; choose NOOP until active observations return. Act for four raw frames, then reconsider.",
+    "schema_version": "seaquest-action-choice-v1"
+  },
+  "rom_sha256": "fbc29f4678f69ac27fe46da298c8c22f98cba2a3e5491e6b308fd9bf68d2ee43",
+  "versions": {
+    "ale-py": "0.11.2",
+    "gymnasium": "1.3.0",
+    "numpy": "2.5.3"
+  },
+  "authorship": "Interactive coordinator proposals based on training evidence; zero isolated teachers",
+  "gate": "Paired controlled return: mean gain >=20 and no seed regression; both dev and final must pass",
+  "candidate_selection": "Highest training mean among complete rounds 2..8; earliest round breaks ties"
+}

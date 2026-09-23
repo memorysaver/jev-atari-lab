@@ -1,6 +1,7 @@
 """Audit every original Seaquest research response, action, frame and recorded video."""
 
 import argparse
+import hashlib
 import json
 import subprocess
 from collections import Counter
@@ -19,6 +20,11 @@ def verify(root, out):
     plan, report, budget = [read_json(root / f"{n}.json") for n in ("plan", "results", "budget")]
     assert report["plan_hash"] == digest(plan)
     assert budget["used"] <= budget["max_calls"] == MAX_CALLS
+    if "continuation_revision" in plan:
+        original_budget = read_json(root / "continuation" / "predecessor-budget.json")
+        assert budget["started_at"] == original_budget["started_at"]
+        assert budget["used"] >= original_budget["used"]
+        assert digest(original_budget) == plan["predecessor_budget_hash"]
     index, episodes, ledger, round_attempts = 0, [], [], Counter()
     for round_path in sorted(root.glob("round-[0-9][0-9]")):
         number = int(round_path.name.split("-")[1])
@@ -33,7 +39,26 @@ def verify(root, out):
             program = load_program(job["program"])
             assert program.hash == job["program_hash"] == manifest["program_hash"]
             assert manifest["program"] == job["program"] and manifest["seed"] == job["seed"]
-            assert manifest["source_revision"] == plan["source_revision"]
+            assert manifest["source_revision"] == round_plan["source_revision"]
+            assert manifest["source_revision"] in {
+                plan["source_revision"],
+                plan.get("continuation_revision"),
+            }
+            if (path / "continuation.json").exists():
+                continuation = read_json(path / "continuation.json")
+                assert continuation["source_revision"] == plan["continuation_revision"]
+                assert continuation["program_hash"] == program.hash
+                assert continuation["predecessor_manifest_hash"] == digest(manifest)
+                assert continuation["predecessor_summary_hash"] == digest(
+                    read_json(path / "predecessor-summary.json")
+                )
+                for name, record in continuation["predecessor_files"].items():
+                    target = path / ("predecessor-episode.mp4" if name == "episode.mp4" else name)
+                    assert (
+                        hashlib.sha256(target.read_bytes()[: record["bytes"]]).hexdigest()
+                        == record["sha256"]
+                    )
+                assert read_json(path / "continuation-replay.json")["status"] == "verified"
             assert manifest["model_transport"]["expected_response_model"] == PIN
             rows = [json.loads(s) for s in (path / "transitions.jsonl").read_text().splitlines()]
             trace = path / "model-exchanges.jsonl"

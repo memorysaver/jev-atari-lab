@@ -52,6 +52,7 @@ class JsonAPI:
         self.client = client or httpx.Client(timeout=60, follow_redirects=False)
         self.max_retries = max_retries
         self.retry_transport = retry_transport
+        self.retry_statuses = {429, 500, 502, 503, 504, 529}
         self.ledger: list[dict] = []
         self.trace_path: Path | None = None
 
@@ -92,7 +93,7 @@ class JsonAPI:
                 raise ModelError("Model transport failed; no action was executed") from None
             entry.update(status=response.status_code, elapsed_seconds=time.monotonic() - start)
             self.ledger.append(entry)
-            if response.status_code in {429, 500, 502, 503, 504, 529}:
+            if response.status_code in self.retry_statuses:
                 if attempt < self.max_retries:
                     self.record_exchange(entry, payload)
                     time.sleep(min(0.25 * 2**attempt, 1))

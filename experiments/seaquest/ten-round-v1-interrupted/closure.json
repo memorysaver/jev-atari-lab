@@ -1,0 +1,14 @@
+{
+  "status": "incomplete-technical-stop",
+  "completed_rounds": 3,
+  "stopped_round": 4,
+  "seed": 321,
+  "executed_model_decisions_in_stopped_episode": 76,
+  "http_attempts": 4632,
+  "failed_status_counts": {
+    "529": 1,
+    "520": 1
+  },
+  "reason": "HTTP 520 was outside the original retry set. The original root remains closed; a separately frozen continuation may inherit its remaining budget and recorded state.",
+  "further_calls_in_this_original_root": false
+}
