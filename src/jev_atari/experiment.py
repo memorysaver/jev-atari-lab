@@ -56,6 +56,8 @@ def play(
     }
     if hasattr(policy, "program"):
         manifest["question_program"] = policy.program.to_dict()
+    if evaluator is not None and hasattr(evaluator, "transport_manifest"):
+        manifest["model_transport"] = evaluator.transport_manifest
     write_json(out / "manifest.json", manifest)
     summary = {
         "status": "running",

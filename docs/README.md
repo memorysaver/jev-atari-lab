@@ -19,6 +19,9 @@ trajectories replayed; complete local evidence preserves the technical stop.
 
 ## Research map
 
+[OpenRouter migration](pong/openrouter-migration.md): successful one-request access
+check and a separately bounded playback pilot with explicit model identity pinning.
+
 The [criteria-edit teacher protocol](pong/criteria-teacher-protocol.md) planned three
 independent A/B searches, two rounds and sealed final evaluation within 60,000 Jev
 attempts. Execution stopped incomplete. The [study log](pong/criteria-teacher-log.md)

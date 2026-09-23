@@ -27,6 +27,7 @@ from jev_atari.online import (
     run_policy_suite,
     select_policy_candidate,
 )
+from jev_atari.openrouter import OpenRouterChoiceEvaluator
 from jev_atari.policies import HeuristicPolicy, RandomPolicy
 from jev_atari.program import DEFAULT_PROGRAM, QuestionProgram
 
@@ -67,9 +68,16 @@ def evaluator_from(args):
         or getattr(args, "primitive", "score") == "choice"
     )
     if choice:
-        if args.backend != "jev":
-            raise ValueError("Choice experiments require --backend jev; mocks only run in tests")
-        evaluator = ChoiceEvaluator(model=args.model, max_calls=args.max_api_calls)
+        if args.backend == "openrouter":
+            evaluator = OpenRouterChoiceEvaluator(
+                model=args.model,
+                expected_response_model=getattr(args, "expected_response_model", None),
+                max_calls=args.max_api_calls,
+            )
+        elif args.backend == "jev":
+            evaluator = ChoiceEvaluator(model=args.model, max_calls=args.max_api_calls)
+        else:
+            raise ValueError("Choice experiments require a live backend; mocks only run in tests")
         evaluator.api.trace_path = args.out / "model-exchanges.jsonl"
         return evaluator
     if args.backend == "mock":
@@ -120,6 +128,10 @@ def main() -> None:
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--decisions", type=int, default=1000)
     p.add_argument("--point-limit", type=int, help="Stop after this many scored/lost points")
+    p.add_argument(
+        "--backend", choices=["jev", "openrouter"], help="Transport for --policy jev-action"
+    )
+    p.add_argument("--expected-response-model", help="Required model identity pin for OpenRouter")
     p.add_argument("--video", action="store_true")
     p.add_argument("--out", type=Path, required=True)
     p.add_argument("--program", type=Path)
@@ -283,10 +295,15 @@ def main() -> None:
             if args.out:
                 write_json(args.out, result)
         elif args.command in {"play", "policy-suite"}:
+            transport = getattr(args, "backend", None)
+            if transport and args.policy != "jev-action":
+                raise ValueError("Explicit play --backend requires --policy jev-action")
+            if getattr(args, "expected_response_model", None) and transport != "openrouter":
+                raise ValueError("--expected-response-model requires --backend openrouter")
             if args.policy in {"jev", "jev-action", "mock"}:
                 if not args.max_api_calls:
                     raise ValueError("Model policies require --max-api-calls")
-                args.backend = "jev" if args.policy == "jev-action" else args.policy
+                args.backend = transport or ("jev" if args.policy == "jev-action" else args.policy)
                 evaluator = evaluator_from(args)
                 if getattr(args, "replay_prefix", None):
                     evaluator = ReplayPrefixEvaluator(evaluator, args.replay_prefix)

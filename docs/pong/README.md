@@ -15,6 +15,9 @@ Jev question execution. No new live study is launched by that document.
 
 ## Start here
 
+- [OpenRouter migration](openrouter-migration.md): a separate transport/access pilot;
+  historical direct-provider experiments remain closed.
+
 - [Relative-motion controls results](relative-motion-controls-results-2026-09-23.md):
   32 replayed local episodes, +1.5 mean gain over tracking with two seed regressions;
   zero model calls, no Jev improvement claim. [Protocol](relative-motion-controls-protocol.md).

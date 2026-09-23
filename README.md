@@ -142,6 +142,11 @@ adapters, startup behavior, and useful policy questions still need validation.
 
 ## Run Jev
 
+OpenRouter is also supported for Pong action-policy playback through its Decisions
+API. Use `--backend openrouter` with an explicit model ID and response-model pin;
+see the [migration and bounded pilot](docs/pong/openrouter-migration.md). Existing
+direct-provider studies retain their original protocol and endpoint.
+
 ### API key setup
 
 From the repository root, create a local `.env` from [`.env.example`](.env.example)
