@@ -14,3 +14,8 @@ animation/visibility limitation. No live Seaquest model call has been made.
 
 Seaquest is a new development game, not a held-out transfer evaluation. We do not
 carry a claim of Pong mastery or teacher-learning benefit into this experiment.
+
+[Observation v2 validation](observation-v2-results-2026-09-24.md) passed its frozen
+gate on four fresh training trajectories and raw-frame replays. A separate
+[fixed-question pilot protocol](fixed-question-pilot-protocol.md) now bounds the
+first paid Seaquest execution experiment; it has no teacher or learning claim.

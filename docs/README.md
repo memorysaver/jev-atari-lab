@@ -20,7 +20,9 @@ and the owner closed this Pong stage. [Local archive](../experiments/pong/candid
 ## Research map
 
 [Seaquest observation v2 protocol](seaquest/observation-v2-protocol.md) fixes animation
-availability and prospectively gates a future small Jev pilot on fresh training checks.
+availability; its [fresh validation passed](seaquest/observation-v2-results-2026-09-24.md).
+The [fixed-question pilot](seaquest/fixed-question-pilot-protocol.md) has a separate
+2,000-attempt budget and no teacher/learning claim.
 
 [Seaquest research](seaquest/README.md) has started with a bounded, zero-model-call
 observation/action calibration: [eight trajectories replayed](seaquest/calibration-results-2026-09-24.md),
