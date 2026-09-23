@@ -20,7 +20,8 @@ and the owner closed this Pong stage. [Local archive](../experiments/pong/candid
 ## Research map
 
 [Seaquest research](seaquest/README.md) has started with a bounded, zero-model-call
-observation/action calibration. The [selection rationale](next-atari-game-2026-09-23.md)
+observation/action calibration: [eight trajectories replayed](seaquest/calibration-results-2026-09-24.md),
+with oxygen checks passing and player-visibility limits retained. The [selection rationale](next-atari-game-2026-09-23.md)
 explains its proposed value; no Seaquest learning result is available.
 
 [OpenRouter migration](pong/openrouter-migration.md): one access request and all 100

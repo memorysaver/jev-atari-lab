@@ -22,7 +22,8 @@ and rejected A (-12.5); no final tests ran. All 12 trajectories, including the
 interrupted one, replayed and are preserved in a verified local archive.
 [Closure report](docs/pong/candidate-feedback-results-2026-09-24.md) ·
 [Evidence](experiments/pong/candidate-feedback-openrouter-v1/README.md) ·
-[Seaquest calibration](docs/seaquest/README.md).
+[Seaquest calibration](docs/seaquest/calibration-results-2026-09-24.md): eight local
+trajectories replayed with zero model calls; animation/visibility limits remain.
 
 **Previous teacher study — incomplete:** HTTP 402 stopped the criteria-edit study
 after 15,093 Jev attempts. Three rounds completed and all six evaluated proposals

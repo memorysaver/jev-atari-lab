@@ -1,0 +1,11 @@
+{
+  "kind": "seaquest-calibration-audit-v1",
+  "status": "verified",
+  "episodes": 8,
+  "plan_hash": "835fcf7df837ad5e00afb616a28d5beb77a64788f7d3caf4a3b6af4216e3c1d3",
+  "results_hash": "8e823e7762e780e2adc8f1caa51c5d91a65ec6d17ac7206759fe0a49896e9451",
+  "replay_frames": 45736,
+  "action_probe_frames": 3312,
+  "api_attempts": 0,
+  "scope": "Recorded action/raw-frame/observation replay and recomputed metrics; this does not establish full semantic correctness or learning."
+}

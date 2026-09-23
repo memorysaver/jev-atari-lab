@@ -49,3 +49,12 @@ The agent must start/resume games through legal actions. Compare matching protoc
 scores across games are not directly comparable.
 
 Source: [ALE environment reference](https://ale.farama.org/environments/).
+
+## Seaquest calibration update, 2026-09-24
+
+[Seaquest calibration](seaquest/calibration-results-2026-09-24.md) now has an
+experimental RAM mapping and eight locally replayed controls. Oxygen display
+checks passed; player animation/visibility and moving-object validation remain
+incomplete. The generic catalog still marks its semantic policy adapter as not
+implemented: this calibration helper is not yet a validated model-input adapter.
+No Seaquest live model or teacher result is available.

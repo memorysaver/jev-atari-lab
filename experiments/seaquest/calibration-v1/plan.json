@@ -1,0 +1,55 @@
+{
+  "kind": "seaquest-calibration-v1",
+  "source_revision": "c71c7b4938a98f61985c25cf24eb5bb4ecc9ae21",
+  "game": "ALE/Seaquest-v5",
+  "extractor": "seaquest-ram-calibration-v1",
+  "upstream": "99c874675df6b76a33a80b57776c123fbcd051af",
+  "seeds": [
+    300,
+    301
+  ],
+  "split": "train",
+  "policies": [
+    "noop",
+    "fire",
+    "random",
+    "scripted-sweep"
+  ],
+  "max_controlled_frames_per_episode": 8000,
+  "hold_frames": 4,
+  "sticky": 0.25,
+  "frameskip": 1,
+  "reset_noops": 0,
+  "automatic_fire": false,
+  "mode": 0,
+  "difficulty": 0,
+  "action_names": [
+    "NOOP",
+    "FIRE",
+    "UP",
+    "RIGHT",
+    "LEFT",
+    "DOWN",
+    "UPRIGHT",
+    "UPLEFT",
+    "DOWNRIGHT",
+    "DOWNLEFT",
+    "UPFIRE",
+    "RIGHTFIRE",
+    "LEFTFIRE",
+    "DOWNFIRE",
+    "UPRIGHTFIRE",
+    "UPLEFTFIRE",
+    "DOWNRIGHTFIRE",
+    "DOWNLEFTFIRE"
+  ],
+  "rom_sha256": "fbc29f4678f69ac27fe46da298c8c22f98cba2a3e5491e6b308fd9bf68d2ee43",
+  "versions": {
+    "ale-py": "0.11.2",
+    "gymnasium": "1.3.0",
+    "numpy": "2.5.3"
+  },
+  "max_api_attempts": 0,
+  "action_probe_frames": 3312,
+  "limits": "Training-only calibration; no learned strategy or validated event-cause detector."
+}

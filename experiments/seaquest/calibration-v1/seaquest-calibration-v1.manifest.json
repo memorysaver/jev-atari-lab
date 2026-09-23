@@ -1,0 +1,284 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "seaquest-calibration-v1.tar.gz",
+  "sha256": "af8efa227b3cbfca0e9aa0a85b98cbaf0763c470b32cb4b30da158b8ee88b9b0",
+  "file_count": 55,
+  "uncompressed_bytes": 97813457,
+  "files": [
+    {
+      "path": "calibration-v1/action-effects.json",
+      "bytes": 36905,
+      "sha256": "2279619bebfb57aa6b980ca0c3dbdc9daa9cdcd6d17192b752511e91ba90537b"
+    },
+    {
+      "path": "calibration-v1/fire/seed-300/episode.mp4",
+      "bytes": 646015,
+      "sha256": "84b5ab6faf6058728c8b98f78c9ee7e882e983cbd315ae30d2ac82f8a4a15f0b"
+    },
+    {
+      "path": "calibration-v1/fire/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/fire/seed-300/summary.json",
+      "bytes": 901,
+      "sha256": "df3a13e5cd7f56489567520bc04beb039a1a18cba720b52fa9fdd89ed91ae3c8"
+    },
+    {
+      "path": "calibration-v1/fire/seed-300/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "63e203ac4d25381098da11a1e9c81b7ca97838ccd65b7a1bdd2a1c0bca4b5d33"
+    },
+    {
+      "path": "calibration-v1/fire/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/fire/seed-301/summary.json",
+      "bytes": 900,
+      "sha256": "eb7e87098e9b8b2ebb374a39abce64aa1cd5fe0727345ea3bf8073fc3ea57a7e"
+    },
+    {
+      "path": "calibration-v1/fire/seed-301/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "63e203ac4d25381098da11a1e9c81b7ca97838ccd65b7a1bdd2a1c0bca4b5d33"
+    },
+    {
+      "path": "calibration-v1/noop/seed-300/episode.mp4",
+      "bytes": 646015,
+      "sha256": "84b5ab6faf6058728c8b98f78c9ee7e882e983cbd315ae30d2ac82f8a4a15f0b"
+    },
+    {
+      "path": "calibration-v1/noop/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/noop/seed-300/summary.json",
+      "bytes": 901,
+      "sha256": "ac255d7c40cb5b7eb8c924233a8e5a4c43d3cd76afb086637a2e678de9c73576"
+    },
+    {
+      "path": "calibration-v1/noop/seed-300/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "4c187615bf450e2f3aef3decedaa114bf30212879883bedee3415dd569b6213c"
+    },
+    {
+      "path": "calibration-v1/noop/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/noop/seed-301/summary.json",
+      "bytes": 901,
+      "sha256": "c48464199e98d6537c14315894106fa50b3b33acd16ef8e0155ebd9302cd1ed5"
+    },
+    {
+      "path": "calibration-v1/noop/seed-301/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "4c187615bf450e2f3aef3decedaa114bf30212879883bedee3415dd569b6213c"
+    },
+    {
+      "path": "calibration-v1/plan.json",
+      "bytes": 1180,
+      "sha256": "aecb7da795c2a85fc321021ec4e4d2c36b36d2d8839c83238fc5ca1488d8c9f2"
+    },
+    {
+      "path": "calibration-v1/random/seed-300/episode.mp4",
+      "bytes": 102774,
+      "sha256": "fddf8568c188f101a897fa4496dd2d27a77832eab34fddb239ddb14ea313b708"
+    },
+    {
+      "path": "calibration-v1/random/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/random/seed-300/summary.json",
+      "bytes": 1452,
+      "sha256": "d77c1aed622586d45db28a4be1fd776d0e22ab70e90333b666987c94b6273601"
+    },
+    {
+      "path": "calibration-v1/random/seed-300/transitions.jsonl",
+      "bytes": 1304077,
+      "sha256": "e4c2b76b9d409b5aad901f03a577e1bb3748235a29fb9a62d22e9507aa293b0c"
+    },
+    {
+      "path": "calibration-v1/random/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/random/seed-301/summary.json",
+      "bytes": 1462,
+      "sha256": "180066ed2c2df5cbb999e613bed2e39485358bfe8ddfca0fca02408aecef7140"
+    },
+    {
+      "path": "calibration-v1/random/seed-301/transitions.jsonl",
+      "bytes": 2519386,
+      "sha256": "bed8efe3490129bc4d840fdbdf8bcc2838af580c2bad668d2ca681a2080fe283"
+    },
+    {
+      "path": "calibration-v1/replay/fire/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/fire/seed-300/summary.json",
+      "bytes": 901,
+      "sha256": "1c130e7ff39f20f11d0b808317af55cf27ad76d01084694410bf3bf38685a02e"
+    },
+    {
+      "path": "calibration-v1/replay/fire/seed-300/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "63e203ac4d25381098da11a1e9c81b7ca97838ccd65b7a1bdd2a1c0bca4b5d33"
+    },
+    {
+      "path": "calibration-v1/replay/fire/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/fire/seed-301/summary.json",
+      "bytes": 901,
+      "sha256": "49e54301333973624dfad9f97e0b17bf748c4881bcb3ff705baf9b0b1fa495b6"
+    },
+    {
+      "path": "calibration-v1/replay/fire/seed-301/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "63e203ac4d25381098da11a1e9c81b7ca97838ccd65b7a1bdd2a1c0bca4b5d33"
+    },
+    {
+      "path": "calibration-v1/replay/noop/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/noop/seed-300/summary.json",
+      "bytes": 901,
+      "sha256": "6322f0571dba46f4e2fc0684ae234ee19a63470daf093251453bc0aa1832c889"
+    },
+    {
+      "path": "calibration-v1/replay/noop/seed-300/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "4c187615bf450e2f3aef3decedaa114bf30212879883bedee3415dd569b6213c"
+    },
+    {
+      "path": "calibration-v1/replay/noop/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/noop/seed-301/summary.json",
+      "bytes": 901,
+      "sha256": "0429544398eacaa5580f523500ffe0278c56b47cf233df6e033604910e762c43"
+    },
+    {
+      "path": "calibration-v1/replay/noop/seed-301/transitions.jsonl",
+      "bytes": 8527814,
+      "sha256": "4c187615bf450e2f3aef3decedaa114bf30212879883bedee3415dd569b6213c"
+    },
+    {
+      "path": "calibration-v1/replay/random/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/random/seed-300/summary.json",
+      "bytes": 1453,
+      "sha256": "1f9877d13b3855828ea06364b9827460bccf8b2c278f48ffb0a82cd97f8a05b3"
+    },
+    {
+      "path": "calibration-v1/replay/random/seed-300/transitions.jsonl",
+      "bytes": 1304077,
+      "sha256": "e4c2b76b9d409b5aad901f03a577e1bb3748235a29fb9a62d22e9507aa293b0c"
+    },
+    {
+      "path": "calibration-v1/replay/random/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/random/seed-301/summary.json",
+      "bytes": 1462,
+      "sha256": "3fb8f3326b1cba60c8cd405defb01d3be20285ac8b4ca2a4cdcb9dff191805c5"
+    },
+    {
+      "path": "calibration-v1/replay/random/seed-301/transitions.jsonl",
+      "bytes": 2519386,
+      "sha256": "bed8efe3490129bc4d840fdbdf8bcc2838af580c2bad668d2ca681a2080fe283"
+    },
+    {
+      "path": "calibration-v1/replay/scripted-sweep/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/scripted-sweep/seed-300/summary.json",
+      "bytes": 1268,
+      "sha256": "c7affcb8a944553fe2852eab3e8458807c492ac8c1b485bc4518186c83b5f7af"
+    },
+    {
+      "path": "calibration-v1/replay/scripted-sweep/seed-300/transitions.jsonl",
+      "bytes": 5943827,
+      "sha256": "d6ef967e6e2c6d2715e32f4d1fadf4e7e5484bb11ae41f0c5c2b336922b4a98c"
+    },
+    {
+      "path": "calibration-v1/replay/scripted-sweep/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/replay/scripted-sweep/seed-301/summary.json",
+      "bytes": 1264,
+      "sha256": "401eacf13b5652ffe052567ea20811aef8b60c45d0a8b3dd03b51fedee494ca2"
+    },
+    {
+      "path": "calibration-v1/replay/scripted-sweep/seed-301/transitions.jsonl",
+      "bytes": 4058657,
+      "sha256": "cd48d7993e6539cf7243c8fff643b6a37041d32eee0f3afaec5dfbbfefcfd965"
+    },
+    {
+      "path": "calibration-v1/results.json",
+      "bytes": 11901,
+      "sha256": "bc22a230fae51f32092fcf48b0e706b689914f9226b4718bc857556ccb96c3a7"
+    },
+    {
+      "path": "calibration-v1/scripted-sweep/seed-300/episode.mp4",
+      "bytes": 468305,
+      "sha256": "95d7a854de13282fc3a64296f87a9cd9fc33ffc0727398d5909b4f22b20e13e5"
+    },
+    {
+      "path": "calibration-v1/scripted-sweep/seed-300/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/scripted-sweep/seed-300/summary.json",
+      "bytes": 1268,
+      "sha256": "bae97593076ca151b3d675b52f1621d05cc9bc33889535525095cc4b29547fb3"
+    },
+    {
+      "path": "calibration-v1/scripted-sweep/seed-300/transitions.jsonl",
+      "bytes": 5943827,
+      "sha256": "d6ef967e6e2c6d2715e32f4d1fadf4e7e5484bb11ae41f0c5c2b336922b4a98c"
+    },
+    {
+      "path": "calibration-v1/scripted-sweep/seed-301/initial.json",
+      "bytes": 491,
+      "sha256": "00b295fb1d6e42c19785a1b2a89c7563d449dc5b132bbc23503cca9d9dcfa14e"
+    },
+    {
+      "path": "calibration-v1/scripted-sweep/seed-301/summary.json",
+      "bytes": 1264,
+      "sha256": "70dd42f8d5f4302248a412cdbc351ed4e472d32b86828733a6864772fb477dae"
+    },
+    {
+      "path": "calibration-v1/scripted-sweep/seed-301/transitions.jsonl",
+      "bytes": 4058657,
+      "sha256": "cd48d7993e6539cf7243c8fff643b6a37041d32eee0f3afaec5dfbbfefcfd965"
+    }
+  ]
+}

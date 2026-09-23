@@ -1,0 +1,1790 @@
+[
+  {
+    "action": 0,
+    "name": "NOOP",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      0,
+      0
+    ]
+  },
+  {
+    "action": 1,
+    "name": "FIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      0,
+      0
+    ]
+  },
+  {
+    "action": 2,
+    "name": "UP",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            70,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      0,
+      -16
+    ]
+  },
+  {
+    "action": 3,
+    "name": "RIGHT",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            92,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      16,
+      0
+    ]
+  },
+  {
+    "action": 4,
+    "name": "LEFT",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            60,
+            86,
+            16,
+            11
+          ],
+          "facing": "left"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      -16,
+      0
+    ]
+  },
+  {
+    "action": 5,
+    "name": "DOWN",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            102,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      0,
+      16
+    ]
+  },
+  {
+    "action": 6,
+    "name": "UPRIGHT",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            92,
+            70,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      16,
+      -16
+    ]
+  },
+  {
+    "action": 7,
+    "name": "UPLEFT",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            60,
+            70,
+            16,
+            11
+          ],
+          "facing": "left"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      -16,
+      -16
+    ]
+  },
+  {
+    "action": 8,
+    "name": "DOWNRIGHT",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            92,
+            102,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      16,
+      16
+    ]
+  },
+  {
+    "action": 9,
+    "name": "DOWNLEFT",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            60,
+            102,
+            16,
+            11
+          ],
+          "facing": "left"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      -16,
+      16
+    ]
+  },
+  {
+    "action": 10,
+    "name": "UPFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            70,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      0,
+      -16
+    ]
+  },
+  {
+    "action": 11,
+    "name": "RIGHTFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            92,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "player-missile",
+          "kind": "player_missile",
+          "bbox": [
+            105,
+            93,
+            8,
+            1
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      16,
+      0
+    ]
+  },
+  {
+    "action": 12,
+    "name": "LEFTFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            60,
+            86,
+            16,
+            11
+          ],
+          "facing": "left"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "player-missile",
+          "kind": "player_missile",
+          "bbox": [
+            3,
+            93,
+            8,
+            1
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      -16,
+      0
+    ]
+  },
+  {
+    "action": 13,
+    "name": "DOWNFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            102,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      0,
+      16
+    ]
+  },
+  {
+    "action": 14,
+    "name": "UPRIGHTFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            92,
+            70,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "player-missile",
+          "kind": "player_missile",
+          "bbox": [
+            105,
+            77,
+            8,
+            1
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      16,
+      -16
+    ]
+  },
+  {
+    "action": 15,
+    "name": "UPLEFTFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            60,
+            70,
+            16,
+            11
+          ],
+          "facing": "left"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "player-missile",
+          "kind": "player_missile",
+          "bbox": [
+            3,
+            77,
+            8,
+            1
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      -16,
+      -16
+    ]
+  },
+  {
+    "action": 16,
+    "name": "DOWNRIGHTFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            92,
+            102,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "player-missile",
+          "kind": "player_missile",
+          "bbox": [
+            105,
+            109,
+            8,
+            1
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      16,
+      16
+    ]
+  },
+  {
+    "action": 17,
+    "name": "DOWNLEFTFIRE",
+    "before": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            76,
+            86,
+            16,
+            11
+          ],
+          "facing": "right"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            7,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            7,
+            69,
+            8,
+            11
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "after": {
+      "schema_version": "seaquest-ram-calibration-v1",
+      "game": "ALE/Seaquest-v5",
+      "objects": [
+        {
+          "id": "player",
+          "kind": "player",
+          "bbox": [
+            60,
+            102,
+            16,
+            11
+          ],
+          "facing": "left"
+        },
+        {
+          "id": "lane-item-2",
+          "kind": "diver",
+          "bbox": [
+            10,
+            93,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "lane-item-3",
+          "kind": "diver",
+          "bbox": [
+            10,
+            69,
+            8,
+            11
+          ]
+        },
+        {
+          "id": "player-missile",
+          "kind": "player_missile",
+          "bbox": [
+            3,
+            109,
+            8,
+            1
+          ]
+        }
+      ],
+      "oxygen_raw": 63,
+      "oxygen_bar_pixels": 63,
+      "carried_divers_raw": 0,
+      "carried_divers": 0,
+      "reserve_lives_raw": 3,
+      "player_animation_raw": 0,
+      "validation": "experimental; calibrated fields and coverage reported separately"
+    },
+    "player_delta_xy": [
+      -16,
+      16
+    ]
+  }
+]

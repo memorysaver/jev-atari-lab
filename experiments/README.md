@@ -176,3 +176,7 @@ no final test ran. Local evidence only; no remote preservation is claimed.
 access check and 100 successful playback requests, with model identity pinned and
 400 frames replayed. Records disclose the supplementary plan-writer failure; the
 source/schedule were frozen before calls. No policy-improvement or final-test claim.
+
+2026-09-24: [Seaquest calibration v1](seaquest/calibration-v1/README.md) preserves
+eight local control trajectories, raw-frame replays, four videos and retained
+observation disagreements. No model calls or learning claim.
