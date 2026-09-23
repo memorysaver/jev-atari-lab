@@ -1,10 +1,17 @@
 # Experiment journal
 
+2026-09-24: [Seaquest fixed-question pilot](seaquest/fixed-question-pilot-v1/README.md)
+preserves two completed 80-point games, all 1,108 original API exchanges and videos.
+All actions fit DOWN/NOOP; no teacher or learning claim. The
+[observation v2 validation](seaquest/observation-check-v2/README.md) and
+[matched local controls](seaquest/pilot-v1-controls/README.md) used zero model calls.
+All three local archives were restored and replayed; no remote retrieval claim.
+
 2026-09-24: [Pong OpenRouter closure](pong/candidate-feedback-openrouter-v1/README.md)
 preserves 12 verified trajectories and all original evidence from the incomplete
 candidate-feedback study. Its checksummed local LFS archive was restored and audited.
 
-Latest: [teacher-study-v1](pong/teacher-study-v1/README.md) preserves one completed teacher round,
+Earlier: [teacher-study-v1](pong/teacher-study-v1/README.md) preserves one completed teacher round,
 12 replay-verified episodes and the failed second-round teacher call. Neither
 candidate was promoted; final tests were not run.
 

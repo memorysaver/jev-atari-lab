@@ -12,7 +12,12 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Latest: [Pong closure](pong/candidate-feedback-results-2026-09-24.md).
+Latest: [Seaquest fixed-question pilot](seaquest/fixed-question-pilot-results-2026-09-24.md)
+completed two 80-point games, but all 1,108 actions fit a DOWN/NOOP rule. Original
+and restored evidence replayed; cost US$0.119, zero teacher calls. The next research
+question is state-dependent action criteria and effective state diversity.
+
+[Pong closure](pong/candidate-feedback-results-2026-09-24.md).
 The OpenRouter study stopped on HTTP 502 in round two; one development round
 accepted B and rejected A. All 12 trajectories replayed, no final tests ran,
 and the owner closed this Pong stage. [Local archive](../experiments/pong/candidate-feedback-openrouter-v1/README.md).
@@ -21,8 +26,8 @@ and the owner closed this Pong stage. [Local archive](../experiments/pong/candid
 
 [Seaquest observation v2 protocol](seaquest/observation-v2-protocol.md) fixes animation
 availability; its [fresh validation passed](seaquest/observation-v2-results-2026-09-24.md).
-The [fixed-question pilot](seaquest/fixed-question-pilot-protocol.md) has a separate
-2,000-attempt budget and no teacher/learning claim.
+The [fixed-question pilot](seaquest/fixed-question-pilot-protocol.md) completed with
+1,108 of its 2,000 permitted attempts. Unused capacity is closed, with no teacher/learning claim.
 
 [Seaquest research](seaquest/README.md) has started with a bounded, zero-model-call
 observation/action calibration: [eight trajectories replayed](seaquest/calibration-results-2026-09-24.md),

@@ -1,0 +1,41 @@
+{
+  "kind": "seaquest-fixed-question-pilot-v1",
+  "source_revision": "cce2c5f57685bcfc99f203c2aa8476ef344a6c22",
+  "validation_results_hash": "31eadff49c7180954dd3701ac9861ce775ef7af6f55177d326963d4ab143989c",
+  "validation_root": "artifacts/seaquest/observation-check-v2",
+  "seeds": [
+    310,
+    311
+  ],
+  "split": "train",
+  "decisions_per_episode": 800,
+  "max_attempts": 2000,
+  "max_retries_per_decision": 2,
+  "live_seconds": 7200,
+  "program": {
+    "name": "seaquest-rescue-and-oxygen-baseline-v1",
+    "guidance": "Choose one native action to earn game score in Seaquest. Control the player submarine. Leave the surface by moving down to engage in play; remaining at the surface without scoring is not success. Collect divers by contacting them, avoid enemy bodies and missiles, and fire toward enemies when useful. Oxygen is a displayed resource with raw level 0..64; it decreases underwater. Return to the surface before it is exhausted. Return collected divers to the surface; capacity is six. Do not treat oxygen or carried-diver readings as a precomputed action or reward. Use current positions and recent motion to balance progress with survival. Do not chase an enemy into immediate danger or continue diving when oxygen is nearly empty. Boxes are [x,y,width,height], x increases right and y increases down. UP means decreasing y and DOWN increasing y; left/right change x. FIRE can be combined with movement. History has raw-frame timestamps and RAM-slot IDs, not guaranteed object identities. Do not extrapolate across subtype changes, sudden jumps, missing objects or life losses. When object_state is unavailable during animation/end, positions are unknown; choose NOOP until active observations return. Act for four raw frames, then reconsider.",
+    "schema_version": "seaquest-action-choice-v1"
+  },
+  "program_hash": "d76d597a229e8fc4ac82076ee29bddbe0cf087280d7fa29cac9aec37cf23a66b",
+  "model": "~typesafe/jev-latest",
+  "response_model": "typesafe/jev-1.13-20260917",
+  "game": "ALE/Seaquest-v5",
+  "schema": "seaquest-objects-v2",
+  "frameskip": 1,
+  "hold_frames": 4,
+  "sticky": 0.25,
+  "mode": 0,
+  "difficulty": 0,
+  "reset_noops": 0,
+  "automatic_fire": false,
+  "full_action_space": false,
+  "rom_sha256": "fbc29f4678f69ac27fe46da298c8c22f98cba2a3e5491e6b308fd9bf68d2ee43",
+  "versions": {
+    "ale-py": "0.11.2",
+    "gymnasium": "1.3.0",
+    "numpy": "2.5.3"
+  },
+  "teacher_invocations": 0,
+  "origin": "Coordinator-authored fixed instrumentation baseline; not learned."
+}

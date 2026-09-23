@@ -1,0 +1,84 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "seaquest-fixed-question-pilot-v1.tar.gz",
+  "sha256": "9c4110a807b49d48c317ee94ce6b2603134c207c85ed3af3afbf21090fd05651",
+  "file_count": 15,
+  "uncompressed_bytes": 19326546,
+  "files": [
+    {
+      "path": "fixed-question-pilot-v1/budget.json",
+      "bytes": 99,
+      "sha256": "83f2d9d30b684245c9dd4c319c952229403e730458468b41cd4336853aa6fb62"
+    },
+    {
+      "path": "fixed-question-pilot-v1/plan.json",
+      "bytes": 2513,
+      "sha256": "9cafec409bb565c7c32801ac89111db4a31c42e957adaf6db46cb82dd1bde09f"
+    },
+    {
+      "path": "fixed-question-pilot-v1/results.json",
+      "bytes": 1106,
+      "sha256": "683eabe0a2a20f23711995e4dc5d301aa7f13b99adb8726d25ff97fb3185336a"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-310/api-ledger.json",
+      "bytes": 161120,
+      "sha256": "b40c3b6a21e9b43e073f7389fe6528dd7d38c2f4e95379d55819b8d618696127"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-310/episode.mp4",
+      "bytes": 176089,
+      "sha256": "ece19dbe77afa04353aae18fcb25dfe0c61f366b9de34c32abea0736a30f4ffd"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-310/manifest.json",
+      "bytes": 2273,
+      "sha256": "3fab0ef9f90dcd3f35706620e3f571de3986da8fe5a61ec178dd13191ad40784"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-310/model-exchanges.jsonl",
+      "bytes": 4035448,
+      "sha256": "ddde70287fd20b7edc599d154a60824aa51a98f267c370fe318de872421890b3"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-310/summary.json",
+      "bytes": 362,
+      "sha256": "43b637427134559ae4387b2e8b7e78a5aaae8892c8f51804578eaa2f33755fd5"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-310/transitions.jsonl",
+      "bytes": 5287298,
+      "sha256": "3c63f05cc7121eadfa00a03b0bc11a038c5dbf913cadee86badc2619e2eb20f6"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-311/api-ledger.json",
+      "bytes": 161131,
+      "sha256": "ef5c52497be12617ee7294352bd0210b60c3da485e0a4b01e3073d8ba4424896"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-311/episode.mp4",
+      "bytes": 176089,
+      "sha256": "ece19dbe77afa04353aae18fcb25dfe0c61f366b9de34c32abea0736a30f4ffd"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-311/manifest.json",
+      "bytes": 2273,
+      "sha256": "aee21fa1c446def1403340bee5d8cf64c67913dc59c2df6feba1515c3c255659"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-311/model-exchanges.jsonl",
+      "bytes": 4035244,
+      "sha256": "48d39222531028b74b774368d5eb150625f77a344ed86d19de7a693721c0fe52"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-311/summary.json",
+      "bytes": 362,
+      "sha256": "3e7a6bf227112909e5f8adfbadbb64aced55c79f79459b1ea674ea49376102f3"
+    },
+    {
+      "path": "fixed-question-pilot-v1/seed-311/transitions.jsonl",
+      "bytes": 5285139,
+      "sha256": "d314b8d6e1a8100ac0030b6ec54cad931df96dc0082190a5cf5d5d0d32417b49"
+    }
+  ]
+}

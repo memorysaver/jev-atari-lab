@@ -1,0 +1,33 @@
+{
+  "status": "verified",
+  "pilot_status": "complete",
+  "episodes": [
+    {
+      "seed": 310,
+      "status": "complete",
+      "replay": {
+        "status": "verified",
+        "decisions": 554,
+        "raw_frames": 2213,
+        "api_attempts": 0,
+        "summary_hash": "cc72a93d214f86d459e481c4754239dbbcd30e6216661fed2f300977af332ef7"
+      }
+    },
+    {
+      "seed": 311,
+      "status": "complete",
+      "replay": {
+        "status": "verified",
+        "decisions": 554,
+        "raw_frames": 2213,
+        "api_attempts": 0,
+        "summary_hash": "975fafe3c1a48e91d5bea8efbea7b26f2404c1e988961285619d60891c5adb9e"
+      }
+    }
+  ],
+  "plan_hash": "915d841aa096377d51f76ec36b2092fc03a1b6ab1a61730e0b54ed4e99814933",
+  "report_hash": "fb525504dfcd99797b0fe6c1c3201efe51c1a6cefc0c27795884806edfa3cc04",
+  "costs_hash": "f55c676bf26d382015e0f11a2847f51c15f7c5d9f752e08d848f15d487ffeab1",
+  "audit_api_attempts": 0,
+  "scope": "Original requests/responses, decoded actions and raw-frame replay."
+}

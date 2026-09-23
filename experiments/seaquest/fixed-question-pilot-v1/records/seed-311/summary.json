@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "seed": 311,
+  "decisions": 554,
+  "frames": 2213,
+  "reward": 80.0,
+  "life_losses": 4,
+  "terminated": true,
+  "truncated": false,
+  "active_underwater_decisions": 335,
+  "max_carried_divers": 1,
+  "end_reason": "native_termination",
+  "wall_seconds": 171.11505401099566,
+  "api_attempts": 554,
+  "reported_cost_usd": 0.059376744
+}

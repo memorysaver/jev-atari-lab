@@ -31,3 +31,7 @@ Returns were 120/80 for random and 120/120 for sweep; all four ended natively.
 These are training calibration outcomes, not learned-policy improvements.
 The [fixed-question pilot](fixed-question-pilot-protocol.md) is separately frozen
 before any paid access and retains the observation limitations.
+
+[Reviewed evidence](../../experiments/seaquest/observation-check-v2/README.md)
+contains a checksummed local archive and independent restored replay verifications.
+The restoration audit adds a separate 12,460 emulator frames and zero API calls.

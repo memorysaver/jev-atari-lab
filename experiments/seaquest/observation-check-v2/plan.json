@@ -1,0 +1,22 @@
+{
+  "kind": "seaquest-observation-check-v2",
+  "source_revision": "680f303232d00cf0491fb18017a2f0079ec09c5c",
+  "seeds": [
+    302,
+    303
+  ],
+  "policies": [
+    "random",
+    "sweep"
+  ],
+  "frames": 8000,
+  "schema": "seaquest-objects-v2",
+  "versions": {
+    "ale-py": "0.11.2",
+    "gymnasium": "1.3.0",
+    "numpy": "2.5.3"
+  },
+  "rom_sha256": "fbc29f4678f69ac27fe46da298c8c22f98cba2a3e5491e6b308fd9bf68d2ee43",
+  "api_attempts": 0,
+  "gate": "oxygen 100%; player >=1000 observations and >=99% color support; shark/diver/player_missile each >=20 observations and >=95% color support. Other unobserved object classes remain unvalidated."
+}

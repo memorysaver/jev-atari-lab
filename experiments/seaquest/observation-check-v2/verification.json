@@ -1,0 +1,36 @@
+{
+  "status": "verified",
+  "episodes": 4,
+  "replay_frames": 12460,
+  "checks": [
+    {
+      "status": "verified",
+      "decisions": 639,
+      "raw_frames": 2553,
+      "api_attempts": 0,
+      "summary_hash": "a5ac682c16799f140ca728ff88cc28c4156112a4d14480724f5f777df35abc01"
+    },
+    {
+      "status": "verified",
+      "decisions": 471,
+      "raw_frames": 1881,
+      "api_attempts": 0,
+      "summary_hash": "c6c3976768be0c394fc26d63a2e982631528b1b43a224777d3e9b53d0796e177"
+    },
+    {
+      "status": "verified",
+      "decisions": 1004,
+      "raw_frames": 4013,
+      "api_attempts": 0,
+      "summary_hash": "b8ffe3498b51305f0b91c5461eac73000ef268c71ddf61da2a5e6734ca48e4c7"
+    },
+    {
+      "status": "verified",
+      "decisions": 1004,
+      "raw_frames": 4013,
+      "api_attempts": 0,
+      "summary_hash": "045f03749dcde84f1338af2fb8b3f26f5e5b3452010e3a43b459d390c627fe74"
+    }
+  ],
+  "api_attempts": 0
+}

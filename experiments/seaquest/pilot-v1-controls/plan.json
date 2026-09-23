@@ -1,0 +1,17 @@
+{
+  "kind": "seaquest-pilot-v1-matched-controls",
+  "source_revision": "cce2c5f57685bcfc99f203c2aa8476ef344a6c22",
+  "seeds": [
+    310,
+    311
+  ],
+  "policies": [
+    "random",
+    "scripted-sweep"
+  ],
+  "frames": 3200,
+  "sticky": 0.25,
+  "hold": 4,
+  "reset_noops": 0,
+  "api_attempts": 0
+}

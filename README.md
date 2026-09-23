@@ -22,8 +22,11 @@ and rejected A (-12.5); no final tests ran. All 12 trajectories, including the
 interrupted one, replayed and are preserved in a verified local archive.
 [Closure report](docs/pong/candidate-feedback-results-2026-09-24.md) ·
 [Evidence](experiments/pong/candidate-feedback-openrouter-v1/README.md) ·
-[Seaquest calibration](docs/seaquest/calibration-results-2026-09-24.md): eight local
-trajectories replayed with zero model calls; animation/visibility limits remain.
+[Seaquest first Jev pilot](docs/seaquest/fixed-question-pilot-results-2026-09-24.md):
+two completed trajectories scored 80 each, but all 1,108 decisions fit DOWN when
+objects are active and NOOP otherwise. Observation v2 passed its bounded validation;
+all pilot/control trajectories and restored archives replayed. Cost US$0.119, zero
+teacher calls. No strategy improvement or learning benefit is established.
 
 **Previous teacher study — incomplete:** HTTP 402 stopped the criteria-edit study
 after 15,093 Jev attempts. Three rounds completed and all six evaluated proposals
@@ -87,7 +90,7 @@ retains all six actions and reports the full follow-up, including a transport fa
 
 | Track | What Jev predicts | Action selection | Current scope |
 | --- | --- | --- | --- |
-| **Direct policy** | One Choice question over available actions | Highest action probability | Pong objects; experimental raw RAM for other games |
+| **Direct policy** | One Choice question over available actions | Highest action probability | Pong objects; bounded Seaquest object pilot; experimental raw RAM elsewhere |
 | **Value-based** | Each action's first scoring outcome within 240 raw frames | `P(gain) - P(loss)`, then argmax | Pong with fixed heuristic continuation |
 
 The videos use **direct policy**, not the 240-frame critic. The candidate question

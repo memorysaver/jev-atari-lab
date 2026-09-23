@@ -50,3 +50,18 @@ measured token/API budgets. Use fresh own-candidate experience and a no-feedback
 control; do not confuse sequential edits with independent optimizer replications.
 Per-frame checks are correlated instrumentation observations, not independent
 samples of policy skill. Raw scores are not directly comparable to Pong's scores.
+
+## Subsequent observation v2 and fixed-question pilot
+
+The preceding v1 profile records the initial calibration contract. The separate
+[observation v2 protocol](observation-v2-protocol.md) adds explicit animation/end
+unavailability and three-snapshot object history; its bounded pixel-support gate
+[passed](observation-v2-results-2026-09-24.md). This does not validate exact object
+identity, box shape/recall or cause-of-death semantics.
+
+The [fixed-question pilot protocol](fixed-question-pilot-protocol.md) adopted a
+3,200-frame native-capped return and explicit transport/model pin for two training
+seeds. The [completed result](fixed-question-pilot-results-2026-09-24.md) records
+80 points per seed with collapsed DOWN/NOOP behavior. It is a dedicated pilot;
+the generic CLI still exposes raw RAM for Seaquest. No teacher endpoint, mastery
+criterion or final evaluation has been adopted.

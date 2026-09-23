@@ -1,0 +1,79 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "seaquest-observation-check-v2.tar.gz",
+  "sha256": "b76e3cbb5b4f73be1dd82eb9981d87e334465a21b72fcefbc3d9de41afbe9139",
+  "file_count": 14,
+  "uncompressed_bytes": 25753653,
+  "files": [
+    {
+      "path": "observation-check-v2/plan.json",
+      "bytes": 648,
+      "sha256": "89601fdf72ee04602466efb092f9fb303419b611886efb829a5900929e6728e2"
+    },
+    {
+      "path": "observation-check-v2/random/seed-302/summary.json",
+      "bytes": 443,
+      "sha256": "25a4aa809886cdf02ac03b4806e177fc468f22b9491cb308d5895c47dd6ca33e"
+    },
+    {
+      "path": "observation-check-v2/random/seed-302/transitions.jsonl",
+      "bytes": 5058414,
+      "sha256": "a92affa81e6621414a60ef6c8a2a081fac35b7ef220685f2128be9cb90cc3894"
+    },
+    {
+      "path": "observation-check-v2/random/seed-303/summary.json",
+      "bytes": 442,
+      "sha256": "1fb36354b20f415eda21b62636c7ad461cd0908c48585806947e0b4d3e069570"
+    },
+    {
+      "path": "observation-check-v2/random/seed-303/transitions.jsonl",
+      "bytes": 3684116,
+      "sha256": "6aa3675913de1c336971e70e2f3f8bc4807630787e1d6376e614688bc2220488"
+    },
+    {
+      "path": "observation-check-v2/replay/random/seed-302/verification.json",
+      "bytes": 176,
+      "sha256": "a9265dd4a40f34ad5406c3c29ef50c56b999c5f537a9acc017aac3947729c81e"
+    },
+    {
+      "path": "observation-check-v2/replay/random/seed-303/verification.json",
+      "bytes": 176,
+      "sha256": "645cf590568d49ea77c46032d48b1b6e1ce61e593c064e10a1efef16b3112428"
+    },
+    {
+      "path": "observation-check-v2/replay/sweep/seed-302/verification.json",
+      "bytes": 177,
+      "sha256": "4ae591390d9bff0d5c9ff257fd6c23552afcc359efea593aed8a7109ee88883a"
+    },
+    {
+      "path": "observation-check-v2/replay/sweep/seed-303/verification.json",
+      "bytes": 177,
+      "sha256": "a4b80d62ea3fa733787c150ffb1e2fcf9cdb3b799f1ba4b1585226f382a8a6b0"
+    },
+    {
+      "path": "observation-check-v2/results.json",
+      "bytes": 3229,
+      "sha256": "4bc8d481fe9f6ff5d9f35ba876989428c4f57831e742bd7720b67e58a2762aac"
+    },
+    {
+      "path": "observation-check-v2/sweep/seed-302/summary.json",
+      "bytes": 555,
+      "sha256": "647ff0bdebc7ae998eb48e9d98a46ab367c045b70b0681b36efed8fec7eb4ac8"
+    },
+    {
+      "path": "observation-check-v2/sweep/seed-302/transitions.jsonl",
+      "bytes": 8502271,
+      "sha256": "925696576f8c9ba2096a89de5feb75007c65988b063f5c28f86719ba51d1029e"
+    },
+    {
+      "path": "observation-check-v2/sweep/seed-303/summary.json",
+      "bytes": 555,
+      "sha256": "01223918a4251d1a59e9773ee146bd1015d60f66849004b58cc19828e4e0daa7"
+    },
+    {
+      "path": "observation-check-v2/sweep/seed-303/transitions.jsonl",
+      "bytes": 8502274,
+      "sha256": "f8e108c728c35fc71ed549403f3617151d64aa5a8b469e83960fabc101c46784"
+    }
+  ]
+}

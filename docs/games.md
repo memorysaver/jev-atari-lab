@@ -19,14 +19,14 @@ The second project goal is to discover reusable teacher-optimizer patterns. A ga
 used to develop an adapter or optimization method is not automatically a held-out
 transfer test. See the [research roadmap](research-roadmap.md) for that distinction.
 
-| Capability | Pong | Other registered games |
-| --- | --- | --- |
-| Boot/action smoke check | Passed | Passed in recorded installation |
-| Generic raw-RAM runner | Available | Available |
-| Semantic object adapter | RAM and simple RGB rules | Not implemented |
-| Live Jev experiment | Recorded pilot | Not yet tested |
-| Value-based labels | 240-frame first-point outcome | Not implemented |
-| Multi-round learning or solved-game claim | Not established | Not established |
+| Capability | Pong | Seaquest | Remaining registered games |
+| --- | --- | --- | --- |
+| Boot/action smoke check | Passed | Passed | Passed in recorded installation |
+| Generic raw-RAM runner | Available | Available | Available |
+| Semantic object adapter | RAM and simple RGB rules | Experimental v2 in dedicated pilot | Not implemented |
+| Live Jev experiment | Recorded studies | Two fixed-question training games | Not yet tested |
+| Value-based labels | 240-frame first-point outcome | Not implemented | Not implemented |
+| Multi-round learning or solved-game claim | Not established | Not established | Not established |
 
 ## Adding a game properly
 
@@ -50,11 +50,11 @@ scores across games are not directly comparable.
 
 Source: [ALE environment reference](https://ale.farama.org/environments/).
 
-## Seaquest calibration update, 2026-09-24
+## Seaquest update, 2026-09-24
 
-[Seaquest calibration](seaquest/calibration-results-2026-09-24.md) now has an
-experimental RAM mapping and eight locally replayed controls. Oxygen display
-checks passed; player animation/visibility and moving-object validation remain
-incomplete. The generic catalog still marks its semantic policy adapter as not
-implemented: this calibration helper is not yet a validated model-input adapter.
-No Seaquest live model or teacher result is available.
+[Observation v2](seaquest/observation-v2-results-2026-09-24.md) passed its bounded
+pixel-support gate after the original calibration exposed visibility errors. The
+[first Jev pilot](seaquest/fixed-question-pilot-results-2026-09-24.md) completed
+two 80-point games with DOWN/NOOP behavior; all recordings replayed. This dedicated
+pilot does not change the generic raw-RAM CLI or its catalog adapter status.
+No isolated Seaquest teacher or learning result is available.

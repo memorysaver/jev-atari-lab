@@ -1,0 +1,140 @@
+{
+  "status": "complete",
+  "plan_hash": "08a5a40186c2a07ed6969d12a2d2365b0fe1478c44c0d6547a58c3cdd24f2114",
+  "episodes": [
+    {
+      "seed": 302,
+      "policy": "random",
+      "frames": 2553,
+      "decisions": 639,
+      "reward": 120.0,
+      "oxygen_checks": 639,
+      "oxygen_matches": 639,
+      "unavailable_states": 92,
+      "life_losses": 4,
+      "status": "complete",
+      "objects": {
+        "player": 547,
+        "diver": 445,
+        "player_missile": 276,
+        "shark": 835
+      },
+      "supported": {
+        "player": 547,
+        "diver": 445,
+        "player_missile": 265,
+        "shark": 832
+      },
+      "api_attempts": 0
+    },
+    {
+      "seed": 303,
+      "policy": "random",
+      "frames": 1881,
+      "decisions": 471,
+      "reward": 80.0,
+      "oxygen_checks": 471,
+      "oxygen_matches": 471,
+      "unavailable_states": 92,
+      "life_losses": 4,
+      "status": "complete",
+      "objects": {
+        "player": 379,
+        "diver": 474,
+        "player_missile": 160,
+        "shark": 491
+      },
+      "supported": {
+        "player": 379,
+        "diver": 474,
+        "player_missile": 158,
+        "shark": 487
+      },
+      "api_attempts": 0
+    },
+    {
+      "seed": 302,
+      "policy": "sweep",
+      "frames": 4013,
+      "decisions": 1004,
+      "reward": 120.0,
+      "oxygen_checks": 1004,
+      "oxygen_matches": 1004,
+      "unavailable_states": 93,
+      "life_losses": 4,
+      "status": "complete",
+      "objects": {
+        "player": 911,
+        "player_missile": 316,
+        "diver": 767,
+        "shark": 1630,
+        "enemy_submarine": 321,
+        "enemy_missile": 174
+      },
+      "supported": {
+        "player": 911,
+        "player_missile": 316,
+        "diver": 767,
+        "shark": 1624,
+        "enemy_submarine": 319,
+        "enemy_missile": 174
+      },
+      "api_attempts": 0
+    },
+    {
+      "seed": 303,
+      "policy": "sweep",
+      "frames": 4013,
+      "decisions": 1004,
+      "reward": 120.0,
+      "oxygen_checks": 1004,
+      "oxygen_matches": 1004,
+      "unavailable_states": 93,
+      "life_losses": 4,
+      "status": "complete",
+      "objects": {
+        "player": 911,
+        "player_missile": 316,
+        "diver": 767,
+        "shark": 1630,
+        "enemy_submarine": 321,
+        "enemy_missile": 174
+      },
+      "supported": {
+        "player": 911,
+        "player_missile": 316,
+        "diver": 767,
+        "shark": 1624,
+        "enemy_submarine": 319,
+        "enemy_missile": 174
+      },
+      "api_attempts": 0
+    }
+  ],
+  "objects": {
+    "player": 2748,
+    "diver": 2453,
+    "player_missile": 1068,
+    "shark": 4586,
+    "enemy_submarine": 642,
+    "enemy_missile": 348
+  },
+  "supported": {
+    "player": 2748,
+    "diver": 2453,
+    "player_missile": 1055,
+    "shark": 4567,
+    "enemy_submarine": 638,
+    "enemy_missile": 348
+  },
+  "gates": {
+    "oxygen": true,
+    "player": true,
+    "shark": true,
+    "diver": true,
+    "player_missile": true
+  },
+  "pilot_gate_passed": true,
+  "api_attempts": 0,
+  "limits": "Color support within a proposed box is not exact shape, identity, recall, or event-semantics validation. No claim for unvisited subtypes or full rescue cycles."
+}
