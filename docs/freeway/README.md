@@ -1,7 +1,10 @@
 # Freeway research
 
-Ten rounds authorized on 2026-09-26 after the Seaquest execution study.
+Ten rounds completed on 2026-09-26 after the Seaquest execution study. No revision
+was promoted; both held-out gains were zero. All 42 games and videos are retained.
 
+- [Results and lessons](ten-round-results-2026-09-26.md)
+- [Recordings](../../experiments/freeway/ten-round-v1/videos.md)
 - [Evaluation profile](evaluation.md)
 - [Round 1 calibration protocol](calibration-protocol.md)
 - [Ten-round protocol](ten-round-protocol.md)

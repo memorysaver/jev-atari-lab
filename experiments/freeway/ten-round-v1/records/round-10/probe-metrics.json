@@ -1,0 +1,76 @@
+{
+  "reference": {
+    "n": 41,
+    "matches": 24,
+    "by_branch_motion": {
+      "above-traffic": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/approaching": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/receding": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "wait-moving/approaching": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      },
+      "wait-moving/receding": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      },
+      "wait-static-or-unknown/stationary": {
+        "n": 1,
+        "matches": 0,
+        "rate": 0.0
+      }
+    },
+    "macro": 0.5
+  },
+  "candidate": {
+    "n": 41,
+    "matches": 24,
+    "by_branch_motion": {
+      "above-traffic": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/approaching": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/receding": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "wait-moving/approaching": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      },
+      "wait-moving/receding": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      },
+      "wait-static-or-unknown/stationary": {
+        "n": 1,
+        "matches": 0,
+        "rate": 0.0
+      }
+    },
+    "macro": 0.5
+  }
+}

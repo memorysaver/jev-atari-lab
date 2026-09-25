@@ -1,0 +1,45 @@
+{
+  "kind": "freeway-episode-v1",
+  "seed": 417,
+  "split": "development",
+  "rule": null,
+  "program": {
+    "name": "freeway-baseline-v1",
+    "guidance": "Control the left chicken to earn points by reaching the top across traffic. Choose UP to advance, NOOP to wait, or DOWN to retreat. Avoid cars and unnecessary waiting. Use recent car motion to decide whether a gap is opening or closing. Coordinates are [x,y,width,height]; smaller y is upward. Car lane IDs identify fixed lanes. Cars wrap horizontally; a large position jump is not high speed. UP normally decreases player y by about one pixel per raw frame; collision recovery can override requested movement. After a crossing the chicken returns to the bottom. Each choice lasts 16 raw frames. Reconsider after that interval.",
+    "schema_version": "freeway-choice-v1"
+  },
+  "program_hash": "896e239ebd4adc8c155de80e28e3ed7da11da8553cf8b5154949489734c4fc0f",
+  "source_revision": "d11474f0ba0f58cef71d9e6e2ac4e3ffecdbdfb1",
+  "hold": 16,
+  "frame_cap": 9000,
+  "sticky": 0.25,
+  "mode": 0,
+  "difficulty": 0,
+  "prefix_noops": 148,
+  "schema": "freeway-objects-v1",
+  "fps": 60,
+  "rom_sha256": "3ef620234b98f22bfd7c06d2467bac9d208e763c9f4309452384d59a741ba893",
+  "versions": {
+    "ale-py": "0.11.2",
+    "gymnasium": "1.3.0",
+    "numpy": "2.5.3"
+  },
+  "transport": {
+    "backend": "openrouter",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "requested_model": "~typesafe/jev-latest",
+    "expected_response_model": "typesafe/jev-1.13-20260917",
+    "max_api_calls": 16000,
+    "max_retries": 2,
+    "retry_transport": true,
+    "retry_http_statuses": [
+      429,
+      500,
+      502,
+      503,
+      504,
+      520,
+      529
+    ]
+  }
+}

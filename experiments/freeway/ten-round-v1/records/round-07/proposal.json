@@ -1,0 +1,27 @@
+{
+  "round": 7,
+  "program": {
+    "name": "freeway-single-lane-lookup-v1",
+    "guidance": "Follow this two-step lookup rule using current positions only. Step 1: read p=observation.player[1] and select exactly ONE lane by this table: p=37..52 -> lane 0; 53..68 -> lane 1; 69..84 -> lane 2; 85..100 -> lane 3; 101..116 -> lane 4; 117..132 -> lane 5; 133..148 -> lane 6; 149..164 -> lane 7; 165..180 -> lane 8; 181..196 -> lane 9. All ranges include both ends. If p is outside 37..196 choose UP. Step 2: find the car with exactly that lane ID in observation.cars. Read only this selected car bbox[0], called x. If 35<=x<=51 choose NOOP. If x<=34 or x>=52 choose UP. Ignore every other car, even if its x is close to 44. Example: p=185 selects lane 9. If lane 9 x=8, choose UP even if another lane x=46. p=139 selects lane 6. If lane 6 x=48 choose NOOP. Never choose DOWN. This is the same reactive entry rule expressed as a lane lookup; do not predict motion, use history, or stop for an unselected lane.",
+    "schema_version": "freeway-choice-v1",
+    "action_criteria": {
+      "NOOP": "The ONE lane selected by player y has car x between 35 and 51 inclusive. Other lanes do not count.",
+      "UP": "Player y outside 37..196 OR the ONE selected lane has car x<=34 or x>=52. Cars in other lanes cannot veto UP.",
+      "DOWN": "No case in this rule selects DOWN."
+    }
+  },
+  "program_hash": "34ade7a4d55d95b3ce93190bde2376ad201180cd1c8c7fdff84c9b22dc2f0ea2",
+  "source_revision": "d11474f0ba0f58cef71d9e6e2ac4e3ffecdbdfb1",
+  "author": "interactive-coordinator",
+  "isolated_teacher_calls": 0,
+  "rationale": "Round 6 reactive own-rule probe hit 10/13 waiting cases but only 13/27 advance cases, suggesting possible lane-condition binding errors. Test equivalent current-position rule with an explicit player-y-to-single-lane lookup. This is a hypothesis, not an established error cause.",
+  "available_feedback": [
+    "artifacts/freeway/ten-round-v1/round-01/result.json",
+    "artifacts/freeway/ten-round-v1/round-02/result.json",
+    "artifacts/freeway/ten-round-v1/round-03/result.json",
+    "artifacts/freeway/ten-round-v1/round-04/result.json",
+    "artifacts/freeway/ten-round-v1/round-05/result.json",
+    "artifacts/freeway/ten-round-v1/round-06/result.json"
+  ],
+  "final_data_used": false
+}

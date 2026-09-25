@@ -1,0 +1,119 @@
+{
+  "round": 3,
+  "status": "complete",
+  "episodes": [
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-03/candidate-seed-410",
+      "role": "candidate",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 502,
+      "reward": 27.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 502
+      },
+      "branches": {
+        "model": 502
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 125.62259939697105,
+      "api_attempts": 502,
+      "reported_cost_usd": 0.042119658
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-03/candidate-seed-411",
+      "role": "candidate",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 501,
+      "reward": 22.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 501
+      },
+      "branches": {
+        "model": 501
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 122.67541356600123,
+      "api_attempts": 501,
+      "reported_cost_usd": 0.042030492
+    }
+  ],
+  "probe": {
+    "reference": {
+      "n": 40,
+      "matches": 24,
+      "by_branch_motion": {
+        "above-traffic": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/approaching": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/receding": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "wait-moving/approaching": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        },
+        "wait-moving/receding": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        }
+      },
+      "macro": 0.6
+    },
+    "candidate": {
+      "n": 40,
+      "matches": 24,
+      "by_branch_motion": {
+        "above-traffic": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/approaching": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/receding": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "wait-moving/approaching": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        },
+        "wait-moving/receding": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        }
+      },
+      "macro": 0.6
+    }
+  },
+  "mean_reward": 24.5
+}

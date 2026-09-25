@@ -1,0 +1,34 @@
+{
+  "reference": {
+    "n": 40,
+    "matches": 24,
+    "by_branch_motion": {
+      "above-traffic": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/approaching": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/receding": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "wait-moving/approaching": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      },
+      "wait-moving/receding": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      }
+    },
+    "macro": 0.6
+  }
+}

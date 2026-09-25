@@ -16,6 +16,14 @@ intended path to a paper. Initially both teacher and Jev weights stay fixed;
 the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
 No repeatable optimization benefit has been established.
 
+**Freeway ten-round study completed:** no revision improved held-out return.
+Generic and selected Jev both scored 23/26 on final seeds; predictive local controls
+scored 29/29. Explicit lane lookup improved a reused training rule-execution probe
+from 23/40 to 37/40, but did not improve native return. All 42 complete recordings
+and ten rounds are preserved; reported cost US$0.979, zero isolated teacher calls.
+[Results and lessons](docs/freeway/ten-round-results-2026-09-26.md) ·
+[Recordings](experiments/freeway/ten-round-v1/videos.md).
+
 **Seaquest execution follow-up completed:** five rounds separated literal strategy
 performance from Jev rule execution. The selected wording revision regressed on
 final movement macro agreement (68.75% to 60.94%) and game mean return (300 to 240).

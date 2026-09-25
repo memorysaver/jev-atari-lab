@@ -1,0 +1,50 @@
+{
+  "kind": "freeway-episode-v1",
+  "seed": 410,
+  "split": "train",
+  "rule": null,
+  "program": {
+    "name": "freeway-static-entry-rule-v1",
+    "guidance": "Apply this simple conditional rule to the current boxes. Let p=player[1]. For each car let x=bbox[0], y=bbox[1]. Choose NOOP if there is a car with 34 < x < 52 AND 10 <= p-y < 26. All four inequalities must hold for the SAME car. If no car satisfies all of them, choose UP. Never choose DOWN. This is a deliberately reactive policy: use current positions only; do not predict motion or replace this rule with a general scoring strategy. The y condition selects a lane just ahead; the x condition selects a car near our crossing column. Check every lane, ignoring cars that fail either condition.",
+    "schema_version": "freeway-choice-v1",
+    "action_criteria": {
+      "NOOP": "At least one car simultaneously has x>34, x<52, player_y-car_y>=10, and player_y-car_y<26.",
+      "UP": "Every car fails at least one of the four NOOP conditions.",
+      "DOWN": "Never selected by this policy."
+    }
+  },
+  "program_hash": "3154890685854f6bee80ba40703f48d8a9b3b3a97388b7ae9f1c21917135f3c0",
+  "source_revision": "d11474f0ba0f58cef71d9e6e2ac4e3ffecdbdfb1",
+  "hold": 16,
+  "frame_cap": 9000,
+  "sticky": 0.25,
+  "mode": 0,
+  "difficulty": 0,
+  "prefix_noops": 165,
+  "schema": "freeway-objects-v1",
+  "fps": 60,
+  "rom_sha256": "3ef620234b98f22bfd7c06d2467bac9d208e763c9f4309452384d59a741ba893",
+  "versions": {
+    "ale-py": "0.11.2",
+    "gymnasium": "1.3.0",
+    "numpy": "2.5.3"
+  },
+  "transport": {
+    "backend": "openrouter",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "requested_model": "~typesafe/jev-latest",
+    "expected_response_model": "typesafe/jev-1.13-20260917",
+    "max_api_calls": 16000,
+    "max_retries": 2,
+    "retry_transport": true,
+    "retry_http_statuses": [
+      429,
+      500,
+      502,
+      503,
+      504,
+      520,
+      529
+    ]
+  }
+}

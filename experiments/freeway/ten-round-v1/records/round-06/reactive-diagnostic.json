@@ -1,0 +1,26 @@
+{
+  "kind": "post-hoc-own-rule-diagnostic",
+  "metrics": {
+    "reference": {
+      "0": {
+        "n": 13,
+        "matches": 0
+      },
+      "1": {
+        "n": 27,
+        "matches": 27
+      }
+    },
+    "candidate": {
+      "0": {
+        "n": 13,
+        "matches": 10
+      },
+      "1": {
+        "n": 27,
+        "matches": 13
+      }
+    }
+  },
+  "limits": "Same frozen training packet; not the predeclared predictive-reference metric or a selection gate."
+}

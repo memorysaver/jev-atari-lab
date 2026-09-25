@@ -12,8 +12,10 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-New: [Freeway ten-round study](freeway/README.md), authorized 2026-09-26.
-Round 1 local calibration completed; the live protocol is frozen before model calls.
+Latest: [Freeway ten-round results](freeway/ten-round-results-2026-09-26.md).
+Exactly ten rounds completed and capacity closed. No revision improved held-out
+return; explicit lane selection helped a training execution probe but not game
+return. All 42 full recordings and raw evidence retained; reported cost US$0.979.
 
 Earlier: [Five-round Seaquest execution results](seaquest/execution-five-round-results-2026-09-25.md).
 The selected wording revision regressed on final execution (68.75% to 60.94%)

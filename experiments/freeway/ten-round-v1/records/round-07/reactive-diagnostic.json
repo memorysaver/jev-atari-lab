@@ -1,0 +1,26 @@
+{
+  "kind": "post-hoc-own-rule-diagnostic",
+  "metrics": {
+    "reference": {
+      "0": {
+        "n": 13,
+        "matches": 0
+      },
+      "1": {
+        "n": 27,
+        "matches": 27
+      }
+    },
+    "candidate": {
+      "0": {
+        "n": 13,
+        "matches": 11
+      },
+      "1": {
+        "n": 27,
+        "matches": 26
+      }
+    }
+  },
+  "limits": "Fixed packet; descriptive only, not selection gate."
+}

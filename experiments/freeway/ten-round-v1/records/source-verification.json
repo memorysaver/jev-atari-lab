@@ -1,0 +1,23 @@
+{
+  "revision": "d11474f",
+  "runtime_and_protocol_unchanged": true,
+  "files": [
+    {
+      "path": "src/jev_atari/freeway.py",
+      "sha256": "4ed1f2fd94407a1c9c7c76d42edece90401b1e66b9634204670ad12c8c572729"
+    },
+    {
+      "path": "src/jev_atari/freeway_research.py",
+      "sha256": "12e4ef834385e7664cf73ada6f573c0dafcad8d256ab0cf4533824bd106a7a84"
+    },
+    {
+      "path": "docs/freeway/calibration-protocol.md",
+      "sha256": "780f12f92cf717429ae2272e752f2dff72d873c693aa455639f44129f2e6b5db"
+    },
+    {
+      "path": "docs/freeway/ten-round-protocol.md",
+      "sha256": "5ded55f6ecd1b3c492c86205201c496d367b5c949f5e8906cdc9cf5d4493b023"
+    }
+  ],
+  "calibration_note": "Round 1 preceded this commit; its decoder hash is retained in observation-validation.json."
+}

@@ -83,3 +83,70 @@ def test_budget_round_cap_and_deadline(tmp_path):
         budget.reserve()
     with pytest.raises(BudgetExceeded):
         Budget(path, 3, clock=lambda: 86500).reserve()
+
+
+def test_ten_round_mock_pipeline_and_audit(tmp_path, monkeypatch):
+    """Exercise all round boundaries and final preservation with synthetic responses."""
+    import json
+    import sys
+    from pathlib import Path
+
+    import httpx
+
+    from jev_atari import freeway
+    from jev_atari import freeway_research as study
+    from jev_atari.io import read_json, write_json
+    from jev_atari.seaquest_pilot import PIN
+    from jev_atari.seaquest_research import ResearchEvaluator
+
+    monkeypatch.setenv("OPENROUTER_API_KEY", "synthetic-key")
+    monkeypatch.setattr(freeway, "CAP", 272)
+    monkeypatch.setattr(study, "revision", lambda: "synthetic-frozen")
+    root = tmp_path / "study"
+    monkeypatch.setattr(study, "ROOT", root)
+    for seed in study.TRAIN:
+        freeway.play(root / "round-01" / f"up-hold-16-seed-{seed}", seed, rule="up")
+    write_json(root / "round-01" / "result.json", {"round": 1})
+
+    def handler(request):
+        body = json.loads(request.content)
+        options = body["questions"]["next_action"]["criteria"]
+        return httpx.Response(
+            200,
+            json={
+                "model": PIN,
+                "answers": {
+                    "next_action": {
+                        "type": "choice",
+                        "choice": "UP",
+                        "confidence": 1,
+                        "probabilities": {k: int(k == "UP") for k in options},
+                    }
+                },
+            },
+        )
+
+    monkeypatch.setattr(
+        study,
+        "ResearchEvaluator",
+        lambda budget: ResearchEvaluator(
+            budget, client=httpx.Client(transport=httpx.MockTransport(handler))
+        ),
+    )
+    study.run(2)
+    for number in range(3, 9):
+        proposal = tmp_path / f"proposal-{number}.json"
+        write_json(proposal, FreewayProgram(name=f"synthetic-{number}").to_dict())
+        study.run(number, proposal, "Synthetic fixture, not live evidence")
+    study.run(9)
+    study.run(10)
+    assert read_json(root / "budget.json")["closed"]
+    assert read_json(root / "selection.json")["round"] == 3
+    assert not read_json(root / "completion.json")["promoted"]
+    with pytest.raises(ValueError):
+        study.run(11)
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+    from verify_freeway_research import verify
+
+    result = verify(root, tmp_path / "audit.json")
+    assert result["status"] == "verified" and result["episode_count"] == 32

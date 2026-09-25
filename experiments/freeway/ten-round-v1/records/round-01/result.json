@@ -1,0 +1,310 @@
+{
+  "round": 1,
+  "kind": "local-calibration",
+  "episodes": [
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/random-hold-16-seed-410",
+      "hold": 16,
+      "rule": "random",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 502,
+      "reward": 0.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "NOOP": 178,
+        "DOWN": 167,
+        "UP": 157
+      },
+      "branches": {
+        "random": 502
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 3.274489559000358,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/random-hold-16-seed-411",
+      "hold": 16,
+      "rule": "random",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 501,
+      "reward": 0.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "NOOP": 156,
+        "UP": 161,
+        "DOWN": 184
+      },
+      "branches": {
+        "random": 501
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.800592774001416,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/up-hold-16-seed-410",
+      "hold": 16,
+      "rule": "up",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 502,
+      "reward": 27.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 502
+      },
+      "branches": {
+        "always-up": 502
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.2047748360200785,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/up-hold-16-seed-411",
+      "hold": 16,
+      "rule": "up",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 501,
+      "reward": 22.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 501
+      },
+      "branches": {
+        "always-up": 501
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.374558868003078,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/reactive-hold-16-seed-410",
+      "hold": 16,
+      "rule": "reactive",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 502,
+      "reward": 22.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 375,
+        "NOOP": 127
+      },
+      "branches": {
+        "advance": 375,
+        "wait-static-or-unknown": 127
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.06287414196413,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/reactive-hold-16-seed-411",
+      "hold": 16,
+      "rule": "reactive",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 501,
+      "reward": 21.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 372,
+        "NOOP": 129
+      },
+      "branches": {
+        "advance": 372,
+        "wait-static-or-unknown": 129
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.187006529944483,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/predictive-hold-16-seed-410",
+      "hold": 16,
+      "rule": "predictive",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 502,
+      "reward": 27.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 379,
+        "NOOP": 123
+      },
+      "branches": {
+        "advance": 379,
+        "wait-moving": 123
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.061857089982368,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/predictive-hold-16-seed-411",
+      "hold": 16,
+      "rule": "predictive",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 501,
+      "reward": 28.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "NOOP": 132,
+        "UP": 369
+      },
+      "branches": {
+        "wait-moving": 132,
+        "advance": 369
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.138438691967167,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/up-hold-8-seed-410",
+      "hold": 8,
+      "rule": "up",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 1004,
+      "reward": 27.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 1004
+      },
+      "branches": {
+        "always-up": 1004
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.2427565549733117,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/up-hold-8-seed-411",
+      "hold": 8,
+      "rule": "up",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 1002,
+      "reward": 22.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 1002
+      },
+      "branches": {
+        "always-up": 1002
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.163769587990828,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/predictive-hold-8-seed-410",
+      "hold": 8,
+      "rule": "predictive",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 1004,
+      "reward": 30.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 800,
+        "NOOP": 204
+      },
+      "branches": {
+        "advance": 800,
+        "wait-moving": 204
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.4231228550197557,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-01/predictive-hold-8-seed-411",
+      "hold": 8,
+      "rule": "predictive",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 1002,
+      "reward": 25.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "NOOP": 264,
+        "UP": 738
+      },
+      "branches": {
+        "wait-moving": 264,
+        "advance": 738
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 2.29718714003684,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    }
+  ]
+}

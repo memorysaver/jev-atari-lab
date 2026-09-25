@@ -19,14 +19,14 @@ The second project goal is to discover reusable teacher-optimizer patterns. A ga
 used to develop an adapter or optimization method is not automatically a held-out
 transfer test. See the [research roadmap](research-roadmap.md) for that distinction.
 
-| Capability | Pong | Seaquest | Remaining registered games |
-| --- | --- | --- | --- |
-| Boot/action smoke check | Passed | Passed | Passed in recorded installation |
-| Generic raw-RAM runner | Available | Available | Available |
-| Semantic object adapter | RAM and simple RGB rules | Experimental v2 in dedicated studies | Not implemented |
-| Live Jev experiment | Recorded studies | Policy and execution studies recorded | Not yet tested |
-| Value-based labels | 240-frame first-point outcome | Not implemented | Not implemented |
-| Multi-round learning or solved-game claim | Not established | Not established | Not established |
+| Capability | Pong | Seaquest | Freeway | Remaining registered games |
+| --- | --- | --- | --- | --- |
+| Boot/action smoke check | Passed | Passed | Passed | Passed in recorded installation |
+| Generic raw-RAM runner | Available | Available | Available | Available |
+| Semantic object adapter | RAM and simple RGB rules | Experimental v2 in dedicated studies | Bounded v1 in dedicated study | Not implemented |
+| Live Jev experiment | Recorded studies | Policy and execution studies | Ten rounds recorded | Not yet tested |
+| Value-based labels | 240-frame first-point outcome | Not implemented | Not implemented | Not implemented |
+| Multi-round learning or solved-game claim | Not established | Not established | Not established | Not established |
 
 ## Adding a game properly
 
@@ -68,3 +68,12 @@ The [five-round execution follow-up](seaquest/execution-five-round-results-2026-
 then separated literal strategy controls from model execution. Its selected wording
 revision failed both final gates; no revision was promoted. Ten new full videos
 and all five rounds are retained, with the allocation closed.
+
+## Freeway update, 2026-09-26
+
+[Ten rounds](freeway/ten-round-results-2026-09-26.md) completed with all 42 full
+native episodes recorded. No revision improved held-out return. Single-lane
+lookup improved a reused training execution probe, but not native return. The
+dedicated observer has bounded pixel-support validation with left-edge visibility
+limits; generic raw-RAM CLI/catalog behavior is unchanged. No mastery or isolated
+teacher-optimizer benefit is established.

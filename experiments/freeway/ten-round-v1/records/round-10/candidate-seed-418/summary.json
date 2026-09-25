@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "seed": 418,
+  "frames": 8192,
+  "controlled_frames": 7982,
+  "decisions": 499,
+  "reward": 23.0,
+  "prefix_reward": 0.0,
+  "terminated": true,
+  "truncated": false,
+  "action_histogram": {
+    "UP": 499
+  },
+  "branches": {
+    "model": 499
+  },
+  "end_reason": "native_termination",
+  "wall_seconds": 119.51540563401068,
+  "api_attempts": 499,
+  "reported_cost_usd": 0.041886726
+}

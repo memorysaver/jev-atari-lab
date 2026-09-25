@@ -1,0 +1,23 @@
+{
+  "round": 3,
+  "program": {
+    "name": "freeway-explicit-entry-wait-v1",
+    "guidance": "Follow this traffic-entry rule for the left chicken. Boxes are [x,y,width,height]; UP decreases y by about one pixel per raw frame. A choice lasts 16 raw frames. First consider only cars whose lane is just above the chicken: car_y+10 <= player_y and player_y-16 < car_y+10. If no such lane exists, choose UP. For each eligible car, estimate horizontal velocity from the latest history: dx=(current_x-previous_x+80) modulo 160 minus 80; velocity=dx/elapsed_raw_frames. Predict the car position during the next 16 frames, wrapping at screen boundaries. The chicken would enter that lane after player_y-(car_y+10) frames. If the car overlaps chicken x=44..50, with a two-pixel safety margin, at any time from that entry until min(16,player_y+8-car_y), choose NOOP and wait. Otherwise choose UP. Do not stop for a car in a lane the chicken cannot yet enter, or for a car already passed vertically. While already inside a lane, continue UP. DOWN is unnecessary under this rule. Waiting now is useful only when predicted overlap blocks the next upward move. After each decision reassess from new history.",
+    "schema_version": "freeway-choice-v1",
+    "action_criteria": {
+      "NOOP": "The next upward move enters a lane during predicted horizontal overlap: wait.",
+      "UP": "No predicted overlap in a lane entered by the next 16-frame upward move: advance.",
+      "DOWN": "Retreat downward; not prescribed by the stated entry-wait rule."
+    }
+  },
+  "program_hash": "bdf92236776b2232d5507825055eff69e1658edf092aae3312075151dcfb096c",
+  "source_revision": "d11474f0ba0f58cef71d9e6e2ac4e3ffecdbdfb1",
+  "author": "interactive-coordinator",
+  "isolated_teacher_calls": 0,
+  "rationale": "Baseline chose UP in all 40 probes, missing all 16 literal waiting cases. Test explicit entry timing and predicted horizontal overlap while keeping all three actions.",
+  "available_feedback": [
+    "artifacts/freeway/ten-round-v1/round-01/result.json",
+    "artifacts/freeway/ten-round-v1/round-02/result.json"
+  ],
+  "final_data_used": false
+}

@@ -1,0 +1,432 @@
+{
+  "status": "verified",
+  "episodes": [
+    {
+      "path": "round-01/predictive-hold-16-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 27.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "64dbd2911e7a90615160f5c690998f7c5a82701cc6d843a46286e30bc162e4ae"
+    },
+    {
+      "path": "round-01/predictive-hold-16-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 28.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "28779c36b92cf7fdec1eff0eba510578e6b8c644ff2d5e9896aaed24943f27f0"
+    },
+    {
+      "path": "round-01/predictive-hold-8-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 1004,
+      "reward": 30.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "68c92d8379699fcd40ede42bc5674de876495e531fe29de970fc8051e231cff9"
+    },
+    {
+      "path": "round-01/predictive-hold-8-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 1002,
+      "reward": 25.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "8b73f1939af9bd835b7126ef3ec9e5f0a4fe5a3dfbd58702fb4c86f2eb130798"
+    },
+    {
+      "path": "round-01/random-hold-16-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 0.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "74f3947af0b1e20151dff13511089719fff72828d9ec01ec71ab6485b539a2f8"
+    },
+    {
+      "path": "round-01/random-hold-16-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 0.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "7c5dd6f8182ddbef64c9028d1ed9205d5d4d85fbbff64b860af535a79e88460b"
+    },
+    {
+      "path": "round-01/reactive-hold-16-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 22.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "01b5fdcf354134772f1772bf2147a0d2069fa0f9243c239da180904cb03ed75e"
+    },
+    {
+      "path": "round-01/reactive-hold-16-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 21.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "ae3f939d61a6942d7e934338f2930ec36382b5c1bc983c93a15248ddd22735ce"
+    },
+    {
+      "path": "round-01/up-hold-16-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 27.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "9e1544a2438b54738288e0760419a6bcf8ed0f47af9b53ce9bd12e8f55ad9587"
+    },
+    {
+      "path": "round-01/up-hold-16-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 22.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "b3c0071d18f6670a2ca967f475200d10cb65885751736069cda33eb0f4fc30e3"
+    },
+    {
+      "path": "round-01/up-hold-8-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 1004,
+      "reward": 27.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "9e1544a2438b54738288e0760419a6bcf8ed0f47af9b53ce9bd12e8f55ad9587"
+    },
+    {
+      "path": "round-01/up-hold-8-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 1002,
+      "reward": 22.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "b3c0071d18f6670a2ca967f475200d10cb65885751736069cda33eb0f4fc30e3"
+    },
+    {
+      "path": "round-02/candidate-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 27.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "9e1544a2438b54738288e0760419a6bcf8ed0f47af9b53ce9bd12e8f55ad9587"
+    },
+    {
+      "path": "round-02/candidate-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 22.0,
+      "api_attempts": 501,
+      "native_ended": true,
+      "video_sha256": "b3c0071d18f6670a2ca967f475200d10cb65885751736069cda33eb0f4fc30e3"
+    },
+    {
+      "path": "round-03/candidate-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 27.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "9e1544a2438b54738288e0760419a6bcf8ed0f47af9b53ce9bd12e8f55ad9587"
+    },
+    {
+      "path": "round-03/candidate-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 22.0,
+      "api_attempts": 501,
+      "native_ended": true,
+      "video_sha256": "b3c0071d18f6670a2ca967f475200d10cb65885751736069cda33eb0f4fc30e3"
+    },
+    {
+      "path": "round-04/candidate-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 20.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "92f3f7ed94339c596347668899dc5361f1b1102d1baea4d2743f739f06f7ab98"
+    },
+    {
+      "path": "round-04/candidate-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 19.0,
+      "api_attempts": 501,
+      "native_ended": true,
+      "video_sha256": "b689640b4196fec3b893c88ac9aa84c9cb411b9ea608abfdaa4e8a8717f5e985"
+    },
+    {
+      "path": "round-05/candidate-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 18.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "8020280fc4c4df3b8d6e1b38134c2cffdb4a0a30f45480e2f6e7fc9138f8f352"
+    },
+    {
+      "path": "round-05/candidate-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 18.0,
+      "api_attempts": 501,
+      "native_ended": true,
+      "video_sha256": "63b668d227bb4eb0cc86dda07d0262a0877afa2366c3f253022fa9396ac3a7f9"
+    },
+    {
+      "path": "round-06/candidate-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 11.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "705416f5798a30c742eb0fa07ddc8fb52500ee3e4f1d91b534af4b7fad912787"
+    },
+    {
+      "path": "round-06/candidate-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 14.0,
+      "api_attempts": 501,
+      "native_ended": true,
+      "video_sha256": "877617b92b2321733e6b9c5f8f9bc2fea310c3cbf35bec5e3266f649f2728b9a"
+    },
+    {
+      "path": "round-07/candidate-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 19.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "7444dd1fd61b4763256f47014f67e7cd096ae708ab4749ba9f9d5da963778831"
+    },
+    {
+      "path": "round-07/candidate-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 19.0,
+      "api_attempts": 501,
+      "native_ended": true,
+      "video_sha256": "aa512d59e855283e8576b0faaa931382dd9518a7b81e5a5c1431689b9d099644"
+    },
+    {
+      "path": "round-08/candidate-seed-410",
+      "seed": 410,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 9.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "2302165db192d2d7b38b40cc01bfa99e31050b5a72f1d696fbd64e8abc2f2e3c"
+    },
+    {
+      "path": "round-08/candidate-seed-411",
+      "seed": 411,
+      "frames": 8192,
+      "decisions": 501,
+      "reward": 11.0,
+      "api_attempts": 501,
+      "native_ended": true,
+      "video_sha256": "a736d67c45ee9ee41d85b2f4a2a5689e3be0bc3e11a0867e971bec86c831ea45"
+    },
+    {
+      "path": "round-09/candidate-seed-416",
+      "seed": 416,
+      "frames": 8192,
+      "decisions": 500,
+      "reward": 27.0,
+      "api_attempts": 500,
+      "native_ended": true,
+      "video_sha256": "69c3f7ac850828b7d07548101d7d354397b393fc43f9e0f1133d1b9b3621a3b2"
+    },
+    {
+      "path": "round-09/candidate-seed-417",
+      "seed": 417,
+      "frames": 8192,
+      "decisions": 503,
+      "reward": 19.0,
+      "api_attempts": 503,
+      "native_ended": true,
+      "video_sha256": "9bc270d2e365ad98f215799f6a350ae25069a2cd2adb649f4fbca5519e8f7a63"
+    },
+    {
+      "path": "round-09/local-predictive-seed-416",
+      "seed": 416,
+      "frames": 8192,
+      "decisions": 500,
+      "reward": 30.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "620ab90a69399564d798d313bb2e9f8f513a6993705d4c3013c8f0cc3c1ecca0"
+    },
+    {
+      "path": "round-09/local-predictive-seed-417",
+      "seed": 417,
+      "frames": 8192,
+      "decisions": 503,
+      "reward": 29.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "398c53beb8ef8e4d4fa22fd9d4652b277bbd8aa542de66ea7e9c51b80166d9a9"
+    },
+    {
+      "path": "round-09/local-up-seed-416",
+      "seed": 416,
+      "frames": 8192,
+      "decisions": 500,
+      "reward": 27.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "69c3f7ac850828b7d07548101d7d354397b393fc43f9e0f1133d1b9b3621a3b2"
+    },
+    {
+      "path": "round-09/local-up-seed-417",
+      "seed": 417,
+      "frames": 8192,
+      "decisions": 503,
+      "reward": 19.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "9bc270d2e365ad98f215799f6a350ae25069a2cd2adb649f4fbca5519e8f7a63"
+    },
+    {
+      "path": "round-09/reference-seed-416",
+      "seed": 416,
+      "frames": 8192,
+      "decisions": 500,
+      "reward": 27.0,
+      "api_attempts": 500,
+      "native_ended": true,
+      "video_sha256": "69c3f7ac850828b7d07548101d7d354397b393fc43f9e0f1133d1b9b3621a3b2"
+    },
+    {
+      "path": "round-09/reference-seed-417",
+      "seed": 417,
+      "frames": 8192,
+      "decisions": 503,
+      "reward": 19.0,
+      "api_attempts": 503,
+      "native_ended": true,
+      "video_sha256": "9bc270d2e365ad98f215799f6a350ae25069a2cd2adb649f4fbca5519e8f7a63"
+    },
+    {
+      "path": "round-10/candidate-seed-418",
+      "seed": 418,
+      "frames": 8192,
+      "decisions": 499,
+      "reward": 23.0,
+      "api_attempts": 499,
+      "native_ended": true,
+      "video_sha256": "63455234cd634ba7c086ed2d3e34246072df89dac50eaffcb9364480f98579af"
+    },
+    {
+      "path": "round-10/candidate-seed-419",
+      "seed": 419,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 26.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "e72eae61b76d7e6247aa9ddccc1861bf4148c9f9f56de300140aa664c3194e92"
+    },
+    {
+      "path": "round-10/local-predictive-seed-418",
+      "seed": 418,
+      "frames": 8192,
+      "decisions": 499,
+      "reward": 29.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "6743f1ab54f433d704785f9d42c14955fb3dbe8956dd9e6fc105a66a27c96eb0"
+    },
+    {
+      "path": "round-10/local-predictive-seed-419",
+      "seed": 419,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 29.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "77051ac7607d4b6986492f2294b0bdc18d8f1e9c88cb971eeda59fdee78de791"
+    },
+    {
+      "path": "round-10/local-up-seed-418",
+      "seed": 418,
+      "frames": 8192,
+      "decisions": 499,
+      "reward": 23.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "63455234cd634ba7c086ed2d3e34246072df89dac50eaffcb9364480f98579af"
+    },
+    {
+      "path": "round-10/local-up-seed-419",
+      "seed": 419,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 26.0,
+      "api_attempts": 0,
+      "native_ended": true,
+      "video_sha256": "e72eae61b76d7e6247aa9ddccc1861bf4148c9f9f56de300140aa664c3194e92"
+    },
+    {
+      "path": "round-10/reference-seed-418",
+      "seed": 418,
+      "frames": 8192,
+      "decisions": 499,
+      "reward": 23.0,
+      "api_attempts": 499,
+      "native_ended": true,
+      "video_sha256": "63455234cd634ba7c086ed2d3e34246072df89dac50eaffcb9364480f98579af"
+    },
+    {
+      "path": "round-10/reference-seed-419",
+      "seed": 419,
+      "frames": 8192,
+      "decisions": 502,
+      "reward": 26.0,
+      "api_attempts": 502,
+      "native_ended": true,
+      "video_sha256": "e72eae61b76d7e6247aa9ddccc1861bf4148c9f9f56de300140aa664c3194e92"
+    }
+  ],
+  "episode_count": 42,
+  "raw_frames": 344064,
+  "api_attempts": 11711,
+  "successful_responses": 11711,
+  "reported_cost_usd": 0.978697986,
+  "rounds": 10,
+  "budget_closed": true
+}

@@ -1,0 +1,30 @@
+{
+  "source_revision": "d11474f0ba0f58cef71d9e6e2ac4e3ffecdbdfb1",
+  "rounds": 10,
+  "train": [
+    410,
+    411
+  ],
+  "development": [
+    416,
+    417
+  ],
+  "final": [
+    418,
+    419
+  ],
+  "max_calls": 16000,
+  "round_limits": {
+    "2": 1300,
+    "3": 1400,
+    "4": 1400,
+    "5": 1400,
+    "6": 1400,
+    "7": 1400,
+    "8": 1400,
+    "9": 3000,
+    "10": 3000
+  },
+  "coordinator_proposals": 6,
+  "isolated_teacher_calls": 0
+}

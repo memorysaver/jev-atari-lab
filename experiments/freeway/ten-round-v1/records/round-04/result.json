@@ -1,0 +1,121 @@
+{
+  "round": 4,
+  "status": "complete",
+  "episodes": [
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-04/candidate-seed-410",
+      "role": "candidate",
+      "status": "complete",
+      "seed": 410,
+      "frames": 8192,
+      "controlled_frames": 8027,
+      "decisions": 502,
+      "reward": 20.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 496,
+        "NOOP": 6
+      },
+      "branches": {
+        "model": 502
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 124.22255571099231,
+      "api_attempts": 502,
+      "reported_cost_usd": 0.045176922
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-04/candidate-seed-411",
+      "role": "candidate",
+      "status": "complete",
+      "seed": 411,
+      "frames": 8192,
+      "controlled_frames": 8009,
+      "decisions": 501,
+      "reward": 19.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 487,
+        "NOOP": 14
+      },
+      "branches": {
+        "model": 501
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 121.5135217269999,
+      "api_attempts": 501,
+      "reported_cost_usd": 0.045081498
+    }
+  ],
+  "probe": {
+    "reference": {
+      "n": 40,
+      "matches": 24,
+      "by_branch_motion": {
+        "above-traffic": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/approaching": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/receding": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "wait-moving/approaching": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        },
+        "wait-moving/receding": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        }
+      },
+      "macro": 0.6
+    },
+    "candidate": {
+      "n": 40,
+      "matches": 27,
+      "by_branch_motion": {
+        "above-traffic": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/approaching": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/receding": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "wait-moving/approaching": {
+          "n": 8,
+          "matches": 1,
+          "rate": 0.125
+        },
+        "wait-moving/receding": {
+          "n": 8,
+          "matches": 2,
+          "rate": 0.25
+        }
+      },
+      "macro": 0.675
+    }
+  },
+  "mean_reward": 19.5
+}

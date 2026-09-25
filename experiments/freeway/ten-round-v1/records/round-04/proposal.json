@@ -1,0 +1,24 @@
+{
+  "round": 4,
+  "program": {
+    "name": "freeway-entry-wait-examples-v1",
+    "guidance": "Execute this rule, including WAIT when required. The controlled chicken is x=44..50. UP moves toward smaller y, about 1 pixel/frame; each decision lasts 16 frames. Check only the lane directly ahead that UP can enter within 16 frames. A car box is [x,y,8,10]; chicken box is [44,p,6,8]. Consider a car only if y+10 <= p < y+26. If none qualifies choose UP. Estimate car speed v from its current and latest historical x divided by elapsed frames, correcting horizontal wrap by the shortest signed displacement. Entry time a=p-y-10; final checked time b=min(16,p+8-y). For any time t from a through b, predict car left edge q=x+v*t with screen wrap. If q+10>44 AND q-2<50 at any such time, choose NOOP. Otherwise choose UP. Examples from training: p=52, car=[46,27,8,10], previous x=50 sixteen frames ago: v=-0.25, entry=15, q=42.25 at entry, so NOOP. p=139, car=[48,123,8,10], previous x=40 sixteen frames ago: v=0.5, entry=6, q=51; its 2-pixel margin still overlaps, so NOOP even though it moves away. p=185, car=[8,171,8,10], previous x=5 sixteen frames ago: car remains far left, so UP. Other lanes must not distract from the eligible lane. If already inside a lane, do not wait for that lane; continue UP unless the next eligible lane triggers the rule. DOWN is not prescribed. Do not replace the conditional rule with constant UP.",
+    "schema_version": "freeway-choice-v1",
+    "action_criteria": {
+      "NOOP": "Choose when the eligible car overlaps x=44..50 with margin 2 during predicted lane entry; both training waiting examples require this.",
+      "UP": "Choose only when no eligible car has that predicted overlap. Passing already entered lanes still uses UP.",
+      "DOWN": "Not required by this rule; no condition selects retreat."
+    }
+  },
+  "program_hash": "d9cbeec7e7c691cf259fea9b9ed658fa3f74f5a8475a47d5f45b547930123ffb",
+  "source_revision": "d11474f0ba0f58cef71d9e6e2ac4e3ffecdbdfb1",
+  "author": "interactive-coordinator",
+  "isolated_teacher_calls": 0,
+  "rationale": "Round 3 explicit prediction still chose UP throughout both games and all 40 probes. Add three concrete training examples and algebraic overlap conditions without changing the intended predictive rule.",
+  "available_feedback": [
+    "artifacts/freeway/ten-round-v1/round-01/result.json",
+    "artifacts/freeway/ten-round-v1/round-02/result.json",
+    "artifacts/freeway/ten-round-v1/round-03/result.json"
+  ],
+  "final_data_used": false
+}

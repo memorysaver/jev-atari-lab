@@ -1,0 +1,269 @@
+{
+  "round": 9,
+  "status": "complete",
+  "episodes": [
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/local-up-seed-416",
+      "role": "local-up",
+      "status": "complete",
+      "seed": 416,
+      "frames": 8192,
+      "controlled_frames": 8000,
+      "decisions": 500,
+      "reward": 27.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 500
+      },
+      "branches": {
+        "always-up": 500
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 1.8354320490034297,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/local-predictive-seed-416",
+      "role": "local-predictive",
+      "status": "complete",
+      "seed": 416,
+      "frames": 8192,
+      "controlled_frames": 8000,
+      "decisions": 500,
+      "reward": 30.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "NOOP": 108,
+        "UP": 392
+      },
+      "branches": {
+        "wait-moving": 108,
+        "advance": 392
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 1.7764560040086508,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/local-up-seed-417",
+      "role": "local-up",
+      "status": "complete",
+      "seed": 417,
+      "frames": 8192,
+      "controlled_frames": 8044,
+      "decisions": 503,
+      "reward": 19.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 503
+      },
+      "branches": {
+        "always-up": 503
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 1.7883480140008032,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/local-predictive-seed-417",
+      "role": "local-predictive",
+      "status": "complete",
+      "seed": 417,
+      "frames": 8192,
+      "controlled_frames": 8044,
+      "decisions": 503,
+      "reward": 29.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 390,
+        "NOOP": 113
+      },
+      "branches": {
+        "advance": 390,
+        "wait-moving": 113
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 1.7938603409565985,
+      "api_attempts": 0,
+      "reported_cost_usd": 0
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/reference-seed-416",
+      "role": "reference",
+      "status": "complete",
+      "seed": 416,
+      "frames": 8192,
+      "controlled_frames": 8000,
+      "decisions": 500,
+      "reward": 27.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 500
+      },
+      "branches": {
+        "model": 500
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 118.71612187498249,
+      "api_attempts": 500,
+      "reported_cost_usd": 0.03865785
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/candidate-seed-416",
+      "role": "candidate",
+      "status": "complete",
+      "seed": 416,
+      "frames": 8192,
+      "controlled_frames": 8000,
+      "decisions": 500,
+      "reward": 27.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 500
+      },
+      "branches": {
+        "model": 500
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 119.26352186198346,
+      "api_attempts": 500,
+      "reported_cost_usd": 0.04195485
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/candidate-seed-417",
+      "role": "candidate",
+      "status": "complete",
+      "seed": 417,
+      "frames": 8192,
+      "controlled_frames": 8044,
+      "decisions": 503,
+      "reward": 19.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 503
+      },
+      "branches": {
+        "model": 503
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 120.2010811350192,
+      "api_attempts": 503,
+      "reported_cost_usd": 0.042202944
+    },
+    {
+      "path": "artifacts/freeway/ten-round-v1/round-09/reference-seed-417",
+      "role": "reference",
+      "status": "complete",
+      "seed": 417,
+      "frames": 8192,
+      "controlled_frames": 8044,
+      "decisions": 503,
+      "reward": 19.0,
+      "prefix_reward": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "action_histogram": {
+        "UP": 503
+      },
+      "branches": {
+        "model": 503
+      },
+      "end_reason": "native_termination",
+      "wall_seconds": 120.12147543998435,
+      "api_attempts": 503,
+      "reported_cost_usd": 0.038886162
+    }
+  ],
+  "probe": {
+    "reference": {
+      "n": 40,
+      "matches": 24,
+      "by_branch_motion": {
+        "above-traffic": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/approaching": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/receding": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "wait-moving/approaching": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        },
+        "wait-moving/receding": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        }
+      },
+      "macro": 0.6
+    },
+    "candidate": {
+      "n": 40,
+      "matches": 24,
+      "by_branch_motion": {
+        "above-traffic": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/approaching": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "advance/receding": {
+          "n": 8,
+          "matches": 8,
+          "rate": 1.0
+        },
+        "wait-moving/approaching": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        },
+        "wait-moving/receding": {
+          "n": 8,
+          "matches": 0,
+          "rate": 0.0
+        }
+      },
+      "macro": 0.6
+    }
+  },
+  "mean_reward": 23.0,
+  "gate": {
+    "passed": false,
+    "paired_gains": [
+      0.0,
+      0.0
+    ],
+    "mean_gain": 0.0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "reference": {
+    "n": 40,
+    "matches": 24,
+    "by_branch_motion": {
+      "above-traffic": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/approaching": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "advance/receding": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      },
+      "wait-moving/approaching": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      },
+      "wait-moving/receding": {
+        "n": 8,
+        "matches": 0,
+        "rate": 0.0
+      }
+    },
+    "macro": 0.6
+  },
+  "candidate": {
+    "n": 40,
+    "matches": 20,
+    "by_branch_motion": {
+      "above-traffic": {
+        "n": 8,
+        "matches": 2,
+        "rate": 0.25
+      },
+      "advance/approaching": {
+        "n": 8,
+        "matches": 5,
+        "rate": 0.625
+      },
+      "advance/receding": {
+        "n": 8,
+        "matches": 3,
+        "rate": 0.375
+      },
+      "wait-moving/approaching": {
+        "n": 8,
+        "matches": 2,
+        "rate": 0.25
+      },
+      "wait-moving/receding": {
+        "n": 8,
+        "matches": 8,
+        "rate": 1.0
+      }
+    },
+    "macro": 0.5
+  }
+}

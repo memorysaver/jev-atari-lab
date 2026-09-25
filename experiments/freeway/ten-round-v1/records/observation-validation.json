@@ -1,0 +1,14 @@
+{
+  "sampled_object_checks": 90244,
+  "color_supported": 88314,
+  "missing_by_car_x": {
+    "0": 574,
+    "-3": 282,
+    "-1": 698,
+    "-2": 376
+  },
+  "player_failures": 0,
+  "all_missing_at_left_edge": true,
+  "decoder_sha256": "4ed1f2fd94407a1c9c7c76d42edece90401b1e66b9634204670ad12c8c572729",
+  "limits": "Color support only; nominal edge boxes can be invisible; no collision classifier"
+}

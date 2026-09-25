@@ -1,5 +1,10 @@
 # Experiment journal
 
+[Freeway ten-round study](freeway/ten-round-v1/README.md): all ten rounds and 42 full
+recordings completed; both held-out score gains were zero and no revision was
+promoted. Complete traces, six coordinator proposals and a closed 11,711-attempt
+ledger are preserved. Reported cost US$0.979; zero isolated teacher calls.
+
 2026-09-25: [Five-round Seaquest execution study](seaquest/execution-five-round-v1/README.md)
 completed and stopped. The selected wording revision regressed on final execution
 and game return; none was promoted. Ten new full videos, 712 probe responses,

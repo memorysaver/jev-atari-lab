@@ -1,0 +1,19 @@
+{
+  "http_attempts": 11711,
+  "successful": 11711,
+  "statuses": {
+    "200": 11711
+  },
+  "input_tokens": 23302333,
+  "output_tokens": 469878,
+  "reported_cost_usd": 0.978697986,
+  "api_wall_seconds": 2773.95434966177,
+  "episodes": 42,
+  "native_ended": 42,
+  "frames": 344064,
+  "controlled_frames": 336700,
+  "jev_decisions": 11029,
+  "local_decisions": 12032,
+  "playback_seconds": 5734.4,
+  "limits": "Provider-reported successful-call cost; excludes interactive coordinator and local compute. Study collection only, excluding offline replay/tests/setup."
+}

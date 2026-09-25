@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "seed": 411,
+  "frames": 8192,
+  "controlled_frames": 8009,
+  "decisions": 1002,
+  "reward": 25.0,
+  "prefix_reward": 0.0,
+  "terminated": true,
+  "truncated": false,
+  "action_histogram": {
+    "NOOP": 264,
+    "UP": 738
+  },
+  "branches": {
+    "wait-moving": 264,
+    "advance": 738
+  },
+  "end_reason": "native_termination",
+  "wall_seconds": 2.29718714003684,
+  "api_attempts": 0,
+  "reported_cost_usd": 0
+}

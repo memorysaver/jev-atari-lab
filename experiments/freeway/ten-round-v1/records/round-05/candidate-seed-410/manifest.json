@@ -1,0 +1,50 @@
+{
+  "kind": "freeway-episode-v1",
+  "seed": 410,
+  "split": "train",
+  "rule": null,
+  "program": {
+    "name": "freeway-swept-interval-v1",
+    "guidance": "This is a conditional action-selection task. Apply the conditions literally. Let p be observation.player[1], the chicken top y. Identify the one car whose bottom y+10 satisfies y+10 <= p < y+26. This is the lane entered within the next 16-frame UP move. If no car meets that vertical condition, select UP. For the eligible car, x is bbox[0], y is bbox[1]. Get its previous x from the same lane in the latest history. Let dt=current raw_frame minus previous raw_frame; v=((x-previous_x+80) modulo 160 minus 80)/dt. The relevant future interval is a=p-y-10 to b=min(16,p+8-y). Compute qA=x+v*a and qB=x+v*b. With ordinary non-wrapping motion the NOOP test is min(qA,qB)<52 AND max(qA,qB)>34. Both inequalities true means NOOP. Otherwise choose UP. If the prediction crosses the horizontal boundary, split the interval at the wrap and apply the same overlap test to each visible part. The two-pixel car margin is already included in the constants 34 and 52. NOOP is correct even if the car is moving away but overlap persists at entry. Ignore lanes already entered and lanes more than 16 pixels ahead. DOWN is never required by this declared rule. Do not substitute a constant-UP policy or choose an action just because UP is needed for eventual scoring.",
+    "schema_version": "freeway-choice-v1",
+    "action_criteria": {
+      "NOOP": "Eligible lane exists AND min(predicted car x at entry, predicted car x at interval end)<52 AND max(those positions)>34. These conditions require waiting, regardless of eventual upward objective.",
+      "UP": "No eligible lane, OR predicted car interval lies entirely left of x=34 or entirely right of x=52. UP is disallowed when the NOOP condition is true.",
+      "DOWN": "No condition in this policy requests DOWN."
+    }
+  },
+  "program_hash": "4274b6b0bb0c3ebf85c2d74ac60632959c3526522ba5638493ac076d74714480",
+  "source_revision": "d11474f0ba0f58cef71d9e6e2ac4e3ffecdbdfb1",
+  "hold": 16,
+  "frame_cap": 9000,
+  "sticky": 0.25,
+  "mode": 0,
+  "difficulty": 0,
+  "prefix_noops": 165,
+  "schema": "freeway-objects-v1",
+  "fps": 60,
+  "rom_sha256": "3ef620234b98f22bfd7c06d2467bac9d208e763c9f4309452384d59a741ba893",
+  "versions": {
+    "ale-py": "0.11.2",
+    "gymnasium": "1.3.0",
+    "numpy": "2.5.3"
+  },
+  "transport": {
+    "backend": "openrouter",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "requested_model": "~typesafe/jev-latest",
+    "expected_response_model": "typesafe/jev-1.13-20260917",
+    "max_api_calls": 16000,
+    "max_retries": 2,
+    "retry_transport": true,
+    "retry_http_statuses": [
+      429,
+      500,
+      502,
+      503,
+      504,
+      520,
+      529
+    ]
+  }
+}
