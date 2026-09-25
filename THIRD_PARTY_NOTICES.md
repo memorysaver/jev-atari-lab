@@ -74,3 +74,11 @@ local calibration does not establish complete semantic accuracy.
 The v2 observation diagnostics in `src/jev_atari/seaquest_observation.py` also
 adapt color definitions from the same revision's `ocatari/vision/seaquest.py`.
 The same MIT notice applies; color support is not complete semantic validation.
+
+## OCAtari-derived Freeway mapping
+
+`src/jev_atari/freeway.py` adapts coordinates, lane layout and colors from
+https://github.com/k4ntz/OC_Atari/blob/99c874675df6b76a33a80b57776c123fbcd051af/ocatari/ram/freeway.py
+under the full MIT license and copyright notice reproduced above. OCAtari is not
+installed. The local bounded pixel-support validation does not establish precise
+collision geometry, visible sprites at the left boundary, or an optimal policy.

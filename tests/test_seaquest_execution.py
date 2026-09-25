@@ -164,6 +164,9 @@ def test_sixth_round_rejected_without_calls(tmp_path, monkeypatch):
 
 def test_five_round_mock_pipeline_and_full_offline_audit(tmp_path, monkeypatch):
     """Exercise selection fallback, final pairing and original exchange auditing together."""
+    # Completed local studies must not contaminate this synthetic fresh-seed check.
+    monkeypatch.setattr(study, "REVIEWED", study.REVIEWED.resolve())
+    monkeypatch.chdir(tmp_path)
     monkeypatch.setenv("OPENROUTER_API_KEY", "synthetic-key")
     monkeypatch.setattr(research, "DECISIONS", 4)
     monkeypatch.setattr(study, "source_revision", lambda: "synthetic-frozen")

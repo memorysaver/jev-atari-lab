@@ -12,7 +12,10 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Latest: [Five-round Seaquest execution results](seaquest/execution-five-round-results-2026-09-25.md).
+New: [Freeway ten-round study](freeway/README.md), authorized 2026-09-26.
+Round 1 local calibration completed; the live protocol is frozen before model calls.
+
+Earlier: [Five-round Seaquest execution results](seaquest/execution-five-round-results-2026-09-25.md).
 The selected wording revision regressed on final execution (68.75% to 60.94%)
 and game return (300 to 240); no revision was promoted. Literal controls scored
 400 mean on the same final starts. All five rounds completed, ten videos were
