@@ -1,5 +1,14 @@
 # Seaquest teacher and coordinator log
 
+The [five-round execution follow-up](execution-five-round-results-2026-09-25.md)
+added two coordinator-authored same-rule wording proposals. Round three's
+[signed-delta revision](../../experiments/seaquest/execution-five-round-v1/records/round-03/proposal.json)
+passed its training screen and was sealed; round four's
+[target-selection examples](../../experiments/seaquest/execution-five-round-v1/records/round-04/proposal.json)
+were rejected for branch regressions. The selected revision then failed final
+execution and gameplay gates. No wording was promoted, and the five-round budget
+is closed. Neither proposal was an isolated teacher output.
+
 No isolated Seaquest teacher has been invoked. The completed
 [ten-round study](ten-round-results-2026-09-24.md) contains seven proposals authored
 by the interactive coordinator from training feedback. Exact programs, hypotheses,

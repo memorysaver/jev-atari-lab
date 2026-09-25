@@ -1,0 +1,99 @@
+{
+  "round": 3,
+  "status": "complete",
+  "events": [
+    {
+      "kind": "probe",
+      "path": "round-03/probe",
+      "packet": "training-packet.json"
+    }
+  ],
+  "probe_metrics": {
+    "candidate": {
+      "n": 96,
+      "matches": 56,
+      "by_expected_action": {
+        "NOOP": {
+          "n": 16,
+          "matches": 16,
+          "rate": 1.0
+        },
+        "FIRE": {
+          "n": 16,
+          "matches": 16,
+          "rate": 1.0
+        },
+        "UPFIRE": {
+          "n": 16,
+          "matches": 1,
+          "rate": 0.0625
+        },
+        "DOWNFIRE": {
+          "n": 16,
+          "matches": 15,
+          "rate": 0.9375
+        },
+        "LEFTFIRE": {
+          "n": 16,
+          "matches": 7,
+          "rate": 0.4375
+        },
+        "RIGHTFIRE": {
+          "n": 16,
+          "matches": 1,
+          "rate": 0.0625
+        }
+      },
+      "movement_macro": 0.375,
+      "movement_coverage": true
+    },
+    "reference": {
+      "n": 96,
+      "matches": 39,
+      "by_expected_action": {
+        "NOOP": {
+          "n": 16,
+          "matches": 16,
+          "rate": 1.0
+        },
+        "FIRE": {
+          "n": 16,
+          "matches": 15,
+          "rate": 0.9375
+        },
+        "UPFIRE": {
+          "n": 16,
+          "matches": 1,
+          "rate": 0.0625
+        },
+        "DOWNFIRE": {
+          "n": 16,
+          "matches": 1,
+          "rate": 0.0625
+        },
+        "LEFTFIRE": {
+          "n": 16,
+          "matches": 4,
+          "rate": 0.25
+        },
+        "RIGHTFIRE": {
+          "n": 16,
+          "matches": 2,
+          "rate": 0.125
+        }
+      },
+      "movement_macro": 0.125,
+      "movement_coverage": true
+    }
+  },
+  "screen": {
+    "passed": true,
+    "movement_macro_gain": 0.25,
+    "action_rate_changes": {
+      "UPFIRE": 0.0,
+      "DOWNFIRE": 0.875,
+      "LEFTFIRE": 0.1875,
+      "RIGHTFIRE": -0.0625
+    }
+  }
+}

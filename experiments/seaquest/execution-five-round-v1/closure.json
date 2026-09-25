@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "recorded_at": "2026-09-25T15:41:08.296196+00:00",
+  "stopped_after_round": 5,
+  "model_calls_closed": true,
+  "used_attempts": 3914,
+  "unused_attempts_closed": 2086,
+  "selected_training_round": 3,
+  "candidate_promoted": false,
+  "execution_gate": {
+    "passed": false,
+    "movement_macro_gain": -0.078125,
+    "action_rate_changes": {
+      "UPFIRE": 0.0,
+      "DOWNFIRE": 0.0625,
+      "LEFTFIRE": -0.125,
+      "RIGHTFIRE": -0.25
+    }
+  },
+  "gameplay_gate": {
+    "passed": false,
+    "mean_gain": -60.0,
+    "paired_gains": [
+      -20.0,
+      -100.0
+    ]
+  },
+  "coordinator_proposals": 2,
+  "isolated_teacher_calls": 0,
+  "source_revision": "776bf0cf189dfbd4cce5e39f29e089c41cbe6af3",
+  "limits": "Negative same-rule wording result. Local controls are not model predictions; historical comparisons are not fresh model replicates. No mastery, weight learning or teacher-feedback-benefit claim."
+}

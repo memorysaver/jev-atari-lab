@@ -1,0 +1,294 @@
+{
+  "rounds": {
+    "2": {
+      "reference": {
+        "refill": {
+          "n": 2,
+          "matches": 2
+        },
+        "seek-left": {
+          "n": 5,
+          "matches": 1
+        },
+        "hunt-turn-right": {
+          "n": 16,
+          "matches": 3
+        },
+        "hunt-turn-left": {
+          "n": 11,
+          "matches": 3
+        },
+        "seek-up": {
+          "n": 15,
+          "matches": 0
+        },
+        "unavailable": {
+          "n": 16,
+          "matches": 16
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 1
+        },
+        "hunt-fire": {
+          "n": 14,
+          "matches": 13
+        },
+        "return": {
+          "n": 1,
+          "matches": 1
+        }
+      },
+      "simple": {
+        "refill": {
+          "n": 2,
+          "matches": 2
+        },
+        "hunt-fire": {
+          "n": 33,
+          "matches": 26
+        },
+        "hunt-turn-right": {
+          "n": 17,
+          "matches": 17
+        },
+        "hunt-turn-left": {
+          "n": 11,
+          "matches": 8
+        },
+        "unavailable": {
+          "n": 16,
+          "matches": 16
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 1
+        },
+        "return": {
+          "n": 1,
+          "matches": 1
+        }
+      }
+    },
+    "3": {
+      "candidate": {
+        "refill": {
+          "n": 2,
+          "matches": 2
+        },
+        "seek-left": {
+          "n": 5,
+          "matches": 5
+        },
+        "hunt-turn-right": {
+          "n": 16,
+          "matches": 1
+        },
+        "hunt-turn-left": {
+          "n": 11,
+          "matches": 2
+        },
+        "seek-up": {
+          "n": 15,
+          "matches": 0
+        },
+        "unavailable": {
+          "n": 16,
+          "matches": 16
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 15
+        },
+        "hunt-fire": {
+          "n": 14,
+          "matches": 14
+        },
+        "return": {
+          "n": 1,
+          "matches": 1
+        }
+      },
+      "reference": {
+        "refill": {
+          "n": 2,
+          "matches": 2
+        },
+        "seek-left": {
+          "n": 5,
+          "matches": 1
+        },
+        "hunt-turn-right": {
+          "n": 16,
+          "matches": 2
+        },
+        "hunt-turn-left": {
+          "n": 11,
+          "matches": 3
+        },
+        "seek-up": {
+          "n": 15,
+          "matches": 0
+        },
+        "unavailable": {
+          "n": 16,
+          "matches": 16
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 1
+        },
+        "hunt-fire": {
+          "n": 14,
+          "matches": 13
+        },
+        "return": {
+          "n": 1,
+          "matches": 1
+        }
+      }
+    },
+    "4": {
+      "candidate": {
+        "refill": {
+          "n": 2,
+          "matches": 2
+        },
+        "seek-left": {
+          "n": 5,
+          "matches": 0
+        },
+        "hunt-turn-right": {
+          "n": 16,
+          "matches": 0
+        },
+        "hunt-turn-left": {
+          "n": 11,
+          "matches": 1
+        },
+        "seek-up": {
+          "n": 15,
+          "matches": 15
+        },
+        "unavailable": {
+          "n": 16,
+          "matches": 16
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 1
+        },
+        "hunt-fire": {
+          "n": 14,
+          "matches": 13
+        },
+        "return": {
+          "n": 1,
+          "matches": 1
+        }
+      },
+      "reference": {
+        "refill": {
+          "n": 2,
+          "matches": 2
+        },
+        "seek-left": {
+          "n": 5,
+          "matches": 1
+        },
+        "hunt-turn-right": {
+          "n": 16,
+          "matches": 3
+        },
+        "hunt-turn-left": {
+          "n": 11,
+          "matches": 3
+        },
+        "seek-up": {
+          "n": 15,
+          "matches": 0
+        },
+        "unavailable": {
+          "n": 16,
+          "matches": 16
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 1
+        },
+        "hunt-fire": {
+          "n": 14,
+          "matches": 13
+        },
+        "return": {
+          "n": 1,
+          "matches": 1
+        }
+      }
+    },
+    "5": {
+      "candidate": {
+        "seek-right": {
+          "n": 4,
+          "matches": 0
+        },
+        "hunt-turn-left": {
+          "n": 8,
+          "matches": 3
+        },
+        "hunt-fire": {
+          "n": 16,
+          "matches": 14
+        },
+        "hunt-turn-right": {
+          "n": 8,
+          "matches": 3
+        },
+        "return": {
+          "n": 13,
+          "matches": 13
+        },
+        "seek-up": {
+          "n": 3,
+          "matches": 0
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 16
+        }
+      },
+      "reference": {
+        "seek-right": {
+          "n": 4,
+          "matches": 0
+        },
+        "hunt-turn-left": {
+          "n": 8,
+          "matches": 4
+        },
+        "hunt-fire": {
+          "n": 16,
+          "matches": 13
+        },
+        "hunt-turn-right": {
+          "n": 8,
+          "matches": 6
+        },
+        "return": {
+          "n": 13,
+          "matches": 13
+        },
+        "seek-up": {
+          "n": 3,
+          "matches": 0
+        },
+        "hunt-depth-down": {
+          "n": 16,
+          "matches": 15
+        }
+      }
+    }
+  },
+  "identical_observation_hash_overlap": 0,
+  "limits": "Descriptive branch counts. Final and training packets use different trajectory sources; action-balanced samples do not match their conditional-branch composition."
+}

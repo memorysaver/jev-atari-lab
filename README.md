@@ -16,6 +16,14 @@ intended path to a paper. Initially both teacher and Jev weights stay fixed;
 the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
 No repeatable optimization benefit has been established.
 
+**Seaquest execution follow-up completed:** five rounds separated literal strategy
+performance from Jev rule execution. The selected wording revision regressed on
+final movement macro agreement (68.75% to 60.94%) and game mean return (300 to 240).
+No revision was promoted. Literal controls scored 400 on the same starts; all ten
+new recordings were audited and preserved. Reported cost US$0.573, zero isolated
+teacher calls. [Results and lessons](docs/seaquest/execution-five-round-results-2026-09-25.md) ·
+[Recordings](experiments/seaquest/execution-five-round-v1/videos.md).
+
 **Seaquest ten-round study completed and stopped:** the training-selected question
 passed both held-out gates: development mean 80 to 370, final mean 80 to 290,
 with no seed regression. All 24 episodes and recordings were audited, archived,

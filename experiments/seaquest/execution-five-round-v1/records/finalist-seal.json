@@ -1,0 +1,31 @@
+{
+  "selected_round": 3,
+  "program": {
+    "name": "seaquest-late-diver-signed-deltas-v1",
+    "guidance": "Apply the FIRST matching block to the CURRENT observation. Coordinates increase right/down. Player is kind=player; Y=player.bbox[1], O=oxygen_raw, C=carried_divers. A box center is (x+w/2,y+h/2), not its top-left. (1) object_state not active or missing player: NOOP. (2) Y<=46 AND O<60: FIRE for refill. (3) Y>46 AND (C==6 OR (C>=1 AND O<=20)): UPFIRE. (4) SEEK iff C==0 AND O<=32 AND a visible diver exists. Pick the diver minimizing abs(diver center x-player center x)+abs(diver center y-player center y); first listed wins ties. DX=diver center x minus player center x. DY=diver center y minus player center y. DY < -5: UPFIRE. DY > 5: DOWNFIRE. Otherwise abs(DY)<=5: DX < -5: LEFTFIRE; DX > 5: RIGHTFIRE; otherwise FIRE. Negative DY means ABOVE, so move UP, never down. A SEEK decision ends here: hunting depth cannot override it. (5) HUNT means SEEK is false. Y<86: DOWNFIRE. Y>100: UPFIRE. Only with 86<=Y<=100, find sharks/enemy_submarines within 12 center-y pixels and take smallest absolute center-x distance; first listed wins ties. Enemy center x < player center x AND facing right: LEFTFIRE. Enemy center x > player center x AND facing left: RIGHTFIRE. Otherwise FIRE. FIRE keeps existing facing; it cannot turn or correct depth. Shooting while moving is intentional. Surface/return blocks override SEEK and HUNT. All eighteen actions remain available; this rule uses six. Use present numbers rather than the previous action. Boxes and identities are provisional; infer no reward or death cause.",
+    "schema_version": "seaquest-action-criteria-v2",
+    "action_criteria": {
+      "NOOP": "Choose when object_state is not active or no player object exists. This overrides all other blocks.",
+      "FIRE": "Only after NOOP check: surface refill (Y<=46 and O<60); OR SEEK with abs(DX)<=5 and abs(DY)<=5; OR HUNT with 86<=Y<=100 and no same-lane enemy or already facing it. FIRE cannot move or turn. Not valid for a SEEK target above/below/left/right outside tolerance, HUNT depth correction, wrong enemy facing, or the earlier return block.",
+      "UP": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "RIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "LEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWN": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPFIRE": "After availability/refill: return when Y>46 AND (C==6 OR (C>=1 AND O<=20)); otherwise SEEK with DY<-5; otherwise HUNT with Y>100. SEEK is C==0 AND O<=32 AND a visible diver. DY is diver center y MINUS player center y. Negative DY is above: UPFIRE decreases y. Return overrides SEEK; SEEK overrides HUNT.",
+      "RIGHTFIRE": "After availability/refill/return: SEEK with abs(DY)<=5 and DX>5; OR HUNT with 86<=Y<=100, nearest same-lane enemy center x larger than player center x, and player.facing==left. DX=diver center x minus player center x. SEEK is C==0 AND O<=32 AND a visible diver; otherwise HUNT. First satisfy depth or vertical SEEK priority.",
+      "LEFTFIRE": "After availability/refill/return: SEEK with abs(DY)<=5 and DX<-5; OR HUNT with 86<=Y<=100, nearest same-lane enemy center x smaller than player center x, and player.facing==right. DX=diver center x minus player center x. SEEK is C==0 AND O<=32 AND a visible diver; otherwise HUNT. First satisfy depth or vertical SEEK priority.",
+      "DOWNFIRE": "After availability/refill/return: SEEK with DY>5; OR HUNT with player top-left Y<86. SEEK is C==0 AND O<=32 AND a visible diver. DY=diver center y MINUS player center y; positive means below. In SEEK, DY<-5 requires UPFIRE instead. HUNT is not SEEK; check Y even if no enemy is visible.",
+      "UPRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition."
+    }
+  },
+  "program_hash": "cdf1dc54d71a411962f9e2a89e7601df9dbf078e266d2990c96c8de5f07d5b08",
+  "distinct_candidate": true,
+  "sealed_before_final_access": true
+}

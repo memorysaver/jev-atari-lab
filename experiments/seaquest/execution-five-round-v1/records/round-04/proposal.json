@@ -1,0 +1,36 @@
+{
+  "origin": "interactive-coordinator-training-feedback",
+  "intended_rule": "late-diver",
+  "program": {
+    "name": "seaquest-late-diver-target-selection-v1",
+    "guidance": "Execute the FIRST applicable block using current objects. Player top-left Y=bbox[1], O=oxygen_raw, C=carried_divers. Box center=(x+w/2,y+h/2); y increases downward. (1) Unavailable/missing player: NOOP. (2) Y<=46 AND O<60: FIRE to refill. (3) Y>46 AND (C==6 OR (C>=1 AND O<=20)): UPFIRE. (4) SEEK iff C==0 AND O<=32 AND any diver exists. Compare ALL diver center Manhattan distances to player center; choose the minimum, not the first object. First listed breaks exact distance ties only. For that ONE target: center y < player center y-5 -> UPFIRE; center y > player center y+5 -> DOWNFIRE. Only when vertical distance<=5: center x < player center x-5 -> LEFTFIRE; center x > player center x+5 -> RIGHTFIRE; otherwise FIRE. SEEK overrides hunting depth and enemy turning. Example at O=26,C=0: player center(96,93.5), divers(42,146.5),(74,122.5),(74,74.5) have distances107,51,41. Select THIRD diver, above player: UPFIRE. Do not move toward a farther lower diver or turn horizontally first. (5) HUNT means not SEEK. Y<86 -> DOWNFIRE; Y>100 -> UPFIRE. Otherwise FIRST exclude every shark/enemy_submarine whose center y differs by more than12. Among remaining enemies choose smallest absolute center-x distance, first listed on ties. Left-side enemy AND facing right -> LEFTFIRE; right-side enemy AND facing left -> RIGHTFIRE; otherwise FIRE. Example player center(71,95.5) facing left: enemy(59,74.5) is outside the lane; enemy(158,93.5) is inside. Ignore the closer-x out-of-lane enemy; choose RIGHTFIRE. FIRE never turns or changes depth. All eighteen actions remain selectable. Positions/identities are provisional, not reward/death labels. In SEEK DX=target center x-player center x; DY=target center y-player center y.",
+    "schema_version": "seaquest-action-criteria-v2",
+    "action_criteria": {
+      "NOOP": "Choose when object_state is not active or no player object exists. This overrides all other blocks.",
+      "FIRE": "Only after NOOP check: surface refill (Y<=46 and O<60); OR SEEK with abs(DX)<=5 and abs(DY)<=5; OR HUNT with 86<=Y<=100 and no same-lane enemy or already facing it. FIRE cannot move or turn. Not valid for a SEEK target above/below/left/right outside tolerance, HUNT depth correction, wrong enemy facing, or the earlier return block.",
+      "UP": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "RIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "LEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWN": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNRIGHT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNLEFT": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPFIRE": "After availability/refill: return when Y>46 AND (C==6 OR (C>=1 AND O<=20)); otherwise SEEK with the NEAREST diver center y < player center y-5; otherwise HUNT with Y>100. SEEK means C==0 AND O<=32 AND a visible diver. Compare ALL divers by Manhattan center distance before choosing direction. Example player(96,93.5), divers(42,146.5),(74,122.5),(74,74.5): distances107,51,41; nearest is ABOVE -> UPFIRE. SEEK overrides hunting depth.",
+      "RIGHTFIRE": "After availability/refill/return: SEEK with abs(DY)<=5 and DX>5; OR HUNT at Y=86..100 with nearest ELIGIBLE enemy right of player center AND facing left. SEEK is empty, O<=32 and a diver exists. In HUNT exclude enemies with center-y difference>12 BEFORE comparing center-x distances. Player(71,95.5) facing left, enemies(59,74.5),(158,93.5): first is OUTSIDE lane, second is RIGHT -> RIGHTFIRE. FIRE would shoot away.",
+      "LEFTFIRE": "After availability/refill/return: SEEK with abs(DY)<=5 and DX<-5; OR HUNT at Y=86..100 with nearest ELIGIBLE enemy left of player center AND facing right. SEEK is empty, O<=32 and a diver exists. Select the diver by minimum Manhattan center distance across ALL divers. In HUNT exclude enemies with center-y difference>12 BEFORE comparing center-x distances. First listed breaks ties only; earlier vertical/depth priorities still apply.",
+      "DOWNFIRE": "After availability/refill/return: SEEK with DY>5; OR HUNT with player top-left Y<86. SEEK is C==0 AND O<=32 AND a visible diver. DY=diver center y MINUS player center y; positive means below. In SEEK, DY<-5 requires UPFIRE instead. HUNT is not SEEK; check Y even if no enemy is visible.",
+      "UPRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "UPLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNRIGHTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition.",
+      "DOWNLEFTFIRE": "Outside this six-action target controller. Select only if none of NOOP, FIRE, UPFIRE, DOWNFIRE, LEFTFIRE or RIGHTFIRE has an applicable condition."
+    }
+  },
+  "hypothesis": "Round 3 repaired hunting descent but still missed 15/16 UPFIRE and 15/16 RIGHTFIRE cases. Training state 33dfaabd... has three divers: the nearest is the third and above the player, yet Jev chose DOWNFIRE. State 1885e017... has a close-x enemy outside the permitted lane and a right-side eligible enemy, yet Jev chose FIRE. Explicit all-target distance comparison and filter-before-nearest selection, with grounded examples, may repair target selection while keeping the exact rule.",
+  "evidence": [
+    "artifacts/seaquest/execution-five-round-v1/round-01/results.json",
+    "artifacts/seaquest/execution-five-round-v1/round-02/results.json",
+    "artifacts/seaquest/execution-five-round-v1/round-03/results.json"
+  ],
+  "risks": "Worked examples can overfit the reused training packet. Candidate alters several explanatory clauses, so any gain cannot identify one causal clause. Same thresholds, ordered priorities, center distances and first-listed tie rules were manually reviewed; target-selection failures are a hypothesis, not a direct observation of model reasoning."
+}

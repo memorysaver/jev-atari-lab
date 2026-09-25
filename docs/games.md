@@ -24,7 +24,7 @@ transfer test. See the [research roadmap](research-roadmap.md) for that distinct
 | Boot/action smoke check | Passed | Passed | Passed in recorded installation |
 | Generic raw-RAM runner | Available | Available | Available |
 | Semantic object adapter | RAM and simple RGB rules | Experimental v2 in dedicated studies | Not implemented |
-| Live Jev experiment | Recorded studies | Ten-round study; held-out gates passed | Not yet tested |
+| Live Jev experiment | Recorded studies | Policy and execution studies recorded | Not yet tested |
 | Value-based labels | 240-frame first-point outcome | Not implemented | Not implemented |
 | Multi-round learning or solved-game claim | Not established | Not established | Not established |
 
@@ -63,3 +63,8 @@ The subsequent [ten-round study](seaquest/ten-round-results-2026-09-24.md) compl
 24 episodes, with development mean 80 to 370 and final mean 80 to 290. All ten rounds
 and recordings are preserved and the budget is closed. This establishes bounded
 question-policy improvement, not Seaquest mastery or repeatable teacher optimization.
+
+The [five-round execution follow-up](seaquest/execution-five-round-results-2026-09-25.md)
+then separated literal strategy controls from model execution. Its selected wording
+revision failed both final gates; no revision was promoted. Ten new full videos
+and all five rounds are retained, with the allocation closed.

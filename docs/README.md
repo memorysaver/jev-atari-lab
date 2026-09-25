@@ -12,7 +12,14 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Latest: [Seaquest ten-round results](seaquest/ten-round-results-2026-09-24.md).
+Latest: [Five-round Seaquest execution results](seaquest/execution-five-round-results-2026-09-25.md).
+The selected wording revision regressed on final execution (68.75% to 60.94%)
+and game return (300 to 240); no revision was promoted. Literal controls scored
+400 mean on the same final starts. All five rounds completed, ten videos were
+preserved, and the budget is closed. Two coordinator proposals, zero isolated
+teacher calls; reported cost US$0.573.
+
+Earlier: [Seaquest ten-round results](seaquest/ten-round-results-2026-09-24.md).
 Exactly ten rounds and 24 episodes completed; unused capacity is closed. The sealed
 round-three question passed development (+290 mean) and final (+210 mean) paired
 gates. All recordings and restored evidence replayed. Seven coordinator proposals,
@@ -25,7 +32,7 @@ the proposed separation of strategy quality from rule execution. No new study ra
 
 [Five-round execution protocol](seaquest/execution-five-round-protocol.md): a new
 owner-authorized study separating literal strategy performance from Jev rule
-execution, with two wording proposals and a sealed final comparison.
+execution, now completed with two retained proposals and a rejected final candidate.
 
 [Pong closure](pong/candidate-feedback-results-2026-09-24.md).
 The OpenRouter study stopped on HTTP 502 in round two; one development round

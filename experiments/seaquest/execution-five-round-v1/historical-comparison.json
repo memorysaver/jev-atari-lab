@@ -1,0 +1,64 @@
+{
+  "status": "verified",
+  "literal_label_parity": [
+    {
+      "round": 3,
+      "seed": 320,
+      "states": 800,
+      "matches": 740,
+      "all_mismatch_labels_identical_to_original_diagnostic": true
+    },
+    {
+      "round": 3,
+      "seed": 321,
+      "states": 800,
+      "matches": 750,
+      "all_mismatch_labels_identical_to_original_diagnostic": true
+    },
+    {
+      "round": 8,
+      "seed": 320,
+      "states": 800,
+      "matches": 388,
+      "all_mismatch_labels_identical_to_original_diagnostic": true
+    },
+    {
+      "round": 8,
+      "seed": 321,
+      "states": 800,
+      "matches": 627,
+      "all_mismatch_labels_identical_to_original_diagnostic": true
+    }
+  ],
+  "round1_comparisons": [
+    {
+      "rule": "simple",
+      "seed": 320,
+      "literal_return": 340.0,
+      "historical_jev_return": 340.0,
+      "literal_minus_historical_jev": 0.0
+    },
+    {
+      "rule": "simple",
+      "seed": 321,
+      "literal_return": 300.0,
+      "historical_jev_return": 360.0,
+      "literal_minus_historical_jev": -60.0
+    },
+    {
+      "rule": "late-diver",
+      "seed": 320,
+      "literal_return": 360.0,
+      "historical_jev_return": 240.0,
+      "literal_minus_historical_jev": 120.0
+    },
+    {
+      "rule": "late-diver",
+      "seed": 321,
+      "literal_return": 340.0,
+      "historical_jev_return": 320.0,
+      "literal_minus_historical_jev": 20.0
+    }
+  ],
+  "limits": "Historical Jev responses are not fresh model replicates. Matching starts/horizons do not imply matching visited states; literal actions are intended-rule labels, not optimal-action labels."
+}

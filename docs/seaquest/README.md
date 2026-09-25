@@ -1,5 +1,14 @@
 # Seaquest research
 
+The [five-round execution follow-up](execution-five-round-results-2026-09-25.md)
+completed and stopped. Its selected same-rule wording revision failed both final
+gates: movement macro agreement 68.75% to 60.94%, game mean return 300 to 240.
+Literal late-diver controls scored 400 mean on those same starts. No wording was
+promoted; all ten new recordings and original exchanges were preserved.
+[Protocol](execution-five-round-protocol.md) and
+[evidence/videos](../../experiments/seaquest/execution-five-round-v1/README.md).
+
+
 The [ten-round study](ten-round-results-2026-09-24.md) completed exactly ten rounds
 and stopped. The training-selected round-three question improved development mean
 return from 80 to 370 and final mean from 80 to 290, with neither seed regressing.

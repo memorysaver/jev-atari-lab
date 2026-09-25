@@ -1,0 +1,529 @@
+{
+  "status": "verified",
+  "plan_hash": "f61be6147190b26a297547f49ace4ac6fa365fb98b90407e07fd3b85dc6c3113",
+  "report_hash": "ae3b1374b17677da0a30538cf4501f1cbf0f8db99f6bbb12fa6a84a0593d2dc6",
+  "costs_hash": "7bd4b48af45cd591a8b4aba4d0d275895a04067ba5e0682ce46bf0bf22ac6cb1",
+  "episodes": [
+    {
+      "round": 1,
+      "role": "literal-simple",
+      "seed": 320,
+      "local": true,
+      "summary": {
+        "status": "complete",
+        "seed": 320,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 340.0,
+        "controlled_reward": 340.0,
+        "prefix_reward": 0.0,
+        "life_losses": 1,
+        "controlled_life_losses": 1,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 0.9356622550403699,
+        "api_attempts": 0,
+        "reported_cost_usd": 0,
+        "action_histogram": {
+          "NOOP": 23,
+          "FIRE": 726,
+          "DOWNFIRE": 23,
+          "LEFTFIRE": 3,
+          "RIGHTFIRE": 3,
+          "UPFIRE": 22
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "12bd99da1242ccedfa1dc321acf765ee3f2e04a8386ae6bc6137f23cba3c04f4"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 1,
+      "role": "literal-simple",
+      "seed": 321,
+      "local": true,
+      "summary": {
+        "status": "complete",
+        "seed": 321,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 300.0,
+        "controlled_reward": 300.0,
+        "prefix_reward": 0.0,
+        "life_losses": 1,
+        "controlled_life_losses": 1,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 0.8854641640209593,
+        "api_attempts": 0,
+        "reported_cost_usd": 0,
+        "action_histogram": {
+          "DOWNFIRE": 22,
+          "LEFTFIRE": 6,
+          "FIRE": 720,
+          "RIGHTFIRE": 6,
+          "UPFIRE": 23,
+          "NOOP": 23
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "5dc78064361082958457ef81aaa21e9c7c53e55612fd85ea2dc34990561fb53d"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 1,
+      "role": "literal-late-diver",
+      "seed": 320,
+      "local": true,
+      "summary": {
+        "status": "complete",
+        "seed": 320,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 360.0,
+        "controlled_reward": 360.0,
+        "prefix_reward": 0.0,
+        "life_losses": 1,
+        "controlled_life_losses": 1,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 0.8654067830066197,
+        "api_attempts": 0,
+        "reported_cost_usd": 0,
+        "action_histogram": {
+          "NOOP": 10,
+          "FIRE": 724,
+          "DOWNFIRE": 23,
+          "LEFTFIRE": 16,
+          "RIGHTFIRE": 5,
+          "UPFIRE": 22
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "e194623b77488aafcdc4d37197348603d1c558469e00bdfe4581443149773f54"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 1,
+      "role": "literal-late-diver",
+      "seed": 321,
+      "local": true,
+      "summary": {
+        "status": "complete",
+        "seed": 321,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 340.0,
+        "controlled_reward": 340.0,
+        "prefix_reward": 0.0,
+        "life_losses": 1,
+        "controlled_life_losses": 1,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 0.9163231319980696,
+        "api_attempts": 0,
+        "reported_cost_usd": 0,
+        "action_histogram": {
+          "DOWNFIRE": 28,
+          "LEFTFIRE": 40,
+          "FIRE": 685,
+          "RIGHTFIRE": 5,
+          "UPFIRE": 17,
+          "NOOP": 25
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "435e456a2918fa5c3afc4b3fab70b45827518aa57bc6e44296de54f1b5923748"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 5,
+      "role": "literal-reference",
+      "seed": 348,
+      "local": true,
+      "summary": {
+        "status": "complete",
+        "seed": 348,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 380.0,
+        "controlled_reward": 380.0,
+        "prefix_reward": 0.0,
+        "life_losses": 0,
+        "controlled_life_losses": 0,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 1.021627256006468,
+        "api_attempts": 0,
+        "reported_cost_usd": 0,
+        "action_histogram": {
+          "DOWNFIRE": 33,
+          "FIRE": 730,
+          "RIGHTFIRE": 8,
+          "LEFTFIRE": 4,
+          "UPFIRE": 25
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "eb65d0aa08e9ba6c5ed48af131fcba3f1663d7219ef88531dbd9497dca2da974"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 5,
+      "role": "literal-reference",
+      "seed": 349,
+      "local": true,
+      "summary": {
+        "status": "complete",
+        "seed": 349,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 420.0,
+        "controlled_reward": 420.0,
+        "prefix_reward": 0.0,
+        "life_losses": 0,
+        "controlled_life_losses": 0,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 0.9748846209840849,
+        "api_attempts": 0,
+        "reported_cost_usd": 0,
+        "action_histogram": {
+          "FIRE": 769,
+          "RIGHTFIRE": 4,
+          "LEFTFIRE": 4,
+          "UPFIRE": 11,
+          "DOWNFIRE": 12
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "34d0debea426ed0fd21e7fe98fdd5cf0f52942d38ffcddc22c6de1a33e34de42"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 5,
+      "role": "baseline",
+      "seed": 348,
+      "local": false,
+      "summary": {
+        "status": "complete",
+        "seed": 348,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 280.0,
+        "controlled_reward": 280.0,
+        "prefix_reward": 0.0,
+        "life_losses": 2,
+        "controlled_life_losses": 2,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 2,
+        "end_reason": "frame_cap",
+        "wall_seconds": 206.34649671404622,
+        "api_attempts": 800,
+        "reported_cost_usd": 0.114996798,
+        "action_histogram": {
+          "DOWNFIRE": 75,
+          "FIRE": 619,
+          "RIGHTFIRE": 17,
+          "LEFTFIRE": 16,
+          "NOOP": 46,
+          "UPFIRE": 27
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "3393c376b47be3c5258ee1e941b4b000b8b5089bbef3dc5e33665920758fade8"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 5,
+      "role": "candidate",
+      "seed": 348,
+      "local": false,
+      "summary": {
+        "status": "complete",
+        "seed": 348,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 260.0,
+        "controlled_reward": 260.0,
+        "prefix_reward": 0.0,
+        "life_losses": 1,
+        "controlled_life_losses": 1,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 3,
+        "end_reason": "frame_cap",
+        "wall_seconds": 206.81697132403497,
+        "api_attempts": 800,
+        "reported_cost_usd": 0.121021152,
+        "action_histogram": {
+          "DOWNFIRE": 44,
+          "FIRE": 687,
+          "RIGHTFIRE": 4,
+          "LEFTFIRE": 15,
+          "NOOP": 23,
+          "UPFIRE": 27
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "8e574db9117ffe88ef3b06273b9e9a5c0684c476772ed6bb2e9e707e131d77c5"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 5,
+      "role": "baseline",
+      "seed": 349,
+      "local": false,
+      "summary": {
+        "status": "complete",
+        "seed": 349,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 320.0,
+        "controlled_reward": 320.0,
+        "prefix_reward": 0.0,
+        "life_losses": 2,
+        "controlled_life_losses": 2,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 213.23991577298148,
+        "api_attempts": 800,
+        "reported_cost_usd": 0.11313498,
+        "action_histogram": {
+          "FIRE": 721,
+          "RIGHTFIRE": 12,
+          "LEFTFIRE": 9,
+          "NOOP": 46,
+          "DOWNFIRE": 12
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "c711897019f958c06603f808a158984f38ceab4c0b7a6e9dd59ed2431c104db9"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    },
+    {
+      "round": 5,
+      "role": "candidate",
+      "seed": 349,
+      "local": false,
+      "summary": {
+        "status": "complete",
+        "seed": 349,
+        "decisions": 864,
+        "agent_decisions": 800,
+        "frames": 3456,
+        "controlled_frames": 3200,
+        "reward": 220.0,
+        "controlled_reward": 220.0,
+        "prefix_reward": 0.0,
+        "life_losses": 3,
+        "controlled_life_losses": 3,
+        "terminated": false,
+        "truncated": false,
+        "max_carried_divers": 1,
+        "end_reason": "frame_cap",
+        "wall_seconds": 240.45051012397744,
+        "api_attempts": 801,
+        "reported_cost_usd": 0.117717138,
+        "action_histogram": {
+          "FIRE": 689,
+          "RIGHTFIRE": 3,
+          "LEFTFIRE": 3,
+          "NOOP": 69,
+          "DOWNFIRE": 36
+        }
+      },
+      "replay": {
+        "status": "verified",
+        "decisions": 864,
+        "raw_frames": 3456,
+        "api_attempts": 0,
+        "summary_hash": "090ca36021569c318f2104c1172ed75baba89e9b437fe2fbf993f42740eaaf2d"
+      },
+      "video": {
+        "width": 160,
+        "height": 210,
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "3456"
+      }
+    }
+  ],
+  "probes": [
+    {
+      "round": 2,
+      "states": 96,
+      "predictions": 192
+    },
+    {
+      "round": 3,
+      "states": 96,
+      "predictions": 192
+    },
+    {
+      "round": 4,
+      "states": 96,
+      "predictions": 192
+    },
+    {
+      "round": 5,
+      "states": 68,
+      "predictions": 136
+    }
+  ],
+  "source_replays": [
+    {
+      "status": "verified",
+      "decisions": 864,
+      "raw_frames": 3456,
+      "api_attempts": 0,
+      "summary_hash": "0453d6bcba52ba279565d77826ebd85bc044b60e545198cafeb35e495393ce8d"
+    },
+    {
+      "status": "verified",
+      "decisions": 864,
+      "raw_frames": 3456,
+      "api_attempts": 0,
+      "summary_hash": "c922d0a5952aeceecbe62b4ae03ae9693841bb609bbaf67bdf141f7f3f8b73ae"
+    },
+    {
+      "status": "verified",
+      "decisions": 864,
+      "raw_frames": 3456,
+      "api_attempts": 0,
+      "summary_hash": "17f7eb73052c52e6b36544d11361d79e068b937818e3a3f94a0fa32192609b2c"
+    },
+    {
+      "status": "verified",
+      "decisions": 864,
+      "raw_frames": 3456,
+      "api_attempts": 0,
+      "summary_hash": "4501f152f371748672b6957a0d23e02e8533f16184505be7213a6ea5bbf8e3ba"
+    }
+  ],
+  "audit_api_calls": 0,
+  "selected_round": 3,
+  "wording_improvement_gate": false
+}

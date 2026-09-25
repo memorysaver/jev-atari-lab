@@ -1,0 +1,102 @@
+[
+  {
+    "round": 1,
+    "role": "literal-simple",
+    "seed": 320,
+    "local": true,
+    "path": "round-01/literal-simple/seed-320/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "97eeeecd1565443c8ed5c280d49c67bc4e8fb05c1bfff21b2d52442aabf25ec2"
+  },
+  {
+    "round": 1,
+    "role": "literal-simple",
+    "seed": 321,
+    "local": true,
+    "path": "round-01/literal-simple/seed-321/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "50cffc69822eb6ab49c7f5f438ec75a840903fff160e4ad9331a3ff8d836421b"
+  },
+  {
+    "round": 1,
+    "role": "literal-late-diver",
+    "seed": 320,
+    "local": true,
+    "path": "round-01/literal-late-diver/seed-320/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "de6eeadd683e320bcac03c3be78c32e2148b69cd55550594bf0133288297cd94"
+  },
+  {
+    "round": 1,
+    "role": "literal-late-diver",
+    "seed": 321,
+    "local": true,
+    "path": "round-01/literal-late-diver/seed-321/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "3bf3b960ac6dd358ab93e548779c42e99035c589fa8e182ccff6de6a58251c38"
+  },
+  {
+    "round": 5,
+    "role": "literal-reference",
+    "seed": 348,
+    "local": true,
+    "path": "round-05/literal-reference/seed-348/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "8d71ecc0fffb6218408fe4f00a689434d9415fbb0e597b6011dc12f4d94f738b"
+  },
+  {
+    "round": 5,
+    "role": "literal-reference",
+    "seed": 349,
+    "local": true,
+    "path": "round-05/literal-reference/seed-349/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "8a1a562f3e6b106a568fd858b76f6956eab0367848e869268a0e88ea2ebeec78"
+  },
+  {
+    "round": 5,
+    "role": "baseline",
+    "seed": 348,
+    "local": false,
+    "path": "round-05/baseline/seed-348/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "46aae8f51cfeb0372dc2709feef179be72893982839966d2615c3aec63753029"
+  },
+  {
+    "round": 5,
+    "role": "candidate",
+    "seed": 348,
+    "local": false,
+    "path": "round-05/candidate/seed-348/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "1eda5e0ff3f0913c097f7a3bd6deb829460b66bc9d9d8a435a7866219ac3480f"
+  },
+  {
+    "round": 5,
+    "role": "baseline",
+    "seed": 349,
+    "local": false,
+    "path": "round-05/baseline/seed-349/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "057047bf1ff3aed2e12447b4cde27ec8fd9e1695515c55b54563b8b28ed2b9e5"
+  },
+  {
+    "round": 5,
+    "role": "candidate",
+    "seed": 349,
+    "local": false,
+    "path": "round-05/candidate/seed-349/episode.mp4",
+    "frames": 3456,
+    "fps": 60,
+    "sha256": "6a6e139439beb8c743035b85b006221c20d8975d6f32de328018625daaf39ccb"
+  }
+]

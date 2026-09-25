@@ -1,5 +1,11 @@
 # Experiment journal
 
+2026-09-25: [Five-round Seaquest execution study](seaquest/execution-five-round-v1/README.md)
+completed and stopped. The selected wording revision regressed on final execution
+and game return; none was promoted. Ten new full videos, 712 probe responses,
+3,200 Jev game decisions and six local control episodes are retained. Reported
+cost US$0.573, zero isolated teachers. Original and restored evidence passed audit.
+
 2026-09-24: [Seaquest ten-round study](seaquest/ten-round-v1-continuation/README.md)
 completed and stopped after 24 episodes. The sealed candidate passed development
 (+290 mean) and final (+210 mean) gates. All API/frame/video records and restored
