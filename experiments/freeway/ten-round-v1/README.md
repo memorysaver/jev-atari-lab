@@ -46,3 +46,7 @@ preceded the live freeze; decoder hashes and frozen-source equality are preserve
 Local preservation checks passed: the restored full audit is byte-identical to
 the original, and all 42 standalone video hashes match the audited recordings.
 [Preservation record](preservation.json).
+
+Remote retrieval also passed in a fresh HTTPS clone with an isolated LFS store:
+all 43 LFS-tracked files (archive plus 42 videos) matched local SHA-256 hashes.
+The preservation record identifies the retrieved data commit.

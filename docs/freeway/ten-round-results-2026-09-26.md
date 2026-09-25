@@ -117,8 +117,8 @@ five eight-state groups plus one wait-static-or-unknown/stationary state. Its
 six-group macro was 50%, versus 60% on the five-group training/development packets,
 even though the policies remained always-UP. This is a composition/weighting
 change, not evidence of deterioration or learning. The singleton group is
-undercovered; preserve its denominator and avoid population claims. No final
-observation hash overlapped training. Final data did not inform any revision.
+undercovered; preserve its denominator and avoid population claims. No final-packet
+observation hash overlapped the training packet. Final data did not inform any revision.
 
 ## Resources and preservation
 
