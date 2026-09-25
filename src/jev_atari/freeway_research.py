@@ -249,7 +249,7 @@ def run(number, proposal=None, rationale=None):
                 )
         else:
             seeds, split = (DEV, "development") if number == 9 else (FINAL, "final_test")
-            # split_for_seed calls its final split "final"; check source dynamically.
+            # Use the shared split label ("test" for final seeds).
             from jev_atari.experiment import split_for_seed
 
             split = split_for_seed(seeds[0])
