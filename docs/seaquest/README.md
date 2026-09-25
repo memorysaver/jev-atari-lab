@@ -12,6 +12,7 @@ collapsed baseline, not mastery or a causal benefit of experience feedback.
 Complex diver-collection rules still produced substantial execution errors, and
 empty surfacing remains unresolved. All unused call capacity is closed.
 
+- [Lessons learned](lessons-2026-09-25.md): supported findings, limits and the next question.
 - [Ten-round results](ten-round-results-2026-09-24.md), [protocol](ten-round-protocol.md),
   and [prospective HTTP 520 continuation](ten-round-continuation-protocol.md).
 - [Reviewed evidence](../../experiments/seaquest/ten-round-v1-continuation/README.md)

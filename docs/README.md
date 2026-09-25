@@ -19,6 +19,10 @@ gates. All recordings and restored evidence replayed. Seven coordinator proposal
 zero isolated teacher calls; no mastery or causal feedback-benefit claim.
 [Videos and evidence](../experiments/seaquest/ten-round-v1-continuation/README.md).
 
+[Lessons recorded 2026-09-25](seaquest/lessons-2026-09-25.md): what the Seaquest
+study establishes, why aggregate rule agreement can hide execution errors, and
+the proposed separation of strategy quality from rule execution. No new study ran.
+
 [Pong closure](pong/candidate-feedback-results-2026-09-24.md).
 The OpenRouter study stopped on HTTP 502 in round two; one development round
 accepted B and rejected A. All 12 trajectories replayed, no final tests ran,
