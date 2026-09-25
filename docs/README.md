@@ -23,6 +23,10 @@ zero isolated teacher calls; no mastery or causal feedback-benefit claim.
 study establishes, why aggregate rule agreement can hide execution errors, and
 the proposed separation of strategy quality from rule execution. No new study ran.
 
+[Five-round execution protocol](seaquest/execution-five-round-protocol.md): a new
+owner-authorized study separating literal strategy performance from Jev rule
+execution, with two wording proposals and a sealed final comparison.
+
 [Pong closure](pong/candidate-feedback-results-2026-09-24.md).
 The OpenRouter study stopped on HTTP 502 in round two; one development round
 accepted B and rejected A. All 12 trajectories replayed, no final tests ran,
