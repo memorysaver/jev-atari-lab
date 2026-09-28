@@ -82,3 +82,12 @@ https://github.com/k4ntz/OC_Atari/blob/99c874675df6b76a33a80b57776c123fbcd051af/
 under the full MIT license and copyright notice reproduced above. OCAtari is not
 installed. The local bounded pixel-support validation does not establish precise
 collision geometry, visible sprites at the left boundary, or an optimal policy.
+
+## OCAtari-derived Ms. Pac-Man coordinate and color facts
+
+`src/jev_atari/mspacman.py` uses player/ghost RAM coordinates and RGB colors
+from the MIT-licensed OCAtari `ocatari/ram/mspacman.py` and
+`ocatari/vision/mspacman.py`, inspected on 2026-09-28:
+https://github.com/k4ntz/OC_Atari/tree/master/ocatari
+The upstream MIT notice above applies. Maze extraction, corridor graph and local
+controls are project implementations; no upstream pellet grid was copied.
