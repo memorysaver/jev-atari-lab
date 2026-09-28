@@ -16,6 +16,13 @@ intended path to a paper. Initially both teacher and Jev weights stay fixed;
 the question program changes. An automated bounded teacher loop is implemented; its first study stopped in round two.
 No repeatable optimization benefit has been established.
 
+**Ms. Pac-Man pilot started:** six local calibration episodes and videos replayed.
+Random, pellet pursuit and ghost-aware local controls averaged 300, 640 and 1230.
+The direct-versus-two-stage Jev comparison stopped at its first transport attempt
+in a restricted-network environment; no model response or gameplay result exists.
+[Results and limits](docs/mspacman/pilot-results-2026-09-28.md) ·
+[Six local recordings](experiments/mspacman/calibration-v1/README.md).
+
 **Freeway ten-round study completed:** no revision improved held-out return.
 Generic and selected Jev both scored 23/26 on final seeds; predictive local controls
 scored 29/29. Explicit lane lookup improved a reused training rule-execution probe

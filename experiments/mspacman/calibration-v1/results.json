@@ -1,0 +1,200 @@
+[
+  {
+    "rule": "random",
+    "seed": 510,
+    "summary": {
+      "status": "complete",
+      "frames": 2105,
+      "controlled_frames": 1833,
+      "reward": 300.0,
+      "prefix_reward": 10.0,
+      "decisions": 230,
+      "life_losses": 3,
+      "terminated": true,
+      "truncated": false,
+      "end_reason": "native_termination",
+      "wall_seconds": 0.8940519919997314,
+      "action_histogram": {
+        "DOWNLEFT": 29,
+        "DOWN": 20,
+        "UPLEFT": 27,
+        "UP": 32,
+        "RIGHT": 29,
+        "UPRIGHT": 26,
+        "LEFT": 25,
+        "NOOP": 22,
+        "DOWNRIGHT": 20
+      },
+      "branches": {
+        "random": 230
+      },
+      "observation_checks": {
+        "observations": 230,
+        "player_supported": 230,
+        "supported_on_graph": 230
+      }
+    }
+  },
+  {
+    "rule": "random",
+    "seed": 511,
+    "summary": {
+      "status": "complete",
+      "frames": 1601,
+      "controlled_frames": 1329,
+      "reward": 300.0,
+      "prefix_reward": 10.0,
+      "decisions": 167,
+      "life_losses": 3,
+      "terminated": true,
+      "truncated": false,
+      "end_reason": "native_termination",
+      "wall_seconds": 0.6732789980014786,
+      "action_histogram": {
+        "UP": 23,
+        "DOWNRIGHT": 17,
+        "RIGHT": 18,
+        "LEFT": 18,
+        "DOWN": 13,
+        "DOWNLEFT": 17,
+        "NOOP": 24,
+        "UPLEFT": 21,
+        "UPRIGHT": 16
+      },
+      "branches": {
+        "random": 167
+      },
+      "observation_checks": {
+        "observations": 167,
+        "player_supported": 167,
+        "supported_on_graph": 167
+      }
+    }
+  },
+  {
+    "rule": "pellet",
+    "seed": 510,
+    "summary": {
+      "status": "complete",
+      "frames": 2673,
+      "controlled_frames": 2401,
+      "reward": 730.0,
+      "prefix_reward": 10.0,
+      "decisions": 301,
+      "life_losses": 3,
+      "terminated": true,
+      "truncated": false,
+      "end_reason": "native_termination",
+      "wall_seconds": 2.2441259840124985,
+      "action_histogram": {
+        "LEFT": 76,
+        "DOWN": 52,
+        "UP": 62,
+        "RIGHT": 111
+      },
+      "branches": {
+        "collect": 301
+      },
+      "observation_checks": {
+        "observations": 301,
+        "player_supported": 301,
+        "supported_on_graph": 301
+      }
+    }
+  },
+  {
+    "rule": "pellet",
+    "seed": 511,
+    "summary": {
+      "status": "complete",
+      "frames": 2321,
+      "controlled_frames": 2049,
+      "reward": 550.0,
+      "prefix_reward": 10.0,
+      "decisions": 257,
+      "life_losses": 3,
+      "terminated": true,
+      "truncated": false,
+      "end_reason": "native_termination",
+      "wall_seconds": 2.1327380129951052,
+      "action_histogram": {
+        "LEFT": 95,
+        "DOWN": 34,
+        "UP": 42,
+        "RIGHT": 86
+      },
+      "branches": {
+        "collect": 257
+      },
+      "observation_checks": {
+        "observations": 257,
+        "player_supported": 257,
+        "supported_on_graph": 257
+      }
+    }
+  },
+  {
+    "rule": "avoid",
+    "seed": 510,
+    "summary": {
+      "status": "complete",
+      "frames": 4368,
+      "controlled_frames": 4096,
+      "reward": 1760.0,
+      "prefix_reward": 10.0,
+      "decisions": 512,
+      "life_losses": 1,
+      "terminated": false,
+      "truncated": false,
+      "end_reason": "frame_cap",
+      "wall_seconds": 3.0580417519959155,
+      "action_histogram": {
+        "LEFT": 143,
+        "DOWN": 103,
+        "UP": 104,
+        "RIGHT": 162
+      },
+      "branches": {
+        "evade": 108,
+        "collect": 404
+      },
+      "observation_checks": {
+        "observations": 512,
+        "player_supported": 512,
+        "supported_on_graph": 512
+      }
+    }
+  },
+  {
+    "rule": "avoid",
+    "seed": 511,
+    "summary": {
+      "status": "complete",
+      "frames": 3649,
+      "controlled_frames": 3377,
+      "reward": 700.0,
+      "prefix_reward": 10.0,
+      "decisions": 423,
+      "life_losses": 3,
+      "terminated": true,
+      "truncated": false,
+      "end_reason": "native_termination",
+      "wall_seconds": 2.7013506289949873,
+      "action_histogram": {
+        "LEFT": 151,
+        "DOWN": 41,
+        "UP": 51,
+        "RIGHT": 180
+      },
+      "branches": {
+        "evade": 103,
+        "collect": 320
+      },
+      "observation_checks": {
+        "observations": 423,
+        "player_supported": 423,
+        "supported_on_graph": 423
+      }
+    }
+  }
+]

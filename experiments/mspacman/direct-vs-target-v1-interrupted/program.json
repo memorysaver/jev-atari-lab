@@ -1,0 +1,25 @@
+{
+  "version": "mspacman-direct-vs-target-action-v1",
+  "contract": "Control Ms. Pac-Man for the next 8 raw frames using the given screen-coordinate observations. x increases right, y increases down. The maze is a graph of straight corridor_segments; side tunnels wrap horizontally on tunnel_rows. exits lists currently open cardinal directions and their endpoints up to 8 pixels away, not recommended moves. Unknown ghosts and occluded pellets are not known to be absent. Blue is a ghost appearance, not a remaining vulnerability timer. All nine native joystick actions remain available.",
+  "target_rule": "If player.visible is false or exits is empty choose UNAVAILABLE. Otherwise, among visible normal ghosts, find the smallest Manhattan distance abs(dx)+abs(dy) from the player. If that distance is at most 32 choose that ghost ID, breaking ties by ID. If there is no such nearby ghost choose PELLETS.",
+  "action_rule": "For UNAVAILABLE choose NOOP. For a selected ghost, choose the cardinal exit whose endpoint has greatest Manhattan distance from that ghost; break ties by exits order. For PELLETS, use corridor connectivity to choose a visible regular pellet with the shortest positive route distance, breaking target ties by pellet ID, and move along a shortest route toward it. Do not move directly through walls. If no reachable pellet exists choose NOOP. NOOP may retain movement; native diagonals combine joystick directions.",
+  "intent_criteria": {
+    "UNAVAILABLE": "Player or exits unavailable.",
+    "PELLETS": "Pursue regular pellets.",
+    "ghost-0": "Evade visible normal ghost-0.",
+    "ghost-1": "Evade visible normal ghost-1.",
+    "ghost-2": "Evade visible normal ghost-2.",
+    "ghost-3": "Evade visible normal ghost-3."
+  },
+  "action_criteria": {
+    "NOOP": "Native NOOP joystick input for 8 raw frames.",
+    "UP": "Native UP joystick input for 8 raw frames.",
+    "RIGHT": "Native RIGHT joystick input for 8 raw frames.",
+    "LEFT": "Native LEFT joystick input for 8 raw frames.",
+    "DOWN": "Native DOWN joystick input for 8 raw frames.",
+    "UPRIGHT": "Native UPRIGHT joystick input for 8 raw frames.",
+    "UPLEFT": "Native UPLEFT joystick input for 8 raw frames.",
+    "DOWNRIGHT": "Native DOWNRIGHT joystick input for 8 raw frames.",
+    "DOWNLEFT": "Native DOWNLEFT joystick input for 8 raw frames."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "experiment-archive-v1",
+  "archive": "mspacman-direct-vs-target-v1-interrupted.tar.gz",
+  "sha256": "82d6b49648cdfbb0ed2fb4e30766767dddb16d64f93e8eb70cbfd39e74176169",
+  "file_count": 11,
+  "uncompressed_bytes": 1076685,
+  "files": [
+    {
+      "path": "direct-vs-target-v1/api-ledger.json",
+      "bytes": 155,
+      "sha256": "8fe8d165aa534b2b8a0f0892e4abf66147e5dec9c4ba59af347942ae5c41a2cf"
+    },
+    {
+      "path": "direct-vs-target-v1/budget.json",
+      "bytes": 198,
+      "sha256": "efae450bc2fb0d57c4deccbe25f24520f0d2c29847cfcb9a560124aca8bec900"
+    },
+    {
+      "path": "direct-vs-target-v1/closure.json",
+      "bytes": 94,
+      "sha256": "4f7c0afbddf2be69ca1c33ffa62032dd023aa3e0a01d1b3c98f7c9c654a9c718"
+    },
+    {
+      "path": "direct-vs-target-v1/failure.json",
+      "bytes": 88,
+      "sha256": "a3f31ae9267db94bf5d71835db1f2f7f06719c69d0cca965c73d87a0634284c9"
+    },
+    {
+      "path": "direct-vs-target-v1/interruption-audit.json",
+      "bytes": 461,
+      "sha256": "bdfffa57f52cf8e8b07c3c515bbec7af763383e914b5791df0cb991a8b983fa4"
+    },
+    {
+      "path": "direct-vs-target-v1/packet.json",
+      "bytes": 1058421,
+      "sha256": "6a865de0c2507a60162e955e67a8c1377097f89af0aaf3f80b35521b50c3f88c"
+    },
+    {
+      "path": "direct-vs-target-v1/plan.json",
+      "bytes": 539,
+      "sha256": "4a97bec04ec69fa24654ed8439b9365504b5b8fc713395283c0efdfe3f1154d7"
+    },
+    {
+      "path": "direct-vs-target-v1/probes/model-exchanges.jsonl",
+      "bytes": 14139,
+      "sha256": "c64907278c9ef5ad7e087e009acfba6cf9e25bf4d7e78a66f3cea1082923bfe4"
+    },
+    {
+      "path": "direct-vs-target-v1/probes/results.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "direct-vs-target-v1/program.json",
+      "bytes": 2348,
+      "sha256": "c8f706b0b2d0ae6a82a32ccb1215d76c05486cfce96877d3722d60b01aed5ada"
+    },
+    {
+      "path": "direct-vs-target-v1/verification.json",
+      "bytes": 242,
+      "sha256": "ed46bd2d7dd1cb566e7e8e195d792bbf0733ae70296d6f8c5ffa5e1035de5cf5"
+    }
+  ]
+}

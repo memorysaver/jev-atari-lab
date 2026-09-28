@@ -1,0 +1,56 @@
+[
+  {
+    "path": "artifacts/mspacman/calibration-v1/avoid/seed-510",
+    "frames": 4368,
+    "decisions": 512,
+    "reward": 1760.0,
+    "raw_frame_replay": true,
+    "observation_replay": true,
+    "video_frames": 4368
+  },
+  {
+    "path": "artifacts/mspacman/calibration-v1/avoid/seed-511",
+    "frames": 3649,
+    "decisions": 423,
+    "reward": 700.0,
+    "raw_frame_replay": true,
+    "observation_replay": true,
+    "video_frames": 3649
+  },
+  {
+    "path": "artifacts/mspacman/calibration-v1/pellet/seed-510",
+    "frames": 2673,
+    "decisions": 301,
+    "reward": 730.0,
+    "raw_frame_replay": true,
+    "observation_replay": true,
+    "video_frames": 2673
+  },
+  {
+    "path": "artifacts/mspacman/calibration-v1/pellet/seed-511",
+    "frames": 2321,
+    "decisions": 257,
+    "reward": 550.0,
+    "raw_frame_replay": true,
+    "observation_replay": true,
+    "video_frames": 2321
+  },
+  {
+    "path": "artifacts/mspacman/calibration-v1/random/seed-510",
+    "frames": 2105,
+    "decisions": 230,
+    "reward": 300.0,
+    "raw_frame_replay": true,
+    "observation_replay": true,
+    "video_frames": 2105
+  },
+  {
+    "path": "artifacts/mspacman/calibration-v1/random/seed-511",
+    "frames": 1601,
+    "decisions": 167,
+    "reward": 300.0,
+    "raw_frame_replay": true,
+    "observation_replay": true,
+    "video_frames": 1601
+  }
+]

@@ -77,3 +77,12 @@ lookup improved a reused training execution probe, but not native return. The
 dedicated observer has bounded pixel-support validation with left-edge visibility
 limits; generic raw-RAM CLI/catalog behavior is unchanged. No mastery or isolated
 teacher-optimizer benefit is established.
+
+
+## Ms. Pac-Man update, 2026-09-28
+
+[First-maze calibration and pilot](mspacman/pilot-results-2026-09-28.md): a dedicated
+experimental observer and three local controls completed six episodes. All videos
+and raw frames replayed. The first Jev request failed at transport; no successful
+model experiment, teacher result or mastery claim. The generic catalog remains
+unchanged; this dedicated study does not imply adapters for other games.

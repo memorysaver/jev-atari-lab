@@ -37,3 +37,11 @@ The [pilot protocol](pilot-protocol.md) fixes two development seeds, outcomes,
 No edits are permitted after any probe or development result. Final seeds stay
 unused. Exact literal-action agreement includes route-tie ambiguity, reported
 as a diagnostic rather than automatic proof of a wrong action.
+
+### M002 outcome
+
+One HTTP attempt failed at transport before a response, model action or development
+run. The network environment failed a separate DNS lookup. The full unused
+allocation was closed with no retry or fallback. All frozen programs and the
+packet are retained; no performance claim or proposal promotion is possible.
+See [the report](pilot-results-2026-09-28.md) for evidence and continuation boundary.

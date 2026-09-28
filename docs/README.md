@@ -12,8 +12,10 @@ notes elsewhere remain provenance; new project research belongs here. Original
 machine-readable evidence and immutable LFS archives remain in
 [experiments/](../experiments/README.md); code and tests retain their own directories.
 
-Latest setup: [Ms. Pac-Man pilot](mspacman/README.md), beginning with zero-API
-observation and strategy calibration. Live comparison is not yet launched.
+Latest: [Ms. Pac-Man pilot](mspacman/pilot-results-2026-09-28.md). Six local
+calibration episodes and videos replayed; local mean returns were 300, 640 and
+1230. The model comparison stopped on its first transport attempt in a restricted
+network environment, before any response or gameplay. No Jev comparison result.
 
 Earlier: [Freeway ten-round results](freeway/ten-round-results-2026-09-26.md).
 Exactly ten rounds completed and capacity closed. No revision improved held-out

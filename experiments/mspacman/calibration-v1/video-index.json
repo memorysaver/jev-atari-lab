@@ -1,0 +1,56 @@
+[
+  {
+    "rule": "random",
+    "seed": 510,
+    "reward": 300.0,
+    "path": "videos/random-seed-510.mp4",
+    "sha256": "ad5c73f60f2694b56507990f5481d06fed9a07e41ae80113a4be5411eaec780e",
+    "frames": 2105,
+    "end_reason": "native_termination"
+  },
+  {
+    "rule": "random",
+    "seed": 511,
+    "reward": 300.0,
+    "path": "videos/random-seed-511.mp4",
+    "sha256": "3ce16b94dfa520d710ef6230651a992acb47b51a2a4903ac7c79e71794da2257",
+    "frames": 1601,
+    "end_reason": "native_termination"
+  },
+  {
+    "rule": "pellet",
+    "seed": 510,
+    "reward": 730.0,
+    "path": "videos/pellet-seed-510.mp4",
+    "sha256": "47cfcc6e4fed191484e77fef9c339bf5b7234860e0c66f6536116d3d5c8158d2",
+    "frames": 2673,
+    "end_reason": "native_termination"
+  },
+  {
+    "rule": "pellet",
+    "seed": 511,
+    "reward": 550.0,
+    "path": "videos/pellet-seed-511.mp4",
+    "sha256": "4e4e511257e7ec2568ff5cb7d41c90809d6444ef8acf2db93057374eeba40f7b",
+    "frames": 2321,
+    "end_reason": "native_termination"
+  },
+  {
+    "rule": "avoid",
+    "seed": 510,
+    "reward": 1760.0,
+    "path": "videos/avoid-seed-510.mp4",
+    "sha256": "3a836cf730fe661fbba588a35f5b8bb706dc34f2b634212c1e9e6ce9f7911acd",
+    "frames": 4368,
+    "end_reason": "frame_cap"
+  },
+  {
+    "rule": "avoid",
+    "seed": 511,
+    "reward": 700.0,
+    "path": "videos/avoid-seed-511.mp4",
+    "sha256": "87dbc67a07e43fcedc84891a916222c955d85462026efb11c34f8b9154ec4249",
+    "frames": 3649,
+    "end_reason": "native_termination"
+  }
+]

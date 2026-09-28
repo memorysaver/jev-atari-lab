@@ -1,0 +1,18 @@
+{
+  "source_revision": "fa721b60e4ad81084d20ed8f7a06541537e0a97d",
+  "program_hash": "75cd16b76d984c4381508d3a7e800468385bfe1cc7cf955444220c7f23d52de6",
+  "packet_hash": "a36a792d2a1a1067df6a7382c613465cbea96f448846778b27c527e592f505ec",
+  "backend": "openrouter",
+  "model": "~typesafe/jev-latest",
+  "pin": "typesafe/jev-1.13-20260917",
+  "max_calls": 1700,
+  "seeds": [
+    516,
+    517
+  ],
+  "controlled_cap": 2048,
+  "hold": 8,
+  "final_test": "not run; seeds 518/519 remain unused",
+  "probes": 24,
+  "max_planned_attempts": 1608
+}

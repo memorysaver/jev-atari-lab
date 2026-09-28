@@ -1,0 +1,14 @@
+{
+  "seeds": [
+    510,
+    511
+  ],
+  "rules": [
+    "random",
+    "pellet",
+    "avoid"
+  ],
+  "cap": 4096,
+  "hold": 8,
+  "api_attempts": 0
+}

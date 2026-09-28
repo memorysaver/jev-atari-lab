@@ -1,5 +1,10 @@
 # Experiment journal
 
+Latest: [Ms. Pac-Man calibration](mspacman/calibration-v1/README.md), six complete
+local recordings and verified replay; [interrupted model pilot](mspacman/direct-vs-target-v1-interrupted/README.md),
+one failed transport attempt and no model-controlled episode.
+
+
 [Freeway ten-round study](freeway/ten-round-v1/README.md): all ten rounds and 42 full
 recordings completed; both held-out score gains were zero and no revision was
 promoted. Complete traces, six coordinator proposals and a closed 11,711-attempt
